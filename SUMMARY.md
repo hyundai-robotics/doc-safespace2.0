@@ -31,7 +31,7 @@
     * [3.2.3 동력 및 힘 제한](3-safety-function/3-2-collaborative-operation-mode/3-power-force-limit.md)
   * [3.3 안전 기능](3-safety-function/3-3-safety-function/README.md)
     * [3.3.1 로봇 제한 기능](3-safety-function/3-3-safety-function/1-robot-limit-function.md)
-      * [3.3.1.1 조인트 제한 기능](3-safety-function/3-3-safety-function/2-joint-limit-function.md)  
+      * [3.3.1.1 조인트 제한 기능](3-safety-function/3-3-safety-function/1-robot-safety-condition/1-joint-space-parameter.md)  
       * [3.3.1.2 로봇 안전 조건](3-safety-function/3-3-safety-function/1-6-robot-safety-condition/README.md)
       * [3.3.1.3 로봇 제한 파라미터](3-safety-function/3-3-safety-function/1-6-robot-safety-condition/1-robot-limit-parameter.md)
       * [3.3.1.4 조인트 제한 파라미터](3-safety-function/1-6-robot-safety-condition/2-joint-limit-parameter.md)
