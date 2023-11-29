@@ -2,7 +2,7 @@
 
 PROFIsafe의 설정은 다음과 같습니다.
 
-![Profisafe Consol Image](../../../_assets/safetyio_profisafe/BD671_console.PNG)
+![Profisafe Consol Image](../../../_assets/safetyio_profisafe/BD671_console.png)
 
  - Source Address : Source Address를 설정합니다. (설정 범위 : 1 ~ 65534)
  - Destination Address : Destination Address를 설정합니다. (설정 범위 : 1 ~ 65534)
