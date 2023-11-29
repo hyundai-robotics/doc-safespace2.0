@@ -5,7 +5,7 @@ Profinet의 설정은 다음과 같습니다.
 PROFINET의 설정은 BD671의 RS232 통신을 통해 변경할 수 있습니다.
 이번장에서는 PROFINET과 관련된 파라미터에 관해서만 설명합니다.
 
-![Profinet Consol Image](../../../_assets/safetyio_profisafe/BD671_console.PNG)
+![Profinet Consol Image](../../../_assets/safetyio_profisafe/BD671_console.png)
 
  - S : Sub Module을 추가합니다.
  - s : Sub Module을 제거합니다.
