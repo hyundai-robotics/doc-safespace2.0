@@ -1,6 +1,6 @@
 ﻿# 3.3.3.4 PROFINET
 
-Profinet의 설정은 다음과 같습니다.
+1. Profinet의 설정
 
 PROFINET의 설정은 BD671의 RS232 통신을 통해 변경할 수 있습니다.
 이번장에서는 PROFINET과 관련된 파라미터에 관해서만 설명합니다.
@@ -14,6 +14,7 @@ PROFINET의 설정은 BD671의 RS232 통신을 통해 변경할 수 있습니다
  - N : PROFINET 장치의 MAC address를 설정합니다.
  - o : IP 주소와 Subnet mask 그리고 Gateway 를 설정 합니다. 
 
+2. 기타 정보
  - Console Settings.
 	 - Baudrate : 115200 bps
 	- Data : 8bit, Parity : none, Stop bits : 1bit
