@@ -1,9 +1,10 @@
-﻿# 3.3.3.4 PROFINET
+﻿
+# 3.3.3.4 PROFINET
 
-1. Profinet의 설정
+**1. Profinet의 설정**
 
 PROFINET의 설정은 BD671의 RS232 통신을 통해 변경할 수 있습니다.
-이번장에서는 PROFINET과 관련된 파라미터에 관해서만 설명합니다.
+이번장에서는 PROFINET과 관련된 파라미터에 관해서 설명합니다.
 
 ![Profinet Consol Image](../../../_assets/safetyio_profisafe/BD671_console.png)
 
@@ -14,7 +15,7 @@ PROFINET의 설정은 BD671의 RS232 통신을 통해 변경할 수 있습니다
  - N : PROFINET 장치의 MAC address를 설정합니다.
  - o : IP 주소와 Subnet mask 그리고 Gateway 를 설정 합니다. 
 
-2. 기타 정보
+**2. 기타 정보**
  - Console Settings.
 	 - Baudrate : 115200 bps
 	- Data : 8bit, Parity : none, Stop bits : 1bit
@@ -27,7 +28,7 @@ PROFINET의 설정은 BD671의 RS232 통신을 통해 변경할 수 있습니다
 	 - 허용 슬롯 : 1
 	 - 허용 서브슬롯 :  1
 
-- 기타 정보
+- Spec
 	- PNIO Version : V2.43
 	- Conformance Class : B
 	- Application Class : Functional Safety
