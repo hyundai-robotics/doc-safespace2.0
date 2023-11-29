@@ -1,4 +1,4 @@
-﻿# 3.3.2 Additional Safety I/O
+﻿# 3.3.3.2 Additional Safety I/O
 
 Additional Safety I/O의 파라미터를 설정합니다.
 입력 신호는 8개, 출력 신호는 4개 이며 모두 이중신호로 동작 됩니다.
