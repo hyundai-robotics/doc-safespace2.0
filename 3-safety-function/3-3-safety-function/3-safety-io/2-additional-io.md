@@ -5,7 +5,7 @@ Additional Safety I/O의 파라미터를 설정합니다.
 
 **1. Additional Safety Input/Output**
 
-![Additional Input Image](../../../_assets/add_io.PNG)
+![Additional Input Image](../../../_assets/safetyio_profisafe/add_io.PNG)
 
  - Enable : Additional Safety I/O의 사용 유무를 결정합니다.
  - 필터 시간 : 각 입력 채널별로 필터 시간 동안 일정한 신호가 입력되어야 유효한 신호로 처리됩니다. (Unit : msec)
