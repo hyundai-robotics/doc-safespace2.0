@@ -6,5 +6,5 @@
 
 속도 및 위치 감시 모드 사용을 위한 참조 정보는 다음과 같습니다.
 
-* 로봇 안전 조건 level 0 (감속 모드) 설정에 대한 자세한 내용은 “[**1.6 로봇 안전 조건**](../1-6-robot-safety-condition/)”을 참조하십시오.
-* 안전 I/O 신호 설정에 대한 자세한 내용은 “[**1.8 안전 I/O 신호**](../1.8-safety-io-signal.md)”를 참조하십시오.
+* 로봇 감속에 대한 자세한 내용은 “[**3.3.1.5 Re plan**](../3-safety-function/1-robot-safety-condition/5-re-plan.md)”을 참조하십시오.
+* 안전 신호 설정에 대한 자세한 내용은 “[**3.3.3 안전 신호 입출력**](../3-safety-function/3-safety-io/README.md)”를 참조하십시오.

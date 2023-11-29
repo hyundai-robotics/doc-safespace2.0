@@ -7,5 +7,5 @@
 
 관련 기능 설정에 대한 참조 정보는 다음과 같습니다.
 
-* 안전 I/O 신호 설정에 대한 자세한 내용은 “[**3.3.3 안전 I/O 신호**](../3-safety-function/3-safety-io)”를 참조하십시오.
-* 안전 정지 기능 설정에 대한 자세한 내용은 “[**1.9 안전 정지 기능**](../1-9-safety-stop-function.md)”을 참조하십시오.
+* 안전 신호 설정에 대한 자세한 내용은 “[**3.3.3 안전 신호 입출력**](../3-safety-function/3-safety-io/README.md)”를 참조하십시오.
+* 안전 정지 기능 설정에 대한 자세한 내용은 “[**1.9 안전 정지 기능**](../3-safety-function/1-robot-safety-condition/9-stop-function.md)”을 참조하십시오.
