@@ -1,0 +1,357 @@
+﻿[
+	{
+		"link": "README.md",
+		"char_ofs": 0,
+		"byte_ofs": 0
+	},
+	{
+		"link": "about-this-manual/README.md",
+		"char_ofs": 269,
+		"byte_ofs": 511
+	},
+	{
+		"link": "about-this-manual/copyright.md",
+		"char_ofs": 1014,
+		"byte_ofs": 1981
+	},
+	{
+		"link": "about-this-manual/notation.md",
+		"char_ofs": 1210,
+		"byte_ofs": 2381
+	},
+	{
+		"link": "about-this-manual/safety-notice.md",
+		"char_ofs": 2307,
+		"byte_ofs": 4473
+	},
+	{
+		"link": "1-safety/README.md",
+		"char_ofs": 4957,
+		"byte_ofs": 10542
+	},
+	{
+		"link": "1-safety/1-safety-requirements/README.md",
+		"char_ofs": 4966,
+		"byte_ofs": 10560
+	},
+	{
+		"link": "1-safety/1-safety-requirements/1-applicable-standards.md",
+		"char_ofs": 4982,
+		"byte_ofs": 10593
+	},
+	{
+		"link": "1-safety/1-safety-requirements/2-safety-performance.md",
+		"char_ofs": 8061,
+		"byte_ofs": 13820
+	},
+	{
+		"link": "1-safety/2-safety-measures/README.md",
+		"char_ofs": 9121,
+		"byte_ofs": 15062
+	},
+	{
+		"link": "1-safety/2-safety-measures/1-safety-functions.md",
+		"char_ofs": 9185,
+		"byte_ofs": 15216
+	},
+	{
+		"link": "1-safety/2-safety-measures/2-safety-training.md",
+		"char_ofs": 9964,
+		"byte_ofs": 16311
+	},
+	{
+		"link": "1-safety/2-safety-measures/3-safety-labels.md",
+		"char_ofs": 10562,
+		"byte_ofs": 17705
+	},
+	{
+		"link": "1-safety/2-safety-measures/4-emergency-stop/README.md",
+		"char_ofs": 12114,
+		"byte_ofs": 20139
+	},
+	{
+		"link": "1-safety/2-safety-measures/4-emergency-stop/1-switches.md",
+		"char_ofs": 12367,
+		"byte_ofs": 20725
+	},
+	{
+		"link": "1-safety/2-safety-measures/4-emergency-stop/2-connecting-to-devices-of-external-system.md",
+		"char_ofs": 12456,
+		"byte_ofs": 20932
+	},
+	{
+		"link": "1-safety/3-risk-assessment.md",
+		"char_ofs": 12723,
+		"byte_ofs": 21394
+	},
+	{
+		"link": "1-safety/4-potential-risks.md",
+		"char_ofs": 14240,
+		"byte_ofs": 24875
+	},
+	{
+		"link": "1-safety/5-validity-and-responsibilities.md",
+		"char_ofs": 14791,
+		"byte_ofs": 26180
+	},
+	{
+		"link": "1-safety/6-reaction-time.md",
+		"char_ofs": 15196,
+		"byte_ofs": 27135
+	},
+	{
+		"link": "2-installation/README.md",
+		"char_ofs": 15467,
+		"byte_ofs": 27695
+	},
+	{
+		"link": "2-installation/1-scm-install.md",
+		"char_ofs": 15476,
+		"byte_ofs": 27713
+	},
+	{
+		"link": "2-installation/2-add-io-install.md",
+		"char_ofs": 15559,
+		"byte_ofs": 27915
+	},
+	{
+		"link": "2-installation/3-profisafe-install.md",
+		"char_ofs": 15649,
+		"byte_ofs": 28122
+	},
+	{
+		"link": "3-safety-function/README.md",
+		"char_ofs": 15751,
+		"byte_ofs": 28341
+	},
+	{
+		"link": "3-safety-function/1-description-term.md",
+		"char_ofs": 15776,
+		"byte_ofs": 28379
+	},
+	{
+		"link": "3-safety-function/2-collaborative-operation-mode/README.md",
+		"char_ofs": 17668,
+		"byte_ofs": 32309
+	},
+	{
+		"link": "3-safety-function/2-collaborative-operation-mode/1-safety-rated-monitored-stop.md",
+		"char_ofs": 17846,
+		"byte_ofs": 32701
+	},
+	{
+		"link": "3-safety-function/2-collaborative-operation-mode/2-speed-separation-monitoring.md",
+		"char_ofs": 18360,
+		"byte_ofs": 33678
+	},
+	{
+		"link": "3-safety-function/2-collaborative-operation-mode/3-power-force-limit.md",
+		"char_ofs": 18793,
+		"byte_ofs": 34522
+	},
+	{
+		"link": "3-safety-function/3-safety-function/README.md",
+		"char_ofs": 19086,
+		"byte_ofs": 35148
+	},
+	{
+		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/README.md",
+		"char_ofs": 19187,
+		"byte_ofs": 35368
+	},
+	{
+		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/1-joint-space.md",
+		"char_ofs": 20210,
+		"byte_ofs": 37462
+	},
+	{
+		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/2-joint-speed.md",
+		"char_ofs": 21288,
+		"byte_ofs": 39135
+	},
+	{
+		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/3-joint-SOS.md",
+		"char_ofs": 22201,
+		"byte_ofs": 40536
+	},
+	{
+		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/4-tcp-speed.md",
+		"char_ofs": 22927,
+		"byte_ofs": 41659
+	},
+	{
+		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/5-re-plan.md",
+		"char_ofs": 23990,
+		"byte_ofs": 43286
+	},
+	{
+		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/6-collision.md",
+		"char_ofs": 25120,
+		"byte_ofs": 45257
+	},
+	{
+		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/7-power.md",
+		"char_ofs": 26145,
+		"byte_ofs": 47012
+	},
+	{
+		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/8-momentum.md",
+		"char_ofs": 27047,
+		"byte_ofs": 48541
+	},
+	{
+		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/9-stop-function.md",
+		"char_ofs": 27956,
+		"byte_ofs": 50087
+	},
+	{
+		"link": "3-safety-function/3-safety-function/2-safety-layout/README.md",
+		"char_ofs": 29062,
+		"byte_ofs": 51878
+	},
+	{
+		"link": "3-safety-function/3-safety-function/2-safety-layout/2-safety-tool-modeling.md",
+		"char_ofs": 29112,
+		"byte_ofs": 51996
+	},
+	{
+		"link": "3-safety-function/3-safety-function/2-safety-layout/3-safety-robot-modeling.md",
+		"char_ofs": 30726,
+		"byte_ofs": 54720
+	},
+	{
+		"link": "3-safety-function/3-safety-function/2-safety-layout/4-safety-tcp-orientation.md",
+		"char_ofs": 31539,
+		"byte_ofs": 56028
+	},
+	{
+		"link": "3-safety-function/3-safety-function/3-safety-io/README.md",
+		"char_ofs": 33042,
+		"byte_ofs": 58416
+	},
+	{
+		"link": "3-safety-function/3-safety-function/3-safety-io/1-default-io.md",
+		"char_ofs": 33057,
+		"byte_ofs": 58441
+	},
+	{
+		"link": "3-safety-function/3-safety-function/3-safety-io/2-additional-io.md",
+		"char_ofs": 33949,
+		"byte_ofs": 59872
+	},
+	{
+		"link": "3-safety-function/3-safety-function/3-safety-io/3-Linker.md",
+		"char_ofs": 34712,
+		"byte_ofs": 61119
+	},
+	{
+		"link": "3-safety-function/3-safety-function/3-safety-io/4-profinet.md",
+		"char_ofs": 35301,
+		"byte_ofs": 62004
+	},
+	{
+		"link": "3-safety-function/3-safety-function/3-safety-io/5-profisafe.md",
+		"char_ofs": 37252,
+		"byte_ofs": 64559
+	},
+	{
+		"link": "4-configuration/README.md",
+		"char_ofs": 38474,
+		"byte_ofs": 66256
+	},
+	{
+		"link": "4-configuration/1-check-before-configuration/README.md",
+		"char_ofs": 38486,
+		"byte_ofs": 66281
+	},
+	{
+		"link": "4-configuration/1-check-before-configuration/1-encoder-offset.md",
+		"char_ofs": 38510,
+		"byte_ofs": 66332
+	},
+	{
+		"link": "4-configuration/1-check-before-configuration/2-tool-data-setting.md",
+		"char_ofs": 39467,
+		"byte_ofs": 68011
+	},
+	{
+		"link": "4-configuration/1-check-before-configuration/3-password-setting.md",
+		"char_ofs": 40496,
+		"byte_ofs": 70096
+	},
+	{
+		"link": "4-configuration/1-check-before-configuration/4-certification.md",
+		"char_ofs": 40974,
+		"byte_ofs": 71098
+	},
+	{
+		"link": "4-configuration/2-change-safety-parameter.md",
+		"char_ofs": 41402,
+		"byte_ofs": 71986
+	},
+	{
+		"link": "5-monitoring/README.md",
+		"char_ofs": 41992,
+		"byte_ofs": 73126
+	},
+	{
+		"link": "5-monitoring/1-robot-limit-parameter-monitoring.md",
+		"char_ofs": 42183,
+		"byte_ofs": 73486
+	},
+	{
+		"link": "5-monitoring/4-safety-io-status-monitoring.md",
+		"char_ofs": 42681,
+		"byte_ofs": 74386
+	},
+	{
+		"link": "6-recovery/README.md",
+		"char_ofs": 42843,
+		"byte_ofs": 74646
+	},
+	{
+		"link": "6-recovery/1-recovery-robot-position-violation.md",
+		"char_ofs": 43071,
+		"byte_ofs": 75139
+	},
+	{
+		"link": "6-recovery/2-recovery-robot-speed-violation.md",
+		"char_ofs": 43474,
+		"byte_ofs": 76005
+	},
+	{
+		"link": "6-recovery/3-recovery-robot-force-violation.md",
+		"char_ofs": 43834,
+		"byte_ofs": 76772
+	},
+	{
+		"link": "6-recovery/4-recovery-sos-violation.md",
+		"char_ofs": 44276,
+		"byte_ofs": 77671
+	},
+	{
+		"link": "7-error-message/README.md",
+		"char_ofs": 44724,
+		"byte_ofs": 78636
+	},
+	{
+		"link": "7-error-message/e101-e1860.md",
+		"char_ofs": 44761,
+		"byte_ofs": 78723
+	},
+	{
+		"link": "7-error-message/w650-w665.md",
+		"char_ofs": 58365,
+		"byte_ofs": 103620
+	},
+	{
+		"link": "attachment/README.md",
+		"char_ofs": 61298,
+		"byte_ofs": 108476
+	},
+	{
+		"link": "attachment/rules-criteria-and-public-notice.md",
+		"char_ofs": 61304,
+		"byte_ofs": 108491
+	}
+]
