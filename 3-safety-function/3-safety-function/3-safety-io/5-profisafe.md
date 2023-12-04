@@ -6,12 +6,12 @@
 
 ![Profisafe Consol Image](../../../_assets/safetyio_profisafe/BD671_console.png)
 
- - Source Address : Source Address를 설정합니다. (설정 범위 : 1 ~ 65534)
+ - Source Address : Source Address를 설정합니다. (1로 고정)
  - Destination Address : Destination Address를 설정합니다. (설정 범위 : 1 ~ 65534)
  
   **2. 참고 사항** 
   
- - Address Type :  Address Type 2 (Source & Destination Address 모두 체크함)
+ - Address Type :  Address Type 1 (Destination Address만 체크함)
  - Reaction on Device_Fault : 본 장치가 Fault 상태가 되면 모든 F-Output 출력은 Fail-safe(0)상태로 변경됩니다. 그리고 장치의 Fault상태가 해소되고 난 뒤에는 F-Host에서 Global- Acknowledge 와 같은 명령으로 F-Device를 re-integration 하는 과정이 필요합니다.
  
  **3. 알람 리스트** 
@@ -40,5 +40,5 @@
 
 ![Profisafe TP Image](../../../_assets/safetyio_profisafe/profisafe.PNG)
 
- - Source Address : Source Address를 설정합니다. (설정 범위 : 1 ~ 65534)
+ - Source Address : Source Address를 설정합니다. (1로 고정)
  - Destination Address : Destination Address를 설정합니다. (설정 범위 : 1 ~ 65534)
