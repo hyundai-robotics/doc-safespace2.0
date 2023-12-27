@@ -4,7 +4,7 @@ Replan is a function that adjusts the speed of the robot based on a input signal
 
 You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Re plan]** menu.
 
-![Window for setting raplan parameters](../../../_assets/replan.png)
+![Window for setting raplan parameters](../../../_assets/replan.PNG)
 
 |  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |

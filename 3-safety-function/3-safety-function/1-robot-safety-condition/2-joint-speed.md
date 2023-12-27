@@ -2,11 +2,11 @@
 
 These parameters are the limit values for monitoring the safety functions relating to the speed in which the robot’s joints move. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-![An example of joint speed setting](../../../_assets/joint_speed.png)
+![An example of joint speed setting](<../../../_assets/joint_speed.png>)
 
 You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Joint speed]** menu.
 
-![Window for setting joint speed parameters](<../../../_assets/joint_speed_param.png>)
+![Window for setting joint speed parameters](<../../../_assets/joint_speed_param.PNG>)
 
 |  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |

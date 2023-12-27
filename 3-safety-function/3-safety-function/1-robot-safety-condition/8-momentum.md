@@ -4,7 +4,7 @@ It is a function that monitors whether the robot's momentum exceeds the allowabl
 
 You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Momentum]** menu.
 
-![Window for setting momentum monitoring parameters](../../../_assets/momentum.png)
+![Window for setting momentum monitoring parameters](../../../_assets/momentum.PNG)
 
 | **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default setting value** |
 | :------: | ---------------------------------------------------------------- | :---------: |
