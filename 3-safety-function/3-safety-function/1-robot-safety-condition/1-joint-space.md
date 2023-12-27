@@ -6,7 +6,7 @@ These parameters are the limit values for monitoring the safety functions relati
 
 You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Joint space]** menu.
 
-![Window for setting joint space parameters](<../../../_assets/joint_space_param.png>)
+![Window for setting joint space parameters](<../../../_assets/joint_space_param.PNG>)
 
 |  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
