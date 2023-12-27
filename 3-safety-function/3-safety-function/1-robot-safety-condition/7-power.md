@@ -1,18 +1,18 @@
-﻿# 3.3.1.7 파워 감시
+﻿# 3.3.1.7 Power monitoring
 
-로봇이 발생하는 힘에 대해 허용치를 초과하는지 감시하는 기능입니다. 모니터링 위반 시에는 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+It is a function that monitors whether the robot's power exceeds the allowable value. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 1: 안전 기능 > 파라미터 설정 > 로봇 제한 > 파워 감시]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Power]** menu.
 
-![파워 감시 설정 화면](../../../_assets/power.png)
+![Window for setting power monitoring parameters](../../../_assets/power.png)
 
-| **파라미터** | 　　　　　　　　　**설명**                                                  |  **기본 설정값** |
+| **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default setting value** |
 | :------: | ---------------------------------------------------------------- | :---------: |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Stop function |   <p>기능 위반시 정지 방법</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| 파워 |   <p>로봇의 파워 제한값</p><p>(80 ~ 1000 (W))</p>  | 1000 |
+| Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Power |   <p>The power limit of robot</p><p>(80 ~ 1000 (W))</p>  | 1000 |
 
 {% hint style="warning" %}
-* 운동 에너지에 비례하여 속도가 높고 가반 하중이 큰 경우 로봇의 충격량이 커질 수 있으므로 로봇이 외부의 물체와 충돌하는 경우 상당한 수준의 충격이 발생할 수 있습니다. 협동 공간에서는 안전한 속도와 가반 하중을 유지하여 운전하십시오.
-* 툴 정보 및 부가 중량을 실제와 다르게 설정하면 오감지가 발생할 수 있습니다. 기능 사용 전 정보를 확인해주십시오.
+* Because the speed increases in proportion to kinetic energy and a high payload may increase the robot’s momentum, the collision of the robot with an external object may generate significant impact. In the collaborative operation space, operate the robot while maintaining a safe speed and payload.
+* If the tool and additional load information are set differently from the actual one, error detection would be occured incorrectly. Please check the information before using the function.
 {% endhint %}

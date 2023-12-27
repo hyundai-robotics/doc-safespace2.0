@@ -1,17 +1,18 @@
-﻿# 1.6.2 정지 감시
+﻿# 1.6.2 SOS monitoring
 
-정지 감시는 로봇 정지 동작시 각 축의 비정상적인 움직임이 있는지 감시하는 기능입니다. 설정한 한계값 위반 시에는 정지0이 즉시 활성화됩니다.
+SOS monitoring is a function that monitors for abnormal movement of each axis during robot stop operation. If a monitoring violation occurs, Stop0 will be actuated immediately.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 로봇 제한 > 조인트 SOS]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
 
-![정지 감시 파라미터 설정 화면](<../../../_assets/joint_sos_param.png>)
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Joint SOS]** menu.
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+![Window for setting joint SOS parameters](<../../../_assets/joint_sos_param.png>)
+
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Joint OnOff |   <p>각 관절의 활성화 여부</p><p>(On/Off)</p>  |  Off |
-| tolerance |   <p>각 관절의 각도 제한값</p><p>(0.0 ~ 3.0 (deg))</p>  |  0.1 |
+| Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Joint OnOff |   <p>Activation of each joint</p><p>(On/Off)</p>  |  Off |
+| tolerance |   <p>The angle limit value of a joint</p><p>(0.0 ~ 3.0 (deg))</p>  |  0.1 |
 
 {% hint style="warning" %}
-**\[주의]**: 정지 감시 파라미터 위반 시에는 재기동 전 로봇의 움직임이 정상인지 반드시 확인하십시오.  
+**\[Caution]**: Make sure that the robot moves normally before restarting operation if SOS monitoirng is violated.  
 {% endhint %}

@@ -1,23 +1,23 @@
-﻿# 3.3.1.1 조인트 각도 제한 설정
+﻿# 3.3.1.1 Joint space monitoring
 
-조인트 제한 파라미터는 로봇의 조인트 공간에서 안전 기능을 모니터링하기 위한 한계값입니다. 모니터링 위반 시에는 설정한 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+These parameters are the limit values for monitoring the safety functions relating to the space in which the robot’s joints move. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-![그림 4 조인트 각도 제한 설정 예(S축)](<../../../_assets/joint_space.png>)
+![An example of joint space setting (S-axis)](<../../../_assets/joint_space.png>)
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 로봇 제한 > 조인트 각도 제한]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Joint space]** menu.
 
-![그림 5 조인트 각도 제한 파라미터 설정 화면](<../../../_assets/joint_space_param.png>)
+![Window for setting joint space parameters](<../../../_assets/joint_space_param.png>)
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Type |  <p>안전영역의 종류</p><p>(작업영역/보호영역)</p>  | 작업 영역 |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Stop function |   <p>기능 위반시 정지 방법</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| Joint OnOff |   <p>각 관절의 활성화 여부</p><p>(On/Off)</p>  |  Off |
-| Min |   <p>각 관절의 각도 제한값</p><p>(-360.0 ~ 360.0 (deg))</p>  |  -360.0 |
-| Max |   <p>각 관절의 각도 제한값</p><p>(-360.0 ~ 360.0 (deg))</p>  |  360.0 |
+| Type |  <p>Type of space</p><p>(working space/protected space)</p>  | working space |
+| Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Joint OnOff |   <p>Activation of each joint</p><p>(On/Off)</p>  |  Off |
+| Min |   <p>The angle limit value of a joint</p><p>(-360.0 ~ 360.0 (deg))</p>  |  -360.0 |
+| Max |   <p>The angle limit value of a joint</p><p>(-360.0 ~ 360.0 (deg))</p>  |  360.0 |
 
 {% hint style="warning" %}
-**\[주의]**: 안전기능은 설정한 영역을 기반으로 감시합니다. 설정한 영역이 정지거리를 감안하여 설정해야 하며, 구동 전 반드시 검증을 수행해야합니다.  
+**\[Caution]**: The safety function is monitored based on the set parameters. In configuring a limit, you must consider the stop reaction time and stopping distance. Before running the robot, verification must be performed.
 {% endhint %}
  

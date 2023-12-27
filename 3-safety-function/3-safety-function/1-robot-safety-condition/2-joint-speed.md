@@ -1,21 +1,21 @@
-﻿# 3.3.1.2 조인트 속도 제한
+﻿# 3.3.1.2 Joint speed monitoring
 
-조인트 속도 제한 파라미터는 로봇의 조인트 속도를 감시하기 위한 한계값입니다. 한계값 위반 시에는 설정한 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+These parameters are the limit values for monitoring the safety functions relating to the speed in which the robot’s joints move. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-![그림 4 조인트 속도 제한 설정 예](../../../_assets/joint_speed.png)
+![An example of joint speed setting](../../../_assets/joint_speed.png)
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 로봇 제한 > 조인트 속도 제한]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Joint speed]** menu.
 
-![그림 5 조인트 속도 제한 파라미터 설정 화면](<../../../_assets/joint_speed_param.png>)
+![Window for setting joint speed parameters](<../../../_assets/joint_speed_param.png>)
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Stop function |   <p>기능 위반시 정지 방법</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| Joint OnOff |   <p>각 관절의 활성화 여부</p><p>(On/Off)</p>  |  Off |
-| speed |   <p>각 관절의 속도 제한값</p><p>(0 ~ 5000 (mm/s))</p>  |  5000.0 |
+| Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Joint OnOff |   <p>Activation of each joint</p><p>(On/Off)</p>  |  Off |
+| speed |   <p>The speed limit value of a joint</p><p>(0 ~ 5000 (mm/s))</p>  |  5000.0 |
 
 {% hint style="warning" %}
-**\[주의]**: 속도 감시 기능 설정시에는 반드시 정지 반응 시간을 고려하고 커버를 덮어 충돌 및 부상을 예방하십시오.
+**\[Caution]**: The safety function is monitored based on the set parameters. In configuring a limit, you must consider the stop reaction time and stopping distance. Before running the robot, verification must be performed.
 {% endhint %}
  

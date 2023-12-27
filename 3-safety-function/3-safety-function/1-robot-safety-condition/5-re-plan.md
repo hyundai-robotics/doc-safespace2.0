@@ -1,20 +1,20 @@
 ﻿# 3.3.1.5 Re plan
 
-Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 로봇의 속도를 조절하는 기능입니다. 입력신호에 해당하는 감속비율로 로봇의 운전속도가 변경되고, 지연시간 이후에 해당하는 속도로 TCP 속도를 감시합니다. 지연시간이 충분하지 않거나, 로봇의 감속이 충분히 이루어지지 않아 TCP 속도 제한값을 위반하게 되면 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+Replan is a function that adjusts the speed of the robot based on a input signal from an external safety sensor. The robot's operating speed is changed at a deceleration rate corresponding to the input signal, and the TCP speed is monitored at a speed corresponding to the delay time. If the delay time is insufficient or the robot is not decelerated enough to violate the TCP speed limit, the safety stop (Stop0, Stop1, Stop2) will be activated immediately.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 1: 안전 기능 > 파라미터 설정 > 로봇 제한 > Re plan]** 메뉴에서 파라미터 
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Re plan]** menu.
 
-![raplan 설정 화면](../../../_assets/replan.png)
+![Window for setting raplan parameters](../../../_assets/replan.png)
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Replan |   <p>입력신호에 따른 속도 조절 기능 사용 여부</p><p>(On/Off)</p>  |  Off |
-| 속도 제한값 |   <p>Replan 이후 TCP 속도 제한값</p><p>(0 ~ 50000 (mm/s))</p>  | 50000 |
-| 감속 비율 |   <p>Replan시 사용할 감속 비율</p><p>(0 ~ 100 (%))</p>  | 0 |
-| 지연 시간 |   <p>RePlan으로 속도 변경시 지연시간 이후에 변경된 속도 제한값으로 감시함  </p><p>(0 ~ 1000(ms))</p>  | 0 |
-| 입력 신호 할당 |   <p>Replan을 위한 입력 신호</p><p>(0 ~ 16)</p>  |  0 |
+| Replan |   <p>Activation of RePlan function</p><p>(On/Off)</p>  |  Off |
+| Limit |   <p>TCP speed limit</p><p>(0 ~ 50000 (mm/s))</p>  | 50000 |
+| Rate |   <p>Deceleration ratio for Replan</p><p>(0 ~ 100 (%))</p>  | 0 |
+| Delay time |   <p>Monitor changed speed limit after delay time due to RePlan</p><p>(0 ~ 1000(ms))</p>  | 0 |
+| Input signal setting |   <p> Input signal assignment for replan</p><p>(0 ~ 16)</p>  |  0 |
 
 {% hint style="warning" %}
-* 속도 한계 구성 시에는 반드시 정지 시간을 고려하고 커버를 덮어 충돌 및 부상을 예방하십시오.
-* 운동 에너지에 비례하여 속도가 높고 가반 하중이 큰 경우 로봇의 충격량이 커질 수 있으므로 로봇이 외부의 물체와 충돌하는 경우 상당한 수준의 충격이 발생할 수 있습니다. 협동 공간에서는 안전한 속도와 가반 하중을 유지하여 운전하십시오.
+* In configuring a speed limit, you must consider the stop reaction time and put a cover on the target to prevent collisions and injuries.
+* Because the speed increases in proportion to kinetic energy and a high payload may increase the robot’s momentum, the collision of the robot with an external object may generate significant impact. In the collaborative operation space, operate the robot while maintaining a safe speed and payload.
 {% endhint %}

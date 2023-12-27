@@ -1,2 +1,2 @@
-﻿# 3. SafeSpace2.0 안전 기능
+﻿# 3. SafeSpace2.0 safety functions
 
