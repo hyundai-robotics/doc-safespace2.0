@@ -1,21 +1,21 @@
-﻿# 4.1.2 툴 데이터 설정
+﻿# 4.1.2 Setting of tool data
 
-협동로봇의 안전 기능은 로봇 플랜지에 부착된 툴을 포함한 로봇 시스템 전체를 감시합니다. 따라서 툴 데이터와 실제 값의 오차가 적을수록 보다 정확하게 안전 기능이 동작하게 됩니다. 플랜지 좌표계를 기준으로 툴의 길이와 각도를 설정하고 툴의 중량, 무게 중심과 이너셔 정보를 단위에 맞게 입력하십시오.
+The safety functions monitor the entire robot system including the tool attached to the robot’s tool flange. Therefore, the smaller the difference between the tool data and its actual value, the more accurately the safety functions will work. Set the length and angle of the tool based on the flange coordinate system and input the information on the weight, center of gravity, and inertia of the tool in the applicable units.
 
-1. 운전 방식을 수동 모드로 설정하십시오.
-2. 비상 정지 스위치를 눌러 모터의 전원을 차단하십시오.
-3. **\[설정]** 버튼 > **\[3: 로봇 파라미터 > 1: 툴 데이터]** 메뉴를 터치하십시오.
-4. 각 축의 데이터를 확인하고 툴의 중량, 무게 중심과 이너셔를 설정한 후 **\[OK]** 버튼을 터치하여 저장하십시오.
+1. Set the operating mode to the manual mode.
+2. Disconnect the power of the motor by pressing the emergency stop button.
+3. Select the **\[Configure]** > **\[3: Robot parameter > 1: Tool data]** menu.
+4. Check the data of each axis, set the weight, center of gravity, and inertia of the tool, and save the values by clicking the **\[OK]** button.
 
 ![](../../_assets/image20.jpeg)
 
-* 새로운 툴 데이터를 생성하거나 기존의 프로그램을 활용하여 툴 데이터를 간단히 생성하려면,  **\[자동보정]** 버튼을 터치하십시오.
-* 툴 각도를 보정하려면, **\[각도보정]** 버튼을 터치하십시오.
-* 새로운 사용자 좌표계를 추가하거나 사용자 좌표계를 삭제하려면, **\[+]**/**\[-]** 버튼을 이용하십시오.
-* 툴 데이터의 상세 정보를 확인 및 편집하려면, 툴 데이터 목록에서 원하는 이름을 선택하십시오.
-* 툴 데이터 정보를 복사하여 다른 툴 데이터에 붙여 넣으려면, **\[페이지 복사]**/**\[페이지 붙여넣기]** 버튼을 이용하십시오.
+* To easily create new tool data from scratch utilizing the current program, click the \[Auto calibration] button.
+* To correct the tool angle, click the \[Angle calibration] button.
+* To add a new user coordinate system or delete one, use the \[+] or \[-] buttons, respectively.
+* To view and edit the detailed information of tool data, select a tool data name to be viewed and edited.
+* To copy the information on tool data and paste it to that of another, use the \[Copy page] and \[Paste page] buttons, respectively.
 
 {% hint style="info" %}
-* 툴의 무게와 중심에 대한 정보가 없을 경우 부하추정 기능을 이용하여 값을 추정할 수 있습니다. 자세한 내용은 “[**Hi6 제어기 조작 설명서**](https://hyundai-robotics.gitbook.io/hi6-operation-manual)”를 참고하십시오.
-* 툴 데이터 설정에 대한 자세한 내용은 “[**Hi6 제어기 조작 설명서**](https://hyundai-robotics.gitbook.io/hi6-operation-manual)”를 참고하십시오.
+* When there is no information on the weight and center of gravity of a tool, you can estimate the values using the load estimation function. For more details, see “[**Operation Manual for Hi6 Controllers.**](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/)”
+* For more details on tool data setting, see “[**Operation Manual for Hi6 Controllers.**](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/)”
 {% endhint %}

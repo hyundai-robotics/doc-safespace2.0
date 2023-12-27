@@ -1,89 +1,89 @@
-﻿# 3.1 용어 설명
+﻿# 3.1 Description of terms
 
-### <mark style="color:green;">로봇 감시 기능</mark>&#xD;
+### <mark style="color:green;">Robot monitoring functions</mark>&#xD;
 
-로봇의 속도, 힘, 운동량을 감시하기 위해 기준이 되는 파라미터입니다.
+These are the functions for monitoring the speed, force and momentum of the robot.
 
-*   **조인트 각도 감시**
+*   **Joint angle monitoring**
 
-    각 축 조인트의 위치를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors the position of each axial joint. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
 
-*   **조인트 속도 감시**
+*   **Joint speed monitoring**
 
-    각 축 조인트의 속도를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors the speed of each axial joint. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
     
-*   **안전 정지 감시(SOS, Safe Operating Stop)**
+*   **Safe operating stop (SOS) monitoring**
 
-    각 축에 슬립 발생 없이 정지 상태를 유지하는지 감시. 기준값을 초과하는 경우 정지0을 수행
+    This monitors whether the robot stops without any slips. In cases when the specified value is exceeded, Stop0 will be actuated. 
 
-*   **TCP 위치 감시**
+*   **Tool center point (TCP) position monitoring**
 
-    안전 툴 모델이 안전 영역을 위반하는지 감시. 영역을 침범하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors whether the safety tool model violates the safety space. In cases when the safety space is intruded into, the safety stop set by the user will be actuated.
     
-*   **TCP 방향 감시**
+*   **TCP orientation monitoring**
 
-    툴의 방향이 지정된 범위를 벗어나지 않는지 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors whether the tool orientation is out of the specified range. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
     
-*   **TCP 속도 감시**
+*   **TCP speed monitoring**
 
-    툴 끝의 속도를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors the speed of the tool tip. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
     
-*   **파워 감시**
+*   **Power monitoring**
 
-    로봇의 파워를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors the power of the robot. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
     
-*   **모멘텀 감시**
+*   **Momentum monitoring**
 
-    로봇의 모멘텀을 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
-
-
-*   **충돌 검지**
-
-    로봇에 외력이 가해져 허용치를 초과하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors the momentum of the robot. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
 
 
-### <mark style="color:green;">안전 레이아웃</mark>&#xD;
+*   **Collision detection**
 
-TCP 위치와 방향 감시를 위해 기준이 되는 안전 영역과 툴 영역의 파라미터입니다.
-
-*   **안전 영역**
-
-    툴의 작업 영역과 보호 영역의 통칭
-*   **작업 영역**
-
-    로봇이 작업을 수행하는 영역. 툴 및 로봇 엘보우 모델이 작업 영역을 벗어나는 경우 안전 정지 수행
-*   **보호 영역**
-
-    로봇으로부터 보호되어야 하는 영역. 툴 및 로봇 엘보우 모델이 보호 영역을 침범하는 경우 안전 정지 수행
-*   **안전 툴 모델링**
-
-    TCP 위치와 방향 감시를 위해 로봇에 부착된 툴을 구와 원뿔로 모델링
-*   **안전 로봇 모델링**
-
-    로봇의 2축과 3축을 캡슐로 모델링하여 안전 영역과의 거리를 감시
+    In cases when the allowable value is exceeded because of an external force applied to the robot, the safety stop set by the user will be actuated.
 
 
+### <mark style="color:green;">Safety layout</mark>&#xD;
 
-### <mark style="color:green;">안전 정지</mark>&#xD;
+These are the parameters for the safe space and the tool space that form the criteria for monitoring the TCP position and orientation.
 
-안전에 위반이 되는 경우 안전한 상태로 만들기 위해 로봇을 정지시키는 것으로 정지 방법에는 3 가지가 있습니다. 각 정지 방법에 대한 자세한 정보는 “ISO 13850” 또는 “IEC 60204-1”를 참조하십시오.
+*   **Safety space**
 
-*   **정지0**
+    This refers to the working space and the protected space.
+*   **Working space**
 
-    모든 조인트의 모터 전원을 즉시 제거하고 정지(제어되지 않은 정지)
-*   **정지1**
+    This refers to the space in which the robot carries out work. If the tool or the robot’s model goes out of the working space, the safety stop function will be actuated.
+*   **Protected space**
 
-    모든 조인트의 모터가 감속 후 정지하고 이후에 모터의 전원을 제거(제어 정지). 로봇은 프로그램 경로를 계속 따라가며 감속 정지하고 로봇이 정지하자마자 전원 차단
-*   **정지2**
+    This refers to the space where the operator should be safeguarded from the robot. If the tool or the robot’s model goes out of the protected space, the safety stop function will be actuated.
+*   **Safety tool modeling**
 
-    모든 조인트의 모터가 감속 후 안전 정지 감시(SOS, Safe Operating Stop) 동작. 모든 모터의 전원 공급 유지 상태
+    The tool attached to the robot is modeled in spheres and cones to monitor the TCP position and orientation.
+*   **Safety robot modeling**
+
+   The robot’s 2nd axis and 3rd axis are modeled in capsule to monitor its distance from the safety space.
 
 
-정지1과 정지2는 감속 시간과 거리를 통해 감속 과정을 모니터링합니다. 
 
-*   **정지 시간**
+### <mark style="color:green;">Safety stop</mark>&#xD;
 
-    감속을 시작하여 실제 정지하기까지의 시간을 모니터링하여, 설정한 시간 안에 로봇이 정지하지 않으면 정지0을 수행하여 모터의 전원을 즉시 제거합니다.
-*   **정지 거리**
+This is the function that stops the robot if any safety conditions are violated. There are three methods for the safety stop. For more details on the methods, refer to ISO 13850 or IEC 60204-1.
 
-    감속을 시작하여 실제 정지하기까지의 TCP 거리를 모니터링하여, 설정한 거리 안에 로봇이 정지하지 않으면 정지0을 수행하여 모터의 전원을 즉시 제거합니다.
+*   **Stop0**
+
+    The power of the motors of all the joint modules will disconnect immediately, and the motors will stop (uncontrolled stop).
+*   **Stop1**
+
+    The motors of all the joint modules will decelerate and stop, and the power of the motors will disconnect (controlled stop). The robot will decelerate as it continues to move along the programmed path, and then it will stop. As soon as the robot stops, its power will be disconnected.
+*   **Stop2**
+
+    The motors of all the joint modules will decelerate, and the safe operating stop (SOS) will take effect. The power supply status of all the motors will be retained.
+
+
+If stop 1 and stop are performed, the deceleration process is monitored through the stop time and distance.
+
+*   **Stop time**
+
+    This monitors the time from start deceleration to actual robot stop. If the robot does not stop within the set time, perform Stop 0 to immediately remove power from the motor.
+*   **Stop distance**
+
+    This monitors the distance of TCP from start deceleration to actual robot stop. If the robot does not stop within the set time, perform Stop 0 to immediately remove power from the motor.

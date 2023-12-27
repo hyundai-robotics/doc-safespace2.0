@@ -1,20 +1,20 @@
-﻿# 6.4	안전 정지 감시(SOS) 위반 시 복구
+﻿# 6.4	Recovery in cases of safe operating stop (SOS) violations
 
-안전 정지 감시(SOS) 위반은 로봇의 모터가 켜져 있고 정지 상태에서 움직임이 감지되는 것입니다. 안전 정지 감지 위반 시에는 로봇이 순간적인 움직임을 감지하고 에러를 발생하므로 로봇의 위치를 이동하지 않고 에러를 해제할 수 있습니다.
+SOS violations are situations in which the robot’s motion is detected while its motor is on and is supposed to be in a stop state. Because the robot detects the instantaneous speed in the case of robot speed violations, you can clear the error without moving the robot’s position.
 
-1.  모드스위치를 수동으로 전환하여 수동모드로 진입하십시오.
-
-
-2.  로봇에 힘을 가하는 외부 요인 제거하십시오.
+1.  Change the mode switch to manual mode.
 
 
-3.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
+2.  Remove the external factor that is applying force on the robot.
+
+
+3.  On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
 
 
 {% hint style="warning" %}
-**[주의]**
+**[Caution]**
 
-* 에러 해제 후 안전 정지 감시 파라미터를 확인하십시오.
-* 자동 모드에서 모터를 켜고 에러의 재발 여부를 확인하십시오.
-* 동일한 에러가 다시 발생하면 해당 축의 모터와 감속기를 점검하십시오.
+* After clearing the violation, recheck the SOS parameters.
+* Turn on the motor in the automatic mode and check if the error does not persist.
+* If the same error recurs, check the motor and reducer of the pertaining axis.
 {% endhint %}

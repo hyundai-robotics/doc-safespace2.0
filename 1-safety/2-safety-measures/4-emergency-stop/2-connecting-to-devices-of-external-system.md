@@ -1,4 +1,4 @@
-﻿# 1.2.4.2 외부 시스템의 비상 정지 장치 연결
+﻿# 1.2.4.2 Connecting to emergency stop devices of external systems
 
-기본으로 설치되어 있는 비상 정지 스위치 외에 현장 환경 및 응용에 따라 추가로 외부 비상 정지 장치를 연결할 수 있습니다. 이에 대한 자세한 내용은 “[**2. 설치**](../../../2-installation/README.md)”과 “[**3.3.3 안전 신호 입출력**](../../../3-safety-function/3-safety-function/3-safety-io/README.md)”을 참조하십시오.
+In addition to the emergency stop switches installed by default, it is possible to add external emergency stop devices according to site conditions and applications. For more details, see “[**2. Installation**](../../../2-installation/README.md)” and “[**3.3.3 Safety I/O**](../../../3-safety-function/3-safety-function/3-safety-io/README.md)”
 

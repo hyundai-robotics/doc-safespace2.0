@@ -1,8 +1,8 @@
-﻿# 6. 복구
+﻿# 6. Recovery
 
- 안전 기능 모니터링 위반으로 발생한 에러는 수동모드로 전환시 해제됩니다. 수동 모드에서는 안전기능 위반으로 로봇을 정지시키지 않으므로 로봇의 각도와 위치를 조정하여 안전한 영역으로 이동시킬 수 있습니다.
+ In manual mode, you can clear errors that occur because of the safety function violations during monitoring. Because position detection is disabled in manual mode, you can drive the robot and adjust its angle and position without violating the safety functions.
 
 
 {% hint style="warning" %}
-**\[주의]**: 수동 모드에서 복구 후 안전기능 설정 및 작업 프로그램의 티칭 위치를 다시 확인하십시오.
+**\[Caution]**: After clearing the violation, recheck the safety layout setting and the teaching position of the operating program.
 {% endhint %}

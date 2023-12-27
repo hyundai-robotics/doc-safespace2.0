@@ -1,22 +1,22 @@
-﻿# 4.1.1 엔코더 점검
+﻿# 4.1.1 Encoder offset
 
-안전 기능은 각 축에 장착된 엔코더 데이터를 기반으로 로봇의 위치와 속도를 진단하므로 엔코더 데이터의 정확성이 중요합니다. 따라서 안전 기능 사용 전 엔코더 값과 실제 값이 일치하는지 점검해야 합니다.
+The accuracy of encoder data is important because the safety functions detect the robot’s position and speed based on the data transmitted by the encoders attached to the axes. Therefore, before using the safety functions, check whether the encoder values match the actual values.
 
-1\. 로봇 각 축의 원점 눈금을 확인하여 축을 이동하십시오.
-
-
-안전 기능 위반으로 정지 발생 시 수동 모드 상태에서 조그로 각 축을 이동시키십시오. 복구 방법에 대한 자세한 내용은 “[**6.1 복구 모드**](../../6-recovery/README.md)”를 참조하십시오.
-
-2\. 작업 영역의 포즈 정보창에서 로봇의 축좌표 값이 기준 자세(**0, 90, 0, 0, 0, 0** \[deg])로 표시되는지 확인하십시오.
+1\. Check the zero mark of each axis of the robot and move the axes.
 
 
-* 작업 영역에 포즈 정보창이 없으면, 패널 스택 우측 상단의 **\[+]** 버튼을 터치한 후 패널 선택창에서 **\[포즈]**를 터치하십시오.
+Move each axis with the jog if a stop occurs because of a safety function violation. For more details on recovery, see “[**6.1 Recovery**](../../6-recovery/README.md)”.
+
+2\. In the pose information window on the workspace, check whether the axial coordinate values of the robot are displayed at the reference pose(**0, 90, 0, 0, 0, 0** \[deg]).
 
 
-3\. 각도값의 오차가 0.01 이내이면 다음 단계로 진행하고, 오차가 0.01을 초과하면 엔코더 옵셋을 수행하십시오.
+* Click the **\[+]** button at the top right part of the panel stack if the pose information window does not appear on the workspace. Then, click **\[Pose]** in the panel selection wind
 
-4\. 시스템을 재부팅하십시오.
+
+3\. Proceed to the next step if the difference of the angular value is no larger than 0.01. Otherwise, carry out the encoder offset if it is larger than 0.01.
+
+4\. Reboot the system.
 
 {% hint style="info" %}
-엔코더 옵셋에 대한 자세한 내용은 “[**Hi6 제어기 조작 설명서**](https://hyundai-robotics.gitbook.io/hi6-operation-manual)”의 “[**7.4.4 엔코더 옵셋**](https://hyundai-robotics.gitbook.io/hi6-operation-manual/7-setting/7-4-robot-parameter/encoder-offset)”을 참고하십시오.
+For more details on the encoder offset, see “[7.4.4 Encoder offsets](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/7-setting/7-4-robot-parameter/encoder-offset)” of the “[Operation Manual for Hi6 Controllers.](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/)”
 {% endhint %}

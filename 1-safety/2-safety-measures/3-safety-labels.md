@@ -1,6 +1,6 @@
-﻿# 1.2.3 안전 레이블
+﻿# 1.2.3 Safety labels
 
-제어기의 내외부에는 명판과 경고 표시, 안전 기호 등이 부착되어 있습니다. 부착된 레이블을 확인하여 안전을 확보하십시오.
+On the inside and outside of the controller, nameplates, warning signs, safety symbols, and the like are attached. Check the labels to ensure safety.
 
 ![그림 1 안전 레이블 부착 위치: 전면과 윗면(좌) / 뒷면(우)](../../_assets/safety\_labels\_1.png)
 
@@ -51,9 +51,10 @@
 ![국문 레이블 / 영문 레이블](../../_assets/image42.jpeg)
 
 {% hint style="warning" %}
-**\[경고]** : 제어기에 부착된 명판, 경고 표시, 안전 기호, 명칭 표시, 전선 마크 등의 위치를 옮기거나 페인트칠 및 커버를 씌워 가리는 행위 등 안전 레이블에 손상을 주는 일체의 행위를 금합니다.
+**\[Warning]** : Never engage in behaviors that damage safety labels, such as moving the position of the nameplate, warning signs, safety symbols, nomenclature markings, cable markings, and the like attached to the controller. In addition, do not hide these labels by putting paint or covers.
 {% endhint %}
 
 {% hint style="warning" %}
-**\[주의]** : 로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
+**\[Caution]** : Indicate the robot installation areas and hazard areas with distinct shapes, colors, or styles so that they are clearly distinguished from other facilities and equipment.
 {% endhint %}
+

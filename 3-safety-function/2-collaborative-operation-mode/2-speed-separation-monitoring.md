@@ -1,10 +1,10 @@
-﻿# 3.2.2 속도 및 위치 감시
+﻿# 3.2.2 Speed and separation monitoring
 
-로봇은 지정된 거리 및 속도 내에서 작동합니다.
+The robot operates within a specified distance and speed.
 
-속도 및 위치 감시 모드는 사람의 위치 및 속도를 감지할 수 있는 센서를 이용해 로봇과 사람 간의 거리와 상대 속도에 비례하여 로봇의 구동 속도를 제어하는 모드로 거리를 감지하는 외부 센서 입력에 대해 감속 모드를 사용할 수 있습니다.
+In the speed and separation monitoring mode, the driving speed of the robot is controlled in proportion to the distance and the relative speed between the robot and the operator, utilizing sensors that can detect the operator’s position and speed. You can use the deceleration mode for the inputs of the external sensors that detect distance.
 
-속도 및 위치 감시 모드 사용을 위한 참조 정보는 다음과 같습니다.
+The reference information on the use of the speed and separation monitoring mode is as follows:
 
-* 로봇 감속에 대한 자세한 내용은 “[**3.3.1.5 Re plan**](../3-safety-function/1-robot-safety-condition/5-re-plan.md)”을 참조하십시오.
-* 안전 신호 설정에 대한 자세한 내용은 “[**3.3.3 안전 신호 입출력**](../3-safety-function/3-safety-io/README.md)”를 참조하십시오.
+* For more details on the setting of deceleration mode, see “[**3.3.1.5 Re plan**](../3-safety-function/1-robot-safety-condition/5-re-plan.md)”
+* For more details on the setting of safety I/O signals, see “[**3.3.3 Safety I/O signals**](../3-safety-function/3-safety-io/README.md)”를 참조하십시오.

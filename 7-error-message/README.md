@@ -1,3 +1,3 @@
-﻿# 7. 에러 메시지
+﻿# 7. Error messages
 
-안전 기능 오류 메시지는 다음과 같습니다.
+The safety function error messages of SafeSpace2.0 are as follows:

@@ -1,2 +1,2 @@
-﻿# 4. 기능 설정
+﻿# 4. Configuration
 

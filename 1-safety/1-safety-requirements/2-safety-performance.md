@@ -1,7 +1,7 @@
-﻿# 1.1.2 안전 성능
+﻿# 1.1.2 Safety performance
 
-SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/출력, PROFIsafe)의 안전 성능은 다음과 같습니다. 
-|            **항목**            | **안전 성능** |         **적용 표준**         |
+The safety performance of the emergency stop and external interface(default safety I/O, PROFIsafe) in SafeSpace2.0 is as follows: 
+|            **Item**            | **Safety performance** |         **Application standards**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
 | SIL (Safety Integrity Level) |     3     | IEC 61508/62061/61800-5-2 |
@@ -10,8 +10,8 @@ SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/
 |    		PFH    			   |1.34217E-08|        ISO 13849-1        |
 
 
-그 외의 안전 기능의 안전 성능은 다음과 같습니다.
-|            **항목**            | **안전 성능** |         **적용 표준**         |
+The safety performance of other safety functions is as follows:
+|            **Item**            | **Safety performance** |         **Application standards**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
 | SIL (Safety Integrity Level) |     2     | IEC 61508/62061/61800-5-2 |

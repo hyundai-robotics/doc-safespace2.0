@@ -1,7 +1,7 @@
-﻿# 3.2.3 동력 및 힘 제한
+﻿# 3.2.3 Power and force limiting
 
-접촉 사고 발생 시, 인체에 가해지는 충격을 제한합니다. 충돌 검지 기능 파워, 모멘텀 제한 기능을 통해 작업자와 로봇 간의 접촉 사고 발생 시 작업자의 신체에 가해지는 충격을 제한할 수 있습니다.
+This limits the impact on the human body in case of a collision. The collision detection function and power, momentum limiting function can limit the impact on the operator in case of a collision between the operator and the robot.
 
-충돌 검지 기능은 민감도(%)를 설정하여 충돌을 검지합니다. 파워(W)와 모멘텀(kg·m/s)을 설정하여 로봇의 동력을 제한할 수 있습니다.
+The collision detection function detects collisions according to the set sensitivity (%). You can also restrict the robot’s driving power by setting the electric power (W) and momentum (kg·m/s).
 
-로봇 안전 기능 설정에 대한 자세한 내용은 “[**3.3 안전기능**](../3-safety-function/README.md)”을 참조하십시오.
+For more details on the setting of the robot’s safety functions, see “[**3.3 Safety functions**](../3-safety-function/README.md)”

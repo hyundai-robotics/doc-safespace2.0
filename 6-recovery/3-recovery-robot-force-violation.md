@@ -1,20 +1,19 @@
-﻿# 6.3	로봇 힘 위반 시 복구
+﻿# 6.3	Recovery in case of robot force violations
 
-로봇 힘 위반은 외부의 힘이 가해지거나 로봇 내부에서 사용하는 힘의 크기가 안전 기준을 초과하는 것으로 충돌 검지, 파워 및 모멘텀 모니터링 위반이 있습니다. 위반 발생 원인에 따라 에러를 해제할 수 있습니다.
-
-<mark style="color:green;">**로봇에 외부로부터 힘이 가해져 위반이 발생한 경우**</mark>
-
-1.  로봇에 힘을 가하는 외부 요인 제거하십시오.
+Robot force violations are situations in which external force is applied on the robot or in which the amount of the force used by the robot internally exceeds a safety limit, and these include collision detection, power, and momentum monitoring violations. You can clear errors depending on the causes of the violations.
 
 
-2.  모드 스위치를 수동으로 전환하여 수동모드로 진입하십시오.
+1.  Remove the external factor that is applying force on the robot.
 
 
-3.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
+2.  Change the mode switch to manual mode.
+
+
+3.  On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
 
 
 {% hint style="warning" %}
-**\[주의]**
+**[Caution]**
 
-* 에러 해제 후 안전 기능 설정, 툴 데이터, 작업 프로그램의 티칭 위치 및 속도를 다시 확인하십시오.
+* After clearing the violation, recheck safety function setting, tool data, the teaching position and speed of the operating program.
 {% endhint %}

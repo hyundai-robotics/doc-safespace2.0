@@ -1,6 +1,6 @@
-﻿# 1.1.1 적용 표준
+﻿# 1.1.1 Applicable standards
 
-이 제품은 산업용 로봇 안전 표준 ISO 10218-1 과 협동 운전에 관한 기술 사양서 ISO/TS 15066 에 따라 설계 및 제조되었습니다. 이 제품에 적용된 안전 표준은 다음 같습니다.
+This product has been designed and manufactured in compliance with ISO 10218-1, a safety standard of industrial robots, and ISO/TS 15066, a standard specifying safety requirements for collaborative operation. The safety standards applicable to this product are as follows:
 
 * ISO 10218-1:2011 Robots and robotic devices - Safety requirements for industrial robots - Part 1: Robots
 * ISO 10218-2:2011 Robots and robotic devices - Safety requirements for industrial robots - Part 2: Robot systems and integration

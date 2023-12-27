@@ -1,5 +1,5 @@
-﻿# 3.3 안전 기능
+﻿# 3.3 Safety functions
 
 
-SafeSpace2.0의 안전 기능은 안전 기능의 설정을 통해 구성할 수 있으며 작업자가 수행한 위험성 평가에서 선별된 위험의 대처 방안으로 사용합니다.
+The Safety functions of SafeSpace2.0 can be configured through the settings of the safety parameters. It is used as a response to selected risks in risk assessments conducted by operator.
 

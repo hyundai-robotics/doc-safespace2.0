@@ -1,3 +1,3 @@
-﻿# 1.2.4.1 비상 정지 스위치
+﻿# 1.2.4.1 Emergency stop switches
 
-비상 정지 스위치는 제어기와 티치 펜던트에 하나씩 설치되어 있습니다. 긴급 상황 발생 시 비상 정지 스위치를 누르십시오.
+emergency stop switches are installed at the controller and the teach pendant. In case of an emergency, press the emergency stop switch.

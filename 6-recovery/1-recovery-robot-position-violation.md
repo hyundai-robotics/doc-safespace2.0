@@ -1,19 +1,19 @@
-﻿# 6.1	로봇 위치 위반 시 복구
+﻿# 6.1	Recovery in case of robot position violations
 
-로봇 위치 위반은 로봇의 위치가 안전 영역을 벗어나는 것으로 TCP 위치, TCP 방향 및 조인트 모니터링 위반이 있습니다. 로봇 위치 위반 시에는 로봇을 물리적으로 움직여 위치를 이동해야 에러를 해제할 수 있습니다.
+Robot position violations are situations in which the robot’s position exceeds a safety space, and these include TCP position, TCP orientation, and joint monitoring violations. When a robot position violation occurs, you can only clear the error by moving the robot’s physical position.
 
-1.  모드스위치를 수동으로 전환하여 수동모드로 진입하십시오.
-
-
-2.  티치 펜던트의 인에이블링 스위치를 이용해 모터를 켜십시오.
+1.  Change the mode switch to manual mode.
 
 
-3.  교시 장치를 이용해 로봇을 안전 영역으로 이동시키십시오.
+2.  Turn on the motor by using the enabling switch on the teach pendant.
 
 
-4.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
+3.  Use the teaching device to move the robot back to a safety space.
+
+
+4.  On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
 
 
 {% hint style="warning" %}
-에러 해제 후 안전 레이아웃 설정 및 작업 프로그램의 티칭 위치를 다시 확인하십시오.
+**\[Caution]**: After clearing the violation, recheck the safety layout setting and the teaching position of the operating program.
 {% endhint %}

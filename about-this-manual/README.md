@@ -1,18 +1,18 @@
-﻿# 이 설명서에 대하여
+﻿# About this manual
 
-이 설명서는 현대로보틱스 SafeSpace2.0의 안전, 설치, 사용 및 유지 보수 방법에 대해 설명합니다.
+This manual describes  the safety, installation, use, and maintenance methods of SafeSpace2.0 manufactured by Hyundai Robotics.
 
-제품을 사용하기 전에 반드시 설명서의 내용을 충분히 숙지하시기 바랍니다. 또한 필요할 때 언제든 볼 수 있도록 설명서를 가까운 장소에 보관하십시오.
+Before using the product, read and fully understand the contents of this manual. In addition, keep this manual in an accessible place so that it can be read any time when necessary.
 
-이 설명서는 현대로보틱스 제품을 구매한 고객에게 참조용으로 제공되거나 교육을 위한 내부 교육 자료로 제공되어 사용될 수 있습니다.
+This manual may be provided to customers who purchase products of Hyundai Robotics or may be used as material for internal training programs.
 
-이 설명서는 표준 사양을 기준으로 작성되었으므로 구입하신 제품의 모델에 따라 일부 내용이 다를 수 있습니다. 또한 이 설명서의 내용과 사양은 제품의 성능 향상을 위해 예고 없이 변경될 수 있으며 부정확한 내용이나 오탈자로 인해 발생하는 상황에 대해서 현대로보틱스는 책임이 없습니다. 개정에 관한 상세한 정보는 당사의 인터넷 웹사이트([www.hyundai-robotics.com](https://www.hyundai-robotics.com))를 방문하여 확인하시기 바랍니다.
+As this manual has been prepared based on standard specifications, it may not apply equally to all models. In addition, the details and specifications of this manual are subject to changes for improving product performance without notice, and Hyundai Robotics will not take responsibility for any consequences of incorrect details, typos, or omissions of this manual. For detailed information on revisions, please visit our website ([www.hyundai-robotics.com](https://www.hyundai-robotics.com)).
 
-이 설명서가 적용되는 제품은 다음과 같습니다.
+Products covered by this manual are :
 
 |     **항목**    |  **명칭** | **버전** |
 | :-----------: | :-----: | :----: |
-|     티치 펜던트    |  TP630  |  V1.0  |
-|      제어기      |  Hi6a  |  V1.0  |
-| 안전 제어 모듈 |  BD642A  |  V04  |
-| PROFIsafe 통신 보드 |  BD671  |  V2  |
+|     Teach pendant     |  TP630  |  V1.0  |
+|      Controller      |  Hi6a  |  V1.0  |
+| Safety control board |  BD642A  |  V04  |
+| PROFIsafe communication board |  BD671  |  V2  |
