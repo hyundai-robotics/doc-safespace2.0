@@ -1,12 +1,12 @@
-# 1.6 반응 시간
+# 1.6 Reaction time
 
 
-*   **정지 반응 시간**
+*   **Stopping Reaction time**
 
-    안전 기능 위반으로 정지가 수행되기까지의 반응시간은 9.8ms 입니다. 반응 시간은 로봇의 정지시간 및 정지거리 계산시 반영되어야합니다.  
+    When a Safety function violation is triggered, the reaction time until a stop is 9.8 ms. The response time should be taken into account when calculating the robot's stopping time and stopping distance."
 
-*   **PROFIsafe 반응 시간**
-
-	PROFIsafe의 F-output Data에 의해 정지가 수행되기까지의 반응시간은 40.8ms 입니다. 로봇이 완전히 정지하기까지의 시간을 얻으려면 통신 주기와 로봇의 정지시간 및 정지거리 계산값이 추가되어야합니다.  
+*   **PROFIsafe Reaction time**
+	
+	When an external stop is triggered via PROFIsafe, the reaction time until a stop is 40.8 ms. To obtain the time until the robot completely stop, the communication cycle, as well as the calculated values for the robot's stopping time and stopping distance, need to be added.
 
 ****
