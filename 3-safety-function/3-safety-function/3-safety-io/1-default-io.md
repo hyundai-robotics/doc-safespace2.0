@@ -17,6 +17,6 @@ There are 4 input signals and 1 output signal, all of which are dual signals.
 ![Default Output Image](../../../_assets/safetyio_profisafe/default_out.PNG)
 
  - Pulse Test : You can select whether to use Pulse Test for each channel.
- - Error Latch 시간 : If an error occurs in a channel, even if the error is recovered, the Valid output signal is produced from the Fail-Safe value after the **Error Latch Time** has elapsed. (Unit: msec)
+ - Error Latch Time : If an error occurs in a channel, even if the error is recovered, the Valid output signal is produced from the Fail-Safe value after the **Error Latch Time** has elapsed. (Unit: msec)
 
 

@@ -14,7 +14,7 @@
  - Address Type :  Address Type 1 (Check Destination Address only)
  - Reaction on Device_Fault : When this device enters a Fault state, all F-Output will be changed to Fail-safe (0) status. After resolving the device's Fault state, a process of reintegrating the F-Device is necessary from the F-Host using commands such as Global Acknowledge.
  
- **3. 알람 리스트** 
+ **3. Alarm List** 
 
 |Alarm No.|Alarm Decsription  | 
 |--|--|
@@ -40,5 +40,5 @@
 
 ![Profisafe TP Image](../../../_assets/safetyio_profisafe/profisafe.PNG)
 
- - Source Address : Set the source Address. (1로 고정)
+ - Source Address : Set the source Address. (fixed to 1)
  - Destination Address : Set the destination Address. (Setting range : 1 ~ 65534)
