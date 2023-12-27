@@ -1,12 +1,12 @@
 ﻿# 3.3.3.3 Linker
 
-Linker는 Default Safety I/O, Additional Safety IO, PROFIsafe I/O 등의 외부신호와 로봇 제어기가 가지고 있는 여러가지 논리적 신호 또는 상태 변수를 연결 시켜주는 역활을 합니다.
+Linker serves to connect external signals such as Default Safety I/O, Additional Safety IO, and PROFIsafe I/O with various logical signals or state variables of the robot controller.
 
 ![Additional Input Image](../../../_assets/safetyio_profisafe/linker.PNG)
 
-- I/O Linker Add : Linker의 설정은 좌측 I/O function list에서 원하는 기능(Function)을 선택한 후 **[+]** 버튼을 누르고 Index(H/W ch or Bit number)를 선택합니다. I/O function list에 따라 Subset을 선택하여 세부 채널을 선택할수 있습니다.
+- I/O Linker Add : To set up the linker, select the desired function from the I/O function list on the left, press the **[+]** button, and select Index (H/W ch or Bit number). According to I/O function list You can select detailed channels by selecting Subset.
 
-- I/O Linker Delete : Linker 설정의 삭제는 화면 우측에서 Linker의 설정을 하나 선택한뒤 바로 위에 보이는 **[-]** 버튼을 눌러 삭제할 수 있습니다.
+- I/O Linker Delete : Linker settings can be deleted by selecting a linker setting on the right side of the screen and pressing the **[-]** button above.
 
 ![Additional Input Image](../../../_assets/safetyio_profisafe/linker_add.PNG)
  
