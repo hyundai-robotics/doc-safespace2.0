@@ -1,32 +1,32 @@
-﻿# 3.3.1 로봇 감시 기능
+﻿# 3.3.1 Robot monitoring functions
 
-로봇 안전 파라미터는 안전 기능을 모니터링하기 위한 한계값 및 정지방법으로 구성됩니다.
+The robot safety parameters consist of limits to monitor the safety function and stopping methods.
 
-각 안전기능은 활성화 조건과 위반시 정지방법, 한계값으로 다양한 세트를 저장하여 활용할 수 있습니다.  
+Each safety function can be utilized by storing various sets of activation conditions, limit values and methods of stopping in case of violation.  
 
-안전 파라미터를 설정하는 메뉴는 아래의 방법으로 진입하십시오.
+You can set parameter values in the following menu.
 
-**\[시스템]** 버튼 > **\[4: 응용 파라미터 > 18: SafeSpace2.0 > Parameter setup > Robot restriction]** 
+**\[System]** button > **\[4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction]** 
 ****
 
 
-로봇 제한 메뉴에서 설정할 수 있는 안전 기능은 다음과 같습니다.
+The following safety parameters can be set in the robot monitoring menu.
 
-* **조인트 위치**: 로봇이 축별로 특정 범위 내에서만 동작할 수 있도록 범위를 제한
-* **조인트 속도**: 축별 제한된 속도 이상으로 구동하지 못하게 하여 로봇의 운동량을 제한
-* **조인트 정지 감시**: 정지2 수행 후 축별로 비정상적인 움직임을 확인하여 로봇의 정지 상태를 감시
-* **TCP 속도**: TCP 기준에서 로봇이 제한된 속도 이상으로 구동하지 못하게 제한
-* **Re plan**: 외부 입력에 따라 로봇의 속도를 조절하여 협동 운전 모드 중 [3.2.2 속도 및 위치 감시](../../2-collaborative-operation-mode/2-speed-separation-monitoring.md) 수행
-* **파워, 충돌 검지**: 로봇과 작업자의 충돌 발생 시의 힘과 압력을 제한
-* **모멘텀**: 로봇과 작업자의 충돌 발생 시의 에너지와 충격 하중을 제한
+* **Joint position**: This limits the robot’s joint positions so that its axes can move only within the specified ranges.
+* **Joint speed**: This limits the robot’s momentum so that its axes cannot move beyond the specified speeds.
+* **SOS**: This monitors the robot's stationary state by checking for abnormal movement on each axis after performing stationary 2
+* **TCP speed**: This limits the robot's TCP speed so that axes cannot move beyond the specified speeds.
+* **Re plan**: This contorls the speed of robot according to external input signal to perform [3.2.2 Speed and separation monitoring](../../2-collaborative-operation-mode/2-speed-separation-monitoring.md) of collaborative operation mode.
+* **Power, collision detection**: This limits the force and pressure in case of a collision between the robot and the operator.
+* **Momentum**: This limits the energy and impact load in case of a collision between the robot and the operator.
 
 
 {% hint style="warning" %}
-**\[주의]** : 작업자 및 사용자는 로봇 주위의 인원 및 장비의 안전을 보장하기 위해 로봇 안전 기능을 구성하기 전에 위험성 평가를 수행해야 하며 평가 결과에 따라 다음 사항을 설정하십시오.
+**\[Caution]** : To ensure the safety of personnel and equipment around the robot, operators and users should perform a risk assessment before configuring the robot’s safety function and set the following details according to the assessment result:
 
-* 비밀번호 등을 설정하여 허가받지 않은 사람의 안전 구성 변경 방지
-* 안전 관련 기능 및 인터페이스 설정
-* 로봇 가동 전 설정 내용의 정확성 확인
-* 모든 안전 기능의 구성 및 설정의 위험성 평가 준수 여부 확인
+* Set passwords and the like so that the safety configuration cannot be modified by unauthorized persons.
+* Set safety-related functions and interfaces.
+* Check if the settings are correct before running the robot.
+* Check if all the safety functions are configured and if the settings conform to the result of the risk assessment.
 {% endhint %}
 

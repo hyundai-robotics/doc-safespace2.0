@@ -1,22 +1,22 @@
-﻿# 3.3.1.4 TCP 속도 제한
+﻿# 3.3.1.4 TCP speed monitoring
 
-로봇 좌표계 기준 TCP의 속도를 감시하는 기능입니다. 모니터링 위반 시에는 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+로봇 좌표계 기준 TCP의 속도를 감시하는 기능입니다. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 로봇 제한 > TCP 속도 제한]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > TCP speed]** menu.
 
-![TCP 속도 파라미터 설정 화면](../../../_assets/tcp_speed_param.png)
+![Window for setting TCP speed parameters](<../../../_assets/tcp_speed_param.png>)
 
-| **파라미터** | 　　　　　　　　　**설명**                                                  |  **기본 설정값** |
+| **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default setting value** |
 | :------: | ---------------------------------------------------------------- | :---------: |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| 안전 정지 |   <p>기능 위반시 정지 방법</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| Replan |   <p>입력신호에 따른 속도 조절 기능 사용 여부</p><p>(On/Off)</p>  |  Off |
-| 속도 제한값 |   <p>TCP 속도 제한값</p><p>(0 ~ 50000 (mm/s))</p>  | 50000 |
-| 감속 비율 |   <p>Replan시 사용할 감속 비율</p><p>(0 ~ 100 (%))</p>  | 0 |
-| 지연 시간 |   <p>RePlan으로 속도 변경시 지연시간 이후에 변경된 속도 제한값으로 감시함  </p><p>(0 ~ 1000(ms))</p>  | 0 |
-| 입력 신호 할당 |   <p>Replan을 위한 입력 신호</p><p>(0 ~ 16)</p>  |  0 |
+| Activation | <p>Activation of TCP speed monitoring function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Replan |   <p>Activation of RePlan function</p><p>(On/Off)</p>  |  Off |
+| Limit |   <p>TCP speed limit</p><p>(0 ~ 50000 (mm/s))</p>  | 50000 |
+| Rate |   <p>Deceleration ratio for Replan</p><p>(0 ~ 100 (%))</p>  | 0 |
+| Delay time |   <p>Monitor changed speed limit after delay time due to RePlan</p><p>(0 ~ 1000(ms))</p>  | 0 |
+| Input signal setting |   <p> Input signal assignment for replan</p><p>(0 ~ 16)</p>  |  0 |
 
 {% hint style="warning" %}
-**\[주의]**: 속도 감시 기능 설정시에는 반드시 정지 반응 시간을 고려하고 커버를 덮어 충돌 및 부상을 예방하십시오.
+**\[Caution]**: The safety function is monitored based on the set parameters. In configuring a limit, you must consider the stop reaction time and stopping distance. Before running the robot, verification must be performed.
 {% endhint %}
  

@@ -1,26 +1,26 @@
-﻿# 3.3.1.9 안전 정지 기능
+﻿# 3.3.1.9 Safety Stop
 
-안전 기능별로 적절한 안전 정지 유형을 설정합니다. 안전 정지 기능은 안전에 위반이 되는 경우 안전한 상태로 만들기 위해 로봇을 정지시키는 것으로 다음의 세 유형이 있습니다. 모든 유형의 안전 정지 기능은 IEC 61800-5-2의 4.2.2.4 요건을 충족합니다.
+Set an adequate safety stop type for each safety stop function. The safety stop functions, which stop the robot under a safe condition in case of a safety violation, include the following three types. All types of safety stop functions meet the requirements of Clause 4.2.2.4 of IEC 61800-5-2.
 
-* **정지0**: 모든 조인트 모듈의 모터 전원을 즉시 제거하고 정지
-* **정지1**: 모든 조인트 모듈의 모터가 감속 후 정지. 이후에 모터의 전원 제거
-* **정지2**: 모든 조인트 모듈의 모터가 감속 후 SOS (Safe Operating Stop)가 동작. 모든 모터의 전원 공급 유지 상태
+* **Stop0**: The power of the motors of all the joint modules will disconnect immediately, and the motors will stop.
+* **Stop1**: The power of the motors of all the joint modules will decelerate, and the motors will stop. Then, the power of the motors will be disconnected.
+* **Stop2**: The motors of all the joint modules will decelerate, and the safe operating stop (SOS) function will take effect. The power supply status of all the motors will be retained.
 
-안전 기능 위반에 의한 정지 유형은 기능별 파라미터 설정 메뉴에서 설정합니다.
-ISO 10218-1에서 요구하는 정지에 대한 정지 유형 설정은 다음과 같습니다.
+The stop type due to a safety function violation is set in the parameter setting menu for each function.
+The stop type settings for stops required by ISO 10218-1 are as follows.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > General setup > Safety stop]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Safety stop]** menu.
 
 ![](../../../_assets/safety_stop.PNG)
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| EM stop |  <p>비상 정지</p><p>(Stop 0, Stop 1)</p>  | Stop 0 |
-| Protective stop | <p>보호 정지</p><p>(Stop 0, Stop 1, Stop 2)</p> |   Stop 0 |
-| Normal stop |   <p>일반 정지</p><p>(Stop 0, Stop 1)</p>  | Stop 0 |
-| Manual stop |   <p>수동 모드 속도 위반시 정지</p><p>(Stop 0, Stop 1)</p>  |  Stop 0 |
+| EM stop |  <p>Emergency stop</p><p>(Stop 0, Stop 1)</p>  | Stop 0 |
+| Protective stop | <p>Protective stop</p><p>(Stop 0, Stop 1, Stop 2)</p> |   Stop 0 |
+| Normal stop |   <p>Normal stop</p><p>(Stop 0, Stop 1)</p>  | Stop 0 |
+| Manual stop |   <p>Speed violation stop in manual mode</p><p>(Stop 0, Stop 1)</p>  |  Stop 0 |
 
 
 {% hint style="warning" %}
-**\[주의]**: 위험성 평가를 통해 기능별로 적절한 정지 방법을 설정해야 합니다.
+**\[Caution]**: You should set an adequate stopping method for each function based on the result of the risk assessment.
 {% endhint %}
