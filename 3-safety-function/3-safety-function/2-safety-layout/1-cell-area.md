@@ -13,6 +13,7 @@ The safety space can be set from each tab of the **\[System > 4: Application par
 
 *   **General** 
 
+
 ![](../../../_assets/safety_layout/cell_general.PNG)
 
 |  **Parameter** |                       **Description**                       |  **Default setting value**  |
@@ -24,6 +25,7 @@ The safety space can be set from each tab of the **\[System > 4: Application par
 
 *   **Target** 
 
+
 ![](../../../_assets/safety_layout/cell_target.PNG)
 
 |  **Parameter** |                       **Description**                       |  **Default setting value**  |
@@ -34,6 +36,7 @@ The safety space can be set from each tab of the **\[System > 4: Application par
 
 
 *   **Area** 
+
 
 ![](../../../_assets/safety_layout/cell_working.PNG)
 

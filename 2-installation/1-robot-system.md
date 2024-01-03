@@ -14,5 +14,5 @@ The following shows an example of the basic configuration of the robot system.
 
 
 {% hint style="info" %}
-For more details on teach pendant, see “[Operation Manual for Hi6 Controllers.](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/)”
+For more details on teach pendant, see “[Operation Manual for Hi6 Controllers.](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/1-robot-system/README)”
 {% endhint %}

@@ -18,5 +18,5 @@ Move each axis with the jog if a stop occurs because of a safety function violat
 4\. Reboot the system.
 
 {% hint style="info" %}
-For more details on the encoder offset, see “[7.4.4 Encoder offsets](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/7-setting/7-4-robot-parameter/encoder-offset)” of the “[Operation Manual for Hi6 Controllers.](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/)”
+For more details on the encoder offset, see “[7.4.4 Encoder offsets](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/7-system/4-robot-parameter/4-encoder-offset/README)” of the “[Operation Manual for Hi6 Controllers.](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/README)”
 {% endhint %}

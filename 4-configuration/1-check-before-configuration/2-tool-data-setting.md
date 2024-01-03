@@ -16,6 +16,6 @@ The safety functions monitor the entire robot system including the tool attached
 * To copy the information on tool data and paste it to that of another, use the \[Copy page] and \[Paste page] buttons, respectively.
 
 {% hint style="info" %}
-* When there is no information on the weight and center of gravity of a tool, you can estimate the values using the load estimation function. For more details, see “[**Operation Manual for Hi6 Controllers.**](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/)”
-* For more details on tool data setting, see “[**Operation Manual for Hi6 Controllers.**](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/)”
+* When there is no information on the weight and center of gravity of a tool, you can estimate the values using the load estimation function.
+* For more details on tool data setting, see “[**Operation Manual for Hi6 Controllers.**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/7-system/4-robot-parameter/1-tool-data/README)”
 {% endhint %}
