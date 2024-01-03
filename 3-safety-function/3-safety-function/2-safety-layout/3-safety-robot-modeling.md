@@ -6,7 +6,7 @@
 
 **\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 레이아웃 제한 > 로봇]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
 
-![그림 안전 로봇 모델링 설정 화면](../../../_assets/safety_layout/robot_capsule.PNG)
+![안전 로봇 모델링 설정 화면](../../../_assets/safety_layout/robot_capsule.PNG)
 
 
 | **파라미터** | 　　　　　　　　　**설명**                                     | **기본 설정값** |

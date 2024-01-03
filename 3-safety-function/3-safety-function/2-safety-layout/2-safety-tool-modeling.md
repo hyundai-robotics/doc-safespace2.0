@@ -6,14 +6,14 @@
 
 안전 툴 모델링에 사용되는 모델은 총 3가지로 구, 캡슐, 플레이트 형태가 있습니다. 각 모델은 중심과 반지름으로 구성됩니다. 모델링의 중심 위치와 반경은 로봇 플랜지 좌표계(Xf, Yf, Zf)를 기준으로 설정하고 반지름은 툴의 크기 및 최대 TCP 속도에서의 정지 거리를 포함하여 설정합니다.
 
-![그림 툴 모델링](../../../_assets/safety_layout/tool_sphere.PNG)
+![툴 모델링](../../../_assets/safety_layout/tool_sphere.PNG)
 
-![그림 로봇 플랜지 좌표계](../../../_assets/safety_layout/flange.PNG)
+![로봇 플랜지 좌표계](../../../_assets/safety_layout/flange.PNG)
 
 
 **\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 레이아웃 제한 > 툴]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
 
-![그림 안전 툴 모델링 설정 화면](../../../_assets/safety_layout/tool_sphere.PNG)
+![안전 툴 모델링 설정 화면](../../../_assets/safety_layout/tool_sphere.PNG)
 
 
 |  **파라미터** |                       **설명**                       |  **기본 설정값**  |
