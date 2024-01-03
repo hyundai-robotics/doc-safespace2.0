@@ -58,7 +58,7 @@
     * [4.1.2 Setting of tool data](4-configuration/1-check-before-configuration/2-tool-data-setting.md)
     * [4.1.3 Setting of password](4-configuration/1-check-before-configuration/3-password-setting.md)
 	  * [4.1.4 Certification](4-configuration/1-check-before-configuration/4-certification.md)
-	* [4.2 Change safety parameter](4-configuration/2-change-safety-parameter.md)
+  * [4.2 Change safety parameter](4-configuration/2-change-safety-parameter.md)
 * [5. Safety status monitoring](5-monitoring/README.md)
   * [5.1 Robot monitoring status](5-monitoring/1-robot-limit-parameter-monitoring.md)
   * [5.2 Safety I/O status](5-monitoring/4-safety-io-status-monitoring.md)
