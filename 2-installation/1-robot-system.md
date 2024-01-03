@@ -13,4 +13,6 @@ The following shows an example of the basic configuration of the robot system.
 ![Basic Configuration of the Vertical Articulated Robot System ](../_assets/image_285.png)
 
 
-
+{% hint style="info" %}
+For more details on teach pendant, see “[Operation Manual for Hi6 Controllers.](https://hyundai-robotics.gitbook.io/hi6-operation-manual/v/op-english/)”
+{% endhint %}
