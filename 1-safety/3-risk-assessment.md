@@ -16,7 +16,7 @@ After installing robots and composing the system, a risk assessment must be perf
 
 It is very important to compose robot integrated systems based on the identification of adequate safety devices. Compose robot integrated systems referring to the relevant details of the manual.
 
-For robots, it is possible to set tool center point (TCP) speed, pressure, power, momentum, collision detection, limit values of reduction ratio, and limit values of joint-specific angles, speeds, and torques. In addition, safety functions can be set by using safety-related inputs/outputs (I/Os). For more details for the composition of safety functions, see the “[**3. SafeSpace2.0 safety functions](../3-safety-function/README.md)”
+For robots, it is possible to set tool center point (TCP) speed, pressure, power, momentum, collision detection, limit values of reduction ratio, and limit values of joint-specific angles, speeds, and torques. In addition, safety functions can be set by using safety-related inputs/outputs (I/Os). For more details for the composition of safety functions, see the “[**3. SafeSpace2.0 safety functions**](../3-safety-function/README.md)”
 
 In the **\[Safety functions]** menu, the safety-related functions of the collaborative robot can be set, including the following:
 

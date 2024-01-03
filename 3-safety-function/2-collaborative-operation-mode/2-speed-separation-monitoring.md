@@ -7,4 +7,4 @@ In the speed and separation monitoring mode, the driving speed of the robot is c
 The reference information on the use of the speed and separation monitoring mode is as follows:
 
 * For more details on the setting of deceleration mode, see “[**3.3.1.5 Re plan**](../3-safety-function/1-robot-safety-condition/5-re-plan.md)”
-* For more details on the setting of safety I/O signals, see “[**3.3.3 Safety I/O signals**](../3-safety-function/3-safety-io/README.md)”를 참조하십시오.
+* For more details on the setting of safety I/O signals, see “[**3.3.3 Safety I/O signals**](../3-safety-function/3-safety-io/README.md)”

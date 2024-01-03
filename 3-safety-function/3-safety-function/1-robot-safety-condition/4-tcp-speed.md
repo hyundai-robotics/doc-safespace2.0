@@ -4,7 +4,7 @@ This function monitors the TCP speed based on the robot coordinate system. If a 
 
 You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > TCP speed]** menu.
 
-![Window for setting TCP speed parameters](<../../../_assets/tcp_speed_param.PNG>)
+![Window for setting TCP speed parameters](../../../_assets/tcp_speed_param.PNG)
 
 | **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default setting value** |
 | :------: | ---------------------------------------------------------------- | :---------: |

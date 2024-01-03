@@ -10,7 +10,7 @@ As this manual has been prepared based on standard specifications, it may not ap
 
 Products covered by this manual are :
 
-|     **항목**    |  **명칭** | **버전** |
+|     **Item**    |  **Name** | **Version** |
 | :-----------: | :-----: | :----: |
 |     Teach pendant     |  TP630  |  V1.0  |
 |      Controller      |  Hi6a  |  V1.0  |

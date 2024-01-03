@@ -1,20 +1,20 @@
-﻿# 4.2 안전 파라미터 전송
+﻿# 4.2 Change safety parameter
 
-안전파라미터 값을 수정 하고 시스템에 적용 하십시오. 적용이 왼료 되지 않은 값은 설정 화면이 바뀌면 초기화 됩니다.
+Modify the safety parameter values and apply them to the system. Values that have not been applied will be initialized when the setting screen changes.
 
-1. **\[설정]** 버튼 > **\[4: 응용 파라미터 > 18: 안전공간2.0 > 파라미터 설정]** 변경을 원하는 메뉴를 터치하십시오.
+1. **\[System]** button > **\[4: Application parameter > 18: SafeSpace2.0 > Parameter setup]**, touch the menu.
 
-![](../../_assets/4/4-1-5-1.png)
+![](../_assets/4/4-1-5-1.png)
 
-2. 페이지 버튼을 터치하여 수정하고자 하는 페이지로 이동 하십시오. **\[확인]** 버튼을 누르지 않은 경우 페이지 이동 시 파라미터가 초기화 됩니다.
-3. 파라미터 값을 수정하고 **\[확인]** 버튼을 터치하십시오. 페이지의 파라미터가 임시 저장됩니다.
+2. Press the page button to navigate to the page where you want to change the parameters. If you do not touch the **\[OK]** button, the changed parameters will be initialized when you move to another page.
+3. Modify the parameter values and touch the **\[OK]** button, which temporarily saves the parameters on the page.
 
-* 페이지의 수정된 값을 확인 하고 **\[전체 적용]** 버튼을 터치하십시오. 
+* Check the modified values on the page and touch the **\[Appky all]** button.
 
-![](../../_assets/4/4-1-5-2.png)
+![](../_assets/4/4-1-5-2.png)
 
-* **\[확인]** 버튼을 누르지 않은 페이지는 반영되지 않습니다. 메시지를 확인한 후 진행 하십시오.
+* Pages not pressed **\[OK]** button will not reflected. Please check the message and proceed.
 
-* **\[시스템 암호]** 를 입력하고 결과를 확인 하십시오.
+* Enter **\[System password]** to verify the results.
 
-![](../../_assets/4/4-1-5-3.png) ![](../../_assets/4/4-1-5-4.png)
+![](../_assets/4/4-1-5-3.png) ![](../_assets/4/4-1-5-4.png)

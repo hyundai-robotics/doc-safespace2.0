@@ -4,7 +4,7 @@ It is a function that monitors whether the robot's power exceeds the allowable v
 
 You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Power]** menu.
 
-![Window for setting power monitoring parameters](<../../../_assets/power.PNG>)
+![Window for setting power monitoring parameters](../../../_assets/power.PNG)
 
 | **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default setting value** |
 | :------: | ---------------------------------------------------------------- | :---------: |

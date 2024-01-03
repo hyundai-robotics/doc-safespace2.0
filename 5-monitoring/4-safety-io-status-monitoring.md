@@ -1,7 +1,7 @@
 ﻿# 5.2 Safety I/O status monitoring
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > Monitoring] > [안전 I/O]** 메뉴를 선택하여 로봇 감시 기능의 상태를 확인하십시오.
+You can check the safety I/O status in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Monitoring]** menu.
 
-![안전 I/O](../_assets/mon_safetyio.PNG)
+![Safety I/O](../_assets/mon_safetyio.PNG)
 
 

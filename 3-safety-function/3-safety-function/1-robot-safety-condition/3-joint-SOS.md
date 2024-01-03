@@ -5,7 +5,7 @@ SOS monitoring is a function that monitors for abnormal movement of each axis du
 
 You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Joint SOS]** menu.
 
-![Window for setting joint SOS parameters](<../../../_assets/joint_sos_param.PNG>)
+![Window for setting joint SOS parameters](../../../_assets/joint_sos_param.PNG)
 
 |  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
