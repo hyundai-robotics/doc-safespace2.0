@@ -18,5 +18,5 @@
 4\. 시스템을 재부팅하십시오.
 
 {% hint style="info" %}
-엔코더 옵셋에 대한 자세한 내용은 “[**Hi6 제어기 조작 설명서**](https://hyundai-robotics.gitbook.io/hi6-operation-manual)”의 “[**7.4.4 엔코더 옵셋**](https://hyundai-robotics.gitbook.io/hi6-operation-manual/7-setting/7-4-robot-parameter/encoder-offset)”을 참고하십시오.
+엔코더 옵셋에 대한 자세한 내용은 “[**Hi6 제어기 조작 설명서**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/README)”의 “[**7.4.4 엔코더 옵셋**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/7-system/4-robot-parameter/4-encoder-offset/README)”을 참고하십시오.
 {% endhint %}

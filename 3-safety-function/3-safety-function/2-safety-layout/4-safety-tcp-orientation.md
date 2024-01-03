@@ -4,11 +4,11 @@ TCP 방향 감시 기능을 사용하기 위해, 기준 벡터 생성을 위한 
 
 로봇 좌표계(![](../../_assets/1.png))의 Z방향 벡터를 기준으로 설정된 각도로 회전시켜 기준 벡터(![](../../_assets/3.png))를 설정하여 이로부터 편차 각도(![](../../_assets/4.png))만큼 벌어져 있는 모선들로 이루어지는 원뿔(![](../../_assets/2.png))을 모델링할 수 있습니다. 이와 같은 원뿔의 꼭지점(![](../../_assets/5.png))은 TCP에 위치하며 TCP의 Z방향 벡터(![](../../_assets/6.png))가 모니터링 원뿔을 넘어가면 TCP 방향 제한 기능 위반 에러가 발생합니다.
 
-![그림 TCP 방향 제한 기능](../../../_assets/safety_layout/tool_ori.png)
+![TCP 방향 제한 기능](../../../_assets/safety_layout/tool_ori.png)
 
 **\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 레이아웃 제한 > TCP 방향]** 메뉴에서 파라미터 값을 설정할 수 있습니다. 
 
-![그림 TCP 방향 설정 화면](../../../_assets/safety_layout/tool_ori_param.PNG)
+![TCP 방향 설정 화면](../../../_assets/safety_layout/tool_ori_param.PNG)
 
 
 |  **파라미터** |                       **설명**                       |  **기본 설정값**  |

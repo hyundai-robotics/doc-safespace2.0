@@ -16,6 +16,6 @@
 * 툴 데이터 정보를 복사하여 다른 툴 데이터에 붙여 넣으려면, **\[페이지 복사]**/**\[페이지 붙여넣기]** 버튼을 이용하십시오.
 
 {% hint style="info" %}
-* 툴의 무게와 중심에 대한 정보가 없을 경우 부하추정 기능을 이용하여 값을 추정할 수 있습니다. 자세한 내용은 “[**Hi6 제어기 조작 설명서**](https://hyundai-robotics.gitbook.io/hi6-operation-manual)”를 참고하십시오.
-* 툴 데이터 설정에 대한 자세한 내용은 “[**Hi6 제어기 조작 설명서**](https://hyundai-robotics.gitbook.io/hi6-operation-manual)”를 참고하십시오.
+* 툴의 무게와 중심에 대한 정보가 없을 경우 부하추정 기능을 이용하여 값을 추정할 수 있습니다. 
+* 툴 데이터 설정에 대한 자세한 내용은 “[**Hi6 제어기 조작 설명서**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/README)”를 참고하십시오.
 {% endhint %}
