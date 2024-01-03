@@ -4,7 +4,7 @@ If the external force applied to the robot exceeds the allowable value, it is re
 
 You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Collision detection]** menu.
 
-![Window for setting collision detection parameters](../../../_assets/col-det.PNG)
+![Window for setting collision detection parameters](../../../_assets/col_det.PNG)
 
 | **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default setting value** |
 | :------: | ---------------------------------------------------------------- | :---------: |

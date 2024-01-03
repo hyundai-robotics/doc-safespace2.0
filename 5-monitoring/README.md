@@ -1,5 +1,5 @@
-﻿# 5. 안전 상태 모니터링
+﻿# 5. Safety status monitoring
 
-안전 기능 위반 및 안전 제어 모듈(SCM: Safety Control Module) 보드의 상태를 모니터링합니다. 로봇 감시 기능의 상태와 안전 입출력 상태정보를 확인할 수 있습니다. 
+This monitors safety function violations and the status of the SCM(SCM: Safety Control Module) board. You can view the statuses of the robot limiting functions, joint limiting functions, and the SCM board. 
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > Monitoring]** 메뉴에서 확인하십시오.
+You can check in **\[System > 4: Application parameter > 18: SafeSpace2.0 > Monitoring]** menu.

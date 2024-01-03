@@ -1,8 +1,8 @@
-﻿# 5.1 로봇 감시 기능 모니터링
+﻿# 5.1 Robot monitoring function status
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > Monitoring] > [로봇 감시]** 메뉴를 선택하여 로봇 감시 기능의 상태를 확인하십시오.
+You can check robot monitoring function status in **\[System > 4: Application parameter > 18: SafeSpace2.0 > Monitoring] > [Robot monitoring status]** menu.
 
-![로봇 안전 상태](../_assets/mon_robot.PNG)
+![Safety status of robot](../_assets/mon_robot.PNG)
 
 
 * 로봇 감시 기능의 상태를 확인합니다.

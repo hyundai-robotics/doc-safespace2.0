@@ -2,7 +2,7 @@
 
 These parameters are the limit values for monitoring the safety functions relating to the space in which the robot’s joints move. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-![An example of joint space setting (S-axis)](<../../../_assets/joint_space.png>)
+![An example of joint space setting (S-axis)](../../../_assets/joint_space.png)
 
 You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Joint space]** menu.
 

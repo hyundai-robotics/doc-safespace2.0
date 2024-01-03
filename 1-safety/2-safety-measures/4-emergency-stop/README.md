@@ -1,4 +1,4 @@
-﻿# 1.2.4 Emergency stop
+﻿# 1.2.3 Emergency stop
 
 The emergency stop function is actuated in an emergency where a worker or object enters a hazard area. All the emergency stop switches are installed at places easily accessible from outside the safety areas.
 

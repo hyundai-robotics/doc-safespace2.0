@@ -1,39 +1,39 @@
-﻿# 3.3.2.2 안전 툴 모델링
+﻿# 3.3.2.2 Safety tool modeling
 
-안전 영역 모니터링에 사용하는 툴로 모델링한 구의 보호 영역 침범 및 작업 영역 이탈 여부를 감시합니다. 안전 툴은 최대 16 개를 설정할 수 있으며 최대 10 개의 모델로 모델링할 수 있습니다.
+Safety space monitoring detects whether the tool modeled in spheres intrudes into the safety spaces or exceeds the working space. You can set up to 16 safety tools and model a safety tool with a maximum of 10 spheres.
 
-안전 툴은 티치 펜던트에서 설정한 툴 번호로 활성화되므로 \[설정 > 3: 로봇 파라미터 > 1: 툴 데이터] 메뉴에서 설정한 툴 데이터를 기반으로 안전 툴을 모델링해야 합니다. 툴 데이터 설정 화면 상단의 TCP 위치 정보를 참고하십시오.
+Because a safety tool is enabled by a number that is set on the teach pendant, you should model a safety tool based on the tool data set in the **\[Setting > 3: Robot parameter > 1: Tool data**] menu. Refer to the TCP position information displayed at the top of the tool data setting window.
 
-안전 툴 모델링에 사용되는 모델은 총 3가지로 구, 캡슐, 플레이트 형태가 있습니다. 각 모델은 중심과 반지름으로 구성됩니다. 모델링의 중심 위치와 반경은 로봇 플랜지 좌표계(Xf, Yf, Zf)를 기준으로 설정하고 반지름은 툴의 크기 및 최대 TCP 속도에서의 정지 거리를 포함하여 설정합니다.
+There are 3 modles fot modleing safety tool: shpere, capsule and rounded plate. Each safety tool modeling is set by its center and radius. Set the center position of the sphere for the modeling based on the robot flange coordinate system (Xf, Yf, and Zf), and set the radius of the sphere, including the tool size and the stopping distance, at the maximum TCP speed.
 
-![그림 툴 모델링](../../../_assets/safety_layout/tool_sphere.PNG)
+![Tool modeling](../../../_assets/safety_layout/tool_sphere.PNG)
 
-![그림 로봇 플랜지 좌표계](../../../_assets/safety_layout/flange.PNG)
-
-
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 레이아웃 제한 > 툴]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
-
-![그림 안전 툴 모델링 설정 화면](../../../_assets/safety_layout/tool_sphere.PNG)
+![Robot flange coordinate system](../../../_assets/safety_layout/flange.PNG)
 
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Layout restriction > Tool]** menu.
+
+![Safety tool modeling setting window](../../../_assets/safety_layout/tool_sphere.PNG)
+
+
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| TCP X,Y,Z | <p>플랜지 좌표계에서 TCP 위치(읽기 전용)- 툴 정보에서 설정</p> |   0  |
-| Shape |   <p>툴 모델링 형태</p><p>(Off/sphere/capsule/R-plate)</p>  | Off |
-| Radius |  <p>반지름</p><p>(0.0 ~ 1000.0 mm)</p>  | 0 |
-| Height |  <p>R-plate의 높이</p><p>(0.0 ~ 1000.0 mm)</p>  | 0 |
-| Width |  <p>R-plate의 폭</p><p>(0.0 ~ 1000.0 mm)</p>  | 0 |
-| X |  <p>X방향 모델 중심 위치</p><p>(-1000.0 ~ 1000.0 mm)</p>  | 0 |
-| Y |  <p>Y방향 모델 중심 위치</p><p>(-1000.0 ~ 1000.0 mm)</p>  | 0 |
-| Z |  <p>Z방향 모델 중심 위치</p><p>(-1000.0 ~ 1000.0 mm)</p>  | 0 |
+| TCP X,Y,Z | <p>TCP position in flange coordination(read only)- set in Tool data menu</p> |   0  |
+| Shape |   <p>Type of modeling shape</p><p>(Off/sphere/capsule/R-plate)</p>  | Off |
+| Radius |  <p>Radius of model</p><p>(0.0 ~ 1000.0 mm)</p>  | 0 |
+| Height |  <p>Height of R-plate</p><p>(0.0 ~ 1000.0 mm)</p>  | 0 |
+| Width |  <p>Width of R-plate</p><p>(0.0 ~ 1000.0 mm)</p>  | 0 |
+| X |  <p>Position of center in X direction</p><p>(-1000.0 ~ 1000.0 mm)</p>  | 0 |
+| Y |  <p>Position of center in Y direction</p><p>(-1000.0 ~ 1000.0 mm)</p>  | 0 |
+| Z |  <p>Position of center in Z direction</p><p>(-1000.0 ~ 1000.0 mm)</p>  | 0 |
 
 
 
 
 
 {% hint style="warning" %}
-**\[주의]**
+**\[Caution]**
 
-* 툴 데이터 변경 시 반드시 안전 툴 모델링에서 설정한 파라미터가 정확한지 다시 확인하십시오. 동일한 툴의 툴 데이터 번호와 안전 툴 모델링 번호는 일치해야 합니다.
-* 로봇 레이아웃 설정의 정의는 로봇 2축과 3축에만 해당되므로 안전 영역을 설정하더라도 로봇의 다른 부분이 이 영역을 침범할 수 있습니다.
+* Before changing a tool data, check if the parameters set in the tool modeling are correct. The tool data number and the safety tool modeling number of a tool should be equal to each other.
+* Because the definition of a robot layout setting applies to the 2nd and 3rd axis, the other parts of the robot may intrude into a safety space even if a safety space is set.
 {% endhint %}

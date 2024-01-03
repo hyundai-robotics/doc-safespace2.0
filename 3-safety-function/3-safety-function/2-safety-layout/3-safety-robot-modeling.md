@@ -1,22 +1,22 @@
-﻿# 3.3.2.3 안전 로봇 모델링
+﻿# 3.3.2.3 Safety robot modeling
 
-안전 공간 모니터링에 사용하는 로봇 모델입니다. 안전 로봇 모델링은 2축과 3축에 적용할 수 있으며 모두 캡슐로 모델링합니다.
+This is the robot model used for safety space monitoring. There are only two safety robot model(:2nd axis and 3rd axis), and the model consits of a capsule.
 
-안전 로봇 모델링에 사용되는 캡슐은 양 끝의 구 중심과 반지름으로 구성됩니다. 모델링의 구 중심은 로봇 2축/3축 중심 위치이고 반지름은 현재 링크의 크기 및 최대 TCP 속도에서의 정지 거리를 포함할 수 있을 만큼 커야 합니다.
+The capsules used in the safety robot modeling consist of a sphere center and a radius at both ends. The sphere center of the modeling is the robot's 2nd axis/3rd axis center position, and the radius must be large enough to include the size of the current link and the stopping distance at the maximum TCP speed.
+ 
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Layout restriction > Robot]** menu.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 레이아웃 제한 > 로봇]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
-
-![그림 안전 로봇 모델링 설정 화면](../../../_assets/safety_layout/robot_capsule.PNG)
+![Safety robot modeling setting window](../../../_assets/safety_layout/robot_capsule.PNG)
 
 
-| **파라미터** | 　　　　　　　　　**설명**                                     | **기본 설정값** |
+| **Parameter** | 　　　　　　　　　**Description**                                     | **Default setting value** |
 | :------: | --------------------------------------------------- | :--------: |
-|    반경    | 구체의 반지름(0 ~ 1000.0 (mm))                           |    0 mm    |
-|   Model1  X,Y,Z | 구체의 반지름(-1000.0 ~ 1000.0 (mm))                           |    0 mm    |
-|   Model2 X,Y,Z | 구체의 반지름(-1000.0 ~ 1000.0 (mm))                           |    0 mm    |
+|    Radius    | Radius of model(0 ~ 1000.0 (mm))                           |    0 mm    |
+|   Model1  X,Y,Z | Position of center(-1000.0 ~ 1000.0 (mm))                           |    0 mm    |
+|   Model2 X,Y,Z | Position of center(-1000.0 ~ 1000.0 (mm))                           |    0 mm    |
 
 {% hint style="warning" %}
-**\[주의]**
+**\[Caution]**
 
-* 로봇 레이아웃 설정의 정의는 로봇 2축과 3축에만 해당되므로 안전 영역을 설정하더라도 로봇의 다른 부분이 이 영역을 침범할 수 있습니다.
+* Because the definition of a robot layout setting applies to the 2nd and 3rd axis, the other parts of the robot may intrude into a safety space even if a safety space is set.
 {% endhint %}

@@ -1,3 +1,3 @@
-﻿# 3.3.2 안전 레이아웃
+﻿# 3.3.2 Safety layout
 
-로봇의 위치 방향을 감시하기 위해 레이아웃을 모델링합니다.
+This sets the safety space, safety tools and safety robot links to monitor robot's position and orientation.

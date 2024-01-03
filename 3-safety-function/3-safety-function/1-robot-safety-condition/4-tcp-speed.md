@@ -1,6 +1,6 @@
 ﻿# 3.3.1.4 TCP speed monitoring
 
-로봇 좌표계 기준 TCP의 속도를 감시하는 기능입니다. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
+This function monitors the TCP speed based on the robot coordinate system. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
 You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > TCP speed]** menu.
 
