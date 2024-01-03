@@ -57,7 +57,7 @@
     * [4.1.1 엔코더 옵셋](4-configuration/1-check-before-configuration/1-encoder-offset.md)
     * [4.1.2 툴 데이터 설정](4-configuration/1-check-before-configuration/2-tool-data-setting.md)
     * [4.1.3 암호 설정](4-configuration/1-check-before-configuration/3-password-setting.md)
-	  * [4.1.4 인증서 발급](4-configuration/1-check-before-configuration/4-certification.md)
+    * [4.1.4 인증서 발급](4-configuration/1-check-before-configuration/4-certification.md)
   * [4.2 안전 파라미터 전송](4-configuration/2-change-safety-parameter.md)
 * [5. 안전 상태 모니터링](5-monitoring/README.md)
   * [5.1 로봇 감시 기능 상태](5-monitoring/1-robot-limit-parameter-monitoring.md)
