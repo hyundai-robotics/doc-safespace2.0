@@ -1,132 +1,184 @@
-﻿# SafeSpace2.0 안전 기능 설명서
+﻿# Safety manual for SafeSpace2.0
 
 {% hint style="warning" %}
-본 제품 설명서에서 제공되는 정보는 현대로보틱스의 자산입니다.
+The information presented in this manual is the property of Hyundai Robotics.
 
-현대로보틱스의 서면에 의한 동의 없이 전부 또는 일부를 무단 전재 및 재배포할 수 없으며, 제3자에게 제공되거나 다른 목적에 사용할 수 없습니다.
+The manual may neither be copied, in part or in full, nor redistributed without prior written consent from Hyundai Robotics.
+
+It may neither be provided to any third party nor used for any other purposes.
 
 
 
-본 설명서는 사전 예고 없이 변경될 수 있습니다.
+Hyundai Robotics reserves the right to modify this document without prior notification.
 
 
 
 **Copyright ⓒ 2020 by Hyundai Robotics Co., Ltd**
 {% endhint %}
-# 이 설명서에 대하여
+# About this manual
 
-이 설명서는 현대로보틱스 SafeSpace2.0의 안전, 설치, 사용 및 유지 보수 방법에 대해 설명합니다.
+This manual describes  the safety, installation, use, and maintenance methods of SafeSpace2.0 manufactured by Hyundai Robotics.
 
-제품을 사용하기 전에 반드시 설명서의 내용을 충분히 숙지하시기 바랍니다. 또한 필요할 때 언제든 볼 수 있도록 설명서를 가까운 장소에 보관하십시오.
+Before using the product, read and fully understand the contents of this manual. In addition, keep this manual in an accessible place so that it can be read any time when necessary.
 
-이 설명서는 현대로보틱스 제품을 구매한 고객에게 참조용으로 제공되거나 교육을 위한 내부 교육 자료로 제공되어 사용될 수 있습니다.
+This manual may be provided to customers who purchase products of Hyundai Robotics or may be used as material for internal training programs.
 
-이 설명서는 표준 사양을 기준으로 작성되었으므로 구입하신 제품의 모델에 따라 일부 내용이 다를 수 있습니다. 또한 이 설명서의 내용과 사양은 제품의 성능 향상을 위해 예고 없이 변경될 수 있으며 부정확한 내용이나 오탈자로 인해 발생하는 상황에 대해서 현대로보틱스는 책임이 없습니다. 개정에 관한 상세한 정보는 당사의 인터넷 웹사이트([www.hyundai-robotics.com](https://www.hyundai-robotics.com))를 방문하여 확인하시기 바랍니다.
+As this manual has been prepared based on standard specifications, it may not apply equally to all models. In addition, the details and specifications of this manual are subject to changes for improving product performance without notice, and Hyundai Robotics will not take responsibility for any consequences of incorrect details, typos, or omissions of this manual. For detailed information on revisions, please visit our website ([www.hyundai-robotics.com](https://www.hyundai-robotics.com)).
 
-이 설명서가 적용되는 제품은 다음과 같습니다.
+Products covered by this manual are :
 
-|     **항목**    |  **명칭** | **버전** |
+|     **Item**    |  **Name** | **Version** |
 | :-----------: | :-----: | :----: |
-|     티치 펜던트    |  TP630  |  V1.0  |
-|      제어기      |  Hi6a  |  V1.0  |
-| 안전 제어 모듈 |  BD642A  |  V04  |
-| PROFIsafe 통신 보드 |  BD671  |  V2  |
-# 저작권
+|     Teach pendant     |  TP630  |  V1.0  |
+|      Controller      |  Hi6a  |  V1.0  |
+| Safety control board |  BD642A  |  V04  |
+| PROFIsafe communication board |  BD671  |  V2  |
+# Copyright
 
-이 제품과 설명서에서 다루고 있는 모든 프로그램과 파일, 콘텐츠는 저작권 법과 비밀 유지 계약에 의하여 보호받고 있습니다. 현대로보틱스가 명시적으로 허용하지 않은 사용, 복사, 제 3자에의 공개 및 배포 등의 행위는 엄격히 금지됩니다.
+All the programs, files, and contents relating to this product and manual are protected by the Copyright Act and a confidentiality agreement. Any use, reproduction, and disclosure or distribution of this manual to third parties not explicitly permitted by Hyundai Robotics are strictly prohibited.
 
 Copyright ⓒ 2020 HYUNDAI ROBOTICS. All rights reserved.
-# 표기규약
+# Notation Convention
 
-이 설명서에서는 내용의 이해를 돕기 위해 다음의 표기 규약과 안전 지시를 사용합니다.
+In this manual, the following notation conventions and safety instructions are used to help you understand the contents.
 
-### <mark style="color:green;">그림 설명</mark>
+## Description of Figures
 
-그림은 제품 조작 방법의 이해를 돕고 화면을 설명하는데 사용합니다. 그림을 설명할 때에는 다음과 같이 해당 부분에 숫자를 표기하고 그에 대응하는 내용을 설명합니다.
+Figures are used to help you understand how to operate the product and illustrate what you can see on the screen. For the description of figures, numbers will be marked for the relevant parts, and the corresponding contents will be described as follows.
 
-![](../_assets/image\_explan.png)
+![](../_assets/image_1_en.png)
 
-### <mark style="color:green;">GUI (Graphical User Interface)</mark>
+## GUI \(Graphical User Interface\)
 
-GUI 는 메뉴 이름 및 버튼 이름을 대괄호\*\*(\[ ]\*\*) 안에 넣고 **굵은 글씨**로 표시합니다. 여러 메뉴를 순서대로 선택해야 할 때에는 이름 사이에 > 기호를 넣어 표시합니다.
+On the GUI, menu names and button names are enclosed in square brackets \(\[ \]\) and displayed in bold. When you need to select multiple menus in order, mark them with the &gt; symbol between the names.
 
-* 이름이 있는 메뉴: 수동 또는 자동 모드의 초기 화면에서\*\* \[메뉴] \*\*버튼을 선택하십시오.
-* 여러 메뉴: 수동 모드의 초기 화면에서 **\[설정]** 버튼 > **\[5: 초기화 > 7: 유닛 설정]** 메뉴를 선택하십시오.
+* Menu with a name: Touch the \[Menu\] button on the initial screen in manual or automatic mode.
+* Multiple menus: Touch the \[Set Up\] button &gt; \[5: Initialize &gt; 7: Unit Setting\] menu on the initial screen in manual mode.
 
-### <mark style="color:green;">조작키 표기법</mark>
 
-기능 조작을 위하여 티치 펜던트의 조작부에서 누르는 키는 홑화살괄호(**< >**)에 넣고 **굵은 글씨**로 표시합니다.
 
-* **<시작>** 키를 누르면 로봇에 작성된 프로그램의 자동 운전을 시작합니다.
+## Notation Method for Operation Keys
 
-### <mark style="color:green;">상호 참조</mark>
+Keys that are to be pressed on the operation part of the teach pendant to operate functions will be enclosed in single arrow brackets \(&lt; &gt;\) and displayed in bold.
 
-설명서 내에서 연관된 정보로의 바로가기를 제공합니다. 상호 참조는 다음과 같이 **굵은 글씨**에 큰따옴표(“ ”)로 표시합니다.
+* If you press the &lt;Start&gt; key, the automatic operation of the program created in the robot will start.
 
-* 날짜와 시간 정보 변경에 대한 자세한 내용은 Hi6 제어기 조작설명서의 “**4.5 날짜 및 시간 설정**”을 참조하십시오.
 
-### <mark style="color:green;">참고 사항</mark>
 
-제품을 사용할 때 알아 두면 좋을 유용한 사항이나 추가적인 정보를 다음과 같이 제공합니다.
+## Cross Reference 
+
+This provides the shortcut to the related information in the manual. Cross-references will be in quotation marks and in **bold type**.
+
+* For details of making changes in date and time information, see “**4.5 Date and time setting**.” of “**Operation Manual for Hi6 Controller**” &#x20;
+
+## Note
+
+In this section are some helpful tips or additional information that could be useful when you use the product as follows.
 
 {% hint style="info" %}
-상태표시줄에 ![](../_assets/engineer.png)아이콘이 깜빡이면 엔지니어모드 상태입니다.
-{% endhint %}
-# 안전 주의 사항
+When the ![](../_assets/engineer.png)icon blinks in the status bar, it means that you are in engineer mode.
+{% endhint %}# Safety precautions
 
-제품의 올바른 사용과 사용자의 안전을 확보하고 재산상의 피해 방지를 위해 반드시 다음의 안전 주의 사항을 숙지한 후 제품을 사용하시기 바랍니다.
+To ensure proper product use and user safety and to prevent property damages, make sure to read and fully understand the following precautions before using the product.
 
-### <mark style="color:green;">위험</mark>
+### <mark style="color:green;">Danger</mark>
 
 {% hint style="danger" %}
-**\[위험] 긴박한 위험**: 준수하지 않았을 경우 작업자가 사망하거나 중상을 입을 수 있습니다.
+**\[Danger] impending risk**: If not conformed to, operator deaths or severe injuries may occur.
 {% endhint %}
 
-* 개별 장치가 아닌 전체 시스템을 대상으로 위험성 평가를 실시하십시오. 제품에 다른 장치를 연결하면 제품의 위험도가 높아지거나 새로운 위험이 발생할 수 있습니다. 로봇 통합 시스템의 각 장치의 위험도가 다를 경우에는 위험도가 가장 높은 장치를 기준으로 안전 장치를 마련하여 위험에 대비하십시오.
-* 설명서에 기술된 제품 설치 내용을 숙지하고 지시 사항을 준수하여 로봇 제품과 기타 장치를 설치하십시오.
-* 제품의 고장이나 파손 등 문제가 발생했을 경우 즉시 사용을 중단하고 고객지원팀에 문의하십시오.
+*   Perform a risk assessment on the entire system, not the individual devices. Connecting other devices to the product may increase the risk level of the product or create new risks. If the devices of the integrated robot system have different risk levels, prepare safety devices based on the device with the highest risk level in preparedness for risks.
 
-### <mark style="color:green;">경고</mark>
+
+*   In installing the robot product and other devices, make sure to read, fully understand, and conform to the product installation instructions described in the manual.
+
+
+*   In case of any issues of the product, such as faults and damages, stop using the product immediately and contact our Customer Support Team.
+
+
+
+### <mark style="color:green;">Warning</mark>
 
 {% hint style="warning" %}
-**\[경고] 잠재적인 위험**: 준수하지 않았을 경우 작업자가 상해를 입거나 제품이 크게 손상되는 등 재산상의 손해를 입을 수 있습니다.
+**\[Warning] Potential risk**: If not conformed to, operator injuries or property damages, including serious product damages, may occur.
 {% endhint %}
 
-* 위험성 평가 결과에 따라 적절한 안전 조치를 취하고 로봇 안전 설치 범위를 정확히 지정하십시오. 로봇 동작 중 제품이 손상되거나 사용자가 상해를 입을 수 있습니다.
-* 로봇 응용 시스템 제조자나 로봇 사용자는 설명서의 내용을 숙지하고 제품의 운영 교육을 이수하십시오.
-* 작업자와 사용자의 안전을 위해 제품 설치 전 반드시 안전 펜스 등 적절한 안전 시설을 마련하십시오.
-* 로봇 암이 자유롭게 움직일 수 있도록 충분한 공간을 확보하십시오. 설치 공간이 여유롭지 못하면 로봇 동작 중 제품이 손상되거나 사용자가 상해를 입을 수 있습니다.
-* 규격 정보를 확인하여 알맞은 고정 나사를 사용하여 지정된 토크로 체결하십시오. 나사가 헐거우면 로봇이 설치 장소에서 분리되어 추락하거나 손상될 수 있습니다.
-* 제품의 연결부(전원 및 케이블)에 액체나 먼지, 금속 가루 등의 전도성 이물질이 들어가지 않도록 주의하십시오. 또한 연결부를 뾰족한 물체로 찌르거나 케이블 연결 시 무리한 힘을 가하지 마십시오. 연결 단자의 부식 또는 일시적인 단락으로 제품이 폭발하거나 화재가 발생할 수 있습니다.
-* 배선 정보를 확인하고 장치 유형에 맞춰 알맞은 단자를 이용해 장치를 연결하십시오. 특히, 안전 장치는 일반 단자에 연결하면 안전 기능을 보장할 수 없으므로 반드시 안전 장치용 단자에 연결하십시오.
-* 손상된 케이블을 절대 사용하지 말고 제품 사용 중에는 전원을 분리하지 마십시오. 감전, 화재, 고장, 및 상해의 원인이 될 수 있습니다.
-* 제품을 장시간 사용하면 열이 발생하여 화상 등 상해의 위험이 있습니다. 제품을 만져야 할 경우에는 전원을 끄고 1시간 이상 방치하여 제품을 충분히 냉각한 후 작업하십시오.
-* 절대 무단으로 제품을 설치, 개조, 분해 및 수리하지 마십시오. 고장 및 사고의 원인이 될 수 있습니다. 또한 이로 인한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
+*   Take adequate safety measures according to the result of risk assessment, and accurately assign the safe range of robot installation. During the robot operation, product damages or user injuries may occur.
 
-### <mark style="color:green;">주의</mark>
+
+*   Persons who manufacture robot application systems or use the robot must read and fully understand the manual and undergo training in robot operation.
+
+
+*   For the safety of operators and users, prepare adequate safety facilities such as safety fences before installing the product.
+
+
+*   Secure sufficient space so that the robot arm can move freely. During the robot operation, product damages or user injuries may occur.
+
+    Fasten locking bolts to the specified torque according to the specification sheet. Loose bolts may lead to damages of the robot because of falling from the installation position.
+
+
+*   Pay attention to the product connections (power and cables) so that no conductive substances, such as liquid, dust, and metal particles, could infiltrate. Do not poke the connection with sharp objects or apply excessive force during cable connection. Corrosion or temporary short circuits of connectors may lead to product explosion or fires.
+
+
+*   Check the wiring specification and connect devices with terminals that are suitable for the device types. Make sure to connect safety devices to dedicated terminals because connecting them to general terminals does not guarantee safety functions.
+
+
+*   Never use damaged cables and do not disconnect cables while the product is in use. Doing so may lead to electric shocks, fires, faults, and injuries.
+
+
+*   Long-time use of the product may lead to overheating and cause injuries such as burns. In the event it is necessary to touch the product, cool down the product sufficiently by powering it off and leaving it for at least one hour.
+
+
+*   Never arbitrarily install, modify, disassemble, or repair the product. This may lead to faults and accidents. Hyundai Robotics will not take responsibility for product damages caused by such arbitrary actions.
+
+
+
+### <mark style="color:green;">Caution</mark>
 
 {% hint style="warning" %}
-**\[주의] 저위험 요소**: 준수하지 않았을 경우 작업자가 경미한 상해를 입거나 제품이 손상되는 등 재산상의 손해를 입을 수 있습니다.
+**\[Caution] Minor risk**: If not conformed to, minor operator injuries or property damages, including product damages, may occur.
 {% endhint %}
 
-* 제품을 임의로 설치 또는 개조, 분해, 수리하지 마십시오. 또한 당사의 전문가 이외의 사람이 임의로 제품을 개조하거나 부품을 부착하는 행위를 금합니다. 이로 인한 제품 고장 발생 시 무상 서비스 및 품질 보증 서비스를 받을 수 없습니다.
-* 제품을 설치 및 수리할 때에는 고객지원팀에 문의하여 전문가에게 의뢰하십시오.
-* 먼지가 많거나 더러운 곳에 제품을 설치 및 사용하지 마십시오. 먼지나 이물질로 인해 제품이 고장 나거나 성능에 이상이 발생할 수 있습니다.
-* 자성이 있거나 자성의 영향이 미치는 곳 또는 전자파 장해가 있는 곳에 제품을 설치 및 사용하지 마십시오. 자성에 의해 제품이 손상되거나 성능에 이상이 발생할 수 있습니다.
-* 제품 운전 시에는 헐거운 옷이나 장신구를 착용하지 말고, 머리카락이 긴 경우에는 뒤로 묶어 로봇의 관절 등에 끼이지 않도록 주의하십시오.
-* 제품 동작 중에는 작동 범위 내에 들어가거나 로봇을 만지지 마십시오. 상해의 위험이 있습니다.
-* 제품은 포장된 상태로 운반하여 파손을 피하고 습도가 낮은 건조한 장소에 보관하십시오. 포장 자재 내부에 습기로 제품이 손상되거나 고장 날 수 있습니다.
-* 제품은 온도와 습도가 변하기 쉬운 곳을 피하고, 깨끗하고 서늘하며 건조한 곳에 보관하십시오.
-* 제품 운반 시에는 올바 자세를 유지하고 두 명 이상이 함께 작업하십시오. 허리나 팔, 다리 등의 신체 부위에 상해를 입을 수 있습니다.
-* 리프팅 장비를 이용해 제품을 운반하는 경우에는 해당 국가 및 지역의 안전 규정 및 장비 사용 지침을 준수하십시오.
-* 설명서의 운반 내용을 숙지하고 지시 사항을 준수하여 제품을 운반하십시오. 고객의 제품 운송으로 발생한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
-# 1. 안전
+*   Do not arbitrarily install, modify, disassemble, or repair the product. It is prohibited for persons other than experts from Hyundai Robotics to modify or attach parts to the product. Product faults caused by it will void free-of-charge services and warranty services.
 
-# 1.1 안전 요구 사항
 
-# 1.1.1 적용 표준
+*   In the event it is necessary to install or repair the product, contact our Customer Support Team to consign the work to experts.
 
-이 제품은 산업용 로봇 안전 표준 ISO 10218-1 과 협동 운전에 관한 기술 사양서 ISO/TS 15066 에 따라 설계 및 제조되었습니다. 이 제품에 적용된 안전 표준은 다음 같습니다.
+
+*   Do not install or use the product at a place filled with dust or dirt. Dust or foreign matters may lead to product faults or malfunctions.
+
+
+*   Do not install or use the product at a place of magnetism, a place which is affected by magnetism, or a place of electromagnetic interferences. Magnetism may lead to product damages or malfunction.
+
+
+*   In operating the product, do not wear loose clothes or accessories. If you have long hair, you should tie it at the back of your head so it will not entangle between joints and the like of the robot.
+
+
+*   While the product is in operation, do not enter its operating range or touch the robot. Doing so may lead to injuries.
+
+
+*   Transport the product as it is packaged to prevent product damages, and store it at a dry and low-humidity place. Storing it at a humid place may lead to product damages or faults caused by moisture infiltration.
+
+
+*   Store the product at a place that is clean, cool, dry, and free from high variation in temperature and humidity.
+
+
+*   The product should be moved by two or more persons, and the correct posture should be maintained. If not, the persons may be subject to physical injuries in the waist, arms, legs, and the like.
+
+
+*   In moving the product using lifting equipment, conform to the local and national safety regulations and the instructions for equipment use.
+
+
+*   Before moving the product, read and conform to the moving instructions specified in the manual. Hyundai Robotics will not take responsibility for product damages caused during transportation by the customer.
+
+
+# 1. Safety
+
+# 1.1 Safety requirements
+
+# 1.1.1 Applicable standards
+
+This product has been designed and manufactured in compliance with ISO 10218-1, a safety standard of industrial robots, and ISO/TS 15066, a standard specifying safety requirements for collaborative operation. The safety standards applicable to this product are as follows:
 
 * ISO 10218-1:2011 Robots and robotic devices - Safety requirements for industrial robots - Part 1: Robots
 * ISO 10218-2:2011 Robots and robotic devices - Safety requirements for industrial robots - Part 2: Robot systems and integration
@@ -147,10 +199,10 @@ GUI 는 메뉴 이름 및 버튼 이름을 대괄호\*\*(\[ ]\*\*) 안에 넣고
 * IEC 61800-3:2017 Adjustable speed electrical power drive systems - Part 3: EMC requirements and specific test methods
 * IEC 61000-6-7:2014 Electromagnetic compatibility (EMC) - Part 6-7: Generic standards - Immunity requirements for equipment intended to perform functions in a safety-related system (functional safety) in industrial locations
 * IEC 61326-3-1:2017 Electrical equipment for measurement, control and laboratory use. EMC requirements. Part 3-1: Immunity requirements for safety-related systems and for equipment intended to perform safety-related functions (functional safety) - General industrial applications
-# 1.1.2 안전 성능
+# 1.1.2 Safety performance
 
-SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/출력, PROFIsafe)의 안전 성능은 다음과 같습니다. 
-|            **항목**            | **안전 성능** |         **적용 표준**         |
+The safety performance of the emergency stop and external interface(default safety I/O, PROFIsafe) in SafeSpace2.0 is as follows: 
+|            **Item**            | **Safety performance** |         **Application standards**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
 | SIL (Safety Integrity Level) |     3     | IEC 61508/62061/61800-5-2 |
@@ -159,8 +211,8 @@ SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/
 |    		PFH    			   |1.34217E-08|        ISO 13849-1        |
 
 
-그 외의 안전 기능의 안전 성능은 다음과 같습니다.
-|            **항목**            | **안전 성능** |         **적용 표준**         |
+The safety performance of other safety functions is as follows:
+|            **Item**            | **Safety performance** |         **Application standards**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
 | SIL (Safety Integrity Level) |     2     | IEC 61508/62061/61800-5-2 |
@@ -168,683 +220,701 @@ SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/
 |    PL (Performance Level)    |     d     |        ISO 13849-1        |
 
 
-# 1.2 안전 대책
+# 1.2 Safety measures
 
-제품에 내장된 안전 기능과 사용자와 작업자의 안전을 확보하기 위한 대책에 대해 설명합니다.
-# 1.2.1 안전 기능
+This section describes the safety functions embedded into the product and the measures for ensuring the safety of users and operators.
+# 1.2.1 Safety functions
 
-SafeSpace2.0은 다음의 안전 기능을 기반으로 협동 작업을 수행하도록 되어 있습니다. 각 안전 기능에 대한 자세한 내용은 [**3. SafeSpace2.0 안전 기능**](../../3-safety-function/README.md) 을 참조하십시오.
+SafeSpace2.0 is intended to carry out collaborative tasks based on the following safety functions. For the details of the safety functions, see the "[**3. SafeSpace2.0 Safety functions**](../../3-safety-function/README.md)"
 
-* 안전 토크 정지(STO: Safe Torque Off)
-* 안전 정지1 (SS1: Safe Stop 1)
-* 안전 정지2 (SS2: Safe Stop 2)
-* 비상 정지(EM Stop, Emergency Stop)
-* 보호 정지(Protective Stop)
-* 일반 정지(Normal stop)
-* 안전 브레이크 제어(SBC: Safe Brake Control)
-* 안전 출력(Safety Outputs)
-* 안전 입력(Safety Inputs)
+* STO: Safe Torque Off
+* SS1: Safe Stop 1
+* SS2: Safe Stop 2
+* EM Stop, Emergency Stop
+* Protective Stop
+* Normal stop
+* SBC: Safe Brake Control
+* Safety Outputs
+* Safety Inputs
 * PROFIsafe
-* 안전 운전 정지(SOS: Safe Opertaing Stop)
-* 조인트 각도 감시(Joint-SLP, Joint Angle Monitoring)
-* 조인트 속도 감시(Joint-SLS, Joint Angular Speed Monitoring)
-* 충돌 검지(Collision Detection)
-* TCP 위치 감시(TCP-SLP, TCP Position Monitoring)
-* TCP 방향 감시(TCP Orientation Monitoring)
-* TCP 속도 감시(TCP-SLS, TCP Speed Monitoring)
-* 모멘텀 감시(Momentum Monitoring)
-* 파워 감시(Power Monitoring)
-# 1.2.2 안전 교육
+* SOS: Safe Opertaing Stop
+* Joint-SLP, Joint Angle Monitoring
+* Joint-SLS, Joint Angular Speed Monitoring
+* Collision Detection
+* TCP-SLP, TCP Position Monitoring
+* TCP Orientation Monitoring
+* TCP-SLS, TCP Speed Monitoring
+* Momentum Monitoring
+* Power Monitoring
+# 1.2.2 Safety training
 
-제품의 기능을 효과적으로 사용하려면 반드시 설명서의 내용을 숙지하고 제품을 올바르게 설치, 사용 및 보수해야 합니다. 제품 사용자는 로봇이 설치 및 사용되는 지역의 로봇 관련 안전 법규의 숙지 및 준수의 책임과 로봇 시스템에서 작업하는 사용자의 안전을 담보할 안전 장치를 제대로 설계, 설치 및 운용할 책임을 가집니다.
+To effectively use the product functions, the user must read and fully understand the manual, and install, use, and maintain the product properly. The product user will be responsible for having the full knowledge of and conforming to the robot-related safety regulations of the locality in which the robot is installed and used, and for the proper designing, installation, and operation of the safety devices that can guarantee the safety of the workers of the robot system.
 
-* 로봇 시스템의 설치, 사용 및 보수를 행하는 모든 작업자들은 반드시 설명서를 숙독하여 내용을 완전히 이해해야 합니다. 특히 안전 주의 사항(:warning:)을 반드시 숙지하기 바랍니다.
-* 당사에서는 제품의 설치, 사용 및 보수 관련 교육을 계획하여 시행하고 있습니다. 제품 사용자 및 작업자는 반드시 해당 교육 과정을 이수한 후에 제품을 사용하십시오.
-* 로봇의 티칭(teaching) 및 점검을 담당하는 작업자는 로봇 사용 전에 반드시 로봇 사용 및 안전 교육을 이수해야 합니다. 안전 교육 과정에서 다루는 내용은 다음과 같습니다.
-  * 안전 개념 및 안전 장치의 목적과 기능
-  * 로봇을 안전하게 다루는 절차
-  * 로봇 및 로봇 시스템의 성능과 잠재적인 위험 요소
-  * 특정 로봇의 응용 관련 작업 등
-# 1.2.3 안전 레이블
+*   All workers who install, use, and maintain the robot system must read and fully understand the manual. They must be fully knowledgeable of the safety precautions(:warning:).
 
-제어기의 내외부에는 명판과 경고 표시, 안전 기호 등이 부착되어 있습니다. 부착된 레이블을 확인하여 안전을 확보하십시오.
 
-![그림 1 안전 레이블 부착 위치: 전면과 윗면(좌) / 뒷면(우)](../../_assets/safety\_labels\_1.png)
+*   Hyundai Robotics establishes and implements plans to provide training in product installation, use, and maintenance. Product operators and workers must undergo the relevant training programs before handling the product.
 
-![그림 2 안전 레이블 부착 위치: 외측면(좌) / 내측면(우)](../../_assets/safety\_labels\_2.png)
 
-#### ![](../../_assets/1.png) 전원 및 접지 연결 주의 사항
+* Workers who are responsible for the robot’s teaching and checkups must undergo a training program in robot use and safety before handling the robot. The safety training program covers the following topics:
+  *   The concept of safety and the purposes and functions of the safety devices
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_27.png>)
 
-#### ![](../../_assets/2.png) 고전압 표시
+  *   The procedures for handling the robot safely
 
-![국문 레이블 / 영문 레이블](<../../_assets/image_29.png>)
 
-#### ![](../../_assets/3.png) 입력 전원 표시
+  *   The performance and potential risks of the robot and robot system
 
-![국문 레이블 / 영문 레이블](<../../_assets/image_25.png>)
 
-#### ![](../../_assets/4.png)공기 순환구 주의 사항
+  *   The materials relating to the application of specific robots
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_11.png>)
 
-#### ![](../../_assets/5.png)NRTL 인증 마크
+# 1.2.3 Emergency stop
 
-![국문 레이블 / 영문 레이블](../../_assets/image26.png)
+The emergency stop function is actuated in an emergency where a worker or object enters a hazard area. All the emergency stop switches are installed at places easily accessible from outside the safety areas.
 
-#### ![](../../_assets/6.png)명판
+When the emergency stop function is actuated, the robot will immediately stop moving in any case.
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_30.png>)
 
-#### ![](../../_assets/7.png)고전압 경고
+*   The servo system power of the robot will be cut off, and the motor brake will be actuated.
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_10.png>)
 
-#### ![](../../_assets/8.png)설치 주의 사항
+*   On the teach pendant screen, an emergency stop message will appear.# 1.2.3.1 Emergency stop switches
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_32.png>)
+emergency stop switches are installed at the controller and the teach pendant. In case of an emergency, press the emergency stop switch.
+# 1.2.3.2 Connecting to emergency stop devices of external systems
 
-#### ![](../../_assets/9.png)기능 안전 인증 마크
+In addition to the emergency stop switches installed by default, it is possible to add external emergency stop devices according to site conditions and applications. For more details, see “[**2. Installation**](../../../2-installation/README.md)” and “[**3.3.3 Safety I/O**](../../../3-safety-function/3-safety-function/3-safety-io/README.md)”
 
-![국문 레이블 / 영문 레이블](../../_assets/image37.png)
+# 1.3 Risk assement
 
-#### ![](../../_assets/10.png)접지선 연결 주의 사항
+In a system integration including robots, risk assessment is of great importance that most countries specify it as a statutory requirement. Because safety assessments of robot installation vary depending on methods for integrating robots into systems, the risks of robot integrated systems cannot be assessed only by robots alone.
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_19.png>)
+System administrators should carry out a risk assessment on the robot system according to the instructions specified in ISO 12100 and ISO 10218-2. The technical specifications  ISO/TS 15066 may also be referred to.
 
-#### ![](../../_assets/11.png)접지 표시
+Perform risk assessment in consideration of the entire processes of the integrated system including robots. The major objectives of risk assessment are as follows:
 
-![국문 레이블 / 영문 레이블](../../_assets/image42.jpeg)
+* Basic setting of robot use and robot teaching
+* Problem diagnosis and maintenance
+* Normal operation of installed robots
 
-{% hint style="warning" %}
-**\[경고]** : 제어기에 부착된 명판, 경고 표시, 안전 기호, 명칭 표시, 전선 마크 등의 위치를 옮기거나 페인트칠 및 커버를 씌워 가리는 행위 등 안전 레이블에 손상을 주는 일체의 행위를 금합니다.
+
+
+After installing robots and composing the system, a risk assessment must be performed. In risk assessment, the major points to be determined include the adequacy of the safety devices of integrated robot systems and the necessity for additional emergency stop devices or other safety devices.
+
+It is very important to compose robot integrated systems based on the identification of adequate safety devices. Compose robot integrated systems referring to the relevant details of the manual.
+
+For robots, it is possible to set tool center point (TCP) speed, pressure, power, momentum, collision detection, limit values of reduction ratio, and limit values of joint-specific angles, speeds, and torques. In addition, safety functions can be set by using safety-related inputs/outputs (I/Os). For more details for the composition of safety functions, see the “[**3. SafeSpace2.0 safety functions**](../3-safety-function/README.md)”
+
+In the **\[Safety functions]** menu, the safety-related functions of the collaborative robot can be set, including the following:
+
+*   **Force and power limiting**: Limit the force and pressure at which the robot should stop in case of collision between the robot and an operator.
+
+
+*   **Momentum limiting**: Limit energy and impact load by decreasing the robot’s motion speed in case of collision between the robot and an operator.
+
+
+*   **Joint and TCP position limiting**: Limit the robot’s motion so that it does not move to body parts such as the user’s neck or head.
+
+
+*   **TCP and tool posture limiting**: Limit motion to reduce risks relating to specific sections or characteristics of tools and operating parts (e.g., sharp points of tools or objects under operation).
+
+
+* **Speed limiting**: Limit the speed of the robot to a low speed so that an operator can escape collision with the robot.
+
+In addition, safety-related functions can be composed by installing the robot at a specific location or using safety I/Os.
+
+The major categories of the risk assessment of robot integrated systems include the following:
+
+* Collision severity of robots
+* Collision probability of robots
+* Collision avoidance probability of robots
+
+
+
+In integrating robot systems, if risk factors (e.g., use of tools unintended for collaborative robots) are not sufficiently removed by the robot’s safety functions, additional protective devices shall be installed according to the risk assessment.
+# 1.4 Potential risk
+
+In the risk assessment of an integrated robot system, if the assessment result indicates that risk factors are not sufficiently removed only by the robot’s safety functions, additional protective measures must be established.
+
+In establishing additional protective measures, the following should be considered:
+
+*   Finger pinching (entanglement) between the robot base and the installation support during installation
+
+
+*   Injuries (such as poking and piercing) caused by sharp edges or protruding parts of obstacles or tools in the operating area
+
+
+*   Injuries caused by collision with the robot (such as bruises, falling, and bone fractures)
+
+
+*   Injuries caused by obstacles around the robot (such as poking, piercing, and bone fractures)
+
+
+*   Injuries caused by loose connections
+
+
+*   Injuries caused by toxic or hazardous substances under work (such as skin damage and breathing disorders)
+
+
+*   Displacement of objects under work caused by abrupt power shutoffs
+
+
+*   Erroneous activation of emergency stop switches caused by confusion with those of other equipment
+
+
+*   Errors caused by arbitrary modification of the Set up of safety functions
+
+
+
+Because the types of potential risks vary depending on system compositions, a risk assessment must be carried out before using an integrated robot system.
+# 1.5 Validity and responsibilities
+
+The user should conform to the safety requirements specified in the safety laws and regulations of the country and locality in which the robot is installed and used. Responsibilities of suppliers and users of integrated robot systems include but are not limited to the following:
+
+*   Risk assessment of robot integrated systems
+
+
+*   Addition or removal of safety devices according to the result of risk assessment
+
+
+*   Checking that robot integrated systems are properly composed, installed, and set
+
+
+*   Establishment of the methods and instructions for using robot integrated systems and provision of user training
+
+
+*   Management of safety devices (prohibition of users from arbitrary modification and manipulation of safety devices)
+
+
+*   Provision of important pieces of information, contact addresses, and others relating to product use and safety
+
+
+*   Provision of all types of technical documents including manuals
+
+
+
+The safety-related content of this manual does not cover all the risk factors and situations that may occur during product use.
+# 1.6 Reaction time
+
+
+*   **Stopping Reaction time**
+
+    When a Safety function violation is triggered, the reaction time until a stop is 9.8 ms. The response time should be taken into account when calculating the robot's stopping time and stopping distance."
+
+*   **PROFIsafe Reaction time**
+	
+	When an external stop is triggered via PROFIsafe, the reaction time until a stop is 40.8 ms. To obtain the time until the robot completely stop, the communication cycle, as well as the calculated values for the robot's stopping time and stopping distance, need to be added.
+
+****# 2. Installation
+
+# 2.1 Robot system
+
+Industrial robots are “machines that are equipped with manipulation and movement functions based on automatic control for them to perform various works by using programs at an industrial site.” The collaborative robot is a type of industrial robot.
+
+The robot system consists of a manipulator and a controller that controls the manipulator. A teach pendant that is to be used for setting and manually operating the robot system is attached to the controller.
+
+* Robot: Performs various works in industrial sites such as transporting objects, assembling parts, etc.
+* Controller: Adjusts the robot’s operation according to the program setting values set through the teach pendant. It can be interoperated with various external equipment or devices through the input/output port of the controller. 
+* Teach Pendant: A device that manages the entire robot system. It enables you to teach the robot a specific posture or setup and control the programs.
+
+The following shows an example of the basic configuration of the robot system.
+
+![Basic Configuration of the Vertical Articulated Robot System ](../_assets/image_285.png)
+
+
+{% hint style="info" %}
+For more details on teach pendant, see “[Operation Manual for Hi6 Controllers.](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/1-robot-system/README)”
 {% endhint %}
+# 2.2 Safety control board
 
-{% hint style="warning" %}
-**\[주의]** : 로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
-{% endhint %}
-# 1.2.4 비상 정지
+The safety control module is installed and shipped inside the controller in the form of a board, refer to the controller maintenance manual if the board needs to be replaced.# 2.3 Additional safety I/O module(option)
 
-비상 정지 기능은 작업자 또는 다른 물체가 위험 지역에 진입하는 등 긴급 시나 비상 시에 작동합니다. 모든 비상 정지 스위치는 안전 영역 밖에서도 쉽게 접근할 수 있는 곳에 설치되어 있습니다.
+The additional safety I/O module is installed and shipped inside the controller in the form of a board, refer to the controller maintenance manual if the board needs to be replaced.# 2.4 PROFIsafe module(option)
 
-비상 정지 기능이 실행되면 어떠한 경우에서도 로봇은 즉시 동작을 정지합니다.
+The PROFIsafe option module is installed and shipped inside the controller in the form of a board, refer to the controller maintenance manual if the board needs to be replaced.# 3. SafeSpace2.0 safety functions
 
-* 로봇의 서보 시스템 전원이 차단되고 모터 브레이크가 동작합니다.
-* 티치 펜던트(Teach pendant)의 화면에 비상 정지 메시지가 나타납니다.
-# 1.2.4.1 비상 정지 스위치
+# 3.1 Description of terms
 
-비상 정지 스위치는 제어기와 티치 펜던트에 하나씩 설치되어 있습니다. 긴급 상황 발생 시 비상 정지 스위치를 누르십시오.
-# 1.2.4.2 외부 시스템의 비상 정지 장치 연결
+### <mark style="color:green;">Robot monitoring functions</mark>&#xD;
 
-기본으로 설치되어 있는 비상 정지 스위치 외에 현장 환경 및 응용에 따라 추가로 외부 비상 정지 장치를 연결할 수 있습니다. 이에 대한 자세한 내용은 “[**2. 설치**](../../../2-installation/README.md)”과 “[**3.3.3 안전 신호 입출력**](../../../3-safety-function/3-safety-function/3-safety-io/README.md)”을 참조하십시오.
+These are the functions for monitoring the speed, force and momentum of the robot.
 
-# 1.3 위험성 평가
+*   **Joint angle monitoring**
 
-로봇을 포함한 통합 시스템 구성에 있어 위험성 평가는 대부분의 국가에서 법적 필수 사항으로 다루고 있을 만큼 중요한 요소 중 하나입니다. 로봇이 시스템에 통합되는 방식에 따라 로봇 설치에 대한 안전 평가가 달라지므로 로봇 자체만으로는 통합 시스템의 위험성을 평가할 수 없습니다.
+    This monitors the position of each axial joint. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
 
-시스템 관리자는 ISO 12100 및 ISO 10218-2의 지침에 따라 시스템을 구성하고 운영하여 위험성 평가를 진행해야 합니다. 또한 기술 규격서 ISO/TS 15066을 참고할 수 있습니다.
+*   **Joint speed monitoring**
 
-로봇을 포함한 통합 시스템의 전체 프로세스를 고려하여 위험성 평가를 진행하십시오. 위험성 평가의 주요 목표는 다음과 같습니다.
-
-* 로봇 사용의 기본 설정 및 로봇 티칭
-* 문제 진단 및 유지 보수
-* 설치된 로봇의 정상 동작
-
-로봇을 설치하고 시스템을 구성한 후에는 반드시 위험성 평가를 실행해야 합니다. 위험성 평가에서는 로봇 통합 시스템의 안전 장치의 적절성을 비롯하여 추가 비상 정지 장치 및 다른 안전 장치의 필요성 등을 주로 판단합니다.
-
-적절한 안전 장치를 파악하여 로봇 통합 시스템을 올바르게 구성하는 것은 매우 중요합니다. 설명서 내에서 관련 내용을 참조하여 통합 시스템을 구성하십시오.
-
-로봇의 TCP 속도, 압력, 파워, 모멘텀, 충돌 검지, 감속비의 제한치, 조인트별 각도, 속도 등의 제한치 등을 설정할 수 있습니다. 또한, 안전 관련 I/O 및 통신을 이용하여 안전 기능을 구성할 수 있습니다. 안전 기능 구성에 대한 자세한 내용은 “[**3. SafeSpace2.0 안전 기능](../3-safety-function/README.md)”를 참조하십시오.
-
-**\[안전 기능]** 메뉴에서 안전 관련 기능을 구성할 수 있으며 사용할 수 있는 기능은 다음과 같습니다.
-
-* **포스 및 파워 제한**: 로봇과 작업자의 충돌을 대비하여 정지하는 힘과 압력을 제한
-* **운동량 제한**: 로봇과 작업자의 충돌을 대비하여 로봇의 동작 속도를 줄여 에너지와 충격 하중을 제한
-* **조인트 및 TCP 위치 제한**: 로봇이 사용자의 목이나 머리와 같은 특정 신체 부위로 이동하지 않도록 움직임을 제한
-* **TCP 및 툴 자세 제한**: 툴과 작업 부품의 특정 영역이나 특징과 관련된 위험을 줄이기 위해 움직임을 제한(예: 툴 또는 작업물의 날카로운 부분이 작업자를 향해 이동하는 것을 막기 위함)
-* **속도 제한**: 로봇과 작업자의 충돌을 대비하여 작업자가 충돌을 피할 시간을 제공하기 위해 로봇의 움직임이 저속으로 유지되도록 제한
-
-이뿐만 아니라 로봇을 특정한 위치에 설치하거나 안전 I/O를 이용하여 안전 관련 기능을 구성할 수도 있습니다.
-
-로봇 통합 시스템의 위험성 평가 시 중요 항목은 다음과 같습니다.
-
-* 로봇별 충돌 심각도
-* 로봇별 충돌 발생 가능성
-* 로봇별 충돌 회피 가능성
-
-통합 시스템 구성 시 로봇의 안전 관련 기능으로 위험 요소가 충분히 제거되지 않은 경우(예: 비협동로봇용 툴 사용 등)에는 위험성 평가를 통해 필요한 추가 보호 장치를 설치해야 합니다.
-# 1.4 잠재적 위험
-
-로봇과 연동된 통합 시스템의 위험성 평가에서 로봇의 안전 관련 기능만으로 위험 요소가 충분히 제거되지 않았다는 결과가 도출되었을 경우에는 반드시 추가 보호 대책을 수립해야 합니다.
-
-추가 보호 대책 수립 시 고려해야 할 사항은 다음과 같습니다.
-
-* 설치 시 로봇 베이스와 설치대 사이에 손가락 끼임(협착)
-* 작업 영역 내의 장애물 및 툴의 날카로운 가장자리나 뾰족한 부분에 의한 상해(찔림, 관통 등)
-* 로봇과의 충돌에 의한 상해(멍, 넘어짐, 골절 등)
-* 로봇 주변의 장애물에 의한 상해(찔림, 관통, 골절 등)
-* 체결 부위가 완전히 고정되지 않아 발생할 수 있는 상해
-* 독성이 있는 물질 및 유해 물질 작업 시 발생할 수 있는 상해(피부 손상, 호흡 곤란 등)
-* 갑작스러운 전원 중단으로 툴에서 작업물 이탈
-* 다른 장비의 비상 정지 스위치와 혼동하여 발생하는 실수
-* 안전 관련 기능 설정의 임의 변경에 의한 오류 등
-
-발생 가능한 위험의 유형은 시스템 구성에 따라 다르므로 통합 시스템을 사용하기 전에는 반드시 위험성 평가를 실행하십시오.
-# 1.5 유효성 및 책임
-
-로봇을 설치 및 사용하는 국가 및 지역의 안전 규정 및 법률을 기준으로 안전 요건을 준수해야 합니다. 로봇 통합 시스템의 공급자와 사용자에게는 다음의 사항을 비롯하여 다양한 책임이 부여됩니다.
-
-* 로봇 통합 시스템의 위험성 평가
-* 위험성 평가 결과에 따른 안전 장치의 추가 및 제거
-* 통합 시스템의 올바른 구성, 설치 및 설정 여부 확인
-* 통합 시스템의 사용 방법과 지침 구축 및 사용자 교육
-* 안전 장치 관리(사용자의 안전 장치 임의 변경 및 조작 금지)
-* 제품 사용 및 안전에 관한 중요 정보 및 연락처 등의 정보 제공
-* 설명서를 비롯한 모든 종류의 기술 문서 제공 등
-
-이 설명서의 안전 관련 내용에서 제품 사용 중 발생할 수 있는 모든 위험 요소와 상황을 다루지는 않습니다.
-# 1.6 반응 시간
-
-
-*   **정지 반응 시간**
-
-    안전 기능 위반으로 정지가 수행되기까지의 반응시간은 9.8ms 입니다. 반응 시간은 로봇의 정지시간 및 정지거리 계산시 반영되어야합니다.  
-
-*   **PROFIsafe 반응 시간**
-
-	PROFIsafe의 F-output Data에 의해 정지가 수행되기까지의 반응시간은 40.8ms 입니다. 로봇이 완전히 정지하기까지의 시간을 얻으려면 통신 주기와 로봇의 정지시간 및 정지거리 계산값이 추가되어야합니다.  
-
-****# 2. 설치
-
-# 2.1 안전 모듈
-
-안전 제어 모듈은 보드 형태로 제어기 내부에 장착되어 출하됩니다. 보드 교체가 필요할시 제어기 유지보수 매뉴얼을 참고하십시오.# 2.2 I/O 모듈(옵션)
-
-I/O 옵션 모듈 사용을 선택하면 제어기 내부에 장착되어 출하됩니다. 보드 교체가 필요할시 제어기 유지보수 매뉴얼을 참고하십시오.# 2.3 PROFIsafe 모듈(옵션)
-
-PROFIsafe 옵션 모듈 사용을 선택하면 제어기 내부에 장착되어 출하됩니다. 보드 교체가 필요할시 제어기 유지보수 매뉴얼을 참고하십시오.# 3. SafeSpace2.0 안전 기능
-
-# 3.1 용어 설명
-
-### <mark style="color:green;">로봇 감시 기능</mark>&#xD;
-
-로봇의 속도, 힘, 운동량을 감시하기 위해 기준이 되는 파라미터입니다.
-
-*   **조인트 각도 감시**
-
-    각 축 조인트의 위치를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
-
-*   **조인트 속도 감시**
-
-    각 축 조인트의 속도를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors the speed of each axial joint. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
     
-*   **안전 정지 감시(SOS, Safe Operating Stop)**
+*   **Safe operating stop (SOS) monitoring**
 
-    각 축에 슬립 발생 없이 정지 상태를 유지하는지 감시. 기준값을 초과하는 경우 정지0을 수행
+    This monitors whether the robot stops without any slips. In cases when the specified value is exceeded, Stop0 will be actuated. 
 
-*   **TCP 위치 감시**
+*   **Tool center point (TCP) position monitoring**
 
-    안전 툴 모델이 안전 영역을 위반하는지 감시. 영역을 침범하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors whether the safety tool model violates the safety space. In cases when the safety space is intruded into, the safety stop set by the user will be actuated.
     
-*   **TCP 방향 감시**
+*   **TCP orientation monitoring**
 
-    툴의 방향이 지정된 범위를 벗어나지 않는지 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors whether the tool orientation is out of the specified range. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
     
-*   **TCP 속도 감시**
+*   **TCP speed monitoring**
 
-    툴 끝의 속도를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors the speed of the tool tip. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
     
-*   **파워 감시**
+*   **Power monitoring**
 
-    로봇의 파워를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors the power of the robot. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
     
-*   **모멘텀 감시**
+*   **Momentum monitoring**
 
-    로봇의 모멘텀을 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
-
-
-*   **충돌 검지**
-
-    로봇에 외력이 가해져 허용치를 초과하는 경우 사용자가 설정한 안전 정지 수행
+    This monitors the momentum of the robot. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
 
 
-### <mark style="color:green;">안전 레이아웃</mark>&#xD;
+*   **Collision detection**
 
-TCP 위치와 방향 감시를 위해 기준이 되는 안전 영역과 툴 영역의 파라미터입니다.
-
-*   **안전 영역**
-
-    툴의 작업 영역과 보호 영역의 통칭
-*   **작업 영역**
-
-    로봇이 작업을 수행하는 영역. 툴 및 로봇 엘보우 모델이 작업 영역을 벗어나는 경우 안전 정지 수행
-*   **보호 영역**
-
-    로봇으로부터 보호되어야 하는 영역. 툴 및 로봇 엘보우 모델이 보호 영역을 침범하는 경우 안전 정지 수행
-*   **안전 툴 모델링**
-
-    TCP 위치와 방향 감시를 위해 로봇에 부착된 툴을 구와 원뿔로 모델링
-*   **안전 로봇 모델링**
-
-    로봇의 2축과 3축을 캡슐로 모델링하여 안전 영역과의 거리를 감시
+    In cases when the allowable value is exceeded because of an external force applied to the robot, the safety stop set by the user will be actuated.
 
 
+### <mark style="color:green;">Safety layout</mark>&#xD;
 
-### <mark style="color:green;">안전 정지</mark>&#xD;
+These are the parameters for the safe space and the tool space that form the criteria for monitoring the TCP position and orientation.
 
-안전에 위반이 되는 경우 안전한 상태로 만들기 위해 로봇을 정지시키는 것으로 정지 방법에는 3 가지가 있습니다. 각 정지 방법에 대한 자세한 정보는 “ISO 13850” 또는 “IEC 60204-1”를 참조하십시오.
+*   **Safety space**
 
-*   **정지0**
+    This refers to the working space and the protected space.
+*   **Working space**
 
-    모든 조인트의 모터 전원을 즉시 제거하고 정지(제어되지 않은 정지)
-*   **정지1**
+    This refers to the space in which the robot carries out work. If the tool or the robot’s model goes out of the working space, the safety stop function will be actuated.
+*   **Protected space**
 
-    모든 조인트의 모터가 감속 후 정지하고 이후에 모터의 전원을 제거(제어 정지). 로봇은 프로그램 경로를 계속 따라가며 감속 정지하고 로봇이 정지하자마자 전원 차단
-*   **정지2**
+    This refers to the space where the operator should be safeguarded from the robot. If the tool or the robot’s model goes out of the protected space, the safety stop function will be actuated.
+*   **Safety tool modeling**
 
-    모든 조인트의 모터가 감속 후 안전 정지 감시(SOS, Safe Operating Stop) 동작. 모든 모터의 전원 공급 유지 상태
+    The tool attached to the robot is modeled in spheres and cones to monitor the TCP position and orientation.
+*   **Safety robot modeling**
 
-
-정지1과 정지2는 감속 시간과 거리를 통해 감속 과정을 모니터링합니다. 
-
-*   **정지 시간**
-
-    감속을 시작하여 실제 정지하기까지의 시간을 모니터링하여, 설정한 시간 안에 로봇이 정지하지 않으면 정지0을 수행하여 모터의 전원을 즉시 제거합니다.
-*   **정지 거리**
-
-    감속을 시작하여 실제 정지하기까지의 TCP 거리를 모니터링하여, 설정한 거리 안에 로봇이 정지하지 않으면 정지0을 수행하여 모터의 전원을 즉시 제거합니다.
-# 3.2 협동 운전 모드
-
-ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 안전하게 작업할 수 있도록 4 개의 운전 모드에 대해 설명하고 있습니다. 협동 운전은 이 중 최소 한 가지 요구 사항을 충족해야 하고 운전 중에는 반드시 협동 운전 중임을 시각적으로 표시하여 알려야 합니다.
-# 3.2.1 안전 정격 감시 정지
-
-사람이 작업 공간 내 진입 시 로봇의 작동이 정지합니다. 외부 감시 장치를 설치하고 이를 안전 제어 모듈(SCM: Safety Control Module)에 연결하여 사용하십시오.
-
-* 외부 장치에 안전 입력을 연결할 경우에는 안전 I/O신호 및 정지 방법(정지 0, 정지 1, 정지 2)을 설정해야 합니다.
-* 안전 가드 및 외부 비상정지를 연결한 경우에는 국제 또는 해당 지역 규제에 부합하는 정지 방법을 설정해야 합니다.
-
-관련 기능 설정에 대한 참조 정보는 다음과 같습니다.
-
-* 안전 신호 설정에 대한 자세한 내용은 “[**3.3.3 안전 신호 입출력**](../3-safety-function/3-safety-io/README.md)”를 참조하십시오.
-* 안전 정지 기능 설정에 대한 자세한 내용은 “[**1.9 안전 정지 기능**](../3-safety-function/1-robot-safety-condition/9-stop-function.md)”을 참조하십시오.
-# 3.2.2 속도 및 위치 감시
-
-로봇은 지정된 거리 및 속도 내에서 작동합니다.
-
-속도 및 위치 감시 모드는 사람의 위치 및 속도를 감지할 수 있는 센서를 이용해 로봇과 사람 간의 거리와 상대 속도에 비례하여 로봇의 구동 속도를 제어하는 모드로 거리를 감지하는 외부 센서 입력에 대해 감속 모드를 사용할 수 있습니다.
-
-속도 및 위치 감시 모드 사용을 위한 참조 정보는 다음과 같습니다.
-
-* 로봇 감속에 대한 자세한 내용은 “[**3.3.1.5 Re plan**](../3-safety-function/1-robot-safety-condition/5-re-plan.md)”을 참조하십시오.
-* 안전 신호 설정에 대한 자세한 내용은 “[**3.3.3 안전 신호 입출력**](../3-safety-function/3-safety-io/README.md)”를 참조하십시오.
-# 3.2.3 동력 및 힘 제한
-
-접촉 사고 발생 시, 인체에 가해지는 충격을 제한합니다. 충돌 검지 기능 파워, 모멘텀 제한 기능을 통해 작업자와 로봇 간의 접촉 사고 발생 시 작업자의 신체에 가해지는 충격을 제한할 수 있습니다.
-
-충돌 검지 기능은 민감도(%)를 설정하여 충돌을 검지합니다. 파워(W)와 모멘텀(kg·m/s)을 설정하여 로봇의 동력을 제한할 수 있습니다.
-
-로봇 안전 기능 설정에 대한 자세한 내용은 “[**3.3 안전기능**](../3-safety-function/README.md)”을 참조하십시오.
-# 3.3 안전 기능
+   The robot’s 2nd axis and 3rd axis are modeled in capsule to monitor its distance from the safety space.
 
 
-SafeSpace2.0의 안전 기능은 안전 기능의 설정을 통해 구성할 수 있으며 작업자가 수행한 위험성 평가에서 선별된 위험의 대처 방안으로 사용합니다.
 
-# 3.3.1 로봇 감시 기능
+### <mark style="color:green;">Safety stop</mark>&#xD;
 
-로봇 안전 파라미터는 안전 기능을 모니터링하기 위한 한계값 및 정지방법으로 구성됩니다.
+This is the function that stops the robot if any safety conditions are violated. There are three methods for the safety stop. For more details on the methods, refer to ISO 13850 or IEC 60204-1.
 
-각 안전기능은 활성화 조건과 위반시 정지방법, 한계값으로 다양한 세트를 저장하여 활용할 수 있습니다.  
+*   **Stop0**
 
-안전 파라미터를 설정하는 메뉴는 아래의 방법으로 진입하십시오.
+    The power of the motors of all the joint modules will disconnect immediately, and the motors will stop (uncontrolled stop).
+*   **Stop1**
 
-**\[시스템]** 버튼 > **\[4: 응용 파라미터 > 18: SafeSpace2.0 > Parameter setup > Robot restriction]** 
+    The motors of all the joint modules will decelerate and stop, and the power of the motors will disconnect (controlled stop). The robot will decelerate as it continues to move along the programmed path, and then it will stop. As soon as the robot stops, its power will be disconnected.
+*   **Stop2**
+
+    The motors of all the joint modules will decelerate, and the safe operating stop (SOS) will take effect. The power supply status of all the motors will be retained.
+
+
+If stop 1 and stop are performed, the deceleration process is monitored through the stop time and distance.
+
+*   **Stop time**
+
+    This monitors the time from start deceleration to actual robot stop. If the robot does not stop within the set time, perform Stop 0 to immediately remove power from the motor.
+*   **Stop distance**
+
+    This monitors the distance of TCP from start deceleration to actual robot stop. If the robot does not stop within the set time, perform Stop 0 to immediately remove power from the motor.
+# 3.2 Collaborative operation mode
+
+ISO 10218-1 and ISO/TS 15066 describe four operating modes so that operators can practice work safety without being exposed to risks. The collaborative operation should meet a least one of these requirements, and a visual display should show that the system is in collaborative operation when it is in operation.
+# 3.2.1 Safety-rated monitored stop
+
+When a person enters the working space, the robot operation will stop. Install an external monitoring device, and use it while connected to the safety control module (SCM).
+
+* When an external device is connected to the safety input, the stop modes (Stop0, Stop1, and Stop2) should be set in the safety input/output (I/O) signal setting.
+* When a safeguard and an external emergency stop device are connected, the stop modes must meet the requirements of the international or local regulations.
+
+The reference information on the setting of the related functions is as follows:
+
+* For more details on the setting of safety I/O signals, see “[**3.3.3 Safety I/O signals**](../3-safety-function/3-safety-io/README.md)”
+* For more details on the setting of safety stop functions, see “[**1.9 Safety Stop Function**](../3-safety-function/1-robot-safety-condition/9-stop-function.md)”
+# 3.2.2 Speed and separation monitoring
+
+The robot operates within a specified distance and speed.
+
+In the speed and separation monitoring mode, the driving speed of the robot is controlled in proportion to the distance and the relative speed between the robot and the operator, utilizing sensors that can detect the operator’s position and speed. You can use the deceleration mode for the inputs of the external sensors that detect distance.
+
+The reference information on the use of the speed and separation monitoring mode is as follows:
+
+* For more details on the setting of deceleration mode, see “[**3.3.1.5 Re plan**](../3-safety-function/1-robot-safety-condition/5-re-plan.md)”
+* For more details on the setting of safety I/O signals, see “[**3.3.3 Safety I/O signals**](../3-safety-function/3-safety-io/README.md)”
+# 3.2.3 Power and force limiting
+
+This limits the impact on the human body in case of a collision. The collision detection function and power, momentum limiting function can limit the impact on the operator in case of a collision between the operator and the robot.
+
+The collision detection function detects collisions according to the set sensitivity (%). You can also restrict the robot’s driving power by setting the electric power (W) and momentum (kg·m/s).
+
+For more details on the setting of the robot’s safety functions, see “[**3.3 Safety functions**](../3-safety-function/README.md)”
+# 3.3 Safety functions
+
+
+The Safety functions of SafeSpace2.0 can be configured through the settings of the safety parameters. It is used as a response to selected risks in risk assessments conducted by operator.
+
+# 3.3.1 Robot monitoring functions
+
+The robot safety parameters consist of limits to monitor the safety function and stopping methods.
+
+Each safety function can be utilized by storing various sets of activation conditions, limit values and methods of stopping in case of violation.  
+
+You can set parameter values in the following menu.
+
+**\[System]** button > **\[4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction]** 
 ****
 
 
-로봇 제한 메뉴에서 설정할 수 있는 안전 기능은 다음과 같습니다.
+The following safety parameters can be set in the robot monitoring menu.
 
-* **조인트 위치**: 로봇이 축별로 특정 범위 내에서만 동작할 수 있도록 범위를 제한
-* **조인트 속도**: 축별 제한된 속도 이상으로 구동하지 못하게 하여 로봇의 운동량을 제한
-* **조인트 정지 감시**: 정지2 수행 후 축별로 비정상적인 움직임을 확인하여 로봇의 정지 상태를 감시
-* **TCP 속도**: TCP 기준에서 로봇이 제한된 속도 이상으로 구동하지 못하게 제한
-* **Re plan**: 외부 입력에 따라 로봇의 속도를 조절하여 협동 운전 모드 중 [3.2.2 속도 및 위치 감시](../../2-collaborative-operation-mode/2-speed-separation-monitoring.md) 수행
-* **파워, 충돌 검지**: 로봇과 작업자의 충돌 발생 시의 힘과 압력을 제한
-* **모멘텀**: 로봇과 작업자의 충돌 발생 시의 에너지와 충격 하중을 제한
+* **Joint position**: This limits the robot’s joint positions so that its axes can move only within the specified ranges.
+* **Joint speed**: This limits the robot’s momentum so that its axes cannot move beyond the specified speeds.
+* **SOS**: This monitors the robot's stationary state by checking for abnormal movement on each axis after performing stationary 2
+* **TCP speed**: This limits the robot's TCP speed so that axes cannot move beyond the specified speeds.
+* **Re plan**: This contorls the speed of robot according to external input signal to perform [3.2.2 Speed and separation monitoring](../../2-collaborative-operation-mode/2-speed-separation-monitoring.md) of collaborative operation mode.
+* **Power, collision detection**: This limits the force and pressure in case of a collision between the robot and the operator.
+* **Momentum**: This limits the energy and impact load in case of a collision between the robot and the operator.
 
 
 {% hint style="warning" %}
-**\[주의]** : 작업자 및 사용자는 로봇 주위의 인원 및 장비의 안전을 보장하기 위해 로봇 안전 기능을 구성하기 전에 위험성 평가를 수행해야 하며 평가 결과에 따라 다음 사항을 설정하십시오.
+**\[Caution]** : To ensure the safety of personnel and equipment around the robot, operators and users should perform a risk assessment before configuring the robot’s safety function and set the following details according to the assessment result:
 
-* 비밀번호 등을 설정하여 허가받지 않은 사람의 안전 구성 변경 방지
-* 안전 관련 기능 및 인터페이스 설정
-* 로봇 가동 전 설정 내용의 정확성 확인
-* 모든 안전 기능의 구성 및 설정의 위험성 평가 준수 여부 확인
+* Set passwords and the like so that the safety configuration cannot be modified by unauthorized persons.
+* Set safety-related functions and interfaces.
+* Check if the settings are correct before running the robot.
+* Check if all the safety functions are configured and if the settings conform to the result of the risk assessment.
 {% endhint %}
 
-# 3.3.1.1 조인트 각도 제한 설정
+# 3.3.1.1 Joint space monitoring
 
-조인트 제한 파라미터는 로봇의 조인트 공간에서 안전 기능을 모니터링하기 위한 한계값입니다. 모니터링 위반 시에는 설정한 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+These parameters are the limit values for monitoring the safety functions relating to the space in which the robot’s joints move. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-![그림 4 조인트 각도 제한 설정 예(S축)](<../../../_assets/joint_space.png>)
+![An example of joint space setting (S-axis)](../../../_assets/joint_space.png)
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 로봇 제한 > 조인트 각도 제한]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Joint space]** menu.
 
-![그림 5 조인트 각도 제한 파라미터 설정 화면](<../../../_assets/joint_space_param.png>)
+![Window for setting joint space parameters](../../../_assets/joint_space_param.PNG)
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Type |  <p>안전영역의 종류</p><p>(작업영역/보호영역)</p>  | 작업 영역 |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Stop function |   <p>기능 위반시 정지 방법</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| Joint OnOff |   <p>각 관절의 활성화 여부</p><p>(On/Off)</p>  |  Off |
-| Min |   <p>각 관절의 각도 제한값</p><p>(-360.0 ~ 360.0 (deg))</p>  |  -360.0 |
-| Max |   <p>각 관절의 각도 제한값</p><p>(-360.0 ~ 360.0 (deg))</p>  |  360.0 |
+| Type |  <p>Type of space</p><p>(working space/protected space)</p>  | working space |
+| Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Joint OnOff |   <p>Activation of each joint</p><p>(On/Off)</p>  |  Off |
+| Min |   <p>The angle limit value of a joint</p><p>(-360.0 ~ 360.0 (deg))</p>  |  -360.0 |
+| Max |   <p>The angle limit value of a joint</p><p>(-360.0 ~ 360.0 (deg))</p>  |  360.0 |
 
 {% hint style="warning" %}
-**\[주의]**: 안전기능은 설정한 영역을 기반으로 감시합니다. 설정한 영역이 정지거리를 감안하여 설정해야 하며, 구동 전 반드시 검증을 수행해야합니다.  
+**\[Caution]**: The safety function is monitored based on the set parameters. In configuring a limit, you must consider the stop reaction time and stopping distance. Before running the robot, verification must be performed.
 {% endhint %}
- # 3.3.1.2 조인트 속도 제한
+ # 3.3.1.2 Joint speed monitoring
 
-조인트 속도 제한 파라미터는 로봇의 조인트 속도를 감시하기 위한 한계값입니다. 한계값 위반 시에는 설정한 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+These parameters are the limit values for monitoring the safety functions relating to the speed in which the robot’s joints move. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-![그림 4 조인트 속도 제한 설정 예](../../../_assets/joint_speed.png)
+![An example of joint speed setting](../../../_assets/joint_speed.png)
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 로봇 제한 > 조인트 속도 제한]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Joint speed]** menu.
 
-![그림 5 조인트 속도 제한 파라미터 설정 화면](<../../../_assets/joint_speed_param.png>)
+![Window for setting joint speed parameters](../../../_assets/joint_speed_param.PNG)
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Stop function |   <p>기능 위반시 정지 방법</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| Joint OnOff |   <p>각 관절의 활성화 여부</p><p>(On/Off)</p>  |  Off |
-| speed |   <p>각 관절의 속도 제한값</p><p>(0 ~ 5000 (mm/s))</p>  |  5000.0 |
+| Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Joint OnOff |   <p>Activation of each joint</p><p>(On/Off)</p>  |  Off |
+| speed |   <p>The speed limit value of a joint</p><p>(0 ~ 5000 (mm/s))</p>  |  5000.0 |
 
 {% hint style="warning" %}
-**\[주의]**: 속도 감시 기능 설정시에는 반드시 정지 반응 시간을 고려하고 커버를 덮어 충돌 및 부상을 예방하십시오.
+**\[Caution]**: The safety function is monitored based on the set parameters. In configuring a limit, you must consider the stop reaction time and stopping distance. Before running the robot, verification must be performed.
 {% endhint %}
  
-# 1.6.2 정지 감시
+# 1.6.2 SOS monitoring
 
-정지 감시는 로봇 정지 동작시 각 축의 비정상적인 움직임이 있는지 감시하는 기능입니다. 설정한 한계값 위반 시에는 정지0이 즉시 활성화됩니다.
+SOS monitoring is a function that monitors for abnormal movement of each axis during robot stop operation. If a monitoring violation occurs, Stop0 will be actuated immediately.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 로봇 제한 > 조인트 SOS]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
 
-![정지 감시 파라미터 설정 화면](<../../../_assets/joint_sos_param.png>)
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Joint SOS]** menu.
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+![Window for setting joint SOS parameters](../../../_assets/joint_sos_param.PNG)
+
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Joint OnOff |   <p>각 관절의 활성화 여부</p><p>(On/Off)</p>  |  Off |
-| tolerance |   <p>각 관절의 각도 제한값</p><p>(0.0 ~ 3.0 (deg))</p>  |  0.1 |
+| Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Joint OnOff |   <p>Activation of each joint</p><p>(On/Off)</p>  |  Off |
+| tolerance |   <p>The angle limit value of a joint</p><p>(0.0 ~ 3.0 (deg))</p>  |  0.1 |
 
 {% hint style="warning" %}
-**\[주의]**: 정지 감시 파라미터 위반 시에는 재기동 전 로봇의 움직임이 정상인지 반드시 확인하십시오.  
-{% endhint %}# 3.3.1.4 TCP 속도 제한
+**\[Caution]**: Make sure that the robot moves normally before restarting operation if SOS monitoirng is violated.  
+{% endhint %}# 3.3.1.4 TCP speed monitoring
 
-로봇 좌표계 기준 TCP의 속도를 감시하는 기능입니다. 모니터링 위반 시에는 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+This function monitors the TCP speed based on the robot coordinate system. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 로봇 제한 > TCP 속도 제한]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > TCP speed]** menu.
 
-![TCP 속도 파라미터 설정 화면](../../../_assets/tcp_speed_param.png)
+![Window for setting TCP speed parameters](../../../_assets/tcp_speed_param.PNG)
 
-| **파라미터** | 　　　　　　　　　**설명**                                                  |  **기본 설정값** |
+| **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default setting value** |
 | :------: | ---------------------------------------------------------------- | :---------: |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| 안전 정지 |   <p>기능 위반시 정지 방법</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| Replan |   <p>입력신호에 따른 속도 조절 기능 사용 여부</p><p>(On/Off)</p>  |  Off |
-| 속도 제한값 |   <p>TCP 속도 제한값</p><p>(0 ~ 50000 (mm/s))</p>  | 50000 |
-| 감속 비율 |   <p>Replan시 사용할 감속 비율</p><p>(0 ~ 100 (%))</p>  | 0 |
-| 지연 시간 |   <p>RePlan으로 속도 변경시 지연시간 이후에 변경된 속도 제한값으로 감시함  </p><p>(0 ~ 1000(ms))</p>  | 0 |
-| 입력 신호 할당 |   <p>Replan을 위한 입력 신호</p><p>(0 ~ 16)</p>  |  0 |
+| Activation | <p>Activation of TCP speed monitoring function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Replan |   <p>Activation of RePlan function</p><p>(On/Off)</p>  |  Off |
+| Limit |   <p>TCP speed limit</p><p>(0 ~ 50000 (mm/s))</p>  | 50000 |
+| Rate |   <p>Deceleration ratio for Replan</p><p>(0 ~ 100 (%))</p>  | 0 |
+| Delay time |   <p>Monitor changed speed limit after delay time due to RePlan</p><p>(0 ~ 1000(ms))</p>  | 0 |
+| Input signal setting |   <p> Input signal assignment for replan</p><p>(0 ~ 16)</p>  |  0 |
 
 {% hint style="warning" %}
-**\[주의]**: 속도 감시 기능 설정시에는 반드시 정지 반응 시간을 고려하고 커버를 덮어 충돌 및 부상을 예방하십시오.
+**\[Caution]**: The safety function is monitored based on the set parameters. In configuring a limit, you must consider the stop reaction time and stopping distance. Before running the robot, verification must be performed.
 {% endhint %}
  # 3.3.1.5 Re plan
 
-Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 로봇의 속도를 조절하는 기능입니다. 입력신호에 해당하는 감속비율로 로봇의 운전속도가 변경되고, 지연시간 이후에 해당하는 속도로 TCP 속도를 감시합니다. 지연시간이 충분하지 않거나, 로봇의 감속이 충분히 이루어지지 않아 TCP 속도 제한값을 위반하게 되면 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+Replan is a function that adjusts the speed of the robot based on a input signal from an external safety sensor. The robot's operating speed is changed at a deceleration rate corresponding to the input signal, and the TCP speed is monitored at a speed corresponding to the delay time. If the delay time is insufficient or the robot is not decelerated enough to violate the TCP speed limit, the safety stop (Stop0, Stop1, Stop2) will be activated immediately.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 1: 안전 기능 > 파라미터 설정 > 로봇 제한 > Re plan]** 메뉴에서 파라미터 
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Re plan]** menu.
 
-![raplan 설정 화면](../../../_assets/replan.png)
+![Window for setting raplan parameters](../../../_assets/replan.PNG)
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Replan |   <p>입력신호에 따른 속도 조절 기능 사용 여부</p><p>(On/Off)</p>  |  Off |
-| 속도 제한값 |   <p>Replan 이후 TCP 속도 제한값</p><p>(0 ~ 50000 (mm/s))</p>  | 50000 |
-| 감속 비율 |   <p>Replan시 사용할 감속 비율</p><p>(0 ~ 100 (%))</p>  | 0 |
-| 지연 시간 |   <p>RePlan으로 속도 변경시 지연시간 이후에 변경된 속도 제한값으로 감시함  </p><p>(0 ~ 1000(ms))</p>  | 0 |
-| 입력 신호 할당 |   <p>Replan을 위한 입력 신호</p><p>(0 ~ 16)</p>  |  0 |
+| Replan |   <p>Activation of RePlan function</p><p>(On/Off)</p>  |  Off |
+| Limit |   <p>TCP speed limit</p><p>(0 ~ 50000 (mm/s))</p>  | 50000 |
+| Rate |   <p>Deceleration ratio for Replan</p><p>(0 ~ 100 (%))</p>  | 0 |
+| Delay time |   <p>Monitor changed speed limit after delay time due to RePlan</p><p>(0 ~ 1000(ms))</p>  | 0 |
+| Input signal setting |   <p> Input signal assignment for replan</p><p>(0 ~ 16)</p>  |  0 |
 
 {% hint style="warning" %}
-* 속도 한계 구성 시에는 반드시 정지 시간을 고려하고 커버를 덮어 충돌 및 부상을 예방하십시오.
-* 운동 에너지에 비례하여 속도가 높고 가반 하중이 큰 경우 로봇의 충격량이 커질 수 있으므로 로봇이 외부의 물체와 충돌하는 경우 상당한 수준의 충격이 발생할 수 있습니다. 협동 공간에서는 안전한 속도와 가반 하중을 유지하여 운전하십시오.
+* In configuring a speed limit, you must consider the stop reaction time and put a cover on the target to prevent collisions and injuries.
+* Because the speed increases in proportion to kinetic energy and a high payload may increase the robot’s momentum, the collision of the robot with an external object may generate significant impact. In the collaborative operation space, operate the robot while maintaining a safe speed and payload.
 {% endhint %}
-# 3.3.1.6 충돌 검지
+# 3.3.1.6 Collision detection
 
-로봇에 가해지는 외력이 허용치를 초과하는 경우 충돌로 인식합니다. 각 축의 민감도를 조절할 수 있으며, 민감도가 높을수록 작은 외력에도 충돌로 인식합니다. 모니터링 위반 시에는 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+If the external force applied to the robot exceeds the allowable value, it is recognized as a collision. The sensitivity of each axis can be adjusted. If the sensitivity is higher, the smaller the external force will be recognized as a collision. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 1: 안전 기능 > 파라미터 설정 > 로봇 제한 > 충돌 검지]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Collision detection]** menu.
 
-![충돌 검지 설정 화면](../../../_assets/col-det.png)
+![Window for setting collision detection parameters](../../../_assets/col_det.PNG)
 
-| **파라미터** | 　　　　　　　　　**설명**                                                  |  **기본 설정값** |
+| **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default setting value** |
 | :------: | ---------------------------------------------------------------- | :---------: |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Stop function |   <p>기능 위반시 정지 방법</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| Joint OnOff |   <p>각 관절의 활성화 여부</p><p>(On/Off)</p>  |  Off |
-| 민감도 |   <p>각 관절의 검지 민감도</p><p>(0 ~ 200 (%))</p>  |  100 |
+| Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Joint OnOff |   <p>Activation of each joint</p><p>(On/Off)</p>  |  Off |
+| Sensitivity |   <p>The sensitivity of the collision detection function</p><p>(0 ~ 200 (%))</p>  |  100 |
 
 {% hint style="warning" %}
-* 운동 에너지에 비례하여 속도가 높고 가반 하중이 큰 경우 로봇의 충격량이 커질 수 있으므로 로봇이 외부의 물체와 충돌하는 경우 상당한 수준의 충격이 발생할 수 있습니다. 협동 공간에서는 안전한 속도와 가반 하중을 유지하여 운전하십시오.
-* 툴 정보 및 부가 중량을 실제와 다르게 설정하면 오감지가 발생할 수 있습니다. 충돌 검지 기능 사용 전 각 정보를 확인해주십시오.
+* Because the speed increases in proportion to kinetic energy and a high payload may increase the robot’s momentum, the collision of the robot with an external object may generate significant impact. In the collaborative operation space, operate the robot while maintaining a safe speed and payload.
+* If the tool and additional load information are set differently from the actual one, error detection would be occured incorrectly. Please check the information before using the function.
 {% endhint %}
-# 3.3.1.7 파워 감시
+# 3.3.1.7 Power monitoring
 
-로봇이 발생하는 힘에 대해 허용치를 초과하는지 감시하는 기능입니다. 모니터링 위반 시에는 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+It is a function that monitors whether the robot's power exceeds the allowable value. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 1: 안전 기능 > 파라미터 설정 > 로봇 제한 > 파워 감시]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Power]** menu.
 
-![파워 감시 설정 화면](../../../_assets/power.png)
+![Window for setting power monitoring parameters](../../../_assets/power.PNG)
 
-| **파라미터** | 　　　　　　　　　**설명**                                                  |  **기본 설정값** |
+| **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default setting value** |
 | :------: | ---------------------------------------------------------------- | :---------: |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Stop function |   <p>기능 위반시 정지 방법</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| 파워 |   <p>로봇의 파워 제한값</p><p>(80 ~ 1000 (W))</p>  | 1000 |
+| Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Power |   <p>The power limit of robot</p><p>(80 ~ 1000 (W))</p>  | 1000 |
 
 {% hint style="warning" %}
-* 운동 에너지에 비례하여 속도가 높고 가반 하중이 큰 경우 로봇의 충격량이 커질 수 있으므로 로봇이 외부의 물체와 충돌하는 경우 상당한 수준의 충격이 발생할 수 있습니다. 협동 공간에서는 안전한 속도와 가반 하중을 유지하여 운전하십시오.
-* 툴 정보 및 부가 중량을 실제와 다르게 설정하면 오감지가 발생할 수 있습니다. 기능 사용 전 정보를 확인해주십시오.
+* Because the speed increases in proportion to kinetic energy and a high payload may increase the robot’s momentum, the collision of the robot with an external object may generate significant impact. In the collaborative operation space, operate the robot while maintaining a safe speed and payload.
+* If the tool and additional load information are set differently from the actual one, error detection would be occured incorrectly. Please check the information before using the function.
 {% endhint %}
-# 3.3.1.8 모멘텀 감시
+# 3.3.1.8 Momentum monitoring
 
-로봇이 발생하는 모멘텀에 대해 허용치를 초과하는지 감시하는 기능입니다. 모니터링 위반 시에는 안전 정지(정지0, 정지1, 정지2)가 즉시 활성화됩니다.
+It is a function that monitors whether the robot's momentum exceeds the allowable value. If a monitoring violation occurs, safety stops (Stop0, Stop1, and Stop2) will be actuated immediately.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 1: 안전 기능 > 파라미터 설정 > 로봇 제한 > 모멘텀 감시]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Momentum]** menu.
 
-![파워 감시 설정 화면](../../../_assets/momentum.png)
+![Window for setting momentum monitoring parameters](../../../_assets/momentum.PNG)
 
-| **파라미터** | 　　　　　　　　　**설명**                                                  |  **기본 설정값** |
+| **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default setting value** |
 | :------: | ---------------------------------------------------------------- | :---------: |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Stop function |   <p>기능 위반시 정지 방법</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| 파워 |   <p>로봇의 모멘텀 제한값</p><p>(5 ~ 1000 (W))</p>  | 1000 |
+| Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Momentum |   <p>The momentum limit of robot</p><p>(5 ~ 3000 (kg m/s))</p>  | 1000 |
 
 {% hint style="warning" %}
-* 운동 에너지에 비례하여 속도가 높고 가반 하중이 큰 경우 로봇의 충격량이 커질 수 있으므로 로봇이 외부의 물체와 충돌하는 경우 상당한 수준의 충격이 발생할 수 있습니다. 협동 공간에서는 안전한 속도와 가반 하중을 유지하여 운전하십시오.
-* 툴 정보 및 부가 중량을 실제와 다르게 설정하면 오감지가 발생할 수 있습니다. 기능 사용 전 정보를 확인해주십시오.
+* Because the speed increases in proportion to kinetic energy and a high payload may increase the robot’s momentum, the collision of the robot with an external object may generate significant impact. In the collaborative operation space, operate the robot while maintaining a safe speed and payload.
+* If the tool and additional load information are set differently from the actual one, error detection would be occured incorrectly. Please check the information before using the function.
 {% endhint %}
-# 3.3.1.9 안전 정지 기능
+# 3.3.1.9 Safety Stop
 
-안전 기능별로 적절한 안전 정지 유형을 설정합니다. 안전 정지 기능은 안전에 위반이 되는 경우 안전한 상태로 만들기 위해 로봇을 정지시키는 것으로 다음의 세 유형이 있습니다. 모든 유형의 안전 정지 기능은 IEC 61800-5-2의 4.2.2.4 요건을 충족합니다.
+Set an adequate safety stop type for each safety stop function. The safety stop functions, which stop the robot under a safe condition in case of a safety violation, include the following three types. All types of safety stop functions meet the requirements of Clause 4.2.2.4 of IEC 61800-5-2.
 
-* **정지0**: 모든 조인트 모듈의 모터 전원을 즉시 제거하고 정지
-* **정지1**: 모든 조인트 모듈의 모터가 감속 후 정지. 이후에 모터의 전원 제거
-* **정지2**: 모든 조인트 모듈의 모터가 감속 후 SOS (Safe Operating Stop)가 동작. 모든 모터의 전원 공급 유지 상태
+* **Stop0**: The power of the motors of all the joint modules will disconnect immediately, and the motors will stop.
+* **Stop1**: The power of the motors of all the joint modules will decelerate, and the motors will stop. Then, the power of the motors will be disconnected.
+* **Stop2**: The motors of all the joint modules will decelerate, and the safe operating stop (SOS) function will take effect. The power supply status of all the motors will be retained.
 
-안전 기능 위반에 의한 정지 유형은 기능별 파라미터 설정 메뉴에서 설정합니다.
-ISO 10218-1에서 요구하는 정지에 대한 정지 유형 설정은 다음과 같습니다.
+The stop type due to a safety function violation is set in the parameter setting menu for each function.
+The stop type settings for stops required by ISO 10218-1 are as follows.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > General setup > Safety stop]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Robot restriction > Safety stop]** menu.
 
 ![](../../../_assets/safety_stop.PNG)
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| EM stop |  <p>비상 정지</p><p>(Stop 0, Stop 1)</p>  | Stop 0 |
-| Protective stop | <p>보호 정지</p><p>(Stop 0, Stop 1, Stop 2)</p> |   Stop 0 |
-| Normal stop |   <p>일반 정지</p><p>(Stop 0, Stop 1)</p>  | Stop 0 |
-| Manual stop |   <p>수동 모드 속도 위반시 정지</p><p>(Stop 0, Stop 1)</p>  |  Stop 0 |
+| EM stop |  <p>Emergency stop</p><p>(Stop 0, Stop 1)</p>  | Stop 0 |
+| Protective stop | <p>Protective stop</p><p>(Stop 0, Stop 1, Stop 2)</p> |   Stop 0 |
+| Normal stop |   <p>Normal stop</p><p>(Stop 0, Stop 1)</p>  | Stop 0 |
+| Manual stop |   <p>Speed violation stop in manual mode</p><p>(Stop 0, Stop 1)</p>  |  Stop 0 |
 
 
 {% hint style="warning" %}
-**\[주의]**: 위험성 평가를 통해 기능별로 적절한 정지 방법을 설정해야 합니다.
+**\[Caution]**: You should set an adequate stopping method for each function based on the result of the risk assessment.
 {% endhint %}
-# 3.3.2 안전 레이아웃
+# 3.3.2 Safety layout
 
-로봇의 위치 방향을 감시하기 위해 레이아웃을 모델링합니다.
-# 3.3.2.2 안전 툴 모델링
+This sets the safety space, safety tools and safety robot links to monitor robot's position and orientation.
+# 3.3.2.2 Safety tool modeling
 
-안전 영역 모니터링에 사용하는 툴로 모델링한 구의 보호 영역 침범 및 작업 영역 이탈 여부를 감시합니다. 안전 툴은 최대 16 개를 설정할 수 있으며 최대 10 개의 모델로 모델링할 수 있습니다.
+Safety space monitoring detects whether the tool modeled in spheres intrudes into the safety spaces or exceeds the working space. You can set up to 16 safety tools and model a safety tool with a maximum of 10 spheres.
 
-안전 툴은 티치 펜던트에서 설정한 툴 번호로 활성화되므로 \[설정 > 3: 로봇 파라미터 > 1: 툴 데이터] 메뉴에서 설정한 툴 데이터를 기반으로 안전 툴을 모델링해야 합니다. 툴 데이터 설정 화면 상단의 TCP 위치 정보를 참고하십시오.
+Because a safety tool is enabled by a number that is set on the teach pendant, you should model a safety tool based on the tool data set in the **\[Setting > 3: Robot parameter > 1: Tool data**] menu. Refer to the TCP position information displayed at the top of the tool data setting window.
 
-안전 툴 모델링에 사용되는 모델은 총 3가지로 구, 캡슐, 플레이트 형태가 있습니다. 각 모델은 중심과 반지름으로 구성됩니다. 모델링의 중심 위치와 반경은 로봇 플랜지 좌표계(Xf, Yf, Zf)를 기준으로 설정하고 반지름은 툴의 크기 및 최대 TCP 속도에서의 정지 거리를 포함하여 설정합니다.
+There are 3 modles fot modleing safety tool: shpere, capsule and rounded plate. Each safety tool modeling is set by its center and radius. Set the center position of the sphere for the modeling based on the robot flange coordinate system (Xf, Yf, and Zf), and set the radius of the sphere, including the tool size and the stopping distance, at the maximum TCP speed.
 
-![그림 툴 모델링](../../../_assets/safety_layout/tool_sphere.PNG)
+![Tool modeling](../../../_assets/safety_layout/tool_sphere.PNG)
 
-![그림 로봇 플랜지 좌표계](../../../_assets/safety_layout/flange.PNG)
-
-
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 레이아웃 제한 > 툴]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
-
-![그림 안전 툴 모델링 설정 화면](../../../_assets/safety_layout/tool_sphere.PNG)
+![Robot flange coordinate system](../../../_assets/safety_layout/flange.PNG)
 
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Layout restriction > Tool]** menu.
+
+![Safety tool modeling setting window](../../../_assets/safety_layout/tool_sphere.PNG)
+
+
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| TCP X,Y,Z | <p>플랜지 좌표계에서 TCP 위치(읽기 전용)- 툴 정보에서 설정</p> |   0  |
-| Shape |   <p>툴 모델링 형태</p><p>(Off/sphere/capsule/R-plate)</p>  | Off |
-| Radius |  <p>반지름</p><p>(0.0 ~ 1000.0 mm)</p>  | 0 |
-| Height |  <p>R-plate의 높이</p><p>(0.0 ~ 1000.0 mm)</p>  | 0 |
-| Width |  <p>R-plate의 폭</p><p>(0.0 ~ 1000.0 mm)</p>  | 0 |
-| X |  <p>X방향 모델 중심 위치</p><p>(-1000.0 ~ 1000.0 mm)</p>  | 0 |
-| Y |  <p>Y방향 모델 중심 위치</p><p>(-1000.0 ~ 1000.0 mm)</p>  | 0 |
-| Z |  <p>Z방향 모델 중심 위치</p><p>(-1000.0 ~ 1000.0 mm)</p>  | 0 |
+| TCP X,Y,Z | <p>TCP position in flange coordination(read only)- set in Tool data menu</p> |   0  |
+| Shape |   <p>Type of modeling shape</p><p>(Off/sphere/capsule/R-plate)</p>  | Off |
+| Radius |  <p>Radius of model</p><p>(0.0 ~ 1000.0 mm)</p>  | 0 |
+| Height |  <p>Height of R-plate</p><p>(0.0 ~ 1000.0 mm)</p>  | 0 |
+| Width |  <p>Width of R-plate</p><p>(0.0 ~ 1000.0 mm)</p>  | 0 |
+| X |  <p>Position of center in X direction</p><p>(-1000.0 ~ 1000.0 mm)</p>  | 0 |
+| Y |  <p>Position of center in Y direction</p><p>(-1000.0 ~ 1000.0 mm)</p>  | 0 |
+| Z |  <p>Position of center in Z direction</p><p>(-1000.0 ~ 1000.0 mm)</p>  | 0 |
 
 
 
 
 
 {% hint style="warning" %}
-**\[주의]**
+**\[Caution]**
 
-* 툴 데이터 변경 시 반드시 안전 툴 모델링에서 설정한 파라미터가 정확한지 다시 확인하십시오. 동일한 툴의 툴 데이터 번호와 안전 툴 모델링 번호는 일치해야 합니다.
-* 로봇 레이아웃 설정의 정의는 로봇 2축과 3축에만 해당되므로 안전 영역을 설정하더라도 로봇의 다른 부분이 이 영역을 침범할 수 있습니다.
+* Before changing a tool data, check if the parameters set in the tool modeling are correct. The tool data number and the safety tool modeling number of a tool should be equal to each other.
+* Because the definition of a robot layout setting applies to the 2nd and 3rd axis, the other parts of the robot may intrude into a safety space even if a safety space is set.
 {% endhint %}
-# 3.3.2.3 안전 로봇 모델링
+# 3.3.2.3 Safety robot modeling
 
-안전 공간 모니터링에 사용하는 로봇 모델입니다. 안전 로봇 모델링은 2축과 3축에 적용할 수 있으며 모두 캡슐로 모델링합니다.
+This is the robot model used for safety space monitoring. There are only two safety robot model(:2nd axis and 3rd axis), and the model consits of a capsule.
 
-안전 로봇 모델링에 사용되는 캡슐은 양 끝의 구 중심과 반지름으로 구성됩니다. 모델링의 구 중심은 로봇 2축/3축 중심 위치이고 반지름은 현재 링크의 크기 및 최대 TCP 속도에서의 정지 거리를 포함할 수 있을 만큼 커야 합니다.
+The capsules used in the safety robot modeling consist of a sphere center and a radius at both ends. The sphere center of the modeling is the robot's 2nd axis/3rd axis center position, and the radius must be large enough to include the size of the current link and the stopping distance at the maximum TCP speed.
+ 
+You can set the parameter values in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Layout restriction > Robot]** menu.
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 레이아웃 제한 > 로봇]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
-
-![그림 안전 로봇 모델링 설정 화면](../../../_assets/safety_layout/robot_capsule.PNG)
+![Safety robot modeling setting window](../../../_assets/safety_layout/robot_capsule.PNG)
 
 
-| **파라미터** | 　　　　　　　　　**설명**                                     | **기본 설정값** |
+| **Parameter** | 　　　　　　　　　**Description**                                     | **Default setting value** |
 | :------: | --------------------------------------------------- | :--------: |
-|    반경    | 구체의 반지름(0 ~ 1000.0 (mm))                           |    0 mm    |
-|   Model1  X,Y,Z | 구체의 반지름(-1000.0 ~ 1000.0 (mm))                           |    0 mm    |
-|   Model2 X,Y,Z | 구체의 반지름(-1000.0 ~ 1000.0 (mm))                           |    0 mm    |
+|    Radius    | Radius of model(0 ~ 1000.0 (mm))                           |    0 mm    |
+|   Model1  X,Y,Z | Position of center(-1000.0 ~ 1000.0 (mm))                           |    0 mm    |
+|   Model2 X,Y,Z | Position of center(-1000.0 ~ 1000.0 (mm))                           |    0 mm    |
 
 {% hint style="warning" %}
-**\[주의]**
+**\[Caution]**
 
-* 로봇 레이아웃 설정의 정의는 로봇 2축과 3축에만 해당되므로 안전 영역을 설정하더라도 로봇의 다른 부분이 이 영역을 침범할 수 있습니다.
-{% endhint %}# 3.3.2.4 TCP 방향 감시
+* Because the definition of a robot layout setting applies to the 2nd and 3rd axis, the other parts of the robot may intrude into a safety space even if a safety space is set.
+{% endhint %}# 3.3.2.4 TCP orientation monitoring
 
-TCP 방향 감시 기능을 사용하기 위해, 기준 벡터 생성을 위한 회전 각도 및 편차 각도를 설정하여 모니터링용 원뿔을 설정할 수 있습니다.
+To use the TCP orientation limiting function in safety tool modeling, you can set cones for monitoring by setting rotation and deviation angles in creating the reference vector.
 
-로봇 좌표계(![](../../_assets/1.png))의 Z방향 벡터를 기준으로 설정된 각도로 회전시켜 기준 벡터(![](../../_assets/3.png))를 설정하여 이로부터 편차 각도(![](../../_assets/4.png))만큼 벌어져 있는 모선들로 이루어지는 원뿔(![](../../_assets/2.png))을 모델링할 수 있습니다. 이와 같은 원뿔의 꼭지점(![](../../_assets/5.png))은 TCP에 위치하며 TCP의 Z방향 벡터(![](../../_assets/6.png))가 모니터링 원뿔을 넘어가면 TCP 방향 제한 기능 위반 에러가 발생합니다.
+You can model a cone (![](../../_assets/2.png)) that is formed with generator lines spread by the deviation angle (![](../../_assets/4.png)) from the reference vector (![](../../_assets/3.png)), which is set by the rotation of the Z-direction vector of the robot coordinate system (![](../../_assets/1.png)) at a specified angle. The vertex (![](../../_assets/5.png)) of the cone is located at the TCP, and if the Z-direction vector (![](../../_assets/6.png)) of the TCP exceeds the monitoring cone, a violation error of the TCP position limiting function will occur.
 
-![그림 TCP 방향 제한 기능](../../../_assets/safety_layout/tool_ori.png)
+![TCP orientation monitoring](../../../_assets/safety_layout/tool_ori.png)
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > 파라미터 설정 > 레이아웃 제한 > TCP 방향]** 메뉴에서 파라미터 값을 설정할 수 있습니다. 
+The safety space can be set from each tab of the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Parameter setup > Layout restriction > TCP ]** menu.
 
-![그림 TCP 방향 설정 화면](../../../_assets/safety_layout/tool_ori_param.PNG)
+![TCP orientation modeling setting window](../../../_assets/safety_layout/tool_ori_param.PNG)
 
 
-|  **파라미터** |                       **설명**                       |  **기본 설정값**  |
+|  **Parameter** |                       **Description**                       |  **Default setting value**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>기능 활성화 여부</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Stop function |   <p>기능 위반시 정지 방법</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| Rx |   <p>X방향 기준 기준 벡터의 회전량</p><p>(-180.0 ~ 180.0 (deg))</p>  |  0.0 |
-| Ry |   <p>Y방향 기준 기준 벡터의 회전량</p><p>(-180.0 ~ 180.0 (deg))</p>  |  0.0 |
-| Rz |   <p>Z방향 기준 기준 벡터의 회전량</p><p>(-180.0 ~ 180.0 (deg))</p>  |  0.0 |
-| 편차 각도 |   <p>TCP 방향 제한값</p><p>(-180.0 ~ 180.0 (deg))</p>  |  0.0 |
+| Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
+| Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Rx |   <p>Rotation angle of reference vector in X-direction</p><p>(-180.0 ~ 180.0 (deg))</p>  |  0.0 |
+| Ry |   <p>Rotation angle of reference vector in Y-direction</p><p>(-180.0 ~ 180.0 (deg))</p>  |  0.0 |
+| Rz |   <p>Rotation angle of reference vector in Z-direction</p><p>(-180.0 ~ 180.0 (deg))</p>  |  0.0 |
+| Deviation angle |   <p>Limit value of TCP orientation</p><p>(-180.0 ~ 180.0 (deg))</p>  |  0.0 |
 
 
 
 
 
 {% hint style="warning" %}
-**\[주의]**
+**\[Caution]**
 
-* 툴 데이터 변경 시 반드시 안전 툴 모델링에서 설정한 파라미터가 정확한지 다시 확인하십시오. 동일한 툴의 툴 데이터 번호와 안전 툴 모델링 번호는 일치해야 합니다.
+* Before changing a tool data, check if the parameters set in the tool modeling are correct. The tool data number and the safety tool modeling number of a tool should be equal to each other.
 {% endhint %}
-# 3.3.3 안전 입/출력# 3.3.3.1 Default Safety I/O
+# 3.3.3 Safety I/O# 3.3.3.1 Default Safety I/O
 
-Default Safety I/O의 파라미터를 설정합니다.
-입력 신호는 4개, 출력 신호는 1개 이며 모두 이중신호로 동작 됩니다.
+Set the parameters of Default Safety I/O.
+There are 4 input signals and 1 output signal, all of which are dual signals.
 
 **1. Default Safety Input**
 
 ![Default Input Image](../../../_assets/safetyio_profisafe/default_in.PNG)
 
- - Pulse Test : 각 채널별로 Pulse Test의 사용 여부를 선택할 수 있습니다.
- - Error Latch 시간 : 해당 채널에 에러가 발생하면 에러가 복구 되더라도 **Error Latch 시간** 시간 이후에 Fail-Safe 값에서 현재 입력된 신호로 변경됩니다. (Unit : msec)
- - Filter 시간 : 각 채널별로 **Filter 시간** 동안 일정한 신호가 입력되어야 유효한 신호로 처리됩니다. (Unit : msec)
- - Discrete 시간 :  Default Safety Input 은 2개의 이중 신호가  같은 값일때 유효한 신호로 처리되고 이 2개의 신호가 **Discrete 시간** 시간 보다 큰 시간 동안 다르게 되면 알람이 발생하게 됩니다. (Unit : msec)
+ - Pulse Test : You can select whether to use Pulse Test for each channel.
+ - Error Latch Time : If an error occurs in a channel, even if the error is recovered, the Fail-Safe value is changed to the currently input signal after the **Error Latch time**.(Unit : msec)
+ - Filter Time : For each channel, a consistent signal must be input during the **Filter Time** to be processed as a valid signal. (Unit: msec)
+ - Discrete Time : Default Safety Input is treated as a valid signal when two dual signals have the same value, and if these two signals differ for a time greater than the **Discrete time** , an alarm is generated. (Unit : msec)
  
 **2. Safety Output**
 
 ![Default Output Image](../../../_assets/safetyio_profisafe/default_out.PNG)
 
- - Pulse Test : 각 채널별로 Pulse Test의 사용 여부를 선택할 수 있습니다.
- - Error Latch 시간 : 해당 채널에 에러가 발생하면 에러가 복구 되더라도 **Error Latch 시간** 시간 이후에 Fail-Safe 값에서 현재 입력된 신호로 변경됩니다. (Unit : msec)
+ - Pulse Test : You can select whether to use Pulse Test for each channel.
+ - Error Latch Time : If an error occurs in a channel, even if the error is recovered, the Valid output signal is produced from the Fail-Safe value after the **Error Latch Time** has elapsed. (Unit: msec)
 
 
 # 3.3.3.2 Additional Safety I/O
 
-Additional Safety I/O의 파라미터를 설정합니다.
-입력 신호는 8개, 출력 신호는 4개 이며 모두 이중신호로 동작 됩니다.
+Set parameters of Additional Safety I/O.
+There are 8 input signals and 4 output signals, and they all operate as dual signals.
 
 **1. Additional Safety Input/Output**
 
 ![Additional Input Image](../../../_assets/safetyio_profisafe/add_io.PNG)
 
- - Enable : Additional Safety I/O의 사용 유무를 결정합니다.
- - 필터 시간 : 각 입력 채널별로 필터 시간 동안 일정한 신호가 입력되어야 유효한 신호로 처리됩니다. (Unit : msec)
- - Discrete 시간 :  Additional Safety Input 은 2개의 이중 신호가  같은 값일때 유효한 신호로 처리되고 이 2개의 신호가 **Discrete 시간** 보다 큰 시간 동안 다르게 되면 알람이 발생하게 됩니다. (Unit : msec)
- - Input Error Latch 시간 : 해당 채널에 에러가 발생하면 에러가 복구 되더라도 **Input Error Latch 시간** 이후에 Fail-Safe 값에서 현재 입력된 신호로 변경됩니다. (Unit : msec)
- - Output Error Latch 시간 : 해당 채널에 에러가 발생하면 에러가 복구 되더라도 **Output Error Latch 시간** 이후에 Fail-Safe 값에서 출력 하려는 신호 레벨로 변경됩니다. (Unit : msec)
+ - Enable : Determines whether to use Additional Safety I/O
+ - Filter time : For each channel, a consistent signal must be input during the **Filter Time** to be processed as a valid signal. (Unit: msec)
+ - Discrete time : Additional Safety Input is treated as a valid signal when two dual signals have the same value, and if these two signals differ for a time greater than the **Discrete time** , an alarm is generated. (Unit : msec)
+ - Input Error Latch time :If an error occurs in a channel, even if the error is recovered, the Fail-Safe value is changed to the currently input signal after the **Error Latch time**.(Unit : msec)
+ - Output Error Latch time : If an error occurs in a channel, even if the error is recovered, the Valid output signal is produced from the Fail-Safe value after the **Error Latch Time** has elapsed. (Unit: msec)
  
  
 
 # 3.3.3.3 Linker
 
-Linker는 Default Safety I/O, Additional Safety IO, PROFIsafe I/O 등의 외부신호와 로봇 제어기가 가지고 있는 여러가지 논리적 신호 또는 상태 변수를 연결 시켜주는 역활을 합니다.
+Linker serves to connect external signals such as Default Safety I/O, Additional Safety IO, and PROFIsafe I/O with various logical signals or state variables of the robot controller.
 
 ![Additional Input Image](../../../_assets/safetyio_profisafe/linker.PNG)
 
-- I/O Linker Add : Linker의 설정은 좌측 I/O function list에서 원하는 기능(Function)을 선택한 후 **[+]** 버튼을 누르고 Index(H/W ch or Bit number)를 선택합니다. I/O function list에 따라 Subset을 선택하여 세부 채널을 선택할수 있습니다.
+- I/O Linker Add : To set up the linker, select the desired function from the I/O function list on the left, press the **[+]** button, and select Index (H/W ch or Bit number). According to I/O function list You can select detailed channels by selecting Subset.
 
-- I/O Linker Delete : Linker 설정의 삭제는 화면 우측에서 Linker의 설정을 하나 선택한뒤 바로 위에 보이는 **[-]** 버튼을 눌러 삭제할 수 있습니다.
+- I/O Linker Delete : Linker settings can be deleted by selecting a linker setting on the right side of the screen and pressing the **[-]** button above.
 
 ![Additional Input Image](../../../_assets/safetyio_profisafe/linker_add.PNG)
  
@@ -871,29 +941,29 @@ Linker는 Default Safety I/O, Additional Safety IO, PROFIsafe I/O 등의 외부�
 	- DCP ( LED3, LED4 Blinking)
 
 
-**2. Profinet의 설정**
+**2. Profinet settings**
 
-PROFINET의 설정은 BD671의 RS232 통신을 통해 변경할 수 있습니다.
-이번장에서는 PROFINET과 관련된 파라미터에 관해서 설명합니다.
+PROFINET settings can be changed through RS232 communication of BD671. 
+In this chapter, PROFINET and the related parameters are explained.
 
 ![Profinet Consol Image](../../../_assets/safetyio_profisafe/BD671_console.png)
 
- - S : Sub Module을 추가합니다.
- - s : Sub Module을 제거합니다.
- - H : 현재 설치된 Sub Module의 리스트를 보여줍니다.
- - n :  PROFINET 장치의 이름을 설정합니다.
- - N : PROFINET 장치의 MAC address를 설정합니다.
- - o : IP 주소와 Subnet mask 그리고 Gateway 를 설정 합니다. 
+ - S : Add Sub Module.
+ - s : Removes a SubModule.
+ - H : Shows a list of currently installed submodules.
+ - n : Set the name of the PROFINET
+ - N : Set the MAC address of the PROFINET device.
+ - o : Set the IP address, Subnet mask, and Gateway.
 
-**3. 모듈 정보**
- - 모듈 갯수 : 1 ea
+**3. Moudule information**
+ - Module
 	 - ID : 0x21
 	 - Sub Module ID : 0x2
 	 - Description :  8 Bytes I/O PS2v61
-	 - 입력 데이터 Size : 13 Bytes
-	 - 출력 데이터  Size : 13 Bytes
-	 - 허용 슬롯 : 1
-	 - 허용 서브슬롯 :  1
+	 - Input data Size : 13 Bytes
+	 - Output data Size : 13 Bytes
+	 - Allowed slot : 1
+	 - Allowed subslot :  1
 
 **4. Spec**
 	- PNIO Version : V2.43
@@ -906,393 +976,406 @@ PROFINET의 설정은 BD671의 RS232 통신을 통해 변경할 수 있습니다
 	- I&M Records 0 ~ 4
 	- Supported Protocols : SNMP, LLDP
 	- Minimum Device Interval : 1 ms
-	- iParameter : 지원 하지 않습니다.
-	- Parameterization in Run : 지원 하지 않습니다.
-	- PROFIenergy : 지원하지 않습니다.	 
+	- iParameter : Not supported.
+	- Parameterization in Run : Not supported.
+	- PROFIenergy : Not supported.	 
 
-> 아래 TP에 의한 파라미터 설정은 준비중에 있습니다.
+> Parameter settings using the TP below are in preparation.
 
 ![Profinet TP Image](../../../_assets/safetyio_profisafe/profinet.PNG)
 
- - PROFINET IO Device 이름 : PROFINET 장치의 이름을 설정합니다. 장치의 이름 앞 글자는 "HRC-PN-DEV-" 로 고정되어 있고 사용자는 뒤에 붙는 숫자를 선택할 수 있습니다.
- - IP address : IP 주소를 설정 합니다. ex) 192.168.1.100
- - Subnet mask : Subnet mask를 설정합니다. ex)255.255.255.0
- - Gateway : Gateway 주소를 설정합니다. ex)192.168.1.1
- - MAC address : 이 파라미터는 설정할 수 없고 읽기만 가능합니다.
+ - PROFINET IO Device Name : Set the name of the PROFINET device. The first letters of the device's name are fixed as "HRC-PN-DEV-" and the user can choose the numbers that follow.
+ - IP address : Set the IP address. ex) 192.168.1.100
+ - Subnet mask : Set the subnet mask. ex)255.255.255.0
+ - Gateway : Set the gateway address. ex)192.168.1.1
+ - MAC address : This parameter cannot be set and can only be read.
 
 # 3.3.3.5 PROFIsafe
 
- **1. PROFIsafe의 설정**
+ **1. PROFIsafe settings**
 
 ![Profisafe Consol Image](../../../_assets/safetyio_profisafe/BD671_console.png)
 
- - Source Address : Source Address를 설정합니다. (1로 고정)
- - Destination Address : Destination Address를 설정합니다. (설정 범위 : 1 ~ 65534)
+ - Source Address : Set the source Address. (fixed to 1)
+ - Destination Address : Set the destination Address. (Setting range : 1 ~ 65534)
  
-  **2. 참고 사항** 
+  **2. Notes** 
   
- - Address Type :  Address Type 1 (Destination Address만 체크함)
- - Reaction on Device_Fault : 본 장치가 Fault 상태가 되면 모든 F-Output 출력은 Fail-safe(0)상태로 변경됩니다. 그리고 장치의 Fault상태가 해소되고 난 뒤에는 F-Host에서 Global- Acknowledge 와 같은 명령으로 F-Device를 re-integration 하는 과정이 필요합니다.
+ - Address Type :  Address Type 1 (Check Destination Address only)
+ - Reaction on Device_Fault : When this device enters a Fault state, all F-Output will be changed to Fail-safe (0) status. After resolving the device's Fault state, a process of reintegrating the F-Device is necessary from the F-Host using commands such as Global Acknowledge.
  
- **3. 알람 리스트** 
+ **3. Alarm List** 
 
 |Alarm No.|Alarm Decsription  | 
 |--|--|
-| 0x10 |파라미터 설정 오류 |
-| 0x13 |통신 오류|
-| 0x19 |안전기능 오류 |
-| 0x1C |내부통신 오류1 |
-| 0x1D |내부통신 오류2 |
-| 0x1E |내부통신 오류3 |
-| 0x40 |F-Dest Address 설정 오류 |
-| 0x41 |F-Dest Address 값이 유효하지 않음 |
-| 0x42 |F-Src Address 설정 오류 |
-| 0x43 |F-Watchdog 값이 유효하지 않음
-| 0x45 |F-CRC 길이 이상 |
-| 0x46 |F-PAR 버젼 이상 |
-| 0x47 |CRC1 이상 |
-| 0x4C |F-Block ID 이상 |
-| 0x4D |CRC2 이상|
-| 0x4E |F-Watchdog 타임아웃|
+| 0x10 |Parameter setting error |
+| 0x13 |Communication error|
+| 0x19 |Safety function error |
+| 0x1C |Internal communication error 1 |
+| 0x1D |Internal communication error 2 |
+| 0x1E |Internal communication error 3 |
+| 0x40 |F-Dest Address setting error |
+| 0x41 |F-Dest Address value is invalid |
+| 0x42 |F-Src Address setting error |
+| 0x43 |F-Watchdog value is invalid
+| 0x45 |F-CRC length is invalid |
+| 0x46 |F-PAR version is invalid |
+| 0x47 |CRC1 is invalid |
+| 0x4C |F-Block ID is invalid |
+| 0x4D |CRC2 is invalid|
+| 0x4E |F-Watchdog timeout|
 
 
-> 아래 TP에 의한 파라미터 설정은 준비중에 있습니다.
+> Parameter settings using the TP below are in preparation.
 
 ![Profisafe TP Image](../../../_assets/safetyio_profisafe/profisafe.PNG)
 
- - Source Address : Source Address를 설정합니다. (1로 고정)
- - Destination Address : Destination Address를 설정합니다. (설정 범위 : 1 ~ 65534)
-# 4. 기능 설정
+ - Source Address : Set the source Address. (fixed to 1)
+ - Destination Address : Set the destination Address. (Setting range : 1 ~ 65534)
+# 4. Configuration of safety functions
 
-# 4.1 안전 기능 사용 전 점검 사항
+# 4.1 Check before setting the safety functions
 
-# 4.1.1 엔코더 점검
+# 4.1.1 Encoder offset
 
-안전 기능은 각 축에 장착된 엔코더 데이터를 기반으로 로봇의 위치와 속도를 진단하므로 엔코더 데이터의 정확성이 중요합니다. 따라서 안전 기능 사용 전 엔코더 값과 실제 값이 일치하는지 점검해야 합니다.
+The accuracy of encoder data is important because the safety functions detect the robot’s position and speed based on the data transmitted by the encoders attached to the axes. Therefore, before using the safety functions, check whether the encoder values match the actual values.
 
-1\. 로봇 각 축의 원점 눈금을 확인하여 축을 이동하십시오.
-
-
-안전 기능 위반으로 정지 발생 시 수동 모드 상태에서 조그로 각 축을 이동시키십시오. 복구 방법에 대한 자세한 내용은 “[**6.1 복구 모드**](../../6-recovery/README.md)”를 참조하십시오.
-
-2\. 작업 영역의 포즈 정보창에서 로봇의 축좌표 값이 기준 자세(**0, 90, 0, 0, 0, 0** \[deg])로 표시되는지 확인하십시오.
+1\. Check the zero mark of each axis of the robot and move the axes.
 
 
-* 작업 영역에 포즈 정보창이 없으면, 패널 스택 우측 상단의 **\[+]** 버튼을 터치한 후 패널 선택창에서 **\[포즈]**를 터치하십시오.
+Move each axis with the jog if a stop occurs because of a safety function violation. For more details on recovery, see “[**6.1 Recovery**](../../6-recovery/README.md)”.
+
+2\. In the pose information window on the workspace, check whether the axial coordinate values of the robot are displayed at the reference pose(**0, 90, 0, 0, 0, 0** \[deg]).
 
 
-3\. 각도값의 오차가 0.01 이내이면 다음 단계로 진행하고, 오차가 0.01을 초과하면 엔코더 옵셋을 수행하십시오.
+* Click the **\[+]** button at the top right part of the panel stack if the pose information window does not appear on the workspace. Then, click **\[Pose]** in the panel selection wind
 
-4\. 시스템을 재부팅하십시오.
+
+3\. Proceed to the next step if the difference of the angular value is no larger than 0.01. Otherwise, carry out the encoder offset if it is larger than 0.01.
+
+4\. Reboot the system.
 
 {% hint style="info" %}
-엔코더 옵셋에 대한 자세한 내용은 “[**Hi6 제어기 조작 설명서**](https://hyundai-robotics.gitbook.io/hi6-operation-manual)”의 “[**7.4.4 엔코더 옵셋**](https://hyundai-robotics.gitbook.io/hi6-operation-manual/7-setting/7-4-robot-parameter/encoder-offset)”을 참고하십시오.
+For more details on the encoder offset, see “[7.4.4 Encoder offsets](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/7-system/4-robot-parameter/4-encoder-offset/README)” of the “[Operation Manual for Hi6 Controllers.](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/README)”
 {% endhint %}
-# 4.1.2 툴 데이터 설정
+# 4.1.2 Setting of tool data
 
-협동로봇의 안전 기능은 로봇 플랜지에 부착된 툴을 포함한 로봇 시스템 전체를 감시합니다. 따라서 툴 데이터와 실제 값의 오차가 적을수록 보다 정확하게 안전 기능이 동작하게 됩니다. 플랜지 좌표계를 기준으로 툴의 길이와 각도를 설정하고 툴의 중량, 무게 중심과 이너셔 정보를 단위에 맞게 입력하십시오.
+The safety functions monitor the entire robot system including the tool attached to the robot’s tool flange. Therefore, the smaller the difference between the tool data and its actual value, the more accurately the safety functions will work. Set the length and angle of the tool based on the flange coordinate system and input the information on the weight, center of gravity, and inertia of the tool in the applicable units.
 
-1. 운전 방식을 수동 모드로 설정하십시오.
-2. 비상 정지 스위치를 눌러 모터의 전원을 차단하십시오.
-3. **\[설정]** 버튼 > **\[3: 로봇 파라미터 > 1: 툴 데이터]** 메뉴를 터치하십시오.
-4. 각 축의 데이터를 확인하고 툴의 중량, 무게 중심과 이너셔를 설정한 후 **\[OK]** 버튼을 터치하여 저장하십시오.
+1. Set the operating mode to the manual mode.
+2. Disconnect the power of the motor by pressing the emergency stop button.
+3. Select the **\[Configure]** > **\[3: Robot parameter > 1: Tool data]** menu.
+4. Check the data of each axis, set the weight, center of gravity, and inertia of the tool, and save the values by clicking the **\[OK]** button.
 
 ![](../../_assets/image20.jpeg)
 
-* 새로운 툴 데이터를 생성하거나 기존의 프로그램을 활용하여 툴 데이터를 간단히 생성하려면,  **\[자동보정]** 버튼을 터치하십시오.
-* 툴 각도를 보정하려면, **\[각도보정]** 버튼을 터치하십시오.
-* 새로운 사용자 좌표계를 추가하거나 사용자 좌표계를 삭제하려면, **\[+]**/**\[-]** 버튼을 이용하십시오.
-* 툴 데이터의 상세 정보를 확인 및 편집하려면, 툴 데이터 목록에서 원하는 이름을 선택하십시오.
-* 툴 데이터 정보를 복사하여 다른 툴 데이터에 붙여 넣으려면, **\[페이지 복사]**/**\[페이지 붙여넣기]** 버튼을 이용하십시오.
+* To easily create new tool data from scratch utilizing the current program, click the \[Auto calibration] button.
+* To correct the tool angle, click the \[Angle calibration] button.
+* To add a new user coordinate system or delete one, use the \[+] or \[-] buttons, respectively.
+* To view and edit the detailed information of tool data, select a tool data name to be viewed and edited.
+* To copy the information on tool data and paste it to that of another, use the \[Copy page] and \[Paste page] buttons, respectively.
 
 {% hint style="info" %}
-* 툴의 무게와 중심에 대한 정보가 없을 경우 부하추정 기능을 이용하여 값을 추정할 수 있습니다. 자세한 내용은 “[**Hi6 제어기 조작 설명서**](https://hyundai-robotics.gitbook.io/hi6-operation-manual)”를 참고하십시오.
-* 툴 데이터 설정에 대한 자세한 내용은 “[**Hi6 제어기 조작 설명서**](https://hyundai-robotics.gitbook.io/hi6-operation-manual)”를 참고하십시오.
+* When there is no information on the weight and center of gravity of a tool, you can estimate the values using the load estimation function.
+* For more details on tool data setting, see “[**Operation Manual for Hi6 Controllers.**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/7-system/4-robot-parameter/1-tool-data/README)”
 {% endhint %}
-# 4.1.3 암호 설정
+# 4.1.3 Setting of password
 
-안전 기능의 파라미터는 반드시 지정된 담당자가 설정하고 관리해야 합니다. 관리자로 지정된 사용자는 관리자 권한과 시스템 설정용 암호를 부여받습니다. 시스템 설정용 암호는 안전 기능 파라미터 설정 시 필수 입력 항목으로 암호가 틀리면 파라미터를 변경 및 설정할 수 없습니다.
+The parameters of the safety function must be set and managed by the designated person in charge. Users designated as administrators are given administrator privileges and passwords to set up the system. The password for setting up the system is mandatory when setting safety function parameters, and if the password is incorrect, it cannot be set by changing the parameters.
 
-1. **\[설정]** 버튼 > **\[5: 초기화 > 11: 시스템 암호 설정]** 메뉴를 터치하십시오. 비밀번호 설정창이 나타납니다.
-2. 비밀번호를 입력한 후 **\[확인]** 버튼을 터치하십시오.
+1. Push the **\[System]** button and enter the > **\[5: Initialize > 11: System password setting]** menu. The password setting window will pop up.
+2. After enter the password, touch the **\[OK]** button.
 
 ![](../../_assets/4/4-1-3-1.png)
 
-* 안전 기능의 파라미터 설정 시 반드시 시스템 설정 암호를 입력해야 변경 내용이 저장됩니다.
+* When setting the parameters of the safety function, you must enter the system setup password to save the changes.
 
 {% hint style="warning" %}
-* 비밀번호는 4자 이상으로 설정 할 것을 권장 합니다.
-* 비밀번호 분실 시 엔지니어에게 문의 하십시오.
+* It is recommended that the password be set to at least 4 characters.
+* If you lose your password, contact your engineer.
 {% endhint %}
-# 4.1.4 인증서 발급
+# 4.1.4 Certification
 
-안전 파라미터는 인증서를 통해 보호 됩니다. 저장된 안전 파라미터의 보안을 위해 우선 인증서를 발급 받아야 합니다. 
-인증 상태 확인, 삭제 및 발급을 위해서는 시스템 암호가 필요합니다.
+Safety parameters are protected by the certificate; for the security of the stored safety parameters, you must first issue a certificate. A system password is required to verify, delete, and issue authentication status.
 
-1. **\[설정]** 버튼 > **\[4: 응용 파라미터 > 18: 안전공간2.0 > 인증서]** 메뉴를 터치하십시오.
+1. **\[System]** button > **\[4: Application parameter > 18: SafeSpace2.0 > Certificate file]**
 
 ![](../../_assets/4/4-1-4-1.png)
 
-* 인증 상태 확인
-  **\[확인]** 버튼을 터치하십시오.
-  시스템 암호를 입력하십시오.
-  \결과를 확인 하십시오.
+* Verify certificate status
+  Touch the **\[Confirmation]** button.
+  Enter the system password.
+  check the result.
 
-* 인증서 발급
-  **\[발급]** 버튼을 터치하십시오.
-  시스템 암호를 입력하십시오.
-  결과를 확인 하십시오.
+* Issue certificate file
+  Touch the **\[Issue]** button.
+  Enter the system password.
+  check the result.
 
-* 인증서 폐기
-  **\[폐기]** 버튼을 터치하십시오.
-  시스템 암호를 입력하십시오.
-  결과를 확인 하십시오.
-# 4.2 안전 파라미터 전송
+* Discard certificate file
+  Touch the **\[Discard]** button.
+  Enter the system password.
+  check the result.
+# 4.2 Change safety parameter
 
-안전파라미터 값을 수정 하고 시스템에 적용 하십시오. 적용이 왼료 되지 않은 값은 설정 화면이 바뀌면 초기화 됩니다.
+Modify the safety parameter values and apply them to the system. Values that have not been applied will be initialized when the setting screen changes.
 
-1. **\[설정]** 버튼 > **\[4: 응용 파라미터 > 18: 안전공간2.0 > 파라미터 설정]** 변경을 원하는 메뉴를 터치하십시오.
+1. **\[System]** button > **\[4: Application parameter > 18: SafeSpace2.0 > Parameter setup]**, touch the menu.
 
-![](../../_assets/4/4-1-5-1.png)
+![](../_assets/4/4-1-5-1.png)
 
-2. 페이지 버튼을 터치하여 수정하고자 하는 페이지로 이동 하십시오. **\[확인]** 버튼을 누르지 않은 경우 페이지 이동 시 파라미터가 초기화 됩니다.
-3. 파라미터 값을 수정하고 **\[확인]** 버튼을 터치하십시오. 페이지의 파라미터가 임시 저장됩니다.
+2. Press the page button to navigate to the page where you want to change the parameters. If you do not touch the **\[OK]** button, the changed parameters will be initialized when you move to another page.
+3. Modify the parameter values and touch the **\[OK]** button, which temporarily saves the parameters on the page.
 
-* 페이지의 수정된 값을 확인 하고 **\[전체 적용]** 버튼을 터치하십시오. 
+* Check the modified values on the page and touch the **\[Appky all]** button.
 
-![](../../_assets/4/4-1-5-2.png)
+![](../_assets/4/4-1-5-2.png)
 
-* **\[확인]** 버튼을 누르지 않은 페이지는 반영되지 않습니다. 메시지를 확인한 후 진행 하십시오.
+* Pages not pressed **\[OK]** button will not reflected. Please check the message and proceed.
 
-* **\[시스템 암호]** 를 입력하고 결과를 확인 하십시오.
+* Enter **\[System password]** to verify the results.
 
-![](../../_assets/4/4-1-5-3.png) ![](../../_assets/4/4-1-5-4.png)# 5. 안전 상태 모니터링
+![](../_assets/4/4-1-5-3.png) ![](../_assets/4/4-1-5-4.png)# 5. Safety status monitoring
 
-안전 기능 위반 및 안전 제어 모듈(SCM: Safety Control Module) 보드의 상태를 모니터링합니다. 로봇 감시 기능의 상태와 안전 입출력 상태정보를 확인할 수 있습니다. 
+This monitors safety function violations and the status of the SCM(SCM: Safety Control Module) board. You can view the statuses of the robot limiting functions, joint limiting functions, and the SCM board. 
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > Monitoring]** 메뉴에서 확인하십시오.# 5.1 로봇 감시 기능 모니터링
+You can check in **\[System > 4: Application parameter > 18: SafeSpace2.0 > Monitoring]** menu.# 5.1 Robot monitoring function status
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > Monitoring] > [로봇 감시]** 메뉴를 선택하여 로봇 감시 기능의 상태를 확인하십시오.
+You can check robot monitoring function status in **\[System > 4: Application parameter > 18: SafeSpace2.0 > Monitoring] > [Robot monitoring status]** menu.
 
-![로봇 안전 상태](../_assets/mon_robot.PNG)
-
-
-* 로봇 감시 기능의 상태를 확인합니다.
-  * **\[TCP 위치]**: TCP 위치 모니터링 위반 여부
-  * **\[TCP 속도]**: TCP 속도 모니터링 위반 여부
-  * **\[TCP 방향]**: TCP 방향 모니터링 위반 여부
-  * **\[파워]**: 파워 모니터링 위반 여부
-  * **\[모멘텀]**: 모멘텀 모니터링 위반 여부
-  * **\[충돌]**: 충돌 모니터링 위반 여부
-  * **\[SOS]**: (안전 정지 감시) SOS 모니터링 위반 여부
-  * **\[조인트 위치]**: 조인트 위치 모니터링 위반 여부
-  * **\[조인트 속도]**: 조인트 속도 모니터링 위반 여부
-# 5.2 안전 I/O 상태 모니터링
-
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > Monitoring] > [안전 I/O]** 메뉴를 선택하여 로봇 감시 기능의 상태를 확인하십시오.
-
-![안전 I/O](../_assets/mon_safetyio.PNG)
+![Safety status of robot](../_assets/mon_robot.PNG)
 
 
-# 6. 복구
+* Check the robot monitoring function status
+  * **\[TCP position]**: TCP position monitoring violations
+  * **\[TCP speed]**: TCP speed monitoring violations
+  * **\[TCP orient]**: TCP orientation monitoring violations
+  * **\[Power]**: Power monitoring violations
+  * **\[Momentum]**: Momentum monitoring violations
+  * **\[Collision]**: Collision detectionmonitoring violations
+  * **\[SOS]**: SOS(Safe Operating Stop) monitoring violations
+  * **\[Joint speed]**: Joint speed monitoring violations
+  * **\[Joint position]**: Joint position monitoring violations
+  
+# 5.2 Safety I/O status monitoring
 
- 안전 기능 모니터링 위반으로 발생한 에러는 수동모드로 전환시 해제됩니다. 수동 모드에서는 안전기능 위반으로 로봇을 정지시키지 않으므로 로봇의 각도와 위치를 조정하여 안전한 영역으로 이동시킬 수 있습니다.
+You can check the safety I/O status in the **\[System > 4: Application parameter > 18: SafeSpace2.0 > Monitoring]** menu.
 
-
-{% hint style="warning" %}
-**\[주의]**: 수동 모드에서 복구 후 안전기능 설정 및 작업 프로그램의 티칭 위치를 다시 확인하십시오.
-{% endhint %}
-# 6.1	로봇 위치 위반 시 복구
-
-로봇 위치 위반은 로봇의 위치가 안전 영역을 벗어나는 것으로 TCP 위치, TCP 방향 및 조인트 모니터링 위반이 있습니다. 로봇 위치 위반 시에는 로봇을 물리적으로 움직여 위치를 이동해야 에러를 해제할 수 있습니다.
-
-1.  모드스위치를 수동으로 전환하여 수동모드로 진입하십시오.
-
-
-2.  티치 펜던트의 인에이블링 스위치를 이용해 모터를 켜십시오.
-
-
-3.  교시 장치를 이용해 로봇을 안전 영역으로 이동시키십시오.
+![Safety I/O](../_assets/mon_safetyio.PNG)
 
 
-4.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
+# 6. Recovery
+
+ In manual mode, you can clear errors that occur because of the safety function violations during monitoring. Because position detection is disabled in manual mode, you can drive the robot and adjust its angle and position without violating the safety functions.
 
 
 {% hint style="warning" %}
-에러 해제 후 안전 레이아웃 설정 및 작업 프로그램의 티칭 위치를 다시 확인하십시오.
+**\[Caution]**: After clearing the violation, recheck the safety layout setting and the teaching position of the operating program.
 {% endhint %}
-# 6.2	로봇 속도 위반 시 복구
+# 6.1	Recovery in case of robot position violations
 
-로봇 속도 위반은 로봇의 속도가 안전 기준을 초과하는 것으로 TCP 속도, 조인트 속도, 파워 및 모멘텀 모니터링 위반이 있습니다. 로봇 속도 위반 시에는 로봇이 순간적인 속도를 감지하고 정지하므로 로봇의 위치를 이동하지 않고 에러를 해제할 수 있습니다.
+Robot position violations are situations in which the robot’s position exceeds a safety space, and these include TCP position, TCP orientation, and joint monitoring violations. When a robot position violation occurs, you can only clear the error by moving the robot’s physical position.
 
-1.  모드스위치를 수동으로 전환하여 수동모드로 진입하십시오.
+1.  Change the mode switch to manual mode.
 
 
-2.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
+2.  Turn on the motor by using the enabling switch on the teach pendant.
+
+
+3.  Use the teaching device to move the robot back to a safety space.
+
+
+4.  On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
 
 
 {% hint style="warning" %}
-**[주의]**
-
-* 에러 해제 후 속도 관련 안전 파라미터 및 작업 프로그램의 속도를 반드시 확인하십시오.
+**\[Caution]**: After clearing the violation, recheck the safety layout setting and the teaching position of the operating program.
 {% endhint %}
-# 6.3	로봇 힘 위반 시 복구
+# 6.2	Recovery in case of robot speed violations
 
-로봇 힘 위반은 외부의 힘이 가해지거나 로봇 내부에서 사용하는 힘의 크기가 안전 기준을 초과하는 것으로 충돌 검지, 파워 및 모멘텀 모니터링 위반이 있습니다. 위반 발생 원인에 따라 에러를 해제할 수 있습니다.
+Robot speed violations are situations in which the robot’s speed exceeds a safety limit, and these include TCP speed, joint speed, power, and momentum monitoring violations. Because the robot detects the instantaneous speed in the case of robot speed violations, you can clear the error without moving the robot’s position.
 
-<mark style="color:green;">**로봇에 외부로부터 힘이 가해져 위반이 발생한 경우**</mark>
-
-1.  로봇에 힘을 가하는 외부 요인 제거하십시오.
+1.  Change the mode switch to manual mode.
 
 
-2.  모드 스위치를 수동으로 전환하여 수동모드로 진입하십시오.
-
-
-3.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
+2.  On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
 
 
 {% hint style="warning" %}
-**\[주의]**
+**[Caution]**
 
-* 에러 해제 후 안전 기능 설정, 툴 데이터, 작업 프로그램의 티칭 위치 및 속도를 다시 확인하십시오.
+* After clearing the violation, make sure to recheck all speed-related safety parameters and the speed displayed on the operating program.
 {% endhint %}
-# 6.4	안전 정지 감시(SOS) 위반 시 복구
+# 6.3	Recovery in case of robot force violations
 
-안전 정지 감시(SOS) 위반은 로봇의 모터가 켜져 있고 정지 상태에서 움직임이 감지되는 것입니다. 안전 정지 감지 위반 시에는 로봇이 순간적인 움직임을 감지하고 에러를 발생하므로 로봇의 위치를 이동하지 않고 에러를 해제할 수 있습니다.
-
-1.  모드스위치를 수동으로 전환하여 수동모드로 진입하십시오.
+Robot force violations are situations in which external force is applied on the robot or in which the amount of the force used by the robot internally exceeds a safety limit, and these include collision detection, power, and momentum monitoring violations. You can clear errors depending on the causes of the violations.
 
 
-2.  로봇에 힘을 가하는 외부 요인 제거하십시오.
+1.  Remove the external factor that is applying force on the robot.
 
 
-3.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
+2.  Change the mode switch to manual mode.
+
+
+3.  On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
 
 
 {% hint style="warning" %}
-**[주의]**
+**[Caution]**
 
-* 에러 해제 후 안전 정지 감시 파라미터를 확인하십시오.
-* 자동 모드에서 모터를 켜고 에러의 재발 여부를 확인하십시오.
-* 동일한 에러가 다시 발생하면 해당 축의 모터와 감속기를 점검하십시오.
+* After clearing the violation, recheck safety function setting, tool data, the teaching position and speed of the operating program.
 {% endhint %}
-# 7. 에러 메시지
+# 6.4	Recovery in cases of safe operating stop (SOS) violations
 
-안전 기능 오류 메시지는 다음과 같습니다.
-# SE101/~E7066
+SOS violations are situations in which the robot’s motion is detected while its motor is on and is supposed to be in a stop state. Because the robot detects the instantaneous speed in the case of robot speed violations, you can clear the error without moving the robot’s position.
 
-| **코드** |                  **메시지**                  |                            **원인**                           | 　　　　**해결책**                                                                                                                                  |
+1.  Change the mode switch to manual mode.
+
+
+2.  Remove the external factor that is applying force on the robot.
+
+
+3.  On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
+
+
+{% hint style="warning" %}
+**[Caution]**
+
+* After clearing the violation, recheck the SOS parameters.
+* Turn on the motor in the automatic mode and check if the error does not persist.
+* If the same error recurs, check the motor and reducer of the pertaining axis.
+{% endhint %}
+# 7. Error messages
+
+The safety function error messages of SafeSpace2.0 are as follows:
+# 7.1 Error List
+
+| **Code** |                  **Message**                  |                            **Cause**                           | 　　　　**Solutions**                                                                                                                                  |
 | :----: | :---------------------------------------: | :---------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------- |
-|  SE101 |          안전 설정파일 깨짐 오류             | 안전 보드에서 수신한 파일의 CRC32가 원본과 맞지 않음 | <ul><li>안전보드를 교체하십시오.</li><li>안전보드 교체 후에도 에러가 발생하는 경우 당사에 문의하십시오.</li></ul>|
-| SE201 | <p> 안전보드 응답지연 오류</p>  | 안전보드 안전통신(FSoE) 응답지연 에러 발생 | <ul><li>안전보드를 교체하십시오.</li><li>안전보드 교체 후에도 에러가 발생하는 경우 당사에 문의하십시오.</li></ul> |
-|SE202|<p> 안전보드 통신데이터 깨짐 오류</p>  | 안전보드 안전통신(FSoE) CRC 에러 발생 | <ul><li>안전보드를 교체하십시오.</li><li>안전보드 교체 후에도 에러가 발생하는 경우 당사에 문의하십시오.</li></ul> |
-|SE301|<p> 안전보드 내부 통신(CPU1-CM)오류</p>  | 안전보드 MCU 내부 CPU1-CM 간 IPC 통신 데이터 CRC 오류 | <ul><li>안전보드를 교체하십시오.</li><li>안전보드 교체 후에도 에러가 발생하는 경우 당사에 문의하십시오.</li></ul>|
-|SE302|<p>안전보드 내부 통신(FSI) 깨짐 오류</p>  | 안전보드 MCU 간 CPU1-CPU1 FSI 통신 데이터 CRC 오류 |<ul><li>안전보드를 교체하십시오.</li><li>안전보드 교체 후에도 에러가 발생하는 경우 당사에 문의하십시오.</li></ul> |
-|SE303|<p>안전보드 내부 통신(FSI) 지연 오류</p>  | 안전보드 MCU 간 CPU1-CPU1 FSI 통신 지연 발생 |<ul><li>안전보드를 교체하십시오.</li><li>안전보드 교체 후에도 에러가 발생하는 경우 당사에 문의하십시오.</li></ul> |
-|SE304|<p>안전보드 내부 통신(FSI) 파일 데이터 깨짐 오류</p>  | 안전보드 MCU 간 송수신한 파일 데이터 CRC 오류 |<ul><li>안전보드를 교체하십시오.</li><li>안전보드 교체 후에도 에러가 발생하는 경우 당사에 문의하십시오.</li></ul> |
-|SE401|<p>안전보드 내부 통신(CPU1-CPU 깨짐 오류)</p>  | 안전보드 MCU 내부 CPU1-CPU2 간 IPC 통신 데이터 CRC 오류 |<ul><li>안전보드를 교체하십시오.</li><li>안전보드 교체 후에도 에러가 발생하는 경우 당사에 문의하십시오.</li></ul> |
-|SE402|안전보드 내부 통신(CPU1-CPU 지연 오류)  | 안전보드 MCU 내부 CPU1-CPU2 간 IPC 통신 데이터 지연 발생 |<ul><li>안전보드를 교체하십시오.</li><li>안전보드 교체 후에도 에러가 발생하는 경우 당사에 문의하십시오.</li></ul> |
-|SE403|<p>안전보드 내부 통신(CPU2-CPU 깨짐 오류)</p>  | 안전보드 MCU 간 SCI 통신 데이터 CRC 오류 |<ul><li>안전보드를 교체하십시오.</li><li>안전보드 교체 후에도 에러가 발생하는 경우 당사에 문의하십시오.</ul>|
-|SE404|<p>안전보드 내부 통신(CPU2-CPU 지연 오류)</p>  | 안전보드 MCU 간 SCI 통신 데이터 지연 발생 |<ul><li>안전보드를 교체하십시오.</li><li>안전보드 교체 후에도 에러가 발생하는 경우 당사에 문의하십시오.</ul>|
-|SE601|<p> 안전 파라미터 범위 초과(기본 설정)</p>  | 기본 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>기본 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE602|<p> 안전 파라미터 범위 초과(조인트 스페이스)</p>  | 조인트 스페이스 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>조인트 스페이스 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE603|<p> 안전 파라미터 범위 초과(조인트 속도)</p>  | 조인트 속도 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>조인트 속도 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE604|<p> 안전 파라미터 범위 초과(정지 감시)</p>  | 정지 감시 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>정지 감시 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE605|<p> 안전 파라미터 범위 초과(TCP 속도)</p>  | TCP 속도 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>TCP 속도 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE606|<p> 안전 파라미터 범위 초과(안전 공간)</p>  | 안전 공간 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>안전 공간 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE607|<p> 안전 파라미터 범위 초과(툴 모델)</p>  | 툴 모델 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>툴 모델 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE608|<p> 안전 파라미터 범위 초과(로봇 모델)</p>  | 로봇 모델 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>로봇 모델 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE609|<p> 안전 파라미터 범위 초과(자가 충돌)</p>  | 자가 충돌 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>자가 충돌 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE610|<p> 안전 파라미터 범위 초과(툴 방향)</p>  | 툴 방향 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>툴 방향 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE611|<p> 안전 파라미터 범위 초과(RePlan)</p>  | RePlan 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>RePlan 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE612|<p> 안전 파라미터 범위 초과(파워)</p>  | 파워 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>파워 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE613|<p> 안전 파라미터 범위 초과(모멘텀)</p>  | 모멘텀 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>모멘텀 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE614|<p> 안전 파라미터 범위 초과(충돌검지)</p>  | 충돌검지 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>충돌검지 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE615|<p> 안전 파라미터 범위 초과(정지)</p>  | 정지 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>정지 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE616|<p> 안전 파라미터 범위 초과(PROFINET)</p>  | PROFINET 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>PROFINET 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE617|<p> 안전 파라미터 범위 초과(PROFIsafe)</p>  | PROFIsafe 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>PROFIsafe 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE618|<p> 안전 파라미터 범위 초과(Safety IO)</p>  | Safety IO 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>Safety IO 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE619|<p> 안전 파라미터 범위 초과(Add Safety IO)</p>  | Add Safety IO 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>Add Safety IO 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE620|<p> 안전 파라미터 범위 초과(IO 기능 설정)</p>  | IO 기능 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>IO 기능 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE621|<p> 안전 파라미터 범위 초과(부가 중량)</p>  | 부가 중량 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>부가 중량 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE622|<p> 안전 파라미터 범위 초과(툴 정보)</p>  | 툴 정보 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>툴 정보 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE623|<p> 안전 파라미터 범위 초과(유지 보수)</p>  | 유지 보수 설정 메뉴에서 설정한 파라미터가 범위를 벗어났습니다. |<ul><li>유지 보수 설정 메뉴의 설정한 파라미터가 범위를 초과하지 않았는지 확인하십시오.</li><li> 안전 파라미터 초기화를 수행하십시오.</li><li> 안전보드를 교체하십시오.</li></ul> |
-|SE1301|<p> MCUA HW-BIST 진단 에러</p>  | cpu1의 CPU,FPU 등 로직이 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul> |
-|SE1302|<p> MCUA PIE_RAM 진단 에러</p>  | cpu1 PIE Vector handler 주소 불일치입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul> |
-|SE1303|<p> MCUA CPU 레지스터 진단 에러</p>  | CPU1 코어 레지스터 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul> |
-|SE1304|<p> MCUA FPU 레지스터 진단 에러</p>  | CPU1 FPU 레지스터 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul> |
-|SE1305|<p> MCUA VCRC 레지스터 진단 에러</p>  | CPU1 VCRC 레지스터 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul> |
-|SE1306|<p> MCUA march ram 진단 에러</p>  | CPU1 ram 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul> |
-|SE1307|<p> MCUA march ram 진단 에러</p>  | CPU1 ram copy 영역이 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul> |
-|SE1308|<p> MCUA 플래시 crc 진단 에러</p>  | CPU1 플래시 crc값이 불일치 합니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul> |
-|SE1309|<p> MCUA 오실레이터 진단 에러</p>  | CPU1 외부 오실레이터가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1310|<p> MCUA CM 타임아웃 에러</p>  | CM 동작이 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1311|<p> MCUA CPU2 타임아웃 에러</p>  | CPU2 동작이 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1312|<p> MCUA CPU1 타임아웃 에러</p>  | CPU1 동작이 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1313|<p> MCUA 부트 플래시 CRC 에러</p>  | CPU1 부트 플래시 CRC값이 불일치합니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 CPU1 실행파일을 교체하십시오.
-|SE1314|<p> MCUA 부트 RAM CRC 에러</p>  | CPU1 부트 RAM CRC값이 불일치합니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 CPU1 실행파일을 교체하십시오.
-|SE1316|<p> MCUA PIE_RAM 진단 에러</p>  | cpu2 PIE Vector handler 주소 불일치입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1317|<p> MCUA CPU 레지스터 진단 에러</p>  | CPU2 코어 레지스터 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1318|<p> MCUA FPU 레지스터 진단 에러</p>  | CPU2 FPU 레지스터 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1319|<p> MCUA VCRC 레지스터 진단 에러</p>  | CPU2 VCRC 레지스터 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1320|<p> MCUA march ram 진단 에러</p>  | CPU2 ram 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1321|<p> MCUA 플래시 crc 진단 에러</p>  | CPU2 플래시 crc값이 불일치 합니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1322|<p> MCUA 부트 플래시 CRC 에러</p>  | CPU2 부트 플래시 CRC값이 불일치합니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 CPU2 실행파일을 교체하십시오.
-|SE1323|<p> MCUA 온도 제한 초과 에러</p>  | SCM 보드의 온도가 너무 높습니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1324|<p> MCUA 전압 제한 초과 에러</p>  | SCM 보드의 전압 공급이 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul> |
-|SE1325|<p> MCUB HW-BIST 진단 에러</p>  | cpu1의 CPU,FPU 등 로직이 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1326|<p> MCUB PIE_RAM 진단 에러</p>  | cpu1 PIE Vector handler 주소 불일치입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1327|<p> MCUB CPU 레지스터 진단 에러</p>  | CPU1 코어 레지스터 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1328|<p> MCUB FPU 레지스터 진단 에러</p>  | CPU1 FPU 레지스터 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1329|<p> MCUB VCRC 레지스터 진단 에러</p>  | CPU1 VCRC 레지스터 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1330|<p> MCUB march ram 진단 에러</p>  | CPU1 ram 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1331|<p> MCUB march ram 진단 에러</p>  | CPU1 ram copy 영역이 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>|
-|SE1332|<p> MCUB 플래시 crc 진단 에러</p>  | CPU1 플래시 crc값이 불일치 합니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>|
-|SE1334|<p> MCUB 오실레이터 진단 에러</p>  | CPU1 외부 오실레이터가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>|
-|SE1335|<p> MCUB CM 타임아웃 에러</p>  | CM 동작이 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>|
-|SE1336|<p> MCUB CPU2 타임아웃 에러</p>  | CPU2 동작이 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>|
-|SE1337|<p> MCUB 부트 플래시 CRC 에러</p>  | CPU1 부트 플래시 CRC값이 불일치합니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 CPU1 실행파일을 교체하십시오.</li></ul>|
-|SE1338|<p> MCUB 부트 RAM CRC 에러</p>  | CPU1 부트 RAM CRC값이 불일치합니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 CPU1 실행파일을 교체하십시오.</li></ul>|
-|SE1339|<p> MCUB PIE_RAM 진단 에러</p>  | cpu2 PIE Vector handler 주소 불일치입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1345|<p> MCUB CPU 레지스터 진단 에러</p>  | CPU2 코어 레지스터 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1346|<p> MCUB FPU 레지스터 진단 에러</p>  | CPU2 FPU 레지스터 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1347|<p> MCUB VCRC 레지스터 진단 에러</p>  | CPU2 VCRC 레지스터 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1348|<p> MCUB march ram 진단 에러</p>  | CPU2 ram 읽고 쓰기가 비정상입니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1349|<p> MCUB 플래시 crc 진단 에러</p>  | CPU2 플래시 crc값이 불일치 합니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.
-|SE1350|<p> MCUB 부트 플래시 CRC 에러</p>  | CPU2 부트 플래시 CRC값이 불일치합니다. |<ul><li>제어기를 재부팅하십시오.</li><li>문제가 지속되면 CPU2 실행파일을 교체하십시오.</li></ul>
-|SE1381|<p> 프로그램 시퀀스 진단 에러</p>  | Safety controller의 안전 프로그램 동작 순서가 비정상적입니다. |<ul><li>제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>|
-|SE1382|<p> 프로그램 시퀀스 진단 에러</p>  | Safety controller의 안전 프로그램 동작 순서가 비정상적입니다(null_table). |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.|
-|SE1383|<p> 프로그램 시퀀스 진단 에러</p>  | Safety controller의 안전 프로그램 동작 순서가 비정상적입니다.(number error) |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>
-|SE1384|<p> 프로그램 시퀀스 진단 에러</p>  | Safety controller의 안전 프로그램 동작 순서가 비정상적입니다.(local value error) |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>
-|SE1850|<p> 시퀀스 cross check 에러</p>  | 두 CPU간의 시퀀스 수행 결과가 다릅니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>
-|SE1852|<p> TCP 방향 cross check 에러</p>  | 두 CPU간의 TCP 방향 계산 결과가 다릅니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>
-|SE1853|<p> 모멘텀 cross check 에러</p>  | 두 CPU간의 모멘텀 계산 결과가 다릅니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>
-|SE1854|<p> TCP 힘 cross check 에러</p>  | 두 CPU간의 TCP 힘 계산 결과가 다릅니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>
-|SE1855|<p> 파워 cross check 에러</p>  | 두 CPU간의 파워 계산 결과가 다릅니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>문제가 지속되면 안전보드를 교체하십시오.</li></ul>
-|SE1856|<p> 축 위치 cross check 에러</p>  | 각 축의 지령과 실제 축 위치가 다릅니다. |<ul><li> 제어기를 재부팅하십시오.</li><li>시스템의 버전 정보를 확인하십시오.</li></ul>
-|SE1857|  TCP 위치 cross check 에러  | main에서 계산한 TCP위치와 safety controller에서 계산한 위치가 다릅니다. | <ul><li> 제어기를 재부팅하십시오.</li><li>시스템의 버전 정보를 확인하십시오.</li></ul> |
-# E7101\~E7120
+|SE101|The received safety configuration file has been corrupted|The received CRC32 data does not match the original value|<ul><li>Replace the safety board with a new one.</li><li>Please contact the maintenance department of this company if the same error occurs again even after replacing the safety board.</li></ul>|
+|SE201|<p>The Response of safety board has been delayed</p>|Safety communication(FSoE) encountered a response delay error|<ul><li>Replace the safety board with a new one.</li><li>Please contact the maintenance department of this company if the same error occurs again even after replacing the safety board.</li></ul>|
+|SE202|<p>Data corruption error of safety communication(FSoE)</p>|CRC data received in the safety communication module does not match original value|<ul><li>Replace the safety board with a new one.</li><li>Please contact the maintenance department of this company if the same error occurs again even after replacing the safety board.</li></ul>|
+|SE301|<p>The internal communication error (CPU1-CM) in the safety board</p>|Internal IPC communication data CRC error between CPU1 and CM|<ul><li>Replace the safety board with a new one.</li><li>Please contact the maintenance department of this company if the same error occurs again even after replacing the safety board.</li></ul>|
+|SE302|<p>The internal communication error(FSI) in the safety board</p>|FSI communication CRC error occured between MCUs in the safety board|<ul><li>Replace the safety board with a new one.</li><li>Please contact the maintenance department of this company if the same error occurs again even after replacing the safety board."
+|SE303|<p>The internal communication(FSI) delay error</p>|The Communication dealy occured between MCUs in the safety board|<ul><li>Replace the safety board with a new one.</li><li>Please contact the maintenance department of this company if the same error occurs again even after replacing the safety board.</li></ul>|
+|SE304|<p>The received file through the internal communication(FSI) has been corrupted</p>|The recevied CRC value does not match the original value|<ul><li>Replace the safety board with a new one.</li><li>Please contact the maintenance department of this company if the same error occurs again even after replacing the safety board.</li></ul>|
+|SE401|<p>The data corruption error occured between CPU1-CPU2 in the safety board</p>|Internal CPU1-CPU2 IPC communication data CRC error|<ul><li>Replace the safety board with a new one.</li><li>Please contact the maintenance department of this company if the same error occurs again even after replacing the safety board.</li></ul>|
+|SE402|<p>The delay error occured between CPU1-CPU2 in the safety board</p>|The Communication(IPC) dealy occured between CPU1 and CPU2 in the safety board|<ul><li>Replace the safety board with a new one.</li><li>Please contact the maintenance department of this company if the same error occurs again even after replacing the safety board.</li></ul>|
+|SE403|<p>The data corruption error occured between CPU2-CPU2 in the safety board</p>|The recevied CRC data does not match the original value during performing SCI communication|<ul><li>Replace the safety board with a new one.</li><li>Please contact the maintenance department of this company if the same error occurs again even after replacing the safety board.</li></ul>|
+|SE404|<p>The delay error occured between CPU2-CPU2 in the safety board</p>|Communication delay occured during performing SCI communication|<ul><li>Replace the safety board with a new one.</li><li>Please contact the maintenance department of this company if the same error occurs again even after replacing the safety board.</li></ul>|
+|SE601|<p>Safe parameter range exceeded(General setup)</p>|The parameter set in the General setup configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the General setup configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE602|<p>Safe parameter range exceeded(Joint space)</p>|The parameter set in the Joint space configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Joint space configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE603|<p>Safe parameter range exceeded(Joint speed)</p>|The parameter set in the Joint speed configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Joint speed configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE604|<p>Safe parameter range exceeded(SOS)</p>|The parameter set in the SOS configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the SOS configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE605|<p>Safe parameter range exceeded(TCP speed)</p>|The parameter set in the TCP speed configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the TCP speed configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE606|<p>Safe parameter range exceeded(Cell ares)</p>|The parameter set in the Cell area configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Cell area configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE607|<p>Safe parameter range exceeded(Tool model)</p>|The parameter set in the Tool model configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Tool model configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE608|<p>Safe parameter range exceeded(Robot model)</p>|The parameter set in the Robot model configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Robot model configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE609|<p>Safe parameter range exceeded(Self collision)</p>|The parameter set in the Self collision configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Self collision configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE610|<p>Safe parameter range exceeded(TCP orientation)</p>|The parameter set in the TCP orientation configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the TCP orientation configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE611|<p>Safe parameter range exceeded(Replan)</p>|The parameter set in the Replan configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Replan configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE612|<p>Safe parameter range exceeded(Power)</p>|The parameter set in the Power configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Power configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE613|<p>Safe parameter range exceeded(Momentum)</p>|The parameter set in the Momentum configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Momentum configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE614|<p>Safe parameter range exceeded(Collision detection)</p>|The parameter set in the Collision detection configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Collision detection configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE615|<p>Safe parameter range exceeded(Safe stop)</p>|The parameter set in the Safe stop configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Safe stop configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE616|<p>Safe parameter range exceeded(PROFINET)</p>|The parameter set in the PROFINET configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the PROFINET configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE617|<p>Safe parameter range exceeded(PROFIsafe)</p>|The parameter set in the PROFIsafe configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the PROFIsafe configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE618|<p>Safe parameter range exceeded(Safety IO)</p>|The parameter set in the Safety IO configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Safety IO configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE619|<p>Safe parameter range exceeded(Add Safety IO)</p>|The parameter set in the Add Safety IO configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Add Safety IO configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE620|<p>Safe parameter range exceeded(IO Function Setting)</p>|The parameter set in the IO Function Setting configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the IO Function Setting configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE621|<p>Safe parameter range exceeded(Additional load)</p>|The parameter set in the Additional load configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Additional load configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE622|<p>Safe parameter range exceeded(Tool info)</p>|The parameter set in the Tool info configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Tool info configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE623|<p>Safe parameter range exceeded(Maintenance)</p>|The parameter set in the Maintenance configuration menu has exceeded the range.|<ul><li>Please check that the parameters set in the Maintenance configuration menu do not exceed the range.</li><li> Perform a safe parameter initialization.</li><li>Replace the safety board.</li></ul>|
+|SE1301|<p>MCUA HW-BIST Diagnostic error</p>|CPU,FPU of CPU1 are abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1302|<p>MCUA PIE_RAM Diagnostic error</p>|Address of cpu1 PIE Vector handler mismatch.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1303|<p>MCUA CPU register Diagnostic error</p>|CPU1 Core Register read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1304|<p>MCUA FPU register Diagnostic error</p>|CPU1 FPU Register read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1305|<p>MCUA VCRC register Diagnostic error</p>|CPU1 VCRC Register read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1306|<p>MCUA march ram Diagnostic error</p>|CPU1 ram read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1307|<p>MCUA march ram Diagnostic error</p>|CPU1 ram copy area read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1308|<p>MCUA FLASH crc Diagnostic error</p>|CPU1 Flash crc value is inconsistent.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1309|<p>MCUA oscillator Diagnostic error</p>|CPU1 external oscillator is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1310|<p>MCUA CM timeout error</p>|CM operation is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1311|<p>MCUA CPU2 timeout error</p>|CPU2 operation is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1312|<p>MCUA CPU1 timeout error</p>|CPU1 CM operation is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1313|<p>MCUA boot flash CRC error</p>|CPU1 boot Flash crc value is inconsistent.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the CPU1 executable.</li></ul>|
+|SE1314|<p>MCUA boot RAM CRC error</p>|CPU1 boot ram crc value is inconsistent.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the CPU1 executable.</li></ul>|
+|SE1316|<p>MCUA PIE_RAM Diagnostic error</p>|Address of cpu2 PIE Vector handler mismatch.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1317|<p>MCUA CPU2 register Diagnostic error</p>|CPU2 Core Register read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1318|<p>MCUA FPU register Diagnostic error</p>|CPU2 FPU Register read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1319|<p>MCUA VCRC register Diagnostic error</p>|CPU2 VCRC Register read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1320|<p>MCUA march ram Diagnostic error</p>|CPU2 ram read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1321|<p>MCUA flash crc Diagnostic error</p>|CPU2 Flash crc value is inconsistent.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1322|<p>MCUA boot flash CRC error</p>|CPU2 boot Flash crc value is inconsistent.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the CPU2 executable.</li></ul>|
+|SE1323|<p>MCUA Temperature limit error</p>|The temperature of the SCM board is too high.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1324|<p>MCUA Voltage limit error</p>|The voltage supply on the SCM board is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1325|<p>MCUB HW-BIST Diagnostic error</p>|CPU,FPU of CPU1 are abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1326|<p>MCUB PIE_RAM Diagnostic error</p>|Address of cpu1 PIE Vector handler mismatch.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1327|<p>MCUB CPU register Diagnostic error</p>|CPU1 Core Register read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1328|<p>MCUB FPU register Diagnostic error</p>|CPU1 FPU Register read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1329|<p>MCUB VCRC register Diagnostic error</p>|CPU1 VCRC Register read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1330|<p>MCUB march ram Diagnostic error</p>|CPU1 ram read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1331|<p>MCUB march ram Diagnostic error</p>|CPU1 ram copy area read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1332|<p>MCUB flash crc Diagnostic error</p>|CPU1 Flash crc value is inconsistent.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1334|<p>MCUB oscillator Diagnostic error</p>|CPU1 external oscillator is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1335|<p>MCUB CM timeout error</p>|CM CM operation is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1336|<p>MCUB CPU2 timeout error</p>|CPU2 CM operation is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1337|<p>MCUB boot flash CRC error</p>|CPU1 Flash crc value is inconsistent.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the CPU1 executable.</li></ul>|
+|SE1338|<p>MCUB boot RAM CRC error</p>|CPU1 boot ram crc value is inconsistent.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the CPU1 executable.</li></ul>|
+|SE1339|<p>MCUB PIE_RAM Diagnostic error</p>|cpu2 PIE Vector handler address mismatch.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1345|<p>MCUB CPU register Diagnostic error</p>|Address of cpu2 PIE Vector handler mismatch.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1346|<p>MCUB FPU register Diagnostic error</p>|CPU2 FPU register read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1347|<p>MCUB VCRC register Diagnostic error</p>|CPU2 VCRC register read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1348|<p>MCUB march ram Diagnostic error</p>|CPU2 ram read/write is abnormal.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1349|<p>MCUB flash crc Diagnostic error</p>|CPU2 Flash crc value is inconsistent.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1350|<p>MCUB boot flash CRC error</p>|CPU2 boot Flash crc value is inconsistent.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the CPU2 executable.</li></ul>|
+|SE1381|<p>Program sequence diagnosis error</p>|Safety controller has an abnormal sequence of safety program operations.|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1382|<p>Program sequence diagnosis error</p>|Safety controller has an abnormal sequence of safety program operations. (null_table).|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1383|<p>Program sequence diagnosis error</p>|Safety controller has an abnormal sequence of safety program operations. (number error)|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1384|<p>Program sequence diagnosis error</p>|Safety controller has an abnormal sequence of safety program operations.(local value error)|<ul><li> Reboot the controller</li><li>If the problem persists, replace the Safety controller board.</li></ul>|
+|SE1500|<p>Encoder diagnostic error</p>|The encoder diagnostic results are abnormal.|<ul><li> Please reboot the controller.</li><li>Check the encoder status of the axis where the error occurred.</li><li>If the issue persists, replace the Safety Controller board. </li></ul>|
+|SE1501|<p>Encoder communication error</p>|The encoder communication is abnormal.|<ul><li> Please reboot the controller.</li><li>Check the encoder cable connection.</li><li>If the issue persists, replace the Safety Controller board. </li></ul>|
+|SE1502|<p>Encoder offset exceeded</p>|The deviation between the encoder value stored in the controller and the current encoder value exceeds the threshold.|<ul><li> Please reboot the controller.</li><li>Check the encoder status of the axis where the error occurred.</li><li>If the issue persists, replace the Safety Controller board. </li></ul>|
+|SE1600|<p>W-phase current diagnostic error</p>|The W-phase current diagnostic result is abnormal.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1601|<p>U-phase current diagnostic error</p>|The U-phase current diagnostic result is abnormal.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1602|<p>UV-phase current sensor offset exceeded error</p>|The UV-phase current sensor offset exceeds the reference value.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1603|<p>VW-phase current sensor offset exceeded error</p>|The VW-phase current sensor offset exceeds the reference value.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1604|<p>U-phase current sensor offset exceeded error</p>|The U-phase current sensor offset exceeds the reference value.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1605|<p>V-phase current sensor offset exceeded error</p>|The V-phase current sensor offset exceeds the reference value.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1606|<p>W-phase current sensor offset exceeded error</p>|The W-phase current sensor offset exceeds the reference value.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1607|<p>Current sensor disconnected</p>|Unable to read the values from the current sensor.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1850|<p>Sequence cross check error</p>|Sequence performance results between the two CPUs are different.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1852|<p>TCP orientation cross check error</p>|TCP orientation calculation results between the two CPUs are different.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1853|<p>Momentum cross check error</p>|The momentum calculation results between the two CPUs are different.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1854|<p>TCP force cross check error</p>|The TCP force calculation results between the two CPUs are different.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1855|<p>Power cross check error</p>|The Power calculation results between the two CPUs are different.|<ul><li> Please reboot the controller.</li><li>If the issue persists, replace the Safety Controller board.</li><li>If the issue continues, replace the Amp board. </li></ul>|
+|SE1856|<p>Joint position cross check error</p>|Each axis has a different command and actual axis position.|<ul><li> Please reboot the controller.</li><li>Check the version information of the system.</li></ul>|
+|SE1857|TCP position cross check error|The TCP position calculated by the Main-Com and the position calculated by the safety controller are different.|<ul><li> Please reboot the controller.</li><li>Check the version information of the system.</li></ul>|
 
-| **코드** |                **메시지**               |           **원인**           | 　　　　**해결책**                                                                                                                                     |
+# 7.2 Warning List
+
+| **Code** |                **Message**               |           **Cause**           | 　　　　**Solutions**                                                                                                                                     |
 | :----: | :----------------------------------: | :------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| SW651 | 로봇 안전정지 위반|로봇이 정지상태에서 움직임이 감지되었습니다. |<ul><li>브레이크에 이상이 없는지 확인하십시오</li></ul>                                |
-| SW652 | 안전영역 TCP 위치 위반(Cell %s)|TCP 위치가 안전영역을 벗어났습니다. |<ul><li>수동 모드로 전환합니다.</li><li>로봇을 안전한 영역으로 이동시키십시오.</li><li>작성한 프로그램을 확인하십시오.</li></ul>                                |
-| SW653 | 로봇 자가충돌 검지|로봇 모델과 툴 모델의 간섭을 검지했습니다. |<ul><li>수동 모드로 전환합니다.</li><li>로봇이 충돌하지 않도록 위치를 이동시키십시오.</li><li>작성한 프로그램을 확인하십시오.</li></ul>                                |
-| SW654 | TCP 방향 위반(%s [deg])|TCP 방향이 안전 기준을 위반했습니다. |<ul><li>수동 모드로 전환합니다.</li><li>로봇을 안전한 영역으로 이동시키십시오.</li><li>작성한 프로그램에서 툴의 방향을 확인하십시오.</li></ul>                                |                               
-| SW655 | 수동모드에서 TCP 속도 위반(%s [mm/s])| 수동모드에서 TCP 속도가 안전 기준을 위반했습니다. |<ul><li>안전기능 조건설정 메뉴에서 설정한 값을 확인하십시오.</li></ul>                                |
-| SW656 | 조인트 안전영역 위반(%s [deg])| 조인트의 위치가 설정한 안정영역을 벗어났습니다. |<ul><li>수동 모드로 전환합니다.</li><li>로봇을 안전한 영역으로 이동시키십시오.</li><li>작성한 프로그램을 확인하십시오.</li></ul>                                |                               
-| SW657 | 조인트 안전속도 위반(%s [deg/s])|조인트의 속도가 설정한 안정기준을 초과했습니다. |<ul><li>안전기능 조건 설정 메뉴에서 설정한 각 축 속도를 확인하십시오.</li><li>작성한 프로그램의 속도를 확인하십시오.</li></ul>                                |                               
-| SW658 | 로봇 일률(power) 위반(%s [N])| 로봇 일률이 안전 기준을 위반했습니다. |<ul><li>안전기능 조건설정 메뉴에서 설정한 값을 확인하십시오.</li><li>작성한 프로그램에서 각 축 속도 및 자세를 확인하십시오.</li></ul>                                |
-| SW659 | 로봇 운동량(momentum) 위반(%s [kg m/s])| 로봇 운동량이 안전 기준을 위반했습니다. |<ul><li>안전기능 조건설정 메뉴에서 설정한 값을 확인하십시오.</li><li>작성한 프로그램에서 로봇의 자세 및 TCP 속도를 확인하십시오.</li></ul>                                |
-| SW660 | 충돌 검지- 안전감시(%s축)| 외력의 크기가 설정한 기준을 초과했습니다. | <ul><li>충돌이 발생하였으면 충돌원인을 제거하십시오.</li><li>충돌검지 레벨을 조정하십시오.</li><li>설정한 안전 기준을 확인하십시오.</li></ul>                                |
-| SW661 | 저속모드에서 TCP 속도 위반(%s [mm/s])|저속모드에서 TCP 속도가 안전 기준을 위반했습니다.|<ul><li>안전기능 조건설정 메뉴에서 설정한 값을 확인하십시오.</li><li>작성한 프로그램에서 로봇의 TCP 속도를 확인하십시오.</li></ul>                                |
-| SW662 | 로봇 정지 거리 위반|로봇의 정지 거리가 설정한 안전 기준을 위반했습니다.|<ul><li>안전기능 조건설정 메뉴에서 설정한 값을 확인하십시오.</li><li>작성한 프로그램에서 로봇의 속도를 확인하십시오.</li></ul>                                |
-| SW663 | 로봇 정지 시간 위반|로봇의 정지 시간이 설정한 안전 기준을 위반했습니다.|<ul><li>안전기능 조건설정 메뉴에서 설정한 값을 확인하십시오.</li><li>작성한 프로그램에서 로봇의 속도를 확인하십시오.</li></ul>                                |
-| SW664 | TCP 속도 위반(%s [mm/s])|TCP 속도가 안전 기준을 위반했습니다.|<ul><li>안전기능 조건설정 메뉴에서 설정한 값을 확인하십시오.</li><li>작성한 프로그램에서 로봇의 TCP 속도를 확인하십시오."
-# 별첨
+|SW651|Robot safety stop violation|Robot motion has been detected in stop state.|<ul><li>Check the brake on each joint.</li></ul>|
+|SW652|TCP position violation (Cell)|TCP position is out of the cell area.|<ul><li>Change the mode to manual.</li><li>Jog the robot to safety area.</li><li>Verify the job program.</li></ul>|
+|SW653|Robot self collision detection|The collision detected between the robot moel and the tool model.|<ul><li>Change the mode to manual.</li><li>Jog the robot to prevent collsion.</li><li>Verify the job program.</li></ul>|
+|SW654|TCP orientation violation ([deg])|TCP orientation exceeded the limits.|<ul><li>Change the mode to manual.</li><li>Jog the robot to safety area.</li><li>Verify the TCP orientation in job program.</li></ul>|
+|SW655|TCP speed violation in manual mode([mm/s])|TCP speed exceeded the limits in manual mode.|<ul><li>Check the value set in the safety function menu.</li></ul>|
+|SW656|Joint space violation([deg])|Joint position is out of the safe space.|<ul><li>Change the mode to manual.</li><li>Jog the robot to safety area.</li><li>Verify the job program.</li></ul>|
+|SW657|Joint speed violation([deg/s])|Joint speed exceeded the limits.|<ul><li>Check the value set in the safety function menu.</li><li>Verify the joint speed in job program.</li></ul>|
+|SW658|Robot power violation([N])|Robot power exceeded the limits.|<ul><li>Check the value set in the safety function menu.</li><li>Verify the joint speed and position in job program.</li></ul>|
+|SW659|Robot momentum violation([kg m/s])|Robot momentum exceeded the limits.|<ul><li>Check the value set in the safety function menu.</li><li>Verify the TCP speed and position in job program.</li></ul>|
+|SW660|Collision detection-safety([Axis])|If a collision occurrs, remove the cause of the collision.|<ul><li>Verify the sensitivity of collision detection.</li><li>Check the value set in the safety function menu.</li></ul>|
+|SW661|TCP speed violation in reduced mode([mm/s])|TCP speed exceeded the limits in reduced mode|<ul><li>Check the value set in the safety function menu.</li><li>Verify the TCP speed in job program.</li></ul>|
+|SW662|Stopping distance violation|Stopping distance exceeded the limits|<ul><li>Check the value set in the safety function menu.</li><li>Verify the robot's speed in job program.</li></ul>|
+|SW663|Stopping time violation|Stopping time exceeded the limits.|<ul><li>Check the value set in the safety function menu.</li><li>Verify the robot's speed in job program.</li></ul>|
+|SW664|TCP speed violation([mm/s])|TCP speed exceeded the limits.|<ul><li>Check the value set in the safety function menu.</li><li>Verify the TCP speed in job program.</li></ul>|# Attachment
 
-# 산업안전보건기준에 관한 규칙 및 안전검사 고시
+# Rules on Occupational Safety and Health Standards, and Notice for Safety Inspection
 
-당해 산업용 로봇은 산업안전보건기준에 관한 규칙 및 안전검사 고시(검사 대상일 경우)의 검사 기준을 고려하여 설치하여야 한다.
+The industrial robot should be installed in consideration of the inspection standards both of the Rules on Occupational Safety and Health Standards and of the Notice for Safety Inspection (if subject to inspection).
 
-{% embed url="https://hyundai-robotics.gitbook.io/rules-on-occupational-safety-and-health-standards/" %}
+"[Rules on Occupational Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/english/README)"
+# Quality Assurance
+
+"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/english/README)"
