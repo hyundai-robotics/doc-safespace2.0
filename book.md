@@ -208,7 +208,7 @@ The safety performance of the emergency stop and external interface(default safe
 | SIL (Safety Integrity Level) |     3     | IEC 61508/62061/61800-5-2 |
 |           Category           |     4     |        ISO 13849-1        |
 |    PL (Performance Level)    |     e     |        ISO 13849-1        |
-|    		PFH    			   |1.34217E-08|        ISO 13849-1        |
+|    		PFH    			   |  1.5E-08  |         IEC 61508         |
 
 
 The safety performance of other safety functions is as follows:
@@ -218,7 +218,7 @@ The safety performance of other safety functions is as follows:
 | SIL (Safety Integrity Level) |     2     | IEC 61508/62061/61800-5-2 |
 |           Category           |     3     |        ISO 13849-1        |
 |    PL (Performance Level)    |     d     |        ISO 13849-1        |
-
+|    		PFH    			   |  1.5E-07  |         IEC 61508         |
 
 # 1.2 Safety measures
 
