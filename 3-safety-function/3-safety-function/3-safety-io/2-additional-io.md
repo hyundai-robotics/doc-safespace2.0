@@ -1,17 +1,16 @@
-﻿# 3.3.3.2 Additional Safety I/O
+﻿# 3.3.3.2 부가 안전 입출력 신호
 
-Additional Safety I/O의 파라미터를 설정합니다.
-입력 신호는 8개, 출력 신호는 4개 이며 모두 이중신호로 동작 됩니다.
+부가 안전 입출력 신호의 파라미터를 설정합니다.
+입력 신호 8개, 출력 신호 8개로 구성되며 모두 이중신호로 동작 됩니다.
 
-**1. Additional Safety Input/Output**
+## 1. 부가 안전 입출력 신호
 
-![Additional Input Image](../../../_assets/safetyio_profisafe/add_io.PNG)
+![Additional Input Image](../../../_assets/safety_io/add_io.PNG)
 
- - Enable : Additional Safety I/O의 사용 유무를 결정합니다.
- - 필터 시간 : 각 입력 채널별로 필터 시간 동안 일정한 신호가 입력되어야 유효한 신호로 처리됩니다. (Unit : msec)
- - Discrete 시간 :  Additional Safety Input 은 2개의 이중 신호가  같은 값일때 유효한 신호로 처리되고 이 2개의 신호가 **Discrete 시간** 보다 큰 시간 동안 다르게 되면 알람이 발생하게 됩니다. (Unit : msec)
- - Input Error Latch 시간 : 해당 채널에 에러가 발생하면 에러가 복구 되더라도 **Input Error Latch 시간** 이후에 Fail-Safe 값에서 현재 입력된 신호로 변경됩니다. (Unit : msec)
- - Output Error Latch 시간 : 해당 채널에 에러가 발생하면 에러가 복구 되더라도 **Output Error Latch 시간** 이후에 Fail-Safe 값에서 출력 하려는 신호 레벨로 변경됩니다. (Unit : msec)
- 
+ - **Enable** : 미사용
+ - **필터 시간** : 각 입력 채널별로 필터 시간 동안 일정한 신호가 입력되어야 유효한 신호로 처리됩니다. (단위 : msec)
+ - **Discrete 시간** :  Additional Safety Input 은 2개의 이중 신호가  같은 값일때 유효한 신호로 처리되고 이 2개의 신호가 **Discrete 시간** 보다 큰 시간 동안 다르게 되면 알람이 발생하게 됩니다. (단위 : msec)
+ - **Input Error Latch 시간** :  해당 채널에서 에러가 발생하면, 에러가 복구되더라도 설정된 시간 이후에 Fail-Safe 상태에서 현재 입력 상태로 전환됩니다. (단위 : msec)
+ - **Output Error Latch 시간** : 해당 채널에서 에러가 발생하면, 에러가 복구되더라도 설정된 시간 동안 출력 접점은 **Open (Fail-safe)** 상태를 유지합니다. 이후 정상 출력으로 전환됩니다. (단위 : msec)  
  
 
