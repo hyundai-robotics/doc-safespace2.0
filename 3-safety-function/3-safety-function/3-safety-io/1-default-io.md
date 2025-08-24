@@ -6,8 +6,7 @@
 
 ## 1. 입력 신호 설정
 
-![Default Input Image](../../../_assets/safety_io/def_input.PNG)
-![작업 공간](../../../_assets/safety_layout/cell_working.PNG)
+![Default Input Image](../../../_assets/safety_io/def_input.png)
 
 - **Pulse Test** : 각 채널별로 Pulse Test 사용 여부를 설정합니다.  
 - **Error Latch 시간** : 각 채널은 에러가 발생한 후 해당 에러가 해소되더라도, **Error Latch 시간**이 경과한 이후에야 Fail-Safe 상태에서 현재 입력 상태로 전환됩니다. (단위: msec)
@@ -17,7 +16,7 @@
 
 ## 2. 출력 신호 설정
 
-![Default Output Image](../../../_assets/safety_io/def_output.PNG)
+![Default Output Image](../../../_assets/safety_io/def_output.png)
 
 - **Pulse Test** : 각 채널별로 Pulse Test 사용 여부를 설정합니다.  
 - **Error Latch 시간** : 각 채널은 에러가 발생한 후 해당 에러가 해소되더라도, **Error Latch 시간**동안 **Open (Fail-safe)** 상태를 유지합니다. 이후 정상 출력으로 전환됩니다. (단위 : msec)  

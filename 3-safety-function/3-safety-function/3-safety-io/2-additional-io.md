@@ -5,7 +5,7 @@
 
 ## 1. 부가 안전 입출력 신호
 
-![Additional Input Image](../../../_assets/safety_io/add_io.PNG)
+![Additional Input Image](../../../_assets/safety_io/add_io.png)
 
  - **Enable** : 미사용
  - **필터 시간** : 각 입력 채널별로 필터 시간 동안 일정한 신호가 입력되어야 유효한 신호로 처리됩니다. (단위 : msec)
