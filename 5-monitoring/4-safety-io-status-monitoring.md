@@ -1,7 +1,10 @@
-﻿# 5.2 안전 I/O 상태 모니터링
+﻿# 5.2 안전 I/O 상태
 
-**\[시스템 > 4: 응용 파라미터 > 18: SafeSpace2.0 > Monitoring] > [안전 I/O]** 메뉴를 선택하여 로봇 감시 기능의 상태를 확인하십시오.
+**시스템 > 10: Safety System > 3: Monitoring] > [안전 I/O 상태]** 
 
-![안전 I/O](../_assets/mon_safetyio.PNG)
+-안전입력, 안전출력, 부가 안전입력, 부가 안전 출력의 개별 입출력 상태를 모니터링할 수 있습니다.
+
+
+![안전 I/O](../_assets/safety_io/safety_io_status.png)
 
 
