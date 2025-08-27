@@ -12,6 +12,7 @@ You can set the parameter values in the **\[System > 4: Application parameter > 
 | :-------: | :------------------------------------------------: | :----------: |
 | Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
 | Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Safety motion |   <p>Tuning the motion so that it does not exceed the joint speed limit</p><p>(On/Off)</p>  | Off |
 | Joint OnOff |   <p>Activation of each joint</p><p>(On/Off)</p>  |  Off |
 | speed |   <p>The speed limit value of a joint</p><p>(0 ~ 5000 (mm/s))</p>  |  5000.0 |
 

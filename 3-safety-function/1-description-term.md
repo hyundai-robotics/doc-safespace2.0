@@ -87,3 +87,20 @@ If stop 1 and stop are performed, the deceleration process is monitored through 
 *   **Stop distance**
 
     This monitors the distance of TCP from start deceleration to actual robot stop. If the robot does not stop within the set time, perform Stop 0 to immediately remove power from the motor.
+
+
+
+### <mark style="color:green;">Safety motion tuning</mark>&#xD;
+This function automatically adjusts the robot’s motion according to the specified parameters. The parameters taken into account during motion tuning are as follows.
+
+*   **Joint speed**
+
+*   **TCP speed**
+
+*   **Power**
+
+*   **Momentum**
+
+*   **Stop time**
+
+*   **Stop distance**

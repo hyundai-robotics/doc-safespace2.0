@@ -10,6 +10,7 @@ You can set the parameter values in the **\[System > 4: Application parameter > 
 | :------: | ---------------------------------------------------------------- | :---------: |
 | Activation | <p>Activation of function</p><p>(Off/On/Safety Input)</p> |   Off  |
 | Stop function |   <p>Stop method</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| Safety motion |   <p>Tuning the motion so that it does not exceed the power</p><p>(On/Off)</p>  | Off |
 | Power |   <p>The power limit of robot</p><p>(80 ~ 1000 (W))</p>  | 1000 |
 
 {% hint style="warning" %}
