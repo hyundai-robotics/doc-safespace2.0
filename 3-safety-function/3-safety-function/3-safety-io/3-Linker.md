@@ -35,24 +35,24 @@
 | 안전 입력 채널 4 | - |
 | 안전 출력 채널 1 | 비상 정지 활성화 상태|
 
-### 안전 신호의 기능 리스트
+### 안전 입력 신호의 기능 리스트
 
-|  **채널** |     **기능**                       | 
-| :-------: | :--------------------------------------------------: |
-| Emergency | 외부 비상 정지 입력|
-| SGG| 안전 가드 일반 입력| 
-| SGA | 안전 가드 자동 입력|
+|  **채널** |     **기능**                       |       **설명**    |
+| :-------: | :--------------------------: | :--------------------------------------------------: |
+| Emergency | 외부 비상 정지 입력| OPEN : 비상정지 활성<br>CLOSE : 비상정지 해제 |
+| SGG| 안전 가드 일반 입력| OPEN : 가드 열림 (위험) <br>CLOSE : 가드 닫힘 (안전) |
+| SGA | 안전 가드 자동 입력| OPEN : 가드 열림 (위험) <br>CLOSE : 가드 닫힘 (안전) |
 | Protective stop | - |
 | Normal stop | - |
-| Enable Switch | 외부 인에블링 스위치 |
-| Motor On | 외부 모터온 |
-| Remote | 외부 모드 입력(리모트) |
-| Manual | 외부 모드 입력(수동)  |
-| Auto | 외부 모드 입력(자동)  |
-| Arm Limit | 암리밋 입력|
-| Primary axis Limit | 주축 리밋 입력 |
-| Additional axis Limit | 부가축 리밋 입력 |
-| External axis Limit | 확장축 리밋 입력 |
+| Enable Switch | 외부 인에블링 스위치 | OPEN : 스위치 놓음 <br>CLOSE : 운전 가능(모터온 시도) |
+| Motor On | 외부 모터온 | 신호 상승시(Rising Edge) 모터온 시도 |
+| Remote | 외부 모드 입력(리모트) | OPEN : 내부 모드 신호로 모드 변경 <br>CLOSE : 외부 모드 입력 신호로 모드 변경
+| Manual | 외부 모드 입력(수동)  | OPEN : 동작 없음 <br>CLOSE : 외부 수동 모드 입력 |
+| Auto | 외부 모드 입력(자동)  | OPEN : 동작 없음 <br>CLOSE : 외부 자동 모드 입력 |
+| Arm Limit | 암리밋 입력| OPEN : 리밋 신호 입력 (위험) <br>CLOSE : 리밋 신호 닫힘 (안전) |
+| Primary axis Limit | 주축 리밋 입력 | OPEN : 리밋 신호 입력 (위험) <br>CLOSE : 리밋 신호 닫힘 (안전) |
+| Additional axis Limit | 부가축 리밋 입력 | OPEN : 리밋 신호 입력 (위험) <br>CLOSE : 리밋 신호 닫힘 (안전) |
+| External axis Limit | 확장축 리밋 입력 | OPEN : 리밋 신호 입력 (위험) <br>CLOSE : 리밋 신호 닫힘 (안전) |
 | Monitored standstill #1 ~ #8 | 안전 정지<br>(sos_0~sos_7) |
 | Joint speed set #1 ~ #8 | 조인트 속도<br>(speed_0~speed_7) |
 | TCP speed set #1 ~ #16 | TCP 속도<br>(speed_0~speed_15) |
@@ -65,3 +65,34 @@
 | Collision detection #1 ~ #16 | 충돌 검지<br>(coldet_0~coldet_15) |
 | Speed & separation #1 ~ #84 | RePlan |
 | Mastering test switch| 마스터링 테스트 스위치 |
+
+### 안전 출력 신호의 기능 리스트
+|  **채널** |     **기능**                       |       **설명**    |
+| :-------: | :--------------------------: |  :--------------------------------------------------: |
+| Emergency stop activation status | 비상 정지 상태 | OPEN : TP, OP, 외부 비상정지 중 하나 이상 눌림 <br> CLOSE : TP, OP, 외부 비상정지 모두 눌리지 않음  |
+| Protective stop activation status | |
+| Normal stop activation status | |
+| Remote mode status | 외부 조작 상태 | OPEN : 내부 조작 모드<br> CLOSE : 외부 조작 모드 |
+| Manual mode status | 수동 모드 상태 | OPEN : 수동 모드 상태 아님 <br> CLOSE : 수동 모드 상태 |
+| Auto mode status | 자동 모드 상태 | OPEN : 자동 모드 상태 아님 <br> CLOSE : 자동 모드 상태|
+| Motor Off status | 모터오프 상태 | OPEN : 모터온 상태<br> CLOSE : 모터오프 상태|
+| Safety Function activation status | |
+| Monitord standstill activation status | |
+| Replan(reduced mode) status | |
+| Violation alarm | |
+| Monitord standstill #1~#8 violation | |
+| Joint speed set #1~#8 violation | |
+| TCP speed set #1~#16 violation | |
+| Joint angle #1~#8 violation | |
+| TCP position(cell) #1~#16 violation | |
+| TCP orientation #1~#8 violation | |
+| Self collision detection | |
+| Power #1~#16 violation | |
+| Momentum #1~#16 violation | |
+| Collition detection #1~#16 violation | |
+| Mastering test error | |
+| Brake test error | |
+
+{% hint style="info" %}
+* 안전 통신에서 **OPEN = Bit 0**, **CLOSE = Bit 1** 로 정의됨  
+{% endhint %}
