@@ -94,5 +94,6 @@
 | Brake test error | |
 
 {% hint style="info" %}
-* 안전 통신에서 **OPEN = Bit 0**, **CLOSE = Bit 1** 로 정의됨  
+* 안전 통신에서 **OPEN = Bit 0**, **CLOSE = Bit 1** 로 정의됨
+
 {% endhint %}
