@@ -1,15 +1,21 @@
 ﻿# 3.3.3.3 안전 신호 할당
 
-안전 신호 할당은 안전 입출력, 부가 안전 입출력, 안전 통신 입출력과 같은 외부신호와 로봇 제어기가 가지고 있는 여러가지 논리적 신호 또는 상태 변수를 연결 시켜주는 역할을 합니다.
+### 안전 신호 할당은 안전 입출력, 부가 안전 입출력, 안전 통신 입출력과 같은 외부신호와 로봇 제어기가 가지고 있는 여러가지 논리적 신호(시스템 안전 입출력, 안전 응용프로그램의 신호)를 연결 시켜주는 역할을 합니다. <br> 
 
-![Additional Input Image](../../../_assets/safety_io/io_alloc.png)
+![](../../../_assets/safety_io/SIO_Alloc_diagram1.bmp)
+
+![](../../../_assets/safety_io/SIO_Alloc_diagram2.bmp)
+
+-------------------------------------------------------------------------
+
 
 ### 안전 신호 할당 추가 
 1) 좌측 I/O function list에서 원하는 기능(Function)을 선택
 2) **[PICK]** 버튼을 누르고 인덱스(H/W 채널 또는 Bit 번호)를 선택
 3) I/O function list에 따라 Subset을 선택하여 세부 기능 번호 선택 가능
 
-![Additional Input Image](../../../_assets/safety_io/io_alloc2.png)
+![](../../../_assets/safety_io/io_alloc.png)
+![](../../../_assets/safety_io/io_alloc2.png)
 
 
 {% hint style="warning" %}
