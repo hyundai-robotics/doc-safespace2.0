@@ -49,7 +49,7 @@
     * [3.3.3 안전 신호 입출력](3-safety-function/3-safety-function/3-safety-io/README.md)
       * [3.3.3.1 기본 I/O](3-safety-function/3-safety-function/3-safety-io/1-default-io.md)
       * [3.3.3.2 추가 I/O](3-safety-function/3-safety-function/3-safety-io/2-additional-io.md)
-      * [3.3.3.3 Linker](3-safety-function/3-safety-function/3-safety-io/3-Linker.md)
+      * [3.3.3.3 안전 신호 할당](3-safety-function/3-safety-function/3-safety-io/3-Linker.md)
       * [3.3.3.4 PROFINET](3-safety-function/3-safety-function/3-safety-io/4-profinet.md)
       * [3.3.3.5 PROFIsafe](3-safety-function/3-safety-function/3-safety-io/5-profisafe.md)
 * [4. 안전 기능 설정 및 파라미터 전송](4-configuration/README.md)

@@ -13,4 +13,8 @@
  - **Input Error Latch 시간** :  각 채널은 에러가 발생한 후 해당 에러가 해소되더라도, 설정된 시간 이후에 Fail-Safe 상태에서 현재 입력 상태로 전환됩니다. (단위 : msec)
  - **Output Error Latch 시간** : 각 채널은 에러가 발생한 후 해당 에러가 해소되더라도, 설정된 시간 동안 **Open (Fail-safe)** 상태를 유지합니다. 이후 정상 출력으로 전환됩니다. (단위 : msec)  
  
+### 부가 안전 입력 배선 예)
+![CNSI2](../../../_assets/safety_io/CN_SI2.bmp)
+### 부가 안전 출력 배선 예)
+![CNSO2](../../../_assets/safety_io/CN_SO2.bmp)
 
