@@ -42,7 +42,7 @@
       * [3.3.1.8 모멘텀 감시](3-safety-function/3-safety-function/1-robot-safety-condition/8-momentum.md)
       * [3.3.1.9 안전 정지](3-safety-function/3-safety-function/1-robot-safety-condition/9-stop-function.md)
     * [3.3.2 안전 레이아웃](3-safety-function/3-safety-function/2-safety-layout/README.md)
-      * [3.3.2.1 안전 영역 설정](3-safety-function/3-safety-function/2-safety-layout/1-cell-area)
+      * [3.3.2.1 안전 영역 설정](3-safety-function/3-safety-function/2-safety-layout/1-cell-area.md)
       * [3.3.2.2 툴 모델링](3-safety-function/3-safety-function/2-safety-layout/2-safety-tool-modeling.md)
       * [3.3.2.3 로봇 모델링](3-safety-function/3-safety-function/2-safety-layout/3-safety-robot-modeling.md)
       * [3.3.2.4 툴 방향 모델링](3-safety-function/3-safety-function/2-safety-layout/4-safety-tcp-orientation.md)

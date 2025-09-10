@@ -5,8 +5,8 @@
 **\[시스템 > 8: 안전 시스템 > 2: 파라미터 설정 > 1: 로봇 제한 > 5: 충돌 검지]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
 
 <p align="center">
-  <img src="../../../_assets/col_det_param.png" alt="충돌 검지 설정 화면" width="500"><br>
-  충돌 검지 설정 화면
+<img src="../../../_assets/col_det_param.png"></img>
+<em><p align="center">충돌 검지 설정 화면</p></em>
 </p>
 
 | **파라미터** | 　　　　　　　　　**설명**                                                  |  **기본 설정값** |

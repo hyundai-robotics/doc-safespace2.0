@@ -5,8 +5,8 @@
 **\[시스템 > 8: 안전 시스템 > 1: 파라미터 설정 > 1: 로봇 제한 > 3: SOS]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
 
 <p align="center">
-  <img src="../../../_assets/joint_sos_param.png" alt="정지 감시 파라미터 설정 화면" width="500"><br>
-  정지 감시 파라미터 설정 화면
+<img src="../../../_assets/joint_sos_param.png"></img>
+<em><p align="center">정지 감시 파라미터 설정 화면</p></em>
 </p>
 
 |  **파라미터** |                       **설명**                       |  **기본 설정값**  |
