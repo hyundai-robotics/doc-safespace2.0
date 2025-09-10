@@ -3,12 +3,12 @@
 안전 영역은 툴 및 로봇 링크 영역을 모니터링하기 위한 작업 공간 또는 보호 공간입니다. 작업 공간은 모니터링 대상이 자유롭게 움직일 수 있지만 떠날 수는 없는 제한된 공간입니다. 이와 달리, 보호 공간은 모니터링 대상이 진입하면 움직일 수 없는 제한된 공간입니다. 로봇이 설정한 작업 공간을 벗어나거나, 보호 공간을 침범할 경우 안전 정지(정지0, 정지1, 정지2)가 활성화됩니다.
 
 <p align="center">
-  <img src="../../../_assets/safety_layout/cell_working.png" alt="작업 공간" width="500"><br>
+  <img src="../../../_assets/safety_layout/cell_working.png" alt="작업 공간"><br>
   작업 공간
 </p>
 
 <p align="center">
-  <img src="../../../_assets/safety_layout/cell_protected.png" alt="보호 공간" width="500"><br>
+  <img src="../../../_assets/safety_layout/cell_protected.png" alt="보호 공간"><br>
   보호 공간
 </p>
 
@@ -20,7 +20,7 @@
 *   **일반** 
 
 <p align="center">
-  <img src="../../../_assets/safety_layout/cell_general.png" alt="보호 공간" width="500"><br>
+  <img src="../../../_assets/safety_layout/cell_general.png" alt="보호 공간"><br>
   일반
 </p>
 
@@ -34,7 +34,7 @@
 *   **감지 대상** 
 
 <p align="center">
-  <img src="../../../_assets/safety_layout/cell_target.png" alt="감지 대상" width="500"><br>
+  <img src="../../../_assets/safety_layout/cell_target.png" alt="감지 대상"><br>
   감지 대상
 </p>
 
@@ -48,7 +48,7 @@
 *   **영역** 
 
 <p align="center">
-  <img src="../../../_assets/safety_layout/cell_working.png" alt="영역" width="500"><br>
+  <img src="../../../_assets/safety_layout/cell_working.png" alt="영역"><br>
   영역
 </p>
 
@@ -58,11 +58,6 @@
 | 활성화 |   <p>안전 영역의 꼭지점 활성화 여부</p><p>(활성화 / 비활성화)</p>  | 비활성화 |
 | <p>X</p><p>[mm]</p> |  <p>로봇좌표계 기준 꼭지점의 X방향 위치</p><p>(-5000.0 ~ 5000.0)</p>  | 0 |
 | <p>Y</p><p>[mm]</p> |  <p>로봇좌표계 기준 꼭지점의 Y방향 위치</p><p>(-5000.0 ~ 5000.0)</p>  | 0 |
-
-
-
-
-
 
 
 
