@@ -3,13 +3,13 @@
 안전 영역은 툴 및 로봇 링크 영역을 모니터링하기 위한 작업 공간 또는 보호 공간입니다. 작업 공간은 모니터링 대상이 자유롭게 움직일 수 있지만 떠날 수는 없는 제한된 공간입니다. 이와 달리, 보호 공간은 모니터링 대상이 진입하면 움직일 수 없는 제한된 공간입니다. 로봇이 설정한 작업 공간을 벗어나거나, 보호 공간을 침범할 경우 안전 정지(정지0, 정지1, 정지2)가 활성화됩니다.
 
 <p align="center">
-  <img src="../../../_assets/safety_layout/cell_working.png" alt="작업 공간"><br>
-  작업 공간
+<img src="../../../_assets/safety_layout/cell_working.png"></img>
+<em><p align="center">작업 공간</p></em>
 </p>
 
 <p align="center">
-  <img src="../../../_assets/safety_layout/cell_protected.png" alt="보호 공간"><br>
-  보호 공간
+<img src="../../../_assets/safety_layout/cell_protected.png"></img>
+<em><p align="center">보호 공간</p></em>
 </p>
 
 안전 영역은 로봇 좌표계를 기준으로 각 꼭지점의 위치와 높이를 설정하여 공간을 구성합니다. 꼭지점은 최대 10 개까지 추가할 수 있습니다. 안전 공간은 파라미터 설정 또는 안전 I/O 신호에 의해 활성화됩니다.
@@ -20,8 +20,8 @@
 *   **일반** 
 
 <p align="center">
-  <img src="../../../_assets/safety_layout/cell_general.png" alt="보호 공간"><br>
-  일반
+<img src="../../../_assets/safety_layout/cell_general.png"></img>
+<em><p align="center">일반</p></em>
 </p>
 
 |  **파라미터** |                       **설명**                       |  **기본 설정값**  |
@@ -34,8 +34,8 @@
 *   **감지 대상** 
 
 <p align="center">
-  <img src="../../../_assets/safety_layout/cell_target.png" alt="감지 대상"><br>
-  감지 대상
+<img src="../../../_assets/safety_layout/cell_target.png"></img>
+<em><p align="center">감지 대상</p></em>
 </p>
 
 |  **파라미터** |                       **설명**                       |  **기본 설정값**  |
@@ -48,8 +48,8 @@
 *   **영역** 
 
 <p align="center">
-  <img src="../../../_assets/safety_layout/cell_working.png" alt="영역"><br>
-  영역
+<img src="../../../_assets/safety_layout/cell_working.png"></img>
+<em><p align="center">영역</p></em>
 </p>
 
 |  **파라미터** |                       **설명**                       |  **기본 설정값**  |
