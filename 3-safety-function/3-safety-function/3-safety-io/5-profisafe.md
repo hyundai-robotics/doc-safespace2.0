@@ -12,7 +12,7 @@
   **2. 참고 사항** 
   
  - Address Type :  Address Type 1 (Destination Address만 체크함)
- - Reaction on Device_Fault : 본 장치가 Fault 상태가 되면 모든 F-Output 출력은 Fail-safe(0)상태로 변경됩니다. 그리고 장치의 Fault상태가 해소되고 난 뒤에는 F-Host에서 Global- Acknowledge 와 같은 명령으로 F-Device를 re-integration 하는 과정이 필요합니다.
+ - Reaction on Device_Fault : 본 장치가 Fault 상태가 되면 모든 F-Output 출력은 Fasafeil-(0)상태로 변경됩니다. 그리고 장치의 Fault상태가 해소되고 난 뒤에는 F-Host에서 Global- Acknowledge 와 같은 명령으로 F-Device를 re-integration 하는 과정이 필요합니다.
  
  **3. 알람 리스트** 
 
