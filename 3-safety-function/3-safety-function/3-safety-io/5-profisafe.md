@@ -35,10 +35,16 @@
 | 0x4D |CRC2 이상|
 | 0x4E |F-Watchdog 타임아웃|
 
+---
 
-> 아래 TP에 의한 파라미터 설정은 준비중에 있습니다.
+ProfiSafe을 구성하는 안전 파라미터는 **\[시스템 > 8: 안전 시스템 > 2: 파라미터 설정 > 3: 안전 입출력 > 5: PROFISAFE]** 메뉴에서 설정할 수 있습니다.
 
-![Profisafe TP Image](../../../_assets/safetyio_profisafe/profisafe.PNG)
+<p align="center">
+<img src="../../../_assets/safetyio_profisafe/profisafe_param.png"></img>
+<em><p align="center">ProfiSafe 설정 화면</p></em>
+</p>
 
- - Source Address : Source Address를 설정합니다. (1로 고정)
- - Destination Address : Destination Address를 설정합니다. (설정 범위 : 1 ~ 65534)
+| 파라미터   | 설명                                                                 | 입력 범위 | 기본 값 |
+|:---------:|:--------------------------------------------------------------------:|:--------:|:------:|
+| 원본 주소  | 설정된 원본 주소를 보여줍니다.<br>이 파라미터는 설정할 수 없고 **읽기 전용**입니다. | -        | 1      |
+| 대상 주소  | 대상 주소를 설정합니다.                                                      | 1 ~ 99   | 1      |
