@@ -909,7 +909,7 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형 설정은 다음�
 
 <p align="center">
 <img src="../../../_assets/3/self_collision_param.png"></img>
-<em><p align="center">툴 방향 제한 기능</p></em>
+<em><p align="center">자가 충돌 검지 기능 파라미터 설정 화면</p></em>
 </p>
 
 |  **파라미터** |                       **설명**                       |  **기본 설정값**  |
