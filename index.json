@@ -141,227 +141,242 @@
 	},
 	{
 		"link": "3-safety-function/2-collaborative-operation-mode/2-speed-separation-monitoring.md",
-		"char_ofs": 17671,
-		"byte_ofs": 33051
+		"char_ofs": 17676,
+		"byte_ofs": 33062
 	},
 	{
 		"link": "3-safety-function/2-collaborative-operation-mode/3-power-force-limit.md",
-		"char_ofs": 18104,
-		"byte_ofs": 33895
+		"char_ofs": 18108,
+		"byte_ofs": 33915
 	},
 	{
 		"link": "3-safety-function/3-safety-function/README.md",
-		"char_ofs": 18397,
-		"byte_ofs": 34521
+		"char_ofs": 18401,
+		"byte_ofs": 34541
 	},
 	{
 		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/README.md",
-		"char_ofs": 18498,
-		"byte_ofs": 34746
+		"char_ofs": 18502,
+		"byte_ofs": 34766
 	},
 	{
 		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/1-joint-space.md",
-		"char_ofs": 19506,
-		"byte_ofs": 36873
+		"char_ofs": 19510,
+		"byte_ofs": 36893
 	},
 	{
 		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/2-joint-speed.md",
-		"char_ofs": 20688,
-		"byte_ofs": 38739
+		"char_ofs": 20692,
+		"byte_ofs": 38759
 	},
 	{
 		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/3-joint-SOS.md",
-		"char_ofs": 21821,
-		"byte_ofs": 40550
+		"char_ofs": 21828,
+		"byte_ofs": 40573
 	},
 	{
 		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/4-tcp-speed.md",
-		"char_ofs": 22599,
-		"byte_ofs": 41786
+		"char_ofs": 22614,
+		"byte_ofs": 41825
 	},
 	{
 		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/5-collision.md",
-		"char_ofs": 23890,
-		"byte_ofs": 43820
+		"char_ofs": 23908,
+		"byte_ofs": 43862
 	},
 	{
 		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/6-re-plan.md",
-		"char_ofs": 24955,
-		"byte_ofs": 45700
+		"char_ofs": 24976,
+		"byte_ofs": 45745
 	},
 	{
 		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/7-power.md",
-		"char_ofs": 26253,
-		"byte_ofs": 47984
+		"char_ofs": 26279,
+		"byte_ofs": 48036
 	},
 	{
 		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/8-momentum.md",
-		"char_ofs": 27269,
-		"byte_ofs": 49747
+		"char_ofs": 27298,
+		"byte_ofs": 49802
 	},
 	{
 		"link": "3-safety-function/3-safety-function/1-robot-safety-condition/9-stop-function.md",
-		"char_ofs": 28298,
-		"byte_ofs": 51540
+		"char_ofs": 28330,
+		"byte_ofs": 51598
 	},
 	{
 		"link": "3-safety-function/3-safety-function/2-safety-layout/README.md",
-		"char_ofs": 29456,
-		"byte_ofs": 53562
+		"char_ofs": 29488,
+		"byte_ofs": 53620
 	},
 	{
 		"link": "3-safety-function/3-safety-function/2-safety-layout/1-cell-area.md",
-		"char_ofs": 29506,
-		"byte_ofs": 53680
+		"char_ofs": 29538,
+		"byte_ofs": 53738
 	},
 	{
 		"link": "3-safety-function/3-safety-function/2-safety-layout/2-safety-tool-modeling.md",
-		"char_ofs": 31925,
-		"byte_ofs": 57339
+		"char_ofs": 31959,
+		"byte_ofs": 57405
 	},
 	{
 		"link": "3-safety-function/3-safety-function/2-safety-layout/3-safety-robot-modeling.md",
-		"char_ofs": 34031,
-		"byte_ofs": 60663
+		"char_ofs": 34065,
+		"byte_ofs": 60729
 	},
 	{
 		"link": "3-safety-function/3-safety-function/2-safety-layout/4-safety-tcp-orientation.md",
-		"char_ofs": 35089,
-		"byte_ofs": 62356
+		"char_ofs": 35123,
+		"byte_ofs": 62422
+	},
+	{
+		"link": "3-safety-function/3-safety-function/2-safety-layout/5-self-collision-detection.md",
+		"char_ofs": 36692,
+		"byte_ofs": 64826
 	},
 	{
 		"link": "3-safety-function/3-safety-function/3-safety-io/README.md",
-		"char_ofs": 36658,
-		"byte_ofs": 64760
+		"char_ofs": 37251,
+		"byte_ofs": 65654
 	},
 	{
 		"link": "3-safety-function/3-safety-function/3-safety-io/1-default-io.md",
-		"char_ofs": 36984,
-		"byte_ofs": 65307
+		"char_ofs": 37576,
+		"byte_ofs": 66200
 	},
 	{
 		"link": "3-safety-function/3-safety-function/3-safety-io/2-additional-io.md",
-		"char_ofs": 39143,
-		"byte_ofs": 68858
+		"char_ofs": 39931,
+		"byte_ofs": 69638
 	},
 	{
 		"link": "3-safety-function/3-safety-function/3-safety-io/3-Linker.md",
-		"char_ofs": 40085,
-		"byte_ofs": 70613
+		"char_ofs": 41624,
+		"byte_ofs": 72297
 	},
 	{
 		"link": "3-safety-function/3-safety-function/3-safety-io/4-profinet.md",
-		"char_ofs": 44513,
-		"byte_ofs": 76933
+		"char_ofs": 46051,
+		"byte_ofs": 78615
 	},
 	{
 		"link": "3-safety-function/3-safety-function/3-safety-io/5-profisafe.md",
-		"char_ofs": 46503,
-		"byte_ofs": 79496
+		"char_ofs": 50236,
+		"byte_ofs": 83921
 	},
 	{
 		"link": "4-configuration/README.md",
-		"char_ofs": 47690,
-		"byte_ofs": 81152
+		"char_ofs": 51833,
+		"byte_ofs": 86135
 	},
 	{
 		"link": "4-configuration/1-check-before-configuration/README.md",
-		"char_ofs": 47702,
-		"byte_ofs": 81177
+		"char_ofs": 51845,
+		"byte_ofs": 86160
 	},
 	{
 		"link": "4-configuration/1-check-before-configuration/1-encoder-offset.md",
-		"char_ofs": 47726,
-		"byte_ofs": 81228
+		"char_ofs": 51869,
+		"byte_ofs": 86211
 	},
 	{
 		"link": "4-configuration/1-check-before-configuration/2-tool-data-setting.md",
-		"char_ofs": 48571,
-		"byte_ofs": 82782
+		"char_ofs": 52714,
+		"byte_ofs": 87765
 	},
 	{
 		"link": "4-configuration/1-check-before-configuration/3-password-setting.md",
-		"char_ofs": 49518,
-		"byte_ofs": 84739
+		"char_ofs": 53661,
+		"byte_ofs": 89722
 	},
 	{
 		"link": "4-configuration/1-check-before-configuration/4-certification.md",
-		"char_ofs": 49991,
-		"byte_ofs": 85728
+		"char_ofs": 54211,
+		"byte_ofs": 90805
 	},
 	{
 		"link": "4-configuration/2-change-safety-parameter.md",
-		"char_ofs": 50419,
-		"byte_ofs": 86616
+		"char_ofs": 54704,
+		"byte_ofs": 91771
 	},
 	{
 		"link": "5-monitoring/README.md",
-		"char_ofs": 50997,
-		"byte_ofs": 87744
+		"char_ofs": 55542,
+		"byte_ofs": 93183
 	},
 	{
 		"link": "5-monitoring/1-robot-limit-parameter-monitoring.md",
-		"char_ofs": 51188,
-		"byte_ofs": 88104
+		"char_ofs": 55831,
+		"byte_ofs": 93672
 	},
 	{
 		"link": "5-monitoring/4-safety-io-status-monitoring.md",
-		"char_ofs": 51686,
-		"byte_ofs": 89004
+		"char_ofs": 56656,
+		"byte_ofs": 95085
+	},
+	{
+		"link": "5-monitoring/6-PROFINET-status-monitoring.md",
+		"char_ofs": 56898,
+		"byte_ofs": 95479
+	},
+	{
+		"link": "5-monitoring/7-PROFISAFE-status-monitoring.md",
+		"char_ofs": 57142,
+		"byte_ofs": 95831
 	},
 	{
 		"link": "6-recovery/README.md",
-		"char_ofs": 51878,
-		"byte_ofs": 89313
+		"char_ofs": 57391,
+		"byte_ofs": 96188
 	},
 	{
 		"link": "6-recovery/1-recovery-robot-position-violation.md",
-		"char_ofs": 52106,
-		"byte_ofs": 89806
+		"char_ofs": 57619,
+		"byte_ofs": 96681
 	},
 	{
 		"link": "6-recovery/2-recovery-robot-speed-violation.md",
-		"char_ofs": 52509,
-		"byte_ofs": 90691
+		"char_ofs": 58022,
+		"byte_ofs": 97566
 	},
 	{
 		"link": "6-recovery/3-recovery-robot-force-violation.md",
-		"char_ofs": 52869,
-		"byte_ofs": 91473
+		"char_ofs": 58382,
+		"byte_ofs": 98348
 	},
 	{
 		"link": "6-recovery/4-recovery-sos-violation.md",
-		"char_ofs": 53311,
-		"byte_ofs": 92392
+		"char_ofs": 58824,
+		"byte_ofs": 99267
 	},
 	{
 		"link": "7-error-message/README.md",
-		"char_ofs": 53759,
-		"byte_ofs": 93377
+		"char_ofs": 59272,
+		"byte_ofs": 100252
 	},
 	{
 		"link": "7-error-message/e101-e1860.md",
-		"char_ofs": 53796,
-		"byte_ofs": 93464
+		"char_ofs": 59309,
+		"byte_ofs": 100339
 	},
 	{
 		"link": "7-error-message/w650-w665.md",
-		"char_ofs": 69659,
-		"byte_ofs": 121951
+		"char_ofs": 75172,
+		"byte_ofs": 128826
 	},
 	{
 		"link": "attachment/README.md",
-		"char_ofs": 72586,
-		"byte_ofs": 126811
+		"char_ofs": 78099,
+		"byte_ofs": 133686
 	},
 	{
 		"link": "attachment/rules-criteria-and-public-notice.md",
-		"char_ofs": 72592,
-		"byte_ofs": 126826
+		"char_ofs": 78105,
+		"byte_ofs": 133701
 	},
 	{
 		"link": "warranty.md",
-		"char_ofs": 72812,
-		"byte_ofs": 127224
+		"char_ofs": 78325,
+		"byte_ofs": 134099
 	}
 ]
