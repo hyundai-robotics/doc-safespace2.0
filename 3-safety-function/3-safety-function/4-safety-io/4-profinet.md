@@ -1,4 +1,4 @@
-﻿# 3.3.3.4 PROFINET
+﻿# 3.3.4.4 PROFINET
 
 **1. PROFINET HW(BD671)**
 ![Profinet Consol Image](../../../_assets/safetyio_profisafe/BD671_hw.PNG)
