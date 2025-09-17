@@ -91,7 +91,7 @@ If stop 1 and stop are performed, the deceleration process is monitored through 
 
 
 ### <mark style="color:green;">Safety motion tuning</mark>&#xD;
-This function automatically adjusts the robot’s motion according to the specified parameters. The parameters taken into account during motion tuning are as follows.
+This function automatically adjusts the robot’s motion to ensure that the specified parameters are not exceeded. The parameters taken into account during motion tuning are as follows.
 
 *   **Joint speed**
 
