@@ -7,7 +7,7 @@
 **\[시스템 > 8: 안전 시스템 > 1: 기본 설정 > 5: 유지 보수]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
 
 <p align="center">
-<img src="../../../_assets/joint_space_param.png"></img>
+<img src="../../../_assets/3/maint_param.png"></img>
 <em><p align="center">유지 보수 설정 화면</p></em>
 </p>
 
