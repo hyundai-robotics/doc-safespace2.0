@@ -71,37 +71,28 @@
 2) 메뉴에서 우측과 같이 이동 [Options] → [Manage general station description file (GSD)].
 3) “…” 버튼 클릭 후 and GSDML file이 있는 디렉토리를 설정한다.
 4) 화면에 표시된 리스트에서 “GSDML-V2.43-Hyundai-Robotics-HI6-20250418.xml”를 선택하고 [Install] 버튼을 누른다.
-5) 하드웨어 카탈로그에 새로운 장치로 등록되었는지 확인한다.
-
+5) 하드웨어 카탈로그에 새로운 장치로 등록되었는지 확인한다. <br>
 <img src="../../../_assets/safetyio_profisafe/profisafe_gsdmal.png" alt="Install GSDML" width="800"/>
 
 ### 4.3 PROFIsafe 컨트롤러 설정 (TIA Portal)
 #### 4.3.1 PROFINET 설정
 1) TIA Portal을 실행시키고 새 프로젝트를 생성한다.
-2) Device & Network 부분을 더블클릭하여 오픈한다.
-
+2) Device & Network 부분을 더블클릭하여 오픈한다.<br>
 <img src="../../../_assets/safetyio_profisafe/profisafe_device_network.png" alt="Device & Network" width="400"/>
-
 3) PROFIsafe 통신을 지원하는 컨트롤러(예 CPU 1511F-1 PN)를 선택하여 네트워크 뷰쪽으로 끌어다 놓는다.
 4) 하드웨어 카탈로그에서 이전 단계에서 추가한 장치(HRC, PROFINET I/O DAP)를 추가하고 네트워크 뷰쪽으로 끌어다 놓는다.
-5) 두 장치 그림에서 랜포트를 마우스 드래그&드랍으로 서로 연결한다.
-
+5) 두 장치 그림에서 랜포트를 마우스 드래그&드랍으로 서로 연결한다.<br>
 <img src="../../../_assets/safetyio_profisafe/profisafe_device_network2.png" alt="Device & Network2" width="500"/>
-
 6) “Device & Network”화면에서 HRC-IO 장치를 더블 클릭
 7) 원하는 슬롯을 선택한다.
-8) 오른쪽 카탈로그에서 원하는 모듈을(DI, DO, or PROFIsafe I/O) 드래그하여 "Device Overview window"로 이동시킨다.
-
-<img src="../../../_assets/safetyio_profisafe/profisafe_device_network3.png" alt="Device & Network3" width="700"/>
-
-
+8) 오른쪽 카탈로그에서 원하는 모듈을(DI, DO, or PROFIsafe I/O) 드래그하여 "Device Overview window"로 이동시킨다.<br>
+<img src="../../../_assets/safetyio_profisafe/profisafe_device_network3.png" alt="Device & Network3" width="800"/>
 9) “Device & Network”화면에서 HRC-IO 장치를 더블 클릭
 10) HRC-IO장치를 다시 클릭하여 Setting화면을 오픈
 11) 아래에서 General 탭으로 이동
 12) 왼쪽 메뉴에서 Ethernet addresses 선택
 13) “Generate PROFINET device name automatically.” 부분 체크 해제
-14) "PROFINET device name"을 "hd-hrc-0"로 설정하고 저장함.
-
+14) "PROFINET device name"을 "hd-hrc-0"로 설정하고 저장함.<br>
 <img src="../../../_assets/safetyio_profisafe/profisafe_device_network4.png" alt="Device & Network4" width="700"/>
 
 #### 4.3.2 PROFIsafe 설정
@@ -120,40 +111,32 @@
 - Slot 2 : Digital Output : 240
 - Slot 3 : Safety I/O : Yes
 - (IP주소는 변경 필요 없음.)
-2) "적용" 버튼을 누른다.
-
+2) "적용" 버튼을 누른다.<br>
 <img src="../../../_assets/safetyio_profisafe/4_1_profinet_config.png" alt="PROFINET 설정" width="700"/>
 
 #### 4.4.2 PROFIsafe 설정
 
 1) 이전장에서 설정했던 똑같은 값으로 Target Address를 1로 설정한다.
-2) "적용" 버튼을 누른다.
-
+2) "적용" 버튼을 누른다.<br>
 <img src="../../../_assets/safetyio_profisafe/4_2_profisafe_config.png" alt="PROFINET 설정" width="700"/>
 
 ### 4.5 PROFINET과 PROFIsafe 통신의 확인
 
 ### 4.5.1 안전 래더 프로그램 (Tia Portal)
-1) Device Overview 탭 에서, 아래와 같이 래더 프로그램을 만들고 컨트롤러로 다운로드 한다.
-
+1) Device Overview 탭 에서, 아래와 같이 래더 프로그램을 만들고 컨트롤러로 다운로드 한다.<br>
 ![래더 프로그램](../../../_assets/safetyio_profisafe/5_1_Safety_Ladder.png)
-
-2) 다운로드 후, Distribution I/O 화면에서 녹색 체크 박스가 표시되었는지 확인한다.
-
+2) 다운로드 후, Distribution I/O 화면에서 녹색 체크 박스가 표시되었는지 확인한다.<br>
 ![래더 프로그램](../../../_assets/safetyio_profisafe/5_1_Safety_Ladder2.png)
 
 ### 4.5.2 TP 화면
 1) PROFINET
-메뉴에서 시스템 -> 안전시스템 -> 모니터링 -> PROFINET 상태로 이동한다.
-
+메뉴에서 시스템 -> 안전시스템 -> 모니터링 -> PROFINET 상태로 이동한다.<br>
 <img src="../../../_assets/safetyio_profisafe/5_2_pnio_status.png" alt="PROFINET 설정" width="700"/>
-
 - 각 슬롯의 상태 정보를 확인
 - Counter가 지속 증가하는지 확인
 
 2) PROFIsafe
-메뉴에서 시스템 -> 안전시스템 -> 모니터링 -> PROFIsafe 상태로 이동한다.
-
+메뉴에서 시스템 -> 안전시스템 -> 모니터링 -> PROFIsafe 상태로 이동한다.<br>
 <img src="../../../_assets/safetyio_profisafe/5_2_profisafe_status.png" alt="PROFIsafe" width="700"/>
 - FappState가 CYCLE Data EX 인지 확인
 - Counter가 지속 증가하는지 확인
@@ -161,15 +144,12 @@
 ### 4.6 PROFINET I/O 신호의 할당(FB Block Settings)
 1) 시스템 → 제어 파라미터 → 입출력 신호 설정 → FB 블럭 할당으로 이동
 2) 2개 이하로 필요한 만큼 블럭 설정을 PROFINET I/O로 변경한다.
- (최대 PROFINET I/O 사이즈는 240바이트이고 개별 FB 블럭의 사이즈는 120바이트 입니다. 따라서 **2개를 초과하는 설정은 무시됩니다.**)
-
+ (최대 PROFINET I/O 사이즈는 240바이트이고 개별 FB 블럭의 사이즈는 120바이트 입니다. 따라서 **2개를 초과하는 설정은 무시됩니다.**)<br>
 <img src="../../../_assets/safetyio_profisafe/6_fb_block.png" alt="PROFIsafe" width="700"/>
 
-3) 추가로 조건 설정 메뉴로 이동하여 PLC 동작 모드가 OFF되어 있는지 확인합니다.
-
+3) 추가로 조건 설정 메뉴로 이동하여 PLC 동작 모드가 OFF되어 있는지 확인합니다.<br>
 ![PROFIsafe](../../../_assets/safetyio_profisafe/6_1_condition.png)
-4) TIA Portal과 범용 I/O 화면에서 입출력 신호 확인
-
+4) TIA Portal과 범용 I/O 화면에서 입출력 신호 확인<br>
 ![PROFIsafe](../../../_assets/safetyio_profisafe/6_3_public_io.png)
 
 ### 4.7 PROFIsafe I/O 신호의 할당
@@ -178,15 +158,13 @@
 
 2) PROFIsafe I/O 신호의 할당 예
 2-1) PROFIsafe 입력 (Master -> Slave 방향)
-[1ch(0 bit)을 Arm Limit으로 설정]
-
+[1ch(0 bit)을 Arm Limit으로 설정] <br>
 <img src="../../../_assets/safetyio_profisafe/7_PS_in.png" alt="PROFIsafe" width="700"/>
 <br> <br>
 <img src="../../../_assets/safetyio_profisafe/7_PS_in2.png" alt="PROFIsafe" width="700"/>
-
+<br> <br>
 2-2) PROFIsafe 출력 (Slave -> Master 방향)
-[1ch(0 bit) 비상 정지 상태로 설정]
-
+[1ch(0 bit) 비상 정지 상태로 설정]<br>
 <img src="../../../_assets/safetyio_profisafe/7_PS_out.png" alt="PROFIsafe" width="700"/>
 <br> <br>
 <img src="../../../_assets/safetyio_profisafe/7_PS_out.png" alt="PROFIsafe" width="700"/>
