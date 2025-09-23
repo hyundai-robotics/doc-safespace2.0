@@ -21,7 +21,7 @@
 
 ## 3. CIP Safety 파라미터
 
-<img src="../../../_assets/cipSafety/cipSafety_Parameters.png" alt="CIP Safety" width="700"/>
+<img src="../../../_assets/cipSafety/cipSafety_Parameters.png" alt="CIP Safety" width="500"/>
 
  - 사용/미사용 : CIP Safety의 기능을 사용할 것인지 결정합니다.
  - SNN : Safety Network Number의 설정을 합니다.
@@ -50,7 +50,7 @@
 1) Studio 5000을 실행하고 새 프로젝트를 만듭니다.
 2) controller organizer에서 CIP Safety 통신을 지원하는 컨트롤러(예 CPU 1769-L30ERMS)를 선택하고 Ethernet을 선택한뒤 마우스 우측버튼을 눌러 New Module을 클릭합니다.
 3) “Hi7 EIP Adapter”를 찾고 Create 버튼을 누릅니다.<br>
-<img src="../../../_assets/cipSafety/new_module.png" alt="CIP Safety" width="400"/>
+<img src="../../../_assets/cipSafety/new_module.png" alt="CIP Safety" width="600"/>
 
 4) Name칸에 장치의 이름을 설정합니다.
 5) IP Address는 예)192.168.4.150으로 설정합니다.
@@ -62,12 +62,12 @@
 - Standard I/O(Exclusive owner) : 240 bytes
 - Safety I/O : 각각 8 bytes
 8) "Configuration signature” 설정하지 마십시오.
-9) Select Module type 창을 닫으세요.
-![CIP Safety](../../../_assets/cipSafety/Setting_module.png)
-10) 모듈이 추가되었는지 확인하세요
-![CIP Safety](../../../_assets/cipSafety/module_added.png)
-11) 툴바 메뉴에서 offline 버튼을 눌러 Download 버튼을 누르세요.
-![CIP Safety](../../../_assets/cipSafety/download.png)
+9) Select Module type 창을 닫으세요.<br>
+<img src="../../../_assets/cipSafety/Setting_module.png" alt="CIP Safety" width="500"/>
+10) 모듈이 추가되었는지 확인하세요<br>
+<img src="../../../_assets/cipSafety/module_added.png" alt="CIP Safety" width="500"/>
+11) 툴바 메뉴에서 offline 버튼을 눌러 Download 버튼을 누르세요.<br>
+<img src="../../../_assets/cipSafety/download.png" alt="CIP Safety" width="500"/>
 12) 설정한 값들이 다운로드 된 후 "Guard Logix"의 토글 버튼을 PROG 에서 RUN으로 바꾸세요.
 ### 4 Hi7 설정 (TP UI)
 #### 4.1 EtherNet/IP 설정
@@ -75,7 +75,7 @@
 2) Protocol 설정 = Adapter
 3) EtherNet/IP Adapter를 위한 랜포트 설정은 LAN2로 설정합니다.
 4) Input/Output 사이즈는 각각 240 바이트로 설정합니다.
-5) 나머지 설정은 그림과 같이 변경하지 않습니다.
+5) 나머지 설정은 그림과 같이 변경하지 않습니다.<br>
 ![CIP Safety](../../../_assets/cipSafety/ethernetIP.png)
 
 #### 4.2 CIP Safety 설정
@@ -83,36 +83,32 @@
 2) 활성화 버튼 ON
 3) SNN 예)1111_2222_3333으로 설정합니다.
 4) 적용 버튼 누릅니다.
-5) 로봇 제어기를 재부팅 합니다.
+5) 로봇 제어기를 재부팅 합니다.<br>
 ![CIP Safety](../../../_assets/cipSafety/cipSafety_Parameters.png)
 ### 5 통신 상태 확인
 #### 5.1 EtherNet/IP
 1) License Led 점등 확인
 2) Run Led is 점등 확인
 3) Communication Led 점등 확인
-4) Error Led가 점등된 경우 Error Name을 확인
-![CIP Safety](../../../_assets/cipSafety/eip_status.png)
+4) Error Led가 점등된 경우 Error Name을 확인<br>
+<img src="../../../_assets/cipSafety/eip_status.png" alt="CIP Safety" width="700"/>
 #### 5.2 CIP Safety
 1) Dev status가 “Executing” 상태인지 확인
 2) Comm status가 “On-line, Connected” 상태인지 확인
-3) IO Count가 지속 증가하는지 확인
-![CIP Safety](../../../_assets/cipSafety/cipsafety_status.png)
+3) IO Count가 지속 증가하는지 확인<br>
+<img src="../../../_assets/cipSafety/cipsafety_status.png" alt="CIP Safety" width="700"/>
 
 ### 6 안전 신호의 할당
-#### 6.1 CIP Safety 입출력의 할당
+#### 6.1 CIP Safety 입출력의 할당<br>
 * [3.3.3.3 안전 신호 할당](3-safety-function/3-safety-function/3-safety-io/3-Linker.md) 페이지 참고
 #### 6.2 CIP Safety 입출력 할당의 예
 1) CIP Safety Input (Master -> Slave 방향)
-1ch(0 bit) = Arm Limit
-
-![CIP Safety](../../../_assets/cipSafety/alloc_in.png)
-
-![CIP Safety](../../../_assets/cipSafety/alloc_in2.png)
+1ch(0 bit) = Arm Limit<br>
+<img src="../../../_assets/cipSafety/alloc_in.png" alt="CIP Safety" width="700"/>
+<img src="../../../_assets/cipSafety/alloc_in2.png" alt="CIP Safety" width="700"/>
 
 2) CIP Safety Output (Slave -> Master 방향)
-1ch(0 bit) = E-Stop Status
-
-![CIP Safety](../../../_assets/cipSafety/alloc_out.png)
-
-![CIP Safety](../../../_assets/cipSafety/alloc_out2.png)
+1ch(0 bit) = E-Stop Status<br>
+<img src="../../../_assets/cipSafety/alloc_out.png" alt="CIP Safety" width="700"/>
+<img src="../../../_assets/cipSafety/alloc_out2.png" alt="CIP Safety" width="700"/>
 
