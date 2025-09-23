@@ -21,7 +21,7 @@
 
 ## 3. CIP Safety 파라미터
 
-<img src="../../../_assets/cipSafety/cipSafety_Parameters.png" alt="CIP Safety" width="500"/>
+![CIP Safety](../../../_assets/cipSafety/cipSafety_Parameters.png)
 
  - 사용/미사용 : CIP Safety의 기능을 사용할 것인지 결정합니다.
  - SNN : Safety Network Number의 설정을 합니다.
@@ -42,7 +42,7 @@
 
 
 ### 1 Hi7 EtherNet/IP Adapter와 EtherNet/IP Scanner의 연결
-<img src="../../../_assets/cipSafety/connect.png" alt="CIP Safety" width="600"/>
+![CIP Safety](../../../_assets/cipSafety/connect.png)
 
 ### 2 엔지니어링 툴을 통한 EDS 파일 추가(Studio 5000)
 - ‘Device Description File Installation Tool'을 사용하여 EDS(Hi7_EIP_250203.eds)파일을 설치합니다.
@@ -50,12 +50,12 @@
 1) Studio 5000을 실행하고 새 프로젝트를 만듭니다.
 2) controller organizer에서 CIP Safety 통신을 지원하는 컨트롤러(예 CPU 1769-L30ERMS)를 선택하고 Ethernet을 선택한뒤 마우스 우측버튼을 눌러 New Module을 클릭합니다.
 3) “Hi7 EIP Adapter”를 찾고 Create 버튼을 누릅니다.<br>
-<img src="../../../_assets/cipSafety/new_module.png" alt="CIP Safety" width="600"/>
+![CIP Safety](../../../_assets/cipSafety/new_module.png)
 
 4) Name칸에 장치의 이름을 설정합니다.
 5) IP Address는 예)192.168.4.150으로 설정합니다.
 6) Safety Network Number는 예)1111_2222_3333으로 설정합니다.<br>
-<img src="../../../_assets/cipSafety/Setting_SNN.png" alt="CIP Safety" width="700"/>
+![CIP Safety](../../../_assets/cipSafety/Setting_SNN.png)
 
 
 7) Module Definition에서 Change 버튼 클릭후 Safety I/O 와 표준 I/O 크기를 설정합니다.
@@ -63,11 +63,11 @@
 - Safety I/O : 각각 8 bytes
 8) "Configuration signature” 설정하지 마십시오.
 9) Select Module type 창을 닫으세요.<br>
-<img src="../../../_assets/cipSafety/Setting_module.png" alt="CIP Safety" width="500"/>
+![CIP Safety](../../../_assets/cipSafety/Setting_module.png)
 10) 모듈이 추가되었는지 확인하세요<br>
-<img src="../../../_assets/cipSafety/module_added.png" alt="CIP Safety" width="500"/>
+![CIP Safety](../../../_assets/cipSafety/module_added.png)
 11) 툴바 메뉴에서 offline 버튼을 눌러 Download 버튼을 누르세요.<br>
-<img src="../../../_assets/cipSafety/download.png" alt="CIP Safety" width="500"/>
+![CIP Safety](../../../_assets/cipSafety/download.png)
 12) 설정한 값들이 다운로드 된 후 "Guard Logix"의 토글 버튼을 PROG 에서 RUN으로 바꾸세요.
 ### 4 Hi7 설정 (TP UI)
 #### 4.1 EtherNet/IP 설정
@@ -91,12 +91,12 @@
 2) Run Led is 점등 확인
 3) Communication Led 점등 확인
 4) Error Led가 점등된 경우 Error Name을 확인<br>
-<img src="../../../_assets/cipSafety/eip_status.png" alt="CIP Safety" width="700"/>
+![CIP Safety](../../../_assets/cipSafety/eip_status.png)
 #### 5.2 CIP Safety
 1) Dev status가 “Executing” 상태인지 확인
 2) Comm status가 “On-line, Connected” 상태인지 확인
 3) IO Count가 지속 증가하는지 확인<br>
-<img src="../../../_assets/cipSafety/cipsafety_status.png" alt="CIP Safety" width="700"/>
+![CIP Safety](../../../_assets/cipSafety/cipsafety_status.png)
 
 ### 6 안전 신호의 할당
 #### 6.1 CIP Safety 입출력의 할당<br>
@@ -104,11 +104,13 @@
 #### 6.2 CIP Safety 입출력 할당의 예
 1) CIP Safety Input (Master -> Slave 방향)
 1ch(0 bit) = Arm Limit<br>
-<img src="../../../_assets/cipSafety/alloc_in.png" alt="CIP Safety" width="700"/>
-<img src="../../../_assets/cipSafety/alloc_in2.png" alt="CIP Safety" width="700"/>
+![CIP Safety](../../../_assets/cipSafety/alloc_in.png)<br>
+<br> <br>
+![CIP Safety](../../../_assets/cipSafety/alloc_in2.png)<br>
 
 2) CIP Safety Output (Slave -> Master 방향)
 1ch(0 bit) = E-Stop Status<br>
-<img src="../../../_assets/cipSafety/alloc_out.png" alt="CIP Safety" width="700"/>
-<img src="../../../_assets/cipSafety/alloc_out2.png" alt="CIP Safety" width="700"/>
+![CIP Safety](../../../_assets/cipSafety/alloc_out.png)<br>
+<br> <br>
+![CIP Safety](../../../_assets/cipSafety/alloc_out2.png)<br>
 
