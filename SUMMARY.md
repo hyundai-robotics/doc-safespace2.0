@@ -54,6 +54,7 @@
       * [3.3.4.2 부가 안전 입출력](3-safety-function/3-safety-function/4-safety-io/2-additional-io.md)
       * [3.3.4.3 안전 신호 할당](3-safety-function/3-safety-function/4-safety-io/3-Linker.md)      
       * [3.3.4.4 PROFIsafe](3-safety-function/3-safety-function/4-safety-io/4-profisafe.md)
+      * [3.3.4.5 CIP Safety](3-safety-function/3-safety-function/4-safety-io/5-cipSafety.md)
 * [4. 안전 기능 설정 및 파라미터 전송](4-configuration/README.md)
   * [4.1 설정 전 준비 사항](4-configuration/1-check-before-configuration/README.md)
     * [4.1.1 암호 설정](4-configuration/1-check-before-configuration/3-password-setting.md)

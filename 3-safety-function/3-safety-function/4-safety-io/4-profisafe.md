@@ -1,6 +1,6 @@
 ﻿
 
-# 3.3.3.4 PROFIsafe
+# 3.3.4.4 PROFIsafe
 
 ## 1. PROFIsafe ?
 - PROFINET/PROFIBUS 상에서 동작하는 안전 프로토콜(안전 프로파일).
@@ -31,14 +31,14 @@
 1) BD671과 F-Host & Hi7 Com의 연결
 2) GSDML 파일 등록 (TIA Portal)
 3) PROFIsafe 컨트롤러 설정 (TIA Portal)
-4) PROFINET 설정
-5) PROFIsafe 설정
-6) Hi7 설정 (TP UI)
-7) PROFINET 설정
-8) PROFIsafe 설정
-9) PROFINET과 PROFIsafe 통신의 확인
-10) PROFINET I/O 신호의 할당(FB Block Settings)
-11) PROFIsafe I/O 신호의 할당
+    3.1) PROFINET 설정
+    3.2) PROFIsafe 설정
+4) Hi7 설정 (TP UI)
+    4.1) PROFINET 설정
+    4.2) PROFIsafe 설정
+5) PROFINET과 PROFIsafe 통신의 확인
+6) PROFINET I/O 신호의 할당(FB Block Settings)
+7) PROFIsafe I/O 신호의 할당
 
 
 ### 4.1 BD671과 F-Host & Hi7 Com의 연결
