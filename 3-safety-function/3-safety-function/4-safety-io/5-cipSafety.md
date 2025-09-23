@@ -21,7 +21,7 @@
 
 ## 3. CIP Safety 파라미터
 
-![CIP Safety](../../../_assets/cipSafety/cipSafety_Parameters.png)
+<img src="../../../_assets/cipSafety/cipSafety_Parameters.png" alt="CIP Safety" width="700"/>
 
  - 사용/미사용 : CIP Safety의 기능을 사용할 것인지 결정합니다.
  - SNN : Safety Network Number의 설정을 합니다.
@@ -42,18 +42,22 @@
 
 
 ### 1 Hi7 EtherNet/IP Adapter와 EtherNet/IP Scanner의 연결
-![CIP Safety](../../../_assets/cipSafety/connect.png)
+<img src="../../../_assets/cipSafety/connect.png" alt="CIP Safety" width="600"/>
+
 ### 2 엔지니어링 툴을 통한 EDS 파일 추가(Studio 5000)
 - ‘Device Description File Installation Tool'을 사용하여 EDS(Hi7_EIP_250203.eds)파일을 설치합니다.
 ### 3 CIP Safety 컨트롤러 설정 (Studio 5000)
 1) Studio 5000을 실행하고 새 프로젝트를 만듭니다.
 2) controller organizer에서 CIP Safety 통신을 지원하는 컨트롤러(예 CPU 1769-L30ERMS)를 선택하고 Ethernet을 선택한뒤 마우스 우측버튼을 눌러 New Module을 클릭합니다.
-3) “Hi7 EIP Adapter”를 찾고 Create 버튼을 누릅니다.
-![CIP Safety](../../../_assets/cipSafety/new_module.png)
+3) “Hi7 EIP Adapter”를 찾고 Create 버튼을 누릅니다.<br>
+<img src="../../../_assets/cipSafety/new_module.png" alt="CIP Safety" width="400"/>
+
 4) Name칸에 장치의 이름을 설정합니다.
 5) IP Address는 예)192.168.4.150으로 설정합니다.
-6) Safety Network Number는 예)1111_2222_3333으로 설정합니다.
-![CIP Safety](../../../_assets/cipSafety/Setting_SNN.png)
+6) Safety Network Number는 예)1111_2222_3333으로 설정합니다.<br>
+<img src="../../../_assets/cipSafety/Setting_SNN.png" alt="CIP Safety" width="700"/>
+
+
 7) Module Definition에서 Change 버튼 클릭후 Safety I/O 와 표준 I/O 크기를 설정합니다.
 - Standard I/O(Exclusive owner) : 240 bytes
 - Safety I/O : 각각 8 bytes
