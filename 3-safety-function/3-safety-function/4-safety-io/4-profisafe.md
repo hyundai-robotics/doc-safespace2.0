@@ -31,11 +31,11 @@
 1) BD671과 F-Host & Hi7 Com의 연결
 2) GSDML 파일 등록 (TIA Portal)
 3) PROFIsafe 컨트롤러 설정 (TIA Portal)
-    3.1) PROFINET 설정
-    3.2) PROFIsafe 설정
+<br>3.1) PROFINET 설정
+<br>3.2) PROFIsafe 설정
 4) Hi7 설정 (TP UI)
-    4.1) PROFINET 설정
-    4.2) PROFIsafe 설정
+<br>4.1) PROFINET 설정
+<br>4.2) PROFIsafe 설정
 5) PROFINET과 PROFIsafe 통신의 확인
 6) PROFINET I/O 신호의 할당(FB Block Settings)
 7) PROFIsafe I/O 신호의 할당
@@ -156,16 +156,18 @@
 
 ### 4.7 PROFIsafe I/O 신호의 할당
 1) PROFIsafe I/O 신호의 할당
-* [3.3.3.3 안전 신호 할당](3-safety-function/3-safety-function/3-safety-io/3-Linker.md) 페이지 참고
+* [3.3.4.3 안전 신호 할당](../4-safety-io/3-Linker.md) 페이지 참고
 
 2) PROFIsafe I/O 신호의 할당 예
-2-1) PROFIsafe 입력 (Master -> Slave 방향)
+<br>
+<br>2-1) PROFIsafe 입력 (Master -> Slave 방향)
 [1ch(0 bit)을 Arm Limit으로 설정] <br>
 ![PROFIsafe](../../../_assets/safetyio_profisafe/7_PS_in.png)
 <br> <br>
 ![PROFIsafe](../../../_assets/safetyio_profisafe/7_PS_in2.png)
 <br> <br>
 2-2) PROFIsafe 출력 (Slave -> Master 방향)
+<br> <br>
 [1ch(0 bit) 비상 정지 상태로 설정]<br>
 ![PROFIsafe](../../../_assets/safetyio_profisafe/7_PS_out.png)
 <br> <br>
