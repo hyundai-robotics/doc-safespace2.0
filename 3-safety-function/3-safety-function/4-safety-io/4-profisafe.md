@@ -16,7 +16,7 @@
 
 ## 3. PROFIsafe 파라미터
 
-![Profisafe Consol Image](../../../_assets/safetyio_profisafe/profisafe_param.png)
+<img src="../../../_assets/safetyio_profisafe/profisafe_param.png" alt="PROFIsafe" width="500"/>
 
  - Source Address : Source Address를 설정합니다. (1로 고정)
  - Target Address : Target Address를 설정합니다. (설정 범위 : 1 ~ 99)
@@ -48,7 +48,9 @@
 2) Link LED가 점멸하는지 확인한다.
 3) Hi7 COM의 LAN3 커넥터와 BD671를 랜선으로 연결한다.
 4) Link LED가 점멸하는지 확인한다.
-![Profisafe Connect](../../../_assets/safetyio_profisafe/profisafe_connect.png)
+
+<img src="../../../_assets/safetyio_profisafe/profisafe_connect.png" alt="PROFIsafe" width="600"/>
+
 
 #### 4.1.2 Hi7 Com의 연결 설정
 1) 다음과 같이 메뉴를 이동 시스템 -> 제어 파라미터 -> 산업용 통신-> EtherCAT Master 설정
@@ -59,8 +61,8 @@
 4) Hi7 로봇제어기를 재부팅한다.
 5) 재부팅후 Run & Communication & Error LED 점등 상태를 확인한다.
 
-![EC Master 설정 1](../../../_assets/safetyio_profisafe/EC_master_setting1.png)
-![EC Master 설정 2](../../../_assets/safetyio_profisafe/EC_master_setting2.png)
+<img src="../../../_assets/safetyio_profisafe/EC_master_setting1.png" alt="EC Master 설정 1" width="500"/>
+<img src="../../../_assets/safetyio_profisafe/EC_master_setting2.png" alt="EC Master 설정 2" width="500"/>
 
 
 ### 4.2 GSDML 파일 등록 (TIA Portal)
