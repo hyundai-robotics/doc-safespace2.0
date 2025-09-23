@@ -21,7 +21,7 @@
 
 ## 3. CIP Safety 파라미터
 
-![CIP Safety](../../../_assets/cipSafety/cipSafety_Parameters.png)
+![](../../../_assets/cipSafety/cipSafety_Parameters.png)
 
  - 사용/미사용 : CIP Safety의 기능을 사용할 것인지 결정합니다.
  - SNN : Safety Network Number의 설정을 합니다.
