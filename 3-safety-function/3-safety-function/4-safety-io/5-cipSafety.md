@@ -42,7 +42,7 @@
 
 
 ### 1 Hi7 EtherNet/IP Adapter와 EtherNet/IP Scanner의 연결
-![CIP Safety](../../../_assets/cipSafety/connect.png)
+![](../../../_assets/cipSafety/connect.png)
 
 ### 2 엔지니어링 툴을 통한 EDS 파일 추가(Studio 5000)
 - ‘Device Description File Installation Tool'을 사용하여 EDS(Hi7_EIP_250203.eds)파일을 설치합니다.
