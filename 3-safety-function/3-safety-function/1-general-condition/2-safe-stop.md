@@ -16,8 +16,8 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 **\[시스템 > 8: 안전 시스템 > 1: 기본 설정 > 2: 정지 설정]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
 
 <p align="center">
-  <img src="../../../_assets/safety_stop_param.png" alt="정지 설정 화면" width="500"><br>
-  정지 설정 화면
+<img src="../../../_assets/3/safety_stop_param.png"></img>
+<em><p align="center">정지 설정 화면</p></em>
 </p>
 
 
