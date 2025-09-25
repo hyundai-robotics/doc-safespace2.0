@@ -12,7 +12,7 @@
 **\[시스템 > 8: 안전 시스템 > 2: 파라미터 설정 > 2: 영역 제한 > 4: 툴 방향]** 메뉴에서 파라미터 값을 설정할 수 있습니다. 
 
 <p align="center">
-<img src="../../../_assets/safety_layout/tool_ori_param.png"></img>
+<img src="../../../_assets/safety_layout/tool_orient.png"></img>
 <em><p align="center">툴 방향 설정 화면</p></em>
 </p>
 
