@@ -1,5 +1,5 @@
-﻿# 산업안전보건기준에 관한 규칙 및 안전검사 고시
+# 关于工业安全卫生标准的规则及安全检查公告
 
-당해 산업용 로봇은 산업안전보건기준에 관한 규칙 및 안전검사 고시(검사 대상일 경우)의 검사 기준을 고려하여 설치하여야 한다.
+该工业机器人应根据“关于工业安全卫生标准的规则及安全检查公告”（如属于检查对象）的检查标准进行安装。
 
-"[산업안전보건기준에 관한 규칙](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/korean/README)"
+{% embed url="https://hyundai-robotics.gitbook.io/rules-on-occupational-safety-and-health-standards/" %}
