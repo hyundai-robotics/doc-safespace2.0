@@ -1,48 +1,48 @@
-﻿# 안전 주의 사항
+# Sicherheitshinweise
 
-제품의 올바른 사용과 사용자의 안전을 확보하고 재산상의 피해 방지를 위해 반드시 다음의 안전 주의 사항을 숙지한 후 제품을 사용하시기 바랍니다.
+Um die ordnungsgemäße Verwendung des Produkts und die Sicherheit der Anwender zu gewährleisten und Sachschäden zu vermeiden, machen Sie sich vor der Verwendung des Produkts mit den folgenden Sicherheitshinweisen vertraut.
 
-### <mark style="color:green;">위험</mark>
+### <mark style="color:green;">Gefahr</mark>
 
 {% hint style="danger" %}
-**\[위험] 긴박한 위험**: 준수하지 않았을 경우 작업자가 사망하거나 중상을 입을 수 있습니다.
+\[Gefahr] Unmittelbare Gefahr*: Die Nichtbeachtung dieses Hinweises kann zum Tod oder zu schweren Verletzungen des Arbeiters führen.
 {% endhint %}
 
-* 개별 장치가 아닌 전체 시스템을 대상으로 위험성 평가를 실시하십시오. 제품에 다른 장치를 연결하면 제품의 위험도가 높아지거나 새로운 위험이 발생할 수 있습니다. 로봇 통합 시스템의 각 장치의 위험도가 다를 경우에는 위험도가 가장 높은 장치를 기준으로 안전 장치를 마련하여 위험에 대비하십시오.
-* 설명서에 기술된 제품 설치 내용을 숙지하고 지시 사항을 준수하여 로봇 제품과 기타 장치를 설치하십시오.
-* 제품의 고장이나 파손 등 문제가 발생했을 경우 즉시 사용을 중단하고 고객지원팀에 문의하십시오.
+* Führen Sie eine Risikobewertung für das gesamte System durch, nicht nur für einzelne Geräte. Der Anschluss anderer Geräte an das Produkt kann das Risiko des Produkts erhöhen oder neue Risiken schaffen. Wenn jedes Gerät im Roboterintegrationssystem unterschiedliche Risikostufen aufweist, bereiten Sie Sicherheitsvorrichtungen auf der Grundlage des Geräts mit der höchsten Risikostufe vor, um für Gefahren gewappnet zu sein.
+* Machen Sie sich mit den in der Anleitung beschriebenen Inhalten zur Produktinstallation vertraut und installieren Sie das Roboterprodukt und andere Geräte gemäß den Anweisungen.
+* Sollten Probleme wie Produktfehler oder Beschädigungen auftreten, stellen Sie bitte unverzüglich die Nutzung ein und wenden Sie sich an den Kundendienst.
 
-### <mark style="color:green;">경고</mark>
+### <mark style="color:green;">Warnung</mark>
 
 {% hint style="warning" %}
-**\[경고] 잠재적인 위험**: 준수하지 않았을 경우 작업자가 상해를 입거나 제품이 크게 손상되는 등 재산상의 손해를 입을 수 있습니다.
+\[Warnung] Mögliche Gefahr*: Die Nichtbeachtung dieses Hinweises kann zu Verletzungen des Arbeiters oder zu schweren Schäden am Produkt und damit zu Sachschäden führen.
 {% endhint %}
 
-* 위험성 평가 결과에 따라 적절한 안전 조치를 취하고 로봇 안전 설치 범위를 정확히 지정하십시오. 로봇 동작 중 제품이 손상되거나 사용자가 상해를 입을 수 있습니다.
-* 로봇 응용 시스템 제조자나 로봇 사용자는 설명서의 내용을 숙지하고 제품의 운영 교육을 이수하십시오.
-* 작업자와 사용자의 안전을 위해 제품 설치 전 반드시 안전 펜스 등 적절한 안전 시설을 마련하십시오.
-* 로봇 암이 자유롭게 움직일 수 있도록 충분한 공간을 확보하십시오. 설치 공간이 여유롭지 못하면 로봇 동작 중 제품이 손상되거나 사용자가 상해를 입을 수 있습니다.
-* 규격 정보를 확인하여 알맞은 고정 나사를 사용하여 지정된 토크로 체결하십시오. 나사가 헐거우면 로봇이 설치 장소에서 분리되어 추락하거나 손상될 수 있습니다.
-* 제품의 연결부(전원 및 케이블)에 액체나 먼지, 금속 가루 등의 전도성 이물질이 들어가지 않도록 주의하십시오. 또한 연결부를 뾰족한 물체로 찌르거나 케이블 연결 시 무리한 힘을 가하지 마십시오. 연결 단자의 부식 또는 일시적인 단락으로 제품이 폭발하거나 화재가 발생할 수 있습니다.
-* 배선 정보를 확인하고 장치 유형에 맞춰 알맞은 단자를 이용해 장치를 연결하십시오. 특히, 안전 장치는 일반 단자에 연결하면 안전 기능을 보장할 수 없으므로 반드시 안전 장치용 단자에 연결하십시오.
-* 손상된 케이블을 절대 사용하지 말고 제품 사용 중에는 전원을 분리하지 마십시오. 감전, 화재, 고장, 및 상해의 원인이 될 수 있습니다.
-* 제품을 장시간 사용하면 열이 발생하여 화상 등 상해의 위험이 있습니다. 제품을 만져야 할 경우에는 전원을 끄고 1시간 이상 방치하여 제품을 충분히 냉각한 후 작업하십시오.
-* 절대 무단으로 제품을 설치, 개조, 분해 및 수리하지 마십시오. 고장 및 사고의 원인이 될 수 있습니다. 또한 이로 인한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
+* Treffen Sie entsprechend den Ergebnissen der Risikobewertung geeignete Sicherheitsmaßnahmen und legen Sie den Sicherheitsbereich für den Roboter genau fest. Während des Betriebs des Roboters kann es zu Beschädigungen des Produkts oder zu Verletzungen des Anwenders kommen.
+* Hersteller von Roboteranwendungssystemen und Roboteranwender müssen sich mit dem Inhalt des Handbuchs vertraut machen und eine Schulung zur Bedienung des Produkts absolvieren.
+* Sorgen Sie zur Sicherheit der Arbeiter und Anwender vor der Installation des Produkts für geeignete Sicherheitsvorrichtungen wie Sicherheitszäune.
+* Sorgen Sie für ausreichend Platz, damit sich der Roboterarm frei bewegen kann. Wenn der Installationsraum nicht ausreichend ist, kann das Produkt beschädigt oder der Anwender während des Betriebs des Roboters verletzt werden.
+* Überprüfen Sie die Spezifikationsinformationen und verwenden Sie geeignete Befestigungsschrauben, um diese mit dem angegebenen Drehmoment festzuziehen. Wenn die Schrauben locker sind, kann sich der Roboter vom Installationsort lösen und herunterfallen oder beschädigt werden.
+* Achten Sie darauf, dass keine Flüssigkeiten, Staub, Metallpulver oder andere leitfähige Fremdstoffe in die Anschlüsse des Produkts (Stromversorgung und Kabel) gelangen. Stechen Sie außerdem nicht mit scharfen Gegenständen in die Anschlüsse und wenden Sie beim Anschließen von Kabeln keine übermäßige Kraft an. Das Produkt kann aufgrund von Korrosion oder einem vorübergehenden Kurzschluss der Anschlussklemmen explodieren oder in Brand geraten.
+* Überprüfen Sie die Verkabelungsinformationen und schließen Sie die Geräte entsprechend dem Gerätetyp an geeignete Klemmen an. Insbesondere müssen Sicherheitsvorrichtungen an Sicherheitsvorrichtungsklemmen angeschlossen werden, da der Anschluss an allgemeine Klemmen die Sicherheitsfunktionen nicht gewährleisten kann.
+* Verwenden Sie niemals beschädigte Kabel und trennen Sie das Produkt während des Gebrauchs nicht vom Stromnetz. Dies kann zu Stromschlägen, Bränden, Ausfällen und Verletzungen führen.
+* Bei längerem Gebrauch des Produkts entsteht Wärme, wodurch die Gefahr von Verletzungen wie Verbrennungen besteht. Wenn Sie das Produkt berühren müssen, schalten Sie es aus und lassen Sie es mehr als 1 Stunde lang stehen, damit es ausreichend abkühlen kann, bevor Sie daran arbeiten.
+* Installieren, modifizieren, zerlegen oder reparieren Sie das Produkt niemals ohne Genehmigung. Dies kann zu Fehlfunktionen und Unfällen führen. Außerdem übernehmen wir keine Verantwortung für Schäden und Brüche am Produkt, die dadurch entstehen.
 
-### <mark style="color:green;">주의</mark>
+### <mark style="color:green;">Achtung</mark>
 
 {% hint style="warning" %}
-**\[주의] 저위험 요소**: 준수하지 않았을 경우 작업자가 경미한 상해를 입거나 제품이 손상되는 등 재산상의 손해를 입을 수 있습니다.
+*\[Achtung] Geringe Risikofaktoren*: Die Nichtbeachtung dieses Hinweises kann zu leichten Verletzungen des Arbeiters oder zu Schäden am Produkt und damit zu Sachschäden führen.
 {% endhint %}
 
-* 제품을 임의로 설치 또는 개조, 분해, 수리하지 마십시오. 또한 당사의 전문가 이외의 사람이 임의로 제품을 개조하거나 부품을 부착하는 행위를 금합니다. 이로 인한 제품 고장 발생 시 무상 서비스 및 품질 보증 서비스를 받을 수 없습니다.
-* 제품을 설치 및 수리할 때에는 고객지원팀에 문의하여 전문가에게 의뢰하십시오.
-* 먼지가 많거나 더러운 곳에 제품을 설치 및 사용하지 마십시오. 먼지나 이물질로 인해 제품이 고장 나거나 성능에 이상이 발생할 수 있습니다.
-* 자성이 있거나 자성의 영향이 미치는 곳 또는 전자파 장해가 있는 곳에 제품을 설치 및 사용하지 마십시오. 자성에 의해 제품이 손상되거나 성능에 이상이 발생할 수 있습니다.
-* 제품 운전 시에는 헐거운 옷이나 장신구를 착용하지 말고, 머리카락이 긴 경우에는 뒤로 묶어 로봇의 관절 등에 끼이지 않도록 주의하십시오.
-* 제품 동작 중에는 작동 범위 내에 들어가거나 로봇을 만지지 마십시오. 상해의 위험이 있습니다.
-* 제품은 포장된 상태로 운반하여 파손을 피하고 습도가 낮은 건조한 장소에 보관하십시오. 포장 자재 내부에 습기로 제품이 손상되거나 고장 날 수 있습니다.
-* 제품은 온도와 습도가 변하기 쉬운 곳을 피하고, 깨끗하고 서늘하며 건조한 곳에 보관하십시오.
-* 제품 운반 시에는 올바 자세를 유지하고 두 명 이상이 함께 작업하십시오. 허리나 팔, 다리 등의 신체 부위에 상해를 입을 수 있습니다.
-* 리프팅 장비를 이용해 제품을 운반하는 경우에는 해당 국가 및 지역의 안전 규정 및 장비 사용 지침을 준수하십시오.
-* 설명서의 운반 내용을 숙지하고 지시 사항을 준수하여 제품을 운반하십시오. 고객의 제품 운송으로 발생한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
+* Installieren, modifizieren, zerlegen oder reparieren Sie das Produkt nicht ohne Genehmigung. Außerdem ist es anderen Personen als unseren Experten untersagt, das Produkt ohne Genehmigung zu modifizieren oder Teile anzubringen. Im Falle eines Produktfehlers, der darauf zurückzuführen ist, können Sie keinen kostenlosen Service oder Qualitätssicherungsservice in Anspruch nehmen.
+* Wenden Sie sich bei der Installation und Reparatur des Produkts an den Kundendienst, um einen Experten anzufordern.
+* Installieren und verwenden Sie das Produkt nicht an staubigen oder schmutzigen Orten. Das Produkt kann aufgrund von Staub oder Fremdkörpern ausfallen oder Leistungsprobleme auftreten.
+* Installieren und verwenden Sie das Produkt nicht an magnetischen Orten, Orten, die von Magnetismus beeinflusst werden, oder Orten mit elektromagnetischen Störungen. Das Produkt kann durch Magnetismus beschädigt werden oder es können Leistungsprobleme auftreten.
+* Tragen Sie beim Betrieb des Produkts keine lockere Kleidung oder Schmuck und binden Sie lange Haare zusammen, um zu vermeiden, dass sie sich in den Gelenken des Roboters verfangen.
+* Betreten Sie nicht den Arbeitsbereich und berühren Sie den Roboter nicht, während das Produkt in Betrieb ist. Es besteht Verletzungsgefahr.
+* Transportieren Sie das Produkt in seiner Verpackung, um Beschädigungen zu vermeiden, und lagern Sie es an einem trockenen Ort mit geringer Luftfeuchtigkeit. Das Produkt kann durch Feuchtigkeit im Verpackungsmaterial beschädigt werden oder ausfallen.
+* Lagern Sie das Produkt an einem sauberen, kühlen und trockenen Ort und vermeiden Sie Orte, an denen sich Temperatur und Luftfeuchtigkeit leicht ändern.
+* Achten Sie beim Transport des Produkts auf eine korrekte Körperhaltung und lassen Sie sich von mindestens zwei Personen helfen. Andernfalls können Sie sich Verletzungen an Körperteilen wie Hüfte, Armen und Beinen zuziehen.
+* Beachten Sie beim Transport des Produkts mit Hebezeugen die Sicherheitsvorschriften und Richtlinien für die Verwendung der Geräte des jeweiligen Landes und der jeweiligen Region.
+* Machen Sie sich mit den Transportangaben im Handbuch vertraut und transportieren Sie das Produkt gemäß den Anweisungen. Wir übernehmen keine Verantwortung für Schäden und Brüche am Produkt, die durch den Transport durch den Kunden verursacht werden.

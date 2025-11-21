@@ -1,8 +1,8 @@
-﻿# 6. 복구
+# 6. Wiederherstellung
 
- 안전 기능 모니터링 위반으로 발생한 에러는 복구 작업이 필요합니다. 위반한 안전기능에 따라 알맞은 복구 방법을 수행하십시오.
+Fehler, die durch Verstöße gegen die Sicherheitsfunktionsüberwachung verursacht wurden, werden beim Wechsel in den Handbetriebsmodus gelöscht. Da Verstöße gegen die Sicherheitsfunktion den Roboter im Handbetriebsmodus nicht stoppen, können Sie den Winkel und die Position des Roboters anpassen, um ihn in eine Sicherheitszone zu bewegen.
 
 
 {% hint style="warning" %}
-**\[주의]**: 복구 후 안전기능 설정 및 작업 프로그램의 티칭 위치를 다시 확인하십시오.
+*\[Achtung]**: Überprüfen Sie nach der Wiederherstellung im Handbetriebsmodus die Einstellungen der Sicherheitsfunktion und die Teach-Positionen des Arbeitsprogramms erneut.
 {% endhint %}

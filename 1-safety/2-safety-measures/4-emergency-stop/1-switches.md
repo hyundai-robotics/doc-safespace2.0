@@ -1,3 +1,3 @@
-﻿# 1.2.3.1 비상 정지 스위치
+# 1.2.4.1 Not-Halt-Schalter
 
-비상 정지 스위치는 제어기와 티치 펜던트에 하나씩 설치되어 있습니다. 긴급 상황 발생 시 비상 정지 스위치를 누르십시오.
+Es gibt einen Not-Halt-Schalter an der Steuerung und einen am Teach-Pendant. Drücken Sie im Notfall den Not-Halt-Schalter.

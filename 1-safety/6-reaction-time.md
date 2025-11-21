@@ -1,12 +1,12 @@
-# 1.6 반응 시간
+# 1.6 Reaktionszeit
 
 
-*   **정지 반응 시간**
+* **Reaktionszeit beim Stopp**
 
-    안전 기능 위반으로 정지가 수행되기까지의 반응시간은 9.8ms 입니다. 반응 시간은 로봇의 정지시간 및 정지거리 계산시 반영되어야합니다.  
+Die Reaktionszeit vom Verstoß gegen die Sicherheitsfunktion bis zum Stopp beträgt 9,8 ms. Die Reaktionszeit muss bei der Berechnung der Stoppzeit und des Stoppwegs des Roboters berücksichtigt werden.
 
-*   **PROFIsafe 반응 시간**
+* **PROFIsafe-Reaktionszeit**
 
-	PROFIsafe의 F-output Data에 의해 정지가 수행되기까지의 반응시간은 40.8ms 입니다. 로봇이 완전히 정지하기까지의 시간을 얻으려면 통신 주기와 로봇의 정지시간 및 정지거리 계산값이 추가되어야합니다.  
+Die Reaktionszeit von der Stoppausführung durch PROFIsafe F-Ausgangsdaten beträgt 40,8 ms. Um die Zeit bis zum vollständigen Stopp des Roboters zu ermitteln, müssen der Kommunikationszyklus und die berechneten Werte für die Stoppzeit und den Stoppweg des Roboters addiert werden.
 
-****
+***

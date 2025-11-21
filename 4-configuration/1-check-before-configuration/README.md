@@ -1,2 +1,2 @@
-﻿# 4.1 안전 기능 사용 전 점검 사항
+# 4.1 Vor der Verwendung von Sicherheitsfunktionen zu überprüfende Punkte
 

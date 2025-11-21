@@ -1,59 +1,59 @@
-﻿# 1.2.3 안전 레이블
+# 1.2.3 Sicherheitsaufkleber
 
-제어기의 내외부에는 명판과 경고 표시, 안전 기호 등이 부착되어 있습니다. 부착된 레이블을 확인하여 안전을 확보하십시오.
+An der Innen- und Außenseite der Steuerung sind Typenschilder, Warnkennzeichnungen und Sicherheitssymbole angebracht. Überprüfen Sie die angebrachten Aufkleber, um die Sicherheit zu gewährleisten.
 
-![그림 1 안전 레이블 부착 위치: 전면과 윗면(좌) / 뒷면(우)](../../_assets/safety\_labels\_1.png)
+![Abbildung 1 Position der Sicherheitsaufkleber: Vorderseite und Oberseite (links) / Rückseite (rechts)](../../_assets/safety\_labels\_1.png)
 
-![그림 2 안전 레이블 부착 위치: 외측면(좌) / 내측면(우)](../../_assets/safety\_labels\_2.png)
+![Abbildung 2 Position der Sicherheitsaufkleber: Außenseite (links) / Innenseite (rechts)](../../_assets/safety\_labels\_2.png)
 
-#### ![](../../_assets/1.png) 전원 및 접지 연결 주의 사항
+#### ![](../../_assets/1.png) Vorsichtsmaßnahmen für den Anschluss an Strom und Erdung
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_27.png>)
+![Koreanischer Aufkleber (links) / Englischer Aufkleber (rechts)](<../../_assets/image_27.png>)
 
-#### ![](../../_assets/2.png) 고전압 표시
+#### ![](../../_assets/2.png) Hochspannungsanzeige
 
-![국문 레이블 / 영문 레이블](<../../_assets/image_29.png>)
+![!Koreanischer Aufkleber / Englischer Aufkleber](<../../_assets/image_29.png>)
 
-#### ![](../../_assets/3.png) 입력 전원 표시
+#### ![](../../_assets/3.png) Eingangsleistungsanzeige
 
-![국문 레이블 / 영문 레이블](<../../_assets/image_25.png>)
+![!Koreanischer Aufkleber / Englischer Aufkleber](<../../_assets/image_25.png>)
 
-#### ![](../../_assets/4.png)공기 순환구 주의 사항
+#### ![](../../_assets/4.png)Hinweise zur Luftzirkulation
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_11.png>)
+![Koreanischer Aufkleber (links) / Englischer Aufkleber (rechts)](<../../_assets/image_11.png>)
 
-#### ![](../../_assets/5.png)NRTL 인증 마크
+#### ![](../../_assets/5.png)NRTL-Zertifizierungszeichen
 
-![국문 레이블 / 영문 레이블](../../_assets/image26.png)
+![!Koreanischer Aufkleber / Englischer Aufkleber](../../_assets/image26.png)
 
-#### ![](../../_assets/6.png)명판
+#### ![](../../_assets/6.png)Typenschild
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_30.png>)
+![Koreanischer Aufkleber (links) / Englischer Aufkleber (rechts)](<../../_assets/image_30.png>)
 
-#### ![](../../_assets/7.png)고전압 경고
+#### ![](../../_assets/7.png)Hochspannungswarnung
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_10.png>)
+![Koreanischer Aufkleber (links) / Englischer Aufkleber (rechts)](<../../_assets/image_10.png>)
 
-#### ![](../../_assets/8.png)설치 주의 사항
+#### ![](../../_assets/8.png)Hinweise zur Installation
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_32.png>)
+![Koreanischer Aufkleber (links) / Englischer Aufkleber (rechts)](<../../_assets/image_32.png>)
 
-#### ![](../../_assets/9.png)기능 안전 인증 마크
+#### ![](../../_assets/9.png)Zertifizierungszeichen für funktionale Sicherheit
 
-![국문 레이블 / 영문 레이블](../../_assets/image37.png)
+![!Koreanischer Aufkleber / Englischer Aufkleber](../../_assets/image37.png)
 
-#### ![](../../_assets/10.png)접지선 연결 주의 사항
+#### ![](../../_assets/10.png)Hinweise zum Anschluss des Erdungskabels
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_19.png>)
+![Koreanischer Aufkleber (links) / Englischer Aufkleber (rechts)](<../../_assets/image_19.png>)
 
-#### ![](../../_assets/11.png)접지 표시
+#### ![](../../_assets/11.png)Erdungsanzeige
 
-![국문 레이블 / 영문 레이블](../../_assets/image42.jpeg)
+![!Koreanischer Aufkleber / Englischer Aufkleber](../../_assets/image42.jpeg)
 
 {% hint style="warning" %}
-**\[경고]** : 제어기에 부착된 명판, 경고 표시, 안전 기호, 명칭 표시, 전선 마크 등의 위치를 옮기거나 페인트칠 및 커버를 씌워 가리는 행위 등 안전 레이블에 손상을 주는 일체의 행위를 금합니다.
+\[Warnung]*: Bitte verändern Sie nicht die Position von Typenschildern, Warnmarkierungen, Sicherheitssymbolen, Namensmarkierungen, Kabelmarkierungen usw., die an der Steuerung angebracht sind, und decken Sie diese nicht mit Farbe oder Abdeckungen ab. Jede Handlung, die die Sicherheitsaufkleber beschädigt, ist untersagt.
 {% endhint %}
 
 {% hint style="warning" %}
-**\[주의]** : 로봇의 설치 영역 및 위험 지역은 형태나 색상, 스타일에서 차이를 두어 다른 시설 및 기기와 명확히 구분되도록 표시하십시오.
+*\[Achtung]*: Der Installationsbereich und die Gefahrenzone des Roboters sollten durch unterschiedliche Formen, Farben und Stile deutlich von anderen Einrichtungen und Geräten abgegrenzt werden.
 {% endhint %}

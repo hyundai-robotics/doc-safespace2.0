@@ -1,8 +1,8 @@
-﻿# 1.2.3 비상 정지
+# 1.2.4 Not-Halt
 
-비상 정지 기능은 작업자 또는 다른 물체가 위험 지역에 진입하는 등 긴급 시나 비상 시에 작동합니다. 모든 비상 정지 스위치는 안전 영역 밖에서도 쉽게 접근할 수 있는 곳에 설치되어 있습니다.
+Die Not-Halt-Funktion wird in Notfällen oder Notsituationen aktiviert, beispielsweise wenn ein Arbeiter oder ein anderer Gegenstand in einen Gefahrenbereich gelangt. Alle Not-Halt-Schalter sind an Stellen installiert, die auch von außerhalb der Sicherheitszone leicht zugänglich sind..
 
-비상 정지 기능이 실행되면 어떠한 경우에서도 로봇은 즉시 동작을 정지합니다.
+Wenn die Not-Halt-Funktion ausgeführt wird, stoppt der Roboter in jedem Fall sofort den Betrieb.
 
-* 로봇의 서보 시스템 전원이 차단되고 모터 브레이크가 동작합니다.
-* 티치 펜던트(Teach pendant)의 화면에 비상 정지 메시지가 나타납니다.
+* Die Stromversorgung des Servosystems des Roboters wird unterbrochen und die Motorbremse wird aktiviert.
+* Auf dem Bildschirm des Teach-Pendants wird eine Not-Halt-Meldung angezeigt.

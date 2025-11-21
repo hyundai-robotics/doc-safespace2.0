@@ -1,4 +1,4 @@
-﻿# 1.2.3.2 외부 시스템의 비상 정지 장치 연결
+# 1.2.4.2 Anschließen einer externen Not-Halt-Einrichtung
 
-기본으로 설치되어 있는 비상 정지 스위치 외에 현장 환경 및 응용에 따라 추가로 외부 비상 정지 장치를 연결할 수 있습니다. 이에 대한 자세한 내용은 “[**2. 설치**](../../../2-installation/README.md)”과 “[**3.3.4 안전 신호 입출력**](../../../3-safety-function/3-safety-function/3-safety-io/README.md)”을 참조하십시오.
+기본으로 설치되어 있는 비상 정지 스위치 외에 현장 환경 및 응용에 따라 추가로 외부 비상 정지 장치를 연결할 수 있습니다. 이에 대한 자세한 내용은 “[Zusätzlich zu den standardmäßig installierten Not-Halt-Schaltern können Sie je nach Standort und Anwendung weitere externe Not-Halt-Einrichtungen anschließen. Ausführliche Informationen finden Sie unter „**2.. Installation**“ und „**3.3.3 Sicherheitssignal-Ein-/Ausgang**“.](../../../2-installation/README.md)”과 “[Zusätzlich zu den standardmäßig installierten Not-Halt-Schaltern können Sie je nach Standort und Anwendung weitere externe Not-Halt-Einrichtungen anschließen. Ausführliche Informationen finden Sie unter „**2.. Installation**“ und „**3.3.3 Sicherheitssignal-Ein-/Ausgang**“.](../../../3-safety-function/3-safety-function/3-safety-io/README.md)”을 참조하십시오.
 

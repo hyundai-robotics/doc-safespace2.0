@@ -1,3 +1,3 @@
-﻿# 3.2 협동 운전 모드
+# 3.2 Kollaborativer Betriebsmodus
 
-ISO 10218-1과 ISO/TS 15066에서는 작업자가 위험에 노출되지 않고 안전하게 작업할 수 있도록 4 개의 운전 모드에 대해 설명하고 있습니다. 협동 운전은 이 중 최소 한 가지 요구 사항을 충족해야 하고 운전 중에는 반드시 협동 운전 중임을 시각적으로 표시하여 알려야 합니다.
+ISO 10218-1 und ISO/TS 15066 beschreiben vier Betriebsmodi, die es den Arbeitern ermöglichen, sicher zu arbeiten, ohne Gefahren ausgesetzt zu sein. Der kollaborative Betrieb muss mindestens eine dieser Anforderungen erfüllen und während des Betriebs stets visuell anzeigen, dass ein kollaborativer Betrieb stattfindet.

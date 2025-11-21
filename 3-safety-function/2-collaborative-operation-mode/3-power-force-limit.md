@@ -1,7 +1,7 @@
-﻿# 3.2.3 동력 및 힘 제한
+# 3.2.3 Leistungs- und Kraftbegrenzung
 
-접촉 사고 발생 시, 인체에 가해지는 충격을 제한합니다. 충돌 검지 기능 파워, 모멘텀 제한 기능을 통해 작업자와 로봇 간의 접촉 사고 발생 시 작업자의 신체에 가해지는 충격을 제한할 수 있습니다.
+Begrenzt die Auswirkungen auf den menschlichen Körper bei einem Kontaktunfall. Mithilfe der Kollisionserkennungsfunktion und der Funktionen zur Leistungs- und Momentbegrenzung können Sie die Auswirkungen auf den Körper des Arbeiters begrenzen, wenn es zu einem Kontaktunfall zwischen dem Arbeiter und dem Roboter kommt.
 
-충돌 검지 기능은 민감도(%)를 설정하여 충돌을 검지합니다. 파워(W)와 모멘텀(kg·m/s)을 설정하여 로봇의 동력을 제한할 수 있습니다.
+Die Kollisionserkennungsfunktion erkennt Kollisionen durch Einstellen der Empfindlichkeit (%). Sie können die Leistung des Roboters durch die Einstellung von Leistung (W) und Moment (kg·m/s) begrenzen.
 
-로봇 안전 기능 설정에 대한 자세한 내용은 “[**3.3 안전기능**](../3-safety-function/README.md)”을 참조하십시오.
+로봇 안전 기능 설정에 대한 자세한 내용은 “[Ausführliche Informationen zu den Einstellungen der Robotersicherheitsfunktionen finden Sie unter „3.3 Sicherheitsfunktionen“.](../3-safety-function/README.md)”을 참조하십시오.

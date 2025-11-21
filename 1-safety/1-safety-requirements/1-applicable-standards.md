@@ -1,9 +1,9 @@
-﻿# 1.1.1 적용 표준
+# 1.1.1 Anwendbare Normen
 
-이 제품은 산업용 로봇 안전 표준 ISO 10218-1 에 따라 설계 및 제조되었습니다. 이 제품에 적용된 안전 표준은 다음 같습니다.
+Dieses Produkt wurde gemäß der Sicherheitsnorm für Industrieroboter ISO 10218-1 und der technischen Spezifikation ISO/TS 15066 für kollaborativen Betrieb entwickelt und hergestellt. Für dieses Produkt gelten die folgenden Sicherheitsnormen.
 
-* ISO 10218-1:2025 Robots and robotic devices - Safety requirements for industrial robots - Part 1: Robots
-* ISO 10218-2:2025 Robots and robotic devices - Safety requirements for industrial robots - Part 2: Robot systems and integration
+* ISO 10218-1:2011 Robots and robotic devices - Safety requirements for industrial robots - Part 1: Robots
+* ISO 10218-2:2011 Robots and robotic devices - Safety requirements for industrial robots - Part 2: Robot systems and integration
 * ISO/TS 15066:2016 Robots and robotic devices - Safety requirements - Industrial collaborative workspace
 * IEC 61508-1:2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 1: General requirements
 * IEC 61508-2:2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 2: Requirements for electrical/electronic/programmable electronic safety-related systems

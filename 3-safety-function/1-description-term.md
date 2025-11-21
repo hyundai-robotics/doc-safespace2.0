@@ -1,108 +1,89 @@
-﻿# 3.1 용어 설명
+# 3.1 Terminologie
 
-### <mark style="color:green;">로봇 감시 기능</mark>&#xD;
+### <mark style="color:green;">Roboterüberwachungsfunktion</mark>&#xD;
 
-로봇의 속도, 힘, 운동량을 감시하기 위해 기준이 되는 파라미터입니다.
+Parameter, die als Referenz für die Überwachung der Geschwindigkeit, Kraft und des Momentums des Roboters dienen.
 
-*   **조인트 영역 감시**
+* **Gelenkwinkelüberwachung**
 
-    각 축 조인트의 위치를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+Überwacht die Position jedes Achsengelenks. Führt einen vom Anwender festgelegten Sicherheitshalt durch, wenn der Referenzwert überschritten wird.
 
-*   **조인트 속도 감시**
+* **Gelenkgeschwindigkeitsüberwachung**
 
-    각 축 조인트의 속도를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+Überwacht die Geschwindigkeit jedes Achsengelenks. Führt einen vom Anwender festgelegten Sicherheitshalt durch, wenn der Referenzwert überschritten wird.
     
-*   **조인트 정지 감시(SOS, Safe Operating Stop)**
+* **Überwachung des sicheren Betriebshalts (SOS, Safe Operating Stop)**
 
-    각 축에 슬립 발생 없이 정지 상태를 유지하는지 감시. 기준값을 초과하는 경우 정지0을 수행
+Überwacht, ob jede Achse ohne Schlupf im Stillstand bleibt. Führt einen Stopp der Kategorie 0 aus, wenn der Referenzwert überschritten wird.
 
-*   **TCP 위치 감시**
+* **TCP-Positionsüberwachung**
 
-    안전 툴 모델이 안전 영역을 위반하는지 감시. 영역을 침범하는 경우 사용자가 설정한 안전 정지 수행
+Überwacht, ob das Sicherheitswerkzeugmodell die Sicherheitszone verletzt. Führt einen vom Anwender festgelegten Sicherheitshalt aus, wenn die Zone verletzt wird.
     
-*   **TCP 방향 감시**
+* **TCP-Orientierungsüberwachung**
 
-    툴의 방향이 지정된 범위를 벗어나지 않는지 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+Überwacht, ob die Werkzeugausrichtung innerhalb des festgelegten Bereichs bleibt. Führt einen vom Anwender festgelegten Sicherheitshalt durch, wenn der Referenzwert überschritten wird.
     
-*   **TCP 속도 감시**
+* **TCP-Geschwindigkeitsüberwachung**
 
-    툴 끝의 속도를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+Überwacht die Geschwindigkeit der Werkzeugspitze. Führt einen vom Anwender festgelegten Sicherheitshalt durch, wenn der Referenzwert überschritten wird.
     
-*   **파워 감시**
+* **Leistungsüberwachung**
 
-    로봇의 파워를 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
+Überwacht die Leistung des Roboters. Führt einen vom Anwender festgelegten Sicherheitshalt durch, wenn der Referenzwert überschritten wird.
     
-*   **모멘텀 감시**
+* **Momentenüberwachung**
 
-    로봇의 모멘텀을 감시. 기준값을 초과하는 경우 사용자가 설정한 안전 정지 수행
-
-*   **충돌 검지**
-
-    로봇에 외력이 가해져 허용치를 초과하는 경우 사용자가 설정한 안전 정지 수행
+Überwacht das Moment des Roboters. Führt einen vom Anwender festgelegten Sicherheitshalt durch, wenn der Referenzwert überschritten wird.
 
 
-### <mark style="color:green;">영역 감시 기능</mark>&#xD;
+* **Kollisionserkennung**
 
-TCP 위치와 방향 감시를 위해 기준이 되는 안전 영역과 툴 영역의 파라미터입니다.
-
-*   **안전 영역**
-
-    툴의 작업 영역과 보호 영역의 통칭
-*   **작업 영역**
-
-    로봇이 작업을 수행하는 영역. 툴 및 로봇 엘보우 모델이 작업 영역을 벗어나는 경우 안전 정지 수행
-*   **보호 영역**
-
-    로봇으로부터 보호되어야 하는 영역. 툴 및 로봇 엘보우 모델이 보호 영역을 침범하는 경우 안전 정지 수행
-*   **안전 툴 모델링**
-
-    TCP 위치와 방향 감시를 위해 로봇에 부착된 툴을 구와 원뿔로 모델링
-*   **안전 로봇 모델링**
-
-    로봇의 2축과 3축을 캡슐로 모델링하여 안전 영역과의 거리를 감시
+Führt einen vom Anwender festgelegten Sicherheitshalt durch, wenn eine auf den Roboter ausgeübte externe Kraft den zulässigen Wert überschreitet.
 
 
+### <mark style="color:green;">Sicherheitslayout</mark>
 
-### <mark style="color:green;">안전 정지</mark>&#xD;
+Parameter für Sicherheitszonen und Werkzeugzonen, die als Referenzen für die Überwachung der TCP-Position und -Orientierung dienen.
 
-안전에 위반이 되는 경우 안전한 상태로 만들기 위해 로봇을 정지시키는 것으로 정지 방법에는 3 가지가 있습니다. 각 정지 방법에 대한 자세한 정보는 “ISO 13850” 또는 “IEC 60204-1”를 참조하십시오.
+* **Sicherheitszone**
 
-*   **정지0**
+Allgemeiner Begriff für den Arbeitsbereich und den geschützten Bereich des Werkzeugs.
+* **Arbeitsbereich**
 
-    모든 조인트의 모터 전원을 즉시 제거하고 정지(제어되지 않은 정지)
-*   **정지1**
+Der Bereich, in dem der Roboter seine Arbeit verrichtet. Führt einen Sicherheitshalt durch, wenn das Werkzeug und das Roboter-Ellbogenmodell den Arbeitsbereich verlassen.
+* **Geschützter Bereich**
 
-    모든 조인트의 모터가 감속 후 정지하고 이후에 모터의 전원을 제거(제어 정지). 로봇은 프로그램 경로를 계속 따라가며 감속 정지하고 로봇이 정지하자마자 전원 차단
-*   **정지2**
+Der Bereich, der vor dem Roboter geschützt werden muss. Es wird ein Sicherheitshalt ausgeführt, wenn das Werkzeug und das Roboter-Ellbogenmodell den geschützten Raum verletzen.
+* **Sicherheitswerkzeugmodellierung**
 
-    모든 조인트의 모터가 감속 후 안전 정지 감시(SOS, Safe Operating Stop) 동작. 모든 모터의 전원 공급 유지 상태 
-    
+Modellierung des am Roboter befestigten Werkzeugs als Kugel und Kegel zur TCP-Positions- und Orientierungsüberwachung.
+* **Sicherheitsroboter-Modellierung**
 
-
-정지1과 정지2는 감속 시간과 거리를 통해 감속 과정을 모니터링합니다. 
-
-*   **정지 시간**
-
-    감속을 시작하여 실제 정지하기까지의 시간을 모니터링하여, 설정한 시간 안에 로봇이 정지하지 않으면 정지0을 수행하여 모터의 전원을 즉시 제거합니다.
-*   **정지 거리**
-
-    감속을 시작하여 실제 정지하기까지의 TCP 거리를 모니터링하여, 설정한 거리 안에 로봇이 정지하지 않으면 정지0을 수행하여 모터의 전원을 즉시 제거합니다.
+Modellierung der Achsen 2 und 3 des Roboters als Kapseln zur Überwachung des Abstands zur Sicherheitszone
 
 
 
-### <mark style="color:green;">안전 모션 튜닝</mark>&#xD;
+### <mark style="color:green;">Sicherheitsstopp</mark>&#xD;
 
-입력한 파라미터를 초과하지 않도록 로봇 모션을 자동으로 조정하는 기능입니다.
-모션 튜닝 시 고려되는 파라미터는 아래와 같습니다.
+Anhalten des Roboters, um einen sicheren Zustand zu schaffen, wenn die Sicherheit verletzt wird. Es gibt 3 Stoppmethoden. Ausführliche Informationen zu den einzelnen Stoppmethoden finden Sie in „ISO 13850” oder „IEC 60204-1”.
 
-*   **조인트 속도**
+* **Stopp 0**
 
-*   **TCP 속도**
+Sofortige Unterbrechung der Stromversorgung aller Gelenkmotoren und Stopp (unkontrollierter Stopp)
+* **Stopp 1**
 
-*   **파워**
+Die Motoren aller Gelenke werden abgebremst und gestoppt, anschließend wird die Stromversorgung der Motoren unterbrochen (kontrollierter Stopp). Der Roboter folgt während der Abbremsung weiterhin dem Programmweg und die Stromversorgung wird unterbrochen, sobald der Roboter zum Stillstand kommt.
+* **Stopp 2**
 
-*   **모멘텀**
+Die Motoren aller Gelenke werden abgebremst, und anschließend wird die Überwachung des sicheren Betriebshalts (SOS) aktiviert. Die Stromversorgung aller Motoren wird aufrechterhalten.
 
-*   **정지 시간**
 
-*   **정지 거리**
+Stopp 1 und Stopp 2 überwachen den Verzögerungsvorgang anhand der Verzögerungszeit und -strecke.
+
+* **Stoppzeit**
+
+Überwacht die Zeit vom Beginn der Verzögerung bis zum tatsächlichen Stillstand. Wenn der Roboter nicht innerhalb der festgelegten Zeit zum Stillstand kommt, wird Stopp 0 ausgeführt, um die Stromversorgung der Motoren sofort zu unterbrechen.
+* **Stoppweg**
+
+Überwacht den TCP-Weg vom Beginn der Verzögerung bis zum tatsächlichen Stillstand. Wenn der Roboter nicht innerhalb des festgelegten Weges zum Stillstand kommt, wird „Stopp 0” ausgeführt, um die Motoren sofort vom Stromnetz zu trennen.

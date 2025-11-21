@@ -1,31 +1,17 @@
-﻿# 5.1 로봇 감시 기능 모니터링
+# 5.1 Roboterüberwachungsfunktion
 
-**\[시스템 > 8: 안전 시스템 > 3: 모니터링 > 1: 로봇 상태]** 메뉴를 선택하여 로봇 TCP 속도/TCP 위치/TCP 방향/파워/모멘텀 상태를 확인할 수 있습니다.
+Wählen Sie das Menü \[System > 4: Anwendungsparameter > 18: SafeSpace2.0 > Überwachung] > [Roboterüberwachung]*, um den Status der Roboterüberwachungsfunktion zu überprüfen.
+
+![!Sicherheitsstatus des Roboters](../_assets/mon_robot.PNG)
 
 
-<p align="center">
-<img src="../_assets/5/robot_monitoring.png"></img>
-<em><p align="center">로봇 상태 모니터링 화면</p></em>
-</p>
-
-* 로봇 제한 기능의 상태를 확인합니다.
-  * **\[TCP 위치]**: TCP 위치 모니터링 위반 여부
-  * **\[TCP 속도]**: TCP 속도 모니터링 위반 여부
-  * **\[TCP 방향]**: TCP 방향 모니터링 위반 여부
-  * **\[파워]**: 파워 모니터링 위반 여부
-  * **\[모멘텀]**: 모멘텀 모니터링 위반 여부
-
----
-
-**\[시스템 > 8: 안전 시스템 > 3: 모니터링 > 2: 조인트 상태]** 메뉴를 선택하여 조인트 영역/속도/SOS/충돌 상태를 확인할 수 있습니다.
-
-<p align="center">
-<img src="../_assets/5/joint_monitoring.png"></img>
-<em><p align="center">조인트 상태 모니터링 화면</p></em>
-</p>
-
-* 조인트 제한 기능의 상태를 확인합니다.
-  * **\[조인트 영역]**: 조인트 영역 모니터링 위반 여부
-  * **\[조인트 속도]**: 조인트 속도 모니터링 위반 여부
-  * **\[충돌]**: 충돌 모니터링 위반 여부
-  * **\[SOS]**: (안전 정지 감시) SOS 모니터링 위반 여부
+* Überprüfen Sie den Status der Roboterüberwachungsfunktion.
+  * **\[TCP-Position]: Status Verletzung der TCP-Positionsüberwachung**: TCP 위치 모니터링 위반 여부
+  * **\[TCP-Geschwindigkeit]: Status Verletzung der TCP-Geschwindigkeitsüberwachung**: TCP 속도 모니터링 위반 여부
+  * **\[TCP-Orientierung]: Status Verletzung der TCP-Orientierungsüberwachung**: TCP 방향 모니터링 위반 여부
+  * **\[Leistung]: Status Verletzung der Leistungsüberwachung**: 파워 모니터링 위반 여부
+  * **\[Moment]: Status Verletzung der Momentenüberwachung**: 모멘텀 모니터링 위반 여부
+  * **\[Kollision]: Status Verletzung der Kollisionsüberwachung**: 충돌 모니터링 위반 여부
+  * **\[SOS]: (Überwachung des sicheren Betriebshalts) Status Verletzung der SOS-Überwachung**: (안전 정지 감시) SOS 모니터링 위반 여부
+  * **\[Gelenkposition]: Status Verletzung der Gelenkpositionsüberwachung**: 조인트 위치 모니터링 위반 여부
+  * **\[Gelenkgeschwindigkeit]: Status Verletzung der Gelenkgeschwindigkeitsüberwachung**: 조인트 속도 모니터링 위반 여부

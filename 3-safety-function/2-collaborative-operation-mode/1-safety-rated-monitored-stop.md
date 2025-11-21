@@ -1,11 +1,11 @@
-﻿# 3.2.1 안전 정격 감시 정지
+# 3.2.1 Sicherheitsbewerteter überwachter Halt
 
-사람이 작업 공간 내 진입 시 로봇의 작동이 정지합니다. 외부 감시 장치를 설치하고 이를 안전 제어 모듈(SCM: Safety Control Module)에 연결하여 사용하십시오.
+Der Roboterbetrieb wird angehalten, wenn eine Person den Arbeitsbereich betritt. Installieren Sie ein externes Überwachungsgerät und schließen Sie es zur Verwendung an das Sicherheitssteuermodul (SCM) an
 
-* 외부 장치에 안전 입력을 연결할 경우에는 안전 입출력 신호 및 정지 방법(정지 0, 정지 1, 정지 2)을 설정해야 합니다.
-* 안전 가드 및 외부 비상정지를 연결한 경우에는 국제 또는 해당 지역 규제에 부합하는 정지 방법을 설정해야 합니다.
+* Beim Anschließen des Sicherheitseingangs an ein externes Gerät müssen Sie die Sicherheits-E/A-Signale und die Stoppmethode (Stopp 0, Stopp 1, Stopp 2) festlegen.
+* Beim Anschließen von Schutzeinrichtungen und externen Not-Halt-Schaltern müssen Sie eine Stoppmethode einstellen, die den internationalen oder lokalen Vorschriften entspricht
 
-관련 기능 설정에 대한 참조 정보는 다음과 같습니다.
+Referenzinformationen für die Einstellungen verwandter Funktionen sind wie folgt:
 
-* 안전 신호 설정에 대한 자세한 내용은 “[**3.3.3 안전 신호 입출력**](../3-safety-function/3-safety-io/README.md)”를 참조하십시오.
-* 안전 정지 기능 설정에 대한 자세한 내용은 “[**3.3.1.9 안전 정지 기능**](../3-safety-function/1-robot-safety-condition/9-stop-function.md)”을 참조하십시오.
+* 안전 신호 설정에 대한 자세한 내용은 “[**3.3.3 Sicherheitssignal-Ein-/Ausgang**](../3-safety-function/3-safety-io/README.md)”를 참조하십시오.
+* 안전 정지 기능 설정에 대한 자세한 내용은 “[1.9 Sicherheitsstoppfunktion](../3-safety-function/1-robot-safety-condition/9-stop-function.md)”을 참조하십시오.

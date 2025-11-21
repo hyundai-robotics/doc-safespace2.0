@@ -1,5 +1,5 @@
-﻿# 3.3 안전 기능
+# 3.3 Sicherheitsfunktionen
 
 
-SafeSpace2.0의 안전 기능은 파라미터 설정을 통해 구성할 수 있으며 작업자가 수행한 위험성 평가에서 선별된 위험의 대처 방안으로 사용합니다.
+Die Sicherheitsfunktionen von SafeSpace2.0 können über die Einstellungen für Sicherheitsfunktionen konfiguriert werden und dienen als Gegenmaßnahmen für Risiken, die in der vom Arbeiter durchgeführten Risikobewertung ausgewählt wurden.
 

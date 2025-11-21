@@ -1,18 +1,15 @@
-﻿# 4.1.3 암호 설정
+# 4.1.3 Passworteinstellung
 
-안전 기능의 파라미터는 반드시 지정된 담당자가 설정하고 관리해야 합니다. 관리자로 지정된 사용자는 관리자 권한과 시스템 설정용 암호를 부여받습니다. 시스템 설정용 암호는 안전 기능 파라미터 설정 시 필수 입력 항목으로 암호가 틀리면 파라미터를 변경 및 설정할 수 없습니다.
+Die Parameter für die Sicherheitsfunktionen müssen von einer dafür bestimmten Person eingestellt und verwaltet werden. Benutzer, die als Administratoren benannt sind, erhalten Administratorrechte und ein Passwort für die Systemeinstellungen. Das Passwort für die Systemeinstellungen ist eine erforderliche Eingabe bei der Einstellung der Parameter für die Sicherheitsfunktionen. Wenn das Passwort nicht korrekt ist, können die Parameter nicht geändert oder eingestellt werden.
 
-1. **\[시스템 > 5: 초기화 > 11: 시스템 암호 설정]** 메뉴를 터치하십시오. 비밀번호 설정창이 나타납니다.
-2. 비밀번호를 입력한 후 **\[확인]** 버튼을 터치하십시오.
+1. **1. Tippen Sie auf die Schaltfläche \[Einstellungen] > \[5: Initialisierung > 11: Passworteinstellung]. Das Fenster zur Passworteinstellung wird angezeigt.** 버튼 > **1. Tippen Sie auf die Schaltfläche \[Einstellungen] > \[5: Initialisierung > 11: Passworteinstellung]. Das Fenster zur Passworteinstellung wird angezeigt.** 메뉴를 터치하십시오. 비밀번호 설정창이 나타납니다.
+2. 비밀번호를 입력한 후 **2. Geben Sie das Passwort ein und tippen Sie auf die Schaltfläche \[OK].** 버튼을 터치하십시오.
 
-<p align="center">
-<img src="../../_assets/4/input_password.png"></img>
-<em><p align="center">비밀번호 설정 화면</p></em>
-</p>
+![](../../_assets/4/4-1-3-1.png)
 
-* 안전 기능의 파라미터 설정 시 반드시 시스템 설정 암호를 입력해야 변경 내용이 저장됩니다.
+* Sie müssen das Passwort für die Systemeinstellungen eingeben, um Änderungen beim Einstellen der Parameter für die Sicherheitsfunktionen zu speichern.
 
 {% hint style="warning" %}
-* 비밀번호는 4자 이상으로 설정 할 것을 권장 합니다.
-* 비밀번호 분실 시 엔지니어에게 문의 하십시오.
+* Es wird empfohlen, ein Passwort mit mindestens 4 Zeichen festzulegen.
+* Wenn Sie Ihr Passwort vergessen haben, wenden Sie sich bitte an einen Techniker.
 {% endhint %}

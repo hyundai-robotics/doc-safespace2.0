@@ -1,19 +1,19 @@
-﻿# 6.1	로봇 위치 위반 시 복구
+# 6.1	Wiederherstellung nach einer Verletzung der Roboterposition
 
-로봇 위치 위반은 로봇의 위치가 안전 영역을 벗어나는 것으로 TCP 위치, TCP 방향 및 조인트 모니터링 위반이 있습니다. 로봇 위치 위반 시에는 로봇을 물리적으로 움직여 위치를 이동해야 에러를 해제할 수 있으며, 수동 모드에서는 안전기능 위반으로 로봇을 정지시키지 않으므로 수동 모드에서 로봇의 각도와 위치를 조정해야 합니다.
+Eine Roboterpositionsverletzung tritt auf, wenn die Position des Roboters die Sicherheitszone verlässt, einschließlich Verletzungen der TCP-Position, TCP-Orientierung und Gelenküberwachung. Im Falle einer Verletzung der Roboterposition kann der Fehler nur durch physisches Verfahren des Roboters zur Änderung seiner Position behoben werden.
 
-1.  모드스위치를 수동으로 전환하여 수동모드로 진입하십시오.
-
-
-2.  모터온 버튼을 누른 후, 티치 펜던트의 인에이블링 스위치를 이용해 모터를 켜십시오.
+1. Stellen Sie den Betriebsartenschalter auf „Manuell”, um in den Handbetrieb zu wechseln.
 
 
-3.  교시 장치를 이용해 로봇을 안전 영역으로 이동시키십시오.
+2. Schalten Sie den Motor mit dem Zustimmschalter am Teach-Pendant ein.
 
 
-4.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
+3. Verwenden Sie das Teach-Pendant, um den Roboter in eine sichere Zone zu bewegen.
+
+
+4.  안전 상태 모니터링 화면에서 각 영역의 상태가 **4. Überprüfen Sie im Bildschirm zur Überwachung des Sicherheitsstatus, ob der Status jeder Zone als „SAFE“ angezeigt wird.**로 나타나는지 확인하십시오.
 
 
 {% hint style="warning" %}
-에러 해제 후 안전 레이아웃 설정 및 작업 프로그램의 티칭 위치를 다시 확인하십시오.
+Nach Behebung des Fehlers überprüfen Sie die Einstellungen des Sicherheitslayouts und die Teach-Positionen im Arbeitsprogramm erneut.
 {% endhint %}

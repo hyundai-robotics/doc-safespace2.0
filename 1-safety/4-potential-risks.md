@@ -1,17 +1,17 @@
-﻿# 1.4 잠재적 위험
+# 1.4 Potenzielle Gefahren
 
-로봇과 연동된 통합 시스템의 위험성 평가에서 로봇의 안전 관련 기능만으로 위험 요소가 충분히 제거되지 않았다는 결과가 도출되었을 경우에는 반드시 추가 보호 대책을 수립해야 합니다.
+Wenn die Risikobewertung des mit dem Roboter verbundenen integrierten Systems zu dem Schluss kommt, dass die Risikofaktoren mit den sicherheitsrelevanten Funktionen des Roboters allein nicht ausreichend beseitigt werden können, müssen zusätzliche Schutzmaßnahmen getroffen werden.
 
-추가 보호 대책 수립 시 고려해야 할 사항은 다음과 같습니다.
+Bei der Festlegung zusätzlicher Schutzmaßnahmen sind folgende Punkte zu berücksichtigen.
 
-* 설치 시 로봇 베이스와 설치대 사이에 손가락 끼임(협착)
-* 작업 영역 내의 장애물 및 툴의 날카로운 가장자리나 뾰족한 부분에 의한 상해(찔림, 관통 등)
-* 로봇과의 충돌에 의한 상해(멍, 넘어짐, 골절 등)
-* 로봇 주변의 장애물에 의한 상해(찔림, 관통, 골절 등)
-* 체결 부위가 완전히 고정되지 않아 발생할 수 있는 상해
-* 독성이 있는 물질 및 유해 물질 작업 시 발생할 수 있는 상해(피부 손상, 호흡 곤란 등)
-* 갑작스러운 전원 중단으로 툴에서 작업물 이탈
-* 다른 장비의 비상 정지 스위치와 혼동하여 발생하는 실수
-* 안전 관련 기능 설정의 임의 변경에 의한 오류 등
+* Einklemmen (Quetschen) der Finger zwischen Roboterbasis und Installationsbasis während der Installation
+* Verletzungen (Stichverletzungen, Einstiche usw.) durch Hindernisse im Arbeitsbereich und scharfe Kanten oder spitze Teile des Werkzeugs
+* Verletzungen (Prellungen, Stürze, Knochenbrüche usw.) durch Kollision mit dem Roboter
+* Verletzungen (Stichverletzungen, Einstiche, Brüche usw.) durch Hindernisse in der Umgebung des Roboters
+* Verletzungen, die auftreten können, wenn Befestigungsteile nicht vollständig fixiert sind
+* Verletzungen, die bei der Arbeit mit giftigen und gesundheitsschädlichen Substanzen auftreten können (Hautschäden, Atembeschwerden usw.)
+* Trennung des Werkstücks vom Werkzeug aufgrund einer plötzlichen Stromunterbrechung
+* Fehler aufgrund von Verwechslungen mit Not-Halt-Schaltern anderer Geräte
+* Fehler aufgrund unbefugter Änderungen an sicherheitsrelevanten Funktionseinstellungen usw.
 
-발생 가능한 위험의 유형은 시스템 구성에 따라 다르므로 통합 시스템을 사용하기 전에는 반드시 위험성 평가를 실행하십시오.
+Die Arten möglicher Gefahren variieren je nach Systemkonfiguration. Daher müssen Sie vor der Verwendung des integrierten Systems eine Risikobewertung durchführen.

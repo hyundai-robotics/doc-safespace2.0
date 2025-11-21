@@ -1,20 +1,20 @@
-﻿# 6.3	로봇 힘 위반 시 복구
+# 6.3	Wiederherstellung nach einer Roboter-Kraftüberschreitung
 
-로봇 힘 위반은 외부의 힘이 가해지거나 로봇 내부에서 사용하는 힘의 크기가 안전 기준을 초과하는 것으로 충돌 검지, 파워 및 모멘텀 모니터링 위반이 있습니다. 위반 발생 원인에 따라 에러를 해제할 수 있습니다.
+Eine Roboter-Kraftüberschreitung tritt auf, wenn eine externe Kraft ausgeübt wird oder die innerhalb des Roboters ausgeübte Kraft die Sicherheitsstandards überschreitet, einschließlich Verstößen gegen die Kollisionserkennung, die Leistungs- und die Momentüberwachung. Je nach Ursache des Verstoßes kann der Fehler behoben werden.
 
-<mark style="color:green;">**로봇에 외부로부터 힘이 가해져 위반이 발생한 경우**</mark>
+<mark style="color:green;">**<mark style="color:green;">Wenn der Verstoß aufgrund einer auf den Roboter ausgeübten externen Kraft auftritt</mark>**</mark>
 
-1.  로봇에 힘을 가하는 외부 요인 제거하십시오.
-
-
-2.  모드 스위치를 수동으로 전환하여 수동모드로 진입하십시오.
+1. Entfernen Sie externe Faktoren, die Kraft auf den Roboter ausüben.
 
 
-3.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
+2. Stellen Sie den Betriebsartenschalter auf „Manuell”, um in den Handbetrieb zu wechseln.
+
+
+3.  안전 상태 모니터링 화면에서 각 영역의 상태가 **3. Überprüfen Sie im Bildschirm zur Überwachung des Sicherheitsstatus, ob der Status jeder Zone als „SAFE“ angezeigt wird.**로 나타나는지 확인하십시오.
 
 
 {% hint style="warning" %}
-**\[주의]**
+*\[Achtung]**
 
-* 에러 해제 후 안전 기능 설정, 툴 데이터, 작업 프로그램의 티칭 위치 및 속도를 다시 확인하십시오.
+* Überprüfen Sie nach Behebung des Fehlers erneut die Einstellungen der Sicherheitsfunktionen, die Werkzeugdaten, die Teach-Positionen und die Geschwindigkeit des Arbeitsprogramms.
 {% endhint %}

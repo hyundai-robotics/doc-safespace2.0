@@ -1,15 +1,15 @@
-﻿# 6.2	로봇 속도 위반 시 복구
+# 6.2	Wiederherstellung nach einer Geschwindigkeitsverletzung des Roboters
 
-로봇 속도 위반은 로봇의 속도가 안전 기준을 초과하는 것으로 TCP 속도, 조인트 속도, 파워 및 모멘텀 모니터링 위반이 있습니다. 로봇 속도 위반 시에는 로봇이 순간적인 속도를 감지하고 정지하므로 로봇의 위치를 이동하지 않고 에러를 해제할 수 있습니다.
+Eine Robotergeschwindigkeitsverletzung tritt auf, wenn die Geschwindigkeit des Roboters Sicherheitsstandards überschreitet, einschließlich Verletzungen der TCP-Geschwindigkeit, Gelenkgeschwindigkeit, Leistung- und Momentüberwachung. Im Falle einer Robotergeschwindigkeitsverletzung erkennt der Roboter die momentane Geschwindigkeit und stoppt, sodass der Fehler behoben werden kann, ohne die Position des Roboters zu verändern.
 
-1.  위반 상태를 확인 후, 모터온 버튼을 눌러 위반을 해제합니다.
+1. Stellen Sie den Betriebsartenschalter auf „Manuell”, um in den Handbetrieb zu wechseln.
 
 
-2.  안전 상태 모니터링 화면에서 각 영역의 상태가 **SAFE**로 나타나는지 확인하십시오.
+2.  안전 상태 모니터링 화면에서 각 영역의 상태가 **2. Überprüfen Sie im Bildschirm zur Überwachung des Sicherheitsstatus, ob der Status jeder Zone als „SAFE“ angezeigt wird.**로 나타나는지 확인하십시오.
 
 
 {% hint style="warning" %}
-**[주의]**
+*[Achtung]**
 
-* 에러 해제 후 속도 관련 안전 파라미터 및 작업 프로그램의 속도를 반드시 확인하십시오.
+* Überprüfen Sie nach dem Beheben des Fehlers unbedingt die geschwindigkeitsbezogenen Sicherheitsparameter und die Geschwindigkeit des Arbeitsprogramms.
 {% endhint %}

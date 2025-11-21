@@ -1,22 +1,21 @@
-﻿# 1.1.2 안전 성능
+# 1.1.2 Sicherheitsleistung
 
-SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/출력, PROFIsafe)의 안전 성능은 다음과 같습니다. 
-|            **항목**            | **안전 성능** |         **적용 표준**         |
+Die Sicherheitsleistung der Not-Halt-Funktion und der Schnittstelle für externe Geräte (grundlegende Sicherheitsein- und -ausgänge, PROFIsafe) von SafeSpace2.0 ist wie folgt:
+|            **| Element | Sicherheitsleistung | Anwendbare Norm |**            | **| Element | Sicherheitsleistung | Anwendbare Norm |** |         **| Element | Sicherheitsleistung | Anwendbare Norm |**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
 | SIL (Safety Integrity Level) |     3     | IEC 61508/62061/61800-5-2 |
 |           Category           |     4     |        ISO 13849-1        |
 |    PL (Performance Level)    |     e     |        ISO 13849-1        |
-|    		PFH    			   |  1.5E-08  |         IEC 61508         |
+|    		PFH    			   |1.34217E-08|        ISO 13849-1        |
 
 
-그 외의 안전 기능의 안전 성능은 다음과 같습니다.
-|            **항목**            | **안전 성능** |         **적용 표준**         |
+Die Sicherheitsleistung anderer Sicherheitsfunktionen ist wie folgt:
+|            **| Element | Sicherheitsleistung | Anwendbare Norm |**            | **| Element | Sicherheitsleistung | Anwendbare Norm |** |         **| Element | Sicherheitsleistung | Anwendbare Norm |**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
 | SIL (Safety Integrity Level) |     2     | IEC 61508/62061/61800-5-2 |
 |           Category           |     3     |        ISO 13849-1        |
 |    PL (Performance Level)    |     d     |        ISO 13849-1        |
-|    		PFH    			   |  1.5E-07  |         IEC 61508         |
 
 

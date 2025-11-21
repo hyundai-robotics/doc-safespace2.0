@@ -1,42 +1,36 @@
-﻿# 표기 규약
+# Notationskonventionen
 
-이 설명서에서는 내용의 이해를 돕기 위해 다음의 표기 규약과 안전 지시를 사용합니다.
+In diesem Handbuch werden die folgenden Notationskonventionen und Sicherheitshinweise verwendet, um das Verständnis des Inhalts zu erleichtern.
 
-## 그림설명
+### <mark style="color:green;">Abbildungsbeschreibung</mark>
 
-그림은 제품 조작 방법의 이해를 돕고 화면을 설명하는데 사용합니다. 그림을 설명할 때에는 다음과 같이 해당 부분에 숫자를 표기하고 그에 대응하는 내용을 설명합니다.
+Abbildungen dienen dazu, die Funktionsweise des Produkts zu veranschaulichen und Bildschirme zu erklären. Bei der Beschreibung von Abbildungen sind die entsprechenden Teile mit Nummern gekennzeichnet und der entsprechende Inhalt wird erläutert.
 
-![](../_assets/pane-prog-cmd-param.png)
+![](../_assets/image\_explan.png)
 
-## GUI \(Graphical User Interface\)
+### <mark style="color:green;">GUI (Graphical User Interface)</mark>
 
-GUI는 메뉴 이름 및 버튼 이름을 대괄호\(\[ \]\) 안에 넣고 굵은 글씨로 표시합니다. 여러 메뉴를 순서대로 선택해야 할 때에는 이름 사이에 &gt; 기호를 넣어 표시합니다.
+GUI 는 메뉴 이름 및 버튼 이름을 대괄호\*\*(\[ ]\*\*) 안에 넣고 **Die GUI zeigt Menünamen und Schaltflächennamen in Fettdruck in Klammern \\(\[ ]\\) an. Wenn mehrere Menüs nacheinander ausgewählt werden müssen, wird das Symbol > zwischen den Namen eingefügt.**로 표시합니다. 여러 메뉴를 순서대로 선택해야 할 때에는 이름 사이에 > 기호를 넣어 표시합니다.
 
-* 이름이 있는 메뉴: 수동 또는 자동 모드의 초기 화면에서 \[__메뉴__\] 버튼을 터치하십시오.
-* 여러 메뉴: 수동 모드의 초기 화면에서 \[__시스템__\] 버튼 &gt; \[5: __초기화__ &gt; 7: __유닛 설정__\] 메뉴를 터치하십시오.
+* Benanntes Menü: Wählen Sie im Startbildschirm des manuellen oder automatischen Modus die Schaltfläche \\ \[Menü] \\.
+* 여러 메뉴: 수동 모드의 초기 화면에서 **Mehrere Menüs: Wählen Sie im Startbildschirm des manuellen Modus die Schaltfläche \[Einstellungen] > \[5: Initialisierung > 7: Einheitseinstellungen].** 버튼 > **Mehrere Menüs: Wählen Sie im Startbildschirm des manuellen Modus die Schaltfläche \[Einstellungen] > \[5: Initialisierung > 7: Einheitseinstellungen].** 메뉴를 선택하십시오.
 
+### <mark style="color:green;">Bezeichnung der Bedientasten</mark>
 
+기능 조작을 위하여 티치 펜던트의 조작부에서 누르는 키는 홑화살괄호(**Die Tasten, die auf dem Bedienfeld des Teach-Pendants für die Funktionsausführung gedrückt werden, werden fett in spitzen Klammern (< >) angezeigt.**)에 넣고 **Die Tasten, die auf dem Bedienfeld des Teach-Pendants für die Funktionsausführung gedrückt werden, werden fett in spitzen Klammern (< >) angezeigt.**로 표시합니다.
 
-## 조작키 표기법
+* **Durch Drücken der Taste <Start> wird der Automatikbetrieb des auf den Roboter geschriebenen Programms gestartet.** 키를 누르면 로봇에 작성된 프로그램의 자동 운전을 시작합니다.
 
-기능 조작을 위하여 티치 펜던트의 조작부에서 누르는 키는 홑화살괄호\(&lt; &gt;\)에 넣고 굵은 글씨로 표시합니다.
+### <mark style="color:green;">Querverweise</mark>
 
-* &lt;__시작__&gt; 키를 누르면 로봇에 작성된 프로그램의 자동 운전을 시작합니다.
+설명서 내에서 연관된 정보로의 바로가기를 제공합니다. 상호 참조는 다음과 같이 **Bietet Verknüpfungen zu verwandten Informationen innerhalb des Handbuchs. Querverweise sind fett gedruckt und mit Anführungszeichen („ “) gekennzeichnet.**에 큰따옴표(“ ”)로 표시합니다.
 
-## 상호 참조
+* 날짜와 시간 정보 변경에 대한 자세한 내용은 Hi6 제어기 조작설명서의 “**Ausführliche Informationen zum Ändern der Datums- und Uhrzeitangaben finden Sie unter „4.5 Datums- und Uhrzeiteinstellungen“ im Hi6-Steuerung-Bedienungshandbuch.**”을 참조하십시오.
 
-설명서 내에서 연관된 정보로의 바로가기를 제공합니다. 상호 참조는 다음과 같이 굵은 글씨에 큰따옴표\(“ ”\)로 표시합니다.
+### <mark style="color:green;">Anmerkungen</mark>
 
-* 날짜와 시간 정보 변경에 대한 자세한 내용은 “[4.5 날짜 및 시간 설정](../4-menu/5-date-time-setting.md)”을 참조하십시오.
-
-## 참고 사항
-
-제품을 사용할 때 알아 두면 좋을 유용한 사항이나 추가적인 정보를 다음과 같이 제공합니다.
+Bietet nützliche Informationen oder zusätzliche Informationen, die bei der Verwendung des Produkts hilfreich sind.
 
 {% hint style="info" %}
-상태 표시줄에  ![](../_assets/eng-mode.png) 아이콘이 깜빡이면 엔지니어\(engineer\) 모드 상태입니다.
+Wenn das Symbol !\ in der Statusleiste blinkt, befindet sich das Gerät im Ingenieurmodus.
 {% endhint %}
-
-
-
-### 
