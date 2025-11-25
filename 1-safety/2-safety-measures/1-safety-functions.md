@@ -5,19 +5,23 @@ SafeSpace2.0 is intended to carry out collaborative tasks based on the following
 * STO: Safe Torque Off
 * SS1: Safe Stop 1
 * SS2: Safe Stop 2
-* EM Stop, Emergency Stop
+* Emergency Stop
 * Protective Stop
-* Normal stop
-* SBC: Safe Brake Control
-* Safety Outputs
-* Safety Inputs
-* PROFIsafe
+* Normal Stop
 * SOS: Safe Opertaing Stop
+* Stopping time Monitoring
+* Stopping distance Monitoring
 * Joint-SLP, Joint Angle Monitoring
 * Joint-SLS, Joint Angular Speed Monitoring
-* Collision Detection
 * TCP-SLP, TCP Position Monitoring
 * TCP Orientation Monitoring
 * TCP-SLS, TCP Speed Monitoring
-* Momentum Monitoring
 * Power Monitoring
+* Momentum Monitoring
+* Collision Detection
+* Speed and Seperation Monitoring
+* SBC: Safe Brake Control
+* Safety Inputs
+* Safety Outputs
+* PROFIsafe
+* Start/restart Interlock
