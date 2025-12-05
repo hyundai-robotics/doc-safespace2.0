@@ -11,7 +11,7 @@
 ### 2.1 EtherNet/IP
 - 디지털 입력 : 0 ~ 240 bytes
 - 디지털 출력 : 0 ~ 240 bytes
-- 통신 주기 : 1 ~ 3000 msec
+- 통신 주기 : 2 ~ 3000 msec
 - 지원 통신 속도 : 10 or 100 Mbps
 
 ### 2.2 CIP Safety
@@ -23,9 +23,11 @@
 
 ![](../../../_assets/cipSafety/cipSafety_Parameters.png)
 
- - 사용/미사용 : CIP Safety의 기능을 사용할 것인지 결정합니다.
- - SNN : Safety Network Number의 설정을 합니다.
- - Configure Signature : Reserved
+ - 안전 네트워크 번호 : Safety Network Number를 설정 합니다.
+ - IP 주소 : 현재 EtherNet/IP Adapter의 설정된 IP 주소를 표시합니다.
+{% hint style="info" %}
+* EtherNet/IP Adapter의 IP가 변경된 경우에는 반드시 CIP Safety 파라미터의 전체적용을 실행해 주십시오.
+{% endhint %}
  
    
 

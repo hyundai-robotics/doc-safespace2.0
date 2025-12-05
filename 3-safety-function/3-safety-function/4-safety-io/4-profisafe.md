@@ -22,7 +22,7 @@
 ![](../../../_assets/safetyio_profisafe/profisafe_param.png)
 
  - Source Address : Source Address를 설정합니다. (1로 고정)
- - Target Address : Target Address를 설정합니다. (설정 범위 : 1 ~ 99)
+ - Target Address : Target Address를 설정합니다. (설정 범위 : 1 ~ 65534)
  
   ***참고 사항*** 
  - Address Type :  Address Type 1 (Destination Address만 체크함)
@@ -72,7 +72,7 @@
 1) TIA Portal을 실행
 2) 메뉴에서 우측과 같이 이동 [Options] → [Manage general station description file (GSD)].
 3) “…” 버튼 클릭 후 and GSDML file이 있는 디렉토리를 설정한다.
-4) 화면에 표시된 리스트에서 “GSDML-V2.43-Hyundai-Robotics-HI6-20250418.xml”를 선택하고 [Install] 버튼을 누른다.
+4) 화면에 표시된 리스트에서 “GSDML-V2.43-Hyundai-Robotics-HI6-20251127.xml”를 선택하고 [Install] 버튼을 누른다.
 5) 하드웨어 카탈로그에 새로운 장치로 등록되었는지 확인한다. <br>
 ![](../../../_assets/safetyio_profisafe/profisafe_gsdmal.png)
 
@@ -97,7 +97,7 @@
 11) 아래에서 General 탭으로 이동
 12) 왼쪽 메뉴에서 Ethernet addresses 선택
 13) “Generate PROFINET device name automatically.” 부분 체크 해제
-14) "PROFINET device name"을 "hd-hrc-0"로 설정하고 저장함.<br>
+14) "PROFINET device name"을 "hd-hrc-hi7"로 설정하고 저장함.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network4.png)
 
 #### 4.3.2 PROFIsafe 설정
@@ -105,16 +105,16 @@
 2) 오른쪽 "Device Overview" 화면에서 PROFIsafe 슬롯을 선택한다.
 3) 아래쪽 화면에서 PROFIsafe 통신설정 화면이 나타남.
 4) PROFIsafe 탭을 클릭
-5) F_Dest_Add을 1로 설정
-
+5) F_Dest_Add을 1로 설정<br>
+![](../../../_assets/safetyio_profisafe/profisafe_device_network5.png)
 
 ### 4.4 Hi7 설정 (TP UI)
 #### 4.4.1 PROFINET 설정
 1) F-Host에서 설정했던 값과 같은 아래의 값으로 파라미터 설정
-- PROFINET IO Device Name : hd-hrc-0
+- PROFINET IO Device Name : hd-hrc-hi7
 - Slot 1 : Digital Input : 240
 - Slot 2 : Digital Output : 240
-- Slot 3 : Safety I/O : Yes
+- Slot 3 : Safety I/O : 선택
 - (IP주소는 변경 필요 없음.)
 2) "적용" 버튼을 누른다.<br>
 ![](../../../_assets/safetyio_profisafe/4_1_profinet_config.png)
