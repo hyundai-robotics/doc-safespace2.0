@@ -19,11 +19,6 @@
 <em><p align="center">안전 신호 할당 설정 화면</p></em>
 </p>
 
-<p align="center">
-<img src="../../../_assets/safety_io/io_alloc_param2.png"></img>
-<em><p align="center">안전 신호 추가 할당 세부 설정 화면</p></em>
-</p>
-
 
 {% hint style="warning" %}
 * 개별 입력 기능 항목은 단 하나의 입력채널과 연결할 수 있습니다.<br>
