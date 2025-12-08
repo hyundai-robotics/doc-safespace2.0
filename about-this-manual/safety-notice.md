@@ -5,7 +5,7 @@ Um die ordnungsgemäße Verwendung des Produkts und die Sicherheit der Anwender 
 ### <mark style="color:green;">Gefahr</mark>
 
 {% hint style="danger" %}
-\[Gefahr] Unmittelbare Gefahr*: Die Nichtbeachtung dieses Hinweises kann zum Tod oder zu schweren Verletzungen des Arbeiters führen.
+**\[Gefahr] Unmittelbare Gefahr**: Die Nichtbeachtung dieses Hinweises kann zum Tod oder zu schweren Verletzungen des Arbeiters führen.
 {% endhint %}
 
 * Führen Sie eine Risikobewertung für das gesamte System durch, nicht nur für einzelne Geräte. Der Anschluss anderer Geräte an das Produkt kann das Risiko des Produkts erhöhen oder neue Risiken schaffen. Wenn jedes Gerät im Roboterintegrationssystem unterschiedliche Risikostufen aufweist, bereiten Sie Sicherheitsvorrichtungen auf der Grundlage des Geräts mit der höchsten Risikostufe vor, um für Gefahren gewappnet zu sein.
@@ -15,7 +15,7 @@ Um die ordnungsgemäße Verwendung des Produkts und die Sicherheit der Anwender 
 ### <mark style="color:green;">Warnung</mark>
 
 {% hint style="warning" %}
-\[Warnung] Mögliche Gefahr*: Die Nichtbeachtung dieses Hinweises kann zu Verletzungen des Arbeiters oder zu schweren Schäden am Produkt und damit zu Sachschäden führen.
+**\[Warnung] Mögliche Gefahr**: Die Nichtbeachtung dieses Hinweises kann zu Verletzungen des Arbeiters oder zu schweren Schäden am Produkt und damit zu Sachschäden führen.
 {% endhint %}
 
 * Treffen Sie entsprechend den Ergebnissen der Risikobewertung geeignete Sicherheitsmaßnahmen und legen Sie den Sicherheitsbereich für den Roboter genau fest. Während des Betriebs des Roboters kann es zu Beschädigungen des Produkts oder zu Verletzungen des Anwenders kommen.

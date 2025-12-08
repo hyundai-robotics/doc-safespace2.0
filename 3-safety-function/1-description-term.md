@@ -87,3 +87,22 @@ Stopp 1 und Stopp 2 überwachen den Verzögerungsvorgang anhand der Verzögerung
 * **Stoppweg**
 
 Überwacht den TCP-Weg vom Beginn der Verzögerung bis zum tatsächlichen Stillstand. Wenn der Roboter nicht innerhalb des festgelegten Weges zum Stillstand kommt, wird „Stopp 0” ausgeführt, um die Motoren sofort vom Stromnetz zu trennen.
+
+
+
+### <mark style="color:green;">Sichere Bewegungsoptimierung</mark>&#xD;
+
+Diese Funktion passt die Roboterbewegung automatisch an, um ein Überschreiten der eingegebenen Parameter zu vermeiden.
+Folgende Parameter werden bei der Bewegungsoptimierung berücksichtigt:
+
+* **Gelenkgeschwindigkeit**
+
+* **TCP-Geschwindigkeit**
+
+* **Leistung**
+
+* **Impuls**
+
+* **Stoppzeit**
+
+* **Stoppweg**

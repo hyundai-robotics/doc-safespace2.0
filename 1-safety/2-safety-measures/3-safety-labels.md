@@ -51,9 +51,9 @@ An der Innen- und Außenseite der Steuerung sind Typenschilder, Warnkennzeichnun
 ![!Koreanischer Aufkleber / Englischer Aufkleber](../../_assets/image42.jpeg)
 
 {% hint style="warning" %}
-\[Warnung]*: Bitte verändern Sie nicht die Position von Typenschildern, Warnmarkierungen, Sicherheitssymbolen, Namensmarkierungen, Kabelmarkierungen usw., die an der Steuerung angebracht sind, und decken Sie diese nicht mit Farbe oder Abdeckungen ab. Jede Handlung, die die Sicherheitsaufkleber beschädigt, ist untersagt.
+**\[Warnung]**: Bitte verändern Sie nicht die Position von Typenschildern, Warnmarkierungen, Sicherheitssymbolen, Namensmarkierungen, Kabelmarkierungen usw., die an der Steuerung angebracht sind, und decken Sie diese nicht mit Farbe oder Abdeckungen ab. Jede Handlung, die die Sicherheitsaufkleber beschädigt, ist untersagt.
 {% endhint %}
 
 {% hint style="warning" %}
-*\[Achtung]*: Der Installationsbereich und die Gefahrenzone des Roboters sollten durch unterschiedliche Formen, Farben und Stile deutlich von anderen Einrichtungen und Geräten abgegrenzt werden.
+**\[Achtung]**: Der Installationsbereich und die Gefahrenzone des Roboters sollten durch unterschiedliche Formen, Farben und Stile deutlich von anderen Einrichtungen und Geräten abgegrenzt werden.
 {% endhint %}

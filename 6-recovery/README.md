@@ -4,5 +4,5 @@ Fehler, die durch Verstöße gegen die Sicherheitsfunktionsüberwachung verursac
 
 
 {% hint style="warning" %}
-*\[Achtung]**: Überprüfen Sie nach der Wiederherstellung im Handbetriebsmodus die Einstellungen der Sicherheitsfunktion und die Teach-Positionen des Arbeitsprogramms erneut.
+**\[Achtung]**: Überprüfen Sie nach der Wiederherstellung im Handbetriebsmodus die Einstellungen der Sicherheitsfunktion und die Teach-Positionen des Arbeitsprogramms erneut.
 {% endhint %}

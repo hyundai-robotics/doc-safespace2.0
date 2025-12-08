@@ -1,3 +1,3 @@
 # 7. Fehlermeldungen
 
-Folgende Fehlermeldungen zur Sicherheitsfunktion können auftreten:
+Wenn ein Alarm im Zusammenhang mit einer Sicherheitsfunktion auftritt, lesen Sie bitte den Abschnitt „[**Hilfe zu Fehlern und Warnungen**](https://hr-alarms.web.app/#/)“.

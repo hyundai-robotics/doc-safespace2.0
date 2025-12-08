@@ -5,11 +5,11 @@ Eine Robotergeschwindigkeitsverletzung tritt auf, wenn die Geschwindigkeit des R
 1. Stellen Sie den Betriebsartenschalter auf „Manuell”, um in den Handbetrieb zu wechseln.
 
 
-2.  안전 상태 모니터링 화면에서 각 영역의 상태가 **2. Überprüfen Sie im Bildschirm zur Überwachung des Sicherheitsstatus, ob der Status jeder Zone als „SAFE“ angezeigt wird.**로 나타나는지 확인하십시오.
+2. Überprüfen Sie im Bildschirm zur Überwachung des Sicherheitsstatus, ob der Status jeder Zone als **SAFE** angezeigt wird.
 
 
 {% hint style="warning" %}
-*[Achtung]**
+**[Achtung]**
 
 * Überprüfen Sie nach dem Beheben des Fehlers unbedingt die geschwindigkeitsbezogenen Sicherheitsparameter und die Geschwindigkeit des Arbeitsprogramms.
 {% endhint %}
