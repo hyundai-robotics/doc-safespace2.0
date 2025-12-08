@@ -1,11 +1,8 @@
-﻿# 1.2.3 Emergency stop
+# 1.2.4 Emergency Stop
 
-The emergency stop function is actuated in an emergency where a worker or object enters a hazard area. All the emergency stop switches are installed at places easily accessible from outside the safety areas.
+The emergency stop function operates in emergencies or emergency situations such as when a worker or other object enters a danger area. All emergency stop switches are installed in locations that are easily accessible even from outside the safety area.
 
-When the emergency stop function is actuated, the robot will immediately stop moving in any case.
+When the emergency stop function is executed, the robot immediately stops the operation in any case.
 
-
-*   The servo system power of the robot will be cut off, and the motor brake will be actuated.
-
-
-*   On the teach pendant screen, an emergency stop message will appear.
+* The robot servo system power is cut off and the motor brake operates.
+* The teach pendant screen displays an emergency stop message.

@@ -1,5 +1,5 @@
-﻿# 3.3 Safety functions
+# 3.3 Safety Functions
 
 
-The Safety functions of SafeSpace2.0 can be configured through the settings of the safety parameters. It is used as a response to selected risks in risk assessments conducted by operator.
+SafeSpace2.0 safety functions can be configured through safety function settings and are used as risk countermeasures selected in the risk assessment performed by the worker.
 

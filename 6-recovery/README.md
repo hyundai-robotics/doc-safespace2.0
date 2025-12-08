@@ -1,8 +1,8 @@
-﻿# 6. Recovery
+# 6. Recovery
 
- In manual mode, you can clear errors that occur because of the safety function violations during monitoring. Because position detection is disabled in manual mode, you can drive the robot and adjust its angle and position without violating the safety functions.
+Errors caused due to safety function monitoring violations are cleared when switching to manual mode. In manual mode, safety function violations do not stop the robot, so, you can adjust the robot's angle and position to move it to a safe area.
 
 
 {% hint style="warning" %}
-**\[Caution]**: After clearing the violation, recheck the safety layout setting and the teaching position of the operating program.
+**\[Caution]**: After recovery in manual mode, recheck the safety function settings and teaching positions of the work program.
 {% endhint %}

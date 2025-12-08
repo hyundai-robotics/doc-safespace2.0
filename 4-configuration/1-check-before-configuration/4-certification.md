@@ -1,22 +1,26 @@
-﻿# 4.1.4 Certification
+# 4.1.4 Certificate Issuance
 
-Safety parameters are protected by the certificate; for the security of the stored safety parameters, you must first issue a certificate. A system password is required to verify, delete, and issue authentication status.
+Safety parameters are protected through certificates. To secure saved safety parameters, you should first obtain a certificate.
+A system password is required to check the status of certificate, and delete and issue it.
 
-1. **\[System]** button > **\[4: Application parameter > 18: SafeSpace2.0 > Certificate file]**
+1. Tap the **\[System > 8: Safety System 4: Certificate]** menu.
 
-![](../../_assets/4/4-1-4-1.png)
+<p align="center">
+<img src="../../_assets/4/certificate.png"></img>
+<em><p align="center">Safety feature certificate settings screen</p></em>
+</p>
 
-* Verify certificate status
-  Touch the **\[Confirmation]** button.
-  Enter the system password.
-  check the result.
+* Check the certificate status
+**\[Check]** Touch the button.
+Enter the system password.
+Check the result.
 
-* Issue certificate file
-  Touch the **\[Issue]** button.
-  Enter the system password.
-  check the result.
+* Issue a certificate.
+**\[Issue]** Touch the button.
+Enter the system password.
+Check the result.
 
-* Discard certificate file
-  Touch the **\[Discard]** button.
-  Enter the system password.
-  check the result.
+* Discard certificate.
+**\[Discard]** Touch the button.
+Enter the system password.
+Check the result.

@@ -1,2 +1,2 @@
-﻿# 1.1 Safety requirements
+# 1.1 Safety Requirements
 

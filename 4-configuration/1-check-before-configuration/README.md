@@ -1,2 +1,2 @@
-﻿# 4.1 Check before setting the safety functions
+# 4.1 Items to Check Before Using Safety Functions
 

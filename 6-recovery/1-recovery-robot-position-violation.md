@@ -1,19 +1,19 @@
-﻿# 6.1	Recovery in case of robot position violations
+# 6.1 	Recovery from Robot Position Violation
 
-Robot position violations are situations in which the robot’s position exceeds a safety space, and these include TCP position, TCP orientation, and joint monitoring violations. When a robot position violation occurs, you can only clear the error by moving the robot’s physical position.
+Robot position violation occurs when the robot's position leaves the safety area, and the violations include TCP position violation, TCP orientation violation, and joint monitoring violation. In case of robot position violation, the error can only be cleared by physically moving the robot to change its position.
 
-1.  Change the mode switch to manual mode.
-
-
-2.  Turn on the motor by using the enabling switch on the teach pendant.
+1. Change the mode switch to manual to enter manual mode.
 
 
-3.  Use the teaching device to move the robot back to a safety space.
+2. Use the enabling switch on the teach pendant to turn on the motor.
 
 
-4.  On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
+3. Use the teach pendant to move the robot to a safe area.
+
+
+4.  In the safety status monitoring screen, verify that the status of each area is displayed as **SAFE**.
 
 
 {% hint style="warning" %}
-**\[Caution]**: After clearing the violation, recheck the safety layout setting and the teaching position of the operating program.
+After clearing the error, recheck the safety layout settings and also the teaching positions in the work program.
 {% endhint %}

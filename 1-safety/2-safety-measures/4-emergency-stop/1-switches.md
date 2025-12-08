@@ -1,3 +1,3 @@
-﻿# 1.2.3.1 Emergency stop switches
+# 1.2.4.1 Emergency Stop Switch
 
-emergency stop switches are installed at the controller and the teach pendant. In case of an emergency, press the emergency stop switch.
+There is one emergency stop switch installed on the controller and one on the teach pendant. Press the emergency stop switch in case of an emergency.

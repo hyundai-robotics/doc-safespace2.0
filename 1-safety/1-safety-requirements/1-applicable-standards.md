@@ -1,6 +1,6 @@
-﻿# 1.1.1 Applicable standards
+# 1.1.1 Applicable Standards
 
-This product has been designed and manufactured in compliance with ISO 10218-1, a safety standard of industrial robots, and ISO/TS 15066, a standard specifying safety requirements for collaborative operation. The safety standards applicable to this product are as follows:
+This product has been designed and manufactured in accordance with the industrial robot safety standard ISO 10218-1 and the technical specification ISO/TS 15066 for collaborative operation. The safety standards applied to this product are as follows.
 
 * ISO 10218-1:2011 Robots and robotic devices - Safety requirements for industrial robots - Part 1: Robots
 * ISO 10218-2:2011 Robots and robotic devices - Safety requirements for industrial robots - Part 2: Robot systems and integration

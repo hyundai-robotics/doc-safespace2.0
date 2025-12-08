@@ -1,60 +1,59 @@
-﻿# 1.2.3 Safety labels
+# 1.2.3 Safety Labels
 
-On the inside and outside of the controller, nameplates, warning signs, safety symbols, and the like are attached. Check the labels to ensure safety.
+Nameplates, warning marks, and safety symbols are attached to the inside and outside of the controller. Check the attached labels to ensure safety.
 
-![그림 1 안전 레이블 부착 위치: 전면과 윗면(좌) / 뒷면(우)](../../_assets/safety\_labels\_1.png)
+![!Figure 1 Safety Label Attachment Position: Front and Top (Left) / Back (Right)](../../_assets/safety\_labels\_1.png)
 
-![그림 2 안전 레이블 부착 위치: 외측면(좌) / 내측면(우)](../../_assets/safety\_labels\_2.png)
+![!Figure 2 Safety Label Attachment Position: Outer Side (Left) / Inner Side (Right)](../../_assets/safety\_labels\_2.png)
 
-#### ![](../../_assets/1.png) 전원 및 접지 연결 주의 사항
+#### ![](../../_assets/1.png) Precautions for power and ground connection
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_27.png>)
+![!Korean label (left) / English label (right)](<../../_assets/image_27.png>)
 
-#### ![](../../_assets/2.png) 고전압 표시
+#### ![](../../_assets/2.png) High voltage mark
 
-![국문 레이블 / 영문 레이블](<../../_assets/image_29.png>)
+![!Korean label / English label](<../../_assets/image_29.png>)
 
-#### ![](../../_assets/3.png) 입력 전원 표시
+#### ![](../../_assets/3.png) Input power mark
 
-![국문 레이블 / 영문 레이블](<../../_assets/image_25.png>)
+![!Korean label / English label](<../../_assets/image_25.png>)
 
-#### ![](../../_assets/4.png)공기 순환구 주의 사항
+#### ![](../../_assets/4.png)Air circulation precautions
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_11.png>)
+![!Korean label (left) / English label (right)](<../../_assets/image_11.png>)
 
-#### ![](../../_assets/5.png)NRTL 인증 마크
+#### ![](../../_assets/5.png)NRTL certification mark
 
-![국문 레이블 / 영문 레이블](../../_assets/image26.png)
+![!Korean label / English label](../../_assets/image26.png)
 
-#### ![](../../_assets/6.png)명판
+#### ![](../../_assets/6.png)Nameplate
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_30.png>)
+![!Korean label (left) / English label (right)](<../../_assets/image_30.png>)
 
-#### ![](../../_assets/7.png)고전압 경고
+#### ![](../../_assets/7.png)High voltage warning
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_10.png>)
+![!Korean label (left) / English label (right)](<../../_assets/image_10.png>)
 
-#### ![](../../_assets/8.png)설치 주의 사항
+#### ![](../../_assets/8.png)Installation precautions
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_32.png>)
+![!Korean label (left) / English label (right)](<../../_assets/image_32.png>)
 
-#### ![](../../_assets/9.png)기능 안전 인증 마크
+#### ![](../../_assets/9.png)Functional safety certification mark
 
-![국문 레이블 / 영문 레이블](../../_assets/image37.png)
+![!Korean label / English label](../../_assets/image37.png)
 
-#### ![](../../_assets/10.png)접지선 연결 주의 사항
+#### ![](../../_assets/10.png)Ground wire connection precautions
 
-![국문 레이블 (좌) / 영문 레이블 (우)](<../../_assets/image_19.png>)
+![!Korean label (left) / English label (right)](<../../_assets/image_19.png>)
 
-#### ![](../../_assets/11.png)접지 표시
+#### ![](../../_assets/11.png)Ground mark
 
-![국문 레이블 / 영문 레이블](../../_assets/image42.jpeg)
+![!Korean label / English label](../../_assets/image42.jpeg)
 
 {% hint style="warning" %}
-**\[Warning]** : Never engage in behaviors that damage safety labels, such as moving the position of the nameplate, warning signs, safety symbols, nomenclature markings, cable markings, and the like attached to the controller. In addition, do not hide these labels by putting paint or covers.
+**\[Warning]** : Do not move the position of nameplates, warning marks, safety symbols, name marks, wire marks, etc. attached to the controller, or cover them with paint or covers. Any action that damages the safety labels is prohibited.
 {% endhint %}
 
 {% hint style="warning" %}
-**\[Caution]** : Indicate the robot installation areas and hazard areas with distinct shapes, colors, or styles so that they are clearly distinguished from other facilities and equipment.
+**\[Caution]** : The installation area and danger area of the robot should be clearly distinguished from other facilities and equipment by making them different in shape, color, and style.
 {% endhint %}
-

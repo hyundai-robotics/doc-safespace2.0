@@ -1,95 +1,48 @@
-﻿# Safety precautions
+# Safety Precautions
 
-To ensure proper product use and user safety and to prevent property damages, make sure to read and fully understand the following precautions before using the product.
+To ensure proper use of the product and user safety and prevent property damage, be sure to familiarize yourself with the following safety precautions before using the product.
 
 ### <mark style="color:green;">Danger</mark>
 
 {% hint style="danger" %}
-**\[Danger] impending risk**: If not conformed to, operator deaths or severe injuries may occur.
+**\[Danger] Imminent hazard**: Failure to comply may result in death or serious injury to workers.
 {% endhint %}
 
-*   Perform a risk assessment on the entire system, not the individual devices. Connecting other devices to the product may increase the risk level of the product or create new risks. If the devices of the integrated robot system have different risk levels, prepare safety devices based on the device with the highest risk level in preparedness for risks.
-
-
-*   In installing the robot product and other devices, make sure to read, fully understand, and conform to the product installation instructions described in the manual.
-
-
-*   In case of any issues of the product, such as faults and damages, stop using the product immediately and contact our Customer Support Team.
-
-
+* Conduct a risk assessment for the entire system, not individual devices. Connecting other devices to the product may increase the risk of the product or create new risks. When each device in the integrated robot system has a different risk level, prepare safety devices based on the device with the highest risk level to prepare for danger.
+* Familiarize yourself with the product installation content described in the manual and install the robot product and other devices in compliance with the instructions.
+* If a problem such as a product failure or damage occurs, immediately stop using it and contact the customer support team.
 
 ### <mark style="color:green;">Warning</mark>
 
 {% hint style="warning" %}
-**\[Warning] Potential risk**: If not conformed to, operator injuries or property damages, including serious product damages, may occur.
+\[Warning] Potential hazard*: If not observed, the worker may be injured or the product may be severely damaged, resulting in property damage. Failure to comply may result in injury to workers, serious damage to products, or property damage.
 {% endhint %}
 
-*   Take adequate safety measures according to the result of risk assessment, and accurately assign the safe range of robot installation. During the robot operation, product damages or user injuries may occur.
-
-
-*   Persons who manufacture robot application systems or use the robot must read and fully understand the manual and undergo training in robot operation.
-
-
-*   For the safety of operators and users, prepare adequate safety facilities such as safety fences before installing the product.
-
-
-*   Secure sufficient space so that the robot arm can move freely. During the robot operation, product damages or user injuries may occur.
-
-    Fasten locking bolts to the specified torque according to the specification sheet. Loose bolts may lead to damages of the robot because of falling from the installation position.
-
-
-*   Pay attention to the product connections (power and cables) so that no conductive substances, such as liquid, dust, and metal particles, could infiltrate. Do not poke the connection with sharp objects or apply excessive force during cable connection. Corrosion or temporary short circuits of connectors may lead to product explosion or fires.
-
-
-*   Check the wiring specification and connect devices with terminals that are suitable for the device types. Make sure to connect safety devices to dedicated terminals because connecting them to general terminals does not guarantee safety functions.
-
-
-*   Never use damaged cables and do not disconnect cables while the product is in use. Doing so may lead to electric shocks, fires, faults, and injuries.
-
-
-*   Long-time use of the product may lead to overheating and cause injuries such as burns. In the event it is necessary to touch the product, cool down the product sufficiently by powering it off and leaving it for at least one hour.
-
-
-*   Never arbitrarily install, modify, disassemble, or repair the product. This may lead to faults and accidents. Hyundai Robotics will not take responsibility for product damages caused by such arbitrary actions.
-
-
+* Take appropriate safety measures according to the risk assessment results and accurately designate the robot safety installation range. Otherwise, the product may be damaged or the user may be injured while the robot is operating.
+* The robot application system manufacturers and robot users should familiarize themselves with the manual’s contents and complete the product operation training.
+* For the safety of workers and users, be sure to prepare appropriate safety facilities such as safety fences before installing the product.
+* Secure sufficient space so that the robot arm can move freely. If installation space is not sufficient, the product may be damaged or the user may be injured while the robot is operating.
+* Check the specification information and use appropriate fixing screws and tighten them with specified torque. If screws are loose, the robot may separate from the installation location and fall or be damaged.
+* Be careful not to allow liquids, dust, metal powder, or other conductive foreign substances enter the product's connections (power and cables). Also, do not stab the connections with sharp objects or apply excessive force when connecting cables. Otherwise, the product may explode or catch fire due to corrosion or temporary short circuit of connection terminals.
+* Check the wiring information and connect devices using appropriate terminals by device type. In particular, safety devices must be connected to safety device terminals as connecting them to general-purpose terminals cannot guarantee safety functions.
+* Never use damaged cables and do not disconnect power while using the product. Otherwise, electric shock, fire, failure, or injury may be caused.
+* Using the product for a long time generates heat, which poses a risk of injury such as burns. When you need to touch the product after prolonged use, turn off the power and leave it in that state for more than 1 hour to sufficiently cool it down before working.
+* Never install, modify, disassemble, or repair the product without authorization. Otherwise, failure and accidents may be caused. Also, we are not responsible for damage and breakage of the product resulting from this.
 
 ### <mark style="color:green;">Caution</mark>
 
 {% hint style="warning" %}
-**\[Caution] Minor risk**: If not conformed to, minor operator injuries or property damages, including product damages, may occur.
+**\[Caution] Low-risk factors**: Failure to comply may result in minor injury to workers or property damage, including product damage
 {% endhint %}
 
-*   Do not arbitrarily install, modify, disassemble, or repair the product. It is prohibited for persons other than experts from Hyundai Robotics to modify or attach parts to the product. Product faults caused by it will void free-of-charge services and warranty services.
-
-
-*   In the event it is necessary to install or repair the product, contact our Customer Support Team to consign the work to experts.
-
-
-*   Do not install or use the product at a place filled with dust or dirt. Dust or foreign matters may lead to product faults or malfunctions.
-
-
-*   Do not install or use the product at a place of magnetism, a place which is affected by magnetism, or a place of electromagnetic interferences. Magnetism may lead to product damages or malfunction.
-
-
-*   In operating the product, do not wear loose clothes or accessories. If you have long hair, you should tie it at the back of your head so it will not entangle between joints and the like of the robot.
-
-
-*   While the product is in operation, do not enter its operating range or touch the robot. Doing so may lead to injuries.
-
-
-*   Transport the product as it is packaged to prevent product damages, and store it at a dry and low-humidity place. Storing it at a humid place may lead to product damages or faults caused by moisture infiltration.
-
-
-*   Store the product at a place that is clean, cool, dry, and free from high variation in temperature and humidity.
-
-
-*   The product should be moved by two or more persons, and the correct posture should be maintained. If not, the persons may be subject to physical injuries in the waist, arms, legs, and the like.
-
-
-*   In moving the product using lifting equipment, conform to the local and national safety regulations and the instructions for equipment use.
-
-
-*   Before moving the product, read and conform to the moving instructions specified in the manual. Hyundai Robotics will not take responsibility for product damages caused during transportation by the customer.
-
-
+* Do not install, modify, disassemble, or repair the product without authorization. Also, it is prohibited for anyone other than our experts to modify the product or attach parts without authorization. Otherwise, in case of product failure, you cannot receive free service or quality assurance service.
+* When installing and repairing the product, contact the customer support team to request an expert.
+* Do not install and use the product in dusty or dirty places. Otherwise, the product may fail or have a performance problem due to dust or foreign substances.
+* Do not install and use the product in magnetic places, places affected by magnetism, or places with electromagnetic interference. Otherwise, the product may be damaged or have a performance problem due to magnetism.
+* When operating the product, do not wear loose clothing or jewelry, and if you have long hair, tie it back to avoid getting the hair caught in the robot's joints, etc.
+* Do not enter the operating range or touch the robot while the product is operating. There is a risk of injury.
+* Transport the product in its packaged state to avoid damage and store it in a dry location with low humidity. The product may be damaged or fail due to moisture inside the packaging material.
+* Store the product in a clean, cool, and dry place, avoiding places where temperature and humidity change easily.
+* When transporting the product, maintain proper posture and work with two or more people. You may suffer injuries to body parts such as your waist, arms, or legs.
+* When transporting the product using lifting equipment, comply with the safety regulations and equipment usage guidelines of the relevant country and region.
+* Familiarize yourself with the transport content in the manual and transport the product in compliance with the instructions. We are not responsible for damage and breakage of the product caused by the customer transporting the product.

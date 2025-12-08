@@ -1,12 +1,12 @@
-# 1.6 Reaction time
+# 1.6 Response Time
 
 
-*   **Stopping Reaction time**
+* **Stop Response Time**
 
-    When a Safety function violation is triggered, the reaction time until a stop is 9.8 ms. The response time should be taken into account when calculating the robot's stopping time and stopping distance."
+The response time to be taken from safety function violation to stop execution is 9.8 ms. The response time should be reflected when calculating the robot's stop time and stop distance.
 
-*   **PROFIsafe Reaction time**
-	
-	When an external stop is triggered via PROFIsafe, the reaction time until a stop is 40.8 ms. To obtain the time until the robot completely stop, the communication cycle, as well as the calculated values for the robot's stopping time and stopping distance, need to be added.
+* **PROFIsafe Response Time**
+
+The response time to be taken from stop execution by PROFIsafe F-output data is 40.8 ms. To get the time until the robot completely stops, the communication cycle and the robot's stop time and stop distance calculation values should be added.
 
 ****

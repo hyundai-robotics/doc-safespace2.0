@@ -1,2 +1,2 @@
-﻿# 1. Safety
+# 1. Safety
 

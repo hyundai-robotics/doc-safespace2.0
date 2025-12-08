@@ -1,18 +1,21 @@
-# 2.1 Robot system
+﻿# 2.1 로봇 시스템
 
-Industrial robots are “machines that are equipped with manipulation and movement functions based on automatic control for them to perform various works by using programs at an industrial site.” The collaborative robot is a type of industrial robot.
+An industrial robot is a machine equipped with automatic control, manipulation, and movement functions, capable of executing various tasks programmed in industrial settings. Collaborative robots are a type of industrial robot.
 
-The robot system consists of a manipulator and a controller that controls the manipulator. A teach pendant that is to be used for setting and manually operating the robot system is attached to the controller.
+A robot system consists of a robot body and a controller that controls the body. A teach pendant is attached to the controller, which allows for setup and manual operation of the robot system.
 
-* Robot: Performs various works in industrial sites such as transporting objects, assembling parts, etc.
-* Controller: Adjusts the robot’s operation according to the program setting values set through the teach pendant. It can be interoperated with various external equipment or devices through the input/output port of the controller. 
-* Teach Pendant: A device that manages the entire robot system. It enables you to teach the robot a specific posture or setup and control the programs.
+* Robots: Perform various tasks in industrial settings, such as transporting objects or assembling parts.
+* Controller: Coordinates the robot's movements according to program settings set via the teach pendant. The controller's input/output ports can be used to interface with various external equipment or devices.
+* Teach Pendant: This device manages the entire robot system. It can be used to teach the robot specific postures or to set and control programs.
 
-The following shows an example of the basic configuration of the robot system.
+Examples of basic robot system configurations, depending on the robot type, are as follows:
 
-![Basic Configuration of the Vertical Articulated Robot System ](../_assets/image_285.png)
 
+![Basic configuration of a vertical multi-joint robot system](../_assets/image_6.png)
 
 {% hint style="info" %}
-For more details on teach pendant, see “[Operation Manual for Hi6 Controllers.](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/english-tp630/1-robot-system/README)”
+For more information about the robot system, please refer to the “[**Hi6 Controller Operating Instructions**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/1-robot-system/README)”.
 {% endhint %}
+
+
+

@@ -1,3 +1,3 @@
-﻿# 2.3 Additional safety I/O module(option)
+# 2.2 I/O Module (Option)
 
-The additional safety I/O module is installed and shipped inside the controller in the form of a board, refer to the controller maintenance manual if the board needs to be replaced.
+When you select to use the I/O option module, it is shipped mounted inside the controller. When board replacement is required, refer to the controller maintenance manual.

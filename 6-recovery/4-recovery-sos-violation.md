@@ -1,20 +1,20 @@
-﻿# 6.4	Recovery in cases of safe operating stop (SOS) violations
+# 6.4 	Recovery from Safe Operating Stop (SOS) Violation
 
-SOS violations are situations in which the robot’s motion is detected while its motor is on and is supposed to be in a stop state. Because the robot detects the instantaneous speed in the case of robot speed violations, you can clear the error without moving the robot’s position.
+Safe Operating Stop (SOS) violation occurs when movement is detected while the robot motor is on and in a stopped state. In case of safe operating stop violation, the robot detects momentary movement and generates an error, so the error can be cleared without moving the robot's position.
 
-1.  Change the mode switch to manual mode.
-
-
-2.  Remove the external factor that is applying force on the robot.
+1. Change the mode switch to manual to enter manual mode.
 
 
-3.  On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
+2. Remove external factors that apply force to the robot.
+
+
+3. In the safety status monitoring screen, verify that the status of each area is displayed as **SAFE**.
 
 
 {% hint style="warning" %}
 **[Caution]**
 
-* After clearing the violation, recheck the SOS parameters.
-* Turn on the motor in the automatic mode and check if the error does not persist.
-* If the same error recurs, check the motor and reducer of the pertaining axis.
+* After clearing the error, check the safe operating stop monitoring parameters.
+* Turn on the motor in auto mode and check whether the error recurs.
+* If the same error occurs again, inspect the motor and reducer of the corresponding axis.
 {% endhint %}

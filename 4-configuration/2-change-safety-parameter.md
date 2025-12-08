@@ -1,20 +1,33 @@
-﻿# 4.2 Change safety parameter
+# 4.2 Safety Parameter Transfer
 
-Modify the safety parameter values and apply them to the system. Values that have not been applied will be initialized when the setting screen changes.
+You can edit safety parameter values ​​and apply them to the system. Any values ​​that haven't been transferred will be reset when you exit the settings screen.
 
-1. **\[System]** button > **\[4: Application parameter > 18: SafeSpace2.0 > Parameter setup]**, touch the menu.
+1. Go to **\[System > 8: Safety System]** and select the menu you want to change.
 
-![](../_assets/4/4-1-5-1.png)
+<p align="center">
+<img src="../_assets/4/apply_param_1.png"></img>
+<em><p align="center">Example of entering the safety parameter setting screen</p></em>
+</p>
 
-2. Press the page button to navigate to the page where you want to change the parameters. If you do not touch the **\[OK]** button, the changed parameters will be initialized when you move to another page.
-3. Modify the parameter values and touch the **\[OK]** button, which temporarily saves the parameters on the page.
+2. If you have multiple pages, navigate to the page you wish to edit. The values ​​entered on each page are temporarily saved. (If you exit the menu without clicking "Apply to All," the changes will not be reflected.)
 
-* Check the modified values on the page and touch the **\[Appky all]** button.
+3. Enter the desired values ​​and click the **\[Apply to All]** button.
 
-![](../_assets/4/4-1-5-2.png)
+<p align="center">
+<img src="../_assets/4/apply_param_2.png"></img>
+<em><p align="center">Safety parameter setting example</p></em>
+</p>
 
-* Pages not pressed **\[OK]** button will not reflected. Please check the message and proceed.
+4. Enter the password set in the system.
 
-* Enter **\[System password]** to verify the results.
+<p align="center">
+<img src="../_assets/4/apply_param_3.png"></img>
+<em><p align="center">Password input screen</p></em>
+</p>
 
-![](../_assets/4/4-1-5-3.png) ![](../_assets/4/4-1-5-4.png)
+5. If you enter the correct password, the parameters will be transmitted. Check the transmission results.
+
+<p align="center">
+<img src="../_assets/4/apply_param_4.png"></img>
+<em><p align="center">Output screen when transmission is successful</p></em>
+</p>

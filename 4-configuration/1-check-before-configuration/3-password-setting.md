@@ -1,15 +1,18 @@
-﻿# 4.1.3 Setting of password
+# 4.1.3 Password Setting
 
-The parameters of the safety function must be set and managed by the designated person in charge. Users designated as administrators are given administrator privileges and passwords to set up the system. The password for setting up the system is mandatory when setting safety function parameters, and if the password is incorrect, it cannot be set by changing the parameters.
+The safety function parameters must be set and managed by a designated person. Users designated as administrators are granted administrator privileges and a system setting password. The system setting password is a required input item when setting the safety function parameters, and the parameters cannot be changed or set if the password is incorrect.
 
-1. Push the **\[System]** button and enter the > **\[5: Initialize > 11: System password setting]** menu. The password setting window will pop up.
-2. After enter the password, touch the **\[OK]** button.
+1. Tap the **\[System > 5: Reset > 11: Set System Password]** menu. The password setting window will appear.
+2. Enter the password and touch the **\[OK]** button.
 
-![](../../_assets/4/4-1-3-1.png)
+<p align="center">
+<img src="../../_assets/4/input_password.png"></img>
+<em><p align="center">Password setting screen</p></em>
+</p>
 
-* When setting the parameters of the safety function, you must enter the system setup password to save the changes.
+* When setting then safety function parameters, you must enter the system setting password to save changes.
 
 {% hint style="warning" %}
-* It is recommended that the password be set to at least 4 characters.
-* If you lose your password, contact your engineer.
+* It is recommended to set the password with 4 or more characters.
+* If you lose your password, contact an engineer.
 {% endhint %}

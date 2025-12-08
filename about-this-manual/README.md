@@ -1,18 +1,18 @@
-﻿# About this manual
+# About This Manual
 
-This manual describes  the safety, installation, use, and maintenance methods of SafeSpace2.0 manufactured by Hyundai Robotics.
+This manual describes safety, installation, use, and maintenance methods for Hyundai Robotics SafeSpace2.0.
 
-Before using the product, read and fully understand the contents of this manual. In addition, keep this manual in an accessible place so that it can be read any time when necessary.
+Be sure to fully familiarize yourself with the contents of the manual before using the product. Also, keep the manual in a nearby location so you can refer to it whenever needed.
 
-This manual may be provided to customers who purchase products of Hyundai Robotics or may be used as material for internal training programs.
+This manual may be provided to customers who purchase Hyundai Robotics products for reference or as internal training materials for education.
 
-As this manual has been prepared based on standard specifications, it may not apply equally to all models. In addition, the details and specifications of this manual are subject to changes for improving product performance without notice, and Hyundai Robotics will not take responsibility for any consequences of incorrect details, typos, or omissions of this manual. For detailed information on revisions, please visit our website ([www.hyundai-robotics.com](https://www.hyundai-robotics.com)).
+This manual is written based on standard specifications, so some contents may differ depending on the model of the product you purchased. Also, the contents and specifications of this manual may be changed without notice to improve product performance, and Hyundai Robotics is not responsible for situations caused by inaccurate content or typographical errors. For detailed information on revisions, please visit our website ([www.hyundai-robotics.com](https://www.hyundai-robotics.com)).
 
-Products covered by this manual are :
+The products to which this manual applies are as follows:
 
 |     **Item**    |  **Name** | **Version** |
 | :-----------: | :-----: | :----: |
-|     Teach pendant     |  TP630  |  V1.0  |
-|      Controller      |  Hi6a  |  V1.0  |
-| Safety control board |  BD642A  |  V04  |
-| PROFIsafe communication board |  BD671  |  V2  |
+| Teach Pendant | TP630 | V1.0 |
+| Controller | Hi6a | V1.0 |
+| Safety Control Module | BD642A | V04 |
+| PROFIsafe Communication Board | BD671 | V2 |

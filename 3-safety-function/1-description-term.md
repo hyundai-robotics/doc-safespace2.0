@@ -1,106 +1,108 @@
-﻿# 3.1 Description of terms
+# 3.1 Terminology
 
-### <mark style="color:green;">Robot monitoring functions</mark>&#xD;
+### <mark style="color:green;">Robot Monitoring Function</mark>&#xD;
 
-These are the functions for monitoring the speed, force and momentum of the robot.
+Parameters that serve as the references for monitoring the robot's speed, force, and momentum.
 
-*   **Joint angle monitoring**
+* **Joint Angle Monitoring**
 
-    This monitors the position of each axial joint. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
+Monitors the position of each axis joint. Performs a user-set safety stop if the reference value is exceeded.
 
-*   **Joint speed monitoring**
+* **Joint Speed Monitoring**
 
-    This monitors the speed of each axial joint. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
+Monitors the speed of each axis joint. Performs a user-set safety stop if the reference value is exceeded.
     
-*   **Safe operating stop (SOS) monitoring**
+* **Safe Operating Stop (SOS) Monitoring**
 
-    This monitors whether the robot stops without any slips. In cases when the specified value is exceeded, Stop0 will be actuated. 
+Monitors whether each axis maintains a stopped state without slip. Performs Stop 0 if the reference value is exceeded.
 
-*   **Tool center point (TCP) position monitoring**
+* **TCP Position Monitoring**
 
-    This monitors whether the safety tool model violates the safety space. In cases when the safety space is intruded into, the safety stop set by the user will be actuated.
+Monitors whether the safety tool model violates the safety area. Performs a user-set safety stop if the area is violated.
     
-*   **TCP orientation monitoring**
+* **TCP Orientation Monitoring**
 
-    This monitors whether the tool orientation is out of the specified range. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
+Monitors whether the tool orientation stays within the specified range. Performs a user-set safety stop if the reference value is exceeded.
     
-*   **TCP speed monitoring**
+* **TCP Speed Monitoring**
 
-    This monitors the speed of the tool tip. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
+Monitors the speed of the TCP. Performs a user-set safety stop if the reference value is exceeded.
     
-*   **Power monitoring**
+* **Power Monitoring**
 
-    This monitors the power of the robot. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
+Monitors the robot's power. Performs a user-set safety stop if the reference value is exceeded.
     
-*   **Momentum monitoring**
+* **Momentum Monitoring**
 
-    This monitors the momentum of the robot. In cases when the specified value is exceeded, the safety stop set by the user will be actuated.
-
-
-*   **Collision detection**
-
-    In cases when the allowable value is exceeded because of an external force applied to the robot, the safety stop set by the user will be actuated.
+Monitors the robot's momentum. Performs a user-set safety stop if the reference value is exceeded.
 
 
-### <mark style="color:green;">Safety layout</mark>&#xD;
+* **Collision Detection**
 
-These are the parameters for the safe space and the tool space that form the criteria for monitoring the TCP position and orientation.
-
-*   **Safety space**
-
-    This refers to the working space and the protected space.
-*   **Working space**
-
-    This refers to the space in which the robot carries out work. If the tool or the robot’s model goes out of the working space, the safety stop function will be actuated.
-*   **Protected space**
-
-    This refers to the space where the operator should be safeguarded from the robot. If the tool or the robot’s model goes out of the protected space, the safety stop function will be actuated.
-*   **Safety tool modeling**
-
-    The tool attached to the robot is modeled in spheres and cones to monitor the TCP position and orientation.
-*   **Safety robot modeling**
-
-   The robot’s 2nd axis and 3rd axis are modeled in capsule to monitor its distance from the safety space.
+Performs a user-set safety stop when an external force applied to the robot exceeds the allowable value.
 
 
+### <mark style="color:green;">Safety Layout</mark>
 
-### <mark style="color:green;">Safety stop</mark>&#xD;
+Parameters for the safety areas and tool areas that serve as the references for the monitoring of the TCP position and orientation.
 
-This is the function that stops the robot if any safety conditions are violated. There are three methods for the safety stop. For more details on the methods, refer to ISO 13850 or IEC 60204-1.
+* **Safety Area**
 
-*   **Stop0**
+General term for the tool's work area and protected area
+* **Work area**
 
-    The power of the motors of all the joint modules will disconnect immediately, and the motors will stop (uncontrolled stop).
-*   **Stop1**
+The area where the robot performs work. Performs a safety stop if the tool model and robot elbow model leave the work area.
+* **Protected Area**
 
-    The motors of all the joint modules will decelerate and stop, and the power of the motors will disconnect (controlled stop). The robot will decelerate as it continues to move along the programmed path, and then it will stop. As soon as the robot stops, its power will be disconnected.
-*   **Stop2**
+The area that should be protected from the robot. Performs a safety stop if the tool model and robot elbow model violate the protected area.
+* **Safety Tool Modeling**
 
-    The motors of all the joint modules will decelerate, and the safe operating stop (SOS) will take effect. The power supply status of all the motors will be retained.
+Models the tool attached to the robot as a sphere and cone for the TCP position and orientation monitoring
+* **Safety Robot Modeling**
 
-
-If stop 1 and stop are performed, the deceleration process is monitored through the stop time and distance.
-
-*   **Stop time**
-
-    This monitors the time from start deceleration to actual robot stop. If the robot does not stop within the set time, perform Stop 0 to immediately remove power from the motor.
-*   **Stop distance**
-
-    This monitors the distance of TCP from start deceleration to actual robot stop. If the robot does not stop within the set time, perform Stop 0 to immediately remove power from the motor.
+Models the robot's 2nd and 3rd axes as capsules to monitor the distance from the safety area
 
 
 
-### <mark style="color:green;">Safety motion tuning</mark>&#xD;
-This function automatically adjusts the robot’s motion to ensure that the specified parameters are not exceeded. The parameters taken into account during motion tuning are as follows.
+### <mark style="color:green;">Safety Stop</mark>&#xD;
 
-*   **Joint speed**
+Stops the robot to create a safe state when safety is violated. There are 3 stop methods. For detailed information on each stop method, refer to "ISO 13850" or "IEC 60204-1."
 
-*   **TCP speed**
+* **Stop 0**
 
-*   **Power**
+Immediately removes the power from the motor of each join and stop the joints (uncontrolled stop).
+* **Stop 1**
 
-*   **Momentum**
+Motors of all joints decelerate and stop, then power is removed from the motors (controlled stop). The robot decelerates to a stop while continuously following the program path and the power is cut off as soon as the robot stops.
+* **Stop 2**
 
-*   **Stop time**
+The motor of each joint decelerates and then Safe Operating Stop (SOS) monitoring operates. Power supply to all motors is maintained.
 
-*   **Stop distance**
+
+Stop 1 and Stop 2 functions monitor the deceleration process through deceleration time and distance.
+
+* **Stop Time**
+
+Monitors the time from the start of deceleration to the actual stop. If the robot does not stop within the set time, Stop 0 is performed to immediately remove the power from the motors.
+* **Stop Distance**
+
+Monitors the TCP distance from the start of deceleration to the actual stop. If the robot does not stop within the set distance, Stop 0 is performed to immediately remove the power from the motors.
+
+
+
+### <mark style="color:green;">Safe Motion Tuning</mark>&#xD;
+
+This function automatically adjusts robot motion to avoid exceeding the entered parameters.
+The following parameters are considered during motion tuning:
+
+* **Joint Speed**
+
+* **TCP Speed**
+
+* **Power**
+
+* **Momentum**
+
+* **Stopping Time**
+
+* **Stopping Distance**

@@ -1,2 +1,2 @@
-﻿# 4. Configuration of safety functions
+# 4. Function Settings
 

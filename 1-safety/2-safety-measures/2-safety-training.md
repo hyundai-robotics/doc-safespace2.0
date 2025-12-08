@@ -1,23 +1,11 @@
-﻿# 1.2.2 Safety training
+# 1.2.2 Safety Training
 
-To effectively use the product functions, the user must read and fully understand the manual, and install, use, and maintain the product properly. The product user will be responsible for having the full knowledge of and conforming to the robot-related safety regulations of the locality in which the robot is installed and used, and for the proper designing, installation, and operation of the safety devices that can guarantee the safety of the workers of the robot system.
+To effectively use the product's functions, you must familiarize yourself with the contents of the manual and properly install, use, and maintain the product. Product users have the responsibility to be familiar with and comply with robot-related safety regulations in the region where the robot is installed and used, and to properly design, install, and operate safety devices to ensure the safety of users working in the robot system.
 
-*   All workers who install, use, and maintain the robot system must read and fully understand the manual. They must be fully knowledgeable of the safety precautions(:warning:).
-
-
-*   Hyundai Robotics establishes and implements plans to provide training in product installation, use, and maintenance. Product operators and workers must undergo the relevant training programs before handling the product.
-
-
-* Workers who are responsible for the robot’s teaching and checkups must undergo a training program in robot use and safety before handling the robot. The safety training program covers the following topics:
-  *   The concept of safety and the purposes and functions of the safety devices
-
-
-  *   The procedures for handling the robot safely
-
-
-  *   The performance and potential risks of the robot and robot system
-
-
-  *   The materials relating to the application of specific robots
-
-
+* All workers who install, use, and maintain the robot system must thoroughly read the manual to fully understand its contents. In particular, be sure to familiarize yourself with the safety precautions (:warning:).
+* We plan and implement trainings related to the installation, use, and maintenance of the product. Product users and workers must complete the corresponding training course before using the product.
+* Workers responsible for teaching and inspecting the robot must complete trainings for robot use and safety before using the robot. The safety training program covers the following:
+  * Safety concepts, and the purpose and functions of safety devices
+  * Procedures for safely handling the robot
+  * Performance and potential risk factors of the robot and robot system
+  * Work related to specific applications of the robot, etc.

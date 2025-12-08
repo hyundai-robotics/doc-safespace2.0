@@ -1,3 +1,3 @@
-﻿# 2.2 Safety control board
+# 2.1 Safety Module
 
-The safety control module is installed and shipped inside the controller in the form of a board, refer to the controller maintenance manual if the board needs to be replaced.
+The safety control module is shipped mounted inside the controller in board form. When board replacement is required, refer to the controller maintenance manual.

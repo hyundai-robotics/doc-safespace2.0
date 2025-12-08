@@ -1,3 +1,3 @@
-﻿# 2.4 PROFIsafe module(option)
+# 2.3 PROFIsafe Module (Option)
 
-The PROFIsafe option module is installed and shipped inside the controller in the form of a board, refer to the controller maintenance manual if the board needs to be replaced.
+When you select to use the PROFIsafe option module, it is shipped mounted inside the controller. When board replacement is required, refer to the controller maintenance manual.

@@ -1,15 +1,15 @@
-﻿# 6.2	Recovery in case of robot speed violations
+# 6.2 	Recovery from Robot Speed Violation
 
-Robot speed violations are situations in which the robot’s speed exceeds a safety limit, and these include TCP speed, joint speed, power, and momentum monitoring violations. Because the robot detects the instantaneous speed in the case of robot speed violations, you can clear the error without moving the robot’s position.
+Robot speed violation including the TCP speed, joint speed, power, and momentum monitoring violations occurs when the robot's speed exceeds the safety standards,. In case of robot speed violation, the robot detects momentary speed and stops, so the error can be cleared without moving the robot's position.
 
-1.  Change the mode switch to manual mode.
+1. Change the mode switch to manual to enter manual mode.
 
 
-2.  On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
+2.  In the safety status monitoring screen, verify that the status of each area is displayed as **SAFE**.
 
 
 {% hint style="warning" %}
 **[Caution]**
 
-* After clearing the violation, make sure to recheck all speed-related safety parameters and the speed displayed on the operating program.
+* After clearing the error, be sure to check the speed-related safety parameters and the speed of the work program.
 {% endhint %}

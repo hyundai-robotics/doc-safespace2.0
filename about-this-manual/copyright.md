@@ -1,5 +1,5 @@
-﻿# Copyright
+# Copyright
 
-All the programs, files, and contents relating to this product and manual are protected by the Copyright Act and a confidentiality agreement. Any use, reproduction, and disclosure or distribution of this manual to third parties not explicitly permitted by Hyundai Robotics are strictly prohibited.
+All programs, files, and content covered in this product and manual are protected by copyright law and confidentiality agreements. Any use, copying, and disclosure and distribution to third parties, not expressly permitted by Hyundai Robotics, is strictly prohibited.
 
 Copyright ⓒ 2020 HYUNDAI ROBOTICS. All rights reserved.

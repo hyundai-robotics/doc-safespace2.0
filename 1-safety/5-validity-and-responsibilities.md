@@ -1,27 +1,13 @@
-﻿# 1.5 Validity and responsibilities
+# 1.5 Validity and Responsibility
 
-The user should conform to the safety requirements specified in the safety laws and regulations of the country and locality in which the robot is installed and used. Responsibilities of suppliers and users of integrated robot systems include but are not limited to the following:
+It is required to comply with the safety requirements based on the safety regulations and laws of the country and region where the robot is installed and used. The supplier and user of the integrated robot system have various responsibilities including the following:
 
-*   Risk assessment of robot integrated systems
+* Risk assessment of the integrated robot system
+* Addition and removal of safety devices according to risk assessment results
+* Verification of proper configuration, installation, and setting of the integrated system
+* Establishment of methods and guidelines for using the integrated system and user training
+* Management of safety devices (prohibition of unauthorized changes and manipulation of safety devices by users)
+* Provision of information such as critical information of the product use and safety, and also the contact information, etc.
+* Provision of all types of technical documents including manuals, etc.
 
-
-*   Addition or removal of safety devices according to the result of risk assessment
-
-
-*   Checking that robot integrated systems are properly composed, installed, and set
-
-
-*   Establishment of the methods and instructions for using robot integrated systems and provision of user training
-
-
-*   Management of safety devices (prohibition of users from arbitrary modification and manipulation of safety devices)
-
-
-*   Provision of important pieces of information, contact addresses, and others relating to product use and safety
-
-
-*   Provision of all types of technical documents including manuals
-
-
-
-The safety-related content of this manual does not cover all the risk factors and situations that may occur during product use.
+The safety-related content in this manual does not cover all possible risk factors and situations that may occur while using the product.

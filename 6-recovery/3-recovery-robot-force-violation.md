@@ -1,19 +1,20 @@
-﻿# 6.3	Recovery in case of robot force violations
+# 6.3 	Recovery from Robot Force Violation
 
-Robot force violations are situations in which external force is applied on the robot or in which the amount of the force used by the robot internally exceeds a safety limit, and these include collision detection, power, and momentum monitoring violations. You can clear errors depending on the causes of the violations.
+Robot force violation such as collision detection, power, and momentum monitoring violations occurs when external force is applied or the magnitude of force used inside the robot exceeds the safety standards,. Depending on the cause of the violation, the error can be cleared.
 
+<mark style="color:green;">**When violation occurs due to external force applied to the robot**</mark>
 
-1.  Remove the external factor that is applying force on the robot.
-
-
-2.  Change the mode switch to manual mode.
+1. Remove external factors applying force to the robot.
 
 
-3.  On the safety condition monitoring window, check if the status of each space is displayed as **SAFE**.
+2. Change the mode switch to manual to enter manual mode.
+
+
+3.  In the safety status monitoring screen, verify that the status of each area is displayed as **SAFE**.
 
 
 {% hint style="warning" %}
-**[Caution]**
+**\[Caution]**
 
-* After clearing the violation, recheck safety function setting, tool data, the teaching position and speed of the operating program.
+* After clearing the error, recheck the safety function settings, tool data, and work program’s teaching positions and speed.
 {% endhint %}

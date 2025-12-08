@@ -1,3 +1,3 @@
-﻿# 7. Error messages
+﻿# 7. Error Messages
 
-The safety function error messages of SafeSpace2.0 are as follows:
+When a safety function-related alarm occurs, refer to "[**Error and Warning Help**](https://hr-alarms.web.app/#/)".

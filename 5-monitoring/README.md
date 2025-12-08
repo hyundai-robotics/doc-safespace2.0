@@ -1,5 +1,10 @@
-﻿# 5. Safety status monitoring
+# 5. Safety Status Monitoring
 
-This monitors safety function violations and the status of the SCM(SCM: Safety Control Module) board. You can view the statuses of the robot limiting functions, joint limiting functions, and the SCM board. 
+Monitors safety function violations and the status of the Safety Control Module (SCM) board. You can check the information of the status of robot monitoring functions and safety input/output.
 
-You can check in **\[System > 4: Application parameter > 18: SafeSpace2.0 > Monitoring]** menu.
+Check the **\[System > 8: Safety System > 3: Monitoring]** menu.
+
+<p align="center">
+<img src="../_assets/5/monitoring_menu.png"></img>
+<em><p align="center">Safety Status Monitoring Menu</p></em>
+</p>

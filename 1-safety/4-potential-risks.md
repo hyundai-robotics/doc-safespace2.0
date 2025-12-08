@@ -1,35 +1,17 @@
-﻿# 1.4 Potential risk
+# 1.4 Potential Hazards
 
-In the risk assessment of an integrated robot system, if the assessment result indicates that risk factors are not sufficiently removed only by the robot’s safety functions, additional protective measures must be established.
+If the risk assessment of the integrated system linked with the robot concludes that risk factors are not sufficiently removed with the robot's safety-related functions alone, you must establish additional protective measures.
 
-In establishing additional protective measures, the following should be considered:
+Matters to consider when establishing additional protective measures are as follows:
 
-*   Finger pinching (entanglement) between the robot base and the installation support during installation
+* Finger caught-in/between (entrapment) between the robot base and installation base during installation
+* Injuries (stabbing, penetration, etc.) caused by sharp edges or pointed parts of obstacles or tools in the work area.
+* Injuries (bruising, falling, fracture, etc.) from collision with the robot
+* Injuries (stabbing, penetration, fracture, etc.) caused by obstacles around the robot
+* Injuries that may occur when fastening parts are not completely fixed
+* Injuries that may occur when working with toxic or harmful substances (skin damage, difficulty breathing, etc.)
+* Workpiece separation from the tool due to sudden power interruption
+* Mistakes that may occur due to confusion with the emergency stop switches of other equipment
+* Errors due to unauthorized changes to safety-related function settings, etc.
 
-
-*   Injuries (such as poking and piercing) caused by sharp edges or protruding parts of obstacles or tools in the operating area
-
-
-*   Injuries caused by collision with the robot (such as bruises, falling, and bone fractures)
-
-
-*   Injuries caused by obstacles around the robot (such as poking, piercing, and bone fractures)
-
-
-*   Injuries caused by loose connections
-
-
-*   Injuries caused by toxic or hazardous substances under work (such as skin damage and breathing disorders)
-
-
-*   Displacement of objects under work caused by abrupt power shutoffs
-
-
-*   Erroneous activation of emergency stop switches caused by confusion with those of other equipment
-
-
-*   Errors caused by arbitrary modification of the Set up of safety functions
-
-
-
-Because the types of potential risks vary depending on system compositions, a risk assessment must be carried out before using an integrated robot system.
+The types of possible hazards vary depending on the system configuration, so you must conduct a risk assessment before using the integrated system.
