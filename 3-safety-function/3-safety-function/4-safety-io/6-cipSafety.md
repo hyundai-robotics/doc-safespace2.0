@@ -20,7 +20,7 @@
 
 
 ## 3. CIP Safety 파라미터
-
+**\[시스템 > 2: 제어 파라미터 > 6: 안전 통신 > 3: CIP Safety]**<br>
 ![](../../../_assets/cipSafety/cipSafety_Parameters.png)
 
  - 안전 네트워크 번호 : Safety Network Number를 설정 합니다.
@@ -47,7 +47,7 @@
 ![](../../../_assets/cipSafety/connect.png)
 
 ### 2 엔지니어링 툴을 통한 EDS 파일 추가(Studio 5000)
-- ‘Device Description File Installation Tool'을 사용하여 EDS(Hi7_EIP_250203.eds)파일을 설치합니다.
+- ‘Device Description File Installation Tool'을 사용하여 EDS(Hi7_EIP_251023.eds)파일을 설치합니다.
 ### 3 CIP Safety 컨트롤러 설정 (Studio 5000)
 1) Studio 5000을 실행하고 새 프로젝트를 만듭니다.
 2) controller organizer에서 CIP Safety 통신을 지원하는 컨트롤러(예 CPU 1769-L30ERMS)를 선택하고 Ethernet을 선택한뒤 마우스 우측버튼을 눌러 New Module을 클릭합니다.
@@ -95,7 +95,7 @@
 4) Error Led가 점등된 경우 Error Name을 확인<br>
 ![CIP Safety](../../../_assets/cipSafety/eip_status.png)
 #### 5.2 CIP Safety
-1) Dev status가 “Executing” 상태인지 확인
+1) 안전 통신 선택이 "CIP Safety"인지 확인
 2) Comm status가 “On-line, Connected” 상태인지 확인
 3) IO Count가 지속 증가하는지 확인<br>
 ![CIP Safety](../../../_assets/cipSafety/cipsafety_status.png)
