@@ -11,7 +11,7 @@
 ### 2.1 EtherNet/IP
 - 디지털 입력 : 0 ~ 240 bytes
 - 디지털 출력 : 0 ~ 240 bytes
-- 통신 주기 : 2 ~ 3000 msec
+- 통신 주기 : 5 ~ 3000 msec
 - 지원 통신 속도 : 10 or 100 Mbps
 
 ### 2.2 CIP Safety
