@@ -19,7 +19,7 @@
 
 ## 3. PROFIsafe 파라미터
 
-**\[시스템 > 2: 제어 파라미터 > 6: 안전 통신 > 2: PROFIsafe]**<br>
+**\[시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 6: 안전 통신 > 2: PROFIsafe]**<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_param.png)
 
  - Source Address : Source Address를 설정합니다. (1로 고정)
@@ -135,14 +135,14 @@
 ![](../../../_assets/safetyio_profisafe/5_1_Safety_Ladder2.png)
 
 ### 4.5.2 TP 화면
-1) PROFINET
-메뉴에서 시스템 -> 안전시스템 -> 모니터링 -> PROFINET 상태로 이동한다.<br>
+1) PROFINET <br>
+메뉴에서 시스템 -> 2:제어파라미터 -> 11:산업용 통신 -> 5: 프로피넷 설정 으로 이동한다.<br>
 ![](../../../_assets/safetyio_profisafe/5_2_pnio_status.png)
 - 각 슬롯의 상태 정보를 확인
 - Counter가 지속 증가하는지 확인
 
-2) PROFIsafe
-메뉴에서 시스템 -> 안전시스템 -> 모니터링 -> PROFIsafe 상태로 이동한다.<br>
+2) PROFIsafe <br>
+메뉴에서 시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 6: 안전 통신 > 2: PROFIsafe로 이동한다.<br>
 ![](../../../_assets/safetyio_profisafe/5_2_profisafe_status.png)
 - FappState가 CYCLE Data EX 인지 확인
 - Counter가 지속 증가하는지 확인
