@@ -19,7 +19,7 @@
 | 출력 오류 유지 시간 <br>[msec] | 각 채널은 에러가 발생한 후 해소되더라도, 설정된 시간 동안 **Open (Fail-safe)** 상태를 유지합니다.<br>이후 정상 출력으로 전환됩니다.| 0 ~ 65530      | 1000   |
  
 ### 부가 안전 입력 배선 예)
-![](../../../_assets/safety_io/CN_SI2.bmp)
+![](../../../_assets/safety_io/CN_SI2.png)
 ### 부가 안전 출력 배선 예)
-![](../../../_assets/safety_io/CN_SO2.bmp)
+![](../../../_assets/safety_io/CN_SO2.png)
 
