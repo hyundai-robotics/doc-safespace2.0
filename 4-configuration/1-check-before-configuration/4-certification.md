@@ -1,4 +1,4 @@
-# 4.1.4 Certificate Issuance
+# 4.1.2 Certificate Issuance
 
 Safety parameters are protected through certificates. To secure saved safety parameters, you should first obtain a certificate.
 A system password is required to check the status of certificate, and delete and issue it.

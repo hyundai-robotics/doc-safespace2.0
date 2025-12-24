@@ -12,7 +12,7 @@ The products to which this manual applies are as follows:
 
 |     **Item**    |  **Name** | **Version** |
 | :-----------: | :-----: | :----: |
-| Teach Pendant | TP630 | V1.0 |
-| Controller | Hi6a | V1.0 |
-| Safety Control Module | BD642A | V04 |
-| PROFIsafe Communication Board | BD671 | V2 |
+| Teach Pendant | TP630 | V8.0 |
+| Controller | Hi7 | V7.0 |
+| Safety Control Module | BD642 | V08 |
+| PROFIsafe Communication Board | BD671 | V06 |
