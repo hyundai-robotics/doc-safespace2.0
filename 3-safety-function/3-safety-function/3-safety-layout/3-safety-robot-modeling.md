@@ -7,7 +7,7 @@ The capsule used for the safety modeling for robots consists of the center and r
 You can set parameter values ​​in the **\[System > 8: Safety System > 2: Parameter Setting > 2: Area Limits > 2: Robot Modeling]** menu.
 
 <p align="center">
-<img src="../../../_assets/safety_layout/_robot_capsule.PNG"></img>
+<img src="../../../_assets/safety_layout/_robot_capsule_param.PNG"></img>
 <em><p align="center">Safety Robot Modeling Settings Screen</p></em>
 </p>
 
