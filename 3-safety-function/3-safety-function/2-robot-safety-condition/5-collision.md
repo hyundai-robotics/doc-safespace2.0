@@ -1,12 +1,15 @@
-# 3.3.1.6 Collision Detection
+# 3.3.2.5 Collision Detection
 
 When the external force applied to the robot exceeds the allowable value, it is recognized as a collision. You can adjust the sensitivity of each axis, and the higher the sensitivity, the more even a small external force is recognized as a collision. When the monitoring is violated, a safety stop (Stop 0, Stop 1, and Stop 2) is immediately activated.
 
-*\[System > 4: Application Parameters > 18: SafeSpace2.0 > 1: Safety Function > Parameter Settings > Robot Limit > Collision Detection]** menu allows you to set the parameter values.
+**\[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 5: Collision Detection]** menu allows you to set the parameter values.
 
-![!Collision Detection Setting Screen](../../../_assets/col-det.png)
+<p align="center">
+<img src="../../../_assets/col-det.png"></img>
+<em><p align="center">Collision detection parameter setting screen</p></em>
+</p>
 
-| **| Parameter | 　　　　　　　　　Description                                                  |  Default Setting |** | 　　　　　　　　　**| Parameter | 　　　　　　　　　Description                                                  |  Default Setting |**                                                  |  **| Parameter | 　　　　　　　　　Description                                                  |  Default Setting |** |
+| **Parameter** |                                  **Description**                                  |  **Default Setting** |
 | :------: | ---------------------------------------------------------------- | :---------: |
 | Activation | <p>Function activation status</p><p>(Off/On/Safety Input)</p> |   Off  |
 | Stop function |   <p>Stop method when the function is violated</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |

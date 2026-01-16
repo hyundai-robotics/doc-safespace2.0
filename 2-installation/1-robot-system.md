@@ -1,4 +1,4 @@
-﻿# 2.1 로봇 시스템
+﻿# 2.1 Robot System
 
 An industrial robot is a machine equipped with automatic control, manipulation, and movement functions, capable of executing various tasks programmed in industrial settings. Collaborative robots are a type of industrial robot.
 
@@ -14,7 +14,7 @@ Examples of basic robot system configurations, depending on the robot type, are 
 ![Basic configuration of a vertical multi-joint robot system](../_assets/image_6.png)
 
 {% hint style="info" %}
-For more information about the robot system, please refer to the “[**Hi6 Controller Operating Instructions**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/1-robot-system/README)”.
+For more information about the robot system, please refer to the “[**Hi7 Controller Operating Instructions**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/1-robot-system/README)”.
 {% endhint %}
 
 
