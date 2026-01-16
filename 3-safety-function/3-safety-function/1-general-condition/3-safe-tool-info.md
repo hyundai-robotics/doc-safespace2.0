@@ -7,7 +7,7 @@ You can set safety tool information in the **\[System > 8: Safety System > 1: Ba
 
 <p align="center">
 <img src="../../../_assets/3/tool_info_param.png"></img>
-<em><p align="center">안전 툴 정보 설정 화면</p></em>
+<em><p align="center">Safety tool parameter setting screen</p></em>
 </p>
 
 

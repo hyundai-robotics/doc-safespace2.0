@@ -6,14 +6,14 @@ By setting the reference vector (![](../../../_assets/3.png)) by rotating the Z-
 
 <p align="center">
 <img src="../../../_assets/safety_layout/tool_ori.png"></img>
-<em><p align="center">툴 방향 제한 기능</p></em>
+<em><p align="center">TCP Orientation Monitoring</p></em>
 </p>
 
 You can set the parameter values ​​in the **\[System > 8: Safety System > 2: Parameter Setting > 2: Area Limit > 4: Tool Direction]** menu.
 
 <p align="center">
 <img src="../../../_assets/safety_layout/tool_orient.png"></img>
-<em><p align="center">툴 방향 설정 화면</p></em>
+<em><p align="center">TCP Orientation parameter setting screen</p></em>
 </p>
 
 |  **Parameter** |                       **Description**                       |  **Default Setting**  |
