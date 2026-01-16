@@ -6,7 +6,7 @@ Set the thresholds for essential functions (manual mode speed monitoring, stop t
 You can set parameter values ​​in the **\[System > 8: Safety System > 1: Basic Settings > 1: General]** menu.
 
 <p align="center">
-<img src="../../../_assets/3/general_param.png"></img>
+<img src="../../../_assets/3/general.png"></img>
 <em><p align="center">General parameter setting screen</p></em>
 </p>
 

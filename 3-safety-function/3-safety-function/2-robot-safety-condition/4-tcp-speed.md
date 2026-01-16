@@ -5,7 +5,7 @@ This function monitors the TCP speed relative to the robot coordinate system. If
 You can set the parameter values ​​in the **\[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 4: TCP Speed]** menu.
 
 <p align="center">
-<img src="../../../_assets/tcp_speed_param.png"></img>
+<img src="../../../_assets/3/tcp_speed_param.PNG"></img>
 <em><p align="center">TCP speed parameter setting screen</p></em>
 </p>
 

@@ -5,7 +5,7 @@ Stop monitoring monitors each axis for abnormal movement during robot stop opera
 Parameter values ​​can be set in the **\[System > 8: Safety System > 1: Parameter Settings > 1: Robot Limits > 3: Joint Stop]** menu.
 
 <p align="center">
-<img src="../../../_assets/joint_sos_param.png"></img>
+<img src="../../../_assets/3/joint_sos_param.PNG"></img>
 <em><p align="center">Stop Monitoring Parameter Setting Screen</p></em>
 </p>
 

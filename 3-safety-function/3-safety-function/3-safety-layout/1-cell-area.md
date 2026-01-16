@@ -3,12 +3,12 @@
 A safety area is a work space or protected space for monitoring the tool and robot link areas. The work space is a restricted space where the monitored object can move freely but cannot leave. In contrast, the protected space is a restricted space where the monitored object cannot move once it enters. If the robot leaves the set work space or violates the protected space, a safety stop (Stop 0, Stop 1, and Stop 2) is activated.
 
 <p align="center">
-<img src="../../../_assets/safety_layout/cell_working.png"></img>
+<img src="../../../_assets/safety_layout/_cell_working.png"></img>
 <em><p align="center">work space</p></em>
 </p>
 
 <p align="center">
-<img src="../../../_assets/safety_layout/cell_protected.png"></img>
+<img src="../../../_assets/safety_layout/_cell_protected.png"></img>
 <em><p align="center">protected space</p></em>
 </p>
 
@@ -20,7 +20,7 @@ You can set the parameter values ​​for the safety zone in each tab of the **
 * **General**
 
 <p align="center">
-<img src="../../../_assets/safety_layout/cell_general.png"></img>
+<img src="../../../_assets/safety_layout/_cell_general.png"></img>
 <em><p align="center">General</p></em>
 </p>
 
@@ -34,7 +34,7 @@ You can set the parameter values ​​for the safety zone in each tab of the **
 * **Detection target**
 
 <p align="center">
-<img src="../../../_assets/safety_layout/cell_target.png"></img>
+<img src="../../../_assets/safety_layout/_cell_target.png"></img>
 <em><p align="center">Detection target</p></em>
 </p>
 
@@ -48,7 +48,7 @@ You can set the parameter values ​​for the safety zone in each tab of the **
 * **Area**
 
 <p align="center">
-<img src="../../../_assets/safety_layout/cell_working.png"></img>
+<img src="../../../_assets/safety_layout/_cell_working.png"></img>
 <em><p align="center">Area</p></em>
 </p>
 
