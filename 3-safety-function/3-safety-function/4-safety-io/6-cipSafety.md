@@ -4,7 +4,7 @@
 
 ## 1. CIP Safety ?
 - CIP Safety는 표준 Common Industrial Protocol(CIP)을 확장한 안전 통신 프로토콜
-- ‘블랙 채널’ 원리를 사용하여 EtherNet/IP 및 DeviceNet 상에서 안전한 데이터 교환을 가능하게 함.
+- '블랙 채널' 원리를 사용하여 EtherNet/IP 및 DeviceNet 상에서 안전한 데이터 교환을 가능하게 함.
 - 시간 감시, 이중화, CRC 검사 등의 메커니즘을 통해 IEC 61508, ISO 13849 등의 안전 표준을 준수함.
 
 ## 2. 사양
@@ -47,11 +47,11 @@
 ![](../../../_assets/cipSafety/connect.png)
 
 ### 2 엔지니어링 툴을 통한 EDS 파일 추가(Studio 5000)
-- ‘Device Description File Installation Tool'을 사용하여 EDS(Hi7_EIP_251023.eds)파일을 설치합니다.
+- 'Device Description File Installation Tool'을 사용하여 EDS(Hi7_EIP_251023.eds)파일을 설치합니다.
 ### 3 CIP Safety 컨트롤러 설정 (Studio 5000)
 1) Studio 5000을 실행하고 새 프로젝트를 만듭니다.
 2) controller organizer에서 CIP Safety 통신을 지원하는 컨트롤러(예 CPU 1769-L30ERMS)를 선택하고 Ethernet을 선택한뒤 마우스 우측버튼을 눌러 New Module을 클릭합니다.
-3) “Hi7 EIP Adapter”를 찾고 Create 버튼을 누릅니다.<br>
+3) "Hi7 EIP Adapter"를 찾고 Create 버튼을 누릅니다.<br>
 ![CIP Safety](../../../_assets/cipSafety/new_module.png)
 
 4) Name칸에 장치의 이름을 설정합니다.
@@ -63,7 +63,7 @@
 7) Module Definition에서 Change 버튼 클릭후 Safety I/O 와 표준 I/O 크기를 설정합니다.
 - Standard I/O(Exclusive owner) : 240 bytes
 - Safety I/O : 각각 8 bytes
-8) "Configuration signature” 설정하지 마십시오.
+8) "Configuration signature" 설정하지 마십시오.
 9) Select Module type 창을 닫으세요.<br>
 ![CIP Safety](../../../_assets/cipSafety/Setting_module.png)
 10) 모듈이 추가되었는지 확인하세요<br>
@@ -96,7 +96,7 @@
 ![CIP Safety](../../../_assets/cipSafety/eip_status.png)
 #### 5.2 CIP Safety
 1) 안전 통신 선택이 "CIP Safety"인지 확인
-2) Comm status가 “On-line, Connected” 상태인지 확인
+2) Comm status가 "On-line, Connected" 상태인지 확인
 3) IO Count가 지속 증가하는지 확인<br>
 ![CIP Safety](../../../_assets/cipSafety/cipsafety_status.png)
 

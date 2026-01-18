@@ -4,7 +4,7 @@
 
 ## 1. PROFIsafe ?
 - PROFINET/PROFIBUS 상에서 동작하는 안전 프로토콜(안전 프로파일).
-- 표준 PROFINET 통신 채널(‘블랙 채널’)을 통해 안전 데이터를 전송.
+- 표준 PROFINET 통신 채널('블랙 채널')을 통해 안전 데이터를 전송.
 - 추가 배선 없이 안전 신호 전송을 지원.
 
 ## 2. PROFINET & PROFIsafe 사양
@@ -48,7 +48,7 @@
 ### 4.1 BD671과 F-Host & Hi7 Com의 연결
 
 #### 4.1.1 랜선 연결
-1) “PROFIsafe F-Host"와 to BD671를 랜선으로 연결한다.
+1) "PROFIsafe F-Host"와 to BD671를 랜선으로 연결한다.
 2) Link LED가 점멸하는지 확인한다.
 3) Hi7 COM의 LAN3 커넥터와 BD671를 랜선으로 연결한다.
 4) Link LED가 점멸하는지 확인한다.
@@ -60,7 +60,7 @@
 2) 아래와 같이 설정
 - EtherCAT Master : ON
 - Port : LAN3
-3) 슬레이브 리스트에서 "OptionBD – PROFINET_IO"를 선택하고 적용 버튼을 누른다.
+3) 슬레이브 리스트에서 "OptionBD - PROFINET_IO"를 선택하고 적용 버튼을 누른다.
 4) Hi7 로봇제어기를 재부팅한다.
 5) 재부팅후 Run & Communication & Error LED 점등 상태를 확인한다.
 
@@ -72,8 +72,8 @@
 ### 4.2 GSDML 파일 등록 (TIA Portal)
 1) TIA Portal을 실행
 2) 메뉴에서 우측과 같이 이동 [Options] → [Manage general station description file (GSD)].
-3) “…” 버튼 클릭 후 and GSDML file이 있는 디렉토리를 설정한다.
-4) 화면에 표시된 리스트에서 “GSDML-V2.43-Hyundai-Robotics-HI6-20251127.xml”를 선택하고 [Install] 버튼을 누른다.
+3) "..." 버튼 클릭 후 and GSDML file이 있는 디렉토리를 설정한다.
+4) 화면에 표시된 리스트에서 "GSDML-V2.43-Hyundai-Robotics-HI6-20251127.xml"를 선택하고 [Install] 버튼을 누른다.
 5) 하드웨어 카탈로그에 새로운 장치로 등록되었는지 확인한다. <br>
 ![](../../../_assets/safetyio_profisafe/profisafe_gsdmal.png)
 
@@ -88,21 +88,21 @@
 5) 두 장치 그림에서 랜포트를 마우스 드래그&드랍으로 서로 연결한다.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network2.png)
 
-6) “Device & Network”화면에서 HRC-IO 장치를 더블 클릭
+6) "Device & Network"화면에서 HRC-IO 장치를 더블 클릭
 7) 원하는 슬롯을 선택한다.
 8) 오른쪽 카탈로그에서 원하는 모듈을(DI, DO, or PROFIsafe I/O) 드래그하여 "Device Overview window"로 이동시킨다.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network3.png)
 
-9) “Device & Network”화면에서 HRC-IO 장치를 더블 클릭
+9) "Device & Network"화면에서 HRC-IO 장치를 더블 클릭
 10) HRC-IO장치를 다시 클릭하여 Setting화면을 오픈
 11) 아래에서 General 탭으로 이동
 12) 왼쪽 메뉴에서 Ethernet addresses 선택
-13) “Generate PROFINET device name automatically.” 부분 체크 해제
+13) "Generate PROFINET device name automatically." 부분 체크 해제
 14) "PROFINET device name"을 "hd-hrc-hi7"로 설정하고 저장함.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network4.png)
 
 #### 4.3.2 PROFIsafe 설정
-1) “Device & Network”화면에서 HRC-IO 장치를 더블 클릭
+1) "Device & Network"화면에서 HRC-IO 장치를 더블 클릭
 2) 오른쪽 "Device Overview" 화면에서 PROFIsafe 슬롯을 선택한다.
 3) 아래쪽 화면에서 PROFIsafe 통신설정 화면이 나타남.
 4) PROFIsafe 탭을 클릭

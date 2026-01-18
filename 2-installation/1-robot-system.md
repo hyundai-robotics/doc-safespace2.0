@@ -1,6 +1,6 @@
 ﻿# 2.1 로봇 시스템
 
-산업용 로봇이란 “자동 제어에 의한 조작\(manipulation\) 기능 및 이동 동작 기능이 탑재되어 산업 현장에서 다양한 작업을 프로그램으로 실행할 수 있는 기계”입니다. 협동로봇은 산업용 로봇의 한 종류입니다.
+산업용 로봇이란 "자동 제어에 의한 조작\(manipulation\) 기능 및 이동 동작 기능이 탑재되어 산업 현장에서 다양한 작업을 프로그램으로 실행할 수 있는 기계"입니다. 협동로봇은 산업용 로봇의 한 종류입니다.
 
 로봇 시스템은 로봇 본체와 본체를 제어하는 제어기로 구성됩니다. 제어기에는 로봇 시스템의 설정 및 수동 조작에 사용하는 티치 펜던트가 부착됩니다.
 
@@ -14,7 +14,7 @@
 ![수직다관절로봇 시스템의 기본 구성](../_assets/image_6.png)
 
 {% hint style="info" %}
-로봇 시스템에 대한 자세한 내용은 “[**Hi7 제어기 조작 설명서**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-hi7-tp630/1-robot-system/README)”을 참고하십시오.
+로봇 시스템에 대한 자세한 내용은 "`Hi7 제어기 조작 설명서`(https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/1-robot-system/README?cont_model=Hi7)"를 참고하십시오.
 {% endhint %}
 
 
