@@ -1,4 +1,4 @@
-# 1.10.3 Safety Board Status Monitoring
+﻿# 1.10.3 Safety Board Status Monitoring
 
 Select the **\[Settings > 4: Application Parameters > 21: Collaborative Robot Setup > 1: Safety Function > 5: Safety Status Monitoring]** menu's **\[SCM Status]** tab to check the status of the safety board.
 

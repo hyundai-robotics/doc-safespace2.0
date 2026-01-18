@@ -60,7 +60,7 @@
 2) Configure the settings as follows:
 - EtherCAT Master: ON
 - Port: LAN3
-3) Select "OptionBD – PROFINET_IO" from the slave list and press the **Apply** button.
+3) Select "OptionBD - PROFINET_IO" from the slave list and press the **Apply** button.
 4) Reboot the Hi7 robot controller.
 5) After rebooting, check the status of the **Run**, **Communication**, and **Error** LEDs.
 

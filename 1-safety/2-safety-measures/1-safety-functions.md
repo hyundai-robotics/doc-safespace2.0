@@ -1,4 +1,4 @@
-# 1.2.1 Safety functions
+﻿# 1.2.1 Safety functions
 
 SafeSpace2.0 is intended to carry out collaborative tasks based on the following safety functions. For the details of the safety functions, see the "[**3. SafeSpace2.0 Safety functions**](../../3-safety-function/README.md)"
 

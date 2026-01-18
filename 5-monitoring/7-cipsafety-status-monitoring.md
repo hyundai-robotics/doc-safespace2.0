@@ -1,4 +1,4 @@
-# 5.4 CIP Safety Monitoring
+﻿# 5.4 CIP Safety Monitoring
 
 You can monitor the I/O status of CIP Safety by navigating to the **[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 3: CIP Safety]** menu.
 

@@ -1,4 +1,4 @@
-# 3.3.4.3 Safety Signal Assignment
+﻿# 3.3.4.3 Safety Signal Assignment
 
 The Safety signal assignment function serves to connect external signals such as safety input/output, additional safety input/output, and safety communication input/output with various logical signals (system safety input/output, safety application signals) that the robot controller has.
 You can set the parameter values in the **\[System > 8: Safety System > 2: Parameter Settings > 3: Safety Input/Output > 1: Input/Output Assignment]** menu.
@@ -66,17 +66,17 @@ You can set the parameter values in the **\[System > 8: Safety System > 2: Param
 | Primary axis Limit | Primary Axis Limit Input | OPEN: Limit signal input (Danger) <br>CLOSE: Limit signal closed (Safe) |
 | Additional axis Limit | Additional Axis Limit Input | OPEN: Limit signal input (Danger) <br>CLOSE: Limit signal closed (Safe) |
 | External axis Limit | External Axis Limit Input | OPEN: Limit signal input (Danger) <br>CLOSE: Limit signal closed (Safe) |
-| Monitored standstill #1–#8 | Monitored Standstill<br>(sos_0–sos_7) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Joint speed set #1–#8 | Joint Speed<br>(speed_0–speed_7) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| TCP speed set #1–#16 | TCP Speed<br>(speed_0–speed_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Joint angle #1–#8 | Joint Space<br>(space_0–space7) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| TCP position(space) #1–#16 | TCP Space<br>(space_0–space15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| TCP orientation #1–#8 | Tool Orientation<br>(orient_0–orient7) | OPEN: Function activated<br>CLOSE: Function deactivated |
+| Monitored standstill #1-#8 | Monitored Standstill<br>(sos_0-sos_7) | OPEN: Function activated<br>CLOSE: Function deactivated |
+| Joint speed set #1-#8 | Joint Speed<br>(speed_0-speed_7) | OPEN: Function activated<br>CLOSE: Function deactivated |
+| TCP speed set #1-#16 | TCP Speed<br>(speed_0-speed_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
+| Joint angle #1-#8 | Joint Space<br>(space_0-space7) | OPEN: Function activated<br>CLOSE: Function deactivated |
+| TCP position(space) #1-#16 | TCP Space<br>(space_0-space15) | OPEN: Function activated<br>CLOSE: Function deactivated |
+| TCP orientation #1-#8 | Tool Orientation<br>(orient_0-orient7) | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Self collision | Self Collision | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Power #1–#16 | Power<br>(power_0–power_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Momentum #1–#16 | Momentum<br>(mmt_0–mmt_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Collision detection #1–#16 | Collision Detection<br>(coldet_0–coldet_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Speed & separation #1–#84 | RePlan | OPEN: Function activated<br>CLOSE: Function deactivated |
+| Power #1-#16 | Power<br>(power_0-power_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
+| Momentum #1-#16 | Momentum<br>(mmt_0-mmt_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
+| Collision detection #1-#16 | Collision Detection<br>(coldet_0-coldet_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
+| Speed & separation #1-#84 | RePlan | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Mastering test switch | Mastering Test Switch | OPEN: Function activated<br>CLOSE: Function deactivated |
 
 ### Safety Output Signal Function List
@@ -93,16 +93,16 @@ You can set the parameter values in the **\[System > 8: Safety System > 2: Param
 | Monitored standstill activation status | Safe Operating Stop Monitoring Activation Status | OPEN: Safe Operating Stop monitoring deactivated<br> CLOSE: Safe Operating Stop monitoring activated |
 | Replan activation status | RePlan Activation Status | OPEN: RePlan deactivated<br> CLOSE: RePlan activated |
 | Violation alarm | Safety Function Violation Status | OPEN: Safety function violated<br> CLOSE: No safety function violation |
-| Monitored standstill #1–#8 violation | Safe Operating Stop Violation<br>(sos_0–sos_7) | OPEN: Safe Operating Stop violated<br> CLOSE: No Safe Operating Stop violation |
-| Joint speed set #1–#8 violation | Joint Speed Violation<br>(speed_0–speed_7) | OPEN: Joint speed violated<br> CLOSE: No joint speed violation |
-| TCP speed set #1–#16 violation | TCP Speed Violation<br>(speed_0–speed_15) | OPEN: TCP speed violated<br> CLOSE: No TCP speed violation |
-| Joint angle #1–#8 violation | Joint Space Violation<br>(space_0–space7) | OPEN: Joint space violated<br> CLOSE: No joint space violation |
-| TCP position #1–#16 violation | TCP Space Violation<br>(space_0–space15) | OPEN: TCP space violated<br> CLOSE: No TCP space violation |
-| TCP orientation #1–#8 violation | Tool Orientation<br>(orient_0–orient7) | OPEN: Tool orientation violated<br> CLOSE: No tool orientation violation |
+| Monitored standstill #1-#8 violation | Safe Operating Stop Violation<br>(sos_0-sos_7) | OPEN: Safe Operating Stop violated<br> CLOSE: No Safe Operating Stop violation |
+| Joint speed set #1-#8 violation | Joint Speed Violation<br>(speed_0-speed_7) | OPEN: Joint speed violated<br> CLOSE: No joint speed violation |
+| TCP speed set #1-#16 violation | TCP Speed Violation<br>(speed_0-speed_15) | OPEN: TCP speed violated<br> CLOSE: No TCP speed violation |
+| Joint angle #1-#8 violation | Joint Space Violation<br>(space_0-space7) | OPEN: Joint space violated<br> CLOSE: No joint space violation |
+| TCP position #1-#16 violation | TCP Space Violation<br>(space_0-space15) | OPEN: TCP space violated<br> CLOSE: No TCP space violation |
+| TCP orientation #1-#8 violation | Tool Orientation<br>(orient_0-orient7) | OPEN: Tool orientation violated<br> CLOSE: No tool orientation violation |
 | Self collision detection | Self Collision Detection| OPEN: Self collision detected<br> CLOSE: No self collision |
-| Power #1–#16 violation | Power Violation<br>(power_0–power_15) | OPEN: Power violated<br> CLOSE: No power violation |
-| Momentum #1–#16 violation | Momentum Violation<br>(mmt_0–mmt_15) | OPEN: Momentum violated<br> CLOSE: No momentum violation |
-| Collision detection #1–#16 violation | Collision Detection <br>(coldet_0–coldet_15) | OPEN: Collision detected<br> CLOSE: No collision |
+| Power #1-#16 violation | Power Violation<br>(power_0-power_15) | OPEN: Power violated<br> CLOSE: No power violation |
+| Momentum #1-#16 violation | Momentum Violation<br>(mmt_0-mmt_15) | OPEN: Momentum violated<br> CLOSE: No momentum violation |
+| Collision detection #1-#16 violation | Collision Detection <br>(coldet_0-coldet_15) | OPEN: Collision detected<br> CLOSE: No collision |
 | Mastering test error | Mastering Test Error | OPEN: Mastering test error occurred<br> CLOSE: No mastering test error |
 | Brake test error | Brake Test Error | OPEN: Brake test error occurred<br> CLOSE: No brake test error |
 

@@ -1,4 +1,4 @@
-# 1.4 Potential Hazards
+﻿# 1.4 Potential Hazards
 
 If the risk assessment of the integrated system linked with the robot concludes that risk factors are not sufficiently removed with the robot's safety-related functions alone, you must establish additional protective measures.
 

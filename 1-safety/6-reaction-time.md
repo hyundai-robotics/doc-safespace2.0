@@ -1,4 +1,4 @@
-# 1.6 Response Time
+﻿# 1.6 Response Time
 
 
 * **Stop Response Time**

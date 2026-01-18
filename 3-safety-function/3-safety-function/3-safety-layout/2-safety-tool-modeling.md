@@ -1,4 +1,4 @@
-# 3.3.2.2 Safety Tool Modeling
+﻿# 3.3.2.2 Safety Tool Modeling
 
 Monitors whether the sphere modeled with a tool used for safety area monitoring violates the protected space or leaves the work space. Up to 16 safety tools can be set and modeled with up to 10 models.
 
@@ -16,7 +16,7 @@ There are a total of 3 models used for safety tool modeling: sphere, capsule, an
 <em><p align="center">Robot flange coordinate system</p></em>
 </p>
 
-You can set parameter values ​​in the **\[System > 8: Safety System > 2: Parameter Setting > 2: Area Limit > 3: Tool Modeling]** menu.
+You can set parameter values   in the **\[System > 8: Safety System > 2: Parameter Setting > 2: Area Limit > 3: Tool Modeling]** menu.
 
 <p align="center">
 <img src="../../../_assets/safety_layout/_tool_sphere.PNG"></img>

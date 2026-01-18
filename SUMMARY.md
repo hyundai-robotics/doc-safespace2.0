@@ -1,8 +1,7 @@
-# Table of contents
+﻿# Table of contents
 
-* [SafeSpace2.0 Manual](README.md)
+* [Hi7 Controller Function Manual - SafeSpace2.0](README.md)
 * [About This Manual](about-this-manual/README.md)
-  * [Copyright](about-this-manual/copyright.md)
   * [Notation Conventions](about-this-manual/notation.md)
   * [Safety Precautions](about-this-manual/safety-notice.md)
 * [1. Safety](1-safety/README.md)
@@ -36,9 +35,9 @@
       * [3.3.1.5 Maintenance](3-safety-function/3-safety-function/1-general-condition/5-maintenance.md)
     * [3.3.2 Robot Monitoring Function](3-safety-function/3-safety-function/2-robot-safety-condition/README.md)
       * [3.3.2.1 Joint Position Monitoring](3-safety-function/3-safety-function/2-robot-safety-condition/1-joint-space.md)
-      * [3.3.2.2 Joint Speed ​​Monitoring](3-safety-function/3-safety-function/2-robot-safety-condition/2-joint-speed.md)
+      * [3.3.2.2 Joint Speed   Monitoring](3-safety-function/3-safety-function/2-robot-safety-condition/2-joint-speed.md)
       * [3.3.2.3 Joint Stop Monitoring](3-safety-function/3-safety-function/2-robot-safety-condition/3-joint-SOS.md)
-      * [3.3.2.4 TCP Speed ​​Monitoring](3-safety-function/3-safety-function/2-robot-safety-condition/4-tcp-speed.md)
+      * [3.3.2.4 TCP Speed   Monitoring](3-safety-function/3-safety-function/2-robot-safety-condition/4-tcp-speed.md)
       * [3.3.2.5 Collision Detection](3-safety-function/3-safety-function/2-robot-safety-condition/5-collision.md)
       * [3.3.2.6 Re-plan](3-safety-function/3-safety-function/2-robot-safety-condition/6-re-plan.md)
       * [3.3.2.7 Power Monitoring](3-safety-function/3-safety-function/2-robot-safety-condition/7-power.md)
@@ -70,7 +69,7 @@
   * [5.4 CIP Safety Status](5-monitoring/7-cipsafety-status-monitoring.md)
 * [6. Recovery Methods](6-recovery/README.md)
   * [6.1 Robot Position Violation Recovery](6-recovery/1-recovery-robot-position-violation.md)
-  * [6.2 Robot Speed ​​Violation Recovery](6-recovery/2-recovery-robot-speed-violation.md)
+  * [6.2 Robot Speed   Violation Recovery](6-recovery/2-recovery-robot-speed-violation.md)
   * [6.3 Robot Force Violation Recovery](6-recovery/3-recovery-robot-force-violation.md)
   * [6.4 Safe Stop Monitor (SOS) Violation Recovery](6-recovery/4-recovery-sos-violation.md)
 * [7. Error Message](7-error-message/README.md)

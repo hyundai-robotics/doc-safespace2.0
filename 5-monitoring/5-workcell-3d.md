@@ -1,4 +1,4 @@
-# 1.7.4 Workcell 3D
+﻿# 1.7.4 Workcell 3D
 
 Directly monitors the parameters set in the safety layout in Workcell 3D. Workcell 3D visualizes safety areas, tool modeling, and robot modeling set in the safety layout in 3D so you can check the settings. It also reflects the robot's position in real-time so you can check whether the robot violates safety.
 

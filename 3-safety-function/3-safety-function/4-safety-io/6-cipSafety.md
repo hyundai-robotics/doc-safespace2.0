@@ -55,7 +55,7 @@
 ### 3 CIP Safety Controller Configuration (Studio 5000)
 1) Launch **Studio 5000** and create a new project.
 2) In the **Controller Organizer**, select a controller that supports CIP Safety communication (e.g., CPU 1769-L30ERMS). Right-click on **Ethernet** and click **New Module**.
-3) Search for **“Hi7 EIP Adapter”** and click the **Create** button.<br>
+3) Search for **"Hi7 EIP Adapter"** and click the **Create** button.<br>
 ![CIP Safety](../../../_assets/cipSafety/new_module.png)
 
 4) Enter the device name in the **Name** field.
@@ -104,7 +104,7 @@
 
 #### 5.2 CIP Safety
 1) Verify that **Safety Communication** is set to **"CIP Safety"**.
-2) Verify that the **Comm status** is in **“On-line, Connected”** state.
+2) Verify that the **Comm status** is in **"On-line, Connected"** state.
 3) Verify that the **IO Count** is continuously increasing.<br>
 ![CIP Safety](../../../_assets/cipSafety/cipsafety_status.png)
 

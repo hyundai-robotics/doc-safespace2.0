@@ -1,4 +1,4 @@
-# 4.1.4 Tool Data Setting
+﻿# 4.1.4 Tool Data Setting
 
 Safety features monitor the entire robot system, including tools attached to the robot flange. Therefore, the smaller the error between the tool data and actual values, the more accurately the safety function operates. Set the tool length and angle based on the flange coordinate system and enter the tool weight, center of gravity, and inertia information in accordance with individual units.
 
@@ -17,5 +17,5 @@ Safety features monitor the entire robot system, including tools attached to the
 
 {% hint style="info" %}
 * If information about the tool's weight and center of gravity isn't available, you can use the load estimation function to estimate the values. 
-* For detailed information on setting tool data, refer to the "[**Hi6 Controller Operation Manual**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/korean-tp630/README)."
+* For detailed information on setting tool data, refer to the "[**Hi7 Controller Operation Manual**](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)."
 {% endhint %}

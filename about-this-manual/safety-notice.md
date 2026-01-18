@@ -1,4 +1,4 @@
-# Safety Precautions
+﻿# Safety Precautions
 
 To ensure proper use of the product and user safety and prevent property damage, be sure to familiarize yourself with the following safety precautions before using the product.
 
@@ -19,7 +19,7 @@ To ensure proper use of the product and user safety and prevent property damage,
 {% endhint %}
 
 * Take appropriate safety measures according to the risk assessment results and accurately designate the robot safety installation range. Otherwise, the product may be damaged or the user may be injured while the robot is operating.
-* The robot application system manufacturers and robot users should familiarize themselves with the manual’s contents and complete the product operation training.
+* The robot application system manufacturers and robot users should familiarize themselves with the manual's contents and complete the product operation training.
 * For the safety of workers and users, be sure to prepare appropriate safety facilities such as safety fences before installing the product.
 * Secure sufficient space so that the robot arm can move freely. If installation space is not sufficient, the product may be damaged or the user may be injured while the robot is operating.
 * Check the specification information and use appropriate fixing screws and tighten them with specified torque. If screws are loose, the robot may separate from the installation location and fall or be damaged.

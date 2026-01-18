@@ -1,8 +1,8 @@
-# 3.3.2.3 Joint Stop Monitoring
+﻿# 3.3.2.3 Joint Stop Monitoring
 
 Stop monitoring monitors each axis for abnormal movement during robot stop operations. If a set limit is violated, a safety stop (Stop 0) is immediately activated.
 
-Parameter values ​​can be set in the **\[System > 8: Safety System > 1: Parameter Settings > 1: Robot Limits > 3: Joint Stop]** menu.
+Parameter values   can be set in the **\[System > 8: Safety System > 1: Parameter Settings > 1: Robot Limits > 3: Joint Stop]** menu.
 
 <p align="center">
 <img src="../../../_assets/3/joint_sos_param.PNG"></img>

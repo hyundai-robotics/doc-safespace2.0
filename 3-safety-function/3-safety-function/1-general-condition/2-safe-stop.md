@@ -10,10 +10,10 @@ Set the appropriate safe stop type for each safety function. Safe stop functions
 
 The stop type due to a safety function violation is set in the function-specific parameter setting menu.
 You can set the stop method according to the stop type (emergency stop, protective stop, normal stop) required by ISO 10218-1.
-For signal inputs for each stop, refer to “[**3.3.4 Safety Signal Input/Output**](../../../3-safety-function/3-safety-function/3-safety-io/README.md).”
+For signal inputs for each stop, refer to "`3.3.4 Safety Signal Input/Output`(../../../3-safety-function/3-safety-function/3-safety-io/README.md)."
 You can also set the stop method to be performed when the manual mode speed monitoring is violated. The stop method can be selected from Stop 0 or Stop 1.
 
-You can set the parameter values ​​in the **\[System > 8: Safety System > 1: Basic Settings > 2: Stop Settings]** menu.
+You can set the parameter values   in the **\[System > 8: Safety System > 1: Basic Settings > 2: Stop Settings]** menu.
 
 <p align="center">
 <img src="../../../_assets/3/safety_stop_param.png"></img>

@@ -4,7 +4,7 @@ The Maintenance menu allows you to set the mastering and brake test cycles. Peri
 
 To perform a brake test,
 
-You can set the parameter values ​​in the **\[System > 8: Safety System > 1: Basic Settings > 5: Maintenance]** menu.
+You can set the parameter values   in the **\[System > 8: Safety System > 1: Basic Settings > 5: Maintenance]** menu.
 
 <p align="center">
 <img src="../../../_assets/3/maint_param.png"></img>

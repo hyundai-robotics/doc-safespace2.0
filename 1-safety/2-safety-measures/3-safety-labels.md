@@ -1,4 +1,4 @@
-# 1.2.3 Safety Labels
+﻿# 1.2.3 Safety Labels
 
 Nameplates, warning marks, and safety symbols are attached to the inside and outside of the controller. Check the attached labels to ensure safety.
 

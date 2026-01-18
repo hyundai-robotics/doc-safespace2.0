@@ -1,4 +1,4 @@
-# 6.1 	Recovery from Robot Position Violation
+﻿# 6.1 	Recovery from Robot Position Violation
 
 Robot position violation occurs when the robot's position leaves the safety area, and the violations include TCP position violation, TCP orientation violation, and joint monitoring violation. In case of robot position violation, the error can only be cleared by physically moving the robot to change its position.
 

@@ -1,4 +1,4 @@
-# 3.3.2.5 Collision Detection
+﻿# 3.3.2.5 Collision Detection
 
 When the external force applied to the robot exceeds the allowable value, it is recognized as a collision. You can adjust the sensitivity of each axis, and the higher the sensitivity, the more even a small external force is recognized as a collision. When the monitoring is violated, a safety stop (Stop 0, Stop 1, and Stop 2) is immediately activated.
 

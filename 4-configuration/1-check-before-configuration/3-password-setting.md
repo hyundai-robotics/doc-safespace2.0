@@ -1,4 +1,4 @@
-# 4.1.1 Password Setting
+﻿# 4.1.1 Password Setting
 
 The safety function parameters must be set and managed by a designated person. Users designated as administrators are granted administrator privileges and a system setting password. The system setting password is a required input item when setting the safety function parameters, and the parameters cannot be changed or set if the password is incorrect.
 

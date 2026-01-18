@@ -1,6 +1,6 @@
 ﻿# 3.3.1 Basic Settings
 
-Robot safety parameters consist of limit values ​​and stop methods for monitoring safety functions.
+Robot safety parameters consist of limit values   and stop methods for monitoring safety functions.
 
 Each safety function can be configured with various activation conditions, stop methods upon violation, and limit values.
 

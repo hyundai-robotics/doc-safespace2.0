@@ -1,4 +1,4 @@
-# 1.5 Validity and Responsibility
+﻿# 1.5 Validity and Responsibility
 
 It is required to comply with the safety requirements based on the safety regulations and laws of the country and region where the robot is installed and used. The supplier and user of the integrated robot system have various responsibilities including the following:
 

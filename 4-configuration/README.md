@@ -1,2 +1,2 @@
-# 4. Function Settings
+﻿# 4. Function Settings
 

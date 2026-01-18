@@ -1,4 +1,4 @@
-# 1.2.2 Safety Training
+﻿# 1.2.2 Safety Training
 
 To effectively use the product's functions, you must familiarize yourself with the contents of the manual and properly install, use, and maintain the product. Product users have the responsibility to be familiar with and comply with robot-related safety regulations in the region where the robot is installed and used, and to properly design, install, and operate safety devices to ensure the safety of users working in the robot system.
 

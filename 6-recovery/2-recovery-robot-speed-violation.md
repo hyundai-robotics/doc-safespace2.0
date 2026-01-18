@@ -1,4 +1,4 @@
-# 6.2 	Recovery from Robot Speed Violation
+﻿# 6.2 	Recovery from Robot Speed Violation
 
 Robot speed violation including the TCP speed, joint speed, power, and momentum monitoring violations occurs when the robot's speed exceeds the safety standards,. In case of robot speed violation, the robot detects momentary speed and stops, so the error can be cleared without moving the robot's position.
 

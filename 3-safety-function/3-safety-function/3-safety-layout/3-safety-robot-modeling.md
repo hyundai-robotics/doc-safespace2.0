@@ -1,10 +1,10 @@
-# 3.3.2.3 Safety Robot Modeling
+﻿# 3.3.2.3 Safety Robot Modeling
 
 A robot model used for safety space monitoring. Safety robot modeling can be applied to axes 2 and 3, and both are modeled as capsules.
 
 The capsule used for the safety modeling for robots consists of the center and radius of the spheres at both ends. The center of the modeling sphere is the center position of the robot 2nd/3rd axis, and the radius should be large enough to include the size of the current link and the stop distance at the maximum TCP speed.
 
-You can set parameter values ​​in the **\[System > 8: Safety System > 2: Parameter Setting > 2: Area Limits > 2: Robot Modeling]** menu.
+You can set parameter values   in the **\[System > 8: Safety System > 2: Parameter Setting > 2: Area Limits > 2: Robot Modeling]** menu.
 
 <p align="center">
 <img src="../../../_assets/safety_layout/_robot_capsule_param.PNG"></img>

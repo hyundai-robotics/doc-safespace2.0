@@ -1,4 +1,4 @@
-# 1.2.4 Emergency Stop
+﻿# 1.2.4 Emergency Stop
 
 The emergency stop function operates in emergencies or emergency situations such as when a worker or other object enters a danger area. All emergency stop switches are installed in locations that are easily accessible even from outside the safety area.
 

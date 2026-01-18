@@ -1,4 +1,4 @@
-# 6.4 	Recovery from Safe Operating Stop (SOS) Violation
+﻿# 6.4 	Recovery from Safe Operating Stop (SOS) Violation
 
 Safe Operating Stop (SOS) violation occurs when movement is detected while the robot motor is on and in a stopped state. In case of safe operating stop violation, the robot detects momentary movement and generates an error, so the error can be cleared without moving the robot's position.
 

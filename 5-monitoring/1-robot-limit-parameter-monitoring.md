@@ -1,4 +1,4 @@
-# 5.1 Robot Monitoring Function Monitoring
+﻿# 5.1 Robot Monitoring Function Monitoring
 
 You can check the robot TCP speed/TCP position/TCP direction/power/momentum status by selecting the **\[System > 8: Safety System > 3: Monitoring > 1: Robot Status]** menu.
 

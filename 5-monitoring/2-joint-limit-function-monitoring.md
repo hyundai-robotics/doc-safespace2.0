@@ -1,4 +1,4 @@
-# 1.10.2 Joint Limit Function Monitoring
+﻿# 1.10.2 Joint Limit Function Monitoring
 
 Select the **\[Settings > 4: Application Parameters > 21: Collaborative Robot Setup > 1: Safety Function > 5: Safety Status Monitoring]** menu's **\[Joint Limit]** tab to check the status of the joint limit function.
 
