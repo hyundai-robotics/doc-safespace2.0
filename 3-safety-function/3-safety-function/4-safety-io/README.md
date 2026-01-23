@@ -13,5 +13,5 @@ Basic Information on Safety Input/Output
 - CIP Safety Communication Safety Input (64 points)
 - CIP Safety Communication Safety Output (64 points)
 
-![](../../../_assets/safety_io/CommFront.png)
+![](../../../_assets/safety_io/comm_front.png)
 
