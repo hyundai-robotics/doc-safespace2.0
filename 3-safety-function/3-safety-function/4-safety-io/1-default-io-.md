@@ -7,7 +7,7 @@ You can set the parameter values in the **\[System > 8: Safety System > 2: Param
 ## 1. Input Signal Settings
 
 <p align="center">
-<img src="../../../_assets/safety_io/def_input.png"></img>
+<img src="../../../_assets/safety_io/def_input_.png"></img>
 <em><p align="center">Basic Input/Output Settings Screen (Input)</p></em>
 </p>
 
@@ -32,7 +32,7 @@ You can set the parameter values in the **\[System > 8: Safety System > 2: Param
 | Parameter <br>[Unit]          | Description                                                                                                                                       | Input Range       | Default |
 |:------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
 | Pulse Test                 | Set whether to use the Pulse Test for each channel.                                                                                                     | Enable / Disable | Disable |
-| Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is recovered, the system maintains the **Open (Fail-safe)** state during the **Error Latch Time**. Afterward, it  transitions to normal output.<br>Only values divisible by 5 can be entered. | 0 ~ 65530      | 1000   |
+| Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is recovered, the system maintains the **Open (Fail-safe)** state during the **Error Latch Time**. Afterward, it  transitions to normal output.<br>Only values divisible by 10 can be entered. | 0 ~ 65530      | 1000   |
 
 ### Wiring Example)
 ![](../../../_assets/safety_io/CN_SO1.bmp)
