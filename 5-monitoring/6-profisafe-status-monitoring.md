@@ -7,7 +7,9 @@ You can monitor the I/O status of PROFIsafe by selecting the **[System > 2: Cont
 <em><p align="center">PROFIsafe Status Monitoring Screen</p></em>
 </p>
 
-- **FappState:** ("CYCLIC_DATA_EX", "NO_CYCLIC_DATA_EX")
+- **FappState:**<br>
+CYCLIC_DATA_EX : PROFIsafe communication is running. <br>
+NO_CYCLIC_DATA_EX : The PROFIsafe application is running, but PROFIsafe communication has not started. <br>
 - **F-Parameter**
 - **Config**
 - **I/O Count:** (Number of I/O transmissions/receptions)

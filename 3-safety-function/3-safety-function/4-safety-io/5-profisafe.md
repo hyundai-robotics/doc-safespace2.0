@@ -116,7 +116,6 @@
 - Slot 1: Digital Input: 240
 - Slot 2: Digital Output: 240
 - Slot 3: Safety I/O: Selected
-- (No change to IP address required.)
 2) Press the **"Apply"** button.<br>
 ![](../../../_assets/safetyio_profisafe/4_1_profinet_config.png)
 
@@ -165,14 +164,15 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
 2) Examples of PROFIsafe I/O Signal Assignment
 <br>
 <br>2-1) PROFIsafe Input (Direction: Master -> Slave)
-[Set 1ch (0 bit) as Arm Limit] <br>
+<br><br>
+[Set 0 bit as Arm Limit] <br>
 ![](../../../_assets/safetyio_profisafe/7_PS_in.png)
 <br> <br>
 ![](../../../_assets/safetyio_profisafe/7_PS_in2.png)
 <br> <br>
 2-2) PROFIsafe Output (Direction: Slave -> Master)
 <br> <br>
-[Set 1ch (0 bit) as Emergency Stop State]<br>
+[Set 0 bit as Emergency Stop State]<br>
 ![](../../../_assets/safetyio_profisafe/7_PS_out.png)
 <br> <br>
 ![](../../../_assets/safetyio_profisafe/7_PS_out2.png)
