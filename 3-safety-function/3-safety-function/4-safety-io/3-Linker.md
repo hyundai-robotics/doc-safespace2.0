@@ -1,7 +1,7 @@
 ﻿# 3.3.4.3 Safety Signal Assignment
 
 The Safety signal assignment function serves to connect external signals such as safety input/output, additional safety input/output, and safety communication input/output with various logical signals (system safety input/output, safety application signals) that the robot controller has.
-You can set the parameter values in the **\[System > 8: Safety System > 2: Parameter Settings > 3: Safety Input/Output > 1: Input/Output Assignment]** menu.
+You can set the parameter values in the **\[System > 8: Safety System > 2: Parameter Settings > 3: Safety I/O > 1: I/O Allocation]** menu.
 
 ![](../../../_assets/safety_io/SIO_Alloc_diagram1.bmp)
 
@@ -10,20 +10,14 @@ You can set the parameter values in the **\[System > 8: Safety System > 2: Param
 -------------------------------------------------------------------------
 
 ### Adding Safety Signal Assignment
-1) Select the desired function from the input/output function list on the left.
-2) Press the **[Select]** button and select the index (H/W channel or Bit number).
-3) You can select a detailed function number by selecting a sub-channel according to the input/output function list.
+1) Press the [Add] button.
+2) Select the desired function from the function list.
+3) If a sub-index is required, enter the sub-index number.
 
 <p align="center">
 <img src="../../../_assets/safety_io/io_alloc_param1.png"></img>
 <em><p align="center">Safety Signal Assignment Settings Screen</p></em>
 </p>
-
-<p align="center">
-<img src="../../../_assets/safety_io/io_alloc_param2.png"></img>
-<em><p align="center">Safety Signal Additional Assignment Detail Settings Screen</p></em>
-</p>
-
 
 {% hint style="warning" %}
 * An individual input function item can only be connected to a single input channel.<br>
@@ -33,8 +27,8 @@ You can set the parameter values in the **\[System > 8: Safety System > 2: Param
 {% endhint %}
 
 ### Deleting Safety Signal Assignment
-1) Select an already set assignment function on the right side of the screen.
-2) Press the **[Discard]** button shown below.
+1) Select an already set assignment function on the list.
+2) Press the **[del]** button.
 
 ---
 
