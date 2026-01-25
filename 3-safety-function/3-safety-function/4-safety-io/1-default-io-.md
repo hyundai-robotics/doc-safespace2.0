@@ -7,7 +7,7 @@ You can set the parameter values in the **\[System > 8: Safety System > 2: Param
 ## 1. Input Signal Settings
 
 <p align="center">
-<img src="../../../_assets/new/abc.png"></img>
+<img src="../../../_assets/safety_io/def_input_.png"></img>
 <em><p align="center">Basic Input/Output Settings Screen (Input)</p></em>
 </p>
 
