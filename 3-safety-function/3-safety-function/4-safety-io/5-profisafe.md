@@ -19,7 +19,7 @@
 
 ## 3. PROFIsafe 파라미터
 
-**\[시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 6: 안전 통신 > 2: PROFIsafe]**<br>
+`[시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 6: 안전 통신 > 2: PROFIsafe]`<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_param.png)
 
  - Source Address : Source Address를 설정합니다. (1로 고정)

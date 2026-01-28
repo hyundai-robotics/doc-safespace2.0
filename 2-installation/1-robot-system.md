@@ -14,7 +14,7 @@
 ![수직다관절로봇 시스템의 기본 구성](../_assets/image_6.png)
 
 {% hint style="info" %}
-로봇 시스템에 대한 자세한 내용은 "`Hi7 제어기 조작 설명서`(https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/1-robot-system/README?cont_model=Hi7)"를 참고하십시오.
+로봇 시스템에 대한 자세한 내용은 "[Hi7 제어기 조작 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/1-robot-system/README?cont_model=Hi7)"를 참고하십시오.
 {% endhint %}
 
 

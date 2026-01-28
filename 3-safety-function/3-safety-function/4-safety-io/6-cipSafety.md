@@ -20,7 +20,7 @@
 
 
 ## 3. CIP Safety 파라미터
-**\[시스템 > 2: 제어 파라미터 > 11:산업용 통신 > 6: 안전 통신 > 3: CIP Safety]**<br>
+`[시스템 > 2: 제어 파라미터 > 11:산업용 통신 > 6: 안전 통신 > 3: CIP Safety]`<br>
 ![](../../../_assets/cipSafety/cipSafety_Parameters.png)
 
  - 안전 네트워크 번호 : Safety Network Number를 설정 합니다.
@@ -81,7 +81,7 @@
 ![CIP Safety](../../../_assets/cipSafety/ethernetIP.png)
 
 #### 4.2 CIP Safety 설정
-1) 시스템 → 2:제어 파라미터 -> 11:산업용 통신 -> 6:안전 통신 → 3: CIP Safety로 메뉴 이동합니다.
+1) `시스템 → 2:제어 파라미터 -> 11:산업용 통신 -> 6:안전 통신 → 3: CIP Safety`로 메뉴 이동합니다.
 2) 활성화 버튼 ON
 3) SNN 예)1111_2222_3333으로 설정합니다.
 4) 적용 버튼 누릅니다.

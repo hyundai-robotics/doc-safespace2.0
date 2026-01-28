@@ -5,7 +5,7 @@
 1\. 로봇 각 축의 원점 눈금을 확인하여 축을 이동하십시오.
 
 
-안전 기능 위반으로 정지 발생 시 수동 모드 상태에서 조그로 각 축을 이동시키십시오. 복구 방법에 대한 자세한 내용은 "`6.1 복구 모드`(../../6-recovery/README.md)"를 참조하십시오.
+안전 기능 위반으로 정지 발생 시 수동 모드 상태에서 조그로 각 축을 이동시키십시오. 복구 방법에 대한 자세한 내용은 "[`6.1 복구 모드`](../../6-recovery/README.md)"를 참조하십시오.
 
 2\. 작업 영역의 포즈 정보창에서 로봇의 축좌표 값이 기준 자세(**0, 90, 0, 0, 0, 0** \[deg])로 표시되는지 확인하십시오.
 
@@ -18,5 +18,5 @@
 4\. 시스템을 재부팅하십시오.
 
 {% hint style="info" %}
-엔코더 옵셋에 대한 자세한 내용은 "`Hi6 제어기 조작 설명서`(https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)"의 "`7.4.4 엔코더 옵셋`(https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/4-robot-parameter/4-encoder-offset/README?cont_model=Hi7)"을 참고하십시오.
+엔코더 옵셋에 대한 자세한 내용은 "[Hi6 제어기 조작 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)"의 "[7.4.4 엔코더 옵셋](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/4-robot-parameter/4-encoder-offset/README?cont_model=Hi7)"을 참고하십시오.
 {% endhint %}

@@ -1,6 +1,6 @@
 ﻿# 3.3.3.5 자가 충돌 검지
 
-자가 충돌 검지 기능은 로봇 2축과 툴의 충돌 여부를 감시하는 기능입니다. 툴과 로봇은 실제 형상에 맞게 모델링이 되어야하고, 모델링 방법에 대한 자세한 내용은 "`3.3.3.2 안전 툴 모델링`(../../../3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)"과 "`3.3.3.2 안전 로봇 모델링`(../../../3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)"을 참조하십시오.
+자가 충돌 검지 기능은 로봇 2축과 툴의 충돌 여부를 감시하는 기능입니다. 툴과 로봇은 실제 형상에 맞게 모델링이 되어야하고, 모델링 방법에 대한 자세한 내용은 "[3.3.3.2 안전 툴 모델링](../../../3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)"과 "[3.3.3.2 안전 로봇 모델링](../../../3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)"을 참조하십시오.
 
 
 <p align="center">
@@ -10,7 +10,7 @@
 
 
 
-**\[시스템 > 8: 안전 시스템 > 2: 파라미터 설정 > 2: 영역 제한 > 5: 자가 충돌 검지]** 메뉴에서 로봇의 자가 충돌 검지 기능을 사용하기 위한 파라미터를 설정할 수 있습니다. 
+`[시스템 > 8: 안전 시스템 > 2: 파라미터 설정 > 2: 영역 제한 > 5: 자가 충돌 검지]` 메뉴에서 로봇의 자가 충돌 검지 기능을 사용하기 위한 파라미터를 설정할 수 있습니다. 
 
 <p align="center">
 <img src="../../../_assets/3/self_collision_param.png"></img>
