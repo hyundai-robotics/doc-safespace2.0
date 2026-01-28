@@ -17,5 +17,5 @@
 
 {% hint style="info" %}
 * 툴의 무게와 중심에 대한 정보가 없을 경우 부하추정 기능을 이용하여 값을 추정할 수 있습니다. 
-* 툴 데이터 설정에 대한 자세한 내용은 "[Hi6 제어기 조작 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)"를 참고하십시오.
+* 툴 데이터 설정에 대한 자세한 내용은 "[Hi7 제어기 조작 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)"를 참고하십시오.
 {% endhint %}
