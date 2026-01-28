@@ -6,7 +6,7 @@ Safety tool information is used by the safety board to calculate the robot's spe
 You can set safety tool information in the `[System > 8: Safety System > 1: Basic Settings > 3: Safety Tool Information]` menu, and you can load tool information used for robot control by clicking "`Load Tool Data`" at the bottom of the menu.
 
 <p align="center">
-<img src="../../../_assets/3/tool_info_param.png"></img>
+<img src="../../../_assets/3/tool_info.png"></img>
 <em><p align="center">Safety tool parameter setting screen</p></em>
 </p>
 

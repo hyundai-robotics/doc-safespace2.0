@@ -10,7 +10,7 @@ The Joint Speed   Setting parameter is a limit value for monitoring the robot's 
 You can set parameter values   in the `[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 2: Joint Speed]` menu.
 
 <p align="center">
-<img src="../../../_assets/3/joint_speed_param.PNG"></img>
+<img src="../../../_assets/3/joint_speed.png"></img>
 <em><p align="center">Joint speed setting parameter setting screen</p></em>
 </p>
 

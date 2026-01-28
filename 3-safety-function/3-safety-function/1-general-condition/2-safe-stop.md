@@ -16,7 +16,7 @@ You can also set the stop method to be performed when the manual mode speed moni
 You can set the parameter values   in the `[System > 8: Safety System > 1: Basic Settings > 2: Stop Settings]` menu.
 
 <p align="center">
-<img src="../../../_assets/3/safety_stop_param.png"></img>
+<img src="../../../_assets/3/safety_stop.png"></img>
 <em><p align="center">Stop parameter setting screen</p></em>
 </p>
 

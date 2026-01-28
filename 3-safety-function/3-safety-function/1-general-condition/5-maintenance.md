@@ -7,7 +7,7 @@ To perform a brake test,
 You can set the parameter values   in the `[System > 8: Safety System > 1: Basic Settings > 5: Maintenance]` menu.
 
 <p align="center">
-<img src="../../../_assets/3/maint_param.png"></img>
+<img src="../../../_assets/3/maintenance.png"></img>
 <em><p align="center">Maintenance parameter setting screen</p></em>
 </p>
 

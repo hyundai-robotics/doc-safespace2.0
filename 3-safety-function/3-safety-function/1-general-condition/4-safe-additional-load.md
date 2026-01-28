@@ -7,7 +7,7 @@ Safety added weight information is used by the safety board to calculate the rob
 
 
 <p align="center">
-<img src="../../../_assets/3/add_tool_param.png"></img>
+<img src="../../../_assets/3/add_tool.png"></img>
 <em><p align="center">Safety Added weight parameter setting screen</p></em>
 </p>
 
