@@ -4,7 +4,7 @@ Replan is a function that adjusts the robot's speed based on signals received fr
 
 If the delay time is insufficient or the robot decelerates insufficiently, resulting in a violation of the TCP speed limit, a safety stop (Stop 0, Stop 1, Stop 2) is immediately activated.
 
-You can set the parameter values   in the **\[System > 8: Safety System > 2: Parameter Setting > 1: Robot Limits > 6: Re plan]** menu.
+You can set the parameter values   in the `[System > 8: Safety System > 2: Parameter Setting > 1: Robot Limits > 6: Re plan]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/re_plan.png"></img>

@@ -27,7 +27,7 @@ Keys to be pressed on the operation panel of the teach pendant for function oper
 
 Provides shortcuts to related information within the manual. Cross-references are indicated in bold with quotation marks \(" "\).
 
-* For more information about changing date and time information, see "[4.5 Date and Time Settings](../4-menu/5-date-time-setting.md)".
+* For more information about changing date and time information, see "[4.5 Date and Time Settings](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/4-service/5-date-time-setting?cont_model=Hi7)" in the "[Hi7 Controller Operation Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=Hi7)".
 
 ### Notes
 

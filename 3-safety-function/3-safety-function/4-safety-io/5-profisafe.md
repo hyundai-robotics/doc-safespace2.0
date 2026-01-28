@@ -19,7 +19,7 @@
 
 ## 3. PROFIsafe Parameters
 
-**[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe]**<br>
+`[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe]`<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_param.png)
 
  - Source Address: Sets the Source Address. (Fixed to 1)

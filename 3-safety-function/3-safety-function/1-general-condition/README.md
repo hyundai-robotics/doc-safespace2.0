@@ -6,7 +6,7 @@ Each safety function can be configured with various activation conditions, stop 
 
 Access the safety function basic settings menu using the following methods.
 
-* **\[System > 8: Safety System > 1: Basic Settings]** 
+* `[System > 8: Safety System > 1: Basic Settings]`
 ****
 
 The following safety functions can be configured in the Basic Settings menu:

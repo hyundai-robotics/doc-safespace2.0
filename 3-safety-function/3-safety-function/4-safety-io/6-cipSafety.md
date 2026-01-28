@@ -23,7 +23,7 @@
 <br>
 
 ## 3. CIP Safety Parameters
-**[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 3: CIP Safety]**<br>
+`[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 3: CIP Safety]`<br>
 ![](../../../_assets/cipSafety/cipSafety_Parameters.png)
 
  - **Safety Network Number:** Sets the Safety Network Number (SNN).

@@ -1,7 +1,7 @@
 # 3.3.4.2 Extended Safety Input/Output Signals
 
 Set the parameters for additional safety input/output signals. It consists of 8 input signals and 8 output signals, all operating as dual signals.
-You can set parameter values in the **\[System > 8: Safety System > 2: Parameter Settings > 3: Safety Input/Output > 3: Additional I/O]** menu. 
+You can set parameter values in the `[System > 8: Safety System > 2: Parameter Settings > 3: Safety Input/Output > 3: Additional I/O]` menu. 
 
 ## 1. Additional Safety Input/Output Signals
 

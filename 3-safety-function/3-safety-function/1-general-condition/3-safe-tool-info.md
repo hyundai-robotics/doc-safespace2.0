@@ -1,9 +1,9 @@
 ﻿# 3.3.1.3 Safety Tool Information
 
-Safety tool information is used by the safety board to calculate the robot's speed and position. You must enter the tool information attached to the actual robot. The tool information must be identical to the tool number used for robot control (**\[System > 3: Robot Parameters > 1: Tool Data]**).
+Safety tool information is used by the safety board to calculate the robot's speed and position. You must enter the tool information attached to the actual robot. The tool information must be identical to the tool number used for robot control (`[System > 3: Robot Parameters > 1: Tool Data]`).
 
 
-You can set safety tool information in the **\[System > 8: Safety System > 1: Basic Settings > 3: Safety Tool Information]** menu, and you can load tool information used for robot control by clicking "Load Tool Data" at the bottom of the menu.
+You can set safety tool information in the `[System > 8: Safety System > 1: Basic Settings > 3: Safety Tool Information]` menu, and you can load tool information used for robot control by clicking "`Load Tool Data`" at the bottom of the menu.
 
 <p align="center">
 <img src="../../../_assets/3/tool_info_param.png"></img>

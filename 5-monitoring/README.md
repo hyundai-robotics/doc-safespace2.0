@@ -2,7 +2,7 @@
 
 Monitors safety function violations and the status of the Safety Control Module (SCM) board. You can check the information of the status of robot monitoring functions and safety input/output.
 
-Check the **\[System > 8: Safety System > 3: Monitoring]** menu.
+Check the `[System > 8: Safety System > 3: Monitoring]` menu.
 
 <p align="center">
 <img src="../_assets/5/monitoring_menu.png"></img>

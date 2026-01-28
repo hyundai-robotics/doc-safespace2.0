@@ -7,7 +7,7 @@ The Joint Area Setting parameter is a limit value for monitoring safety function
 <em><p align="center">Joint area setting example (S-axis)</p></em>
 </p>
 
-You can set parameter values   in the **\[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 1: Joint Area]** menu.
+You can set parameter values   in the `[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 1: Joint Area]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/joint_space_param.PNG"></img>

@@ -6,7 +6,7 @@ Each safety function can be configured with various activation conditions, stop 
 
 To configure robot safety parameters, access the menu as follows:
 
-* **\[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits]**
+* `[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits]`
 ****
 
 The following safety features can be configured in the Robot Limits menu:
@@ -16,7 +16,7 @@ The following safety features can be configured in the Robot Limits menu:
 * **Joint Stop**: Monitors the robot's stopped state by checking for abnormal movement for each axis after performing Stop 2.
 * **TCP Speed**: Limits the robot's speed to a specified speed based on TCP standards.
 * **Collision Detection**: Limits the force in the event of a collision between the robot and the worker.
-* **RePlan**: Adjusts the robot's speed according to external input to perform [3.2.2 Speed   and Position Monitoring](../../2-collaborative-operation-mode/2-speed-separation-monitoring.md) during collaborative operation mode.
+* **RePlan**: Adjusts the robot's speed according to external input to perform "3.2.2 "Speed and Position Monitoring" during collaborative operation mode.
 * **Power Detection**: Limits the force in the event of a collision between the robot and the worker.
 * **Momentum**: Limits the energy and impact load in the event of a collision between the robot and the worker.
 

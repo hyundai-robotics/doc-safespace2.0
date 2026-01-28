@@ -2,7 +2,7 @@
 
 This function monitors the TCP speed relative to the robot coordinate system. If a monitoring violation occurs, a safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
 
-You can set the parameter values   in the **\[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 4: TCP Speed]** menu.
+You can set the parameter values   in the `[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 4: TCP Speed]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/tcp_speed_param.PNG"></img>

@@ -14,7 +14,7 @@ After installing the robot and configuring the system, you must conduct a risk a
 
 It is very important to identify appropriate safety devices and properly configure an integrated robot system. Configure an integrated system by referring to relevant contents in the manual.
 
-You can set limits for the robot's TCP speed, pressure, power, momentum, collision detection, reduction ratio, joint angle by axis, speed, etc. You can also configure safety functions using safety-related I/O and communication. For detailed information on the configuration of safety functions, refer to "`3. SafeSpace2.0 Safety Functions](../3-safety-function/README.md)".
+You can set limits for the robot's TCP speed, pressure, power, momentum, collision detection, reduction ratio, joint angle by axis, speed, etc. You can also configure safety functions using safety-related I/O and communication. For detailed information on the configuration of safety functions, refer to "[3. SafeSpace2.0 Safety Functions](../3-safety-function/README.md)".
 
 **\[Safety Function]** menu allows you to configure safety-related functions, and the available functions are as follows:
 

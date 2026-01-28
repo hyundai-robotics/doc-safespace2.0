@@ -2,7 +2,7 @@
 
 Monitors whether the sphere modeled with a tool used for safety area monitoring violates the protected space or leaves the work space. Up to 16 safety tools can be set and modeled with up to 10 models.
 
-As the safety tool is activated by the tool number set on the teach pendant, you should model the safety tool based on the tool data set in the \[System > 3: Robot Parameters > 1: Tool Data] menu. Refer to the TCP position information at the top of the tool data setting screen.
+As the safety tool is activated by the tool number set on the teach pendant, you should model the safety tool based on the tool data set in the `[System > 3: Robot Parameters > 1: Tool Data]` menu. Refer to the TCP position information at the top of the tool data setting screen.
 
 There are a total of 3 models used for safety tool modeling: sphere, capsule, and plate. Each model consists of a center and radius. The center position and radius of the modeling are set based on the robot flange coordinate system (Xf, Yf, and Zf), and the radius is set to include the tool size and stop distance at maximum TCP speed.
 
@@ -16,7 +16,7 @@ There are a total of 3 models used for safety tool modeling: sphere, capsule, an
 <em><p align="center">Robot flange coordinate system</p></em>
 </p>
 
-You can set parameter values   in the **\[System > 8: Safety System > 2: Parameter Setting > 2: Area Limit > 3: Tool Modeling]** menu.
+You can set parameter values   in the `[System > 8: Safety System > 2: Parameter Setting > 2: Area Limit > 3: Tool Modeling]` menu.
 
 <p align="center">
 <img src="../../../_assets/safety_layout/_tool_sphere.PNG"></img>

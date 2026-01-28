@@ -1,9 +1,9 @@
 ﻿# 3.3.1.4 Safety Added Weight
 
-Safety added weight information is used by the safety board to calculate the robot's torque. You must enter the information for the added weight actually installed on the robot. The information must be identical to the added weight information used for robot control (**\[System > 3: Robot Parameters > 7: Added Weight by Axis]**).
+Safety added weight information is used by the safety board to calculate the robot's torque. You must enter the information for the added weight actually installed on the robot. The information must be identical to the added weight information used for robot control (`[System > 3: Robot Parameters > 7: Added Weight by Axis]`).
 
 
-* **\[System > 8: Safety System > 1: Basic Settings > 4: Safety Additional Weight]** You can set the safety additional weight information in the menu, and you can load the additional weight information used for robot control by clicking "Load Additional Weight" at the bottom of the menu.
+* `[System > 8: Safety System > 1: Basic Settings > 4: Safety Additional Weight]` You can set the safety additional weight information in the menu, and you can load the additional weight information used for robot control by clicking "Load Additional Weight" at the bottom of the menu.
 
 
 <p align="center">

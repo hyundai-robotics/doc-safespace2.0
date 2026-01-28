@@ -1,6 +1,6 @@
 ﻿# 3.3.3.5 Self-Collision Detection
 
-You can set parameters for the robot's self-collision detection function in the **\[System > 8: Safety System > 2: Parameter Settings > 2: Area Limits > 5: Self-Collision Detection]** menu.
+You can set parameters for the robot's self-collision detection function in the `[System > 8: Safety System > 2: Parameter Settings > 2: Area Limits > 5: Self-Collision Detection]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/self_collision_param.png"></img>

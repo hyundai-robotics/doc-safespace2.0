@@ -14,7 +14,7 @@ Examples of basic robot system configurations, depending on the robot type, are 
 ![Basic configuration of a vertical multi-joint robot system](../_assets/image_6.png)
 
 {% hint style="info" %}
-For more information about the robot system, please refer to the "`Hi7 Controller Operating Instructions`(https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/1-robot-system/README)".
+For more information about the robot system, please refer to the "[Hi7 Controller Operating Instructions](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/1-robot-system/README)".
 {% endhint %}
 
 

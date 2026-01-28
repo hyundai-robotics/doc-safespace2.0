@@ -1,7 +1,7 @@
 ﻿# 3.3.4.3 Safety Signal Assignment
 
 The Safety signal assignment function serves to connect external signals such as safety input/output, additional safety input/output, and safety communication input/output with various logical signals (system safety input/output, safety application signals) that the robot controller has.
-You can set the parameter values in the **\[System > 8: Safety System > 2: Parameter Settings > 3: Safety I/O > 1: I/O Allocation]** menu.
+You can set the parameter values in the `[System > 8: Safety System > 2: Parameter Settings > 3: Safety I/O > 1: I/O Allocation]` menu.
 
 ![](../../../_assets/safety_io/SIO_Alloc_diagram1.bmp)
 
@@ -10,7 +10,7 @@ You can set the parameter values in the **\[System > 8: Safety System > 2: Param
 -------------------------------------------------------------------------
 
 ### Adding Safety Signal Assignment
-1) Press the [Add] button.
+1) Press the `[Add]` button.
 2) Select the desired function from the function list.
 3) If a sub-index is required, enter the sub-index number.
 
@@ -28,7 +28,7 @@ You can set the parameter values in the **\[System > 8: Safety System > 2: Param
 
 ### Deleting Safety Signal Assignment
 1) Select an already set assignment function on the list.
-2) Press the **[del]** button.
+2) Press the `[del]` button.
 
 ---
 

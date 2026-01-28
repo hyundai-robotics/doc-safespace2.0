@@ -3,7 +3,7 @@
 Safety parameters are protected through certificates. To secure saved safety parameters, you should first obtain a certificate.
 A system password is required to check the status of certificate, and delete and issue it.
 
-1. Tap the **\[System > 8: Safety System 4: Certificate]** menu.
+1. Tap the `[System > 8: Safety System 4: Certificate]` menu.
 
 <p align="center">
 <img src="../../_assets/4/certificate.png"></img>
@@ -11,16 +11,16 @@ A system password is required to check the status of certificate, and delete and
 </p>
 
 * Check the certificate status
-**\[Check]** Touch the button.
+`[Check]` Touch the button.
 Enter the system password.
 Check the result.
 
 * Issue a certificate.
-**\[Issue]** Touch the button.
+`[Issue]` Touch the button.
 Enter the system password.
 Check the result.
 
 * Discard certificate.
-**\[Discard]** Touch the button.
+`[Discard]` Touch the button.
 Enter the system password.
 Check the result.

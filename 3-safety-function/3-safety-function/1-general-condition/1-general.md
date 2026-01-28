@@ -3,7 +3,7 @@
 Set the thresholds for essential functions (manual mode speed monitoring, stop time, and stop distance monitoring) required for robot operation. Additionally, configure whether the robot monitoring and area monitoring functions are fully enabled. Even if the robot monitoring and area monitoring functions are enabled, if the safety function is disabled, the monitoring function will not operate. If a monitoring violation occurs, the configured safety stop (Stop 0, Stop 1) will be immediately activated.
 
 
-You can set parameter values   in the **\[System > 8: Safety System > 1: Basic Settings > 1: General]** menu.
+You can set parameter values   in the `[System > 8: Safety System > 1: Basic Settings > 1: General]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/general.png"></img>
