@@ -4,11 +4,11 @@ Set the parameters for safety input/output signals.
 There are 4 input signals and 1 output signal, all operating as dual signals.
 You can set the parameter values in the `[System > 8: Safety System > 2: Parameter Settings > 3: Safety I/O > 2: Default I/O]` menu. 
 
-## 1. Input Signal Settings
+## 1) Default Input Signal Settings
 
 <p align="center">
 <img src="../../../_assets/safety_io/def_input.png"></img>
-<em><p align="center">Basic Input/Output Settings Screen (Input)</p></em>
+<em><p align="center">Default Input/Output Settings Screen (Input)</p></em>
 </p>
 
 | Parameter <br>[Unit]          | Description                                                                                                                                       | Input Range       | Default |
@@ -22,7 +22,7 @@ You can set the parameter values in the `[System > 8: Safety System > 2: Paramet
 ![](../../../_assets/safety_io/CN_SI1.bmp)
 
 
-## 2. Output Signal Settings
+## 2) Output Signal Settings
 
 <p align="center">
 <img src="../../../_assets/safety_io/def_output.png"></img>
