@@ -7,6 +7,14 @@
 <em><p align="center">PROFISAFE 상태 모니터링 화면</p></em>
 </p>
 
-- 장치 상태 ("Executing", "Idle", "Abort", "Fault", "Configuring")<br>
-- 통신 상태 ("Connection Fail", "On-Line, Connected" , "On-Line, No Conn")<br>
-- 입출력 카운트 (송수신 IO 횟수)<br>
+- **장치 상태:** <br>
+Executing : CIP Safety 통신 실행중. <br>
+Idle : CIP Safety 프로그램 실행중이나 CIP Safety 통신 개통 전. <br>
+Abort : 초기화 과정 오류<br>
+Fault : 중요 오류 발생<br>
+Configuring : 설정값 적용 오류<br>
+- **통신 상태:**<br>
+Connection Fail : 연결 실패.<br>
+On-Line, Connected : Originator와 연결됨. 온라인 <br>
+On-Line, No Conn : Originator와 연결되지 않음. 온라인<br>
+- **입출력 카운트:** (IO 송수신 횟수)

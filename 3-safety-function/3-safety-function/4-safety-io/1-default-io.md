@@ -4,7 +4,7 @@
 입력 신호는 4개, 출력 신호는 1개이며 모두 이중 신호로 동작합니다.<br>
 `[시스템 > 8: 안전 시스템 > 2: 파라미터 설정 > 3: 안전 입출력 > 2: 기본 입출력]` 메뉴에서 파라미터 값을 설정할 수 있습니다. 
 
-## 1. 입력 신호 설정
+## 1) 입력 신호 설정
 
 <p align="center">
 <img src="../../../_assets/safety_io/def_input.png"></img>
@@ -22,7 +22,7 @@
 ![](../../../_assets/safety_io/CN_SI1.bmp)
 
 
-## 2. 출력 신호 설정
+## 2) 출력 신호 설정
 
 <p align="center">
 <img src="../../../_assets/safety_io/def_output.png"></img>

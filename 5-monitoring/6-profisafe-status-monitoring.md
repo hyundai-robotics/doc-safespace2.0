@@ -6,7 +6,10 @@
 <img src="../_assets/safetyio_profisafe/5_2_profisafe_status.png"></img>
 <em><p align="center">PROFISAFE 상태 모니터링 화면</p></em>
 </p>
-- FappState ("CYCLIC_DATA_EX", "NO_CYCLIC_DATA_EX")<br>
-- F-Parameter<br> 
-- Config<br>
-- 입출력 카운트 (송수신 IO 횟수)
+
+- **FappState:**<br>
+CYCLIC_DATA_EX : PROFIsafe 통신 중 <br>
+NO_CYCLIC_DATA_EX : PROFIsafe 프로그램 실행중이나 PROFIsafe 통신 개통 전 <br>
+- **F-Parameter**
+- **Config**
+- **I/O Count:** (IO 송수신 횟수)
