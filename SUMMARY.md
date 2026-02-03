@@ -62,6 +62,7 @@
     * [4.1.3 엔코더 옵셋](4-configuration/1-check-before-configuration/1-encoder-offset.md)
     * [4.1.4 툴 데이터 설정](4-configuration/1-check-before-configuration/2-tool-data-setting.md)
   * [4.2 안전 파라미터 전송](4-configuration/2-change-safety-parameter.md)
+  * [4.3 안전 파라미터 리포트](4-configuration/3-safety-parameter-report.md)
 * [5. 안전 상태 모니터링](5-monitoring/README.md)
   * [5.1 로봇 감시 기능 상태](5-monitoring/1-robot-limit-parameter-monitoring.md)
   * [5.2 안전 입출력 상태](5-monitoring/4-safety-io-status-monitoring.md)
