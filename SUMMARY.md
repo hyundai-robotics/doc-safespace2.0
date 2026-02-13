@@ -2,6 +2,7 @@
 
 * [Hi7 제어기 기능설명서 - SafeSpace2.0](README.md)
 * [이 설명서에 대하여](about-this-manual/README.md)
+  * [사전 주의사항](about-this-manual/precautions.md)
   * [표기규약](about-this-manual/notation.md)
   * [안전 주의 사항](about-this-manual/safety-notice.md)
 * [1. 안전](1-safety/README.md)
