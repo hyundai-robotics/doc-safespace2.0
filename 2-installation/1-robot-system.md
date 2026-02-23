@@ -11,11 +11,8 @@ A robot system consists of a robot body and a controller that controls the body.
 Examples of basic robot system configurations, depending on the robot type, are as follows:
 
 
-![Basic configuration of a vertical multi-joint robot system](../_assets/image_6.png)
+![Basic configuration of a vertical multi-joint robot system](../_assets/image_7.png)
 
 {% hint style="info" %}
-For more information about the robot system, please refer to the "[Hi7 Controller Operating Instructions](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/1-robot-system/README)".
+For more information about the robot system, please refer to the "[Hi7 Controller Operating Instructions](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/1-robot-system/README?cont_model=Hi7)".
 {% endhint %}
-
-
-

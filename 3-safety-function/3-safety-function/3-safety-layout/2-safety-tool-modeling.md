@@ -7,9 +7,16 @@ As the safety tool is activated by the tool number set on the teach pendant, you
 There are a total of 3 models used for safety tool modeling: sphere, capsule, and plate. Each model consists of a center and radius. The center position and radius of the modeling are set based on the robot flange coordinate system (Xf, Yf, and Zf), and the radius is set to include the tool size and stop distance at maximum TCP speed.
 
 <p align="center">
-<img src="../../../_assets/safety_layout/_tool_sphere.PNG"></img>
-<em><p align="center">Tool Modeling</p></em>
+<img src="../../../_assets/safety_layout/tool_model.png"></img>
+<em><p align="center">Tool modeling</p></em>
 </p>
+
+|  **Parameter** |                       **Description**                       |  **shape**  |
+| :-------: | :------------------------------------------------: | :----------: |
+| c | center(X,Y,Z based robot flange coordinate system) |   sphere, capsule, plate  |
+| r | radius  |   sphere, capsule, plate  |
+| h | height  |   capsule, plate  |
+| w | width  |   plate  |
 
 <p align="center">
 <img src="../../../_assets/safety_layout/flange.png"></img>
@@ -19,7 +26,7 @@ There are a total of 3 models used for safety tool modeling: sphere, capsule, an
 You can set parameter values   in the `[System > 8: Safety System > 2: Parameter Setting > 2: Area Limit > 3: Tool Modeling]` menu.
 
 <p align="center">
-<img src="../../../_assets/safety_layout/_tool_sphere.PNG"></img>
+<img src="../../../_assets/safety_layout/tool_param.png"></img>
 <em><p align="center">Safety Tool Modeling Settings Screen</p></em>
 </p>
 
