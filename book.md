@@ -1,8 +1,4 @@
-﻿
-[__SOURCE](README.md)
-# Hi7 제어기 기능설명서 - SafeSpace2.0
-
-[__SOURCE](about-this-manual/README.md)
+﻿# Hi7 제어기 기능설명서 - SafeSpace2.0
 # 이 설명서에 대하여
 
 이 설명서는 현대로보틱스 SafeSpace2.0의 안전, 설치, 사용 및 유지 보수 방법에 대해 설명합니다.
@@ -21,13 +17,9 @@
 |      제어기      |  Hi7  |  V7.0  |
 | 안전 제어 모듈 |  BD642  |  V08  |
 | PROFIsafe 통신 보드 |  BD671  |  V06  |
-
-[__SOURCE](about-this-manual/precautions.md)
 # 사전 주의사항
 
 {% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/ko/precautions.md" %}
-
-[__SOURCE](about-this-manual/notation.md)
 # 표기 규약
 
 이 설명서에서는 내용의 이해를 돕기 위해 다음의 표기 규약과 안전 지시를 사용합니다.
@@ -69,9 +61,7 @@ GUI는 메뉴 이름 및 버튼 이름을 대괄호\(\[ \]\) 안에 넣고 굵�
 
 
 
-### 
-[__SOURCE](about-this-manual/safety-notice.md)
-# 안전 주의 사항
+### # 안전 주의 사항
 
 제품의 올바른 사용과 사용자의 안전을 확보하고 재산상의 피해 방지를 위해 반드시 다음의 안전 주의 사항을 숙지한 후 제품을 사용하시기 바랍니다.
 
@@ -119,16 +109,10 @@ GUI는 메뉴 이름 및 버튼 이름을 대괄호\(\[ \]\) 안에 넣고 굵�
 * 제품 운반 시에는 올바 자세를 유지하고 두 명 이상이 함께 작업하십시오. 허리나 팔, 다리 등의 신체 부위에 상해를 입을 수 있습니다.
 * 리프팅 장비를 이용해 제품을 운반하는 경우에는 해당 국가 및 지역의 안전 규정 및 장비 사용 지침을 준수하십시오.
 * 설명서의 운반 내용을 숙지하고 지시 사항을 준수하여 제품을 운반하십시오. 고객의 제품 운송으로 발생한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
-
-[__SOURCE](1-safety/README.md)
 # 1. 안전
 
-
-[__SOURCE](1-safety/1-safety-requirements/README.md)
 # 1.1 안전 요구 사항
 
-
-[__SOURCE](1-safety/1-safety-requirements/1-applicable-standards.md)
 # 1.1.1 적용 표준
 
 이 제품은 산업용 로봇 안전 표준 ISO 10218-1 에 따라 설계 및 제조되었습니다. 이 제품에 적용된 안전 표준은 다음 같습니다.
@@ -152,8 +136,6 @@ GUI는 메뉴 이름 및 버튼 이름을 대괄호\(\[ \]\) 안에 넣고 굵�
 * IEC 61800-3:2022 Adjustable speed electrical power drive systems - Part 3: EMC requirements and specific test methods
 * IEC 61000-6-7:2014 Electromagnetic compatibility (EMC) - Part 6-7: Generic standards - Immunity requirements for equipment intended to perform functions in a safety-related system (functional safety) in industrial locations
 * IEC 61326-3-1:2017 Electrical equipment for measurement, control and laboratory use. EMC requirements. Part 3-1: Immunity requirements for safety-related systems and for equipment intended to perform safety-related functions (functional safety) - General industrial applications
-
-[__SOURCE](1-safety/1-safety-requirements/2-safety-performance.md)
 # 1.1.2 안전 성능
 
 SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/출력, PROFIsafe)의 안전 성능은 다음과 같습니다. 
@@ -176,13 +158,9 @@ SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/
 |    		PFH    			   |  1.5E-07  |         IEC 61508         |
 
 
-
-[__SOURCE](1-safety/2-safety-measures/README.md)
 # 1.2 안전 대책
 
 제품에 내장된 안전 기능과 사용자와 작업자의 안전을 확보하기 위한 대책에 대해 설명합니다.
-
-[__SOURCE](1-safety/2-safety-measures/1-safety-functions.md)
 # 1.2.1 안전 기능
 
 ## SafeSpace2.0 안전기능
@@ -235,8 +213,6 @@ SafeSpace2.0은 총 3가지의 옵션 라이선스를 제공합니다. 라이선
 | 속도 및 이격 거리 감시 |    |  | O | O |
 | 충돌/파워/모멘텀 감시 |    |  |  | O |
 | 안전 모션 |    |  |  | O |
-
-[__SOURCE](1-safety/2-safety-measures/2-safety-training.md)
 # 1.2.2 안전 교육
 
 제품의 기능을 효과적으로 사용하려면 반드시 설명서의 내용을 숙지하고 제품을 올바르게 설치, 사용 및 보수해야 합니다. 제품 사용자는 로봇이 설치 및 사용되는 지역의 로봇 관련 안전 법규의 숙지 및 준수의 책임과 로봇 시스템에서 작업하는 사용자의 안전을 담보할 안전 장치를 제대로 설계, 설치 및 운용할 책임을 가집니다.
@@ -248,8 +224,6 @@ SafeSpace2.0은 총 3가지의 옵션 라이선스를 제공합니다. 라이선
   * 로봇을 안전하게 다루는 절차
   * 로봇 및 로봇 시스템의 성능과 잠재적인 위험 요소
   * 특정 로봇의 응용 관련 작업 등
-
-[__SOURCE](1-safety/2-safety-measures/4-emergency-stop/README.md)
 # 1.2.3 비상 정지
 
 비상 정지 기능은 작업자 또는 다른 물체가 위험 지역에 진입하는 등 긴급 시나 비상 시에 작동합니다. 모든 비상 정지 스위치는 안전 영역 밖에서도 쉽게 접근할 수 있는 곳에 설치되어 있습니다.
@@ -258,19 +232,13 @@ SafeSpace2.0은 총 3가지의 옵션 라이선스를 제공합니다. 라이선
 
 * 로봇의 서보 시스템 전원이 차단되고 모터 브레이크가 동작합니다.
 * 티치 펜던트(Teach pendant)의 화면에 비상 정지 메시지가 나타납니다.
-
-[__SOURCE](1-safety/2-safety-measures/4-emergency-stop/1-switches.md)
 # 1.2.3.1 비상 정지 스위치
 
 비상 정지 스위치는 제어기와 티치 펜던트에 하나씩 설치되어 있습니다. 긴급 상황 발생 시 비상 정지 스위치를 누르십시오.
-
-[__SOURCE](1-safety/2-safety-measures/4-emergency-stop/2-connecting-to-devices-of-external-system.md)
 # 1.2.3.2 외부 시스템의 비상 정지 장치 연결
 
 기본으로 설치되어 있는 비상 정지 스위치 외에 현장 환경 및 응용에 따라 추가로 외부 비상 정지 장치를 연결할 수 있습니다. 이에 대한 자세한 내용은 "[2. 설치](../../../2-installation/README.md)"와 "[3.3.4 안전 신호 입출력](../../../3-safety-function/3-safety-function/4-safety-io/README.md)"을 참조하십시오.
 
-
-[__SOURCE](1-safety/3-risk-assessment.md)
 # 1.3 위험성 평가
 
 로봇을 포함한 통합 시스템 구성에 있어 위험성 평가는 대부분의 국가에서 법적 필수 사항으로 다루고 있을 만큼 중요한 요소 중 하나입니다. 로봇이 시스템에 통합되는 방식에 따라 로봇 설치에 대한 안전 평가가 달라지므로 로봇 자체만으로는 통합 시스템의 위험성을 평가할 수 없습니다.
@@ -306,8 +274,6 @@ SafeSpace2.0은 총 3가지의 옵션 라이선스를 제공합니다. 라이선
 * 로봇별 충돌 회피 가능성
 
 통합 시스템 구성 시 로봇의 안전 관련 기능으로 위험 요소가 충분히 제거되지 않은 경우(예: 비협동로봇용 툴 사용 등)에는 위험성 평가를 통해 필요한 추가 보호 장치를 설치해야 합니다.
-
-[__SOURCE](1-safety/4-potential-risks.md)
 # 1.4 잠재적 위험
 
 로봇과 연동된 통합 시스템의 위험성 평가에서 로봇의 안전 관련 기능만으로 위험 요소가 충분히 제거되지 않았다는 결과가 도출되었을 경우에는 반드시 추가 보호 대책을 수립해야 합니다.
@@ -325,8 +291,6 @@ SafeSpace2.0은 총 3가지의 옵션 라이선스를 제공합니다. 라이선
 * 안전 관련 기능 설정의 임의 변경에 의한 오류 등
 
 발생 가능한 위험의 유형은 시스템 구성에 따라 다르므로 통합 시스템을 사용하기 전에는 반드시 위험성 평가를 실행하십시오.
-
-[__SOURCE](1-safety/5-validity-and-responsibilities.md)
 # 1.5 유효성 및 책임
 
 로봇을 설치 및 사용하는 국가 및 지역의 안전 규정 및 법률을 기준으로 안전 요건을 준수해야 합니다. 로봇 통합 시스템의 공급자와 사용자에게는 다음의 사항을 비롯하여 다양한 책임이 부여됩니다.
@@ -340,8 +304,6 @@ SafeSpace2.0은 총 3가지의 옵션 라이선스를 제공합니다. 라이선
 * 설명서를 비롯한 모든 종류의 기술 문서 제공 등
 
 이 설명서의 안전 관련 내용에서 제품 사용 중 발생할 수 있는 모든 위험 요소와 상황을 다루지는 않습니다.
-
-[__SOURCE](1-safety/6-reaction-time.md)
 # 1.6 반응 시간
 
 
@@ -353,12 +315,8 @@ SafeSpace2.0은 총 3가지의 옵션 라이선스를 제공합니다. 라이선
 
 	PROFIsafe의 F-output Data에 의해 정지가 수행되기까지의 반응시간은 40.8ms 입니다. 로봇이 완전히 정지하기까지의 시간을 얻으려면 통신 주기와 로봇의 정지시간 및 정지거리 계산값이 추가되어야합니다.  
 
-****
-[__SOURCE](2-installation/README.md)
-# 2. 설치
+****# 2. 설치
 
-
-[__SOURCE](2-installation/1-robot-system.md)
 # 2.1 로봇 시스템
 
 산업용 로봇이란 "자동 제어에 의한 조작\(manipulation\) 기능 및 이동 동작 기능이 탑재되어 산업 현장에서 다양한 작업을 프로그램으로 실행할 수 있는 기계"입니다. 협동로봇은 산업용 로봇의 한 종류입니다.
@@ -380,24 +338,14 @@ SafeSpace2.0은 총 3가지의 옵션 라이선스를 제공합니다. 라이선
 
 
 
-
-[__SOURCE](2-installation/2-scm-install.md)
 # 2.2 안전 모듈
 
-안전 제어 모듈은 보드 형태로 제어기 내부에 장착되어 출하됩니다. 보드 교체가 필요할시 제어기 유지보수 매뉴얼을 참고하십시오.
-[__SOURCE](2-installation/3-add-io-install.md)
-# 2.3 추가 I/O 모듈(옵션)
+안전 제어 모듈은 보드 형태로 제어기 내부에 장착되어 출하됩니다. 보드 교체가 필요할시 제어기 유지보수 매뉴얼을 참고하십시오.# 2.3 추가 I/O 모듈(옵션)
 
-추가 I/O 옵션 모듈 사용을 선택하면 제어기 내부에 장착되어 출하됩니다. 보드 교체가 필요할시 제어기 유지보수 매뉴얼을 참고하십시오.
-[__SOURCE](2-installation/4-profisafe-install.md)
-# 2.4 PROFIsafe 모듈(옵션)
+추가 I/O 옵션 모듈 사용을 선택하면 제어기 내부에 장착되어 출하됩니다. 보드 교체가 필요할시 제어기 유지보수 매뉴얼을 참고하십시오.# 2.4 PROFIsafe 모듈(옵션)
 
-PROFIsafe 옵션 모듈 사용을 선택하면 제어기 내부에 장착되어 출하됩니다. 보드 교체가 필요할시 제어기 유지보수 매뉴얼을 참고하십시오.
-[__SOURCE](3-safety-function/README.md)
-# 3. SafeSpace2.0 안전 기능
+PROFIsafe 옵션 모듈 사용을 선택하면 제어기 내부에 장착되어 출하됩니다. 보드 교체가 필요할시 제어기 유지보수 매뉴얼을 참고하십시오.# 3. SafeSpace2.0 안전 기능
 
-
-[__SOURCE](3-safety-function/1-description-term.md)
 # 3.1 용어 설명
 
 ### <mark style="color:green;">로봇 감시 기능</mark>&#xD;
@@ -509,9 +457,7 @@ TCP 위치와 방향 감시를 위해 기준이 되는 안전 영역과 툴 영�
 
 *   **정지 시간**
 
-*   **정지 거리**
-[__SOURCE](3-safety-function/2-limitations.md)
-# 3.2 제한 사항
+*   **정지 거리**# 3.2 제한 사항
 
 SafeSapce2.0은 아래와 같은 제한 사항을 가지고 있습니다. 적용 가능여부를 확인 후 기능 설정을 하시기 바랍니다. 
 
@@ -521,15 +467,11 @@ SafeSapce2.0은 아래와 같은 제한 사항을 가지고 있습니다. 적용
 | 지원 로봇 |  6축 산업용 로봇, 협동 로봇  |
 | 미지원 로봇 | FPD 로봇, 도장 로봇, 갠트리 로봇 | 
 | 지원 축 수 | 최대 8축 (9축 이상 시스템의 경우 안전기능은 7,8축에 대해서만 설정 가능)  |
-| 미지원 로봇 축 |   서보건 축, 로봇과 결합된 부가축(갠트리 로봇)  |
-[__SOURCE](3-safety-function/3-safety-function/README.md)
-# 3.3 안전 기능
+| 미지원 로봇 축 |   서보건 축, 로봇과 결합된 부가축(갠트리 로봇)  |# 3.3 안전 기능
 
 
 SafeSpace2.0의 안전 기능은 파라미터 설정을 통해 구성할 수 있으며 작업자가 수행한 위험성 평가에서 선별된 위험의 대처 방안으로 사용합니다.
 
-
-[__SOURCE](3-safety-function/3-safety-function/1-general-condition/README.md)
 # 3.3.1 기본 설정
 
 로봇 안전 파라미터는 안전 기능을 모니터링하기 위한 한계값 및 정지 방법으로 구성됩니다.
@@ -558,8 +500,6 @@ SafeSpace2.0의 안전 기능은 파라미터 설정을 통해 구성할 수 있
 * 모든 안전 기능의 구성 및 설정의 위험성 평가 준수 여부 확인
 {% endhint %}
 
-
-[__SOURCE](3-safety-function/3-safety-function/1-general-condition/1-general.md)
 # 3.3.1.1 일반
 
 로봇 사용시 필수로 동작하는 기능(수동 모드 속도 감시, 정지 시간, 정지 거리 감시)의 기준값을 설정합니다. 또한, 로봇 감시 기능과 영역 감시 기능의 전체적인 활성화 여부를 설정합니다. 로봇 감시 기능, 영역 감시 기능 설정에서 기능을 활성화해도 안전 기능을 비활성화로 설정하면 감시 기능이 동작하지 않습니다. 모니터링 위반 시에는 설정한 안전 정지(정지 0, 정지 1)가 즉시 활성화됩니다.
@@ -589,9 +529,7 @@ SafeSpace2.0의 안전 기능은 파라미터 설정을 통해 구성할 수 있
 {% hint style="warning" %}
 **\[주의]**: 정지 시간과 정지 거리는 정지1 수행시 실제 로봇이 정지하기까지의 시간과 거리이며, 설정한 값을 넘어가면 즉시 정지0이 활성화됩니다.  
 {% endhint %}
- 
-[__SOURCE](3-safety-function/3-safety-function/1-general-condition/2-safe-stop.md)
-# 3.3.1.2 정지 설정
+ # 3.3.1.2 정지 설정
 
 안전 기능별로 적절한 안전 정지 유형을 설정합니다. 안전 정지 기능은 안전에 위반이 되는 경우 안전한 상태로 만들기 위해 로봇을 정지시키는 것으로 다음의 세 유형이 있습니다. 모든 유형의 안전 정지 기능은 IEC 61800-5-2의 4.2.2.4 요건을 충족합니다.
 
@@ -624,9 +562,7 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 {% hint style="warning" %}
 **\[주의]**: 위험성 평가를 통해 기능별로 적절한 정지 방법을 설정해야 하며, 구동 전 반드시 검증을 수행해야합니다.  
 {% endhint %}
- 
-[__SOURCE](3-safety-function/3-safety-function/1-general-condition/3-safe-tool-info.md)
-# 3.3.1.3 안전 툴 정보
+ # 3.3.1.3 안전 툴 정보
 
 안전 툴 정보는 안전 보드에서 로봇의 속도와 위치를 계산하는 데에 사용합니다. 실제 로봇에 부착된 툴 정보를 입력해야 하며, 로봇 제어에 사용하는 툴 정보(`[시스템 > 3: 로봇 파라미터 > 1: 툴 데이터]`)와 동일한 툴 정보를 입력해야 합니다. 
 
@@ -654,9 +590,7 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 **\[주의]**: 안전 툴 정보와 로봇 제어에 사용하는 툴정보가 일치하지 않으면, 경고/에러가 발생하며 로봇을 구동할 수 없습니다. 반드시 로봇 구동 전 활성화된 툴의 정보를 실제 부착된 툴 정보와 일치시켜 주십시오.  
 {% endhint %}
  
- 
-[__SOURCE](3-safety-function/3-safety-function/1-general-condition/4-safe-additional-load.md)
-# 3.3.1.4 안전 부가중량
+ # 3.3.1.4 안전 부가중량
 
 안전 부가중량 정보는 안전 보드에서 로봇의 토크를 계산하는 데에 사용합니다. 실제 로봇에 설치된 부가 중량의 정보를 입력해야 하며, 로봇 제어에 사용하는 부가 중량 정보(`[시스템 > 3: 로봇 파라미터 > 7: 축별 부가중량]`)와 동일한 정보를 입력해야 합니다. 
 
@@ -687,9 +621,7 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 **\[주의]**: 안전 부가중량 번호는 0 ~ 2까지 지원되며, 각 번호는 시스템 부가중량의 축번호와 매칭됩니다(0-S축, 1-H축, 2-V축). 안전 파라미터 번호와 축 번호를 일치시켜 부가중량 정보를 입력해주시기 바랍니다. 
 {% endhint %}
  
- 
-[__SOURCE](3-safety-function/3-safety-function/1-general-condition/5-maintenance.md)
-# 3.3.1.5 유지 보수
+ # 3.3.1.5 유지 보수
 
 유지보수 메뉴에서는 마스터링 테스트와 브레이크 테스트 수행 주기를 설정할 수 있습니다. 로봇 각 축의 원점과 브레이크 상태는 주기적으로 관리해야 안전기능의 성능을 보장합니다. 설정한 수행 주기 안에 테스트가 진행되지 않으면 안전 정지1이 즉시 활성화됩니다.
 
@@ -712,9 +644,7 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 {% hint style="warning" %}
 **\[주의]**: 충돌이 발생했을 경우, 마스터링 테스트와 브레이크 테스트를 수행할 것을 권장합니다.  
 {% endhint %}
- 
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/README.md)
-# 3.3.2 로봇 감시 기능
+ # 3.3.2 로봇 감시 기능
 
 로봇 안전 파라미터는 안전 기능을 모니터링하기 위한 한계값 및 정지 방법으로 구성됩니다.
 
@@ -746,8 +676,6 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 * 모든 안전 기능의 구성 및 설정의 위험성 평가 준수 여부 확인
 {% endhint %}
 
-
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/1-joint-space.md)
 # 3.3.2.1 조인트 영역 설정
 
 조인트 영역 설정 파라미터는 로봇의 조인트 공간에서 안전 기능을 모니터링하기 위한 한계값입니다. 모니터링 위반 시에는 설정한 안전 정지(정지 0, 정지 1, 정지 2)가 즉시 활성화됩니다.
@@ -777,9 +705,7 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 {% hint style="warning" %}
 **\[주의]**: 안전기능은 설정한 영역을 기반으로 감시합니다. 설정한 영역이 정지거리를 감안하여 설정해야 하며, 구동 전 반드시 검증을 수행해야합니다.  
 {% endhint %}
- 
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/2-joint-speed.md)
-# 3.3.2.2 조인트 속도 설정
+ # 3.3.2.2 조인트 속도 설정
 
 조인트 속도 설정 파라미터는 로봇의 조인트 속도를 감시하기 위한 한계값입니다. 한계값 위반 시에는 설정한 안전 정지(정지 0, 정지 1, 정지 2)가 즉시 활성화됩니다.
 
@@ -808,8 +734,6 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 **\[주의]**: 속도 감시 기능 설정시에는 반드시 정지 반응 시간을 고려하고 커버를 덮어 충돌 및 부상을 예방하십시오.
 {% endhint %}
  
-
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/3-joint-SOS.md)
 # 3.3.2.3 조인트 정지 감시
 
 정지 감시는 로봇 정지 동작시 각 축의 비정상적인 움직임이 있는지 감시하는 기능입니다. 설정한 한계값 위반 시에는 안전 정지(정지 0)가 즉시 활성화됩니다.
@@ -829,9 +753,7 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 
 {% hint style="warning" %}
 **\[주의]**: 정지 감시 파라미터 위반 시에는 재기동 전 로봇의 움직임이 정상인지 반드시 확인하십시오.  
-{% endhint %}
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/4-tcp-speed.md)
-# 3.3.2.4 TCP 속도 제한 설정
+{% endhint %}# 3.3.2.4 TCP 속도 제한 설정
 
 로봇 좌표계 기준 TCP의 속도를 감시하는 기능입니다. 모니터링 위반 시에는 안전 정지(정지 0, 정지 1, 정지 2)가 즉시 활성화됩니다.
 
@@ -857,9 +779,7 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 {% hint style="warning" %}
 **\[주의]**: 속도 감시 기능 설정시에는 반드시 정지 반응 시간을 고려하고 커버를 덮어 충돌 및 부상을 예방하십시오.
 {% endhint %}
- 
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/5-collision.md)
-# 3.3.2.5 충돌 검지
+ # 3.3.2.5 충돌 검지
 
 로봇에 가해지는 외력이 허용치를 초과하는 경우 충돌로 인식합니다. 각 축의 민감도를 조절할 수 있으며, 민감도가 높을수록 작은 외력에도 충돌로 인식합니다. 모니터링 위반 시에는 안전 정지(정지 0, 정지 1, 정지 2)가 즉시 활성화됩니다.
 
@@ -881,8 +801,6 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 * 운동 에너지에 비례하여 속도가 높고 가반 하중이 큰 경우 로봇의 충격량이 커질 수 있으므로 로봇이 외부의 물체와 충돌하는 경우 상당한 수준의 충격이 발생할 수 있습니다. 협동 공간에서는 안전한 속도와 가반 하중을 유지하여 운전하십시오.
 * 툴 정보 및 부가 중량을 실제와 다르게 설정하면 오감지가 발생할 수 있습니다. 충돌 검지 기능 사용 전 각 정보를 확인해주십시오.
 {% endhint %}
-
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/6-re-plan.md)
 # 3.3.2.6 Re plan 설정
 
 Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 로봇의 속도를 조절하는 기능입니다. 입력신호에 해당하는 감속비율로 로봇의 운전속도가 변경되고, 지연시간 이후에 해당하는 속도로 TCP 속도를 감시합니다. 
@@ -907,9 +825,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 {% hint style="warning" %}
 * 속도 한계 구성 시에는 반드시 정지 시간을 고려하고 커버를 덮어 충돌 및 부상을 예방하십시오.
 * 운동 에너지에 비례하여 속도가 높고 가반 하중이 큰 경우 로봇의 충격량이 커질 수 있으므로 로봇이 외부의 물체와 충돌하는 경우 상당한 수준의 충격이 발생할 수 있습니다. 협동 공간에서는 안전한 속도와 가반 하중을 유지하여 운전하십시오.
-{% endhint %}
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/7-power.md)
-# 3.3.2.7 파워 설정
+{% endhint %}# 3.3.2.7 파워 설정
 
 로봇이 발생하는 힘에 대해 허용치를 초과하는지 감시하는 기능입니다. 모니터링 위반 시에는 안전 정지(정지 0, 정지 1, 정지 2)가 즉시 활성화됩니다.
 
@@ -931,8 +847,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 * 운동 에너지에 비례하여 속도가 높고 가반 하중이 큰 경우 로봇의 충격량이 커질 수 있으므로 로봇이 외부의 물체와 충돌하는 경우 상당한 수준의 충격이 발생할 수 있습니다. 협동 공간에서는 안전한 속도와 가반 하중을 유지하여 운전하십시오.
 * 툴 정보 및 부가 중량을 실제와 다르게 설정하면 오감지가 발생할 수 있습니다. 기능 사용 전 정보를 확인해주십시오.
 {% endhint %}
-
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/8-momentum.md)
 # 3.3.2.8 모멘텀 설정
 
 로봇이 발생하는 모멘텀에 대해 허용치를 초과하는지 감시하는 기능입니다. 모니터링 위반 시에는 안전 정지(정지 0, 정지 1, 정지 2)가 즉시 활성화됩니다.
@@ -955,13 +869,9 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 * 운동 에너지에 비례하여 속도가 높고 가반 하중이 큰 경우 로봇의 충격량이 커질 수 있으므로 로봇이 외부의 물체와 충돌하는 경우 상당한 수준의 충격이 발생할 수 있습니다. 협동 공간에서는 안전한 속도와 가반 하중을 유지하여 운전하십시오.
 * 툴 정보 및 부가 중량을 실제와 다르게 설정하면 오감지가 발생할 수 있습니다. 기능 사용 전 정보를 확인해주십시오.
 {% endhint %}
-
-[__SOURCE](3-safety-function/3-safety-function/3-safety-layout/README.md)
 # 3.3.3 영역 감시 기능 
 
 로봇의 위치 및 방향을 감시하기 위해 로봇, 툴, 안전 영역을 모델링합니다.
-
-[__SOURCE](3-safety-function/3-safety-function/3-safety-layout/1-cell-area.md)
 # 3.3.3.1 안전 영역 설정
 
 안전 영역은 툴 및 로봇 링크 영역을 모니터링하기 위한 작업 공간 또는 보호 공간입니다. 작업 공간은 모니터링 대상이 자유롭게 움직일 수 있지만 떠날 수는 없는 제한된 공간입니다. 이와 달리, 보호 공간은 모니터링 대상이 진입하면 움직일 수 없는 제한된 공간입니다. 로봇이 설정한 작업 공간을 벗어나거나, 보호 공간을 침범할 경우 안전 정지(정지 0, 정지 , 정지 2)가 활성화됩니다.
@@ -1027,9 +937,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 {% hint style="warning" %}
 **\[주의]**: 안전기능은 설정한 영역을 기반으로 감시합니다. 설정한 영역이 정지거리를 감안하여 설정해야 하며, 구동 전 반드시 검증을 수행해야합니다.
-{% endhint %}
-[__SOURCE](3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)
-# 3.3.3.2 안전 툴 모델링
+{% endhint %}# 3.3.3.2 안전 툴 모델링
 
 안전 영역 모니터링에 사용하는 툴로 모델링한 구의 보호 영역 침범 및 작업 영역 이탈 여부를 감시합니다. 안전 툴은 최대 16 개를 설정할 수 있으며 최대 10 개의 모델로 모델링할 수 있습니다.
 
@@ -1085,8 +993,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 * 툴 데이터 변경 시 반드시 안전 툴 모델링에서 설정한 파라미터가 정확한지 다시 확인하십시오. 안전 툴 정보에서의 툴번호와 안전 툴 모델링 번호는 일치해야 합니다.
 * 로봇 레이아웃 설정의 정의는 로봇 2축과 3축에만 해당되므로 안전 영역을 설정하더라도 로봇의 다른 부분이 이 영역을 침범할 수 있습니다.
 {% endhint %}
-
-[__SOURCE](3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)
 # 3.3.3.3 안전 로봇 모델링
 
 안전 공간 모니터링에 사용하는 로봇 모델입니다. 안전 로봇 모델링은 2축과 3축에 적용할 수 있으며 모두 캡슐로 모델링합니다.
@@ -1111,9 +1017,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 **\[주의]**
 
 * 로봇 레이아웃 설정의 정의는 로봇 2축과 3축에만 해당되므로 안전 영역을 설정하더라도 로봇의 다른 부분이 이 영역을 침범할 수 있습니다.
-{% endhint %}
-[__SOURCE](3-safety-function/3-safety-function/3-safety-layout/4-safety-tcp-orientation.md)
-# 3.3.3.4 툴 방향 감시
+{% endhint %}# 3.3.3.4 툴 방향 감시
 
 툴 방향 감시 기능을 사용하기 위해, 기준 벡터 생성을 위한 회전 각도 및 편차 각도를 설정하여 모니터링용 원뿔을 설정할 수 있습니다.
 
@@ -1147,8 +1051,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 * 툴 데이터 변경 시 반드시 안전 툴 모델링에서 설정한 파라미터가 정확한지 다시 확인하십시오. 동일한 툴의 툴 데이터 번호와 안전 툴 모델링 번호는 일치해야 합니다.
 {% endhint %}
-
-[__SOURCE](3-safety-function/3-safety-function/3-safety-layout/5-self-collision-detection.md)
 # 3.3.3.5 자가 충돌 검지
 
 자가 충돌 검지 기능은 로봇 2축과 툴의 충돌 여부를 감시하는 기능입니다. 툴과 로봇은 실제 형상에 맞게 모델링이 되어야하고, 모델링 방법에 대한 자세한 내용은 "[3.3.3.2 안전 툴 모델링](../../../3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)"과 "[3.3.3.2 안전 로봇 모델링](../../../3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)"을 참조하십시오.
@@ -1172,8 +1074,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 | :-------: | :------------------------------------------------: | :----------: |
 | 활성화 | <p>기능 활성화 여부</p><p>(무효 / 유효 / 안전 입출력)</p> |   무효  |
 | 정지 방법 |   <p>기능 위반시 정지 방법</p><p>(정지 0 / 정지 1 / 정지 2 / 무정지)</p>  | 정지 1 |
-
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/README.md)
 # 3.3.4 안전 입출력
 
 안전 입출력의 기본 정보
@@ -1197,8 +1097,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 ![](../../../_assets/safety_io/CommFront.png)
 
-
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/1-default-io.md)
 # 3.3.4.1 기본 안전 입출력 신호
 
 안전 입출력 신호의 파라미터를 설정합니다.  
@@ -1239,8 +1137,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 ![](../../../_assets/safety_io/CN_SO1.bmp)
 
 
-
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/2-additional-io.md)
 # 3.3.4.2 부가 안전 입출력 신호
 
 부가 안전 입출력 신호의 파라미터를 설정합니다. 입력 신호 8개, 출력 신호 8개로 구성되며 모두 이중신호로 동작 됩니다.<br>
@@ -1266,8 +1162,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 ### 부가 안전 출력 배선 예)
 ![](../../../_assets/safety_io/CN_SO2.png)
 
-
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/3-Linker.md)
 # 3.3.4.3 안전 신호 할당
 
 안전 신호 할당은 안전 입출력, 부가 안전 입출력, 안전 통신 입출력과 같은 외부신호와 로봇 제어기가 가지고 있는 여러가지 논리적 신호(시스템 안전 입출력, 안전 응용프로그램의 신호)를 연결 시켜주는 역할을 합니다.<br>
@@ -1376,8 +1270,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 {% endhint %}
 
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/4-safe-comm-select.md)
-
 
 # 3.3.4.3 안전 통신의 선택
 
@@ -1386,8 +1278,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 `[시스템 > 2: 제어 파라미터 > 6: 안전 통신 > 1: 안전 통신 선택]` 메뉴에서 파라미터 값을 설정할 수 있습니다. 
 
 ![](../../../_assets/safe_comm_select.png)
-
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/5-profisafe.md)
 
 
 # 3.3.4.4 PROFIsafe
@@ -1570,8 +1460,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 
 
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/6-cipSafety.md)
-
 
 # 3.3.4.5 CIP Safety
 
@@ -1689,16 +1577,10 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 <br> <br>
 ![CIP Safety](../../../_assets/cipSafety/alloc_out2.png)<br>
 
-
-[__SOURCE](4-configuration/README.md)
 # 4. 기능 설정
 
-
-[__SOURCE](4-configuration/1-check-before-configuration/README.md)
 # 4.1 안전 기능 사용 전 점검 사항
 
-
-[__SOURCE](4-configuration/1-check-before-configuration/3-password-setting.md)
 # 4.1.1 암호 설정
 
 안전 기능의 파라미터는 반드시 지정된 담당자가 설정하고 관리해야 합니다. 관리자로 지정된 사용자는 관리자 권한과 시스템 설정용 암호를 부여받습니다. 시스템 설정용 암호는 안전 기능 파라미터 설정 시 필수 입력 항목으로 암호가 틀리면 파라미터를 변경 및 설정할 수 없습니다.
@@ -1718,8 +1600,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 * 비밀번호 분실 시 엔지니어에게 문의 하십시오.
 * 초기 비밀번호는 '8426' 입니다.
 {% endhint %}
-
-[__SOURCE](4-configuration/1-check-before-configuration/4-certification.md)
 # 4.1.2 인증서 발급
 
 안전 파라미터는 인증서를 통해 보호 됩니다. 저장된 안전 파라미터의 보안을 위해 우선 인증서를 발급 받아야 합니다. 
@@ -1746,8 +1626,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
   `[폐기]` 버튼을 터치하십시오.
   시스템 암호를 입력하십시오.
   결과를 확인 하십시오.
-
-[__SOURCE](4-configuration/1-check-before-configuration/1-encoder-offset.md)
 # 4.1.3 엔코더 점검
 
 안전 기능은 각 축에 장착된 엔코더 데이터를 기반으로 로봇의 위치와 속도를 진단하므로 엔코더 데이터의 정확성이 중요합니다. 따라서 안전 기능 사용 전 엔코더 값과 실제 값이 일치하는지 점검해야 합니다.
@@ -1770,8 +1648,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 {% hint style="info" %}
 엔코더 옵셋에 대한 자세한 내용은 "[Hi7 제어기 조작 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)"의 "[7.4.4 엔코더 옵셋](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/4-robot-parameter/4-encoder-offset/README?cont_model=Hi7)"을 참고하십시오.
 {% endhint %}
-
-[__SOURCE](4-configuration/1-check-before-configuration/2-tool-data-setting.md)
 # 4.1.4 툴 데이터 설정
 
 안전 기능은 로봇 플랜지에 부착된 툴을 포함한 로봇 시스템 전체를 감시합니다. 따라서 툴 데이터와 실제 값의 오차가 적을수록 보다 정확하게 안전 기능이 동작하게 됩니다. 플랜지 좌표계를 기준으로 툴의 길이와 각도를 설정하고 툴의 중량, 무게 중심과 이너셔 정보를 단위에 맞게 입력하십시오.
@@ -1793,8 +1669,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 * 툴의 무게와 중심에 대한 정보가 없을 경우 부하추정 기능을 이용하여 값을 추정할 수 있습니다. 
 * 툴 데이터 설정에 대한 자세한 내용은 "[Hi7 제어기 조작 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)"를 참고하십시오.
 {% endhint %}
-
-[__SOURCE](4-configuration/2-change-safety-parameter.md)
 # 4.2 안전 파라미터 전송
 
 안전 파라미터 값을 수정하고 시스템에 적용할 수 있습니다. 전송을 완료하지 않은 값은 설정 화면에서 벗어나는 경우 초기화 됩니다.
@@ -1827,9 +1701,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 <p align="center">
 <img src="../_assets/4/apply_param_4.png"></img>
 <em><p align="center">전송 성공 시 출력 화면</p></em>
-</p>
-[__SOURCE](4-configuration/3-safety-parameter-report.md)
-# 4.3 안전 파라미터 리포트
+</p># 4.3 안전 파라미터 리포트
 
 현재 적용되어 있는 안전 파라미터 값을 리포트 형식으로 확인할 수 있습니다. 설정 화면 내 값을 저장하지 않은 경우 리포트에 출력되는 값과 다를 수 있습니다.
 
@@ -1874,8 +1746,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 <img src="../_assets/4/safety_report_6.png"></img>
 <em><p align="center">리포트 저장 완료 화면 예시</p></em>
 </p>
-
-[__SOURCE](5-monitoring/README.md)
 # 5. 안전 상태 모니터링
 
 안전 기능 위반 및 안전 제어 모듈(SCM: Safety Control Module) 보드의 상태를 모니터링합니다. 로봇 감시 기능의 상태와 안전 입출력 상태정보를 확인할 수 있습니다. 
@@ -1885,9 +1755,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 <p align="center">
 <img src="../_assets/5/monitoring_menu.png"></img>
 <em><p align="center">안전 상태 모니터링 메뉴</p></em>
-</p>
-[__SOURCE](5-monitoring/1-robot-limit-parameter-monitoring.md)
-# 5.1 로봇 감시 기능 모니터링
+</p># 5.1 로봇 감시 기능 모니터링
 
 `[시스템 > 8: 안전 시스템 > 3: 모니터링 > 1: 로봇 상태]` 메뉴를 선택하여 로봇 TCP 속도/TCP 위치/TCP 방향/파워/모멘텀 상태를 확인할 수 있습니다.
 
@@ -1918,8 +1786,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
   * **\[조인트 속도]**: 조인트 속도 모니터링 위반 여부
   * **\[충돌]**: 충돌 모니터링 위반 여부
   * **\[SOS]**: (안전 정지 감시) SOS 모니터링 위반 여부
-
-[__SOURCE](5-monitoring/4-safety-io-status-monitoring.md)
 # 5.2 안전 I/O 상태
 
 `[시스템 > 8: 안전 시스템 > 3: 모니터링 > 3: 안전 입출력 상태]` 메뉴를 선택하여 시스템의 기본/확장 안전 입출력 상태를 모니터링 할 수 있습니다.
@@ -1931,8 +1797,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 
 
-
-[__SOURCE](5-monitoring/6-profisafe-status-monitoring.md)
 # 5.4 PROFISAFE 모니터링
 
 `[시스템 > 8: 안전 시스템 > 3: 모니터링 > 5: PROFISAFE 상태]` 메뉴를 선택하여 PROFISAFE의 입출력 상태를 모니터링 할 수 있습니다.
@@ -1948,8 +1812,6 @@ NO_CYCLIC_DATA_EX : PROFIsafe 프로그램 실행중이나 PROFIsafe 통신 개�
 - **F-Parameter**
 - **Config**
 - **I/O Count:** (IO 송수신 횟수)
-
-[__SOURCE](5-monitoring/7-cipsafety-status-monitoring.md)
 # 5.4 PROFISAFE 모니터링
 
 `[시스템 > 8: 안전 시스템 > 3: 모니터링 > 5: PROFISAFE 상태]` 메뉴를 선택하여 PROFISAFE의 입출력 상태를 모니터링 할 수 있습니다.
@@ -1969,9 +1831,7 @@ Configuring : 설정값 적용 오류<br>
 Connection Fail : 연결 실패.<br>
 On-Line, Connected : Originator와 연결됨. 온라인 <br>
 On-Line, No Conn : Originator와 연결되지 않음. 온라인<br>
-- **입출력 카운트:** (IO 송수신 횟수)
-[__SOURCE](6-recovery/README.md)
-# 6. 복구
+- **입출력 카운트:** (IO 송수신 횟수)# 6. 복구
 
  안전 기능 모니터링 위반으로 발생한 에러는 복구 작업이 필요합니다. 위반한 안전기능에 따라 알맞은 복구 방법을 수행하십시오.
 
@@ -1979,8 +1839,6 @@ On-Line, No Conn : Originator와 연결되지 않음. 온라인<br>
 {% hint style="warning" %}
 **\[주의]**: 복구 후 안전기능 설정 및 작업 프로그램의 티칭 위치를 다시 확인하십시오.
 {% endhint %}
-
-[__SOURCE](6-recovery/1-recovery-robot-position-violation.md)
 # 6.1	로봇 위치 위반 시 복구
 
 로봇 위치 위반은 로봇의 위치가 안전 영역을 벗어나는 것으로 TCP 위치, TCP 방향 및 조인트 모니터링 위반이 있습니다. 로봇 위치 위반 시에는 로봇을 물리적으로 움직여 위치를 이동해야 에러를 해제할 수 있으며, 수동 모드에서는 안전기능 위반으로 로봇을 정지시키지 않으므로 수동 모드에서 로봇의 각도와 위치를 조정해야 합니다.
@@ -2000,8 +1858,6 @@ On-Line, No Conn : Originator와 연결되지 않음. 온라인<br>
 {% hint style="warning" %}
 에러 해제 후 안전 레이아웃 설정 및 작업 프로그램의 티칭 위치를 다시 확인하십시오.
 {% endhint %}
-
-[__SOURCE](6-recovery/2-recovery-robot-speed-violation.md)
 # 6.2	로봇 속도 위반 시 복구
 
 로봇 속도 위반은 로봇의 속도가 안전 기준을 초과하는 것으로 TCP 속도, 조인트 속도, 파워 및 모멘텀 모니터링 위반이 있습니다. 로봇 속도 위반 시에는 로봇이 순간적인 속도를 감지하고 정지하므로 로봇의 위치를 이동하지 않고 에러를 해제할 수 있습니다.
@@ -2017,8 +1873,6 @@ On-Line, No Conn : Originator와 연결되지 않음. 온라인<br>
 
 * 에러 해제 후 속도 관련 안전 파라미터 및 작업 프로그램의 속도를 반드시 확인하십시오.
 {% endhint %}
-
-[__SOURCE](6-recovery/3-recovery-robot-force-violation.md)
 # 6.3	로봇 힘 위반 시 복구
 
 로봇 힘 위반은 외부의 힘이 가해지거나 로봇 내부에서 사용하는 힘의 크기가 안전 기준을 초과하는 것으로 충돌 검지, 파워 및 모멘텀 모니터링 위반이 있습니다. 위반 발생 원인에 따라 에러를 해제할 수 있습니다.
@@ -2039,8 +1893,6 @@ On-Line, No Conn : Originator와 연결되지 않음. 온라인<br>
 
 * 에러 해제 후 안전 기능 설정, 툴 데이터, 작업 프로그램의 티칭 위치 및 속도를 다시 확인하십시오.
 {% endhint %}
-
-[__SOURCE](6-recovery/4-recovery-sos-violation.md)
 # 6.4	안전 정지 감시(SOS) 위반 시 복구
 
 안전 정지 감시(SOS) 위반은 로봇의 모터가 켜져 있고 정지 상태에서 움직임이 감지되는 것입니다. 안전 정지 감지 위반 시에는 로봇이 순간적인 움직임을 감지하고 에러를 발생하므로 로봇의 위치를 이동하지 않고 에러를 해제할 수 있습니다.
@@ -2064,24 +1916,52 @@ On-Line, No Conn : Originator와 연결되지 않음. 온라인<br>
 * 자동 모드에서 모터를 켜고 에러의 재발 여부를 확인하십시오.
 * 동일한 에러가 다시 발생하면 해당 축의 모터와 감속기를 점검하십시오.
 {% endhint %}
-
-[__SOURCE](7-error-message/README.md)
 # 7. 에러 메시지
 
 안전 기능 관련 알람 발생시, "[에러, 경고 도움말](https://hr-alarms.web.app/#/)"를 참고하십시오.
-
-[__SOURCE](attachment/README.md)
 # 별첨
 
+# 신규 로봇 모델 등록 방법
 
-[__SOURCE](attachment/rules-criteria-and-public-notice.md)
+****
+
+1. HRSpace 설치 파일 내 라이브러리에 위치한 로봇의 모델링 파일 중 희망하시는 로봇의 모델링 파일을 폴더 단위로 복사합니다.
+* 파일 경로 [HRSpace(version)\Library\Robot]
+
+2. 복사한 폴더를 제어기의 로봇 3D 파일 저장 경로에 추가합니다.
+* 파일 경로 [prebuilt\tp\libs3d\robot]
+
+3. 로봇의 3D 파일이 포함된 폴더의 명칭이 구버전인 경우 신규 버전으로 변경합니다.
+
+****
+
+* 예시: HS220S 로봇 모델링 파일 신규 추가
+
+1) 라이브러리에 저장된 로봇의 모델링 파일 중 HS220S 복사
+
+<p align="center">
+<img src="../../../_assets/add_new_robot_model/add_new_robot_model_1.png"></img>
+<em><p align="center">추가하고자 하는 로봇의 모델링 파일 위치 확인 및 복사</p></em>
+</p>
+
+2) 복사한 폴더를 제어기의 로봇 3D 파일 저장 경로에 저장
+
+<p align="center">
+<img src="../../../_assets/add_new_robot_model/add_new_robot_model_2.png"></img>
+<em><p align="center">복사한 파일을 제어기의 로봇 3D 파일 저장 경로에 붙여넣기</p></em>
+</p>
+
+3) 폴더 명칭을 신규 버전으로 수정
+
+<p align="center">
+<img src="../../../_assets/add_new_robot_model/add_new_robot_model_3.png"></img>
+<em><p align="center">로봇 모델링 폴더 명칭이 구버전인 경우 폴더명 수정</p></em>
+</p>
 # 산업안전보건기준에 관한 규칙 및 안전검사 고시
 
 당해 산업용 로봇은 산업안전보건기준에 관한 규칙 및 안전검사 고시(검사 대상일 경우)의 검사 기준을 고려하여 설치하여야 한다.
 
 "[산업안전보건기준에 관한 규칙](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/ko/README)"
-
-[__SOURCE](warranty.md)
 # 품질보증
 
 "[품질보증](https://hrbook-hrc.web.app/#/view/quality-assurance/ko/README)"

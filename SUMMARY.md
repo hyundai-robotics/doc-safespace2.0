@@ -76,5 +76,6 @@
   * [6.4 안전 정지 감시(SOS) 위반 시 복구](6-recovery/4-recovery-sos-violation.md)
 * [7. 에러 메시지](7-error-message/README.md)
 * [별첨](attachment/README.md)
+  * [신규 로봇 모델 등록 방법](attachment/add-new-robot-model.md)
   * [산업안전보건기준에 관한 규칙 및 안전검사 고시](attachment/rules-criteria-and-public-notice.md)
 * [품질 보증](warranty.md)
