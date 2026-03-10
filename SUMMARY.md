@@ -76,5 +76,6 @@
   * [6.4 Safe Stop Monitor (SOS) Violation Recovery](6-recovery/4-recovery-sos-violation.md)
 * [7. Error Message](7-error-message/README.md)
 * [Attachment](attachment/README.md)
+  * [Method for Registering a New Robot Model](attachment/add-new-robot-model.md)
   * [Rules on Occupational Safety and Health Standards and Public Notice on Safety Inspection](attachment/rules-criteria-and-public-notice.md)
 * [Quality Assurance](warranty.md)

@@ -380,13 +380,18 @@
 		"byte_ofs": 117034
 	},
 	{
-		"link": "attachment/rules-criteria-and-public-notice.md",
+		"link": "attachment/add-new-robot-model.md",
 		"char_ofs": 114815,
 		"byte_ofs": 117051
 	},
 	{
+		"link": "attachment/rules-criteria-and-public-notice.md",
+		"char_ofs": 116217,
+		"byte_ofs": 118492
+	},
+	{
 		"link": "warranty.md",
-		"char_ofs": 115247,
-		"byte_ofs": 117491
+		"char_ofs": 116649,
+		"byte_ofs": 118932
 	}
 ]
