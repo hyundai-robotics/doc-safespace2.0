@@ -63,6 +63,7 @@
     * [4.1.3 Encoder Offset](4-configuration/1-check-before-configuration/1-encoder-offset.md)
     * [4.1.4 Tool Data Setting](4-configuration/1-check-before-configuration/2-tool-data-setting.md)
   * [4.2 Safety Parameters Transfer](4-configuration/2-change-safety-parameter.md)
+  * [4.3 Safety Parameter Report](4-configuration/3-safety-parameter-report.md)
 * [5. Safety Status Monitoring](5-monitoring/README.md)
   * [5.1 Robot Monitoring Function Status](5-monitoring/1-robot-limit-parameter-monitoring.md)
   * [5.2 Safety I/O Status](5-monitoring/4-safety-io-status-monitoring.md)

@@ -1,8 +1,4 @@
-﻿
-[__SOURCE](README.md)
-# Hi7 Controller Function Manual - SafeSpace2.0
-
-[__SOURCE](about-this-manual/README.md)
+﻿# Hi7 Controller Function Manual - SafeSpace2.0
 # About This Manual
 
 This manual describes safety, installation, use, and maintenance methods for Hyundai Robotics SafeSpace2.0.
@@ -21,13 +17,9 @@ The products to which this manual applies are as follows:
 | Controller | Hi7 | V7.0 |
 | Safety Control Module | BD642 | V08 |
 | PROFIsafe Communication Board | BD671 | V06 |
-
-[__SOURCE](about-this-manual/precautions.md)
 # Precautions
 
 {% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/en/precautions.md" %}
-
-[__SOURCE](about-this-manual/notation.md)
 # Notation Conventions
 
 This manual uses the following notation conventions and safety instructions to help understanding of the content.
@@ -69,9 +61,7 @@ If the ![](../_assets/eng-mode.png) icon is blinking in the status bar, you are 
 
 
 
-###
-[__SOURCE](about-this-manual/safety-notice.md)
-# Safety Precautions
+#### Safety Precautions
 
 To ensure proper use of the product and user safety and prevent property damage, be sure to familiarize yourself with the following safety precautions before using the product.
 
@@ -119,16 +109,10 @@ To ensure proper use of the product and user safety and prevent property damage,
 * When transporting the product, maintain proper posture and work with two or more people. You may suffer injuries to body parts such as your waist, arms, or legs.
 * When transporting the product using lifting equipment, comply with the safety regulations and equipment usage guidelines of the relevant country and region.
 * Familiarize yourself with the transport content in the manual and transport the product in compliance with the instructions. We are not responsible for damage and breakage of the product caused by the customer transporting the product.
-
-[__SOURCE](1-safety/README.md)
 # 1. Safety
 
-
-[__SOURCE](1-safety/1-safety-requirements/README.md)
 # 1.1 Safety Requirements
 
-
-[__SOURCE](1-safety/1-safety-requirements/1-applicable-standards.md)
 # 1.1.1 Applicable Standards
 
 This product has been designed and manufactured in accordance with the industrial robot safety standard ISO 10218-1 and the technical specification ISO/TS 15066 for collaborative operation. The safety standards applied to this product are as follows.
@@ -152,8 +136,6 @@ This product has been designed and manufactured in accordance with the industria
 * IEC 61800-3:2022 Adjustable speed electrical power drive systems - Part 3: EMC requirements and specific test methods
 * IEC 61000-6-7:2014 Electromagnetic compatibility (EMC) - Part 6-7: Generic standards - Immunity requirements for equipment intended to perform functions in a safety-related system (functional safety) in industrial locations
 * IEC 61326-3-1:2017 Electrical equipment for measurement, control and laboratory use. EMC requirements. Part 3-1: Immunity requirements for safety-related systems and for equipment intended to perform safety-related functions (functional safety) - General industrial applications
-
-[__SOURCE](1-safety/1-safety-requirements/2-safety-performance.md)
 # 1.1.2 Safety Performance
 
 The safety performance of SafeSpace2.0's emergency stop and external device interface (basic safety input/output, PROFIsafe) is as follows:
@@ -176,13 +158,9 @@ The safety performance of other safety functions is as follows:
 |    		PFH    			   |  1.5E-07  |         IEC 61508         |
 
 
-
-[__SOURCE](1-safety/2-safety-measures/README.md)
 # 1.2 Safety Measures
 
 Describes the safety functions built into the product and also the measures to ensure the safety of users and workers.
-
-[__SOURCE](1-safety/2-safety-measures/1-safety-functions.md)
 # 1.2.1 Safety functions
 
 ## Safety functions in SafeSpace2.0
@@ -234,8 +212,6 @@ SafeSpace 2.0 is available with three different license options. Each license gr
 | Spped and Seperation monitoring |    |  | O | O |
 | Collision/Power/Momentum monitoring |    |  |  | O |
 | Safe motion |    |  |  | O |
-
-[__SOURCE](1-safety/2-safety-measures/2-safety-training.md)
 # 1.2.2 Safety Training
 
 To effectively use the product's functions, you must familiarize yourself with the contents of the manual and properly install, use, and maintain the product. Product users have the responsibility to be familiar with and comply with robot-related safety regulations in the region where the robot is installed and used, and to properly design, install, and operate safety devices to ensure the safety of users working in the robot system.
@@ -247,8 +223,6 @@ To effectively use the product's functions, you must familiarize yourself with t
   * Procedures for safely handling the robot
   * Performance and potential risk factors of the robot and robot system
   * Work related to specific applications of the robot, etc.
-
-[__SOURCE](1-safety/2-safety-measures/4-emergency-stop/README.md)
 # 1.2.4 Emergency Stop
 
 The emergency stop function operates in emergencies or emergency situations such as when a worker or other object enters a danger area. All emergency stop switches are installed in locations that are easily accessible even from outside the safety area.
@@ -257,19 +231,13 @@ When the emergency stop function is executed, the robot immediately stops the op
 
 * The robot servo system power is cut off and the motor brake operates.
 * The teach pendant screen displays an emergency stop message.
-
-[__SOURCE](1-safety/2-safety-measures/4-emergency-stop/1-switches.md)
 # 1.2.4.1 Emergency Stop Switch
 
 There is one emergency stop switch installed on the controller and one on the teach pendant. Press the emergency stop switch in case of an emergency.
-
-[__SOURCE](1-safety/2-safety-measures/4-emergency-stop/2-connecting-to-devices-of-external-system.md)
 # 1.2.4.2 Connecting External Emergency Stop Device
 
 In addition to the pre-installed emergency stop switch, an external emergency stop device can be connected depending on the field environment and application. For more information, see "[2. Installation](../../../2-installation/README.md)" and "[3.3.4 Safety Signal Input/Output](../../../3-safety-function/3-safety-function/4-safety-io/README.md)".
 
-
-[__SOURCE](1-safety/3-risk-assessment.md)
 # 1.3 Risk Assessment
 
 In the integrated system configuration including the robot, risk assessment is one of the important factors that is handled as a legal requirement in most countries. As the safety assessment for robot installation varies depending on how the robot is integrated into the system, the risk of the integrated system cannot be assessed with the robot alone.
@@ -305,8 +273,6 @@ Important items when conducting risk assessment of the integrated robot system a
 * Collision avoidance possibility by robot
 
 When configuring the integrated system, if risk factors are not sufficiently removed with the robot's safety-related functions (e.g., use of tools for non-collaborative robots, etc.), you should install necessary additional protective devices through risk assessment.
-
-[__SOURCE](1-safety/4-potential-risks.md)
 # 1.4 Potential Hazards
 
 If the risk assessment of the integrated system linked with the robot concludes that risk factors are not sufficiently removed with the robot's safety-related functions alone, you must establish additional protective measures.
@@ -324,8 +290,6 @@ Matters to consider when establishing additional protective measures are as foll
 * Errors due to unauthorized changes to safety-related function settings, etc.
 
 The types of possible hazards vary depending on the system configuration, so you must conduct a risk assessment before using the integrated system.
-
-[__SOURCE](1-safety/5-validity-and-responsibilities.md)
 # 1.5 Validity and Responsibility
 
 It is required to comply with the safety requirements based on the safety regulations and laws of the country and region where the robot is installed and used. The supplier and user of the integrated robot system have various responsibilities including the following:
@@ -339,8 +303,6 @@ It is required to comply with the safety requirements based on the safety regula
 * Provision of all types of technical documents including manuals, etc.
 
 The safety-related content in this manual does not cover all possible risk factors and situations that may occur while using the product.
-
-[__SOURCE](1-safety/6-reaction-time.md)
 # 1.6 Response Time
 
 
@@ -352,12 +314,8 @@ The response time to be taken from safety function violation to stop execution i
 
 The response time to be taken from stop execution by PROFIsafe F-output data is 40.8 ms. To get the time until the robot completely stops, the communication cycle and the robot's stop time and stop distance calculation values should be added.
 
-****
-[__SOURCE](2-installation/README.md)
-# 2. Installation
+****# 2. Installation
 
-
-[__SOURCE](2-installation/1-robot-system.md)
 # 2.1 Robot System
 
 An industrial robot is a machine equipped with automatic control, manipulation, and movement functions, capable of executing various tasks programmed in industrial settings. Collaborative robots are a type of industrial robot.
@@ -371,32 +329,19 @@ A robot system consists of a robot body and a controller that controls the body.
 Examples of basic robot system configurations, depending on the robot type, are as follows:
 
 
-![Basic configuration of a vertical multi-joint robot system](../_assets/image_6.png)
+![Basic configuration of a vertical multi-joint robot system](../_assets/image_7.png)
 
 {% hint style="info" %}
-For more information about the robot system, please refer to the "[Hi7 Controller Operating Instructions](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/1-robot-system/README)".
+For more information about the robot system, please refer to the "[Hi7 Controller Operating Instructions](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/1-robot-system/README?cont_model=Hi7)".
 {% endhint %}
-
-
-
-
-[__SOURCE](2-installation/2-scm-install.md)
 # 2.1 Safety Module
 
-The safety control module is shipped mounted inside the controller in board form. When board replacement is required, refer to the controller maintenance manual.
-[__SOURCE](2-installation/3-add-io-install.md)
-# 2.2 I/O Module (Option)
+The safety control module is shipped mounted inside the controller in board form. When board replacement is required, refer to the controller maintenance manual.# 2.2 I/O Module (Option)
 
-When you select to use the I/O option module, it is shipped mounted inside the controller. When board replacement is required, refer to the controller maintenance manual.
-[__SOURCE](2-installation/4-profisafe-install.md)
-# 2.3 PROFIsafe Module (Option)
+When you select to use the I/O option module, it is shipped mounted inside the controller. When board replacement is required, refer to the controller maintenance manual.# 2.3 PROFIsafe Module (Option)
 
-When you select to use the PROFIsafe option module, it is shipped mounted inside the controller. When board replacement is required, refer to the controller maintenance manual.
-[__SOURCE](3-safety-function/README.md)
-# 3. SafeSpace2.0 Safety Functions
+When you select to use the PROFIsafe option module, it is shipped mounted inside the controller. When board replacement is required, refer to the controller maintenance manual.# 3. SafeSpace2.0 Safety Functions
 
-
-[__SOURCE](3-safety-function/1-description-term.md)
 # 3.1 Terminology
 
 ### <mark style="color:green;">Robot Monitoring Function</mark>&#xD;
@@ -504,9 +449,7 @@ The following parameters are considered during motion tuning:
 
 * **Stopping Time**
 
-* **Stopping Distance**
-[__SOURCE](3-safety-function/2-limitations.md)
-# 3.2 Limitations
+* **Stopping Distance**# 3.2 Limitations
 
 SafeSafe2.0 has the following limitations. Please check their applicability before configuring the feature.
 
@@ -516,15 +459,11 @@ SafeSafe2.0 has the following limitations. Please check their applicability befo
 | Supported Robots | 6-axis Industrial Robots, Collaborative Robots |
 | Unsupported Robots | FPD Robots, Painting Robots, Gantry Robots | 
 | Supported Axes | Up to 8 axes (For systems with 9 or more axes, safety functions can only be configured for axes 7 and 8) |
-| Unsupported Robot Axes | Servogun Axes, Additional Axes Combined with Robots (Gantry Robots) |
-[__SOURCE](3-safety-function/3-safety-function/README.md)
-# 3.3 Safety Functions
+| Unsupported Robot Axes | Servogun Axes, Additional Axes Combined with Robots (Gantry Robots) |# 3.3 Safety Functions
 
 
 SafeSpace2.0 safety functions can be configured through safety function settings and are used as risk countermeasures selected in the risk assessment performed by the worker.
 
-
-[__SOURCE](3-safety-function/3-safety-function/1-general-condition/README.md)
 # 3.3.1 Basic Settings
 
 Robot safety parameters consist of limit values   and stop methods for monitoring safety functions.
@@ -553,8 +492,6 @@ The following safety functions can be configured in the Basic Settings menu:
 * Verify that all safety function configurations and settings comply with the risk assessment.
 {% endhint %}
 
-
-[__SOURCE](3-safety-function/3-safety-function/1-general-condition/1-general.md)
 # 3.3.1.1 General
 
 Set the thresholds for essential functions (manual mode speed monitoring, stop time, and stop distance monitoring) required for robot operation. Additionally, configure whether the robot monitoring and area monitoring functions are fully enabled. Even if the robot monitoring and area monitoring functions are enabled, if the safety function is disabled, the monitoring function will not operate. If a monitoring violation occurs, the configured safety stop (Stop 0, Stop 1) will be immediately activated.
@@ -584,9 +521,7 @@ You can set parameter values   in the `[System > 8: Safety System > 1: Basic Set
 {% hint style="warning" %}
 **\[Caution]**: The stop time and stop distance are the time and distance until the robot actually stops when stop1 is executed, and if the set value is exceeded, stop0 is activated immediately.
 {% endhint %}
- 
-[__SOURCE](3-safety-function/3-safety-function/1-general-condition/2-safe-stop.md)
-# 3.3.1.2 Stop Settings
+ # 3.3.1.2 Stop Settings
 
 Set the appropriate safe stop type for each safety function. Safe stop functions stop the robot to a safe state when a safety violation occurs. There are three types: All types of safe stop functions comply with Requirement 4.2.2.4 of IEC 61800-5-2.
 
@@ -619,9 +554,7 @@ You can set the parameter values   in the `[System > 8: Safety System > 1: Basic
 {% hint style="warning" %}
 **\[Caution]**: Appropriate stopping methods for each function must be established through risk assessment, and verification must be performed before operation. 
 {% endhint %}
- 
-[__SOURCE](3-safety-function/3-safety-function/1-general-condition/3-safe-tool-info.md)
-# 3.3.1.3 Safety Tool Information
+ # 3.3.1.3 Safety Tool Information
 
 Safety tool information is used by the safety board to calculate the robot's speed and position. You must enter the tool information attached to the actual robot. The tool information must be identical to the tool number used for robot control (`[System > 3: Robot Parameters > 1: Tool Data]`).
 
@@ -651,9 +584,7 @@ You can set safety tool information in the `[System > 8: Safety System > 1: Basi
 {% hint style="warning" %}
 **\[Caution]**: Safety tool numbers 0 to 15 are supported. If your system uses tool information 16 to 31, match safety tool number 0 with the tool information.
 {% endhint %}
- 
-[__SOURCE](3-safety-function/3-safety-function/1-general-condition/4-safe-additional-load.md)
-# 3.3.1.4 Safety Added Weight
+ # 3.3.1.4 Safety Added Weight
 
 Safety added weight information is used by the safety board to calculate the robot's torque. You must enter the information for the added weight actually installed on the robot. The information must be identical to the added weight information used for robot control (`[System > 3: Robot Parameters > 7: Added Weight by Axis]`).
 
@@ -684,9 +615,7 @@ Safety added weight information is used by the safety board to calculate the rob
 **\[Caution]**: The safety additional weight number is supported from 0 to 2, and each number matches the axis number of the system additional weight (0-S axis, 1-H axis, 2-V axis). Please enter the additional weight information by matching the safety parameter number with the axis number.
 {% endhint %}
  
- 
-[__SOURCE](3-safety-function/3-safety-function/1-general-condition/5-maintenance.md)
-# 3.3.1.5 Maintenance
+ # 3.3.1.5 Maintenance
 
 The Maintenance menu allows you to set the mastering and brake test cycles. Periodic monitoring of the origin and brake status of each robot axis is essential to ensure the performance of safety functions. If the tests fail to complete within the set cycle, Safety Stop 1 is immediately activated.
 
@@ -709,9 +638,7 @@ You can set the parameter values   in the `[System > 8: Safety System > 1: Basic
 {% hint style="warning" %}
 **\[Caution]**: If a crash occurs, we recommend performing a mastering test and a break test.
 {% endhint %}
- 
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/README.md)
-# 3.3.2 Robot Monitoring Function
+ # 3.3.2 Robot Monitoring Function
 
 Robot safety parameters consist of limit values   and stop methods for monitoring safety functions.
 
@@ -743,8 +670,6 @@ The following safety features can be configured in the Robot Limits menu:
 * Verify that all safety function configurations and settings comply with the risk assessment.
 {% endhint %}
 
-
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/1-joint-space.md)
 # 3.3.2.1 Joint Angle Limit Setting
 
 The Joint Area Setting parameter is a limit value for monitoring safety functions in the robot's joint space. If the monitoring is violated, the specified safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
@@ -774,9 +699,7 @@ You can set parameter values   in the `[System > 8: Safety System > 2: Parameter
 {% hint style="warning" %}
 *\[Caution]**: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
 {% endhint %}
- 
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/2-joint-speed.md)
-# 3.3.2.2 Joint Speed Limit
+ # 3.3.2.2 Joint Speed Limit
 
 The Joint Speed   Setting parameter is a limit value for monitoring the robot's joint speed. If the limit value is violated, the specified safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
 
@@ -805,8 +728,6 @@ You can set parameter values   in the `[System > 8: Safety System > 2: Parameter
 **\[Caution]**: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
 {% endhint %}
  
-
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/3-joint-SOS.md)
 # 3.3.2.3 Joint Stop Monitoring
 
 Stop monitoring monitors each axis for abnormal movement during robot stop operations. If a set limit is violated, a safety stop (Stop 0) is immediately activated.
@@ -826,9 +747,7 @@ Parameter values   can be set in the `[System > 8: Safety System > 1: Parameter 
 
 {% hint style="warning" %}
 **\[Caution]**: If the stop monitoring parameters are violated, be sure to check that the robot's movement is normal before restarting.
-{% endhint %}
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/4-tcp-speed.md)
-# 3.3.2.4 TCP Speed   Limit Setting
+{% endhint %}# 3.3.2.4 TCP Speed   Limit Setting
 
 This function monitors the TCP speed relative to the robot coordinate system. If a monitoring violation occurs, a safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
 
@@ -854,9 +773,7 @@ You can set the parameter values   in the `[System > 8: Safety System > 2: Param
 {% hint style="warning" %}
 **\[Caution]**: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
 {% endhint %}
- 
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/5-collision.md)
-# 3.3.2.5 Collision Detection
+ # 3.3.2.5 Collision Detection
 
 When the external force applied to the robot exceeds the allowable value, it is recognized as a collision. You can adjust the sensitivity of each axis, and the higher the sensitivity, the more even a small external force is recognized as a collision. When the monitoring is violated, a safety stop (Stop 0, Stop 1, and Stop 2) is immediately activated.
 
@@ -878,8 +795,6 @@ When the external force applied to the robot exceeds the allowable value, it is 
 * Since the robot's impact force can increase in proportion to kinetic energy when the speed is high and the payload is large, considerable impact may occur if the robot collides with an external object. In the collaborative space, operate while maintaining the safe speed and payload.
 * False detection may occur if the tool information and additional weight are set differently from actual values. Check each information before using the collision detection function.
 {% endhint %}
-
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/6-re-plan.md)
 # 3.3.2.6 Re plan Setting
 
 Replan is a function that adjusts the robot's speed based on signals received from external safety sensors. The robot's operating speed is adjusted to the deceleration rate corresponding to the input signal, and the TCP speed is monitored at the corresponding speed after a delay time.
@@ -905,8 +820,6 @@ You can set the parameter values   in the `[System > 8: Safety System > 2: Param
 * When configuring speed limits, always consider stopping time and cover the robot to prevent collisions and injuries.
 * High speeds and large payloads, in proportion to the robot's kinetic energy, can increase the robot's impact force. Therefore, a significant impact can occur if the robot collides with an external object. Maintain a safe speed and payload in collaborative spaces.
 {% endhint %}
-
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/7-power.md)
 # 3.3.2.7 Power Setting
 
 This function monitors whether the force generated by the robot exceeds the allowable limit. If a monitoring violation occurs, a safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
@@ -929,8 +842,6 @@ You can set the parameter values   in the `[System > 8: Safety System > 2: Param
 * High speeds and large payloads, proportional to the robot's kinetic energy, can increase the robot's impact force. Therefore, a collision with an external object can result in significant impact. In collaborative spaces, maintain a safe speed and payload.
 * Setting tool information and additional weights differently from actual values   may result in false detection. Please check the information before using this feature.
 {% endhint %}
-
-[__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/8-momentum.md)
 # 3.3.2.8 Momentum Setting
 
 This function monitors whether the momentum generated by the robot exceeds the allowable limit. If a monitoring violation occurs, a safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
@@ -953,24 +864,20 @@ You can set the parameter values   in the `[System > 8: Safety System > 2: Param
 * High speeds and large payloads, proportional to the robot's kinetic energy, can increase the robot's impact force. Therefore, a collision with an external object can result in significant impact. In collaborative spaces, maintain a safe speed and payload.
 * Setting tool information and additional weights differently from actual values   may result in false detection. Please check the information before using this feature.
 {% endhint %}
-
-[__SOURCE](3-safety-function/3-safety-function/3-safety-layout/README.md)
 # 3.3.2 Safety Layout
 
 Model the robot, tool, and safety zone to monitor the robot's position and orientation.
-
-[__SOURCE](3-safety-function/3-safety-function/3-safety-layout/1-cell-area.md)
 # 3.3.3.1 Safety Area Setting
 
 A safety area is a work space or protected space for monitoring the tool and robot link areas. The work space is a restricted space where the monitored object can move freely but cannot leave. In contrast, the protected space is a restricted space where the monitored object cannot move once it enters. If the robot leaves the set work space or violates the protected space, a safety stop (Stop 0, Stop 1, and Stop 2) is activated.
 
 <p align="center">
-<img src="../../../_assets/safety_layout/_cell_working.PNG"></img>
+<img src="../../../_assets/safety_layout/cell_general.png"></img>
 <em><p align="center">work space</p></em>
 </p>
 
 <p align="center">
-<img src="../../../_assets/safety_layout/_cell_protected.PNG"></img>
+<img src="../../../_assets/safety_layout/cell_protected.png"></img>
 <em><p align="center">protected space</p></em>
 </p>
 
@@ -982,7 +889,7 @@ You can set the parameter values   for the safety zone in each tab of the `[Syst
 * **General**
 
 <p align="center">
-<img src="../../../_assets/safety_layout/_cell_general.PNG"></img>
+<img src="../../../_assets/safety_layout/cell_general.png"></img>
 <em><p align="center">General</p></em>
 </p>
 
@@ -996,7 +903,7 @@ You can set the parameter values   for the safety zone in each tab of the `[Syst
 * **Detection target**
 
 <p align="center">
-<img src="../../../_assets/safety_layout/_cell_target.PNG"></img>
+<img src="../../../_assets/safety_layout/cell_target.png"></img>
 <em><p align="center">Detection target</p></em>
 </p>
 
@@ -1010,7 +917,7 @@ You can set the parameter values   for the safety zone in each tab of the `[Syst
 * **Area**
 
 <p align="center">
-<img src="../../../_assets/safety_layout/_cell_working.PNG"></img>
+<img src="../../../_assets/safety_layout/cell_working.png"></img>
 <em><p align="center">Area</p></em>
 </p>
 
@@ -1025,9 +932,7 @@ You can set the parameter values   for the safety zone in each tab of the `[Syst
 
 {% hint style="warning" %}
 **\[Caution]**: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
-{% endhint %}
-[__SOURCE](3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)
-# 3.3.2.2 Safety Tool Modeling
+{% endhint %}# 3.3.2.2 Safety Tool Modeling
 
 Monitors whether the sphere modeled with a tool used for safety area monitoring violates the protected space or leaves the work space. Up to 16 safety tools can be set and modeled with up to 10 models.
 
@@ -1036,9 +941,16 @@ As the safety tool is activated by the tool number set on the teach pendant, you
 There are a total of 3 models used for safety tool modeling: sphere, capsule, and plate. Each model consists of a center and radius. The center position and radius of the modeling are set based on the robot flange coordinate system (Xf, Yf, and Zf), and the radius is set to include the tool size and stop distance at maximum TCP speed.
 
 <p align="center">
-<img src="../../../_assets/safety_layout/_tool_sphere.PNG"></img>
-<em><p align="center">Tool Modeling</p></em>
+<img src="../../../_assets/safety_layout/tool_model.png"></img>
+<em><p align="center">Tool modeling</p></em>
 </p>
+
+|  **Parameter** |                       **Description**                       |  **shape**  |
+| :-------: | :------------------------------------------------: | :----------: |
+| c | center(X,Y,Z based robot flange coordinate system) |   sphere, capsule, plate  |
+| r | radius  |   sphere, capsule, plate  |
+| h | height  |   capsule, plate  |
+| w | width  |   plate  |
 
 <p align="center">
 <img src="../../../_assets/safety_layout/flange.png"></img>
@@ -1048,7 +960,7 @@ There are a total of 3 models used for safety tool modeling: sphere, capsule, an
 You can set parameter values   in the `[System > 8: Safety System > 2: Parameter Setting > 2: Area Limit > 3: Tool Modeling]` menu.
 
 <p align="center">
-<img src="../../../_assets/safety_layout/_tool_sphere.PNG"></img>
+<img src="../../../_assets/safety_layout/tool_param.png"></img>
 <em><p align="center">Safety Tool Modeling Settings Screen</p></em>
 </p>
 
@@ -1076,8 +988,6 @@ You can set parameter values   in the `[System > 8: Safety System > 2: Parameter
 * When changing tool data, be sure to recheck that the parameters set in safety tool modeling are accurate. The tool data number and safety tool modeling number of the same tool should match.
 * As the definition of robot layout settings applies only to the robot 2nd and 3rd axes, other parts of the robot may violate this area even if a safety area is set.
 {% endhint %}
-
-[__SOURCE](3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)
 # 3.3.2.3 Safety Robot Modeling
 
 A robot model used for safety space monitoring. Safety robot modeling can be applied to axes 2 and 3, and both are modeled as capsules.
@@ -1102,9 +1012,7 @@ You can set parameter values   in the `[System > 8: Safety System > 2: Parameter
 **\[Caution]**
 
 * As the definition of robot layout settings applies only to the robot 2nd and 3rd axes, other parts of the robot may violate this area even if a safety area is set.
-{% endhint %}
-[__SOURCE](3-safety-function/3-safety-function/3-safety-layout/4-safety-tcp-orientation.md)
-# 3.3.2.4 TCP Orientation Monitoring
+{% endhint %}# 3.3.2.4 TCP Orientation Monitoring
 
 To use the TCP orientation monitoring function, you can set up a monitoring cone by setting the rotation angle and deviation angle for generating the reference vector.
 
@@ -1138,14 +1046,22 @@ You can set the parameter values   in the `[System > 8: Safety System > 2: Param
 
 * When changing tool data, be sure to recheck that the parameters set in safety tool modeling are accurate. The tool data number and safety tool modeling number of the same tool should match.
 {% endhint %}
-
-[__SOURCE](3-safety-function/3-safety-function/3-safety-layout/5-self-collision-detection.md)
 # 3.3.3.5 Self-Collision Detection
+
+Self-collision detection is a function that monitors potential collisions between Axis 2 of the robot and the tool.
+The tool and the robot must be modeled to match their actual geometries.
+For detailed information on the modeling methods, refer to "[3.3.3.2 Safety Tool Modeling](../../../3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)" and "[3.3.3.3 Safety Robot Modeling](../../../3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)".
+
+<p align="center">
+<img src="../../../_assets/safety_layout/self_collision.png"></img>
+<em><p align="center">Self-Collision Detection</p></em>
+</p>
+
 
 You can set parameters for the robot's self-collision detection function in the `[System > 8: Safety System > 2: Parameter Settings > 2: Area Limits > 5: Self-Collision Detection]` menu.
 
 <p align="center">
-<img src="../../../_assets/3/self_collision_param.png"></img>
+<img src="../../../_assets/safety_layout/self_collision_param.png"></img>
 <em><p align="center">Self-collision detection function parameter setting screen</p></em>
 </p>
 
@@ -1154,7 +1070,9 @@ You can set parameters for the robot's self-collision detection function in the 
 | Activation | <p>Whether the function is activated</p><p>(Invalid / Valid / Safe I/O)</p> | Invalid |
 | Stop method | <p>Stop method when the function is violated</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
 
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/README.md)
+
+
+
 # 3.3.4 Safety Input/Output
 
 Basic Information on Safety Input/Output
@@ -1172,8 +1090,6 @@ Basic Information on Safety Input/Output
 
 ![](../../../_assets/safety_io/comm_front.png)
 
-
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/1-default-io.md)
 # 3.3.4.1 Default Safety Input/Output Signals
 
 Set the parameters for safety input/output signals.
@@ -1214,8 +1130,6 @@ You can set the parameter values in the `[System > 8: Safety System > 2: Paramet
 ![](../../../_assets/safety_io/CN_SO1.bmp)
 
 
-
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/2-additional-io.md)
 # 3.3.4.2 Extended Safety Input/Output Signals
 
 Set the parameters for additional safety input/output signals. It consists of 8 input signals and 8 output signals, all operating as dual signals.
@@ -1241,8 +1155,6 @@ You can set parameter values in the `[System > 8: Safety System > 2: Parameter S
 ### Additional Safety Output Wiring Example)
 ![](../../../_assets/safety_io/CN_SO2.bmp)
 
-
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/3-Linker.md)
 # 3.3.4.3 Safety Signal Assignment
 
 The Safety signal assignment function serves to connect external signals such as safety input/output, additional safety input/output, and safety communication input/output with various logical signals (system safety input/output, safety application signals) that the robot controller has.
@@ -1350,8 +1262,6 @@ You can set the parameter values in the `[System > 8: Safety System > 2: Paramet
 
 {% endhint %}
 
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/4-safe-comm-select.md)
-
 
 # 3.3.4.3 Selecting Safety Communication
 
@@ -1360,8 +1270,6 @@ You can set the parameter values in the `[System > 8: Safety System > 2: Paramet
 You can configure the parameter values in the `[System > 2: Control Parameters > 6: Safety Communication > 1: Select Safety Communication]` menu.
 
 ![](../../../_assets/safe_comm_select.png)
-
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/5-profisafe.md)
 
 
 # 3.3.4.4 PROFIsafe
@@ -1544,8 +1452,6 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
 
 
 
-[__SOURCE](3-safety-function/3-safety-function/4-safety-io/6-cipSafety.md)
-
 
 # 3.3.4.5 CIP Safety
 
@@ -1672,16 +1578,10 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
 <br> <br>
 ![CIP Safety](../../../_assets/cipSafety/alloc_out2.png)<br>
 
-
-[__SOURCE](4-configuration/README.md)
 # 4. Function Settings
 
-
-[__SOURCE](4-configuration/1-check-before-configuration/README.md)
 # 4.1 Items to Check Before Using Safety Functions
 
-
-[__SOURCE](4-configuration/1-check-before-configuration/3-password-setting.md)
 # 4.1.1 Password Setting
 
 The safety function parameters must be set and managed by a designated person. Users designated as administrators are granted administrator privileges and a system setting password. The system setting password is a required input item when setting the safety function parameters, and the parameters cannot be changed or set if the password is incorrect.
@@ -1700,8 +1600,6 @@ The safety function parameters must be set and managed by a designated person. U
 * It is recommended to set the password with 4 or more characters.
 * If you lose your password, contact an engineer.
 {% endhint %}
-
-[__SOURCE](4-configuration/1-check-before-configuration/4-certification.md)
 # 4.1.2 Certificate Issuance
 
 Safety parameters are protected through certificates. To secure saved safety parameters, you should first obtain a certificate.
@@ -1728,8 +1626,6 @@ Check the result.
 `[Discard]` Touch the button.
 Enter the system password.
 Check the result.
-
-[__SOURCE](4-configuration/1-check-before-configuration/1-encoder-offset.md)
 # 4.1.3 Encoder Inspection
 
 Since the safety function diagnoses the robot's position and speed based on the data of the encoder mounted on each axis, the accuracy of the encoder data is important. Therefore, you should check whether the encoder values match the actual values before using the safety function.
@@ -1752,8 +1648,6 @@ When a stop occurs due to a safety function violation, move each axis by jogging
 {% hint style="info" %}
 For more information about encoder offset, see "[7.4.4 Encoder Offset](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)" in the "[Hi7 Controller Operating Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/4-robot-parameter/4-encoder-offset/README?cont_model=Hi7)".
 {% endhint %}
-
-[__SOURCE](4-configuration/1-check-before-configuration/2-tool-data-setting.md)
 # 4.1.4 Tool Data Setting
 
 Safety features monitor the entire robot system, including tools attached to the robot flange. Therefore, the smaller the error between the tool data and actual values, the more accurately the safety function operates. Set the tool length and angle based on the flange coordinate system and enter the tool weight, center of gravity, and inertia information in accordance with individual units.
@@ -1775,8 +1669,6 @@ Safety features monitor the entire robot system, including tools attached to the
 * If information about the tool's weight and center of gravity isn't available, you can use the load estimation function to estimate the values. 
 * For detailed information on setting tool data, refer to the "[Hi7 Controller Operation Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)."
 {% endhint %}
-
-[__SOURCE](4-configuration/2-change-safety-parameter.md)
 # 4.2 Safety Parameter Transfer
 
 You can edit safety parameter values   and apply them to the system. Any values   that haven't been transferred will be reset when you exit the settings screen.
@@ -1810,8 +1702,52 @@ You can edit safety parameter values   and apply them to the system. Any values 
 <img src="../_assets/4/apply_param_4.png"></img>
 <em><p align="center">Output screen when transmission is successful</p></em>
 </p>
+# 4.3 Safety Parameter Report
 
-[__SOURCE](5-monitoring/README.md)
+You can view the currently applied safety parameter values in a report format.
+If the values on the settings screen have not been saved, they may differ from the values shown in the report.
+
+1. Go to the menu you want to modify under **\[System > 8: Safety System]**.
+
+<p align="center">
+<img src="../_assets/4/safety_report_1.png"></img>
+<em><p align="center">Example of entering the safety parameter setting screen</p></em>
+</p>
+
+2. To generate a report, click the **\[Report]** button at the bottom.
+
+<p align="center">
+<img src="../_assets/4/safety_report_2.png"></img>
+<em><p align="center">Example of generating a report</p></em>
+</p>
+
+3. The report will be created and displayed on the screen.
+
+<p align="center">
+<img src="../_assets/4/safety_report_3.png"></img>
+<em><p align="center">Example of the report display screen</p></em>
+</p>
+
+4. If you want to save the generated report, click the **\[Print]** button.
+
+<p align="center">
+<img src="../_assets/4/safety_report_4.png"></img>
+<em><p align="center">Example of the report print screen</p></em>
+</p>
+
+5. The password entry screen will appear. Enter the correct password.
+
+<p align="center">
+<img src="../_assets/4/safety_report_5.png"></img>
+<em><p align="center">Example of the password entry screen</p></em>
+</p>
+
+6. If the correct password is entered, the report will be saved and a notification window indicating that the save is complete will be displayed.
+
+<p align="center">
+<img src="../_assets/4/safety_report_6.png"></img>
+<em><p align="center">Example of the report save completion screen</p></em>
+</p>
 # 5. Safety Status Monitoring
 
 Monitors safety function violations and the status of the Safety Control Module (SCM) board. You can check the information of the status of robot monitoring functions and safety input/output.
@@ -1821,9 +1757,7 @@ Check the `[System > 8: Safety System > 3: Monitoring]` menu.
 <p align="center">
 <img src="../_assets/5/monitoring_menu.png"></img>
 <em><p align="center">Safety Status Monitoring Menu</p></em>
-</p>
-[__SOURCE](5-monitoring/1-robot-limit-parameter-monitoring.md)
-# 5.1 Robot Monitoring Function Monitoring
+</p># 5.1 Robot Monitoring Function Monitoring
 
 You can check the robot TCP speed/TCP position/TCP direction/power/momentum status by selecting the `[System > 8: Safety System > 3: Monitoring > 1: Robot Status]` menu.
 
@@ -1854,8 +1788,6 @@ You can check joint area/speed/SOS/collision status by selecting the `[System > 
 * **\[Joint Speed]**: Whether joint speed monitoring is violated.
 * **\[Collision]**: Whether collision monitoring is violated.
 * **\[SOS]**: Whether (Safety Stop Monitoring) SOS monitoring is violated.
-
-[__SOURCE](5-monitoring/4-safety-io-status-monitoring.md)
 # 5.2 Safety I/O Status
 
 You can monitor the system's basic/extended safety I/O status by selecting the `[System > 8: Safety System > 3: Monitoring > 3: Safety I/O Status]` menu.
@@ -1867,8 +1799,6 @@ You can monitor the system's basic/extended safety I/O status by selecting the `
 
 
 
-
-[__SOURCE](5-monitoring/6-profisafe-status-monitoring.md)
 # 5.4 PROFIsafe Monitoring
 
 You can monitor the I/O status of PROFIsafe by selecting the `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe]` menu.
@@ -1884,8 +1814,6 @@ NO_CYCLIC_DATA_EX : The PROFIsafe application is running, but PROFIsafe communic
 - **F-Parameter**
 - **Config**
 - **I/O Count:** (Number of I/O transmissions/receptions)
-
-[__SOURCE](5-monitoring/7-cipsafety-status-monitoring.md)
 # 5.4 CIP Safety Monitoring
 
 You can monitor the I/O status of CIP Safety by navigating to the `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 3: CIP Safety]` menu.
@@ -1906,8 +1834,6 @@ Connection Fail : A connection failure has occurred.
 On-Line, Connected : Link is OK. The device is online and connected to Originator.
 On-Line, No Conn : The device is online but not connected to Originator.
 - **I/O Count:** (Number of I/O transmissions/receptions)
-
-[__SOURCE](6-recovery/README.md)
 # 6. Recovery
 
 Errors caused due to safety function monitoring violations are cleared when switching to manual mode. In manual mode, safety function violations do not stop the robot, so, you can adjust the robot's angle and position to move it to a safe area.
@@ -1916,8 +1842,6 @@ Errors caused due to safety function monitoring violations are cleared when swit
 {% hint style="warning" %}
 **\[Caution]**: After recovery in manual mode, recheck the safety function settings and teaching positions of the work program.
 {% endhint %}
-
-[__SOURCE](6-recovery/1-recovery-robot-position-violation.md)
 # 6.1 	Recovery from Robot Position Violation
 
 Robot position violation occurs when the robot's position leaves the safety area, and the violations include TCP position violation, TCP orientation violation, and joint monitoring violation. In case of robot position violation, the error can only be cleared by physically moving the robot to change its position.
@@ -1937,8 +1861,6 @@ Robot position violation occurs when the robot's position leaves the safety area
 {% hint style="warning" %}
 After clearing the error, recheck the safety layout settings and also the teaching positions in the work program.
 {% endhint %}
-
-[__SOURCE](6-recovery/2-recovery-robot-speed-violation.md)
 # 6.2 	Recovery from Robot Speed Violation
 
 Robot speed violation including the TCP speed, joint speed, power, and momentum monitoring violations occurs when the robot's speed exceeds the safety standards,. In case of robot speed violation, the robot detects momentary speed and stops, so the error can be cleared without moving the robot's position.
@@ -1954,8 +1876,6 @@ Robot speed violation including the TCP speed, joint speed, power, and momentum 
 
 * After clearing the error, be sure to check the speed-related safety parameters and the speed of the work program.
 {% endhint %}
-
-[__SOURCE](6-recovery/3-recovery-robot-force-violation.md)
 # 6.3 	Recovery from Robot Force Violation
 
 Robot force violation such as collision detection, power, and momentum monitoring violations occurs when external force is applied or the magnitude of force used inside the robot exceeds the safety standards,. Depending on the cause of the violation, the error can be cleared.
@@ -1976,8 +1896,6 @@ Robot force violation such as collision detection, power, and momentum monitorin
 
 * After clearing the error, recheck the safety function settings, tool data, and work program's teaching positions and speed.
 {% endhint %}
-
-[__SOURCE](6-recovery/4-recovery-sos-violation.md)
 # 6.4 	Recovery from Safe Operating Stop (SOS) Violation
 
 Safe Operating Stop (SOS) violation occurs when movement is detected while the robot motor is on and in a stopped state. In case of safe operating stop violation, the robot detects momentary movement and generates an error, so the error can be cleared without moving the robot's position.
@@ -1998,24 +1916,16 @@ Safe Operating Stop (SOS) violation occurs when movement is detected while the r
 * Turn on the motor in auto mode and check whether the error recurs.
 * If the same error occurs again, inspect the motor and reducer of the corresponding axis.
 {% endhint %}
-
-[__SOURCE](7-error-message/README.md)
 # 7. Error Messages
 
 When a safety function-related alarm occurs, refer to "[Error and Warning Help](https://hr-alarms.web.app/#/)".
-
-[__SOURCE](attachment/README.md)
 # Appendix
 
-
-[__SOURCE](attachment/rules-criteria-and-public-notice.md)
 # Industrial Safety and Health Standards Rules and Safety Inspection Notice
 
 The industrial robot in question should be installed in consideration of the inspection standards of the Industrial Safety and Health Standards Rules and Safety Inspection Notice (if subject to inspection).
 
 "[Rules on Industrial Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/ko/README)"
-
-[__SOURCE](warranty.md)
 # Quality Assurance
 
 "[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/korean/README)"
