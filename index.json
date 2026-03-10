@@ -296,97 +296,97 @@
 	},
 	{
 		"link": "4-configuration/1-check-before-configuration/4-certification.md",
-		"char_ofs": 100613,
-		"byte_ofs": 102479
+		"char_ofs": 100648,
+		"byte_ofs": 102515
 	},
 	{
 		"link": "4-configuration/1-check-before-configuration/1-encoder-offset.md",
-		"char_ofs": 101375,
-		"byte_ofs": 103270
+		"char_ofs": 101410,
+		"byte_ofs": 103306
 	},
 	{
 		"link": "4-configuration/1-check-before-configuration/2-tool-data-setting.md",
-		"char_ofs": 102823,
-		"byte_ofs": 104743
+		"char_ofs": 102858,
+		"byte_ofs": 104779
 	},
 	{
 		"link": "4-configuration/2-change-safety-parameter.md",
-		"char_ofs": 104439,
-		"byte_ofs": 106383
+		"char_ofs": 104474,
+		"byte_ofs": 106419
 	},
 	{
 		"link": "4-configuration/3-safety-parameter-report.md",
-		"char_ofs": 105728,
-		"byte_ofs": 107708
+		"char_ofs": 105763,
+		"byte_ofs": 107744
 	},
 	{
 		"link": "5-monitoring/README.md",
-		"char_ofs": 107337,
-		"byte_ofs": 109363
+		"char_ofs": 107372,
+		"byte_ofs": 109399
 	},
 	{
 		"link": "5-monitoring/1-robot-limit-parameter-monitoring.md",
-		"char_ofs": 107759,
-		"byte_ofs": 109797
+		"char_ofs": 107794,
+		"byte_ofs": 109833
 	},
 	{
 		"link": "5-monitoring/4-safety-io-status-monitoring.md",
-		"char_ofs": 109075,
-		"byte_ofs": 111147
+		"char_ofs": 109110,
+		"byte_ofs": 111183
 	},
 	{
 		"link": "5-monitoring/6-profisafe-status-monitoring.md",
-		"char_ofs": 109413,
-		"byte_ofs": 111499
+		"char_ofs": 109448,
+		"byte_ofs": 111535
 	},
 	{
 		"link": "5-monitoring/7-cipsafety-status-monitoring.md",
-		"char_ofs": 110056,
-		"byte_ofs": 112160
+		"char_ofs": 110091,
+		"byte_ofs": 112196
 	},
 	{
 		"link": "6-recovery/README.md",
-		"char_ofs": 110987,
-		"byte_ofs": 113114
+		"char_ofs": 111022,
+		"byte_ofs": 113150
 	},
 	{
 		"link": "6-recovery/1-recovery-robot-position-violation.md",
-		"char_ofs": 111418,
-		"byte_ofs": 113556
+		"char_ofs": 111453,
+		"byte_ofs": 113592
 	},
 	{
 		"link": "6-recovery/2-recovery-robot-speed-violation.md",
-		"char_ofs": 112236,
-		"byte_ofs": 114396
+		"char_ofs": 112271,
+		"byte_ofs": 114432
 	},
 	{
 		"link": "6-recovery/3-recovery-robot-force-violation.md",
-		"char_ofs": 112928,
-		"byte_ofs": 115106
+		"char_ofs": 112963,
+		"byte_ofs": 115142
 	},
 	{
 		"link": "6-recovery/4-recovery-sos-violation.md",
-		"char_ofs": 113763,
-		"byte_ofs": 115964
+		"char_ofs": 113798,
+		"byte_ofs": 116000
 	},
 	{
 		"link": "7-error-message/README.md",
-		"char_ofs": 114635,
-		"byte_ofs": 116859
+		"char_ofs": 114670,
+		"byte_ofs": 116895
 	},
 	{
 		"link": "attachment/README.md",
-		"char_ofs": 114768,
-		"byte_ofs": 116998
+		"char_ofs": 114803,
+		"byte_ofs": 117034
 	},
 	{
 		"link": "attachment/rules-criteria-and-public-notice.md",
-		"char_ofs": 114780,
-		"byte_ofs": 117015
+		"char_ofs": 114815,
+		"byte_ofs": 117051
 	},
 	{
 		"link": "warranty.md",
-		"char_ofs": 115212,
-		"byte_ofs": 117455
+		"char_ofs": 115247,
+		"byte_ofs": 117491
 	}
 ]

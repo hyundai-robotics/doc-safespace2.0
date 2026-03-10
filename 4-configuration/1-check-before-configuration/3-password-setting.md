@@ -15,4 +15,5 @@ The safety function parameters must be set and managed by a designated person. U
 {% hint style="warning" %}
 * It is recommended to set the password with 4 or more characters.
 * If you lose your password, contact an engineer.
+* The default password is '8426'. 
 {% endhint %}
