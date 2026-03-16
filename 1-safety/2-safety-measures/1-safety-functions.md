@@ -9,7 +9,7 @@ SafeSpace2.0 is intended to carry out collaborative tasks based on the following
 * Emergency Stop
 * Protective Stop
 * Normal Stop
-* SOS: Safe Opertaing Stop
+* SOS: Safe Operating Stop
 * Stopping time Monitoring
 * Stopping distance Monitoring
 * Joint-SLP, Joint Angle Monitoring
@@ -20,7 +20,7 @@ SafeSpace2.0 is intended to carry out collaborative tasks based on the following
 * Power Monitoring
 * Momentum Monitoring
 * Collision Detection
-* Speed and Seperation Monitoring
+* Speed and Separation Monitoring
 * SBC: Safe Brake Control
 * Safety Inputs
 * Safety Outputs
@@ -46,6 +46,6 @@ SafeSpace 2.0 is available with three different license options. Each license gr
 | TCP orientation monitoring |    |  | O | O |
 | Safe operating stop |    |  | O | O |
 | Self collision monitoring |    |  | O | O |
-| Spped and Seperation monitoring |    |  | O | O |
+| Speed and Separation monitoring |    |  | O | O |
 | Collision/Power/Momentum monitoring |    |  |  | O |
 | Safe motion |    |  |  | O |

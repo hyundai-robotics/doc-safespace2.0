@@ -6,7 +6,7 @@ This manual uses the following notation conventions and safety instructions to h
 
 Figures are used to help understand product operation methods and explain screens. When figures are described, numbers are marked on the corresponding parts and the corresponding content is explained.
 
-![](../_assets/image\_explan.png)
+![](../_assets/pane-prog-cmd-param.png)
 
 ### GUI \(Graphical User Interface\)
 
@@ -34,7 +34,7 @@ Provides shortcuts to related information within the manual. Cross-references ar
 Provides useful or additional information that is good to know when using the product.
 
 {% hint style="info" %}
-If the ![](../_assets/eng-mode.png) icon is blinking in the status bar, you are in engineer mode.
+If the <img src="../_assets/engineer.png"></img> icon is blinking in the status bar, you are in engineer mode.
 {% endhint %}
 
 

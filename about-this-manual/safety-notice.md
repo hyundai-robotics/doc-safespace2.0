@@ -5,7 +5,7 @@ To ensure proper use of the product and user safety and prevent property damage,
 ### <mark style="color:green;">Danger</mark>
 
 {% hint style="danger" %}
-**\[Danger] Imminent hazard**: Failure to comply may result in death or serious injury to workers.
+<strong>[Danger] Imminent hazard</strong>: Failure to comply may result in death or serious injury to workers.
 {% endhint %}
 
 * Conduct a risk assessment for the entire system, not individual devices. Connecting other devices to the product may increase the risk of the product or create new risks. When each device in the integrated robot system has a different risk level, prepare safety devices based on the device with the highest risk level to prepare for danger.
@@ -15,7 +15,7 @@ To ensure proper use of the product and user safety and prevent property damage,
 ### <mark style="color:green;">Warning</mark>
 
 {% hint style="warning" %}
-\[Warning] Potential hazard*: If not observed, the worker may be injured or the product may be severely damaged, resulting in property damage. Failure to comply may result in injury to workers, serious damage to products, or property damage.
+<strong>[Warning] Potential hazard</strong>: If not observed, the worker may be injured or the product may be severely damaged, resulting in property damage. Failure to comply may result in injury to workers, serious damage to products, or property damage.
 {% endhint %}
 
 * Take appropriate safety measures according to the risk assessment results and accurately designate the robot safety installation range. Otherwise, the product may be damaged or the user may be injured while the robot is operating.
@@ -32,7 +32,7 @@ To ensure proper use of the product and user safety and prevent property damage,
 ### <mark style="color:green;">Caution</mark>
 
 {% hint style="warning" %}
-**\[Caution] Low-risk factors**: Failure to comply may result in minor injury to workers or property damage, including product damage
+<strong>[Caution] Low-risk factors</strong>: Failure to comply may result in minor injury to workers or property damage, including product damage.
 {% endhint %}
 
 * Do not install, modify, disassemble, or repair the product without authorization. Also, it is prohibited for anyone other than our experts to modify the product or attach parts without authorization. Otherwise, in case of product failure, you cannot receive free service or quality assurance service.

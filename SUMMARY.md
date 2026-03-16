@@ -33,7 +33,6 @@
       * [3.3.1.2 Stop Settings](3-safety-function/3-safety-function/1-general-condition/2-safe-stop.md)
       * [3.3.1.3 Safety Tool Information](3-safety-function/3-safety-function/1-general-condition/3-safe-tool-info.md) 
       * [3.3.1.4 Safety Additional Load](3-safety-function/3-safety-function/1-general-condition/4-safe-additional-load.md) 
-      * [3.3.1.5 Maintenance](3-safety-function/3-safety-function/1-general-condition/5-maintenance.md)
     * [3.3.2 Robot Monitoring Function](3-safety-function/3-safety-function/2-robot-safety-condition/README.md)
       * [3.3.2.1 Joint Position Monitoring](3-safety-function/3-safety-function/2-robot-safety-condition/1-joint-space.md)
       * [3.3.2.2 Joint Speed   Monitoring](3-safety-function/3-safety-function/2-robot-safety-condition/2-joint-speed.md)

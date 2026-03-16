@@ -6,12 +6,12 @@ Each safety function can be configured with various activation conditions, stop 
 
 To configure robot safety parameters, access the menu as follows:
 
-* `[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits]`
+* `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction]`
 ****
 
 The following safety features can be configured in the Robot Limits menu:
 
-* **Joint Area**: Limits the robot's range of motion for each axis to a specific range.
+* **Joint Space**: Limits the robot's range of motion for each axis to a specific range.
 * **Joint Speed**: Limits the robot's motion by preventing it from exceeding the speed limit for each axis.
 * **Joint Stop**: Monitors the robot's stopped state by checking for abnormal movement for each axis after performing Stop 2.
 * **TCP Speed**: Limits the robot's speed to a specified speed based on TCP standards.
@@ -22,7 +22,7 @@ The following safety features can be configured in the Robot Limits menu:
 
 
 {% hint style="warning" %}
-**\[Caution]**: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
+<strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
 
 * Set a password, etc. to prevent unauthorized changes to the safety configuration.
 * Configure safety-related functions and interfaces.

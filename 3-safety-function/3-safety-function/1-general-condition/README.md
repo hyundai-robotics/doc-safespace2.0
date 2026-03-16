@@ -1,4 +1,4 @@
-﻿# 3.3.1 Basic Settings
+﻿# 3.3.1 General Setup
 
 Robot safety parameters consist of limit values   and stop methods for monitoring safety functions.
 
@@ -6,7 +6,7 @@ Each safety function can be configured with various activation conditions, stop 
 
 Access the safety function basic settings menu using the following methods.
 
-* `[System > 8: Safety System > 1: Basic Settings]`
+* `[System > 10: Safety System > 1: General setup]`
 ****
 
 The following safety functions can be configured in the Basic Settings menu:
@@ -18,7 +18,7 @@ The following safety functions can be configured in the Basic Settings menu:
 * **Maintenance**: Set the robot test cycle required for safety function maintenance.
 
 {% hint style="warning" %}
-**\[Caution]**: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
+<strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
 
 * Set a password, etc. to prevent unauthorized changes to the safety configuration.
 * Configure safety-related functions and interfaces.

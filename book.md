@@ -28,7 +28,7 @@ This manual uses the following notation conventions and safety instructions to h
 
 Figures are used to help understand product operation methods and explain screens. When figures are described, numbers are marked on the corresponding parts and the corresponding content is explained.
 
-![](../_assets/image\_explan.png)
+![](../_assets/pane-prog-cmd-param.png)
 
 ### GUI \(Graphical User Interface\)
 
@@ -56,7 +56,7 @@ Provides shortcuts to related information within the manual. Cross-references ar
 Provides useful or additional information that is good to know when using the product.
 
 {% hint style="info" %}
-If the ![](../_assets/eng-mode.png) icon is blinking in the status bar, you are in engineer mode.
+If the <img src="../_assets/engineer.png"></img> icon is blinking in the status bar, you are in engineer mode.
 {% endhint %}
 
 
@@ -68,7 +68,7 @@ To ensure proper use of the product and user safety and prevent property damage,
 ### <mark style="color:green;">Danger</mark>
 
 {% hint style="danger" %}
-**\[Danger] Imminent hazard**: Failure to comply may result in death or serious injury to workers.
+<strong>[Danger] Imminent hazard</strong>: Failure to comply may result in death or serious injury to workers.
 {% endhint %}
 
 * Conduct a risk assessment for the entire system, not individual devices. Connecting other devices to the product may increase the risk of the product or create new risks. When each device in the integrated robot system has a different risk level, prepare safety devices based on the device with the highest risk level to prepare for danger.
@@ -78,7 +78,7 @@ To ensure proper use of the product and user safety and prevent property damage,
 ### <mark style="color:green;">Warning</mark>
 
 {% hint style="warning" %}
-\[Warning] Potential hazard*: If not observed, the worker may be injured or the product may be severely damaged, resulting in property damage. Failure to comply may result in injury to workers, serious damage to products, or property damage.
+<strong>[Warning] Potential hazard</strong>: If not observed, the worker may be injured or the product may be severely damaged, resulting in property damage. Failure to comply may result in injury to workers, serious damage to products, or property damage.
 {% endhint %}
 
 * Take appropriate safety measures according to the risk assessment results and accurately designate the robot safety installation range. Otherwise, the product may be damaged or the user may be injured while the robot is operating.
@@ -95,7 +95,7 @@ To ensure proper use of the product and user safety and prevent property damage,
 ### <mark style="color:green;">Caution</mark>
 
 {% hint style="warning" %}
-**\[Caution] Low-risk factors**: Failure to comply may result in minor injury to workers or property damage, including product damage
+<strong>[Caution] Low-risk factors</strong>: Failure to comply may result in minor injury to workers or property damage, including product damage.
 {% endhint %}
 
 * Do not install, modify, disassemble, or repair the product without authorization. Also, it is prohibited for anyone other than our experts to modify the product or attach parts without authorization. Otherwise, in case of product failure, you cannot receive free service or quality assurance service.
@@ -172,7 +172,7 @@ SafeSpace2.0 is intended to carry out collaborative tasks based on the following
 * Emergency Stop
 * Protective Stop
 * Normal Stop
-* SOS: Safe Opertaing Stop
+* SOS: Safe Operating Stop
 * Stopping time Monitoring
 * Stopping distance Monitoring
 * Joint-SLP, Joint Angle Monitoring
@@ -183,7 +183,7 @@ SafeSpace2.0 is intended to carry out collaborative tasks based on the following
 * Power Monitoring
 * Momentum Monitoring
 * Collision Detection
-* Speed and Seperation Monitoring
+* Speed and Separation Monitoring
 * SBC: Safe Brake Control
 * Safety Inputs
 * Safety Outputs
@@ -209,7 +209,7 @@ SafeSpace 2.0 is available with three different license options. Each license gr
 | TCP orientation monitoring |    |  | O | O |
 | Safe operating stop |    |  | O | O |
 | Self collision monitoring |    |  | O | O |
-| Spped and Seperation monitoring |    |  | O | O |
+| Speed and Separation monitoring |    |  | O | O |
 | Collision/Power/Momentum monitoring |    |  |  | O |
 | Safe motion |    |  |  | O |
 # 1.2.2 Safety Training
@@ -223,7 +223,7 @@ To effectively use the product's functions, you must familiarize yourself with t
   * Procedures for safely handling the robot
   * Performance and potential risk factors of the robot and robot system
   * Work related to specific applications of the robot, etc.
-# 1.2.4 Emergency Stop
+# 1.2.3 Emergency Stop
 
 The emergency stop function operates in emergencies or emergency situations such as when a worker or other object enters a danger area. All emergency stop switches are installed in locations that are easily accessible even from outside the safety area.
 
@@ -231,7 +231,7 @@ When the emergency stop function is executed, the robot immediately stops the op
 
 * The robot servo system power is cut off and the motor brake operates.
 * The teach pendant screen displays an emergency stop message.
-# 1.2.4.1 Emergency Stop Switch
+# 1.2.3.1 Emergency Stop Switch
 
 There is one emergency stop switch installed on the controller and one on the teach pendant. Press the emergency stop switch in case of an emergency.
 # 1.2.4.2 Connecting External Emergency Stop Device
@@ -308,13 +308,12 @@ The safety-related content in this manual does not cover all possible risk facto
 
 * **Stop Response Time**
 
-The response time to be taken from safety function violation to stop execution is 9.8 ms. The response time should be reflected when calculating the robot's stop time and stop distance.
+The response time to be taken from safety function violation to stop execution is 9.8ms. The response time should be reflected when calculating the robot's stop time and stop distance.
 
 * **PROFIsafe Response Time**
 
-The response time to be taken from stop execution by PROFIsafe F-output data is 40.8 ms. To get the time until the robot completely stops, the communication cycle and the robot's stop time and stop distance calculation values should be added.
-
-****# 2. Installation
+The response time to be taken from stop execution by PROFIsafe F-output data is 40.8ms. To get the time until the robot completely stops, the communication cycle and the robot's stop time and stop distance calculation values should be added.
+# 2. Installation
 
 # 2.1 Robot System
 
@@ -464,7 +463,7 @@ SafeSafe2.0 has the following limitations. Please check their applicability befo
 
 SafeSpace2.0 safety functions can be configured through safety function settings and are used as risk countermeasures selected in the risk assessment performed by the worker.
 
-# 3.3.1 Basic Settings
+# 3.3.1 General Setup
 
 Robot safety parameters consist of limit values   and stop methods for monitoring safety functions.
 
@@ -472,7 +471,7 @@ Each safety function can be configured with various activation conditions, stop 
 
 Access the safety function basic settings menu using the following methods.
 
-* `[System > 8: Safety System > 1: Basic Settings]`
+* `[System > 10: Safety System > 1: General setup]`
 ****
 
 The following safety functions can be configured in the Basic Settings menu:
@@ -484,7 +483,7 @@ The following safety functions can be configured in the Basic Settings menu:
 * **Maintenance**: Set the robot test cycle required for safety function maintenance.
 
 {% hint style="warning" %}
-**\[Caution]**: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
+<strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
 
 * Set a password, etc. to prevent unauthorized changes to the safety configuration.
 * Configure safety-related functions and interfaces.
@@ -497,7 +496,7 @@ The following safety functions can be configured in the Basic Settings menu:
 Set the thresholds for essential functions (manual mode speed monitoring, stop time, and stop distance monitoring) required for robot operation. Additionally, configure whether the robot monitoring and area monitoring functions are fully enabled. Even if the robot monitoring and area monitoring functions are enabled, if the safety function is disabled, the monitoring function will not operate. If a monitoring violation occurs, the configured safety stop (Stop 0, Stop 1) will be immediately activated.
 
 
-You can set parameter values   in the `[System > 8: Safety System > 1: Basic Settings > 1: General]` menu.
+You can set parameter values in the `[System > 10: Safety System > 1: General setup > 1: General]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/general_param.png"></img>
@@ -508,6 +507,7 @@ You can set parameter values   in the `[System > 8: Safety System > 1: Basic Set
 |  **Parameter** |                       **Description**                       |  **Default setting**  |
 | :-------: | :------------------------------------------------: | :-------------: |
 | Safety function | <p>Whether robot monitoring and area monitoring functions are enabled</p><p>(Enable / Disable)</p> | Disable |
+| Use T/P | <p>Enables or disables the use of the TP</p><p>(Enable / Disable)</p> | Disable |
 | <p>Manual mode speed</p><p>[mm/s]</p> | <p>Whether the function is enabled</p><p>(10 ~ 250)</p> | 250 |
 | <p>Stop time</p><p>[ms]</p> | <p>Stop method when the function is violated</p><p>(100 ~ 2000)</p> | 2000 |
 | - Motion Tuning | <p>Tuning to a motion that satisfies the stopping time limit</p><p>(Enable / Disable)</p> | Disable |
@@ -515,11 +515,11 @@ You can set parameter values   in the `[System > 8: Safety System > 1: Basic Set
 | - Motion Tuning | <p>Tuning to a motion that satisfies the stopping distance limit</p><p>(Enable / Disable)</p> | Disable |
 
 {% hint style="warning" %}
-**\[Caution]**: Even if the safety function is set to disabled, the functions that are essential for robot use (manual mode speed, stop time, stop distance monitoring) are not disabled.
+<strong>[Caution]</strong>: Even if the safety function is set to disabled, the functions that are essential for robot use (manual mode speed, stop time, stop distance monitoring) are not disabled.
 {% endhint %}
 
 {% hint style="warning" %}
-**\[Caution]**: The stop time and stop distance are the time and distance until the robot actually stops when stop1 is executed, and if the set value is exceeded, stop0 is activated immediately.
+<strong>[Caution]</strong>: The stop time and stop distance are the time and distance until the robot actually stops when stop1 is executed, and if the set value is exceeded, stop0 is activated immediately.
 {% endhint %}
  # 3.3.1.2 Stop Settings
 
@@ -533,10 +533,10 @@ Set the appropriate safe stop type for each safety function. Safe stop functions
 
 The stop type due to a safety function violation is set in the function-specific parameter setting menu.
 You can set the stop method according to the stop type (emergency stop, protective stop, normal stop) required by ISO 10218-1.
-For signal inputs for each stop, refer to "[3.3.4 Safety Signal Input/Output](../../../3-safety-function/3-safety-function/3-safety-io/README.md)."
+For signal inputs for each stop, refer to "[3.3.4 Safety Signal Input/Output](../../../3-safety-function/3-safety-function/4-safety-io/README.md)."
 You can also set the stop method to be performed when the manual mode speed monitoring is violated. The stop method can be selected from Stop 0 or Stop 1.
 
-You can set the parameter values   in the `[System > 8: Safety System > 1: Basic Settings > 2: Stop Settings]` menu.
+You can set the parameter values in the `[System > 10: Safety System > 1: General setup > 2: Safe Stop]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/safety_stop.png"></img>
@@ -549,17 +549,17 @@ You can set the parameter values   in the `[System > 8: Safety System > 1: Basic
 | Emergency stop | <p>Select the stop type to apply in case of emergency stop</p><p>(Stop 0, Stop 1)</p> | Stop 1 |
 | Protective stop | <p>Select the stop type to apply in case of protective stop</p><p>(Stop 0, Stop 1, Stop 2)</p> | Stop 1 |
 | Normal stop | <p>Select the stop type to apply in case of normal stop</p><p>(Stop 0, Stop 1)</p> | Stop 1 |
-| Manual mode stop | <p>Stop when speeding in manual mode</p><p>(Stop 0, Stop 1)</p> | Stop 1 |
+| Manual stop | <p>Select the stop type to apply in case of manual mode stop</p><p>(Stop 0, Stop 1)</p> | Stop 1 |
 
 {% hint style="warning" %}
-**\[Caution]**: Appropriate stopping methods for each function must be established through risk assessment, and verification must be performed before operation. 
+<strong>[Caution]</strong>: Appropriate stopping methods for each function must be established through risk assessment, and verification must be performed before operation. 
 {% endhint %}
  # 3.3.1.3 Safety Tool Information
 
-Safety tool information is used by the safety board to calculate the robot's speed and position. You must enter the tool information attached to the actual robot. The tool information must be identical to the tool number used for robot control (`[System > 3: Robot Parameters > 1: Tool Data]`).
+Safety tool information is used by the safety board to calculate the robot's speed and position. You must enter the tool information attached to the actual robot. The tool information must be identical to the tool number used for robot control `[System > 3: Robot Parameters > 1: Tool Data]`.
 
 
-You can set safety tool information in the `[System > 8: Safety System > 1: Basic Settings > 3: Safety Tool Information]` menu, and you can load tool information used for robot control by clicking "`Load Tool Data`" at the bottom of the menu.
+You can set safety tool information in the `[System > 10: Safety System > 1: General setup > 3: Safety Tool Information]` menu, and you can load tool information used for robot control by clicking [Load Tool Data] at the bottom of the menu.
 
 <p align="center">
 <img src="../../../_assets/3/tool_info.png"></img>
@@ -569,6 +569,7 @@ You can set safety tool information in the `[System > 8: Safety System > 1: Basi
 
 |  **Parameter** |                       **Description**                       |  **Default value**  |
 | :-------: | :------------------------------------------------: | :-------------: |
+| <p>Robot tool number</p> | <p>Tool number used by the robot. A value of -1 indicates that it is not used.</p><p>(-1 ~ 31)</p> | -1 |
 | <p>Weight</p><p>[kg]</p> | <p>Weight of the tool</p><p>(0.0 ~ 1000.0)</p> | 0.0 |
 | <p>Length</p><p>[mm]</p> | <p>Length of the tool</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
 | <p>Center</p><p>[mm]</p> | <p>Location of the center of gravity of the tool relative to the center of the flange</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
@@ -578,18 +579,18 @@ You can set safety tool information in the `[System > 8: Safety System > 1: Basi
 | Paste | A function to paste the values   of the copied page onto the corresponding page | - |
 
 {% hint style="warning" %}
-**\[Caution]**: If the safety tool information does not match the tool information used for robot control, a warning/error will occur and the robot will not operate. Be sure to match the actual tool information with the safety tool information before operating the robot.
+<strong>[Caution]</strong>: If the safety tool information does not match the tool information used for robot control, a warning/error will occur and the robot will not operate. Be sure to match the actual tool information with the safety tool information before operating the robot.
 {% endhint %}
  
 {% hint style="warning" %}
-**\[Caution]**: Safety tool numbers 0 to 15 are supported. If your system uses tool information 16 to 31, match safety tool number 0 with the tool information.
+<strong>[Caution]</strong>: Safety tool numbers 0 to 15 are supported. If your system uses tool information 16 to 31, match safety tool number 0 with the tool information.
 {% endhint %}
  # 3.3.1.4 Safety Added Weight
 
-Safety added weight information is used by the safety board to calculate the robot's torque. You must enter the information for the added weight actually installed on the robot. The information must be identical to the added weight information used for robot control (`[System > 3: Robot Parameters > 7: Added Weight by Axis]`).
+Safety added weight information is used by the safety board to calculate the robot's torque. You must enter the information for the added weight actually installed on the robot. The information must be identical to the added weight information used for robot control `[System > 3: Robot Parameter > 7: Additional Weight on Each Axis]`.
 
 
-* `[System > 8: Safety System > 1: Basic Settings > 4: Safety Additional Weight]` You can set the safety additional weight information in the menu, and you can load the additional weight information used for robot control by clicking "Load Additional Weight" at the bottom of the menu.
+* `[System > 10: Safety System > 1: General setup > 4: Safety Additional Load]` You can set the safety additional weight information in the menu, and you can load the additional weight information used for robot control by clicking "Load Additional Weights" at the bottom of the menu.
 
 
 <p align="center">
@@ -603,41 +604,18 @@ Safety added weight information is used by the safety board to calculate the rob
 | <p>Weight</p><p>[kg]</p> | <p>Weight of the tool</p><p>(0.0 ~ 1000.0)</p> | 0.0 |
 | <p>Center</p><p>[mm]</p> | <p>Position of the center of gravity of the tool relative to the center of the flange</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
 | <p>Inertia</p><p>[kg·㎡]</p> | <p>Moment of inertia of the tool with respect to the tool coordinates</p><p>(0.0 ~ 2000.000)</p> | 0.0 |
-| Load Additional Weight | A function to load additional weight information used for robot control | - |
+| Load add Weights | A function to load additional weight information used for robot control | - |
 | Copy | A function to copy the values   entered on the corresponding page | - |
 | Paste | A function to paste the values   from the copied page onto the corresponding page | - |
 
 {% hint style="warning" %}
-**\[Caution]**: If the safety weight information and the weight information used for robot control do not match, a warning/error will occur and the robot will not be able to operate. Be sure to match the weight information with the actual attached weight before operating the robot. 
+<strong>[Caution]</strong>: If the safety weight information and the weight information used for robot control do not match, a warning/error will occur and the robot will not be able to operate. Be sure to match the weight information with the actual attached weight before operating the robot. 
 {% endhint %}
  
 {% hint style="warning" %}
-**\[Caution]**: The safety additional weight number is supported from 0 to 2, and each number matches the axis number of the system additional weight (0-S axis, 1-H axis, 2-V axis). Please enter the additional weight information by matching the safety parameter number with the axis number.
+<strong>[Caution]</strong>: The safety additional weight number is supported from 0 to 2, and each number matches the axis number of the system additional weight (0-S axis, 1-H axis, 2-V axis). Please enter the additional weight information by matching the safety parameter number with the axis number.
 {% endhint %}
  
- # 3.3.1.5 Maintenance
-
-The Maintenance menu allows you to set the mastering and brake test cycles. Periodic monitoring of the origin and brake status of each robot axis is essential to ensure the performance of safety functions. If the tests fail to complete within the set cycle, Safety Stop 1 is immediately activated.
-
-To perform a brake test,
-
-You can set the parameter values   in the `[System > 8: Safety System > 1: Basic Settings > 5: Maintenance]` menu.
-
-<p align="center">
-<img src="../../../_assets/3/maintenance.png"></img>
-<em><p align="center">Maintenance parameter setting screen</p></em>
-</p>
-
-
-|  **Parameter** |                       **Description**                       |  **Default value**  |
-| :-------: | :------------------------------------------------: | :-------------: |
-| <p>Mastering execution cycle</p><p>[h]</p> | <p>Mastering test execution cycle</p><p>(2 ~ 720)</p> | 720 |
-| <p>Break test execution cycle</p><p>[h]</p>| <p>Break test execution cycle</p><p>(2 ~ 720)</p> | 720 |
-
-
-{% hint style="warning" %}
-**\[Caution]**: If a crash occurs, we recommend performing a mastering test and a break test.
-{% endhint %}
  # 3.3.2 Robot Monitoring Function
 
 Robot safety parameters consist of limit values   and stop methods for monitoring safety functions.
@@ -646,12 +624,12 @@ Each safety function can be configured with various activation conditions, stop 
 
 To configure robot safety parameters, access the menu as follows:
 
-* `[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits]`
+* `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction]`
 ****
 
 The following safety features can be configured in the Robot Limits menu:
 
-* **Joint Area**: Limits the robot's range of motion for each axis to a specific range.
+* **Joint Space**: Limits the robot's range of motion for each axis to a specific range.
 * **Joint Speed**: Limits the robot's motion by preventing it from exceeding the speed limit for each axis.
 * **Joint Stop**: Monitors the robot's stopped state by checking for abnormal movement for each axis after performing Stop 2.
 * **TCP Speed**: Limits the robot's speed to a specified speed based on TCP standards.
@@ -662,7 +640,7 @@ The following safety features can be configured in the Robot Limits menu:
 
 
 {% hint style="warning" %}
-**\[Caution]**: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
+<strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
 
 * Set a password, etc. to prevent unauthorized changes to the safety configuration.
 * Configure safety-related functions and interfaces.
@@ -670,45 +648,45 @@ The following safety features can be configured in the Robot Limits menu:
 * Verify that all safety function configurations and settings comply with the risk assessment.
 {% endhint %}
 
-# 3.3.2.1 Joint Angle Limit Setting
+# 3.3.2.1 Joint Space Setting
 
-The Joint Area Setting parameter is a limit value for monitoring safety functions in the robot's joint space. If the monitoring is violated, the specified safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
+The Joint space Setting parameter is a limit value for monitoring safety functions in the robot's joint space. If the monitoring is violated, the specified safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
 
 <p align="center">
-<img src="../../../_assets/joint_space.PNG"></img>
-<em><p align="center">Joint area setting example (S-axis)</p></em>
+<img src="../../../_assets/joint_space.png"></img>
+<em><p align="center">Joint space setting example (S-axis)</p></em>
 </p>
 
-You can set parameter values   in the `[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 1: Joint Area]` menu.
+You can set parameter values in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 1: Joint space]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/joint_space.png"></img>
-<em><p align="center">Joint area parameter setting screen</p></em>
+<em><p align="center">Joint space parameter setting screen</p></em>
 </p>
 
 
 |  **Parameter** |                       **Description**                       |  **Default Setting**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Type | <p>Safety Area Type</p><p>(Work Area / Protection Area)</p> | Work Area |
-| Activation | <p>Whether the function is activated</p><p>(Invalid / Valid / Safe I/O)</p> | Invalid |
-| Stop Method | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No Stop)</p> | Stop 1 |
-| Joint Activation | <p>Whether each joint is activated</p><p>(Active / Inactive)</p> | Inactive |
-| <p>Minimum</p><p>[deg]</p> | <p>Angle limit value for each joint</p><p>(-360.0 ~ 360.0)</p> | -360.0 |
-| <p>Maximum</p><p>[deg]</p> | <p>Angle limits for each joint</p><p>(-360.0 ~ 360.0)</p> | 360.0 |
+| Type | <p>Safety Area Type</p><p>(Working Area / Protection Area)</p> | Working Area |
+| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No Stop)</p> | Stop 1 |
+| Joint ON/OFF | <p>Whether each joint is activated</p><p>(OFF / ON)</p> | OFF |
+| <p>Minimum</p><p>[deg]</p> | <p>Minimum limits for each joint angle</p><p>(-360.0 ~ 360.0)</p> | -360.0 |
+| <p>Maximum</p><p>[deg]</p> | <p>Maximum limits for each joint angle</p><p>(-360.0 ~ 360.0)</p> | 360.0 |
 
 {% hint style="warning" %}
-*\[Caution]**: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
+<strong>[Caution]</strong>: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
 {% endhint %}
  # 3.3.2.2 Joint Speed Limit
 
-The Joint Speed   Setting parameter is a limit value for monitoring the robot's joint speed. If the limit value is violated, the specified safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
+The Joint Speed Setting parameter is a limit value for monitoring the robot's joint speed. If the limit value is violated, the specified safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
 
 <p align="center">
-<img src="../../../_assets/joint_speed.PNG"></img>
+<img src="../../../_assets/joint_speed.png"></img>
 <em><p align="center">Joint speed setting example</p></em>
 </p>
 
-You can set parameter values   in the `[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 2: Joint Speed]` menu.
+You can set parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 2: Joint speed]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/joint_speed.png"></img>
@@ -717,22 +695,21 @@ You can set parameter values   in the `[System > 8: Safety System > 2: Parameter
 
 |  **Parameter** |                       **Description**                       |  **Default Setting**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activate | <p>Whether the function is activated</p><p>(Invalid / Valid / Safe I/O)</p> | Invalid |
-| Stop method | <p>Stop method when the function is violated</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
+| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| Stop function | <p>Stop method when the function is violated</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
 | Motion Tuning | <p>Tuning to a motion that does not exceed the joint's speed limit</p><p>(Active / Disable)</p> | Disable |
-| Joint Activation | <p>Whether each joint is activated</p><p>(Active / Disabled)</p> | Disabled |
-| Type | <p>Type of operation for each joint</p><p>(Rotational / Linear)</p> | Rotation |
-| <p>Speed</p><p>[mm/s]</p> | <p>Speed   limit for each joint</p><p>(0 ~ 10000)</p> | 1000.0 |
+| Joint ON/OFF | <p>Whether each joint is activated</p><p>(ON / OFF)</p> | OFF |
+| <p>Speed</p><p>[mm/s]</p> | <p>Speed limit for each joint</p><p>(10 ~ 10000)</p> | 1000.0 |
 
 {% hint style="warning" %}
-**\[Caution]**: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
+<strong>[Caution]</strong>: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
 {% endhint %}
  
 # 3.3.2.3 Joint Stop Monitoring
 
 Stop monitoring monitors each axis for abnormal movement during robot stop operations. If a set limit is violated, a safety stop (Stop 0) is immediately activated.
 
-Parameter values   can be set in the `[System > 8: Safety System > 1: Parameter Settings > 1: Robot Limits > 3: Joint Stop]` menu.
+Parameter values   can be set in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 3: Joint SOS]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/joint_sos.png"></img>
@@ -741,17 +718,17 @@ Parameter values   can be set in the `[System > 8: Safety System > 1: Parameter 
 
 |  **Parameter** |                       **Description**                       |  **Default Setting**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>Whether the function is activated</p><p>(Invalid / Valid / Safe I/O)</p> | Invalid |
-| Joint Activation | <p>Whether each joint is activated</p><p>(Active / Disabled)</p> | Disabled |
-| <p>Allowable Range</p><p>[deg]</p> | <p>Angle Limit Value for Each Joint</p><p>(0.0 ~ 3.0)</p> | 0.001 |
+| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| Joint ON/OFF | <p>Whether each joint is activated</p><p>(ON / OFF)</p> | OFF |
+| <p>Tolerance</p><p>[deg]</p> | <p>Angle Limit Value for Each Joint</p><p>(0.0 ~ 3.0)</p> | 0.001 |
 
 {% hint style="warning" %}
-**\[Caution]**: If the stop monitoring parameters are violated, be sure to check that the robot's movement is normal before restarting.
-{% endhint %}# 3.3.2.4 TCP Speed   Limit Setting
+<strong>[Caution]</strong>: If the stop monitoring parameters are violated, be sure to check that the robot's movement is normal before restarting.
+{% endhint %}# 3.3.2.4 TCP Speed Limit Setting
 
 This function monitors the TCP speed relative to the robot coordinate system. If a monitoring violation occurs, a safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
 
-You can set the parameter values   in the `[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 4: TCP Speed]` menu.
+You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 4: TCP Speed]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/tcp_speed.png"></img>
@@ -761,23 +738,23 @@ You can set the parameter values   in the `[System > 8: Safety System > 2: Param
 
 | **Parameter** |                                  **Description**                                  |  **Default Setting** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activate | <p>Whether the function is activated</p><p>(Invalid / Valid / Safe I/O)</p> | Invalid |
-| Stop method | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
+| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
 | Motion tuning | <p>Tuning to a motion that does not exceed the TCP speed limit</p><p>(Enable / Disable)</p> | Disable |
-| Speed   readjustment | <p>Whether to use the speed adjustment function according to the input signal</p><p>(Enable / Disable)</p> | Disable |
-| <p>Speed   limit value</p><p>[mm/s]</p> | <p>TCP speed limit value</p><p>(0 ~ 50000)</p> | 50000 |
-| <p>Deceleration ratio</p><p>[%]</p> | <p>Deceleration ratio to use when readjusting speed</p><p>(0 ~ 100)</p> | 100 |
+| Replan | <p>Whether to use the speed adjustment function according to the input signal</p><p>(Enable / Disable)</p> | Disable |
+| <p>Limit</p><p>[mm/s]</p> | <p>TCP speed limit value</p><p>(0 ~ 50000)</p> | 50000 |
+| <p>Rate</p><p>[%]</p> | <p>Deceleration ratio to use when readjusting speed</p><p>(0 ~ 100)</p> | 100 |
 | <p>Delay time</p><p>[ms]</p> | <p>When changing speed through readjustment, monitor with the changed speed limit value after the delay time </p><p>(0 ~ 1000)</p> | 1000 |
-| <p>Input signal</p><p>[Type, Number]</p> | <p>Input signal for speed readjustment</p><p>( [None, -] / [Safety input, 1~8] / [PROFIsafe, 1~64] )</p> | 0 |
+| <p>Signal</p><p>[Type, Number]</p> | <p>Input signal for speed readjustment</p><p>( [None, -] / [Safety input, 1~8] / [Safety communication, 1~64] )</p> | 0 |
 
 {% hint style="warning" %}
-**\[Caution]**: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
+<strong>[Caution]</strong>: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
 {% endhint %}
  # 3.3.2.5 Collision Detection
 
 When the external force applied to the robot exceeds the allowable value, it is recognized as a collision. You can adjust the sensitivity of each axis, and the higher the sensitivity, the more even a small external force is recognized as a collision. When the monitoring is violated, a safety stop (Stop 0, Stop 1, and Stop 2) is immediately activated.
 
-`[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 5: Collision Detection]` menu allows you to set the parameter values.
+`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 5: Collision detection]` menu allows you to set the parameter values.
 
 <p align="center">
 <img src="../../../_assets/3/col_det.png"></img>
@@ -785,23 +762,23 @@ When the external force applied to the robot exceeds the allowable value, it is 
 </p>
 
 | **Parameter** |                                  **Description**                                  |  **Default Setting** |
-| :------: | ---------------------------------------------------------------- | :---------: |
-| Activation | <p>Function activation status</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Stop function |   <p>Stop method when the function is violated</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| Joint OnOff |   <p>Activation status of each joint</p><p>(On/Off)</p>  |  Off |
-| Sensitivity |   <p>Detection sensitivity for each joint</p><p>(0 ~ 200 (%))</p>  |  100 |
+| :------: | :----------------------------------------------------------------: | :---------: |
+| Activation | <p>Function activation status</p><p>(OFF/ON/Safety Input)</p> |   OFF  |
+| Stop function |   <p>Stop method when the function is violated</p><p>(Stop 0, Stop 1, Stop 2, Non-stop)</p>  | Stop 1 |
+| Joint ON/OFF |   <p>Activation status of each joint</p><p>(ON/OFF)</p>  |  OFF |
+| Sensitivity |   <p>Detection sensitivity for each joint</p><p>(0 ~ 200(%))</p>  |  100 |
 
 {% hint style="warning" %}
-* Since the robot's impact force can increase in proportion to kinetic energy when the speed is high and the payload is large, considerable impact may occur if the robot collides with an external object. In the collaborative space, operate while maintaining the safe speed and payload.
-* False detection may occur if the tool information and additional weight are set differently from actual values. Check each information before using the collision detection function.
+<strong>[Caution]</strong> Since the robot's impact force can increase in proportion to kinetic energy when the speed is high and the payload is large, considerable impact may occur if the robot collides with an external object. In the collaborative space, operate while maintaining the safe speed and payload.
+<strong>[Caution]</strong> False detection may occur if the tool information and additional weight are set differently from actual values. Check each information before using the collision detection function.
 {% endhint %}
 # 3.3.2.6 Re plan Setting
 
-Replan is a function that adjusts the robot's speed based on signals received from external safety sensors. The robot's operating speed is adjusted to the deceleration rate corresponding to the input signal, and the TCP speed is monitored at the corresponding speed after a delay time.
+Re plan is a function that adjusts the robot's speed based on signals received from external safety sensors. The robot's operating speed is adjusted to the deceleration rate corresponding to the input signal, and the TCP speed is monitored at the corresponding speed after a delay time.
 
 If the delay time is insufficient or the robot decelerates insufficiently, resulting in a violation of the TCP speed limit, a safety stop (Stop 0, Stop 1, Stop 2) is immediately activated.
 
-You can set the parameter values   in the `[System > 8: Safety System > 2: Parameter Setting > 1: Robot Limits > 6: Re plan]` menu.
+You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 6: Re plan]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/replan.png"></img>
@@ -811,20 +788,20 @@ You can set the parameter values   in the `[System > 8: Safety System > 2: Param
 |  **Parameter** |                       **Description**                       |  **Default Setting**  |
 | :-------: | :------------------------------------------------: | :----------: |
 | Re plan | <p>Whether to use the speed control function according to the input signal</p><p>(Enable / Disable)</p> | Disable |
-| <p>Delay time</p><p>[ms]</p> | <p>When changing the speed with Re plan, monitor the changed speed limit value after the delay time </p><p>(0 ~ 1000)</p> | 2000 |
-| <p>Speed   limit value</p><p>[mm/s]</p> | <p>TCP speed limit value after Re plan</p><p>(0 ~ 50000)</p> | 50000 |
-| <p>Speed   ratio</p><p>[%]</p> | <p>Deceleration ratio to use when Re plan</p><p>(0 ~ 100)</p> | 100 |
-| <p>Input signal</p><p>[Type, Number]</p> | <p>Input signal for Re plan</p><p>( [None, -] / [Safety input, 1~8] / [PROFIsafe, 1~64] )</p> | 0 |
+| <p>Delay time</p><p>[ms]</p> | <p>When changing the speed with Re plan, monitor the changed speed limit value after the delay time </p><p>(0 ~ 50000)</p> | 2000 |
+| <p>Speed limit value</p><p>[mm/s]</p> | <p>TCP speed limit value after Re plan</p><p>(0 ~ 50000)</p> | 50000 |
+| <p>Speed ratio</p><p>[%]</p> | <p>Deceleration ratio to use when Re plan</p><p>(0 ~ 100)</p> | 100 |
+| <p>Input signal</p><p>[Type, Number]</p> | <p>Input signal for Re plan</p><p>( [None, -] / [default input, 3] / [additional input, 0~7] / [safety input, 0~63])</p> | 0 |
 
 {% hint style="warning" %}
-* When configuring speed limits, always consider stopping time and cover the robot to prevent collisions and injuries.
-* High speeds and large payloads, in proportion to the robot's kinetic energy, can increase the robot's impact force. Therefore, a significant impact can occur if the robot collides with an external object. Maintain a safe speed and payload in collaborative spaces.
+<strong>[Caution]</strong> When configuring speed limits, always consider stopping time and cover the robot to prevent collisions and injuries.
+<strong>[Caution]</strong> High speeds and large payloads, in proportion to the robot's kinetic energy, can increase the robot's impact force. Therefore, a significant impact can occur if the robot collides with an external object. Maintain a safe speed and payload in collaborative spaces.
 {% endhint %}
 # 3.3.2.7 Power Setting
 
 This function monitors whether the force generated by the robot exceeds the allowable limit. If a monitoring violation occurs, a safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
 
-You can set the parameter values   in the `[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 7: Power]` menu.
+You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 7: Power]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/power.png"></img>
@@ -833,20 +810,20 @@ You can set the parameter values   in the `[System > 8: Safety System > 2: Param
 
 | **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default Setting** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activate | <p>Whether the function is activated</p><p>(Invalid / Valid / Safe I/O)</p> | Invalid |
-| Stop method | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
+| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
 | Motion tuning | <p>Tuning to a motion that does not exceed the robot's power limit</p><p>(Active / Disable)</p> | Disable |
-| <p>Maximum power</p><p>[w]</p> | <p>Robot's power limit</p><p>(80 ~ 1000)</p> | 1000 |
+| <p>Max power</p><p>[w]</p> | <p>Robot's power limit</p><p>(80 ~ 50000)</p> | 1000 |
 
 {% hint style="warning" %}
-* High speeds and large payloads, proportional to the robot's kinetic energy, can increase the robot's impact force. Therefore, a collision with an external object can result in significant impact. In collaborative spaces, maintain a safe speed and payload.
-* Setting tool information and additional weights differently from actual values   may result in false detection. Please check the information before using this feature.
+<strong>[Caution]</strong> High speeds and large payloads, proportional to the robot's kinetic energy, can increase the robot's impact force. Therefore, a collision with an external object can result in significant impact. In collaborative spaces, maintain a safe speed and payload.
+<strong>[Caution]</strong> Setting tool information and additional weights differently from actual values   may result in false detection. Please check the information before using this feature.
 {% endhint %}
 # 3.3.2.8 Momentum Setting
 
 This function monitors whether the momentum generated by the robot exceeds the allowable limit. If a monitoring violation occurs, a safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
 
-You can set the parameter values   in the `[System > 8: Safety System > 2: Parameter Settings > 1: Robot Limits > 8: Momentum]` menu.
+You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 8: Momentum]` menu.
 
 <p align="center">
 <img src="../../../_assets/3/momentum.png"></img>
@@ -855,14 +832,14 @@ You can set the parameter values   in the `[System > 8: Safety System > 2: Param
 
 | **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default Setting** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activate | <p>Whether the function is activated</p><p>(Invalid / Valid / Safe I/O)</p> | Invalid |
-| Stop method | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
-| Motion tuning | <p>Tuning to a motion that does not exceed the robot's momentum limit</p><p>(Active / Disable)</p> | Disable |
-| <p>Maximum momentum</p><p>[kg m/s]</p> | <p>Robot's momentum limit</p><p>(5 to 5000)</p> | 1000 |
+| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
+| Motion tuning | <p>Tuning to a motion that does not exceed the robot's momentum limit</p><p>(Enable / Disable)</p> | Disable |
+| <p>Max momentum</p><p>[kg m/s]</p> | <p>Robot's momentum limit</p><p>(5 ~ 50000)</p> | 1000 |
 
 {% hint style="warning" %}
-* High speeds and large payloads, proportional to the robot's kinetic energy, can increase the robot's impact force. Therefore, a collision with an external object can result in significant impact. In collaborative spaces, maintain a safe speed and payload.
-* Setting tool information and additional weights differently from actual values   may result in false detection. Please check the information before using this feature.
+<strong>[Caution]</strong> High speeds and large payloads, proportional to the robot's kinetic energy, can increase the robot's impact force. Therefore, a collision with an external object can result in significant impact. In collaborative spaces, maintain a safe speed and payload.
+<strong>[Caution]</strong> Setting tool information and additional weights differently from actual values may result in false detection. Please check the information before using this feature.
 {% endhint %}
 # 3.3.2 Safety Layout
 
