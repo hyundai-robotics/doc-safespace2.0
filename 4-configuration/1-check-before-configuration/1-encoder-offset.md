@@ -1,4 +1,4 @@
-﻿# 4.1.3 Encoder Inspection
+﻿# 4.1.2 Encoder Inspection
 
 Since the safety function diagnoses the robot's position and speed based on the data of the encoder mounted on each axis, the accuracy of the encoder data is important. Therefore, you should check whether the encoder values match the actual values before using the safety function.
 

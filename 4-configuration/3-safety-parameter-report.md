@@ -20,14 +20,14 @@ If the values on the settings screen have not been saved, they may differ from t
 3. The report will be created and displayed on the screen.
 
 <p align="center">
-<img src="../_assets/4/safety_report_3.png"></img>
+<img src="../_assets/4/safety__report_3.png"></img>
 <em><p align="center">Example of the report display screen</p></em>
 </p>
 
 4. If you want to save the generated report, click the **\[Print]** button.
 
 <p align="center">
-<img src="../_assets/4/safety_report_4.png"></img>
+<img src="../_assets/4/safety__report_4.png"></img>
 <em><p align="center">Example of the report print screen</p></em>
 </p>
 

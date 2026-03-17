@@ -1,4 +1,4 @@
-﻿# 4.1.4 Tool Data Setting
+﻿# 4.1.3 Tool Data Setting
 
 Safety features monitor the entire robot system, including tools attached to the robot flange. Therefore, the smaller the error between the tool data and actual values, the more accurately the safety function operates. Set the tool length and angle based on the flange coordinate system and enter the tool weight, center of gravity, and inertia information in accordance with individual units.
 

@@ -17,20 +17,20 @@
 1) Copy the HS220S robot modeling file from the robot modeling files stored in the library.
 
 <p align="center">
-<img src="../../../_assets/add_new_robot_model/add_new_robot_model_1.png"></img>
+<img src="../_assets/add_new_robot_model/add_new_robot_model_1.png"></img>
 <em><p align="center">Check the location of the robot modeling file to be added and copy it</p></em>
 </p>
 
 2) Save the copied folder to the robot 3D file storage directory of the controller.
 
 <p align="center">
-<img src="../../../_assets/add_new_robot_model/add_new_robot_model_2.png"></img>
+<img src="../_assets/add_new_robot_model/add_new_robot_model_2.png"></img>
 <em><p align="center">Paste the copied folder into the controller's robot 3D file storage directory</p></em>
 </p>
 
 3) Change the folder name to the new version.
 
 <p align="center">
-<img src="../../../_assets/add_new_robot_model/add_new_robot_model_3.png"></img>
+<img src="../_assets/add_new_robot_model/add_new_robot_model_3.png"></img>
 <em><p align="center">If the robot modeling folder name corresponds to an older version, rename the folder</p></em>
 </p>
