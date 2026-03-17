@@ -3,14 +3,14 @@
 The Joint Speed Setting parameter is a limit value for monitoring the robot's joint speed. If the limit value is violated, the specified safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
 
 <p align="center">
-<img src="../../../_assets/joint_speed.png"></img>
+<img src="../../../_assets/joint_speed.PNG"></img>
 <em><p align="center">Joint speed setting example</p></em>
 </p>
 
 You can set parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 2: Joint speed]` menu.
 
 <p align="center">
-<img src="../../../_assets/3/joint_speed.png"></img>
+<img src="../../../_assets/3/joint_speed_set.png"></img>
 <em><p align="center">Joint speed setting parameter setting screen</p></em>
 </p>
 

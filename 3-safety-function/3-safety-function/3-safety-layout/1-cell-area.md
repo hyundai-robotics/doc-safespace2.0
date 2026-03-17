@@ -14,7 +14,7 @@ A safety area is a work space or protected space for monitoring the tool and rob
 
 The safe zone is configured by setting the position and height of each vertex relative to the robot's coordinate system. Up to 10 vertices can be added. The safe zone is activated by parameter settings or safety input/output signals.
 
-You can set the parameter values   for the safety zone in each tab of the `[System > 8: Safety System > 2: Parameter Setting > 2: Zone Limit > 1: Zone]` menu.
+You can set the parameter values   for the safety zone in each tab of the `[System > 10: Safety System > 2: Parameter Setup > 2: Space restriction > 1: Space]` menu.
 
 
 * **General**

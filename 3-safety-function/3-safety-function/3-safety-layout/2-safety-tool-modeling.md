@@ -23,7 +23,7 @@ There are a total of 3 models used for safety tool modeling: sphere, capsule, an
 <em><p align="center">Robot flange coordinate system</p></em>
 </p>
 
-You can set parameter values   in the `[System > 8: Safety System > 2: Parameter Setting > 2: Area Limit > 3: Tool Modeling]` menu.
+You can set parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 3: Tool]` menu.
 
 <p align="center">
 <img src="../../../_assets/safety_layout/tool_param.png"></img>

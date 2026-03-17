@@ -3,7 +3,7 @@
 The Joint space Setting parameter is a limit value for monitoring safety functions in the robot's joint space. If the monitoring is violated, the specified safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
 
 <p align="center">
-<img src="../../../_assets/joint_space.png"></img>
+<img src="../../../_assets/joint_space.PNG"></img>
 <em><p align="center">Joint space setting example (S-axis)</p></em>
 </p>
 

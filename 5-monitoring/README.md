@@ -5,6 +5,6 @@ Monitors safety function violations and the status of the Safety Control Module 
 Check the `[System > 8: Safety System > 3: Monitoring]` menu.
 
 <p align="center">
-<img src="../_assets/5/monitoring_menu.png"></img>
+<img src="../_assets/5/mon_menu.png"></img>
 <em><p align="center">Safety Status Monitoring Menu</p></em>
 </p>
