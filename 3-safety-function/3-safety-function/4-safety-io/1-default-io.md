@@ -2,7 +2,7 @@
 
 Set the parameters for safety input/output signals.
 There are 4 input signals and 1 output signal, all operating as dual signals.
-You can set the parameter values in the `[System > 8: Safety System > 2: Parameter Settings > 3: Safety I/O > 2: Default I/O]` menu. 
+You can set the parameter values in the `[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 2: Default I/O]` menu. 
 
 ## 1) Default Input Signal Settings
 

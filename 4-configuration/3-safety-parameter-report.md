@@ -3,7 +3,7 @@
 You can view the currently applied safety parameter values in a report format.
 If the values on the settings screen have not been saved, they may differ from the values shown in the report.
 
-1. Go to the menu you want to modify under **\[System > 8: Safety System]**.
+1. Go to the menu you want to modify under `[System > 10: Safety System]`.
 
 <p align="center">
 <img src="../_assets/4/safety_report_1.png"></img>
