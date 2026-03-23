@@ -6,7 +6,7 @@ Set the thresholds for essential functions (manual mode speed monitoring, stop t
 You can set parameter values in the `[System > 10: Safety System > 1: General setup > 1: General]` menu.
 
 <p align="center">
-<img src="../../../_assets/3/general_param.png"></img>
+<img src="../../../_assets/3/general.png"></img>
 <em><p align="center">General parameter setting screen</p></em>
 </p>
 
@@ -14,7 +14,6 @@ You can set parameter values in the `[System > 10: Safety System > 1: General se
 |  **Parameter** |                       **Description**                       |  **Default setting**  |
 | :-------: | :------------------------------------------------: | :-------------: |
 | Safety function | <p>Whether robot monitoring and area monitoring functions are enabled</p><p>(Enable / Disable)</p> | Disable |
-| Use T/P | <p>Enables or disables the use of the TP</p><p>(Enable / Disable)</p> | Disable |
 | <p>Manual mode speed</p><p>[mm/s]</p> | <p>Whether the function is enabled</p><p>(10 ~ 250)</p> | 250 |
 | <p>Stop time</p><p>[ms]</p> | <p>Stop method when the function is violated</p><p>(100 ~ 2000)</p> | 2000 |
 | - Motion Tuning | <p>Tuning to a motion that satisfies the stopping time limit</p><p>(Enable / Disable)</p> | Disable |

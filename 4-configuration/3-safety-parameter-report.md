@@ -6,14 +6,14 @@ If the values on the settings screen have not been saved, they may differ from t
 1. Go to the menu you want to modify under `[System > 10: Safety System]`.
 
 <p align="center">
-<img src="../_assets/4/safety_report_1.png"></img>
+<img src="../_assets/4/safety_report__1.png"></img>
 <em><p align="center">Example of entering the safety parameter setting screen</p></em>
 </p>
 
 2. To generate a report, click the **\[Report]** button at the bottom.
 
 <p align="center">
-<img src="../_assets/4/safety_report_2.png"></img>
+<img src="../_assets/4/safety_report__2.png"></img>
 <em><p align="center">Example of generating a report</p></em>
 </p>
 

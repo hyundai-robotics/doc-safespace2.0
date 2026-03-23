@@ -5,7 +5,7 @@ When the external force applied to the robot exceeds the allowable value, it is 
 `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 5: Collision detection]` menu allows you to set the parameter values.
 
 <p align="center">
-<img src="../../../_assets/3/col_det.png"></img>
+<img src="../../../_assets/3/collision.png"></img>
 <em><p align="center">Collision detection parameter setting screen</p></em>
 </p>
 

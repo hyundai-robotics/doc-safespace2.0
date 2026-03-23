@@ -13,7 +13,7 @@ Parameter values   can be set in the `[System > 10: Safety System > 2: Parameter
 | :-------: | :------------------------------------------------: | :----------: |
 | Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
 | Joint ON/OFF | <p>Whether each joint is activated</p><p>(ON / OFF)</p> | OFF |
-| <p>Tolerance</p><p>[deg]</p> | <p>Angle Limit Value for Each Joint</p><p>(0.0 ~ 3.0)</p> | 0.001 |
+| <p>Tolerance</p><p>[deg]</p> | <p>Angle Limit Value for Each Joint</p><p>(0.0 ~ 3.0)</p> | 0.100 |
 
 {% hint style="warning" %}
 <strong>[Caution]</strong>: If the stop monitoring parameters are violated, be sure to check that the robot's movement is normal before restarting.

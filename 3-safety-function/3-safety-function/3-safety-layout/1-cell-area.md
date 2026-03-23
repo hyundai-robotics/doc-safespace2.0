@@ -1,4 +1,4 @@
-﻿# 3.3.3.1 Safety Area Setting
+﻿# 3.3.3.1 Safety Space Setting
 
 A safety area is a work space or protected space for monitoring the tool and robot link areas. The work space is a restricted space where the monitored object can move freely but cannot leave. In contrast, the protected space is a restricted space where the monitored object cannot move once it enters. If the robot leaves the set work space or violates the protected space, a safety stop (Stop 0, Stop 1, and Stop 2) is activated.
 

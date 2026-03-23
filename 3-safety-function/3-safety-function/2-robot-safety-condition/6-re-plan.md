@@ -7,7 +7,7 @@ If the delay time is insufficient or the robot decelerates insufficiently, resul
 You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 6: Re plan]` menu.
 
 <p align="center">
-<img src="../../../_assets/3/replan.png"></img>
+<img src="../../../_assets/3/replan_param.png"></img>
 <em><p align="center">Re plan settings screen</p></em>
 </p>
 

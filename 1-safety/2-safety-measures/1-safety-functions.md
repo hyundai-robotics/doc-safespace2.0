@@ -46,6 +46,6 @@ SafeSpace 2.0 is available with three different license options. Each license gr
 | TCP orientation monitoring |    |  | O | O |
 | Safe operating stop |    |  | O | O |
 | Self collision monitoring |    |  | O | O |
-| Speed and Separation monitoring |    |  | O | O |
+| Speed and Separation monitoring |    |  |  | O |
 | Collision/Power/Momentum monitoring |    |  |  | O |
 | Safe motion |    |  |  | O |
