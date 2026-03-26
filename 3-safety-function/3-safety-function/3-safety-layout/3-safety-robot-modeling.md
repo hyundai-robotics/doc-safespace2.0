@@ -1,4 +1,4 @@
-﻿# 3.3.2.3 Safety Robot Modeling
+﻿# 3.3.3.3 Safety Robot Modeling
 
 A robot model used for safety space monitoring. Safety robot modeling can be applied to axes 2 and 3, and both are modeled as capsules.
 

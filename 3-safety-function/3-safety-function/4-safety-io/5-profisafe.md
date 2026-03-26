@@ -1,6 +1,6 @@
 ﻿
 
-# 3.3.4.4 PROFIsafe
+# 3.3.4.5 PROFIsafe
 
 ## 1) PROFIsafe?
 - A safety protocol (safety profile) that operates on PROFINET/PROFIBUS.

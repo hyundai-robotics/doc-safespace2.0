@@ -1,4 +1,4 @@
-﻿# 3.3.2.2 Safety Tool Modeling
+﻿# 3.3.3.2 Safety Tool Modeling
 
 Monitors whether the sphere modeled with a tool used for safety area monitoring violates the protected space or leaves the work space. Up to 16 safety tools can be set and modeled with up to 10 models.
 

@@ -1,4 +1,4 @@
-﻿# 5.4 PROFIsafe Monitoring
+﻿# 5.3 PROFIsafe Monitoring
 
 You can monitor the I/O status of PROFIsafe by selecting the `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe]` menu.
 

@@ -1,6 +1,6 @@
 ﻿
 
-# 3.3.4.3 Selecting Safety Communication
+# 3.3.4.4 Selecting Safety Communication
 
 ## 1) Selecting Safety Communication
 - Select the safety communication protocol for the Hi7 robot controller.<br><br>

@@ -1,6 +1,6 @@
 ﻿
 
-# 3.3.4.5 CIP Safety
+# 3.3.4.6 CIP Safety
 
 ## 1) What is CIP Safety?
 - **CIP Safety** is a safety communication protocol that extends the standard **Common Industrial Protocol (CIP)**.

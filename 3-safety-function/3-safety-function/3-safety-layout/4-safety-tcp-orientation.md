@@ -1,4 +1,4 @@
-﻿# 3.3.2.4 TCP Orientation Monitoring
+﻿# 3.3.3.4 TCP Orientation Monitoring
 
 To use the TCP orientation monitoring function, you can set up a monitoring cone by setting the rotation angle and deviation angle for generating the reference vector.
 
