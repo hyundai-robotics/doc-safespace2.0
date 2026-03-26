@@ -1,6 +1,6 @@
 ﻿
 
-# 3.3.4.4 PROFIsafe
+# 3.3.4.5 PROFIsafe
 
 ## 1) PROFIsafe ?
 - PROFINET/PROFIBUS 상에서 동작하는 안전 프로토콜(안전 프로파일).

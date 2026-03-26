@@ -64,7 +64,7 @@
   * [4.3 안전 파라미터 리포트](4-configuration/3-safety-parameter-report.md)
 * [5. 안전 상태 모니터링](5-monitoring/README.md)
   * [5.1 로봇 감시 기능 상태](5-monitoring/1-robot-limit-parameter-monitoring.md)
-  * [5.2 안전 입출력 상태](5-monitoring/4-safety-io-status-monitoring.md)
+  * [5.2 안전 I/O 상태](5-monitoring/4-safety-io-status-monitoring.md)
   * [5.3 PROFIsafe 상태](5-monitoring/6-profisafe-status-monitoring.md)
   * [5.4 CIP Safety 상태](5-monitoring/7-cipsafety-status-monitoring.md)
 * [6. 복구 방법](6-recovery/README.md)

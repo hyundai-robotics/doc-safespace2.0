@@ -3,7 +3,7 @@
 조인트 속도 설정 파라미터는 로봇의 조인트 속도를 감시하기 위한 한계값입니다. 한계값 위반 시에는 설정한 안전 정지(정지 0, 정지 1, 정지 2)가 즉시 활성화됩니다.
 
 <p align="center">
-<img src="../../../_assets/joint_speed.PNG"></img>
+<img src="../../../_assets/3/joint_speed.PNG"></img>
 <em><p align="center">조인트 속도 설정 예</p></em>
 </p>
 
