@@ -1,42 +1,36 @@
-﻿# Notation Conventions
+# 表示法约定
 
-This manual uses the following notation conventions and safety instructions to help understanding of the content.
+本手册使用以下表示法约定和安全说明，以帮助理解内容。
 
-### Figure Description
+### 图形描述
 
-Figures are used to help understand product operation methods and explain screens. When figures are described, numbers are marked on the corresponding parts and the corresponding content is explained.
+图形用于帮助理解产品操作方法和解释屏幕。当描述图形时，数字标记在对应的部分，并解释相应的内容。
 
 ![](../_assets/pane-prog-cmd-param.png)
 
-### GUI \(Graphical User Interface\)
+### GUI \(图形用户界面\)
 
-GUI displays menu names and button names in bold within brackets \(\[ \]\). When multiple menus should be selected in order, the &gt; symbol is placed between names.
+GUI 在括号 \(\[ \]\) 内以粗体显示菜单名称和按钮名称。当需要按顺序选择多个菜单时，在名称之间放置 &gt; 符号。
 
-* Named menu: From the initial screen of manual or auto mode, select the \[__Menu__\] button.
-* Multiple menus: From the initial screen of manual mode, select \[__System__\] button > &gt; \[5: __Initialization__ &gt; > 7: __Unit Settings__\] menu.
+* 命名菜单：从手动或自动模式的初始屏幕中，选择 \[__菜单__\] 按钮。
+* 多个菜单：从手动模式的初始屏幕中，选择 \[__系统__\] 按钮 > &gt; \[5: __初始化__ &gt; > 7: __单元设置__\] 菜单。
 
+### 操作键表示法
 
+在教学挂件的操作面板上需按下的功能操作键以粗体显示在尖括号 \(&lt; &gt;\) 内。
 
-### Operation Key Notation
+* &lt;__开始__&gt; 按下此键将启动机器人中编写程序的自动操作。
 
-Keys to be pressed on the operation panel of the teach pendant for function operation are displayed in bold within angle brackets\(&lt; &gt;\).
+### 交叉引用
 
-* &lt;__Start__&gt; Pressing a key starts the automatic operation of the program written in the robot.
+提供手册内相关信息的快捷方式。交叉引用以粗体和引号 \(" "\) 标示。
 
-### Cross-reference
+* 有关更改日期和时间信息的更多信息，请参见 "[4.5 日期和时间设置](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/zh-tp630/4-service/5-date-time-setting?cont_model=Hi7)" 在 "[Hi7 控制器操作手册](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/zh-tp630/README?cont_model=Hi7)" 中。
 
-Provides shortcuts to related information within the manual. Cross-references are indicated in bold with quotation marks \(" "\).
+### 注释
 
-* For more information about changing date and time information, see "[4.5 Date and Time Settings](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/4-service/5-date-time-setting?cont_model=Hi7)" in the "[Hi7 Controller Operation Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=Hi7)".
-
-### Notes
-
-Provides useful or additional information that is good to know when using the product.
+提供使用产品时有用或额外的信息。
 
 {% hint style="info" %}
-If the <img src="../_assets/engineer.png"></img> icon is blinking in the status bar, you are in engineer mode.
+如果 <img src="../_assets/engineer.png"></img> 图标在状态栏中闪烁，则表示您处于工程师模式。
 {% endhint %}
-
-
-
-###

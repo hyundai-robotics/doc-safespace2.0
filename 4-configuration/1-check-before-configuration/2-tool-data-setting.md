@@ -1,21 +1,21 @@
-﻿# 4.1.3 Tool Data Setting
+﻿# 4.1.3 工具数据设置
 
-Safety features monitor the entire robot system, including tools attached to the robot flange. Therefore, the smaller the error between the tool data and actual values, the more accurately the safety function operates. Set the tool length and angle based on the flange coordinate system and enter the tool weight, center of gravity, and inertia information in accordance with individual units.
+安全功能监控整个机器人系统，包括附加到机器人法兰的工具。因此，工具数据与实际值之间的误差越小，安全功能的操作越准确。根据法兰坐标系统设置工具长度和角度，并根据各个单位输入工具重量、重心和惯性信息。
 
-1. Set the operation mode to manual mode.
-2. Press the emergency stop switch to cut off the power to the motors.
-3. Touch the `[Settings]` button > `[3: Robot Parameters > 1: Tool Data]` menu.
-4. Check the data for each axis and set the tool weight, center of gravity, and inertia, then touch the `[OK]` button to save.
+1. 将操作模式设置为手动模式。
+2. 按下紧急停止开关以切断电机的电源。
+3. 触摸`[设置]`按钮 > `[3: 机器人参数 > 1: 工具数据]`菜单。
+4. 检查每个轴的数据并设置工具重量、重心和惯性，然后触摸`[确定]`按钮保存。
 
 ![](../../_assets/image20.jpeg)
 
-* To create new tool data or easily create tool data using an existing program, touch the `[Auto Correction]`.
-* To correct the tool angle, touch the `[Angle Correction]` button.
-* To add or delete a new user coordinate system, use the `[+]`/`[-]` buttons.
-* To check and edit detailed information of tool data, select the desired name from the tool data list.
-* To copy tool data information and paste it to other tool data, use the `[Copy Page]`/`[Paste Page]` buttons.
+* 要创建新的工具数据或使用现有程序轻松创建工具数据，请触摸`[自动校正]`。
+* 要校正工具角度，请触摸`[角度校正]`按钮。
+* 要添加或删除新的用户坐标系统，请使用`[+]`/`[-]`按钮。
+* 要检查和编辑工具数据的详细信息，请从工具数据列表中选择所需名称。
+* 要复制工具数据并粘贴到其他工具数据，请使用`[复制页面]`/`[粘贴页面]`按钮。
 
 {% hint style="info" %}
-* If information about the tool's weight and center of gravity isn't available, you can use the load estimation function to estimate the values. 
-* For detailed information on setting tool data, refer to the "[Hi7 Controller Operation Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)."
+* 如果没有工具重量和重心的信息，可以使用负载估计功能来估计这些值。
+* 有关设置工具数据的详细信息，请参阅"[Hi7 控制器操作手册](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)。"
 {% endhint %}

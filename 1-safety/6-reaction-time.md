@@ -1,10 +1,10 @@
-﻿# 1.6 Response Time
+﻿# 1.6 响应时间
 
 
-* **Stop Response Time**
+* **停止响应时间**
 
-The response time to be taken from safety function violation to stop execution is 9.8ms. The response time should be reflected when calculating the robot's stop time and stop distance.
+从安全功能违规到停止执行的响应时间为 9.8ms。在计算机器人的停止时间和停止距离时，应反映该响应时间。
 
-* **PROFIsafe Response Time**
+* **PROFIsafe 响应时间**
 
-The response time to be taken from stop execution by PROFIsafe F-output data is 40.8ms. To get the time until the robot completely stops, the communication cycle and the robot's stop time and stop distance calculation values should be added.
+通过 PROFIsafe F-output 数据停止执行的响应时间为 40.8ms。要获得机器人完全停止所需的时间，应将通信周期和机器人的停止时间及停止距离计算值相加。

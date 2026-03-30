@@ -1,28 +1,27 @@
-﻿# 3.3.1 General Setup
+﻿# 3.3.1 一般设置
 
-Robot safety parameters consist of limit values   and stop methods for monitoring safety functions.
+机器人安全参数由监控安全功能的限制值和停止方法组成。
 
-Each safety function can be configured with various activation conditions, stop methods upon violation, and limit values.
+每个安全功能可以配置各种触发条件、违规时的停止方法和限制值。
 
-Access the safety function basic settings menu using the following methods.
+使用以下方法访问安全功能基本设置菜单。
 
 * `[System > 10: Safety System > 1: General setup]`
 ****
 
-The following safety functions can be configured in the Basic Settings menu:
+以下安全功能可以在基本设置菜单中配置：
 
-* **General**: Set safety function activation, manual mode speed, stopping distance, and periodic time monitoring.
-* **Stop Settings**: Set the stopping method (Stop 0, Stop 1, Stop 2) according to the stop type.
-* **Safety Tool Information**: Set safety tool information.
-* **Safety Added Weight**: Set the safety added weight.
-* **Maintenance**: Set the robot test cycle required for safety function maintenance.
+* **一般**：设置安全功能激活、手动模式速度、制动距离和周期时间监控。
+* **停止设置**：根据停止类型设置停止方法（Stop 0、Stop 1、Stop 2）。
+* **安全工具信息**：设置安全工具信息。
+* **安全附加重量**：设置安全附加重量。
+* **维护**：设置机器人安全功能维护所需的测试周期。
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
+<strong>[注意]</strong>: 操作人员和用户必须在配置机器人安全功能之前进行风险评估，以确保机器人周围人员和设备的安全。基于评估结果，配置以下内容：
 
-* Set a password, etc. to prevent unauthorized changes to the safety configuration.
-* Configure safety-related functions and interfaces.
-* Verify the accuracy of settings before operating the robot.
-* Verify that all safety function configurations and settings comply with the risk assessment.
+* 设置密码等，以防止对安全配置的未经授权更改。
+* 配置安全相关的功能和接口。
+* 在操作机器人之前验证设置的准确性。
+* 验证所有安全功能配置和设置是否符合风险评估要求。
 {% endhint %}
-

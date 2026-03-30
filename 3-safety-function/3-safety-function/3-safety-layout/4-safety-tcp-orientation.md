@@ -1,34 +1,34 @@
-﻿# 3.3.3.4 TCP Orientation Monitoring
+﻿# 3.3.3.4 TCP 方向监控
 
-To use the TCP orientation monitoring function, you can set up a monitoring cone by setting the rotation angle and deviation angle for generating the reference vector.
+要使用 TCP 方向监控功能，您可以通过设置旋转角度和偏差角度来建立监控锥体，以生成参考向量。
 
-By setting the reference vector (![](../../../_assets/3.png)) by rotating the Z-direction vector of the robot coordinate system (![](../../../_assets/1.png)) by a set angle based on it, a cone (![](../../../_assets/2.png)) made up of mother lines that are separated by the deviation angle (![](../../../_assets/4.png)) can be modeled. The vertex of such a cone (![](../../../_assets/5.png)) is located at the TCP, and if the Z-direction vector of the TCP (![](../../../_assets/6.png)) crosses the monitoring cone, a TCP direction limit function violation error occurs.
+通过根据设定角度旋转机器人坐标系统的 Z 方向向量 (![](../../../_assets/1.png)) 来设置参考向量 (![](../../../_assets/3.png))，可以建模成一个由偏差角度 (![](../../../_assets/4.png)) 分开的母线组成的锥体 (![](../../../_assets/2.png))。这种锥体的顶点 (![](../../../_assets/5.png)) 位于 TCP 处，如果 TCP 的 Z 方向向量 (![](../../../_assets/6.png)) 穿过监控锥体，则会发生 TCP 方向限制功能违规错误。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/tool_ori.png"></img>
-<em><p align="center">TCP Orientation Monitoring</p></em>
+<em><p align="center">TCP 方向监控</p></em>
 </p>
 
-You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 4: Tool orientation]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 4: Tool orientation]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/tool_orient_param.png"></img>
-<em><p align="center">TCP Orientation parameter setting screen</p></em>
+<em><p align="center">TCP 方向参数设置界面</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>Whether the function is activated</p><p>(Invalid / Valid / Safe I/O)</p> | Invalid |
-| Stop method | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
-| <p>Org.Rx</p><p>[deg]</p> | <p>Rotation amount of reference vector relative to X direction</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
-| <p>Org.Ry</p><p>[deg]</p> | <p>Rotation amount of reference vector relative to Y direction</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
-| <p>Org.Rz</p><p>[deg]</p> | <p>Rotation of reference vector relative to Z direction</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
-| Deviation angle | <p>Tool orientation limit</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
-| Load current position <br> | Create reference vector with current robot pose | - |
+| 激活 | <p>是否激活该功能</p><p>(无效 / 有效 / 安全 I/O)</p> | 无效 |
+| 停止方法 | <p>功能违规时的停止方法</p><p>(停止 0 / 停止 1 / 停止 2 / 不停止)</p> | 停止 1 |
+| <p>Org.Rx</p><p>[度]</p> | <p>相对于 X 方向的参考向量旋转量</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
+| <p>Org.Ry</p><p>[度]</p> | <p>相对于 Y 方向的参考向量旋转量</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
+| <p>Org.Rz</p><p>[度]</p> | <p>相对于 Z 方向的参考向量旋转量</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
+| 偏差角度 | <p>工具方向限制</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
+| 当前负载位置 <br> | 使用当前机器人姿态创建参考向量 | - |
 
 
 {% hint style="warning" %}
-**\[Caution]**
+**\[警告]**
 
-* When changing tool data, be sure to recheck that the parameters set in safety tool modeling are accurate. The tool data number and safety tool modeling number of the same tool should match.
+* 更改工具数据时，请务必重新检查在安全工具建模中设置的参数是否准确。 同一工具的工具数据编号和安全工具建模编号应匹配。
 {% endhint %}

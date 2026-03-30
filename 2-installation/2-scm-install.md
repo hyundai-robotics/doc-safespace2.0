@@ -1,3 +1,3 @@
-﻿# 2.2 Safety Module
+﻿# 2.2 安全模块
 
-The safety control module is shipped mounted inside the controller in board form. When board replacement is required, refer to the controller maintenance manual.
+安全控制模块以板载形式安装在控制器内运输。当需要更换板时，请参考控制器维护手册。

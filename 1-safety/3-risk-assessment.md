@@ -1,35 +1,35 @@
-﻿# 1.3 Risk Assessment
+﻿# 1.3 风险评估
 
-In the integrated system configuration including the robot, risk assessment is one of the important factors that is handled as a legal requirement in most countries. As the safety assessment for robot installation varies depending on how the robot is integrated into the system, the risk of the integrated system cannot be assessed with the robot alone.
+在包括机器人的集成系统配置中，风险评估是大多数国家作为法律要求处理的重要因素之一。由于机器人安装的安全评估因机器人与系统的集成方式而异，因此无法仅通过机器人评估集成系统的风险。
 
-The system administrator should configure and operate the system according to the guidelines of ISO 12100 and ISO 10218-2 to conduct a risk assessment. You can also refer to the technical specification ISO/TS 15066.
+系统管理员应根据ISO 12100和ISO 10218-2的指导方针配置和操作系统，以进行风险评估。您还可以参考技术规范ISO/TS 15066。
 
-Conduct a risk assessment considering the entire process of the integrated system including the robot. The main goals of risk assessment are as follows:
+进行风险评估时，考虑包括机器人在内的集成系统的整个过程。风险评估的主要目标如下：
 
-* Basic settings for robot use and robot teaching
-* Problem diagnosis and maintenance
-* Normal operation of the installed robot
+* 机器人的使用和教学的基本设置
+* 问题诊断和维护
+* 安装机器人的正常操作
 
-After installing the robot and configuring the system, you must conduct a risk assessment. The risk assessment mainly determines the appropriateness of the safety devices in the integrated robot system, as well as the need for additional emergency stop devices and other safety devices.
+在安装机器人并配置系统后，必须进行风险评估。风险评估主要确定集成机器人系统中安全设备的适当性，以及是否需要额外的紧急停机装置和其他安全设备。
 
-It is very important to identify appropriate safety devices and properly configure an integrated robot system. Configure an integrated system by referring to relevant contents in the manual.
+识别适当的安全设备并正确配置集成机器人系统是非常重要的。通过参考手册中的相关内容配置集成系统。
 
-You can set limits for the robot's TCP speed, pressure, power, momentum, collision detection, reduction ratio, joint angle by axis, speed, etc. You can also configure safety functions using safety-related I/O and communication. For detailed information on the configuration of safety functions, refer to "[3. SafeSpace2.0 Safety Functions](../3-safety-function/README.md)".
+您可以设置机器人的TCP速度、压力、功率、动量、碰撞检测、减速比、关节角度按轴、速度等限制。您还可以使用与安全相关的I/O和通信配置安全功能。有关安全功能配置的详细信息，请参阅 "[3. SafeSpace2.0 安全功能](../3-safety-function/README.md)"。
 
-**\[Safety Function]** menu allows you to configure safety-related functions, and the available functions are as follows:
+**\[安全功能\]** 菜单允许您配置与安全相关的功能，可用的功能如下：
 
-* **Force and Power Limit**: Restricts the force and pressure for stopping in preparation for collision between the robot and the worker
-* **Momentum Limit**: Reduces the robot's operating speed to limit energy and impact load in preparation for collision between the robot and the worker
-* **Joint and TCP Position Limit**: Restricts movement to prevent the robot from moving to specific body parts such as the user's neck or head
-* **TCP and Tool Posture Limit**: Restricts movement to reduce risks related to specific areas or features of the tool and workpiece (e.g., to prevent sharp parts of the tool or workpiece from moving toward the worker)
-* **Speed Limit**: Restricts the robot's movement to remain at low speed to provide time for the worker to avoid collision in preparation for collision between the robot and worker
+* **力和功率限制**：限制机器人与工人碰撞准备时的停止力和压力
+* **动量限制**：降低机器人的操作速度，以限制在机器人与工人碰撞准备时的能量和冲击负载
+* **关节和TCP位置限制**：限制运动以防止机器人移动到用户的特定身体部位，如脖子或头部
+* **TCP和工具姿态限制**：限制运动以减少与工具和工件的特定区域或特征相关的风险（例如，防止工具或工件的尖锐部分朝向工人移动）
+* **速度限制**：限制机器人的运动以保持低速，为工人提供避开碰撞的时间，以便准备与工人发生碰撞
 
-In addition, you can configure safety-related functions by installing the robot in a specific location or using safety I/O.
+此外，您可以通过在特定位置安装机器人或使用安全I/O配置与安全相关的功能。
 
-Important items when conducting risk assessment of the integrated robot system are as follows:
+进行集成机器人系统的风险评估时的重要事项如下：
 
-* Collision severity by robot
-* Collision probability by robot
-* Collision avoidance possibility by robot
+* 机器人造成的碰撞严重性
+* 机器人造成的碰撞概率
+* 机器人避免碰撞的可能性
 
-When configuring the integrated system, if risk factors are not sufficiently removed with the robot's safety-related functions (e.g., use of tools for non-collaborative robots, etc.), you should install necessary additional protective devices through risk assessment.
+在配置集成系统时，如果机器人安全相关功能无法充分消除风险因素（例如，使用非协作机器人所需的工具等），则应通过风险评估安装必要的额外防护设备。

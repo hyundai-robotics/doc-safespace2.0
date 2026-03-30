@@ -1,8 +1,8 @@
-﻿# 1.2.3 Emergency Stop
+﻿# 1.2.3 紧急停止
 
-The emergency stop function operates in emergencies or emergency situations such as when a worker or other object enters a danger area. All emergency stop switches are installed in locations that are easily accessible even from outside the safety area.
+紧急停止功能在紧急情况下或如工人或其他物体进入危险区域时操作。所有紧急停止开关都安装在即使从安全区域外部也易于接触的位置。
 
-When the emergency stop function is executed, the robot immediately stops the operation in any case.
+当执行紧急停止功能时，机器人会立即停止任何操作。
 
-* The robot servo system power is cut off and the motor brake operates.
-* The teach pendant screen displays an emergency stop message.
+* 机器人伺服系统电源被切断，电机刹车操作。
+* 教学挂件屏幕显示紧急停止消息。

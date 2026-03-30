@@ -1,3 +1,3 @@
-﻿# 1.2.3.1 Emergency Stop Switch
+﻿# 1.2.3.1 紧急停止开关
 
-There is one emergency stop switch installed on the controller and one on the teach pendant. Press the emergency stop switch in case of an emergency.
+控制器上安装了一个紧急停止开关，教学挂件上也安装了一个。在紧急情况下按下紧急停止开关。

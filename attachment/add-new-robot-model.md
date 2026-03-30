@@ -1,36 +1,36 @@
-﻿# Registering a New Robot Model
+﻿# 注册新的机器人模型
 
 ****
 
-1. From the robot modeling files located in the library within the HRSpace installation directory, copy the folder of the robot model you want to use.
-* File path: [HRSpace(version)\Library\Robot]
+1. 从 HRSpace 安装目录中的库中找到机器人建模文件，复制您想使用的机器人模型的文件夹。
+* 文件路径：[HRSpace(version)\Library\Robot]
 
-2. Add the copied folder to the robot 3D file storage directory of the controller.
-* File path: [prebuilt\tp\libs3d\robot]
+2. 将复制的文件夹添加到控制器的机器人 3D 文件存储目录。
+* 文件路径：[prebuilt\tp\libs3d\robot]
 
-3. If the name of the folder containing the robot 3D files corresponds to an older version, rename it to the new version.
+3. 如果包含机器人 3D 文件的文件夹名称对应于旧版本， 将其重命名为新版本。
 
 ****
 
-* Example: Adding a New HS220S Robot Model
+* 示例：添加新的 HS220S 机器人模型
 
-1) Copy the HS220S robot modeling file from the robot modeling files stored in the library.
+1) 从存储在库中的机器人建模文件中复制 HS220S 机器人建模文件。
 
 <p align="center">
 <img src="../_assets/add_new_robot_model/add_new_robot_model_1.png"></img>
-<em><p align="center">Check the location of the robot modeling file to be added and copy it</p></em>
+<em><p align="center">检查要添加的机器人建模文件的位置并复制它</p></em>
 </p>
 
-2) Save the copied folder to the robot 3D file storage directory of the controller.
+2) 将复制的文件夹保存到控制器的机器人 3D 文件存储目录。
 
 <p align="center">
 <img src="../_assets/add_new_robot_model/add_new_robot_model_2.png"></img>
-<em><p align="center">Paste the copied folder into the controller's robot 3D file storage directory</p></em>
+<em><p align="center">将复制的文件夹粘贴到控制器的机器人 3D 文件存储目录</p></em>
 </p>
 
-3) Change the folder name to the new version.
+3) 将文件夹名称更改为新版本。
 
 <p align="center">
 <img src="../_assets/add_new_robot_model/add_new_robot_model_3.png"></img>
-<em><p align="center">If the robot modeling folder name corresponds to an older version, rename the folder</p></em>
+<em><p align="center">如果机器人建模文件夹名称对应于旧版本，请将文件夹重命名</p></em>
 </p>

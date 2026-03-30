@@ -1,32 +1,30 @@
-﻿# 3.3.2 Robot Monitoring Function
+# 3.3.2 机器人监控功能
 
-Robot safety parameters consist of limit values   and stop methods for monitoring safety functions.
+机器人安全参数由监控安全功能的限制值和停止方法组成。
 
-Each safety function can be configured with various activation conditions, stop methods upon violation, and limit values.
+每个安全功能可以配置各种激活条件、违规时的停止方法和限制值。
 
-To configure robot safety parameters, access the menu as follows:
+要配置机器人安全参数，请按如下方式访问菜单：
 
 * `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction]`
 ****
 
-The following safety features can be configured in the Robot Limits menu:
+以下安全功能可以在机器人限制菜单中进行配置：
 
-* **Joint Space**: Limits the robot's range of motion for each axis to a specific range.
-* **Joint Speed**: Limits the robot's motion by preventing it from exceeding the speed limit for each axis.
-* **Joint Stop**: Monitors the robot's stopped state by checking for abnormal movement for each axis after performing Stop 2.
-* **TCP Speed**: Limits the robot's speed to a specified speed based on TCP standards.
-* **Collision Detection**: Limits the force in the event of a collision between the robot and the worker.
-* **RePlan**: Adjusts the robot's speed according to external input to perform "3.2.2 "Speed and Position Monitoring" during collaborative operation mode.
-* **Power Detection**: Limits the force in the event of a collision between the robot and the worker.
-* **Momentum**: Limits the energy and impact load in the event of a collision between the robot and the worker.
-
+* **关节空间**：限制机器人的每个轴的运动范围到特定范围。
+* **关节速度**：通过防止机器人超过每个轴的速度限制来限制机器人的运动。
+* **关节停止**：通过在执行停止2后检查每个轴的异常运动来监控机器人的停止状态。
+* **TCP速度**：根据TCP标准限制机器人的速度到指定速度。
+* **碰撞检测**：在机器人与工人发生碰撞时限制力量。
+* **重新规划**：根据外部输入调整机器人的速度，以在协作操作模式下执行“3.2.2 速度和位置监控”。
+* **功率检测**：在机器人与工人发生碰撞时限制力量。
+* **动量**：在机器人与工人发生碰撞时限制能量和冲击负荷。
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
+<strong>[注意]</strong>: 操作员和用户在配置机器人安全功能之前必须进行风险评估，以确保机器人周围人员和设备的安全。根据评估结果配置以下内容：
 
-* Set a password, etc. to prevent unauthorized changes to the safety configuration.
-* Configure safety-related functions and interfaces.
-* Verify the accuracy of settings before operating the robot.
-* Verify that all safety function configurations and settings comply with the risk assessment.
+* 设置密码等，以防止对安全配置的未授权更改。
+* 配置与安全相关的功能和接口。
+* 在操作机器人之前验证设置的准确性。
+* 验证所有安全功能配置和设置符合风险评估。
 {% endhint %}
-

@@ -1,3 +1,3 @@
-﻿# 7. Error Messages
+﻿# 7. 错误消息
 
-When a safety function-related alarm occurs, refer to "[Error and Warning Help](https://hr-alarms.web.app/#/)".
+当与安全功能相关的警报发生时，请参阅 "[Error and Warning Help](https://hr-alarms.web.app/#/)"。

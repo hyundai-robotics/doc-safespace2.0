@@ -1,19 +1,15 @@
-﻿# 6.1 	Recovery from Robot Position Violation
+# 6.1 	从机器人位置违规恢复
 
-Robot position violation occurs when the robot's position leaves the safety area, and the violations include TCP position violation, TCP orientation violation, and joint monitoring violation. In case of robot position violation, the error can only be cleared by physically moving the robot to change its position.
+机器人位置违规发生在机器人位置离开安全区域时，违规包括TCP位置违规、TCP方向违规和关节监控违规。在发生机器人位置违规时，错误只能通过物理移动机器人以改变其位置来清除。
 
-1. Change the mode switch to manual to enter manual mode.
+1. 将模式开关切换到手动以进入手动模式。
 
+2. 使用示教挂件上的使能开关打开电机。
 
-2. Use the enabling switch on the teach pendant to turn on the motor.
+3. 使用示教挂件将机器人移动到安全区域。
 
-
-3. Use the teach pendant to move the robot to a safe area.
-
-
-4.  In the safety status monitoring screen, verify that the status of each area is displayed as **SAFE**.
-
+4. 在安全状态监控屏幕上，确认每个区域的状态显示为 **安全**。
 
 {% hint style="warning" %}
-After clearing the error, recheck the safety layout settings and also the teaching positions in the work program.
+在清除错误后，请重新检查安全布局设置以及工作程序中的示教位置。
 {% endhint %}

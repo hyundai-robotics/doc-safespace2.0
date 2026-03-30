@@ -1,25 +1,24 @@
-﻿# 3.3.4.2 Extended Safety Input/Output Signals
+# 3.3.4.2 扩展安全输入/输出信号
 
-Set the parameters for additional safety input/output signals. It consists of 8 input signals and 8 output signals, all operating as dual signals.
-You can set parameter values in the `[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 3: Additional I/O]` menu. 
+设置额外安全输入/输出信号的参数。它由8个输入信号和8个输出信号组成，所有信号都作为双信号工作。
+您可以在`[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 3: Additional I/O]`菜单中设置参数值。
 
-## 1) Additional Safety Input/Output Signals
+## 1) 额外安全输入/输出信号
 
 <p align="center">
 <img src="../../../_assets/safety_io/add_io.png"></img>
-<em><p align="center">Extended Input/Output Settings Screen</p></em>
+<em><p align="center">扩展输入/输出设置屏幕</p></em>
 </p>
 
-| Parameter [Unit]             | Description                                                                                                                                       | Input Range       | Default |
+| 参数 [单位]                | 描述                                                                                                                                          | 输入范围        | 默认值 |
 |:---------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Enable                       | Set whether to enable or disable the extended safety input/output signals.                                                                                       | Enable / Disable | Disable |
-| Filter Time <br>[msec]          | For each input channel, constant signals should be input during the **Filter Time** for the signals to be processed as valid signals.<br>Only values divisible by 10 can be entered.                           | 0-500        | 100    |
-| Discrepancy Time <br>[msec]     | Extended safety input/output signals are processed as valid signals when two dual signals have the same value.<br>An alarm is triggered if the two signals are different from each other for longer than the **Discrepancy Time**.<br>Only values divisible by 10 can be entered. | 0-5000       | 1000   |
-| Input Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system transitions from the Fail-Safe state to the current input state only after the set time has elapsed.<br>Only values divisible by 10 can be entered.             | 0-65530      | 1000   |
-| Output Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system maintains the **Open (Fail-safe)** state during the set time.<br>After that, it transitions to normal output.<br>Only values divisible by 10 can be entered.   | 0-65530      | 1000   |
+| 启用                        | 设置是否启用或禁用扩展安全输入/输出信号。                                                                                                 | 启用 / 禁用    | 禁用   |
+| 滤波时间 <br>[毫秒]          | 对于每个输入通道，必须在**滤波时间**内输入持续信号，以使信号被处理为有效信号。<br>仅能输入可被10整除的值。                                         | 0-500        | 100    |
+| 不一致时间 <br>[毫秒]       | 当两个双信号具有相同值时，扩展安全输入/输出信号被处理为有效信号。<br>如果两个信号在**不一致时间**内彼此不同，则会触发警报。<br>仅能输入可被10整除的值。 | 0-5000       | 1000   |
+| 输入错误锁存时间 <br>[毫秒] | 当通道出现错误时，即使错误已解决，系统也只有在设定时间过去后才能从安全失效状态过渡到当前输入状态。<br>仅能输入可被10整除的值。             | 0-65530      | 1000   |
+| 输出错误锁存时间 <br>[毫秒] | 当通道出现错误时，即使错误已解决，系统在设定时间内保持**开放（安全失效）**状态。<br>之后，系统过渡到正常输出。<br>仅能输入可被10整除的值。   | 0-65530      | 1000   |
 
-### Additional Safety Input Wiring Example)
+### 额外安全输入接线示例)
 ![](../../../_assets/safety_io/CN_SI2.bmp)
-### Additional Safety Output Wiring Example)
+### 额外安全输出接线示例)
 ![](../../../_assets/safety_io/CN_SO2.bmp)
-

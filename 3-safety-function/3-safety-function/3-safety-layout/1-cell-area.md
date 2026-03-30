@@ -1,66 +1,64 @@
-﻿# 3.3.3.1 Safety Space Setting
+﻿# 3.3.3.1 安全区域设置
 
-A safety area is a work space or protected space for monitoring the tool and robot link areas. The work space is a restricted space where the monitored object can move freely but cannot leave. In contrast, the protected space is a restricted space where the monitored object cannot move once it enters. If the robot leaves the set work space or violates the protected space, a safety stop (Stop 0, Stop 1, and Stop 2) is activated.
+安全区域是用于监控工具和机器人连接区域的工作空间或保护空间。工作空间是一个受限空间，其中被监控对象可以自由移动但不能离开。相反，保护空间是一个受限空间，其中被监控对象一旦进入就无法移动。如果机器人离开设置的工作空间或违反保护空间，将激活安全停止（Stop 0、Stop 1和Stop 2）。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/cell_general.png"></img>
-<em><p align="center">work space</p></em>
+<em><p align="center">工作空间</p></em>
 </p>
 
 <p align="center">
 <img src="../../../_assets/safety_layout/cell_protected.png"></img>
-<em><p align="center">protected space</p></em>
+<em><p align="center">保护空间</p></em>
 </p>
 
-The safe zone is configured by setting the position and height of each vertex relative to the robot's coordinate system. Up to 10 vertices can be added. The safe zone is activated by parameter settings or safety input/output signals.
+安全区域是通过相对于机器人的坐标系统设置每个顶点的位置和高度来配置的。最多可以添加10个顶点。安全区域通过参数设置或安全输入/输出信号激活。
 
-You can set the parameter values   for the safety zone in each tab of the `[System > 10: Safety System > 2: Parameter Setup > 2: Space restriction > 1: Space]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter Setup > 2: Space restriction > 1: Space]`菜单的每个选项卡中设置安全区域的参数值。
 
-
-* **General**
+* **一般**
 
 <p align="center">
 <img src="../../../_assets/safety_layout/cell_general.png"></img>
-<em><p align="center">General</p></em>
+<em><p align="center">一般</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>Function activation status</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Stop function |   <p>Stop method when the function is violated</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| Type |  <p>Safety area type</p><p>(Work space/Protected space)</p>  | Work space |
+| 激活 | <p>功能激活状态</p><p>(关闭/开启/安全输入)</p> |   关闭  |
+| 停止功能 |   <p>功能违规时的停止方法</p><p>(Stop0, Stop1, Stop2, 非停止)</p>  | Stop 1 |
+| 类型 |  <p>安全区域类型</p><p>(工作空间/保护空间)</p>  | 工作空间 |
 
 
-* **Detection target**
+* **检测目标**
 
 <p align="center">
 <img src="../../../_assets/safety_layout/cell_target.png"></img>
-<em><p align="center">Detection target</p></em>
+<em><p align="center">检测目标</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Tool | <p>Tool modeling monitoring</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Lower arm |   <p>Robot 2nd axis modeling monitoring</p><p>(Off/On)</p>  | Off |
-| Upper arm |  <p>Robot 3rd axis modeling monitoring</p><p>(Off/On)</p>  | Off |
+| 工具 | <p>工具建模监控</p><p>(关闭/开启/安全输入)</p> |   关闭  |
+| 下臂 |   <p>机器人第二轴建模监控</p><p>(关闭/开启)</p>  | 关闭 |
+| 上臂 |  <p>机器人第三轴建模监控</p><p>(关闭/开启)</p>  | 关闭 |
 
 
-* **Area**
+* **区域**
 
 <p align="center">
 <img src="../../../_assets/safety_layout/cell_working.png"></img>
-<em><p align="center">Area</p></em>
+<em><p align="center">区域</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| <p>Z Min / Max</p><p>[mm]</p> | <p>Height of the safe area based on the robot coordinate system</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
-| Enable | <p>Whether to enable the vertex of the safe area</p><p>(Enable / Disable)</p> | Disable |
-| <p>X</p><p>[mm]</p> | <p>X-direction position of the vertex based on the robot coordinate system</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
-| <p>Y</p><p>[mm]</p> | <p>Y-direction position of the vertex based on the robot coordinate system</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
-
+| <p>Z 最小 / 最大</p><p>[mm]</p> | <p>基于机器人坐标系统的安全区域高度</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
+| 启用 | <p>是否启用安全区域的顶点</p><p>(启用 / 禁用)</p> | 禁用 |
+| <p>X</p><p>[mm]</p> | <p>基于机器人坐标系统的顶点X方向位置</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
+| <p>Y</p><p>[mm]</p> | <p>基于机器人坐标系统的顶点Y方向位置</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
 
 
 {% hint style="warning" %}
-**\[Caution]**: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
+**\[注意]**: 安全功能基于设置区域进行监控。设置区域时应考虑停止距离，并在操作前进行验证。
 {% endhint %}

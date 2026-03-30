@@ -1,17 +1,16 @@
-﻿# 3.3.4 Safety Input/Output
+# 3.3.4 安全输入/输出
 
-Basic Information on Safety Input/Output
+安全输入/输出的基本信息
 
-## Hi7's safety input/output can be divided as follows:
+## Hi7的安全输入/输出可以分为以下几类：
 
-- Basic Safety Input (4ch x dual input)
-- Extended Safety Input (8ch x dual input)
-- Basic Safety Output (1ch x dual input)
-- Extended Safety Output (8ch x dual input)
-- PROFIsafe Communication Safety Input (64 points)
-- PROFIsafe Communication Safety Output (64 points)
-- CIP Safety Communication Safety Input (64 points)
-- CIP Safety Communication Safety Output (64 points)
+- 基本安全输入 (4ch x 双输入)
+- 扩展安全输入 (8ch x 双输入)
+- 基本安全输出 (1ch x 双输入)
+- 扩展安全输出 (8ch x 双输入)
+- PROFIsafe 通信安全输入 (64 点)
+- PROFIsafe 通信安全输出 (64 点)
+- CIP 安全通信安全输入 (64 点)
+- CIP 安全通信安全输出 (64 点)
 
 ![](../../../_assets/safety_io/comm_front.png)
-

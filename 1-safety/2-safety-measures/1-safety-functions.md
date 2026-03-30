@@ -1,51 +1,50 @@
-﻿# 1.2.1 Safety functions
+# 1.2.1 安全功能
 
-## Safety functions in SafeSpace2.0
-SafeSpace2.0 is intended to carry out collaborative tasks based on the following safety functions. For the details of the safety functions, see the "[3. SafeSpace2.0 Safety functions](../../3-safety-function/README.md)"
+## SafeSpace2.0中的安全功能
+SafeSpace2.0旨在基于以下安全功能执行协作任务。有关安全功能的详细信息，请参见“[3. SafeSpace2.0安全功能](../../3-safety-function/README.md)”
 
-* STO: Safe Torque Off
-* SS1: Safe Stop 1
-* SS2: Safe Stop 2
-* Emergency Stop
-* Protective Stop
-* Normal Stop
-* SOS: Safe Operating Stop
-* Stopping time Monitoring
-* Stopping distance Monitoring
-* Joint-SLP, Joint Angle Monitoring
-* Joint-SLS, Joint Angular Speed Monitoring
-* TCP-SLP, TCP Position Monitoring
-* TCP Orientation Monitoring
-* TCP-SLS, TCP Speed Monitoring
-* Power Monitoring
-* Momentum Monitoring
-* Collision Detection
-* Speed and Separation Monitoring
-* SBC: Safe Brake Control
-* Safety Inputs
-* Safety Outputs
+* STO: 安全转矩关闭
+* SS1: 安全停止1
+* SS2: 安全停止2
+* 紧急停止
+* 保护停止
+* 正常停止
+* SOS: 安全操作停止
+* 停止时间监控
+* 停止距离监控
+* 关节-SLP, 关节角度监控
+* 关节-SLS, 关节角速度监控
+* TCP-SLP, TCP位置监控
+* TCP方向监控
+* TCP-SLS, TCP速度监控
+* 电源监控
+* 动量监控
+* 碰撞检测
+* 速度与间距监控
+* SBC: 安全制动控制
+* 安全输入
+* 安全输出
 * PROFIsafe
-* Start/restart Interlock
+* 启动/重启联锁
 
 ---
 
+## 选项许可
+SafeSpace 2.0提供三种不同的许可选项。每种许可授予对不同功能规格的访问权限。有关更多详细信息，请参阅下面提供的表格。
 
-## Option license
-SafeSpace 2.0 is available with three different license options. Each license grants access to different functional specifications. For further details, please consult the table provided below. 
-
-|  **Safety Functions** |                       **Default**                       |  **Option 1 (Basic)**  |  **Option 2 (Pro)**  |  **Option 3 (Collaborative)**  |
+|  **安全功能** |                       **默认**                       |  **选项1 (基本)**  |  **选项2 (专业)**  |  **选项3 (协作)**  |
 | :-------: | :------------------------------------------------: | :----------: | :----------: | :----------: |
-| Emergency Stop/Protective Stop(SGG,SGA) |  O  | O | O | O |
-| TCP speed monitoring in manual mode |  O  | O | O | O |
-| Stopping distance/Stopping time monitoring |  O  | O | O | O |
-| Joint position monitoring |    | O | O | O |
-| TCP position monitoring |    | O | O | O |
-| Position monitoring space |    | 1 | 16 | 16 |
-| Joint speed monitoring |    |  | O | O |
-| TCP speed monitoring |    |  | O | O |
-| TCP orientation monitoring |    |  | O | O |
-| Safe operating stop |    |  | O | O |
-| Self collision monitoring |    |  | O | O |
-| Speed and Separation monitoring |    |  |  | O |
-| Collision/Power/Momentum monitoring |    |  |  | O |
-| Safe motion |    |  |  | O |
+| 紧急停止/保护停止(SGG,SGA) |  O  | O | O | O |
+| 手动模式下的TCP速度监控 |  O  | O | O | O |
+| 停止距离/停止时间监控 |  O  | O | O | O |
+| 关节位置监控 |    | O | O | O |
+| TCP位置监控 |    | O | O | O |
+| 位置监控空间 |    | 1 | 16 | 16 |
+| 关节速度监控 |    |  | O | O |
+| TCP速度监控 |    |  | O | O |
+| TCP方向监控 |    |  | O | O |
+| 安全操作停止 |    |  | O | O |
+| 自碰撞监控 |    |  | O | O |
+| 速度与间距监控 |    |  |  | O |
+| 碰撞/电源/动量监控 |    |  |  | O |
+| 安全运动 |    |  |  | O |

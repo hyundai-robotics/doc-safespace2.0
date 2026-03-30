@@ -1,59 +1,59 @@
-﻿# 1.2.3 Safety Labels
+﻿# 1.2.3 安全标签
 
-Nameplates, warning marks, and safety symbols are attached to the inside and outside of the controller. Check the attached labels to ensure safety.
+铭牌、警告标志和安全符号附着在控制器的内外部。检查附带的标签以确保安全。
 
-![!Figure 1 Safety Label Attachment Position: Front and Top (Left) / Back (Right)](../../_assets/safety\_labels\_1.png)
+![!图 1 安全标签附着位置：前和顶部（左）/ 背面（右）](../../_assets/safety\_labels\_1.png)
 
-![!Figure 2 Safety Label Attachment Position: Outer Side (Left) / Inner Side (Right)](../../_assets/safety\_labels\_2.png)
+![!图 2 安全标签附着位置：外侧（左）/ 内侧（右）](../../_assets/safety\_labels\_2.png)
 
-#### ![](../../_assets/1.png) Precautions for power and ground connection
+#### ![](../../_assets/1.png) 电源和接地连接注意事项
 
-![!Korean label (left) / English label (right)](<../../_assets/image_27.png>)
+![!韩文标签（左）/ 英文标签（右）](<../../_assets/image_27.png>)
 
-#### ![](../../_assets/2.png) High voltage mark
+#### ![](../../_assets/2.png) 高压标志
 
-![!Korean label / English label](<../../_assets/image_29.png>)
+![!韩文标签 / 英文标签](<../../_assets/image_29.png>)
 
-#### ![](../../_assets/3.png) Input power mark
+#### ![](../../_assets/3.png) 输入电源标志
 
-![!Korean label / English label](<../../_assets/image_25.png>)
+![!韩文标签 / 英文标签](<../../_assets/image_25.png>)
 
-#### ![](../../_assets/4.png)Air circulation precautions
+#### ![](../../_assets/4.png)空气循环注意事项
 
-![!Korean label (left) / English label (right)](<../../_assets/image_11.png>)
+![!韩文标签（左）/ 英文标签（右）](<../../_assets/image_11.png>)
 
-#### ![](../../_assets/5.png)NRTL certification mark
+#### ![](../../_assets/5.png) NRTL 认证标志
 
-![!Korean label / English label](../../_assets/image26.png)
+![!韩文标签 / 英文标签](../../_assets/image26.png)
 
-#### ![](../../_assets/6.png)Nameplate
+#### ![](../../_assets/6.png)铭牌
 
-![!Korean label (left) / English label (right)](<../../_assets/image_30.png>)
+![!韩文标签（左）/ 英文标签（右）](<../../_assets/image_30.png>)
 
-#### ![](../../_assets/7.png)High voltage warning
+#### ![](../../_assets/7.png) 高压警告
 
-![!Korean label (left) / English label (right)](<../../_assets/image_10.png>)
+![!韩文标签（左）/ 英文标签（右）](<../../_assets/image_10.png>)
 
-#### ![](../../_assets/8.png)Installation precautions
+#### ![](../../_assets/8.png) 安装注意事项
 
-![!Korean label (left) / English label (right)](<../../_assets/image_32.png>)
+![!韩文标签（左）/ 英文标签（右）](<../../_assets/image_32.png>)
 
-#### ![](../../_assets/9.png)Functional safety certification mark
+#### ![](../../_assets/9.png) 功能安全认证标志
 
-![!Korean label / English label](../../_assets/image37.png)
+![!韩文标签 / 英文标签](../../_assets/image37.png)
 
-#### ![](../../_assets/10.png)Ground wire connection precautions
+#### ![](../../_assets/10.png) 接地线连接注意事项
 
-![!Korean label (left) / English label (right)](<../../_assets/image_19.png>)
+![!韩文标签（左）/ 英文标签（右）](<../../_assets/image_19.png>)
 
-#### ![](../../_assets/11.png)Ground mark
+#### ![](../../_assets/11.png) 接地标志
 
-![!Korean label / English label](../../_assets/image42.jpeg)
+![!韩文标签 / 英文标签](../../_assets/image42.jpeg)
 
 {% hint style="warning" %}
-**\[Warning]** : Do not move the position of nameplates, warning marks, safety symbols, name marks, wire marks, etc. attached to the controller, or cover them with paint or covers. Any action that damages the safety labels is prohibited.
+**\[警告]** : 不要移动附着在控制器上的铭牌、警告标志、安全符号、名称标志、线标等的位置，或用油漆或盖子覆盖它们。任何损坏安全标签的行为都是禁止的。
 {% endhint %}
 
 {% hint style="warning" %}
-**\[Caution]** : The installation area and danger area of the robot should be clearly distinguished from other facilities and equipment by making them different in shape, color, and style.
+**\[注意]** : 机器人安装区和危险区应通过形状、颜色和样式的不同与其他设施和设备明确区分。
 {% endhint %}

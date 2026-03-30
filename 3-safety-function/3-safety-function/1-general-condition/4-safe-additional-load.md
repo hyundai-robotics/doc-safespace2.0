@@ -1,32 +1,30 @@
-﻿# 3.3.1.4 Safety Added Weight
+﻿# 3.3.1.4 安全附加重量
 
-Safety added weight information is used by the safety board to calculate the robot's torque. You must enter the information for the added weight actually installed on the robot. The information must be identical to the added weight information used for robot control `[System > 3: Robot Parameter > 7: Additional Weight on Each Axis]`.
+安全附加重量信息用于安全板计算机器人的扭矩。您必须输入实际安装在机器人上的附加重量的信息。该信息必须与用于机器人控制的附加重量信息完全相同 `[System > 3: Robot Parameter > 7: Additional Weight on Each Axis]`。
 
 
-* `[System > 10: Safety System > 1: General setup > 4: Safety Additional Load]` You can set the safety additional weight information in the menu, and you can load the additional weight information used for robot control by clicking "Load Additional Weights" at the bottom of the menu.
+* `[System > 10: Safety System > 1: General setup > 4: Safety Additional Load]` 您可以在菜单中设置安全附加重量信息，并可以通过点击菜单底部的“加载附加重量”来加载用于机器人控制的附加重量信息。
 
 
 <p align="center">
 <img src="../../../_assets/3/add_tool.png"></img>
-<em><p align="center">Safety Added weight parameter setting screen</p></em>
+<em><p align="center">安全附加重量参数设置屏幕</p></em>
 </p>
 
 
-|  **Parameter** |                       **Description**                       |  **Default value**  |
+|  **参数** |                       **描述**                       |  **默认值**  |
 | :-------: | :------------------------------------------------: | :-------------: |
-| <p>Weight</p><p>[kg]</p> | <p>Weight of the tool</p><p>(0.0 ~ 1000.0)</p> | 0.0 |
-| <p>Center</p><p>[mm]</p> | <p>Position of the center of gravity of the tool relative to the center of the flange</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
-| <p>Inertia</p><p>[kg·㎡]</p> | <p>Moment of inertia of the tool with respect to the tool coordinates</p><p>(0.0 ~ 2000.000)</p> | 0.0 |
-| Load add Weights | A function to load additional weight information used for robot control | - |
-| Copy | A function to copy the values   entered on the corresponding page | - |
-| Paste | A function to paste the values   from the copied page onto the corresponding page | - |
+| <p>重量</p><p>[kg]</p> | <p>工具的重量</p><p>(0.0 ~ 1000.0)</p> | 0.0 |
+| <p>中心</p><p>[mm]</p> | <p>工具的重心相对于法兰中心的位置</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
+| <p>惯性</p><p>[kg·㎡]</p> | <p>相对于工具坐标的工具的转动惯量</p><p>(0.0 ~ 2000.000)</p> | 0.0 |
+| 加载附加重量 | 一个加载用于机器人控制的附加重量信息的功能 | - |
+| 复制 | 复制对应页面上输入的值的功能 | - |
+| 粘贴 | 将复制页面的值粘贴到对应页面上的功能 | - |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: If the safety weight information and the weight information used for robot control do not match, a warning/error will occur and the robot will not be able to operate. Be sure to match the weight information with the actual attached weight before operating the robot. 
+<strong>[注意]</strong>: 如果安全重量信息和用于机器人控制的重量信息不匹配，将会发生警告/错误，机器人将无法操作。务必在操作机器人之前确认重量信息与实际附加的重量相匹配。
 {% endhint %}
  
 {% hint style="warning" %}
-<strong>[Caution]</strong>: The safety additional weight number is supported from 0 to 2, and each number matches the axis number of the system additional weight (0-S axis, 1-H axis, 2-V axis). Please enter the additional weight information by matching the safety parameter number with the axis number.
+<strong>[注意]</strong>: 安全附加重量编号支持从 0 到 2，每个编号与系统附加重量的轴编号相匹配 (0-S 轴，1-H 轴，2-V 轴)。请通过将安全参数编号与轴编号匹配来输入附加重量信息。
 {% endhint %}
- 
- 

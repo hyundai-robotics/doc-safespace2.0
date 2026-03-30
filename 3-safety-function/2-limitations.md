@@ -1,11 +1,10 @@
-﻿# 3.2 Limitations
+﻿# 3.2 限制
 
-SafeSafe2.0 has the following limitations. Please check their applicability before configuring the feature.
+SafeSafe2.0 有以下限制。在配置功能之前，请检查其适用性。
 
-
-|  **Item** |                       **Description**                      |
+|  **项目** |                       **描述**                      |
 | :-------: | :------------------------------------------------: |
-| Supported Robots | 6-axis Industrial Robots, Collaborative Robots |
-| Unsupported Robots | FPD Robots, Painting Robots, Gantry Robots | 
-| Supported Axes | Up to 8 axes (For systems with 9 or more axes, safety functions can only be configured for axes 7 and 8) |
-| Unsupported Robot Axes | Servogun Axes, Additional Axes Combined with Robots (Gantry Robots) |
+| 支持的机器人 | 6轴工业机器人，协作机器人 |
+| 不支持的机器人 | FPD 机器人，喷涂机器人，龙门机器人 | 
+| 支持的轴 | 最多 8 轴（对于有 9 轴或更多轴的系统，安全功能只能为轴 7 和 8 配置） |
+| 不支持的机器人轴 | 伺服枪轴，结合机器人（龙门机器人）的额外轴 |

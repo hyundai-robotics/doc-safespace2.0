@@ -1,28 +1,27 @@
-﻿# 3.3.2.2 Joint Speed Limit
+﻿# 3.3.2.2 关节速度限制
 
-The Joint Speed Setting parameter is a limit value for monitoring the robot's joint speed. If the limit value is violated, the specified safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
+关节速度设置参数是监控机器人关节速度的限制值。如果超出限制值，则立即激活指定的安全停机（停止 0、停止 1 或停止 2）。
 
 <p align="center">
 <img src="../../../_assets/joint_speed.PNG"></img>
-<em><p align="center">Joint speed setting example</p></em>
+<em><p align="center">关节速度设置示例</p></em>
 </p>
 
-You can set parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 2: Joint speed]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 2: Joint speed]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/joint_speed_set.png"></img>
-<em><p align="center">Joint speed setting parameter setting screen</p></em>
+<em><p align="center">关节速度设置参数设置屏幕</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
-| Stop function | <p>Stop method when the function is violated</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
-| Motion Tuning | <p>Tuning to a motion that does not exceed the joint's speed limit</p><p>(Active / Disable)</p> | Disable |
-| Joint ON/OFF | <p>Whether each joint is activated</p><p>(ON / OFF)</p> | OFF |
-| <p>Speed</p><p>[mm/s]</p> | <p>Speed limit for each joint</p><p>(10 ~ 10000)</p> | 1000.0 |
+| 激活 | <p>功能是否激活</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| 停止功能 | <p>功能违反时的停止方式</p><p>(停止 0 / 停止 1 / 停止 2 / 不停止)</p> | 停止 1 |
+| 运动调节 | <p>调节为不超过关节速度限制的运动</p><p>(激活 / 禁用)</p> | 禁用 |
+| 关节开/关 | <p>每个关节是否激活</p><p>(ON / OFF)</p> | OFF |
+| <p>速度</p><p>[mm/s]</p> | <p>每个关节的速度限制</p><p>(10 ~ 10000)</p> | 1000.0 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
+<strong>[注意]</strong>: 设置速度监控功能时，务必考虑停止反应时间，并覆盖保护装置以防止碰撞和伤害。
 {% endhint %}
- 

@@ -1,15 +1,15 @@
 ﻿{
-    "langCode": "en",
-    "series": "Hi7 Controller",
-    "title": "Function Manual - SafeSpace 2.0",
+    "langCode": "zh",
+    "series": "Hi7 控制器",
+    "title": "功能手册 - SafeSpace 2.0",
     "publisher": "HD Hyundai Robotics",
-    "tocTitle": "Table of Contents",
+    "tocTitle": "目录",
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
-    "docId": "HI7SAFESPACE2_EN_001",
+    "docId": "HI7SAFESPACE2_ZH_001",
     "references": [
         {
-            "title": "Operation Manual - TP630",
-            "id": "${cont_model:upper}OPTP630_EN"
+            "title": "操作手册 - TP630",
+            "id": "HI7OPTP630_ZH"
         }
     ]
 }

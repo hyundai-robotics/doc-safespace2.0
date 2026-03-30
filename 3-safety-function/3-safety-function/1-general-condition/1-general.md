@@ -1,30 +1,27 @@
-﻿# 3.3.1.1 General
+﻿# 3.3.1.1 一般
 
-Set the thresholds for essential functions (manual mode speed monitoring, stop time, and stop distance monitoring) required for robot operation. Additionally, configure whether the robot monitoring and area monitoring functions are fully enabled. Even if the robot monitoring and area monitoring functions are enabled, if the safety function is disabled, the monitoring function will not operate. If a monitoring violation occurs, the configured safety stop (Stop 0, Stop 1) will be immediately activated.
+设置机器人操作所需的基本功能的阈值（手动模式速度监控、停止时间和停止距离监控）。此外，配置机器人监控和区域监控功能是否完全启用。即使启用了机器人监控和区域监控功能，如果安全功能被禁用，监控功能将不会运行。如果发生监控违规，将立即激活配置的安全停止（停止 0，停止 1）。
 
-
-You can set parameter values in the `[System > 10: Safety System > 1: General setup > 1: General]` menu.
+您可以在`[System > 10: Safety System > 1: General setup > 1: General]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/general.png"></img>
-<em><p align="center">General parameter setting screen</p></em>
+<em><p align="center">一般参数设置屏幕</p></em>
 </p>
 
-
-|  **Parameter** |                       **Description**                       |  **Default setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :-------------: |
-| Safety function | <p>Whether robot monitoring and area monitoring functions are enabled</p><p>(Enable / Disable)</p> | Disable |
-| <p>Manual mode speed</p><p>[mm/s]</p> | <p>Whether the function is enabled</p><p>(10 ~ 250)</p> | 250 |
-| <p>Stop time</p><p>[ms]</p> | <p>Stop method when the function is violated</p><p>(100 ~ 2000)</p> | 2000 |
-| - Motion Tuning | <p>Tuning to a motion that satisfies the stopping time limit</p><p>(Enable / Disable)</p> | Disable |
-| <p>Stopping Distance</p><p>[mm]</p> | <p>Whether each joint is activated</p><p>(50 ~ 2000)</p> | 2000 |
-| - Motion Tuning | <p>Tuning to a motion that satisfies the stopping distance limit</p><p>(Enable / Disable)</p> | Disable |
+| 安全功能 | <p>是否启用机器人监控和区域监控功能</p><p>(启用 / 禁用)</p> | 禁用 |
+| <p>手动模式速度</p><p>[mm/s]</p> | <p>功能是否启用</p><p>(10 ~ 250)</p> | 250 |
+| <p>停止时间</p><p>[ms]</p> | <p>功能违规时的停止方法</p><p>(100 ~ 2000)</p> | 2000 |
+| - 动作调节 | <p>调节以满足停止时间限制的动作</p><p>(启用 / 禁用)</p> | 禁用 |
+| <p>停止距离</p><p>[mm]</p> | <p>是否激活每个关节</p><p>(50 ~ 2000)</p> | 2000 |
+| - 动作调节 | <p>调节以满足停止距离限制的动作</p><p>(启用 / 禁用)</p> | 禁用 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: Even if the safety function is set to disabled, the functions that are essential for robot use (manual mode speed, stop time, stop distance monitoring) are not disabled.
+<strong>[注意]</strong>: 即使安全功能设置为禁用，机器人使用所必需的功能（手动模式速度、停止时间、停止距离监控）也不会被禁用。
 {% endhint %}
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: The stop time and stop distance are the time and distance until the robot actually stops when stop1 is executed, and if the set value is exceeded, stop0 is activated immediately.
+<strong>[注意]</strong>: 停止时间和停止距离是执行停止1时机器人实际停止的时间和距离，如果超出设定值，将立即激活停止0。
 {% endhint %}
- 

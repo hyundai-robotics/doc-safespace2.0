@@ -1,56 +1,53 @@
-﻿# 3.3.3.2 Safety Tool Modeling
+﻿# 3.3.3.2 安全工具建模
 
-Monitors whether the sphere modeled with a tool used for safety area monitoring violates the protected space or leaves the work space. Up to 16 safety tools can be set and modeled with up to 10 models.
+监测使用于安全区域监控的工具建模的球体是否违反了保护空间或离开工作空间。可以设置多达16个安全工具，并可以使用多达10个模型进行建模。
 
-As the safety tool is activated by the tool number set on the teach pendant, you should model the safety tool based on the tool data set in the `[System > 3: Robot Parameters > 1: Tool Data]` menu. Refer to the TCP position information at the top of the tool data setting screen.
+由于安全工具由在教导挂件上设置的工具编号激活，因此应基于在`[System > 3: Robot Parameters > 1: Tool Data]`菜单中设定的工具数据建模安全工具。请参考工具数据设置屏幕顶部的TCP位置信息。
 
-There are a total of 3 models used for safety tool modeling: sphere, capsule, and plate. Each model consists of a center and radius. The center position and radius of the modeling are set based on the robot flange coordinate system (Xf, Yf, and Zf), and the radius is set to include the tool size and stop distance at maximum TCP speed.
+用于安全工具建模的总共有3个模型：球体、胶囊和板。每个模型由中心和半径组成。建模的中心位置和半径基于机器人法兰坐标系统（Xf、Yf和Zf）设置，半径设置为包括工具尺寸和在最大TCP速度下的停止距离。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/tool_model.png"></img>
-<em><p align="center">Tool modeling</p></em>
+<em><p align="center">工具建模</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **shape**  |
+|  **参数** |                       **描述**                       |  **形状**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| c | center(X,Y,Z based robot flange coordinate system) |   sphere, capsule, plate  |
-| r | radius  |   sphere, capsule, plate  |
-| h | height  |   capsule, plate  |
-| w | width  |   plate  |
+| c | 中心(X,Y,Z基于机器人法兰坐标系统) |   球体、胶囊、板  |
+| r | 半径  |   球体、胶囊、板  |
+| h | 高度  |   胶囊、板  |
+| w | 宽度  |   板  |
 
 <p align="center">
 <img src="../../../_assets/safety_layout/flange.png"></img>
-<em><p align="center">Robot flange coordinate system</p></em>
+<em><p align="center">机器人法兰坐标系统</p></em>
 </p>
 
-You can set parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 3: Tool]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 3: Tool]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/tool_param.png"></img>
-<em><p align="center">Safety Tool Modeling Settings Screen</p></em>
+<em><p align="center">安全工具建模设置屏幕</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| TCP X,Y,Z | <p>TCP position in flange coordinate system (read-only) - set in tool info</p> | 0 |
-| Geometry | <p>Tool modeling shape</p><p>(off / sphere / capsule / plate)</p> | off |
-| <p>Radius</p><p>[mm]</p> | <p>Radius</p><p>(0.0 ~ 3000.0)</p> | 0 |
-| <p>Height</p><p>[mm]</p> | <p>Height of plate</p><p>(0.0 ~ 5000.0)</p> | 0 |
-| <p>Width</p><p>[mm]</p> | <p>Width of plate</p><p>(0.0 ~ 5000.0)</p> | 0 |
-| <p>X</p><p>[mm]</p> | <p>Model center position in X direction</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
-| <p>Y</p><p>[mm]</p> | <p>Model center position in Y direction</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
-| <p>Z</p><p>[mm]</p> | <p>Model center position in Z direction</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
-| <p>Rot.X</p><p>[deg]</p> | <p>X direction in flange coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |
-| <p>Rot.Y</p><p>[deg]</p> | <p>Y direction in flange coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |
-| <p>Rot.Z</p><p>[deg]</p> | <p>Z direction in flange coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |
-
-
-
+| TCP X,Y,Z | <p>法兰坐标系统中的TCP位置（只读）- 在工具信息中设置</p> | 0 |
+| 几何形状 | <p>工具建模形状</p><p>(关闭 / 球体 / 胶囊 / 板)</p> | 关闭 |
+| <p>半径</p><p>[mm]</p> | <p>半径</p><p>(0.0 ~ 3000.0)</p> | 0 |
+| <p>高度</p><p>[mm]</p> | <p>板的高度</p><p>(0.0 ~ 5000.0)</p> | 0 |
+| <p>宽度</p><p>[mm]</p> | <p>板的宽度</p><p>(0.0 ~ 5000.0)</p> | 0 |
+| <p>X</p><p>[mm]</p> | <p>X方向的模型中心位置</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
+| <p>Y</p><p>[mm]</p> | <p>Y方向的模型中心位置</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
+| <p>Z</p><p>[mm]</p> | <p>Z方向的模型中心位置</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
+| <p>Rot.X</p><p>[deg]</p> | <p>法兰坐标系统中的X方向</p><p>(-180.0 ~ 180.0)</p> | 0 |
+| <p>Rot.Y</p><p>[deg]</p> | <p>法兰坐标系统中的Y方向</p><p>(-180.0 ~ 180.0)</p> | 0 |
+| <p>Rot.Z</p><p>[deg]</p> | <p>法兰坐标系统中的Z方向</p><p>(-180.0 ~ 180.0)</p> | 0 |
 
 
 {% hint style="warning" %}
-**\[Caution]**
+**\[注意]**
 
-* When changing tool data, be sure to recheck that the parameters set in safety tool modeling are accurate. The tool data number and safety tool modeling number of the same tool should match.
-* As the definition of robot layout settings applies only to the robot 2nd and 3rd axes, other parts of the robot may violate this area even if a safety area is set.
+* 更改工具数据时，务必重新检查安全工具建模中设置的参数是否准确。相同工具的工具数据编号和安全工具建模编号应匹配。
+* 由于机器人布局设置的定义仅适用于机器人第二轴和第三轴，即使设置了安全区域，机器人的其他部分也可能违反该区域。
 {% endhint %}

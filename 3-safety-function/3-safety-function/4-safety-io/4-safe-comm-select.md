@@ -1,9 +1,7 @@
-﻿
+# 3.3.4.4 选择安全通信
 
-# 3.3.4.4 Selecting Safety Communication
-
-## 1) Selecting Safety Communication
-- Select the safety communication protocol for the Hi7 robot controller.<br><br>
-You can configure the parameter values in the `[System > 2: Control Parameters > 6: Safety Communication > 1: Select Safety Communication]` menu.
+## 1) 选择安全通信
+- 选择 Hi7 机器人控制器的安全通信协议。<br><br>
+您可以在`[System > 2: Control Parameters > 6: Safety Communication > 1: Select Safety Communication]`菜单中配置参数值。
 
 ![](../../../_assets/safe_comm_select.png)

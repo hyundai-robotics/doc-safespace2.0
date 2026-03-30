@@ -1,8 +1,8 @@
-﻿# 6. Recovery
+# 6. 恢复
 
-Errors caused due to safety function monitoring violations are cleared when switching to manual mode. In manual mode, safety function violations do not stop the robot, so, you can adjust the robot's angle and position to move it to a safe area.
+由于安全功能监控违规而导致的错误在切换到手动模式时被清除。在手动模式下，安全功能违规不会停止机器人，因此，您可以调整机器人的角度和位置，将其移至安全区域。
 
 
 {% hint style="warning" %}
-**\[Caution]**: After recovery in manual mode, recheck the safety function settings and teaching positions of the work program.
+**\[注意]**: 在手动模式下恢复后，请重新检查安全功能设置和工作程序的教学位置。
 {% endhint %}

@@ -1,27 +1,25 @@
-﻿# 3.3.1.3 Safety Tool Information
+﻿# 3.3.1.3 安全工具信息
 
-Safety tool information is used by the safety board to calculate the robot's speed and position. You must enter the tool information attached to the actual robot. The tool information must be identical to the tool number used for robot control `[System > 3: Robot Parameters > 1: Tool Data]`.
+安全工具信息用于安全板计算机器人的速度和位置。您必须输入与实际机器人相连接的工具信息。工具信息必须与用于机器人控制的工具编号相同 `[System > 3: Robot Parameters > 1: Tool Data]`。
 
-
-You can set safety tool information in the `[System > 10: Safety System > 1: General setup > 3: Safety Tool Information]` menu. After setting the robot tool number, you can load tool information used for robot control by clicking [Load Tool Data] at the bottom of the menu.
+您可以在 `[System > 10: Safety System > 1: General setup > 3: Safety Tool Information]` 菜单中设置安全工具信息。设置机器人工具编号后，您可以通过点击菜单底部的 [Load Tool Data] 加载用于机器人控制的工具信息。
 
 <p align="center">
 <img src="../../../_assets/3/tool_info.png"></img>
-<em><p align="center">Safety tool parameter setting screen</p></em>
+<em><p align="center">安全工具参数设置屏幕</p></em>
 </p>
 
-
-|  **Parameter** |                       **Description**                       |  **Default value**  |
+|  **参数** |                       **描述**                       |  **默认值**  |
 | :-------: | :------------------------------------------------: | :-------------: |
-| <p>Robot tool number</p> | <p>Tool number used by the robot. A value of -1 indicates that it is not used.</p><p>(-1 ~ 31)</p> | -1 |
-| <p>Weight</p><p>[kg]</p> | <p>Weight of the tool</p><p>(0.0 ~ 1000.0)</p> | 0.0 |
-| <p>Length</p><p>[mm]</p> | <p>Length of the tool</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
-| <p>Center</p><p>[mm]</p> | <p>Location of the center of gravity of the tool relative to the center of the flange</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
-| <p>Inertia</p><p>[kg·㎡]</p> | <p>Moment of inertia of the tool with respect to the tool coordinates</p><p>(0.0 ~ 2000.000)</p> | 0.0 |
-| Load Tool Data | A function to load tool information used for robot control according to the tool number | - |
-| Copy | A function to copy the values   entered on the corresponding page | - |
-| Paste | A function to paste the values   of the copied page onto the corresponding page | - |
+| <p>机器人工具编号</p> | <p>机器人使用的工具编号。-1 表示未使用。</p><p>(-1 ~ 31)</p> | -1 |
+| <p>重量</p><p>[kg]</p> | <p>工具的重量</p><p>(0.0 ~ 1000.0)</p> | 0.0 |
+| <p>长度</p><p>[mm]</p> | <p>工具的长度</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
+| <p>重心</p><p>[mm]</p> | <p>工具的重心相对于法兰中心的位置</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
+| <p>惯性</p><p>[kg·㎡]</p> | <p>工具相对于工具坐标的转动惯量</p><p>(0.0 ~ 2000.000)</p> | 0.0 |
+| Load Tool Data | 根据工具编号加载用于机器人控制的工具信息的功能 | - |
+| Copy | 复制对应页面上输入的值的功能 | - |
+| Paste | 将复制页面的值粘贴到对应页面的功能 | - |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: If the safety tool information does not match the tool information used for robot control, a warning/error will occur and the robot will not operate. Be sure to match the actual tool information with the safety tool information before operating the robot.
+<strong>[注意]</strong>: 如果安全工具信息与用于机器人控制的工具信息不匹配，将会发生警告/错误，机器人将无法操作。确保在操作机器人之前将实际工具信息与安全工具信息匹配。
 {% endhint %}

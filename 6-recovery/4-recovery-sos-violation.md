@@ -1,20 +1,17 @@
-﻿# 6.4 	Recovery from Safe Operating Stop (SOS) Violation
+﻿# 6.4 	从安全操作停止（SOS）违规中恢复
 
-Safe Operating Stop (SOS) violation occurs when movement is detected while the robot motor is on and in a stopped state. In case of safe operating stop violation, the robot detects momentary movement and generates an error, so the error can be cleared without moving the robot's position.
+安全操作停止（SOS）违规发生在检测到机器人电动机在停止状态下仍然移动时。在安全操作停止违规的情况下，机器人检测到短暂的移动并生成错误，因此可以在不移动机器人的位置的情况下清除错误。
 
-1. Change the mode switch to manual to enter manual mode.
+1. 将模式开关切换到手动以进入手动模式。
 
+2. 消除施加于机器人的外部力。
 
-2. Remove external factors that apply force to the robot.
-
-
-3. In the safety status monitoring screen, verify that the status of each area is displayed as **SAFE**.
-
+3. 在安全状态监控屏幕中，验证每个区域的状态是否显示为 **SAFE**。
 
 {% hint style="warning" %}
-**[Caution]**
+**[注意]**
 
-* After clearing the error, check the safe operating stop monitoring parameters.
-* Turn on the motor in auto mode and check whether the error recurs.
-* If the same error occurs again, inspect the motor and reducer of the corresponding axis.
+* 清除错误后，检查安全操作停止监控参数。
+* 在自动模式下开启电动机并检查错误是否再次出现。
+* 如果同样的错误再次发生，请检查相应轴的电动机和减速器。
 {% endhint %}
