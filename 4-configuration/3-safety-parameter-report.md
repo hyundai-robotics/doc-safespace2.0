@@ -1,4 +1,4 @@
-# 4.3 Safety Parameter Report
+﻿# 4.3 Safety Parameter Report
 
 You can view the currently applied safety parameter values in a report format.
 If the values on the settings screen have not been saved, they may differ from the values shown in the report.
@@ -44,3 +44,10 @@ If the values on the settings screen have not been saved, they may differ from t
 <img src="../_assets/4/safety_report_6.png"></img>
 <em><p align="center">Example of the report save completion screen</p></em>
 </p>
+
+{% hint style="info" %}
+* Safety parameters are protected by an identifier (CRC) to ensure integrity.
+* The identifier is calculated based on all safety parameters and includes parameters related to all safety functions.
+* When safety parameters are modified, the identifier value is also changed, and the identifier value can be checked in the CRC field of the safety parameter report.
+* The identifier uniquely identifies the set of included safety functions and their associated parameters.
+{% endhint %}

@@ -1,4 +1,4 @@
-# 3.3.4.1 Default Safety Input/Output Signals
+﻿# 3.3.4.1 Default Safety Input/Output Signals
 
 Set the parameters for safety input/output signals.
 There are 4 input signals and 1 output signal, all operating as dual signals.

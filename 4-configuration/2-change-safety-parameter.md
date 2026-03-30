@@ -31,3 +31,11 @@ You can edit safety parameter values   and apply them to the system. Any values 
 <img src="../_assets/4/apply_parameter_4.png"></img>
 <em><p align="center">Output screen when transmission is successful</p></em>
 </p>
+
+{% hint style="warning" %}
+**\[Warning]** : Before using the robot application, all safety parameters shall be verified and confirmed.
+
+* Verification of safety parameters is an essential procedure to ensure that the safety functions operate as intended.
+* Verification and validation shall be performed not only during initial setup but also after any modification of the parameters.
+* Failure to verify safety parameters may result in safety functions not operating as intended and may pose a risk to personnel.
+{% endhint %}

@@ -9,7 +9,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 <em><p align="center">Power settings screen</p></em>
 </p>
 
-| **Parameter** | 　　　　　　　　　**Description**                                                  |  **Default Setting** |
+| **Parameter** |          **Description**                                                  |  **Default Setting** |
 | :------: | :----------------------------------------------------------------: | :---------: |
 | Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
 | Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |

@@ -11,7 +11,7 @@ You can set parameter values   in the `[System > 10: Safety System > 2: Paramete
 <em><p align="center">Safety Robot Modeling Settings Screen</p></em>
 </p>
 
-| **Parameter** | 　　　　　　　　　**Description**                                     | **Default Setting** |
+| **Parameter** |          **Description**                                     | **Default Setting** |
 | :------: | --------------------------------------------------- | :--------: |
 | <p>Height</p><p>[mm]</p> | <p>Plate height</p><p>(0 ~ 5000.0)</p> | 0 |
 | <p>Radius</p><p>[mm]</p> | <p>Radius of sphere</p><p>(0 ~ 3000.0)</p> | 10 |
