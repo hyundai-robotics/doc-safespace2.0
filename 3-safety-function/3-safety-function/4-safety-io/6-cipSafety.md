@@ -110,7 +110,7 @@
 
 ### 4.6) Safety Signal Assignment
 #### 4.6.1) Assignment of CIP Safety I/O<br>
-* Refer to the **[3.3.3.3 Safety Signal Assignment](3-safety-function/3-safety-function/3-safety-io/3-Linker.md)** page.
+* Refer to the **[3.3.4.3 Safety Signal Assignment](../4-safety-io/3-Linker.md)** page.
 
 #### 4.6.2) Examples of CIP Safety I/O Assignment
 1) CIP Safety Input (Direction: Master -> Slave)
