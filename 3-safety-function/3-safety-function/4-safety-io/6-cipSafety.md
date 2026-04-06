@@ -102,7 +102,7 @@
 
 ### 6 안전 신호의 할당
 #### 6.1 CIP Safety 입출력의 할당<br>
-* [3.3.3.3 안전 신호 할당](3-safety-function/3-safety-function/3-safety-io/3-Linker.md) 페이지 참고
+* [3.3.4.3 안전 신호 할당](../4-safety-io/3-Linker.md) 페이지 참고
 #### 6.2 CIP Safety 입출력 할당의 예
 1) CIP Safety Input (Master -> Slave 방향)
 1ch(0 bit) = Arm Limit<br>
