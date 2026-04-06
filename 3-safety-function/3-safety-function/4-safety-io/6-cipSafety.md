@@ -69,12 +69,14 @@
 - **Safety I/O:** 8 bytes each
 8) Do not configure the **"Configuration signature"**.
 9) Close the **Select Module Type** window.<br>
-
 ![CIP Safety](../../../_assets/cipSafety/Setting_module.png)
+
 10) Verify that the module has been added successfully.<br>
 ![CIP Safety](../../../_assets/cipSafety/module_added.png)
+
 11) Click the **Offline** button in the toolbar menu and then click **Download**.<br>
 ![CIP Safety](../../../_assets/cipSafety/download.png)
+
 12) After the configured values are downloaded, switch the **GuardLogix** toggle from **PROG** to **RUN** mode.
 
 #### 4.4) Hi7 Configuration (TP UI)
