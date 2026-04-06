@@ -9,12 +9,12 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 -------------------------------------------------------------------------
 
-## 1) Adding Safety Signal Assignment
+### 1) Adding Safety Signal Assignment
 1) Press the `[Add]` button.
 2) Select the desired function from the function list.
 3) If a sub-index is required, enter the sub-index number.
 
-## 2) Deleting Safety Signal Assignment
+### 2) Deleting Safety Signal Assignment
 1) Select an already set assignment function on the list.
 2) Press the `[del]` button.
 
@@ -32,7 +32,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 
 
-## 3) Default values for safety signals
+### 3) Default values for safety signals
 
 |  **Channel** |     **Function**                       | 
 | :-------: | :------------------------------------------------: |
@@ -42,7 +42,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 | Safety Input Channel 4 | - |
 | Safety Output Channel 1 | Emergency Stop Activation Status|
 
-## 4) Safety Input Signal Function List
+### 4) Safety Input Signal Function List
 
 |  **Channel** |     **Function**                       |       **Description**    |
 | :-------: | :--------------------------: | :--------------------------------------------------: |
@@ -73,7 +73,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 | Speed & separation #1-#84 | RePlan | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Mastering test switch | Mastering Test Switch | OPEN: Function activated<br>CLOSE: Function deactivated |
 
-### Safety Output Signal Function List
+#### Safety Output Signal Function List
 |  **Channel** |     **Function**                       |       **Description**    |
 | :-------: | :--------------------------: |  :--------------------------------------------------: |
 | Emergency stop activation status | Emergency Stop Status | OPEN: At least one of TP, OP, and external emergency stop is pressed <br> CLOSE: None of TP, OP, and external emergency stop is pressed.  |
