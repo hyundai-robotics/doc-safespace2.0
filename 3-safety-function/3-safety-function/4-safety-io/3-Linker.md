@@ -52,7 +52,6 @@
 | SGA | 안전 가드 자동 입력| OPEN : 가드 열림 (위험) <br>CLOSE : 가드 닫힘 (안전) |
 | Protective stop | 보호 정지 입력 | OPEN : 보호정지 활성 <br>CLOSE : 보호정지 해제 |
 | Normal stop | 정상 정지 입력 | OPEN : 정상정지 활성 <br>CLOSE : 정상정지 해제 |
-| Enable Switch | 외부 인에블링 스위치 | OPEN : 스위치 놓음 <br>CLOSE : 운전 가능(모터온 시도) |
 | Motor On | 외부 모터온 | 신호 상승시(Rising Edge) 모터온 시도 |
 | Remote | 외부 모드 입력(리모트) | OPEN : 내부 모드 신호로 모드 변경 <br>CLOSE : 외부 모드 입력 신호로 모드 변경
 | Manual | 외부 모드 입력(수동)  | OPEN : 동작 없음 <br>CLOSE : 외부 수동 모드 입력 |
