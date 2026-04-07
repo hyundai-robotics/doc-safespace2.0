@@ -51,7 +51,6 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 | SGA | Safety Guard Auto Input| OPEN: Guard open (Danger) <br>CLOSE: Guard closed (Safe) |
 | Protective stop | Protective Stop Input | OPEN: Protective stop activated <br>CLOSE: Protective stop released |
 | Normal stop | Normal Stop Input | OPEN: Normal stop activated <br>CLOSE: Normal stop released |
-| Enable Switch | External Enabling Switch | OPEN: Switch released <br>CLOSE: Operation possible (Motor On attempt) |
 | Motor On | External Motor On | Motor On attempted on Rising Edge |
 | Remote | External Mode Input (Remote) | OPEN: Mode change by internal mode signal <br>CLOSE: Mode change by external mode input signal
 | Manual | External Mode Input (Manual)  | OPEN: No operation <br>CLOSE: External manual mode input |
