@@ -32,13 +32,13 @@
 
 이 설명서에서는 내용의 이해를 돕기 위해 다음의 표기 규약과 안전 지시를 사용합니다.
 
-## 그림설명
+### 그림설명
 
 그림은 제품 조작 방법의 이해를 돕고 화면을 설명하는데 사용합니다. 그림을 설명할 때에는 다음과 같이 해당 부분에 숫자를 표기하고 그에 대응하는 내용을 설명합니다.
 
 ![](../_assets/pane-prog-cmd-param.png)
 
-## GUI \(Graphical User Interface\)
+### GUI \(Graphical User Interface\)
 
 GUI는 메뉴 이름 및 버튼 이름을 대괄호\(\[ \]\) 안에 넣고 굵은 글씨로 표시합니다. 여러 메뉴를 순서대로 선택해야 할 때에는 이름 사이에 &gt; 기호를 넣어 표시합니다.
 
@@ -47,19 +47,19 @@ GUI는 메뉴 이름 및 버튼 이름을 대괄호\(\[ \]\) 안에 넣고 굵�
 
 
 
-## 조작키 표기법
+### 조작키 표기법
 
 기능 조작을 위하여 티치 펜던트의 조작부에서 누르는 키는 홑화살괄호\(&lt; &gt;\)에 넣고 굵은 글씨로 표시합니다.
 
 * &lt;__시작__&gt; 키를 누르면 로봇에 작성된 프로그램의 자동 운전을 시작합니다.
 
-## 상호 참조
+### 상호 참조
 
 설명서 내에서 연관된 정보로의 바로가기를 제공합니다. 상호 참조는 다음과 같이 굵은 글씨에 큰따옴표\(" "\)로 표시합니다.
 
 * 날짜와 시간 정보 변경에 대한 자세한 내용은 "[Hi7 제어기 조작 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)"의 "[4.5 날짜 및 시간 설정](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/4-service/5-date-time-setting?cont_model=Hi7)"을 참조하십시오.
 
-## 참고 사항
+### 참고 사항
 
 제품을 사용할 때 알아 두면 좋을 유용한 사항이나 추가적인 정보를 다음과 같이 제공합니다.
 
@@ -185,7 +185,7 @@ SafeSpace2.0의 비상정지와 외부 장치 인터페이스(기본 안전 입/
 [__SOURCE](1-safety/2-safety-measures/1-safety-functions.md)
 # 1.2.1 안전 기능
 
-## SafeSpace2.0 안전기능
+### SafeSpace2.0 안전기능
 SafeSpace2.0은 다음의 안전 기능을 기반으로 로봇의 위치/속도/방향 등을 감시하여 위반 상황 발생시 로봇을 정지시킬 수 있습니다. 또한, 협동 작업을 수행할 수 있는 안전 기능을 제공합니다. 각 안전 기능에 대한 자세한 내용은 "[3. SafeSpace2.0 안전 기능](../../3-safety-function/README.md)" 을 참조하십시오.
 
 * 안전 토크 정지(STO: Safe Torque Off)
@@ -216,7 +216,7 @@ SafeSpace2.0은 다음의 안전 기능을 기반으로 로봇의 위치/속도/
 ---
 
 
-## 옵션 라이선스
+### 옵션 라이선스
 SafeSpace2.0은 총 3가지의 옵션 라이선스를 제공합니다. 라이선스에 따라 사용할 수 있는 기능 사양이 다릅니다. 자세한 것을 아래 표를 참고하십시오. 
 
 |  **안전 기능** |                       **기본 제공**                       |  **옵션 1 (베이직)**  |  **옵션 2 (프로)**  |  **옵션 3 (협동)**  |
@@ -603,7 +603,7 @@ SafeSpace2.0의 안전 기능은 파라미터 설정을 통해 구성할 수 있
 
 안전 기능 위반에 의한 정지 유형은 기능별 파라미터 설정 메뉴에서 설정합니다.
 ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보호 정지, 정상 정지)에 따른 정지 방법을 설정할 수 있으며,  
-각 정지의 신호 입력은 "[3.3.4 안전 신호 입출력](../../../3-safety-function/3-safety-function/3-safety-io/README.md)"을 참조하십시오.
+각 정지의 신호 입력은 "[3.3.4 안전 신호 입출력](../../../3-safety-function/3-safety-function/4-safety-io/README.md)"을 참조하십시오.
 또한, 수동 모드 속도 감시 위반시 수행할 정지 방법을 설정할 수 있으며, 정지 방법은 정지0, 정지1 중에 선택할 수 있습니다. 
 
 `[시스템 > 10: 안전 시스템 > 1: 기본 설정 > 2: 정지 설정]` 메뉴에서 파라미터 값을 설정할 수 있습니다.
@@ -788,7 +788,7 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 
 정지 감시는 로봇 정지 동작시 각 축의 비정상적인 움직임이 있는지 감시하는 기능입니다. 설정한 한계값 위반 시에는 안전 정지(정지 0)가 즉시 활성화됩니다.
 
-`[시스템 > 10: 안전 시스템 > 1: 파라미터 설정 > 1: 로봇 제한 > 3: 조인트 정지]` 메뉴에서 파라미터 값을 설정할 수 있습니다.
+`[시스템 > 10: 안전 시스템 > 2: 파라미터 설정 > 1: 로봇 제한 > 3: 조인트 정지]` 메뉴에서 파라미터 값을 설정할 수 있습니다.
 
 <p align="center">
 <img src="../../../_assets/3/joint_sos_param.png"></img>
@@ -861,7 +861,7 @@ ISO 10218-1에서 요구하는 정지에 대한 정지 유형(비상 정지, 보
 
 Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 로봇의 속도를 조절하는 기능입니다. 입력신호에 해당하는 감속비율로 로봇의 운전속도가 변경되고, 지연시간 이후에 해당하는 속도로 TCP 속도를 감시합니다. 
 
-지연시간이 충분하지 않거나, 로봇의 감속이 충분히 이루어지지 않아 TCP 속도 제한값을 위반하게 되면 안전 정지(정지 0, 정지 1, 정지 2)가 즉시 활성화됩니다.
+지연시간이 충분하지 않거나, 로봇의 감속이 충분히 이루어지지 않아 TCP 속도 제한값을 위반하게 되면 안전 정지(정지 0)가 즉시 활성화됩니다.
 
 `[시스템 > 10: 안전 시스템 > 2: 파라미터 설정 > 1: 로봇 제한 > 6: Re plan]` 메뉴에서 파라미터 값을 설정할 수 있습니다.
 
@@ -1028,7 +1028,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 <em><p align="center">로봇 플랜지 좌표계</p></em>
 </p>
 
-**\[시스템 > 8: 안전 시스템 > 2: 파라미터 설정 > 2: 영역 제한 > 3: 툴 모델링]** 메뉴에서 파라미터 값을 설정할 수 있습니다.
+`[시스템 > 10: 안전 시스템 > 2: 파라미터 설정 > 2: 영역 제한 > 3: 툴 모델링]` 메뉴에서 파라미터 값을 설정할 수 있습니다.
 
 <p align="center">
 <img src="../../../_assets/safety_layout/tool_sphere.png"></img>
@@ -1125,7 +1125,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 [__SOURCE](3-safety-function/3-safety-function/3-safety-layout/5-self-collision-detection.md)
 # 3.3.3.5 자가 충돌 검지
 
-자가 충돌 검지 기능은 로봇 2축과 툴의 충돌 여부를 감시하는 기능입니다. 툴과 로봇은 실제 형상에 맞게 모델링이 되어야하고, 모델링 방법에 대한 자세한 내용은 "[3.3.3.2 안전 툴 모델링](../../../3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)"과 "[3.3.3.2 안전 로봇 모델링](../../../3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)"을 참조하십시오.
+자가 충돌 검지 기능은 로봇 2축과 툴의 충돌 여부를 감시하는 기능입니다. 툴과 로봇은 실제 형상에 맞게 모델링이 되어야하고, 모델링 방법에 대한 자세한 내용은 "[3.3.3.2 안전 툴 모델링](../../../3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)"과 "[3.3.3.3 안전 로봇 모델링](../../../3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)"을 참조하십시오.
 
 
 <p align="center">
@@ -1152,7 +1152,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 안전 입출력의 기본 정보
 
-## Hi7의 안전 입출력은 다음과 같이 나뉠 수 있습니다.
+Hi7의 안전 입출력은 다음과 같이 나뉠 수 있습니다.
 
 
 | 구분  | 채널  | 옵션     |
@@ -1179,7 +1179,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 입력 신호는 4개, 출력 신호는 1개이며 모두 이중 신호로 동작합니다.<br>
 `[시스템 > 10: 안전 시스템 > 2: 파라미터 설정 > 3: 안전 입출력 > 2: 기본 입출력]` 메뉴에서 파라미터 값을 설정할 수 있습니다. 
 
-## 1) 입력 신호 설정
+### 1) 입력 신호 설정
 
 <p align="center">
 <img src="../../../_assets/safety_io/def_input.png"></img>
@@ -1193,11 +1193,11 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 | 필터 시간 <br>[msec]      | 각 채널별로 설정된 **필터 시간** 동안 동일한 신호가 입력되어야 유효한 신호로 처리됩니다.                       | 0 ~ 500        | 100    |
 | 불일치 허용 시간 <br>[msec] | 기본 입력 신호는 두 개의 이중 신호가 동일할 때 유효한 신호로 처리됩니다.<br>두 신호가 설정된 **불일치 허용 시간** 이상 서로 다르면 알람이 발생합니다.| 0 ~ 5000       | 1000   |
 
-### 배선 예)
+#### 배선 예)
 ![](../../../_assets/safety_io/CN_SI1.bmp)
 
 
-## 2) 출력 신호 설정
+### 2) 출력 신호 설정
 
 <p align="center">
 <img src="../../../_assets/safety_io/def_output.png"></img>
@@ -1209,7 +1209,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 | 펄스 시험                 | 각 채널의 펄스 시험 사용 여부를 설정합니다.                                                                                                     | 활성화 / 비활성화 | 비활성화 |
 | 오류 유지 시간 <br>[msec] | 각 채널은 에러가 발생한 후 해당 에러가 해소되더라도, **오류 유지 시간**동안 **Open (Fail-safe)** 상태를 유지합니다. 이후 정상 출력으로 전환됩니다.<br>5로 나누어 떨어지는 값만 입력 가능합니다. | 0 ~ 65530      | 1000   |
 
-### 배선 예)
+#### 배선 예)
 ![](../../../_assets/safety_io/CN_SO1.bmp)
 
 
@@ -1220,7 +1220,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 부가 안전 입출력 신호의 파라미터를 설정합니다. 입력 신호 8개, 출력 신호 8개로 구성되며 모두 이중신호로 동작 됩니다.<br>
 `[시스템 > 10: 안전 시스템 > 2: 파라미터 설정 > 3: 안전 입출력 > 3: 확장 입출력]` 메뉴에서 파라미터 값을 설정할 수 있습니다. 
 
-## 1) 부가 안전 입출력 신호
+### 1) 부가 안전 입출력 신호
 
 <p align="center">
 <img src="../../../_assets/safety_io/add_io.png"></img>
@@ -1235,9 +1235,9 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 | 입력 오류 유지 시간 <br>[msec] | 각 채널은 에러가 발생한 후 해소되더라도, 설정된 시간이 지난 후에야 Fail-Safe 상태에서 현재 입력 상태로 전환됩니다. | 0 ~ 65530      | 1000   |
 | 출력 오류 유지 시간 <br>[msec] | 각 채널은 에러가 발생한 후 해소되더라도, 설정된 시간 동안 **Open (Fail-safe)** 상태를 유지합니다.<br>이후 정상 출력으로 전환됩니다.| 0 ~ 65530      | 1000   |
  
-### 부가 안전 입력 배선 예)
+#### 부가 안전 입력 배선 예)
 ![](../../../_assets/safety_io/CN_SI2.png)
-### 부가 안전 출력 배선 예)
+#### 부가 안전 출력 배선 예)
 ![](../../../_assets/safety_io/CN_SO2.png)
 
 
@@ -1253,11 +1253,11 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 -------------------------------------------------------------------------
 
-## 1) 안전 신호 할당 추가 
+### 1) 안전 신호 할당 추가 
 1) 화면 하단의 `[추가]` 버튼을 누르고 인덱스(H/W 채널 또는 Bit 번호)를 선택
 2) 입출력 기능 목록에 따라 세부채널을 선택하여 세부 기능 번호 선택 가능
 
-## 2) 안전 신호 할당 삭제 
+### 2) 안전 신호 할당 삭제 
 1) 목록에서 이미 설정된 할당 기능을 선택
 2) 화면 하단의 `[삭제]` 버튼을 누름
 
@@ -1277,7 +1277,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 
 
-## 3) 안전 신호의 기본 설정 값
+### 3) 안전 신호의 기본 설정 값
 
 |  **채널** |     **기능**                       | 
 | :-------: | :------------------------------------------------: |
@@ -1287,7 +1287,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 | 안전 입력 채널 4 | - |
 | 안전 출력 채널 1 | 비상 정지 활성화 상태|
 
-## 4) 안전 입력 신호의 기능 리스트
+### 4) 안전 입력 신호의 기능 리스트
 
 |  **채널** |     **기능**                       |       **설명**    |
 | :-------: | :--------------------------: | :--------------------------------------------------: |
@@ -1296,7 +1296,6 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 | SGA | 안전 가드 자동 입력| OPEN : 가드 열림 (위험) <br>CLOSE : 가드 닫힘 (안전) |
 | Protective stop | 보호 정지 입력 | OPEN : 보호정지 활성 <br>CLOSE : 보호정지 해제 |
 | Normal stop | 정상 정지 입력 | OPEN : 정상정지 활성 <br>CLOSE : 정상정지 해제 |
-| Enable Switch | 외부 인에블링 스위치 | OPEN : 스위치 놓음 <br>CLOSE : 운전 가능(모터온 시도) |
 | Motor On | 외부 모터온 | 신호 상승시(Rising Edge) 모터온 시도 |
 | Remote | 외부 모드 입력(리모트) | OPEN : 내부 모드 신호로 모드 변경 <br>CLOSE : 외부 모드 입력 신호로 모드 변경
 | Manual | 외부 모드 입력(수동)  | OPEN : 동작 없음 <br>CLOSE : 외부 수동 모드 입력 |
@@ -1318,7 +1317,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 | Speed & separation #1 ~ #84 | RePlan | OPEN : 기능 활성<br>CLOSE : 기능 비활성 |
 | Mastering test switch | 마스터링 테스트 스위치 | OPEN : 기능 활성<br>CLOSE : 기능 비활성 |
 
-## 5) 안전 출력 신호의 기능 리스트
+### 5) 안전 출력 신호의 기능 리스트
 |  **채널** |     **기능**                       |       **설명**    |
 | :-------: | :--------------------------: |  :--------------------------------------------------: |
 | Emergency stop activation status | 비상 정지 상태 | OPEN : TP, OP, 외부 비상정지 중 하나 이상 눌림 <br> CLOSE : TP, OP, 외부 비상정지 모두 눌리지 않음  |
@@ -1355,7 +1354,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 # 3.3.4.4 안전 통신의 선택
 
-## 1. 안전 통신의 선택
+### 1. 안전 통신의 선택
 - Hi7 로봇 제어기의 안전 통신 프로토콜을 선택합니다.<br><br>
 `[시스템 > 2: 제어 파라미터 > 6: 안전 통신 > 1: 안전 통신 선택]` 메뉴에서 파라미터 값을 설정할 수 있습니다. 
 
@@ -1366,12 +1365,12 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 # 3.3.4.5 PROFIsafe
 
-## 1) PROFIsafe ?
+### 1) PROFIsafe ?
 - PROFINET/PROFIBUS 상에서 동작하는 안전 프로토콜(안전 프로파일).
 - 표준 PROFINET 통신 채널('블랙 채널')을 통해 안전 데이터를 전송.
 - 추가 배선 없이 안전 신호 전송을 지원.
 
-## 2) PROFINET & PROFIsafe 사양
+### 2) PROFINET & PROFIsafe 사양
 - 디지털 입력 : 50 , 120, 240 bytes (1개 선택) 
 - 디지털 출력 : 50 , 120, 240 bytes (1개 선택) 
 - 안전 입출력 : 8/8 bytes (활성 or 비활성화) 
@@ -1381,7 +1380,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 - Netload Class : II
 - Optional Feature : Legacy, MRP
 
-## 3) PROFIsafe 파라미터
+### 3) PROFIsafe 파라미터
 
 `[시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 6: 안전 통신 > 2: PROFIsafe]`<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_param.png)
@@ -1394,7 +1393,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
  - Reaction on Device_Fault : 본 장치가 Fault 상태가 되면 모든 F-Output 출력은 Fail-safe(0)상태로 변경됩니다. 그리고 장치의 Fault상태가 해소되고 난 뒤에는 F-Host에서 Global- Acknowledge 와 같은 명령으로 F-Device를 re-integration 하는 과정이 필요합니다.
  
 
-## 4) PROFIsafe 설정 절차
+### 4) PROFIsafe 설정 절차
 
 1) BD671과 F-Host & Hi7 Com의 연결
 2) GSDML 파일 등록 (TIA Portal)
@@ -1409,9 +1408,9 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 7) PROFIsafe I/O 신호의 할당
 
 
-### 4.1) BD671과 F-Host & Hi7 Com의 연결
+#### 4.1) BD671과 F-Host & Hi7 Com의 연결
 
-#### 4.1.1) 랜선 연결
+##### 4.1.1) 랜선 연결
 1) "PROFIsafe F-Host"와 to BD671를 랜선으로 연결한다.
 2) Link LED가 점멸하는지 확인한다.
 3) Hi7 COM의 LAN3 커넥터와 BD671를 랜선으로 연결한다.
@@ -1419,7 +1418,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 ![](../../../_assets/safetyio_profisafe/profisafe_connect.png)
 
-#### 4.1.2) Hi7 Com의 연결 설정
+##### 4.1.2) Hi7 Com의 연결 설정
 1) 다음과 같이 메뉴를 이동 시스템 -> 제어 파라미터 -> 산업용 통신-> EtherCAT Master 설정
 2) 아래와 같이 설정
 - EtherCAT Master : ON
@@ -1433,7 +1432,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 ![](../../../_assets/safetyio_profisafe/EC_master_setting2.png)
 
 
-### 4.2) GSDML 파일 등록 (TIA Portal)
+#### 4.2) GSDML 파일 등록 (TIA Portal)
 1) TIA Portal을 실행
 2) 메뉴에서 우측과 같이 이동 [Options] → [Manage general station description file (GSD)].
 3) "..." 버튼 클릭 후 and GSDML file이 있는 디렉토리를 설정한다.
@@ -1441,8 +1440,8 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 5) 하드웨어 카탈로그에 새로운 장치로 등록되었는지 확인한다. <br>
 ![](../../../_assets/safetyio_profisafe/profisafe_gsdmal.png)
 
-### 4.3) PROFIsafe 컨트롤러 설정 (TIA Portal)
-#### 4.3.1) PROFINET 설정
+#### 4.3) PROFIsafe 컨트롤러 설정 (TIA Portal)
+##### 4.3.1) PROFINET 설정
 1) TIA Portal을 실행시키고 새 프로젝트를 생성한다.
 2) Device & Network 부분을 더블클릭하여 오픈한다.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network.png)
@@ -1465,7 +1464,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 14) "PROFINET device name"을 "hd-hrc-hi7"로 설정하고 저장함.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network4.png)
 
-#### 4.3.2) PROFIsafe 설정
+##### 4.3.2) PROFIsafe 설정
 1) "Device & Network"화면에서 HRC-IO 장치를 더블 클릭
 2) 오른쪽 "Device Overview" 화면에서 PROFIsafe 슬롯을 선택한다.
 3) 아래쪽 화면에서 PROFIsafe 통신설정 화면이 나타남.
@@ -1473,8 +1472,8 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 5) F_Dest_Add을 1로 설정<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network5.png)
 
-### 4.4) Hi7 설정 (TP UI)
-#### 4.4.1) PROFINET 설정
+#### 4.4) Hi7 설정 (TP UI)
+##### 4.4.1) PROFINET 설정
 1) F-Host에서 설정했던 값과 같은 아래의 값으로 파라미터 설정
 - PROFINET IO Device Name : hd-hrc-hi7
 - Slot 1 : Digital Input : 240
@@ -1484,21 +1483,21 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 2) "적용" 버튼을 누른다.<br>
 ![](../../../_assets/safetyio_profisafe/4_1_profinet_config.png)
 
-#### 4.4.2) PROFIsafe 설정
+##### 4.4.2) PROFIsafe 설정
 
 1) 이전장에서 설정했던 똑같은 값으로 Target Address를 1로 설정한다.
 2) "적용" 버튼을 누른다.<br>
 ![](../../../_assets/safetyio_profisafe/4_2_profisafe_config.png)
 
-### 4.5) PROFINET과 PROFIsafe 통신의 확인
+#### 4.5) PROFINET과 PROFIsafe 통신의 확인
 
-#### 4.5.1) 안전 래더 프로그램 (Tia Portal)
+##### 4.5.1) 안전 래더 프로그램 (Tia Portal)
 1) Device Overview 탭 에서, 아래와 같이 래더 프로그램을 만들고 컨트롤러로 다운로드 한다.<br>
 ![](../../../_assets/safetyio_profisafe/5_1_Safety_Ladder.png)
 2) 다운로드 후, Distribution I/O 화면에서 녹색 체크 박스가 표시되었는지 확인한다.<br>
 ![](../../../_assets/safetyio_profisafe/5_1_Safety_Ladder2.png)
 
-#### 4.5.2) TP 화면
+##### 4.5.2) TP 화면
 1) PROFINET <br>
 메뉴에서 시스템 -> 2:제어파라미터 -> 11:산업용 통신 -> 5: 프로피넷 설정 으로 이동한다.<br>
 ![](../../../_assets/safetyio_profisafe/5_2_pnio_status.png)
@@ -1511,7 +1510,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 - FappState가 CYCLE Data EX 인지 확인
 - Counter가 지속 증가하는지 확인
 
-### 4.6) PROFINET I/O 신호의 할당(FB Block Settings)
+#### 4.6) PROFINET I/O 신호의 할당(FB Block Settings)
 1) 시스템 → 제어 파라미터 → 입출력 신호 설정 → FB 블럭 할당으로 이동
 2) 2개 이하로 필요한 만큼 블럭 설정을 PROFINET I/O로 변경한다.
  (최대 PROFINET I/O 사이즈는 240바이트이고 개별 FB 블럭의 사이즈는 120바이트 입니다. 따라서 **2개를 초과하는 설정은 무시됩니다.**)<br>
@@ -1522,7 +1521,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 4) TIA Portal과 범용 I/O 화면에서 입출력 신호 확인<br>
 ![](../../../_assets/safetyio_profisafe/6_3_public_io.png)
 
-### 4.7) PROFIsafe I/O 신호의 할당
+#### 4.7) PROFIsafe I/O 신호의 할당
 1) PROFIsafe I/O 신호의 할당
 * [3.3.4.3 안전 신호 할당](../4-safety-io/3-Linker.md) 페이지 참고
 
@@ -1549,24 +1548,24 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 
 # 3.3.4.6 CIP Safety
 
-## 1. CIP Safety ?
+### 1. CIP Safety ?
 - CIP Safety는 표준 Common Industrial Protocol(CIP)을 확장한 안전 통신 프로토콜
 - '블랙 채널' 원리를 사용하여 EtherNet/IP 및 DeviceNet 상에서 안전한 데이터 교환을 가능하게 함.
 - 시간 감시, 이중화, CRC 검사 등의 메커니즘을 통해 IEC 61508, ISO 13849 등의 안전 표준을 준수함.
 
-## 2. 사양
-### 2.1 EtherNet/IP
+### 2. 사양
+#### 2.1 EtherNet/IP
 - 디지털 입력 : 0 ~ 240 bytes
 - 디지털 출력 : 0 ~ 240 bytes
 - 통신 주기 : 5 ~ 3000 msec
 - 지원 통신 속도 : 10 or 100 Mbps
 
-### 2.2 CIP Safety
+#### 2.2 CIP Safety
 - 안전 입출력 : 8/8 bytes 
 - 통신 주기 : 20 ~ 100 msec
 
 
-## 3. CIP Safety 파라미터
+### 3. CIP Safety 파라미터
 `[시스템 > 2: 제어 파라미터 > 11:산업용 통신 > 6: 안전 통신 > 3: CIP Safety]`<br>
 ![](../../../_assets/cipSafety/cipSafety_Parameters.png)
 
@@ -1578,7 +1577,7 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
  
    
 
-## 4. CIP Safety 설정 절차
+### 4. CIP Safety 설정 절차
 
 1) Hi7 EtherNet/IP Adapter와 EtherNet/IP Scanner의 연결
 2) 엔지니어링 툴을 통한 EDS 파일 추가(Studio 5000)
@@ -1590,12 +1589,12 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 6) 안전 신호의 할당
 
 
-### 1 Hi7 EtherNet/IP Adapter와 EtherNet/IP Scanner의 연결
+#### 1 Hi7 EtherNet/IP Adapter와 EtherNet/IP Scanner의 연결
 ![](../../../_assets/cipSafety/connect.png)
 
-### 2 엔지니어링 툴을 통한 EDS 파일 추가(Studio 5000)
+#### 2 엔지니어링 툴을 통한 EDS 파일 추가(Studio 5000)
 - 'Device Description File Installation Tool'을 사용하여 EDS(Hi7_EIP_251023.eds)파일을 설치합니다.
-### 3 CIP Safety 컨트롤러 설정 (Studio 5000)
+#### 3 CIP Safety 컨트롤러 설정 (Studio 5000)
 1) Studio 5000을 실행하고 새 프로젝트를 만듭니다.
 2) controller organizer에서 CIP Safety 통신을 지원하는 컨트롤러(예 CPU 1769-L30ERMS)를 선택하고 Ethernet을 선택한뒤 마우스 우측버튼을 눌러 New Module을 클릭합니다.
 3) "Hi7 EIP Adapter"를 찾고 Create 버튼을 누릅니다.<br>
@@ -1618,8 +1617,8 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 11) 툴바 메뉴에서 offline 버튼을 눌러 Download 버튼을 누르세요.<br>
 ![CIP Safety](../../../_assets/cipSafety/download.png)
 12) 설정한 값들이 다운로드 된 후 "Guard Logix"의 토글 버튼을 PROG 에서 RUN으로 바꾸세요.
-### 4 Hi7 설정 (TP UI)
-#### 4.1 EtherNet/IP 설정
+#### 4 Hi7 설정 (TP UI)
+##### 4.1 EtherNet/IP 설정
 1) 시스템 → 제어 파라미터 → 산업용 통신 → EtherNet/IP 설정으로 메뉴 이동
 2) Protocol 설정 = Adapter
 3) EtherNet/IP Adapter를 위한 랜포트 설정은 LAN2로 설정합니다.
@@ -1627,30 +1626,30 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 5) 나머지 설정은 그림과 같이 변경하지 않습니다.<br>
 ![CIP Safety](../../../_assets/cipSafety/ethernetIP.png)
 
-#### 4.2 CIP Safety 설정
+##### 4.2 CIP Safety 설정
 1) `시스템 → 2:제어 파라미터 -> 11:산업용 통신 -> 6:안전 통신 → 3: CIP Safety`로 메뉴 이동합니다.
 2) 활성화 버튼 ON
 3) SNN 예)1111_2222_3333으로 설정합니다.
 4) 적용 버튼 누릅니다.
 5) 로봇 제어기를 재부팅 합니다.<br>
 ![CIP Safety](../../../_assets/cipSafety/cipSafety_Parameters.png)
-### 5 통신 상태 확인
-#### 5.1 EtherNet/IP
+#### 5 통신 상태 확인
+##### 5.1 EtherNet/IP
 1) License Led 점등 확인
 2) Run Led is 점등 확인
 3) Communication Led 점등 확인
 4) Error Led가 점등된 경우 Error Name을 확인<br>
 ![CIP Safety](../../../_assets/cipSafety/eip_status.png)
-#### 5.2 CIP Safety
+##### 5.2 CIP Safety
 1) 안전 통신 선택이 "CIP Safety"인지 확인
 2) Comm status가 "On-line, Connected" 상태인지 확인
 3) IO Count가 지속 증가하는지 확인<br>
 ![CIP Safety](../../../_assets/cipSafety/cipsafety_status.png)
 
-### 6 안전 신호의 할당
-#### 6.1 CIP Safety 입출력의 할당<br>
-* [3.3.3.3 안전 신호 할당](3-safety-function/3-safety-function/3-safety-io/3-Linker.md) 페이지 참고
-#### 6.2 CIP Safety 입출력 할당의 예
+#### 6 안전 신호의 할당
+##### 6.1 CIP Safety 입출력의 할당<br>
+* [3.3.4.3 안전 신호 할당](../4-safety-io/3-Linker.md) 페이지 참고
+##### 6.2 CIP Safety 입출력 할당의 예
 1) CIP Safety Input (Master -> Slave 방향)
 1ch(0 bit) = Arm Limit<br>
 ![CIP Safety](../../../_assets/cipSafety/alloc_in.png)<br>
@@ -1839,14 +1838,11 @@ Re plan은 외부 안전 센서로부터 입력 받은 신호를 기반으로 �
 [__SOURCE](5-monitoring/README.md)
 # 5. 안전 상태 모니터링
 
-안전 기능 위반 및 안전 제어 모듈(SCM: Safety Control Module) 보드의 상태를 모니터링합니다. 로봇 감시 기능의 상태와 안전 입출력 상태정보를 확인할 수 있습니다. 
+안전 기능 위반, 안전 I/O 및 안전 통신의 상태를 모니터링합니다. 
 
-`[시스템 > 10: 안전 시스템 > 3: 모니터링]` 메뉴에서 확인하십시오.
+로봇 감시 기능의 상태와 안전 I/O 상태정보는 `[시스템 > 10: 안전 시스템 > 3: 모니터링]` 메뉴에서 확인할 수 있고,
+안전 통신의 상태는 `[시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 6: 안전 통신]` 메뉴에서 확인할 수 있습니다.
 
-<p align="center">
-<img src="../_assets/5/monitoring_menu.png"></img>
-<em><p align="center">안전 상태 모니터링 메뉴</p></em>
-</p>
 [__SOURCE](5-monitoring/1-robot-limit-parameter-monitoring.md)
 # 5.1 로봇 감시 기능 모니터링
 
