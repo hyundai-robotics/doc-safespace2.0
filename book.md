@@ -185,7 +185,7 @@ Describes the safety functions built into the product and also the measures to e
 [__SOURCE](1-safety/2-safety-measures/1-safety-functions.md)
 # 1.2.1 Safety functions
 
-## Safety functions in SafeSpace2.0
+### Safety functions in SafeSpace2.0
 SafeSpace2.0 is intended to carry out collaborative tasks based on the following safety functions. For the details of the safety functions, see the "[3. SafeSpace2.0 Safety functions](../../3-safety-function/README.md)"
 
 * STO: Safe Torque Off
@@ -215,7 +215,7 @@ SafeSpace2.0 is intended to carry out collaborative tasks based on the following
 ---
 
 
-## Option license
+### Option license
 SafeSpace 2.0 is available with three different license options. Each license grants access to different functional specifications. For further details, please consult the table provided below. 
 
 |  **Safety Functions** |                       **Default**                       |  **Option 1 (Basic)**  |  **Option 2 (Pro)**  |  **Option 3 (Collaborative)**  |
@@ -850,7 +850,7 @@ When the external force applied to the robot exceeds the allowable value, it is 
 
 Re plan is a function that adjusts the robot's speed based on signals received from external safety sensors. The robot's operating speed is adjusted to the deceleration rate corresponding to the input signal, and the TCP speed is monitored at the corresponding speed after a delay time.
 
-If the delay time is insufficient or the robot decelerates insufficiently, resulting in a violation of the TCP speed limit, a safety stop (Stop 0, Stop 1, Stop 2) is immediately activated.
+If the delay time is insufficient or the robot decelerates insufficiently, resulting in a violation of the TCP speed limit, a safety stop (Stop 0) is immediately activated.
 
 You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 6: Re plan]` menu.
 
@@ -1146,7 +1146,7 @@ You can set parameters for the robot's self-collision detection function in the 
 
 Basic Information on Safety Input/Output
 
-## Hi7's safety input/output can be divided as follows:
+Hi7's safety input/output can be divided as follows:
 
 - Basic Safety Input (4ch x dual input)
 - Extended Safety Input (8ch x dual input)
@@ -1167,7 +1167,7 @@ Set the parameters for safety input/output signals.
 There are 4 input signals and 1 output signal, all operating as dual signals.
 You can set the parameter values in the `[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 2: Default I/O]` menu. 
 
-## 1) Default Input Signal Settings
+### 1) Default Input Signal Settings
 
 <p align="center">
 <img src="../../../_assets/safety_io/def_input.png"></img>
@@ -1181,11 +1181,11 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 | Filter Time <br>[msec]      | The same signal should be input during the **Filter Time** set for each channel for it to be processed as a valid signal.<br>Only values divisible by 10 can be entered.                       | 0 ~ 500        | 100    |
 | Discrete Time <br>[msec] | Basic input signals are processed as valid signals when two dual signals are identical.<br>An alarm is triggered if the two signals are different from each other for longer than the set **Discrete Time**.<br>Only values divisible by 10 can be entered. | 0 ~ 5000       | 1000   |
 
-### Wiring Example)
+#### Wiring Example)
 ![](../../../_assets/safety_io/CN_SI1.bmp)
 
 
-## 2) Output Signal Settings
+### 2) Output Signal Settings
 
 <p align="center">
 <img src="../../../_assets/safety_io/def_output.png"></img>
@@ -1197,7 +1197,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 | Pulse Test                 | Set whether to use the Pulse Test for each channel.                                                                                                     | Enable / Disable | Disable |
 | Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is recovered, the system maintains the **Open (Fail-safe)** state during the **Error Latch Time**. Afterward, it  transitions to normal output.<br>Only values divisible by 5 can be entered. | 0 ~ 65530      | 1000   |
 
-### Wiring Example)
+#### Wiring Example)
 ![](../../../_assets/safety_io/CN_SO1.bmp)
 
 
@@ -1208,7 +1208,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 Set the parameters for additional safety input/output signals. It consists of 8 input signals and 8 output signals, all operating as dual signals.
 You can set parameter values in the `[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 3: Additional I/O]` menu. 
 
-## 1) Additional Safety Input/Output Signals
+### 1) Additional Safety Input/Output Signals
 
 <p align="center">
 <img src="../../../_assets/safety_io/add_io.png"></img>
@@ -1223,9 +1223,9 @@ You can set parameter values in the `[System > 10: Safety System > 2: Parameter 
 | Input Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system transitions from the Fail-Safe state to the current input state only after the set time has elapsed.<br>Only values divisible by 10 can be entered.             | 0-65530      | 1000   |
 | Output Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system maintains the **Open (Fail-safe)** state during the set time.<br>After that, it transitions to normal output.<br>Only values divisible by 10 can be entered.   | 0-65530      | 1000   |
 
-### Additional Safety Input Wiring Example)
+#### Additional Safety Input Wiring Example)
 ![](../../../_assets/safety_io/CN_SI2.bmp)
-### Additional Safety Output Wiring Example)
+#### Additional Safety Output Wiring Example)
 ![](../../../_assets/safety_io/CN_SO2.bmp)
 
 
@@ -1241,12 +1241,12 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 -------------------------------------------------------------------------
 
-## 1) Adding Safety Signal Assignment
+### 1) Adding Safety Signal Assignment
 1) Press the `[Add]` button.
 2) Select the desired function from the function list.
 3) If a sub-index is required, enter the sub-index number.
 
-## 2) Deleting Safety Signal Assignment
+### 2) Deleting Safety Signal Assignment
 1) Select an already set assignment function on the list.
 2) Press the `[del]` button.
 
@@ -1264,7 +1264,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 
 
-## 3) Default values for safety signals
+### 3) Default values for safety signals
 
 |  **Channel** |     **Function**                       | 
 | :-------: | :------------------------------------------------: |
@@ -1274,7 +1274,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 | Safety Input Channel 4 | - |
 | Safety Output Channel 1 | Emergency Stop Activation Status|
 
-## 4) Safety Input Signal Function List
+### 4) Safety Input Signal Function List
 
 |  **Channel** |     **Function**                       |       **Description**    |
 | :-------: | :--------------------------: | :--------------------------------------------------: |
@@ -1283,7 +1283,6 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 | SGA | Safety Guard Auto Input| OPEN: Guard open (Danger) <br>CLOSE: Guard closed (Safe) |
 | Protective stop | Protective Stop Input | OPEN: Protective stop activated <br>CLOSE: Protective stop released |
 | Normal stop | Normal Stop Input | OPEN: Normal stop activated <br>CLOSE: Normal stop released |
-| Enable Switch | External Enabling Switch | OPEN: Switch released <br>CLOSE: Operation possible (Motor On attempt) |
 | Motor On | External Motor On | Motor On attempted on Rising Edge |
 | Remote | External Mode Input (Remote) | OPEN: Mode change by internal mode signal <br>CLOSE: Mode change by external mode input signal
 | Manual | External Mode Input (Manual)  | OPEN: No operation <br>CLOSE: External manual mode input |
@@ -1305,7 +1304,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 | Speed & separation #1-#84 | RePlan | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Mastering test switch | Mastering Test Switch | OPEN: Function activated<br>CLOSE: Function deactivated |
 
-### Safety Output Signal Function List
+#### Safety Output Signal Function List
 |  **Channel** |     **Function**                       |       **Description**    |
 | :-------: | :--------------------------: |  :--------------------------------------------------: |
 | Emergency stop activation status | Emergency Stop Status | OPEN: At least one of TP, OP, and external emergency stop is pressed <br> CLOSE: None of TP, OP, and external emergency stop is pressed.  |
@@ -1342,8 +1341,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 # 3.3.4.4 Selecting Safety Communication
 
-## 1) Selecting Safety Communication
-- Select the safety communication protocol for the Hi7 robot controller.<br><br>
+Select the safety communication protocol for the Hi7 robot controller.<br><br>
 You can configure the parameter values in the `[System > 2: Control Parameters > 6: Safety Communication > 1: Select Safety Communication]` menu.
 
 ![](../../../_assets/safe_comm_select.png)
@@ -1353,12 +1351,12 @@ You can configure the parameter values in the `[System > 2: Control Parameters >
 
 # 3.3.4.5 PROFIsafe
 
-## 1) PROFIsafe?
+### 1) PROFIsafe?
 - A safety protocol (safety profile) that operates on PROFINET/PROFIBUS.
 - Transmits safety data through standard PROFINET communication channels ('Black Channels').
 - Supports safety signal transmission without the need for additional wiring.
 
-## 2) PROFINET & PROFIsafe Specifications
+### 2) PROFINET & PROFIsafe Specifications
 - Digital Input: 50, 120, or 240 bytes (Select one)
 - Digital Output: 50, 120, or 240 bytes (Select one)
 - Safety I/O: 8/8 bytes (Enable or Disable)
@@ -1368,7 +1366,7 @@ You can configure the parameter values in the `[System > 2: Control Parameters >
 - Netload Class: II
 - Optional Features: Legacy, MRP
 
-## 3) PROFIsafe Parameters
+### 3) PROFIsafe Parameters
 
 `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe]`<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_param.png)
@@ -1381,7 +1379,7 @@ You can configure the parameter values in the `[System > 2: Control Parameters >
  - Reaction on Device_Fault: If this device enters a Fault state, all F-Outputs will change to the Fail-safe (0) state. Once the device's Fault state is resolved, a process of re-integrating the F-Device using a command such as Global-Acknowledge from the F-Host is required.
  
 
-## 4) PROFIsafe Configuration Procedure
+### 4) PROFIsafe Configuration Procedure
 
 1) Connection between BD671 and F-Host & Hi7 Com
 2) GSDML File Registration (TIA Portal)
@@ -1396,9 +1394,9 @@ You can configure the parameter values in the `[System > 2: Control Parameters >
 7) Assignment of PROFIsafe I/O Signals
 
 
-### 4.1) Connection between BD671 and F-Host & Hi7 Com
+#### 4.1) Connection between BD671 and F-Host & Hi7 Com
 
-#### 4.1.1) LAN Cable Connection
+##### 4.1.1) LAN Cable Connection
 1) Connect the "PROFIsafe F-Host" and the BD671 using a LAN cable.
 2) Verify that the Link LED is flashing.
 3) Connect the LAN3 connector of the Hi7 COM and the BD671 using a LAN cable.
@@ -1406,7 +1404,7 @@ You can configure the parameter values in the `[System > 2: Control Parameters >
 
 ![](../../../_assets/safetyio_profisafe/profisafe_connect.png)
 
-#### 4.1.2) Hi7 Com Connection Settings
+##### 4.1.2) Hi7 Com Connection Settings
 1) Navigate to the following menu: **System -> Control Parameters -> Industrial Communication -> EtherCAT Master Settings**
 2) Configure the settings as follows:
 - EtherCAT Master: ON
@@ -1420,7 +1418,7 @@ You can configure the parameter values in the `[System > 2: Control Parameters >
 ![](../../../_assets/safetyio_profisafe/EC_master_setting2.png)
 
 
-### 4.2) GSDML File Registration (TIA Portal)
+#### 4.2) GSDML File Registration (TIA Portal)
 1) Launch TIA Portal.
 2) Navigate to the menu as shown on the right: **[Options] → [Manage general station description file (GSD)]**.
 3) Click the **"..."** button and select the directory where the GSDML file is located.
@@ -1428,8 +1426,8 @@ You can configure the parameter values in the `[System > 2: Control Parameters >
 5) Verify that the file has been registered as a new device in the Hardware Catalog. <br>
 ![](../../../_assets/safetyio_profisafe/profisafe_gsdmal.png)
 
-### 4.3) PROFIsafe Controller Configuration (TIA Portal)
-#### 4.3.1) PROFINET Configuration
+#### 4.3) PROFIsafe Controller Configuration (TIA Portal)
+##### 4.3.1) PROFINET Configuration
 1) Launch TIA Portal and create a new project.
 2) Double-click **Devices & Networks** to open it.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network.png)
@@ -1452,7 +1450,7 @@ You can configure the parameter values in the `[System > 2: Control Parameters >
 14) Set the **"PROFINET device name"** to **"hd-hrc-hi7"** and save the changes.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network4.png)
 
-#### 4.3.2) PROFIsafe Configuration
+##### 4.3.2) PROFIsafe Configuration
 1) Double-click the HRC-IO device in the **"Devices & Networks"** view.
 2) Select the PROFIsafe slot in the **"Device Overview"** window on the right.
 3) The PROFIsafe communication settings will appear in the bottom pane.
@@ -1460,8 +1458,8 @@ You can configure the parameter values in the `[System > 2: Control Parameters >
 5) Set **F_Dest_Add** to 1.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network5.png)
 
-### 4.4) Hi7 Configuration (TP UI)
-#### 4.4.1) PROFINET Configuration
+#### 4.4) Hi7 Configuration (TP UI)
+##### 4.4.1) PROFINET Configuration
 1) Configure the parameters with the same values set in the F-Host:
 - PROFINET IO Device Name: hd-hrc-hi7
 - Slot 1: Digital Input: 240
@@ -1470,21 +1468,21 @@ You can configure the parameter values in the `[System > 2: Control Parameters >
 2) Press the **"Apply"** button.<br>
 ![](../../../_assets/safetyio_profisafe/4_1_profinet_config.png)
 
-#### 4.4.2) PROFIsafe Configuration
+##### 4.4.2) PROFIsafe Configuration
 
 1) Set the **Target Address** to 1, using the same value configured in the previous section.
 2) Press the **"Apply"** button.<br>
 ![](../../../_assets/safetyio_profisafe/4_2_profisafe_config.png)
 
-### 4.5) Verification of PROFINET and PROFIsafe Communication
+#### 4.5) Verification of PROFINET and PROFIsafe Communication
 
-### 4.5.1) Safety Ladder Program (TIA Portal)
+#### 4.5.1) Safety Ladder Program (TIA Portal)
 1) In the **Device Overview** tab, create a ladder program as shown below and download it to the controller.<br>
 ![](../../../_assets/safetyio_profisafe/5_1_Safety_Ladder.png)
 2) After downloading, verify that a green check box is displayed on the **Distributed I/O** screen.<br>
 ![](../../../_assets/safetyio_profisafe/5_1_Safety_Ladder2.png)
 
-### 4.5.2) TP Screen
+#### 4.5.2) TP Screen
 1) PROFINET <br>
 Navigate to **System -> 2: Control Parameters -> 11: Industrial Communication -> 5: PROFINET Settings** from the menu.<br>
 ![](../../../_assets/safetyio_profisafe/5_2_pnio_status.png)
@@ -1497,7 +1495,7 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
 - Verify that **FappState** is set to **CYCLE Data EX**.
 - Verify that the **Counter** is continuously increasing.
 
-### 4.6) Assignment of PROFINET I/O Signals (FB Block Settings)
+#### 4.6) Assignment of PROFINET I/O Signals (FB Block Settings)
 1) Navigate to **System → Control Parameters → I/O Signal Settings → FB Block Assignment**.
 2) Change the block settings to **PROFINET I/O** as needed, up to a maximum of 2 blocks.
  (The maximum PROFINET I/O size is 240 bytes, and each individual FB block size is 120 bytes. Therefore, **any settings exceeding 2 blocks will be ignored.**)<br>
@@ -1508,7 +1506,7 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
 4) Verify the I/O signals in the **TIA Portal** and on the **General I/O** screen.<br>
 ![](../../../_assets/safetyio_profisafe/6_3_public_io.png)
 
-### 4.7) Assignment of PROFIsafe I/O Signals
+#### 4.7) Assignment of PROFIsafe I/O Signals
 1) Assignment of PROFIsafe I/O Signals
 * Refer to the **[3.3.4.3 Safety Signal Assignment](../4-safety-io/3-Linker.md)** page.
 
@@ -1536,27 +1534,27 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
 
 # 3.3.4.6 CIP Safety
 
-## 1) What is CIP Safety?
+### 1) What is CIP Safety?
 - **CIP Safety** is a safety communication protocol that extends the standard **Common Industrial Protocol (CIP)**.
 - It enables secure data exchange over **EtherNet/IP** and **DeviceNet** by utilizing the **"Black Channel"** principle.
 - It complies with international safety standards such as **IEC 61508** and **ISO 13849** through mechanisms like time monitoring, redundancy, and CRC (Cyclic Redundancy Check).
 <br>
 <br>
 
-## 2) Specifications
-### 2.1) EtherNet/IP
+### 2) Specifications
+#### 2.1) EtherNet/IP
 - **Digital Input:** 0 ~ 240 bytes
 - **Digital Output:** 0 ~ 240 bytes
 - **RPI (Requested Packet Interval):** 5 ~ 3000 msec
 - **Supported Communication Speed:** 10 or 100 Mbps
 
-### 2.2) CIP Safety
+#### 2.2) CIP Safety
 - **Safety I/O:** 8/8 bytes
 - **RPI (Requested Packet Interval):** 20 ~ 100 msec
 <br>
 <br>
 
-## 3) CIP Safety Parameters
+### 3) CIP Safety Parameters
 `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 3: CIP Safety]`<br>
 ![](../../../_assets/cipSafety/cipSafety_Parameters.png)
 
@@ -1568,7 +1566,7 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
  
    
 
-## 4) CIP Safety Configuration Procedure
+### 4) CIP Safety Configuration Procedure
 
 1) Establish connection between Hi7 EtherNet/IP Adapter and EtherNet/IP Scanner.
 2) Add EDS file via engineering tool (Studio 5000).
@@ -1580,13 +1578,13 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
 6) Assign safety signals.
 
 
-### 4.1) Connection between Hi7 EtherNet/IP Adapter and EtherNet/IP Scanner
+#### 4.1) Connection between Hi7 EtherNet/IP Adapter and EtherNet/IP Scanner
 ![](../../../_assets/cipSafety/connect.png)
 
-### 4.2) Adding EDS File via Engineering Tool (Studio 5000)
+#### 4.2) Adding EDS File via Engineering Tool (Studio 5000)
 - Install the EDS file (**Hi7_EIP_251023.eds**) using the **'Device Description File Installation Tool'**.
 
-### 4.3) CIP Safety Controller Configuration (Studio 5000)
+#### 4.3) CIP Safety Controller Configuration (Studio 5000)
 1) Launch **Studio 5000** and create a new project.
 2) In the **Controller Organizer**, select a controller that supports CIP Safety communication (e.g., CPU 1769-L30ERMS). Right-click on **Ethernet** and click **New Module**.
 3) Search for **"Hi7 EIP Adapter"** and click the **Create** button.<br>
@@ -1603,16 +1601,18 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
 - **Safety I/O:** 8 bytes each
 8) Do not configure the **"Configuration signature"**.
 9) Close the **Select Module Type** window.<br>
-
 ![CIP Safety](../../../_assets/cipSafety/Setting_module.png)
+
 10) Verify that the module has been added successfully.<br>
 ![CIP Safety](../../../_assets/cipSafety/module_added.png)
+
 11) Click the **Offline** button in the toolbar menu and then click **Download**.<br>
 ![CIP Safety](../../../_assets/cipSafety/download.png)
+
 12) After the configured values are downloaded, switch the **GuardLogix** toggle from **PROG** to **RUN** mode.
 
-### 4.4) Hi7 Configuration (TP UI)
-#### 4.4.1) EtherNet/IP Configuration
+#### 4.4) Hi7 Configuration (TP UI)
+##### 4.4.1) EtherNet/IP Configuration
 1) Navigate to **System → Control Parameters → Industrial Communication → EtherNet/IP Settings**.
 2) Set **Protocol** to **Adapter**.
 3) Set the LAN port for the EtherNet/IP Adapter to **LAN2**.
@@ -1620,7 +1620,7 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
 5) Do not change the remaining settings, leaving them as shown in the figure.<br>
 ![CIP Safety](../../../_assets/cipSafety/ethernetIP.png)
 
-#### 4.4.2) CIP Safety Configuration
+##### 4.4.2) CIP Safety Configuration
 1) Navigate to **System → 2: Control Parameters → 11: Industrial Communication → 6: Safety Communication → 3: CIP Safety**.
 2) Set the **Activation** button to **ON**.
 3) Set the **SNN** (e.g., 1111_2222_3333) to match the value configured in Studio 5000.
@@ -1628,25 +1628,25 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
 5) **Reboot** the robot controller.<br>
 ![CIP Safety](../../../_assets/cipSafety/cipSafety_Parameters.png)
 
-### 4.5) Verifying Communication Status
-#### 4.5.1) EtherNet/IP
+#### 4.5) Verifying Communication Status
+##### 4.5.1) EtherNet/IP
 1) Verify that the **License LED** is lit.
 2) Verify that the **Run LED** is lit.
 3) Verify that the **Communication LED** is lit.
 4) If the **Error LED** is lit, check the **Error Name** for details.<br>
 ![CIP Safety](../../../_assets/cipSafety/eip_status.png)
 
-#### 4.5.2) CIP Safety
+##### 4.5.2) CIP Safety
 1) Verify that **Safety Communication** is set to **"CIP Safety"**.
 2) Verify that the **Comm status** is in **"On-line, Connected"** state.
 3) Verify that the **IO Count** is continuously increasing.<br>
 ![CIP Safety](../../../_assets/cipSafety/cipsafety_status.png)
 
-### 4.6) Safety Signal Assignment
-#### 4.6.1) Assignment of CIP Safety I/O<br>
-* Refer to the **[3.3.3.3 Safety Signal Assignment](3-safety-function/3-safety-function/3-safety-io/3-Linker.md)** page.
+#### 4.6) Safety Signal Assignment
+##### 4.6.1) Assignment of CIP Safety I/O<br>
+* Refer to the **[3.3.4.3 Safety Signal Assignment](../4-safety-io/3-Linker.md)** page.
 
-#### 4.6.2) Examples of CIP Safety I/O Assignment
+##### 4.6.2) Examples of CIP Safety I/O Assignment
 1) CIP Safety Input (Direction: Master -> Slave)
 1ch(0 bit) = Arm Limit<br>
 ![CIP Safety](../../../_assets/cipSafety/alloc_in.png)<br>
@@ -1835,14 +1835,12 @@ If the values on the settings screen have not been saved, they may differ from t
 [__SOURCE](5-monitoring/README.md)
 # 5. Safety Status Monitoring
 
-Monitors safety function violations and the status of the Safety Control Module (SCM) board. You can check the information of the status of robot monitoring functions and safety input/output.
+Monitors safety function violations, safety I/O and safety communication status. 
 
-Check the `[System > 10: Safety System > 3: Monitoring]` menu.
+You can check the information of the status of robot monitoring functions and safety I/O in the `[System > 10: Safety System > 3: Monitoring]` menu.
 
-<p align="center">
-<img src="../_assets/5/mon_menu.png"></img>
-<em><p align="center">Safety Status Monitoring Menu</p></em>
-</p>
+The status of safety communication can be checked in the `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication]` menu.
+
 [__SOURCE](5-monitoring/1-robot-limit-parameter-monitoring.md)
 # 5.1 Robot Monitoring Function Monitoring
 

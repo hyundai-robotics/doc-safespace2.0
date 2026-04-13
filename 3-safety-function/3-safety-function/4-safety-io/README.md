@@ -2,7 +2,7 @@
 
 Basic Information on Safety Input/Output
 
-## Hi7's safety input/output can be divided as follows:
+Hi7's safety input/output can be divided as follows:
 
 - Basic Safety Input (4ch x dual input)
 - Extended Safety Input (8ch x dual input)

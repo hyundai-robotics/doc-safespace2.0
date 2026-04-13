@@ -2,12 +2,12 @@
 
 # 3.3.4.5 PROFIsafe
 
-## 1) PROFIsafe?
+### 1) PROFIsafe?
 - A safety protocol (safety profile) that operates on PROFINET/PROFIBUS.
 - Transmits safety data through standard PROFINET communication channels ('Black Channels').
 - Supports safety signal transmission without the need for additional wiring.
 
-## 2) PROFINET & PROFIsafe Specifications
+### 2) PROFINET & PROFIsafe Specifications
 - Digital Input: 50, 120, or 240 bytes (Select one)
 - Digital Output: 50, 120, or 240 bytes (Select one)
 - Safety I/O: 8/8 bytes (Enable or Disable)
@@ -17,7 +17,7 @@
 - Netload Class: II
 - Optional Features: Legacy, MRP
 
-## 3) PROFIsafe Parameters
+### 3) PROFIsafe Parameters
 
 `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe]`<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_param.png)
@@ -30,7 +30,7 @@
  - Reaction on Device_Fault: If this device enters a Fault state, all F-Outputs will change to the Fail-safe (0) state. Once the device's Fault state is resolved, a process of re-integrating the F-Device using a command such as Global-Acknowledge from the F-Host is required.
  
 
-## 4) PROFIsafe Configuration Procedure
+### 4) PROFIsafe Configuration Procedure
 
 1) Connection between BD671 and F-Host & Hi7 Com
 2) GSDML File Registration (TIA Portal)
@@ -45,9 +45,9 @@
 7) Assignment of PROFIsafe I/O Signals
 
 
-### 4.1) Connection between BD671 and F-Host & Hi7 Com
+#### 4.1) Connection between BD671 and F-Host & Hi7 Com
 
-#### 4.1.1) LAN Cable Connection
+##### 4.1.1) LAN Cable Connection
 1) Connect the "PROFIsafe F-Host" and the BD671 using a LAN cable.
 2) Verify that the Link LED is flashing.
 3) Connect the LAN3 connector of the Hi7 COM and the BD671 using a LAN cable.
@@ -55,7 +55,7 @@
 
 ![](../../../_assets/safetyio_profisafe/profisafe_connect.png)
 
-#### 4.1.2) Hi7 Com Connection Settings
+##### 4.1.2) Hi7 Com Connection Settings
 1) Navigate to the following menu: **System -> Control Parameters -> Industrial Communication -> EtherCAT Master Settings**
 2) Configure the settings as follows:
 - EtherCAT Master: ON
@@ -69,7 +69,7 @@
 ![](../../../_assets/safetyio_profisafe/EC_master_setting2.png)
 
 
-### 4.2) GSDML File Registration (TIA Portal)
+#### 4.2) GSDML File Registration (TIA Portal)
 1) Launch TIA Portal.
 2) Navigate to the menu as shown on the right: **[Options] → [Manage general station description file (GSD)]**.
 3) Click the **"..."** button and select the directory where the GSDML file is located.
@@ -77,8 +77,8 @@
 5) Verify that the file has been registered as a new device in the Hardware Catalog. <br>
 ![](../../../_assets/safetyio_profisafe/profisafe_gsdmal.png)
 
-### 4.3) PROFIsafe Controller Configuration (TIA Portal)
-#### 4.3.1) PROFINET Configuration
+#### 4.3) PROFIsafe Controller Configuration (TIA Portal)
+##### 4.3.1) PROFINET Configuration
 1) Launch TIA Portal and create a new project.
 2) Double-click **Devices & Networks** to open it.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network.png)
@@ -101,7 +101,7 @@
 14) Set the **"PROFINET device name"** to **"hd-hrc-hi7"** and save the changes.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network4.png)
 
-#### 4.3.2) PROFIsafe Configuration
+##### 4.3.2) PROFIsafe Configuration
 1) Double-click the HRC-IO device in the **"Devices & Networks"** view.
 2) Select the PROFIsafe slot in the **"Device Overview"** window on the right.
 3) The PROFIsafe communication settings will appear in the bottom pane.
@@ -109,8 +109,8 @@
 5) Set **F_Dest_Add** to 1.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network5.png)
 
-### 4.4) Hi7 Configuration (TP UI)
-#### 4.4.1) PROFINET Configuration
+#### 4.4) Hi7 Configuration (TP UI)
+##### 4.4.1) PROFINET Configuration
 1) Configure the parameters with the same values set in the F-Host:
 - PROFINET IO Device Name: hd-hrc-hi7
 - Slot 1: Digital Input: 240
@@ -119,21 +119,21 @@
 2) Press the **"Apply"** button.<br>
 ![](../../../_assets/safetyio_profisafe/4_1_profinet_config.png)
 
-#### 4.4.2) PROFIsafe Configuration
+##### 4.4.2) PROFIsafe Configuration
 
 1) Set the **Target Address** to 1, using the same value configured in the previous section.
 2) Press the **"Apply"** button.<br>
 ![](../../../_assets/safetyio_profisafe/4_2_profisafe_config.png)
 
-### 4.5) Verification of PROFINET and PROFIsafe Communication
+#### 4.5) Verification of PROFINET and PROFIsafe Communication
 
-### 4.5.1) Safety Ladder Program (TIA Portal)
+#### 4.5.1) Safety Ladder Program (TIA Portal)
 1) In the **Device Overview** tab, create a ladder program as shown below and download it to the controller.<br>
 ![](../../../_assets/safetyio_profisafe/5_1_Safety_Ladder.png)
 2) After downloading, verify that a green check box is displayed on the **Distributed I/O** screen.<br>
 ![](../../../_assets/safetyio_profisafe/5_1_Safety_Ladder2.png)
 
-### 4.5.2) TP Screen
+#### 4.5.2) TP Screen
 1) PROFINET <br>
 Navigate to **System -> 2: Control Parameters -> 11: Industrial Communication -> 5: PROFINET Settings** from the menu.<br>
 ![](../../../_assets/safetyio_profisafe/5_2_pnio_status.png)
@@ -146,7 +146,7 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
 - Verify that **FappState** is set to **CYCLE Data EX**.
 - Verify that the **Counter** is continuously increasing.
 
-### 4.6) Assignment of PROFINET I/O Signals (FB Block Settings)
+#### 4.6) Assignment of PROFINET I/O Signals (FB Block Settings)
 1) Navigate to **System → Control Parameters → I/O Signal Settings → FB Block Assignment**.
 2) Change the block settings to **PROFINET I/O** as needed, up to a maximum of 2 blocks.
  (The maximum PROFINET I/O size is 240 bytes, and each individual FB block size is 120 bytes. Therefore, **any settings exceeding 2 blocks will be ignored.**)<br>
@@ -157,7 +157,7 @@ Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6:
 4) Verify the I/O signals in the **TIA Portal** and on the **General I/O** screen.<br>
 ![](../../../_assets/safetyio_profisafe/6_3_public_io.png)
 
-### 4.7) Assignment of PROFIsafe I/O Signals
+#### 4.7) Assignment of PROFIsafe I/O Signals
 1) Assignment of PROFIsafe I/O Signals
 * Refer to the **[3.3.4.3 Safety Signal Assignment](../4-safety-io/3-Linker.md)** page.
 
