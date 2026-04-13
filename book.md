@@ -812,7 +812,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 | Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
 | Motion tuning | <p>Tuning to a motion that does not exceed the TCP speed limit</p><p>(Enable / Disable)</p> | Disable |
 | Replan | <p>Whether to use the speed adjustment function according to the input signal</p><p>(Enable / Disable)</p> | Disable |
-| <p>Limit</p><p>[mm/s]</p> | <p>TCP speed limit value</p><p>(0 ~ 50000)</p> | 50000 |
+| <p>Limit</p><p>[mm/s]</p> | <p>TCP speed limit value</p><p>(1 ~ 50000)</p> | 50000 |
 | <p>Rate</p><p>[%]</p> | <p>Deceleration ratio to use when readjusting speed</p><p>(0 ~ 100)</p> | 100 |
 | <p>Delay time</p><p>[ms]</p> | <p>When changing speed through readjustment, monitor with the changed speed limit value after the delay time </p><p>(0 ~ 1000)</p> | 1000 |
 | <p>Signal</p><p>[Type, Number]</p> | <p>Input signal for speed readjustment</p><p>( [None, -] / [Safety input, 1~8] / [Safety communication, 1~64] )</p> | 0 |
@@ -838,7 +838,7 @@ When the external force applied to the robot exceeds the allowable value, it is 
 | Activation | <p>Function activation status</p><p>(OFF/ON/Safety Input)</p> |   OFF  |
 | Stop function |   <p>Stop method when the function is violated</p><p>(Stop 0, Stop 1, Stop 2, Non-stop)</p>  | Stop 1 |
 | Joint ON/OFF |   <p>Activation status of each joint</p><p>(ON/OFF)</p>  |  OFF |
-| Sensitivity |   <p>Detection sensitivity for each joint</p><p>(0 ~ 200(%))</p>  |  100 |
+| Sensitivity |   <p>Detection sensitivity for each joint</p><p>(1 ~ 200(%))</p>  |  100 |
 
 {% hint style="warning" %}
 <strong>[Caution]</strong> Since the robot's impact force can increase in proportion to kinetic energy when the speed is high and the payload is large, considerable impact may occur if the robot collides with an external object. In the collaborative space, operate while maintaining the safe speed and payload.
@@ -862,7 +862,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 |  **Parameter** |                       **Description**                       |  **Default Setting**  |
 | :-------: | :------------------------------------------------: | :----------: |
 | Re plan | <p>Whether to use the speed control function according to the input signal</p><p>(Enable / Disable)</p> | Disable |
-| <p>Delay time</p><p>[ms]</p> | <p>When changing the speed with Re plan, monitor the changed speed limit value after the delay time </p><p>(0 ~ 50000)</p> | 2000 |
+| <p>Delay time</p><p>[ms]</p> | <p>When changing the speed with Re plan, monitor the changed speed limit value after the delay time </p><p>(0 ~ 2000)</p> | 2000 |
 | <p>Speed limit value</p><p>[mm/s]</p> | <p>TCP speed limit value after Re plan</p><p>(0 ~ 50000)</p> | 50000 |
 | <p>Speed ratio</p><p>[%]</p> | <p>Deceleration ratio to use when Re plan</p><p>(0 ~ 100)</p> | 100 |
 | <p>Input signal</p><p>[Type, Number]</p> | <p>Input signal for Re plan</p><p>( [None, -] / [default input, 3] / [additional input, 0~7] / [safety input, 0~63])</p> | 0 |
@@ -982,10 +982,10 @@ You can set the parameter values   for the safety zone in each tab of the `[Syst
 
 |  **Parameter** |                       **Description**                       |  **Default Setting**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| <p>Z Min / Max</p><p>[mm]</p> | <p>Height of the safe area based on the robot coordinate system</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
+| <p>Z Min / Max</p><p>[mm]</p> | <p>Height of the safe area based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
 | Enable | <p>Whether to enable the vertex of the safe area</p><p>(Enable / Disable)</p> | Disable |
-| <p>X</p><p>[mm]</p> | <p>X-direction position of the vertex based on the robot coordinate system</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
-| <p>Y</p><p>[mm]</p> | <p>Y-direction position of the vertex based on the robot coordinate system</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
+| <p>X</p><p>[mm]</p> | <p>X-direction position of the vertex based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
+| <p>Y</p><p>[mm]</p> | <p>Y-direction position of the vertex based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
 
 
 
@@ -1032,9 +1032,9 @@ You can set parameter values   in the `[System > 10: Safety System > 2: Paramete
 | <p>Radius</p><p>[mm]</p> | <p>Radius</p><p>(0.0 ~ 3000.0)</p> | 0 |
 | <p>Height</p><p>[mm]</p> | <p>Height of plate</p><p>(0.0 ~ 5000.0)</p> | 0 |
 | <p>Width</p><p>[mm]</p> | <p>Width of plate</p><p>(0.0 ~ 5000.0)</p> | 0 |
-| <p>X</p><p>[mm]</p> | <p>Model center position in X direction</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
-| <p>Y</p><p>[mm]</p> | <p>Model center position in Y direction</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
-| <p>Z</p><p>[mm]</p> | <p>Model center position in Z direction</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
+| <p>X</p><p>[mm]</p> | <p>Model center position in X direction</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
+| <p>Y</p><p>[mm]</p> | <p>Model center position in Y direction</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
+| <p>Z</p><p>[mm]</p> | <p>Model center position in Z direction</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
 | <p>Rot.X</p><p>[deg]</p> | <p>X direction in flange coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |
 | <p>Rot.Y</p><p>[deg]</p> | <p>Y direction in flange coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |
 | <p>Rot.Z</p><p>[deg]</p> | <p>Z direction in flange coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |
@@ -1102,7 +1102,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 | <p>Org.Rx</p><p>[deg]</p> | <p>Rotation amount of reference vector relative to X direction</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
 | <p>Org.Ry</p><p>[deg]</p> | <p>Rotation amount of reference vector relative to Y direction</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
 | <p>Org.Rz</p><p>[deg]</p> | <p>Rotation of reference vector relative to Z direction</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
-| Deviation angle | <p>Tool orientation limit</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
+| Deviation angle | <p>Tool orientation limit</p><p>(1.0 ~ 179.9)</p> | 0.0 |
 | Load current position <br> | Create reference vector with current robot pose | - |
 
 

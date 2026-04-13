@@ -23,7 +23,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 | <p>Org.Rx</p><p>[deg]</p> | <p>Rotation amount of reference vector relative to X direction</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
 | <p>Org.Ry</p><p>[deg]</p> | <p>Rotation amount of reference vector relative to Y direction</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
 | <p>Org.Rz</p><p>[deg]</p> | <p>Rotation of reference vector relative to Z direction</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
-| Deviation angle | <p>Tool orientation limit</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
+| Deviation angle | <p>Tool orientation limit</p><p>(1.0 ~ 179.9)</p> | 0.0 |
 | Load current position <br> | Create reference vector with current robot pose | - |
 
 

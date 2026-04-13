@@ -37,9 +37,9 @@ You can set parameter values   in the `[System > 10: Safety System > 2: Paramete
 | <p>Radius</p><p>[mm]</p> | <p>Radius</p><p>(0.0 ~ 3000.0)</p> | 0 |
 | <p>Height</p><p>[mm]</p> | <p>Height of plate</p><p>(0.0 ~ 5000.0)</p> | 0 |
 | <p>Width</p><p>[mm]</p> | <p>Width of plate</p><p>(0.0 ~ 5000.0)</p> | 0 |
-| <p>X</p><p>[mm]</p> | <p>Model center position in X direction</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
-| <p>Y</p><p>[mm]</p> | <p>Model center position in Y direction</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
-| <p>Z</p><p>[mm]</p> | <p>Model center position in Z direction</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
+| <p>X</p><p>[mm]</p> | <p>Model center position in X direction</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
+| <p>Y</p><p>[mm]</p> | <p>Model center position in Y direction</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
+| <p>Z</p><p>[mm]</p> | <p>Model center position in Z direction</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
 | <p>Rot.X</p><p>[deg]</p> | <p>X direction in flange coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |
 | <p>Rot.Y</p><p>[deg]</p> | <p>Y direction in flange coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |
 | <p>Rot.Z</p><p>[deg]</p> | <p>Z direction in flange coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |

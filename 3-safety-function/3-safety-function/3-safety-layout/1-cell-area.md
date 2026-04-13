@@ -54,10 +54,10 @@ You can set the parameter values   for the safety zone in each tab of the `[Syst
 
 |  **Parameter** |                       **Description**                       |  **Default Setting**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| <p>Z Min / Max</p><p>[mm]</p> | <p>Height of the safe area based on the robot coordinate system</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
+| <p>Z Min / Max</p><p>[mm]</p> | <p>Height of the safe area based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
 | Enable | <p>Whether to enable the vertex of the safe area</p><p>(Enable / Disable)</p> | Disable |
-| <p>X</p><p>[mm]</p> | <p>X-direction position of the vertex based on the robot coordinate system</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
-| <p>Y</p><p>[mm]</p> | <p>Y-direction position of the vertex based on the robot coordinate system</p><p>(-5000.0 ~ 5000.0)</p> | 0 |
+| <p>X</p><p>[mm]</p> | <p>X-direction position of the vertex based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
+| <p>Y</p><p>[mm]</p> | <p>Y-direction position of the vertex based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
 
 
 

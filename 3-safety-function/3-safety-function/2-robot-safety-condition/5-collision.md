@@ -14,7 +14,7 @@ When the external force applied to the robot exceeds the allowable value, it is 
 | Activation | <p>Function activation status</p><p>(OFF/ON/Safety Input)</p> |   OFF  |
 | Stop function |   <p>Stop method when the function is violated</p><p>(Stop 0, Stop 1, Stop 2, Non-stop)</p>  | Stop 1 |
 | Joint ON/OFF |   <p>Activation status of each joint</p><p>(ON/OFF)</p>  |  OFF |
-| Sensitivity |   <p>Detection sensitivity for each joint</p><p>(0 ~ 200(%))</p>  |  100 |
+| Sensitivity |   <p>Detection sensitivity for each joint</p><p>(1 ~ 200(%))</p>  |  100 |
 
 {% hint style="warning" %}
 <strong>[Caution]</strong> Since the robot's impact force can increase in proportion to kinetic energy when the speed is high and the payload is large, considerable impact may occur if the robot collides with an external object. In the collaborative space, operate while maintaining the safe speed and payload.
