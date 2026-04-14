@@ -24,6 +24,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 </p>
 
 {% hint style="warning" %}
+* The Emergency Stop (EX_EM) and Safety Guard (SGG or SGA) signals are mandatory and must always be selected.<br>
 * An individual input function item can only be connected to a single input channel.<br>
 * "Basic Safety Input", "Additional Safety Input", and "Safety Communication Input" cannot be assigned in duplication mutually.<br>
 * If duplicate input settings are made, the "E52030 (x ch) Safety input allocation duplication" error occurs.
