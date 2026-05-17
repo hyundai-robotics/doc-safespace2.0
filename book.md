@@ -5,13 +5,13 @@
 [__SOURCE](about-this-manual/README.md)
 # About This Manual
 
-This manual describes safety, installation, use, and maintenance methods for Hyundai Robotics SafeSpace2.0.
+This manual describes safety, installation, use, and maintenance methods for HD Hyundai Robotics SafeSpace2.0.
 
 Be sure to fully familiarize yourself with the contents of the manual before using the product. Also, keep the manual in a nearby location so you can refer to it whenever needed.
 
-This manual may be provided to customers who purchase Hyundai Robotics products for reference or as internal training materials for education.
+This manual may be provided to customers who purchase HD Hyundai Robotics products for reference or as internal training materials for education.
 
-This manual is written based on standard specifications, so some contents may differ depending on the model of the product you purchased. Also, the contents and specifications of this manual may be changed without notice to improve product performance, and Hyundai Robotics is not responsible for situations caused by inaccurate content or typographical errors. For detailed information on revisions, please visit our website ([www.hyundai-robotics.com](https://www.hyundai-robotics.com)).
+This manual is written based on standard specifications, so some contents may differ depending on the model of the product you purchased. Also, the contents and specifications of this manual may be changed without notice to improve product performance, and HD Hyundai Robotics is not responsible for situations caused by inaccurate content or typographical errors. For detailed information on revisions, please visit [HD Hyundai Robotics Official Website](https://www.hd-hyundairobotics.com/en/main).
 
 The products to which this manual applies are as follows:
 
@@ -1230,9 +1230,9 @@ You can set parameter values in the `[System > 10: Safety System > 2: Parameter 
 
 
 [__SOURCE](3-safety-function/3-safety-function/4-safety-io/3-Linker.md)
-# 3.3.4.3 Safety Signal Assignment
+# 3.3.4.3 Safety Signal Allocation
 
-The Safety signal assignment function serves to connect external signals such as safety input/output, additional safety input/output, and safety communication input/output with various logical signals (system safety input/output, safety application signals) that the robot controller has.
+The Safety signal allocation function serves to connect external signals such as safety input/output, additional safety input/output, and safety communication input/output with various logical signals (system safety input/output, safety application signals) that the robot controller has.
 You can set the parameter values in the `[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 1: I/O Allocation]` menu.
 
 ![](../../../_assets/safety_io/SIO_Alloc_diagram1.bmp)
@@ -1241,24 +1241,25 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 -------------------------------------------------------------------------
 
-### 1) Adding Safety Signal Assignment
+### 1) Adding Safety Signal Allocation
 1) Press the `[Add]` button.
 2) Select the desired function from the function list.
 3) If a sub-index is required, enter the sub-index number.
 
-### 2) Deleting Safety Signal Assignment
-1) Select an already set assignment function on the list.
+### 2) Deleting Safety Signal Allocation
+1) Select an already set allocation function on the list.
 2) Press the `[del]` button.
 
 <p align="center">
 <img src="../../../_assets/safety_io/io_alloc_param1.png"></img>
-<em><p align="center">Safety Signal Assignment Settings Screen</p></em>
+<em><p align="center">Safety Signal allocation Settings Screen</p></em>
 </p>
 
 {% hint style="warning" %}
+* The Emergency Stop (EX_EM) and Safety Guard (SGG or SGA) signals are mandatory and must always be selected.<br>
 * An individual input function item can only be connected to a single input channel.<br>
 * "Basic Safety Input", "Additional Safety Input", and "Safety Communication Input" cannot be assigned in duplication mutually.<br>
-* If duplicate input settings are made, the "E52030 (x ch) Safety input assignment duplication" error occurs.
+* If duplicate input settings are made, the "E52030 (x ch) Safety input allocation duplication" error occurs.
 
 {% endhint %}
 
@@ -1270,7 +1271,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 | :-------: | :------------------------------------------------: |
 | Safety Input Channel 1 | External Emergency Stop Input (Emergency) |
 | Safety Input Channel 2 | Safety Guard General Input (SGG)|
-| Safety Input Channel 3 | Safety Guard Auto Input (SGA)|
+| Safety Input Channel 3 | - |
 | Safety Input Channel 4 | - |
 | Safety Output Channel 1 | Emergency Stop Activation Status|
 
@@ -2075,4 +2076,4 @@ The industrial robot in question should be installed in consideration of the ins
 [__SOURCE](warranty.md)
 # Quality Assurance
 
-"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/korean/README)"
+"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/en/README)"
