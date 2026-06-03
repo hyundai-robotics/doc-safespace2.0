@@ -1,4 +1,8 @@
-﻿
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["HI6"]
+}
+</script>
 
 # 3.3.4.5 PROFIsafe
 

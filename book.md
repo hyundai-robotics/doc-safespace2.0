@@ -1381,7 +1381,11 @@ Hi7의 안전 입출력은 다음과 같이 나뉠 수 있습니다.
 ![](../../../_assets/safe_comm_select.png)
 
 [__SOURCE](3-safety-function/3-safety-function/4-safety-io/5-profisafe.md)
-
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["HI6"]
+}
+</script>
 
 # 3.3.4.5 PROFIsafe
 
