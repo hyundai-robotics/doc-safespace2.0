@@ -1348,6 +1348,11 @@ You can configure the parameter values in the `[System > 2: Control Parameters >
 ![](../../../_assets/safe_comm_select.png)
 
 [__SOURCE](3-safety-function/3-safety-function/4-safety-io/5-profisafe.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["HI6"]
+}
+</script>
 
 
 # 3.3.4.5 PROFIsafe
