@@ -2,123 +2,23 @@
 [__SOURCE](README.md)
 # Hi7 Controller Function Manual - SafeSpace2.0
 
-[__SOURCE](about-this-manual/README.md)
-# About This Manual
+[__SOURCE](0-about-this-manual/README.md)
+# About the Manual
 
-This manual describes safety, installation, use, and maintenance methods for HD Hyundai Robotics SafeSpace2.0.
-
-Be sure to fully familiarize yourself with the contents of the manual before using the product. Also, keep the manual in a nearby location so you can refer to it whenever needed.
-
-This manual may be provided to customers who purchase HD Hyundai Robotics products for reference or as internal training materials for education.
-
-This manual is written based on standard specifications, so some contents may differ depending on the model of the product you purchased. Also, the contents and specifications of this manual may be changed without notice to improve product performance, and HD Hyundai Robotics is not responsible for situations caused by inaccurate content or typographical errors. For detailed information on revisions, please visit [HD Hyundai Robotics Official Website](https://www.hd-hyundairobotics.com/en/main).
-
-The products to which this manual applies are as follows:
-
-|     **Item**    |  **Name** | **Version** |
-| :-----------: | :-----: | :----: |
-| Teach Pendant | TP630 | V8.0 |
-| Controller | Hi7 | V7.0 |
-| Safety Control Module | BD642 | V08 |
-| PROFIsafe Communication Board | BD671 | V06 |
-
-[__SOURCE](about-this-manual/precautions.md)
+[__SOURCE](0-about-this-manual/precautions.md)
 # Precautions
 
 {% include file="en/precautions.md" %}
 
-[__SOURCE](about-this-manual/notation.md)
-# Notation Conventions
+[__SOURCE](0-about-this-manual/safety-notice.md)
+# Safety Cautions
 
-This manual uses the following notation conventions and safety instructions to help understanding of the content.
-
-### Figure Description
-
-Figures are used to help understand product operation methods and explain screens. When figures are described, numbers are marked on the corresponding parts and the corresponding content is explained.
-
-![](../_assets/pane-prog-cmd-param.png)
-
-### GUI \(Graphical User Interface\)
-
-GUI displays menu names and button names in bold within brackets \(\[ \]\). When multiple menus should be selected in order, the &gt; symbol is placed between names.
-
-* Named menu: From the initial screen of manual or auto mode, select the \[__Menu__\] button.
-* Multiple menus: From the initial screen of manual mode, select \[__System__\] button > &gt; \[5: __Initialization__ &gt; > 7: __Unit Settings__\] menu.
-
-
-
-### Operation Key Notation
-
-Keys to be pressed on the operation panel of the teach pendant for function operation are displayed in bold within angle brackets\(&lt; &gt;\).
-
-* &lt;__Start__&gt; Pressing a key starts the automatic operation of the program written in the robot.
-
-### Cross-reference
-
-Provides shortcuts to related information within the manual. Cross-references are indicated in bold with quotation marks \(" "\).
-
-* For more information about changing date and time information, see "[4.5 Date and Time Settings](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/4-service/5-date-time-setting?cont_model=Hi7)" in the "[Hi7 Controller Operation Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=Hi7)".
-
-### Notes
-
-Provides useful or additional information that is good to know when using the product.
-
-{% hint style="info" %}
-If the <img src="../_assets/engineer.png"></img> icon is blinking in the status bar, you are in engineer mode.
-{% endhint %}
-
-
-
-###
-[__SOURCE](about-this-manual/safety-notice.md)
-# Safety Precautions
-
-To ensure proper use of the product and user safety and prevent property damage, be sure to familiarize yourself with the following safety precautions before using the product.
-
-### <mark style="color:green;">Danger</mark>
-
-{% hint style="danger" %}
-<strong>[Danger] Imminent hazard</strong>: Failure to comply may result in death or serious injury to workers.
-{% endhint %}
-
-* Conduct a risk assessment for the entire system, not individual devices. Connecting other devices to the product may increase the risk of the product or create new risks. When each device in the integrated robot system has a different risk level, prepare safety devices based on the device with the highest risk level to prepare for danger.
-* Familiarize yourself with the product installation content described in the manual and install the robot product and other devices in compliance with the instructions.
-* If a problem such as a product failure or damage occurs, immediately stop using it and contact the customer support team.
-
-### <mark style="color:green;">Warning</mark>
+{% include file="en/safety-notice.md" %}
 
 {% hint style="warning" %}
-<strong>[Warning] Potential hazard</strong>: If not observed, the worker may be injured or the product may be severely damaged, resulting in property damage. Failure to comply may result in injury to workers, serious damage to products, or property damage.
+- Control through external communication commands and applications is not a safety function and shall not be used as a substitute for a safety-related control system.
+- Safety functions such as SafeSpace and Soft Joint are supplementary risk-reduction measures and do not replace external safety fencing, interlocks, or risk assessments.
 {% endhint %}
-
-* Take appropriate safety measures according to the risk assessment results and accurately designate the robot safety installation range. Otherwise, the product may be damaged or the user may be injured while the robot is operating.
-* The robot application system manufacturers and robot users should familiarize themselves with the manual's contents and complete the product operation training.
-* For the safety of workers and users, be sure to prepare appropriate safety facilities such as safety fences before installing the product.
-* Secure sufficient space so that the robot arm can move freely. If installation space is not sufficient, the product may be damaged or the user may be injured while the robot is operating.
-* Check the specification information and use appropriate fixing screws and tighten them with specified torque. If screws are loose, the robot may separate from the installation location and fall or be damaged.
-* Be careful not to allow liquids, dust, metal powder, or other conductive foreign substances enter the product's connections (power and cables). Also, do not stab the connections with sharp objects or apply excessive force when connecting cables. Otherwise, the product may explode or catch fire due to corrosion or temporary short circuit of connection terminals.
-* Check the wiring information and connect devices using appropriate terminals by device type. In particular, safety devices must be connected to safety device terminals as connecting them to general-purpose terminals cannot guarantee safety functions.
-* Never use damaged cables and do not disconnect power while using the product. Otherwise, electric shock, fire, failure, or injury may be caused.
-* Using the product for a long time generates heat, which poses a risk of injury such as burns. When you need to touch the product after prolonged use, turn off the power and leave it in that state for more than 1 hour to sufficiently cool it down before working.
-* Never install, modify, disassemble, or repair the product without authorization. Otherwise, failure and accidents may be caused. Also, we are not responsible for damage and breakage of the product resulting from this.
-
-### <mark style="color:green;">Caution</mark>
-
-{% hint style="warning" %}
-<strong>[Caution] Low-risk factors</strong>: Failure to comply may result in minor injury to workers or property damage, including product damage.
-{% endhint %}
-
-* Do not install, modify, disassemble, or repair the product without authorization. Also, it is prohibited for anyone other than our experts to modify the product or attach parts without authorization. Otherwise, in case of product failure, you cannot receive free service or quality assurance service.
-* When installing and repairing the product, contact the customer support team to request an expert.
-* Do not install and use the product in dusty or dirty places. Otherwise, the product may fail or have a performance problem due to dust or foreign substances.
-* Do not install and use the product in magnetic places, places affected by magnetism, or places with electromagnetic interference. Otherwise, the product may be damaged or have a performance problem due to magnetism.
-* When operating the product, do not wear loose clothing or jewelry, and if you have long hair, tie it back to avoid getting the hair caught in the robot's joints, etc.
-* Do not enter the operating range or touch the robot while the product is operating. There is a risk of injury.
-* Transport the product in its packaged state to avoid damage and store it in a dry location with low humidity. The product may be damaged or fail due to moisture inside the packaging material.
-* Store the product in a clean, cool, and dry place, avoiding places where temperature and humidity change easily.
-* When transporting the product, maintain proper posture and work with two or more people. You may suffer injuries to body parts such as your waist, arms, or legs.
-* When transporting the product using lifting equipment, comply with the safety regulations and equipment usage guidelines of the relevant country and region.
-* Familiarize yourself with the transport content in the manual and transport the product in compliance with the instructions. We are not responsible for damage and breakage of the product caused by the customer transporting the product.
 
 [__SOURCE](1-safety/README.md)
 # 1. Safety

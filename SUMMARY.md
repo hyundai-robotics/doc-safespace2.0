@@ -1,10 +1,9 @@
 ﻿# Table of contents
 
 * [Hi7 Controller Function Manual - SafeSpace2.0](README.md)
-* [About This Manual](about-this-manual/README.md)
-  * [Precautions](about-this-manual/precautions.md)
-  * [Notation Conventions](about-this-manual/notation.md)
-  * [Safety Precautions](about-this-manual/safety-notice.md)
+* [About the Manual](0-about-this-manual/README.md)
+  * [Precautions](0-about-this-manual/precautions.md)
+  * [Safety Cautions](0-about-this-manual/safety-notice.md)
 * [1. Safety](1-safety/README.md)
   * [1.1 Safety Requirements](1-safety/1-safety-requirements/README.md)
     * [1.1.1 Applicable Standards](1-safety/1-safety-requirements/1-applicable-standards.md)
