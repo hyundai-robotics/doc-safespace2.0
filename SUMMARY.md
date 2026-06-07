@@ -1,10 +1,9 @@
 ﻿# Table of contents
 
 * [Hi7 控制器功能手册 - SafeSpace2.0](README.md)
-* [关于本手册](about-this-manual/README.md)
-  * [注意事项](about-this-manual/precautions.md)
-  * [表示法约定](about-this-manual/notation.md)
-  * [安全预防措施](about-this-manual/safety-notice.md)
+* [关于手册](0-about-this-manual/README.md)
+  * [注意事项](0-about-this-manual/precautions.md)
+  * [安全注意事项](0-about-this-manual/safety-notice.md)
 * [1. 安全](1-safety/README.md)
   * [1.1 安全要求](1-safety/1-safety-requirements/README.md)
     * [1.1.1 适用标准](1-safety/1-safety-requirements/1-applicable-standards.md)
