@@ -1,22 +1,20 @@
-﻿# 1.1.2 Safety Performance
+# 1.1.2 安全性能
 
-The safety performance of SafeSpace2.0's emergency stop and external device interface (basic safety input/output, PROFIsafe) is as follows:
-|            **Item**            | **Safety Performance** |         **Applicable Standard**         |
+SafeSpace2.0 的紧急停止和外部设备接口（基本安全输入/输出，PROFIsafe）的安全性能如下：
+|            **项目**            | **安全性能** |         **适用标准**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
-| SIL (Safety Integrity Level) |     3     | IEC 61508/62061/61800-5-2 |
-|           Category           |     4     |        ISO 13849-1        |
-|    PL (Performance Level)    |     e     |        ISO 13849-1        |
+| SIL (安全完整性等级) |     3     | IEC 61508/62061/61800-5-2 |
+|           类别           |     4     |        ISO 13849-1        |
+|    PL (性能等级)    |     e     |        ISO 13849-1        |
 |    		PFH    			   |  1.5E-08  |         IEC 61508         |
 
 
-The safety performance of other safety functions is as follows:
-|            **Item**            | **Safety Performance** |         **Applicable Standard**         |
+其他安全功能的安全性能如下：
+|            **项目**            | **安全性能** |         **适用标准**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
-| SIL (Safety Integrity Level) |     2     | IEC 61508/62061/61800-5-2 |
-|           Category           |     3     |        ISO 13849-1        |
-|    PL (Performance Level)    |     d     |        ISO 13849-1        |
+| SIL (安全完整性等级) |     2     | IEC 61508/62061/61800-5-2 |
+|           类别           |     3     |        ISO 13849-1        |
+|    PL (性能等级)    |     d     |        ISO 13849-1        |
 |    		PFH    			   |  1.5E-07  |         IEC 61508         |
-
-

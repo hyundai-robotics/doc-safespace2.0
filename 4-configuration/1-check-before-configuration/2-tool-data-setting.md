@@ -1,14 +1,14 @@
-﻿# 4.1.3 Tool Data Setting
+﻿# 4.1.3 工具数据设置
 
-Safety features monitor the entire robot system, including tools attached to the robot flange. Therefore, the smaller the error between the tool data and actual values, the more accurately the safety function operates. Set the tool length and angle based on the flange coordinate system and enter the tool weight, center of gravity, and inertia information in accordance with individual units.
+安全功能监控整个机器人系统，包括连接到机器人法兰的工具。因此，工具数据与实际值之间的误差越小，安全功能的运行就越准确。根据法兰坐标系统设置工具的长度和角度，并根据各自单位输入工具重量、重心和惯性信息。
 
-1. Set the operation mode to manual mode.
-2. Press the emergency stop switch to cut off the power to the motors.
-3. Touch the `[Settings]` button > `[3: Robot Parameters > 1: Tool Data]` menu.
-4. Check the data for each axis and set the tool weight, center of gravity, and inertia, then touch the `[OK]` button to save.
-5. Apply the updated tool data to the safety tool data. For more information about safety tool data, see "[3.3.1.3 Safety Tool Information](../../3-safety-function/3-safety-function/1-general-condition/3-safe-tool-info.md)".
+1. 将操作模式设置为手动模式。
+2. 按下紧急停止开关以切断电机的电源。
+3. 点击`[设置]`按钮 > `[3: 机器人参数 > 1: 工具数据]`菜单。
+4. 检查每个轴的数据并设置工具重量、重心和惯性，然后点击`[确定]`按钮以保存。
+5. 将更新后的工具数据应用于安全工具数据。有关安全工具数据的更多信息，请参见"[3.3.1.3 安全工具信息](../../3-safety-function/3-safety-function/1-general-condition/3-safe-tool-info.md)"。
 
 {% hint style="info" %}
-* If information about the tool's weight and center of gravity isn't available, you can use the load estimation function to estimate the values. 
-* For detailed information on setting tool data, refer to the "[7.4.1 Tool Data](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/4-robot-parameter/1-tool-data/README?cont_model=Hi7)" in the "[Hi7 Controller Operation Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=Hi7)."
+* 如果没有工具的重量和重心信息，可以使用负载估算功能来估算这些值。
+* 有关设置工具数据的详细信息，请参阅"[7.4.1 工具数据](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/zh-tp630/7-system/4-robot-parameter/1-tool-data/README?cont_model=Hi7)"在"[Hi7 控制器操作手册](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/zh-tp630/README?cont_model=Hi7)"中。
 {% endhint %}

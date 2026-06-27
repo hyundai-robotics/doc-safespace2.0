@@ -1,29 +1,29 @@
-﻿# 1.7.4 Workcell 3D
+﻿# 1.7.4 工作单元 3D
 
-Directly monitors the parameters set in the safety layout in Workcell 3D. Workcell 3D visualizes safety areas, tool modeling, and robot modeling set in the safety layout in 3D so you can check the settings. It also reflects the robot's position in real-time so you can check whether the robot violates safety.
+直接监控工作单元 3D 中安全布局设置的参数。工作单元 3D 以 3D 可视化安全区域、工具建模和机器人建模，以便您可以检查设置。它还实时反映机器人的位置，以便您检查机器人是否违反安全。
 
-You can activate the Workcell 3D function in the panel selection window of the work program work area.
+您可以在作业程序工作区域的面板选择窗口中激活工作单元 3D 功能。
 
-1\. Touch the **\[+]** button at the upper right of the work area panel stack.
+1\. 触摸工作区域面板堆栈右上角的 **\[+]** 按钮。
 
 ![](../../_assets/image41.jpeg)
 
-2\. Touch **\[workcell]** in the panel selection window. The robot's current posture appears on the 3D screen.
+2\. 触摸面板选择窗口中的 **\[workcell]**。机器人的当前姿势将出现在 3D 屏幕上。
 
 ![](../../_assets/image42.jpeg)
 
 {% hint style="info" %}
-* * All items that can be monitored appear in the panel selection window.
-* * Items that can be monitored appear differently depending on the controller settings.
+* * 所有可以监控的项目都会出现在面板选择窗口中。
+* * 可以监控的项目根据控制器设置的不同而有所不同。
 {% endhint %}
 
-3\. Check the setting status of the work area (![](../../_assets/1.png)), tool area (![](../../_assets/2.png)), tool orientation constraint (![](../../_assets/3.png)),, robot elbow area (![](../../_assets/4.png)), and prohibited area (![](../../_assets/5.png)).
+3\. 检查工作区域的设置状态 (![](../../_assets/1.png)), 工具区域 (![](../../_assets/2.png)), 工具方向约束 (![](../../_assets/3.png)), 机器人肘部区域 (![](../../_assets/4.png)), 以及禁止区域 (![](../../_assets/5.png))。
 
 ![](../../_assets/image43.jpeg)
 
-* To adjust the camera, select the **\[Zoom in/Zoom out]** icon (![](../../_assets/image44.png)), **\[Move]** icon (![](../../_assets/image45.png)), or **\[Rotate]** icon (![](../../_assets/image46.png)) at the lower right of the 3D screen, then drag the screen.
-* To apply the changed settings, close the workcell window and reopen it.
+* 要调整相机，请选择 3D 屏幕右下角的 **\[放大/缩小]** 图标 (![](../../_assets/image44.png)), **\[移动]** 图标 (![](../../_assets/image45.png)), 或 **\[旋转]** 图标 (![](../../_assets/image46.png))，然后拖动屏幕。
+* 要应用更改的设置，请关闭工作单元窗口然后重新打开。
 
 {% hint style="warning" %}
-**\[Caution]**: Compare the workcell simulation with the actual robot position and identify surrounding obstacles to safely operate the robot.
+**\[警告]**: 将工作单元仿真与实际机器人位置进行比较，并识别周围障碍物以安全操作机器人。
 {% endhint %}

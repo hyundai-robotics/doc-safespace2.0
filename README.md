@@ -1,1 +1,1 @@
-﻿# Hi7 Controller Function Manual - SafeSpace2.0
+# Hi7 控制器功能手册 - SafeSpace2.0

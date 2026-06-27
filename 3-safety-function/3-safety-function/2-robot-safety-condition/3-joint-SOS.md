@@ -1,20 +1,20 @@
-﻿# 3.3.2.3 Joint Stop Monitoring
+﻿# 3.3.2.3 关节停止监控
 
-Stop monitoring monitors each axis for abnormal movement during robot stop operations. If a set limit is violated, a safety stop (Stop 0) is immediately activated.
+停止监控在机器人停止操作期间监视每个轴的异常运动。如果违反设定的限制，将立即激活安全停止（停止 0）。
 
-Parameter values   can be set in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 3: Joint SOS]` menu.
+参数值可以在`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 3: Joint SOS]`菜单中设置。
 
 <p align="center">
 <img src="../../../_assets/3/joint_sos.png"></img>
-<em><p align="center">Stop Monitoring Parameter Setting Screen</p></em>
+<em><p align="center">停止监控参数设置屏幕</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
-| Joint ON/OFF | <p>Whether each joint is activated</p><p>(ON / OFF)</p> | OFF |
-| <p>Tolerance</p><p>[deg]</p> | <p>Angle Limit Value for Each Joint</p><p>(0.0 ~ 3.0)</p> | 0.100 |
+| 激活 | <p>功能是否激活</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| 关节 ON/OFF | <p>每个关节是否激活</p><p>(ON / OFF)</p> | OFF |
+| <p>公差</p><p>[度]</p> | <p>每个关节的角度限制值</p><p>(0.0 ~ 3.0)</p> | 0.100 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: If the stop monitoring parameters are violated, be sure to check that the robot's movement is normal before restarting.
+<strong>[注意]</strong>: 如果违反停止监控参数，请在重新启动之前确保机器人运动正常。
 {% endhint %}

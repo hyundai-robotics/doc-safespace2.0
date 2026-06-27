@@ -1,15 +1,13 @@
-﻿# 6.2 	Recovery from Robot Speed Violation
+# 6.2 	从机器人速度违规恢复
 
-Robot speed violation including the TCP speed, joint speed, power, and momentum monitoring violations occurs when the robot's speed exceeds the safety standards,. In case of robot speed violation, the robot detects momentary speed and stops, so the error can be cleared without moving the robot's position.
+机器人速度违规，包括TCP速度、关节速度、功率和动量监测违规，当机器人的速度超过安全标准时发生。在机器人速度违规的情况下，机器人检测到瞬时速度并停止，因此可以在不移动机器人位置的情况下清除错误。
 
-1. Change the mode switch to manual to enter manual mode.
+1. 将模式开关切换到手动以进入手动模式。
 
-
-2.  In the safety status monitoring screen, verify that the status of each area is displayed as **SAFE**.
-
+2. 在安全状态监控屏幕中，验证每个区域的状态是否显示为**安全**。
 
 {% hint style="warning" %}
-**[Caution]**
+**[注意]**
 
-* After clearing the error, be sure to check the speed-related safety parameters and the speed of the work program.
+* 清除错误后，务必检查与速度相关的安全参数和工作程序的速度。
 {% endhint %}

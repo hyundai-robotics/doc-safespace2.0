@@ -1,48 +1,48 @@
-﻿# Safety Precautions
+# 安全预防措施
 
-To ensure proper use of the product and user safety and prevent property damage, be sure to familiarize yourself with the following safety precautions before using the product.
+为了确保产品的正确使用和用户的安全，防止财产损失，请在使用产品之前熟悉以下安全预防措施。
 
-### <mark style="color:green;">Danger</mark>
+### <mark style="color:green;">危险</mark>
 
 {% hint style="danger" %}
-<strong>[Danger] Imminent hazard</strong>: Failure to comply may result in death or serious injury to workers.
+<strong>[危险] 切迫的危险</strong>：不遵守可能导致工人的死亡或严重伤害。
 {% endhint %}
 
-* Conduct a risk assessment for the entire system, not individual devices. Connecting other devices to the product may increase the risk of the product or create new risks. When each device in the integrated robot system has a different risk level, prepare safety devices based on the device with the highest risk level to prepare for danger.
-* Familiarize yourself with the product installation content described in the manual and install the robot product and other devices in compliance with the instructions.
-* If a problem such as a product failure or damage occurs, immediately stop using it and contact the customer support team.
+* 对整个系统进行风险评估，而不是单个设备。将其他设备连接到产品可能会增加产品的风险或产生新的风险。当集成机器人系统中的每个设备具有不同的风险等级时，应根据风险最高的设备准备安全装置以应对危险。
+* 熟悉手册中描述的产品安装内容，并遵循说明安装机器人产品及其他设备。
+* 如果发生产品故障或损坏等问题，请立即停止使用，并联系客户支持团队。
 
-### <mark style="color:green;">Warning</mark>
+### <mark style="color:green;">警告</mark>
 
 {% hint style="warning" %}
-<strong>[Warning] Potential hazard</strong>: If not observed, the worker may be injured or the product may be severely damaged, resulting in property damage. Failure to comply may result in injury to workers, serious damage to products, or property damage.
+<strong>[警告] 潜在危险</strong>：如果不注意，工人可能会受到伤害或产品可能会严重损坏，导致财产损失。不遵守可能导致工人受伤、产品严重损坏或财产损失。
 {% endhint %}
 
-* Take appropriate safety measures according to the risk assessment results and accurately designate the robot safety installation range. Otherwise, the product may be damaged or the user may be injured while the robot is operating.
-* The robot application system manufacturers and robot users should familiarize themselves with the manual's contents and complete the product operation training.
-* For the safety of workers and users, be sure to prepare appropriate safety facilities such as safety fences before installing the product.
-* Secure sufficient space so that the robot arm can move freely. If installation space is not sufficient, the product may be damaged or the user may be injured while the robot is operating.
-* Check the specification information and use appropriate fixing screws and tighten them with specified torque. If screws are loose, the robot may separate from the installation location and fall or be damaged.
-* Be careful not to allow liquids, dust, metal powder, or other conductive foreign substances enter the product's connections (power and cables). Also, do not stab the connections with sharp objects or apply excessive force when connecting cables. Otherwise, the product may explode or catch fire due to corrosion or temporary short circuit of connection terminals.
-* Check the wiring information and connect devices using appropriate terminals by device type. In particular, safety devices must be connected to safety device terminals as connecting them to general-purpose terminals cannot guarantee safety functions.
-* Never use damaged cables and do not disconnect power while using the product. Otherwise, electric shock, fire, failure, or injury may be caused.
-* Using the product for a long time generates heat, which poses a risk of injury such as burns. When you need to touch the product after prolonged use, turn off the power and leave it in that state for more than 1 hour to sufficiently cool it down before working.
-* Never install, modify, disassemble, or repair the product without authorization. Otherwise, failure and accidents may be caused. Also, we are not responsible for damage and breakage of the product resulting from this.
+* 根据风险评估结果采取适当的安全措施，并准确指定机器人安全安装范围。否则，在机器人操作时，产品可能会损坏或用户可能会受伤。
+* 机器人应用系统制造商和机器人用户应熟悉手册的内容并完成产品操作培训。
+* 为了工人和用户的安全，请在安装产品之前准备好适当的安全设施，例如安全围栏。
+* 确保充足的空间，以便机器人手臂可以自由移动。如果安装空间不足，产品可能会损坏或用户可能会在机器人操作时受伤。
+* 检查规格信息，使用适当的固定螺丝并用规定的扭矩紧固它们。如果螺丝松动，机器人可能会从安装位置分离并掉落或损坏。
+* 小心不要让液体、灰尘、金属粉末或其他导电异物进入产品的连接处（电源和电缆）。此外，连接电缆时不要用尖锐物体戳连接器，也不要施加过大力量。否则，产品可能会因连接端子腐蚀或臨時短路而发生爆炸或起火。
+* 检查接线信息，并按设备类型使用适当的端子连接设备。特别是安全装置必须连接到安全装置端子，因为将其连接到通用端子无法保证安全功能。
+* 切勿使用损坏的电缆，并且在使用产品时不要断开电源。否则，可能会导致触电、火灾、故障或受伤。
+* 长时间使用产品会产生热量，存在烧伤等受伤的风险。当您在长时间使用后需要接触产品时，请关闭电源，并保持这种状态超过1小时，以充分冷却后再进行操作。
+* 切勿未经授权安装、修改、拆卸或维修产品。否则，可能导致故障和事故。此外，我们不对因这一点造成的产品损坏和故障负责。
 
-### <mark style="color:green;">Caution</mark>
+### <mark style="color:green;">注意</mark>
 
 {% hint style="warning" %}
-<strong>[Caution] Low-risk factors</strong>: Failure to comply may result in minor injury to workers or property damage, including product damage.
+<strong>[注意] 低风险因素</strong>：不遵守可能导致工人轻微受伤或财产损失，包括产品损坏。
 {% endhint %}
 
-* Do not install, modify, disassemble, or repair the product without authorization. Also, it is prohibited for anyone other than our experts to modify the product or attach parts without authorization. Otherwise, in case of product failure, you cannot receive free service or quality assurance service.
-* When installing and repairing the product, contact the customer support team to request an expert.
-* Do not install and use the product in dusty or dirty places. Otherwise, the product may fail or have a performance problem due to dust or foreign substances.
-* Do not install and use the product in magnetic places, places affected by magnetism, or places with electromagnetic interference. Otherwise, the product may be damaged or have a performance problem due to magnetism.
-* When operating the product, do not wear loose clothing or jewelry, and if you have long hair, tie it back to avoid getting the hair caught in the robot's joints, etc.
-* Do not enter the operating range or touch the robot while the product is operating. There is a risk of injury.
-* Transport the product in its packaged state to avoid damage and store it in a dry location with low humidity. The product may be damaged or fail due to moisture inside the packaging material.
-* Store the product in a clean, cool, and dry place, avoiding places where temperature and humidity change easily.
-* When transporting the product, maintain proper posture and work with two or more people. You may suffer injuries to body parts such as your waist, arms, or legs.
-* When transporting the product using lifting equipment, comply with the safety regulations and equipment usage guidelines of the relevant country and region.
-* Familiarize yourself with the transport content in the manual and transport the product in compliance with the instructions. We are not responsible for damage and breakage of the product caused by the customer transporting the product.
+* 未经授权勿安装、修改、拆卸或维修产品。同时，禁止非我们专家的任何人未经授权修改产品或附加零件。否则，在产品发生故障时，您将无法获得免费的服务或质量保证服务。
+* 在安装和维修产品时，请联系客户支持团队请求专家。
+* 不要在尘土飞扬或肮脏的地方安装和使用产品。否则，产品可能因灰尘或异物而故障或出现性能问题。
+* 不要在磁性地方、受磁性影响的地方或具有电磁干扰的地方安装和使用产品。否则，产品可能会因磁性而损坏或出现性能问题。
+* 在操作产品时，请勿穿着宽松的衣物或首饰，如果有长发，请将其扎起，以免头发被机器人的关节等夹住。
+* 在产品操作时，请勿进入操作范围或触摸机器人。存在受伤的风险。
+* 在运输产品时，请保持其包装状态，以避免损坏，并将其储存在低湿度的干燥位置。产品可能会因包装材料内部潮湿而损坏或失败。
+* 将产品存放在干净、凉爽、干燥的地方，避免温度和湿度易变的地方。
+* 在运输产品时，保持正确的姿势，并由两人或更多人共同操作。您可能会受伤，比如腰、手臂或腿部。
+* 使用起重设备运输产品时，请遵守相关国家和地区的安全法规和设备使用指南。
+* 熟悉手册中的运输内容，并根据说明运输产品。我们不对因客户运输产品而导致的产品损坏和故障负责。

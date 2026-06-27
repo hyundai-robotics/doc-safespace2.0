@@ -1,3 +1,3 @@
-﻿# 2.4 PROFIsafe Module (Option)
+﻿# 2.4 PROFIsafe 模块 (选件)
 
-When you select to use the PROFIsafe option module, it is shipped mounted inside the controller. When board replacement is required, refer to the controller maintenance manual.
+当您选择使用 PROFIsafe 选件模块时，它会被安装在控制器内部。若需要更换板卡，请参阅控制器维护手册。

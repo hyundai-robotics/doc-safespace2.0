@@ -1,20 +1,20 @@
-﻿# 6.3 	Recovery from Robot Force Violation
+﻿# 6.3 	从机器人力违规恢复
 
-Robot force violation such as collision detection, power, and momentum monitoring violations occurs when external force is applied or the magnitude of force used inside the robot exceeds the safety standards,. Depending on the cause of the violation, the error can be cleared.
+当外力施加或机器内部使用的力的大小超过安全标准时，会发生机器人力违规，例如碰撞检测、功率和动量监控违规。根据违规的原因，可以清除错误。
 
-<mark style="color:green;">**When violation occurs due to external force applied to the robot**</mark>
+<mark style="color:green;">**当违规是由于施加在机器人上的外力时**</mark>
 
-1. Remove external factors applying force to the robot.
-
-
-2. Change the mode switch to manual to enter manual mode.
+1. 移除施加在机器人上的外部因素。
 
 
-3.  In the safety status monitoring screen, verify that the status of each area is displayed as **SAFE**.
+2. 将模式开关切换到手动以进入手动模式。
+
+
+3. 在安全状态监控屏幕上，确认每个区域的状态显示为 **SAFE**。
 
 
 {% hint style="warning" %}
-**\[Caution]**
+**\[注意]**
 
-* After clearing the error, recheck the safety function settings, tool data, and work program's teaching positions and speed.
+* 清除错误后，请重新检查安全功能设置、工具数据以及工作程序的教学位置和速度。
 {% endhint %}

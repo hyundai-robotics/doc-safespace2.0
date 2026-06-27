@@ -1,13 +1,13 @@
-﻿# 1.5 Validity and Responsibility
+# 1.5 有效性与责任
 
-It is required to comply with the safety requirements based on the safety regulations and laws of the country and region where the robot is installed and used. The supplier and user of the integrated robot system have various responsibilities including the following:
+必须遵守基于机器人安装和使用所在国家和地区的安全规定和法律的安全要求。集成机器人系统的供应商和用户承担以下各种责任：
 
-* Risk assessment of the integrated robot system
-* Addition and removal of safety devices according to risk assessment results
-* Verification of proper configuration, installation, and setting of the integrated system
-* Establishment of methods and guidelines for using the integrated system and user training
-* Management of safety devices (prohibition of unauthorized changes and manipulation of safety devices by users)
-* Provision of information such as critical information of the product use and safety, and also the contact information, etc.
-* Provision of all types of technical documents including manuals, etc.
+* 集成机器人系统的风险评估
+* 根据风险评估结果添加和移除安全装置
+* 验证集成系统的正确配置、安装和设置
+* 建立使用集成系统的方法和指南以及用户培训
+* 安全装置的管理（禁止用户未经授权对安全装置进行更改和操作）
+* 提供有关产品使用和安全的关键信息以及联系信息等
+* 提供包括手册在内的各种技术文件
 
-The safety-related content in this manual does not cover all possible risk factors and situations that may occur while using the product.
+本手册中与安全相关的内容并未涵盖使用产品时可能出现的所有风险因素和情况。

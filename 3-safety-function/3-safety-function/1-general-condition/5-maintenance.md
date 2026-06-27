@@ -1,24 +1,23 @@
-﻿# 3.3.1.5 Maintenance
+﻿# 3.3.1.5 维护
 
-The Maintenance menu allows you to set the mastering and brake test cycles. Periodic monitoring of the origin and brake status of each robot axis is essential to ensure the performance of safety functions. If the tests fail to complete within the set cycle, Safety Stop 1 is immediately activated.
+维护菜单允许您设置归零和制动测试周期。定期监测每个机器人轴的原点和制动状态对于确保安全功能的性能至关重要。如果测试未能在设定周期内完成，安全停止 1 将立即激活。
 
-To perform a brake test,
+要执行制动测试，
 
-You can set the parameter values in the `[System > 10: Safety System > 1: General setup > 5: Maintenance]` menu. The Maintenance menu is configured to be accessible only to authorized users.
+您可以在`[System > 10: Safety System > 1: General setup > 5: Maintenance]`菜单中设置参数值。维护菜单配置为仅供授权用户访问。
 
 <p align="center">
 <img src="../../../_assets/3/maintenance.png"></img>
-<em><p align="center">Maintenance parameter setting screen</p></em>
+<em><p align="center">维护参数设置屏幕</p></em>
 </p>
 
 
-|  **Parameter** |                       **Description**                       |  **Default value**  |
+|  **参数** |                       **描述**                       |  **默认值**  |
 | :-------: | :------------------------------------------------: | :-------------: |
-| <p>Mastering cycle time</p><p>[h]</p> | <p>Mastering test execution cycle</p><p>(2 ~ 720)</p> | 720 |
-| <p>Break test cycle time</p><p>[h]</p>| <p>Break test execution cycle</p><p>(2 ~ 720)</p> | 720 |
+| <p>归零周期时间</p><p>[h]</p> | <p>归零测试执行周期</p><p>(2 ~ 720)</p> | 720 |
+| <p>制动测试周期时间</p><p>[h]</p>| <p>制动测试执行周期</p><p>(2 ~ 720)</p> | 720 |
 
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: If a crash occurs, we recommend performing a mastering test and a break test.
+<strong>[注意]</strong>: 如果发生崩溃，我们建议执行归零测试和制动测试。
 {% endhint %}
- 

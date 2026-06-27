@@ -1,2 +1,1 @@
-﻿# 4. Function Settings
-
+# 4. 功能设置

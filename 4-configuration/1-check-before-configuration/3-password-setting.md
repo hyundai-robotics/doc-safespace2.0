@@ -1,19 +1,19 @@
-﻿# 4.1.1 Password Setting
+﻿# 4.1.1 密码设置
 
-The safety function parameters must be set and managed by a designated person. Users designated as administrators are granted administrator privileges and a system setting password. The system setting password is a required input item when setting the safety function parameters, and the parameters cannot be changed or set if the password is incorrect.
+安全功能参数必须由指定人员设置和管理。被指定为管理员的用户获得管理员权限和系统设置密码。系统设置密码是在设置安全功能参数时所需的输入项，如果密码不正确，则无法更改或设置参数。
 
-1. Tap the `[System > 5: Initialization > 11: System password setting]` menu. The password setting window will appear.
-2. Enter the password and touch the `[OK]` button.
+1. 点击`[系统 > 5: 初始化 > 11: 系统密码设置]`菜单。密码设置窗口将出现。
+2. 输入密码并触摸`[确定]`按钮。
 
 <p align="center">
 <img src="../../_assets/4/password_setting.png"></img>
-<em><p align="center">Password setting screen</p></em>
+<em><p align="center">密码设置屏幕</p></em>
 </p>
 
-* When setting then safety function parameters, you must enter the system setting password to save changes.
+* 设置安全功能参数时，必须输入系统设置密码才能保存更改。
 
 {% hint style="warning" %}
-* It is recommended to set the password with 4 or more characters.
-* If you lose your password, contact an engineer.
-* The default password is '8426'. 
+* 建议设置包含4个或更多字符的密码。
+* 如果您忘记密码，请联系工程师。
+* 默认密码是'8426'。
 {% endhint %}

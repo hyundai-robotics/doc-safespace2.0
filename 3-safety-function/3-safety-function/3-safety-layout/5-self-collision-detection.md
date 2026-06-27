@@ -1,27 +1,22 @@
-﻿# 3.3.3.5 Self-Collision Detection
+# 3.3.3.5 自碰撞检测
 
-Self-collision detection is a function that monitors potential collisions between Axis 2 of the robot and the tool.
-The tool and the robot must be modeled to match their actual geometries.
-For detailed information on the modeling methods, refer to "[3.3.3.2 Safety Tool Modeling](../../../3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)" and "[3.3.3.3 Safety Robot Modeling](../../../3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)".
+自碰撞检测是一种监视机器人轴 2 与工具之间潜在碰撞的功能。
+工具和机器人必须建模以匹配其实际几何形状。
+有关建模方法的详细信息，请参阅"[3.3.3.2 安全工具建模](../../../3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)"和"[3.3.3.3 安全机器人建模](../../../3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)"。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/self_collision.png"></img>
-<em><p align="center">Self-Collision Detection</p></em>
+<em><p align="center">自碰撞检测</p></em>
 </p>
 
-
-You can set parameters for the robot's self-collision detection function in the `[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 5: Self-Collision Detection]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 5: Self-Collision Detection]`菜单中设置机器人的自碰撞检测功能参数。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/self_collision_param.png"></img>
-<em><p align="center">Self-collision detection function parameter setting screen</p></em>
+<em><p align="center">自碰撞检测功能参数设置界面</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>Whether the function is activated</p><p>(Invalid / Valid / Safe I/O)</p> | Invalid |
-| Stop method | <p>Stop method when the function is violated</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
-
-
-
-
+| 激活 | <p>功能是否激活</p><p>(无效 / 有效 / 安全 I/O)</p> | 无效 |
+| 停止方法 | <p>功能受到违反时的停止方法</p><p>(停止 0 / 停止 1 / 停止 2 / 不停止)</p> | 停止 1 |

@@ -1,3 +1,3 @@
-﻿# 1.2 Safety Measures
+﻿# 1.2 安全措施
 
-Describes the safety functions built into the product and also the measures to ensure the safety of users and workers.
+描述内置于产品中的安全功能，以及确保用户和工作人员安全的措施。

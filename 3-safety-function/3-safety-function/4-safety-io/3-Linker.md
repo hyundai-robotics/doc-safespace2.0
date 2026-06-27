@@ -1,7 +1,7 @@
-﻿# 3.3.4.3 Safety Signal Allocation
+﻿# 3.3.4.3 安全信号分配
 
-The Safety signal allocation function serves to connect external signals such as safety input/output, additional safety input/output, and safety communication input/output with various logical signals (system safety input/output, safety application signals) that the robot controller has.
-You can set the parameter values in the `[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 1: I/O Allocation]` menu.
+安全信号分配功能用于将外部信号（如安全输入/输出、附加安全输入/输出和安全通信输入/输出）与机器人控制器所拥有的各种逻辑信号（系统安全输入/输出、安全应用信号）连接。
+您可以在`[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 1: I/O Allocation]`菜单中设置参数值。
 
 ![](../../../_assets/safety_io/SIO_Alloc_diagram1.bmp)
 
@@ -9,98 +9,98 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 -------------------------------------------------------------------------
 
-### 1) Adding Safety Signal Allocation
-1) Press the `[Add]` button.
-2) Select the desired function from the function list.
-3) If a sub-index is required, enter the sub-index number.
+### 1) 添加安全信号分配
+1) 按下`[Add]`按钮。
+2) 从功能列表中选择所需功能。
+3) 如果需要子索引，请输入子索引编号。
 
-### 2) Deleting Safety Signal Allocation
-1) Select an already set allocation function on the list.
-2) Press the `[del]` button.
+### 2) 删除安全信号分配
+1) 在列表中选择已经设置的分配功能。
+2) 按下`[del]`按钮。
 
 <p align="center">
 <img src="../../../_assets/safety_io/io_alloc_param1.png"></img>
-<em><p align="center">Safety Signal allocation Settings Screen</p></em>
+<em><p align="center">安全信号分配设置界面</p></em>
 </p>
 
 {% hint style="warning" %}
-* The Emergency Stop (EX_EM) and Safety Guard (SGG or SGA) signals are mandatory and must always be selected.<br>
-* An individual input function item can only be connected to a single input channel.<br>
-* "Basic Safety Input", "Additional Safety Input", and "Safety Communication Input" cannot be assigned in duplication mutually.<br>
-* If duplicate input settings are made, the "E52030 (x ch) Safety input allocation duplication" error occurs.
+* 紧急停止信号（EX_EM）和安全防护信号（SGG或SGA）是强制性的，必须始终选择。<br>
+* 单个输入功能项只能连接到单个输入通道。<br>
+* “基本安全输入”、“附加安全输入”和“安全通信输入”不能互相重复分配。<br>
+* 如果设置了重复输入，系统将出现“E52030 (x ch) 安全输入分配重复”错误。
 
 {% endhint %}
 
 
 
-### 3) Default values for safety signals
+### 3) 安全信号的默认值
 
-|  **Channel** |     **Function**                       | 
+|  **通道** |     **功能**                       | 
 | :-------: | :------------------------------------------------: |
-| Safety Input Channel 1 | External Emergency Stop Input (Emergency) |
-| Safety Input Channel 2 | Safety Guard General Input (SGG)|
-| Safety Input Channel 3 | - |
-| Safety Input Channel 4 | - |
-| Safety Output Channel 1 | Emergency Stop Activation Status|
+| 安全输入通道 1 | 外部紧急停止输入（紧急） |
+| 安全输入通道 2 | 安全防护一般输入（SGG）|
+| 安全输入通道 3 | - |
+| 安全输入通道 4 | - |
+| 安全输出通道 1 | 紧急停止激活状态|
 
-### 4) Safety Input Signal Function List
+### 4) 安全输入信号功能列表
 
-|  **Channel** |     **Function**                       |       **Description**    |
+|  **通道** |     **功能**                       |       **描述**    |
 | :-------: | :--------------------------: | :--------------------------------------------------: |
-| Emergency | External Emergency Stop Input| OPEN: Emergency stop activated<br>CLOSE: Emergency stop released |
-| SGG| Safety Guard General Input| OPEN: Guard open (Danger) <br>CLOSE: Guard closed (Safe) |
-| SGA | Safety Guard Auto Input| OPEN: Guard open (Danger) <br>CLOSE: Guard closed (Safe) |
-| Protective stop | Protective Stop Input | OPEN: Protective stop activated <br>CLOSE: Protective stop released |
-| Normal stop | Normal Stop Input | OPEN: Normal stop activated <br>CLOSE: Normal stop released |
-| Motor On | External Motor On | Motor On attempted on Rising Edge |
-| Remote | External Mode Input (Remote) | OPEN: Mode change by internal mode signal <br>CLOSE: Mode change by external mode input signal
-| Manual | External Mode Input (Manual)  | OPEN: No operation <br>CLOSE: External manual mode input |
-| Auto | External Mode Input (Auto)  | OPEN: No operation <br>CLOSE: External auto mode input |
-| Arm Limit | Arm Limit Input| OPEN: Limit signal input (Danger) <br>CLOSE: Limit signal closed (Safe) |
-| Primary axis Limit | Primary Axis Limit Input | OPEN: Limit signal input (Danger) <br>CLOSE: Limit signal closed (Safe) |
-| Additional axis Limit | Additional Axis Limit Input | OPEN: Limit signal input (Danger) <br>CLOSE: Limit signal closed (Safe) |
-| External axis Limit | External Axis Limit Input | OPEN: Limit signal input (Danger) <br>CLOSE: Limit signal closed (Safe) |
-| Monitored standstill #1-#8 | Monitored Standstill<br>(sos_0-sos_7) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Joint speed set #1-#8 | Joint Speed<br>(speed_0-speed_7) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| TCP speed set #1-#16 | TCP Speed<br>(speed_0-speed_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Joint angle #1-#8 | Joint Space<br>(space_0-space7) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| TCP position(space) #1-#16 | TCP Space<br>(space_0-space15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| TCP orientation #1-#8 | Tool Orientation<br>(orient_0-orient7) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Self collision | Self Collision | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Power #1-#16 | Power<br>(power_0-power_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Momentum #1-#16 | Momentum<br>(mmt_0-mmt_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Collision detection #1-#16 | Collision Detection<br>(coldet_0-coldet_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Speed & separation #1-#84 | RePlan | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Mastering test switch | Mastering Test Switch | OPEN: Function activated<br>CLOSE: Function deactivated |
+| 紧急 | 外部紧急停止输入| OPEN: 紧急停止已激活<br>CLOSE: 紧急停止已释放 |
+| SGG| 安全防护一般输入| OPEN: 防护打开（危险） <br>CLOSE: 防护关闭（安全） |
+| SGA | 安全防护自动输入| OPEN: 防护打开（危险） <br>CLOSE: 防护关闭（安全） |
+| 保护停止 | 保护停止输入 | OPEN: 保护停止已激活 <br>CLOSE: 保护停止已释放 |
+| 正常停止 | 正常停止输入 | OPEN: 正常停止已激活 <br>CLOSE: 正常停止已释放 |
+| 电机开启 | 外部电机开启 | 电机尝试在上升沿开启 |
+| 远程 | 外部模式输入（远程） | OPEN: 内部模式信号改变模式 <br>CLOSE: 外部模式输入信号改变模式 |
+| 手动 | 外部模式输入（手动）  | OPEN: 无操作 <br>CLOSE: 外部手动模式输入 |
+| 自动 | 外部模式输入（自动）  | OPEN: 无操作 <br>CLOSE: 外部自动模式输入 |
+| 臂限位 | 臂限位输入| OPEN: 限位信号输入（危险） <br>CLOSE: 限位信号关闭（安全） |
+| 主轴限位 | 主轴限位输入 | OPEN: 限位信号输入（危险） <br>CLOSE: 限位信号关闭（安全） |
+| 附加轴限位 | 附加轴限位输入 | OPEN: 限位信号输入（危险） <br>CLOSE: 限位信号关闭（安全） |
+| 外部轴限位 | 外部轴限位输入 | OPEN: 限位信号输入（危险） <br>CLOSE: 限位信号关闭（安全） |
+| 监测静止 #1-#8 | 监测静止<br>(sos_0-sos_7) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 关节速度设置 #1-#8 | 关节速度<br>(speed_0-speed_7) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| TCP速度设置 #1-#16 | TCP速度<br>(speed_0-speed_15) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 关节角度 #1-#8 | 关节空间<br>(space_0-space7) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| TCP位置（空间） #1-#16 | TCP空间<br>(space_0-space15) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| TCP方向 #1-#8 | 工具方向<br>(orient_0-orient7) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 自我碰撞 | 自我碰撞 | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 电源 #1-#16 | 电源<br>(power_0-power_15) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 动量 #1-#16 | 动量<br>(mmt_0-mmt_15) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 碰撞检测 #1-#16 | 碰撞检测<br>(coldet_0-coldet_15) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 速度与分离 #1-#84 | 重新规划 | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 定位测试开关 | 定位测试开关 | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
 
-#### Safety Output Signal Function List
-|  **Channel** |     **Function**                       |       **Description**    |
+#### 安全输出信号功能列表
+|  **通道** |     **功能**                       |       **描述**    |
 | :-------: | :--------------------------: |  :--------------------------------------------------: |
-| Emergency stop activation status | Emergency Stop Status | OPEN: At least one of TP, OP, and external emergency stop is pressed <br> CLOSE: None of TP, OP, and external emergency stop is pressed.  |
-| Protective stop activation status | Protective Stop Status | OPEN: Not in protective stop state<br> CLOSE: In protective stop state |
-| Normal stop activation status | Normal Stop Status | OPEN: Not in normal stop state<br> CLOSE: In normal stop state |
-| Remote mode status | External Operation Status | OPEN: Internal operation mode<br> CLOSE: External operation mode |
-| Manual mode status | Manual Mode Status | OPEN: Not in manual mode <br> CLOSE: In manual mode |
-| Auto mode status | Auto Mode Status | OPEN: Not in auto mode <br> CLOSE: In auto mode|
-| Motor Off status | Motor Off Status | OPEN: Motor On state<br> CLOSE: Motor Off state|
-| Safety Function activation status | Safety Function Activation Status | OPEN: Safety function deactivated<br> CLOSE: Safety function activated |
-| Monitored standstill activation status | Safe Operating Stop Monitoring Activation Status | OPEN: Safe Operating Stop monitoring deactivated<br> CLOSE: Safe Operating Stop monitoring activated |
-| Replan activation status | RePlan Activation Status | OPEN: RePlan deactivated<br> CLOSE: RePlan activated |
-| Violation alarm | Safety Function Violation Status | OPEN: Safety function violated<br> CLOSE: No safety function violation |
-| Monitored standstill #1-#8 violation | Safe Operating Stop Violation<br>(sos_0-sos_7) | OPEN: Safe Operating Stop violated<br> CLOSE: No Safe Operating Stop violation |
-| Joint speed set #1-#8 violation | Joint Speed Violation<br>(speed_0-speed_7) | OPEN: Joint speed violated<br> CLOSE: No joint speed violation |
-| TCP speed set #1-#16 violation | TCP Speed Violation<br>(speed_0-speed_15) | OPEN: TCP speed violated<br> CLOSE: No TCP speed violation |
-| Joint angle #1-#8 violation | Joint Space Violation<br>(space_0-space7) | OPEN: Joint space violated<br> CLOSE: No joint space violation |
-| TCP position #1-#16 violation | TCP Space Violation<br>(space_0-space15) | OPEN: TCP space violated<br> CLOSE: No TCP space violation |
-| TCP orientation #1-#8 violation | Tool Orientation<br>(orient_0-orient7) | OPEN: Tool orientation violated<br> CLOSE: No tool orientation violation |
-| Self collision detection | Self Collision Detection| OPEN: Self collision detected<br> CLOSE: No self collision |
-| Power #1-#16 violation | Power Violation<br>(power_0-power_15) | OPEN: Power violated<br> CLOSE: No power violation |
-| Momentum #1-#16 violation | Momentum Violation<br>(mmt_0-mmt_15) | OPEN: Momentum violated<br> CLOSE: No momentum violation |
-| Collision detection #1-#16 violation | Collision Detection <br>(coldet_0-coldet_15) | OPEN: Collision detected<br> CLOSE: No collision |
-| Mastering test error | Mastering Test Error | OPEN: Mastering test error occurred<br> CLOSE: No mastering test error |
-| Brake test error | Brake Test Error | OPEN: Brake test error occurred<br> CLOSE: No brake test error |
+| 紧急停止激活状态 | 紧急停止状态 | OPEN: TP、OP和外部紧急停止中至少有一个被按下 <br> CLOSE: TP、OP和外部紧急停止都未被按下。  |
+| 保护停止激活状态 | 保护停止状态 | OPEN: 不在保护停止状态<br> CLOSE: 在保护停止状态 |
+| 正常停止激活状态 | 正常停止状态 | OPEN: 不在正常停止状态<br> CLOSE: 在正常停止状态 |
+| 远程模式状态 | 外部操作状态 | OPEN: 内部操作模式<br> CLOSE: 外部操作模式 |
+| 手动模式状态 | 手动模式状态 | OPEN: 不在手动模式 <br> CLOSE: 在手动模式 |
+| 自动模式状态 | 自动模式状态 | OPEN: 不在自动模式 <br> CLOSE: 在自动模式|
+| 电机关闭状态 | 电机关闭状态 | OPEN: 电机开启状态<br> CLOSE: 电机关闭状态|
+| 安全功能激活状态 | 安全功能激活状态 | OPEN: 安全功能未激活<br> CLOSE: 安全功能已激活 |
+| 监测静止激活状态 | 安全操作停止监测激活状态 | OPEN: 安全操作停止监测已停用<br> CLOSE: 安全操作停止监测已激活 |
+| 重新规划激活状态 | 重新规划激活状态 | OPEN: 重新规划已停用<br> CLOSE: 重新规划已激活 |
+| 违规警报 | 安全功能违规状态 | OPEN: 安全功能被违反<br> CLOSE: 没有安全功能违规 |
+| 监测静止 #1-#8 违规 | 安全操作停止违规<br>(sos_0-sos_7) | OPEN: 安全操作停止违规<br> CLOSE: 没有安全操作停止违规 |
+| 关节速度设置 #1-#8 违规 | 关节速度违规<br>(speed_0-speed_7) | OPEN: 关节速度违规<br> CLOSE: 没有关节速度违规 |
+| TCP速度设置 #1-#16 违规 | TCP速度违规<br>(speed_0-speed_15) | OPEN: TCP速度违规<br> CLOSE: 没有TCP速度违规 |
+| 关节角度 #1-#8 违规 | 关节空间违规<br>(space_0-space7) | OPEN: 关节空间违规<br> CLOSE: 没有关节空间违规 |
+| TCP位置 #1-#16 违规 | TCP空间违规<br>(space_0-space15) | OPEN: TCP空间违规<br> CLOSE: 没有TCP空间违规 |
+| TCP方向 #1-#8 违规 | 工具方向<br>(orient_0-orient7) | OPEN: 工具方向违规<br> CLOSE: 没有工具方向违规 |
+| 自我碰撞检测 | 自我碰撞检测| OPEN: 自我碰撞已检测<br> CLOSE: 没有自我碰撞 |
+| 电源 #1-#16 违规 | 电源违规<br>(power_0-power_15) | OPEN: 电源违规<br> CLOSE: 没有电源违规 |
+| 动量 #1-#16 违规 | 动量违规<br>(mmt_0-mmt_15) | OPEN: 动量违规<br> CLOSE: 没有动量违规 |
+| 碰撞检测 #1-#16 违规 | 碰撞检测 <br>(coldet_0-coldet_15) | OPEN: 检测到碰撞<br> CLOSE: 没有碰撞 |
+| 定位测试错误 | 定位测试错误 | OPEN: 定位测试错误发生<br> CLOSE: 没有定位测试错误 |
+| 刹车测试错误 | 刹车测试错误 | OPEN: 刹车测试错误发生<br> CLOSE: 没有刹车测试错误 |
 
 {% hint style="info" %}
-* Defined as **OPEN = Bit 0**, **CLOSE = Bit 1** in safety communication
+* 定义为 **OPEN = Bit 0**, **CLOSE = Bit 1** 在安全通信中
 
 {% endhint %}

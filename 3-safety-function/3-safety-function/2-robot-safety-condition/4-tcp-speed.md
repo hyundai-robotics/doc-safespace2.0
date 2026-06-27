@@ -1,27 +1,26 @@
-﻿# 3.3.2.4 TCP Speed Limit Setting
+# 3.3.2.4 TCP 速度限制设置
 
-This function monitors the TCP speed relative to the robot coordinate system. If a monitoring violation occurs, a safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
+此功能监控相对于机器人坐标系统的TCP速度。如果发生监控违规，将立即激活安全停止（停止0、停止1或停止2）。
 
-You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 4: TCP Speed]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 4: TCP Speed]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/tcp_speed.png"></img>
-<em><p align="center">TCP speed parameter setting screen</p></em>
+<em><p align="center">TCP 速度参数设置界面</p></em>
 </p>
 
 
-| **Parameter** |                                  **Description**                                  |  **Default Setting** |
+| **参数** |                                  **描述**                                  |  **默认设置** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
-| Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
-| Motion tuning | <p>Tuning to a motion that does not exceed the TCP speed limit</p><p>(Enable / Disable)</p> | Disable |
-| Replan | <p>Whether to use the speed adjustment function according to the input signal</p><p>(Enable / Disable)</p> | Disable |
-| <p>Limit</p><p>[mm/s]</p> | <p>TCP speed limit value</p><p>(1 ~ 50000)</p> | 50000 |
-| <p>Rate</p><p>[%]</p> | <p>Deceleration ratio to use when readjusting speed</p><p>(0 ~ 100)</p> | 100 |
-| <p>Delay time</p><p>[ms]</p> | <p>When changing speed through readjustment, monitor with the changed speed limit value after the delay time </p><p>(0 ~ 1000)</p> | 1000 |
-| <p>Signal</p><p>[Type, Number]</p> | <p>Input signal for speed readjustment</p><p>( [None, -] / [Safety input, 1~8] / [Safety communication, 1~64] )</p> | 0 |
+| 激活 | <p>函数是否激活</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| 停止功能 | <p>函数违规时的停止方法</p><p>(停止0 / 停止1 / 停止2 / 不停止)</p> | 停止1 |
+| 运动调节 | <p>调节以不超过TCP速度限制的运动</p><p>(启用 / 禁用)</p> | 禁用 |
+| 重新规划 | <p>是否根据输入信号使用速度调整功能</p><p>(启用 / 禁用)</p> | 禁用 |
+| <p>限制</p><p>[mm/s]</p> | <p>TCP速度限制值</p><p>(1 ~ 50000)</p> | 50000 |
+| <p>比率</p><p>[%]</p> | <p>重新调整速度时使用的减速比</p><p>(0 ~ 100)</p> | 100 |
+| <p>延迟时间</p><p>[ms]</p> | <p>通过重新调整速度更改时，在延迟时间后使用更改后的速度限制值进行监控</p><p>(0 ~ 1000)</p> | 1000 |
+| <p>信号</p><p>[类型, 数字]</p> | <p>速度重新调整的输入信号</p><p>( [无, -] / [安全输入, 1~8] / [安全通信, 1~64] )</p> | 0 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
+<strong>[注意]</strong>: 设置速度监控功能时，请务必考虑停止反应时间，并覆盖以防止碰撞和伤害。
 {% endhint %}
- 

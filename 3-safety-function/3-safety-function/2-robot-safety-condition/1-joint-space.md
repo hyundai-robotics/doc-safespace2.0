@@ -1,30 +1,29 @@
-﻿# 3.3.2.1 Joint Space Setting
+﻿# 3.3.2.1 关节空间设置
 
-The Joint space Setting parameter is a limit value for monitoring safety functions in the robot's joint space. If the monitoring is violated, the specified safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
+关节空间设置参数是用于监控机器人关节空间安全功能的限制值。如果监控被违反，指定的安全停止（停止 0、停止 1 或停止 2）将立即激活。
 
 <p align="center">
 <img src="../../../_assets/joint_space.PNG"></img>
-<em><p align="center">Joint space setting example (S-axis)</p></em>
+<em><p align="center">关节空间设置示例（S轴）</p></em>
 </p>
 
-You can set parameter values in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 1: Joint space]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 1: Joint space]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/joint_space.png"></img>
-<em><p align="center">Joint space parameter setting screen</p></em>
+<em><p align="center">关节空间参数设置屏幕</p></em>
 </p>
 
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Type | <p>Safety Area Type</p><p>(Working Area / Protection Area)</p> | Working Area |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
-| Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No Stop)</p> | Stop 1 |
-| Joint ON/OFF | <p>Whether each joint is activated</p><p>(OFF / ON)</p> | OFF |
-| <p>Minimum</p><p>[deg]</p> | <p>Minimum limits for each joint angle</p><p>(-360.0 ~ 360.0)</p> | -360.0 |
-| <p>Maximum</p><p>[deg]</p> | <p>Maximum limits for each joint angle</p><p>(-360.0 ~ 360.0)</p> | 360.0 |
+| 类型 | <p>安全区域类型</p><p>(工作区域 / 保护区域)</p> | 工作区域 |
+| 激活 | <p>功能是否激活</p><p>(关闭 / 开启 / 安全 I/O)</p> | 关闭 |
+| 停止功能 | <p>在功能违反情况下的停止方法</p><p>(停止 0 / 停止 1 / 停止 2 / 不停)</p> | 停止 1 |
+| 关节开启/关闭 | <p>每个关节是否激活</p><p>(关闭 / 开启)</p> | 关闭 |
+| <p>最小值</p><p>[度]</p> | <p>每个关节角度的最小限制</p><p>(-360.0 ~ 360.0)</p> | -360.0 |
+| <p>最大值</p><p>[度]</p> | <p>每个关节角度的最大限制</p><p>(-360.0 ~ 360.0)</p> | 360.0 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
+<strong>[注意]</strong>: 安全功能根据设置区域进行监控。设置区域应考虑停止距离，并在操作前进行验证。
 {% endhint %}
- 

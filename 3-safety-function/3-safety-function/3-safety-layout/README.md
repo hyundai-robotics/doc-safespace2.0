@@ -1,3 +1,3 @@
-﻿# 3.3.3 Space Monitoring Function
+﻿# 3.3.3 空间监测功能
 
-Model the robot, tool, and safety zone to monitor the robot's position and orientation.
+对机器人、工具和安全区域进行建模，以监测机器人的位置和方向。

@@ -1,2 +1,1 @@
-﻿# 4.1 Items to Check Before Using Safety Functions
-
+# 4.1 使用安全功能前需检查的项目

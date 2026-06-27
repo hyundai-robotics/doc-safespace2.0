@@ -1,40 +1,37 @@
-﻿# 3.3.4.1 Default Safety Input/Output Signals
+# 3.3.4.1 默认安全输入/输出信号
 
-Set the parameters for safety input/output signals.
-There are 4 input signals and 1 output signal, all operating as dual signals.
-You can set the parameter values in the `[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 2: Default I/O]` menu. 
+设置安全输入/输出信号的参数。  
+共有4个输入信号和1个输出信号，均以双信号的形式运行。  
+您可以在`[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 2: Default I/O]`菜单中设置参数值。
 
-### 1) Default Input Signal Settings
+### 1) 默认输入信号设置
 
 <p align="center">
 <img src="../../../_assets/safety_io/def_input.png"></img>
-<em><p align="center">Default Input/Output Settings Screen (Input)</p></em>
+<em><p align="center">默认输入/输出设置屏幕（输入）</p></em>
 </p>
 
-| Parameter <br>[Unit]          | Description                                                                                                                                       | Input Range       | Default |
+| 参数 <br>[单位]          | 描述                                                                                                                                         | 输入范围       | 默认  |
 |:------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Pulse Test                 | Set whether to use the Pulse Test for each channel.                                                                                                     | Enable / Disable | Disable |
-| Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system transitions from the Fail-Safe state to the current input state only after the **Error Latch Time** has elapsed.<br>Only values divisible by 10 can be entered. | 0 ~ 65530      | 1000   |
-| Filter Time <br>[msec]      | The same signal should be input during the **Filter Time** set for each channel for it to be processed as a valid signal.<br>Only values divisible by 10 can be entered.                       | 0 ~ 500        | 100    |
-| Discrete Time <br>[msec] | Basic input signals are processed as valid signals when two dual signals are identical.<br>An alarm is triggered if the two signals are different from each other for longer than the set **Discrete Time**.<br>Only values divisible by 10 can be entered. | 0 ~ 5000       | 1000   |
+| 脉冲测试                 | 设置是否为每个通道使用脉冲测试。                                                                                                             | 启用 / 禁用    | 禁用   |
+| 错误保持时间 <br>[毫秒] | 当渠道发生错误时，即使错误被解决，系统只有在**错误保持时间**经过后才会从安全故障状态转换到当前输入状态。<br>仅可输入能被10整除的值。 | 0 ~ 65530      | 1000   |
+| 滤波时间 <br>[毫秒]      | 在为每个通道设置的**滤波时间**内，应输入相同信号以便处理为有效信号。<br>仅可输入能被10整除的值。                                   | 0 ~ 500        | 100    |
+| 离散时间 <br>[毫秒]     | 当两个双信号相同時，基本输入信号被处理为有效信号。<br>如果两个信号持续不相同超过设定的**离散时间**，则会触发报警。<br>仅可输入能被10整除的值。 | 0 ~ 5000       | 1000   |
 
-#### Wiring Example)
+#### 接线示例)
 ![](../../../_assets/safety_io/CN_SI1.bmp)
 
-
-### 2) Output Signal Settings
+### 2) 输出信号设置
 
 <p align="center">
 <img src="../../../_assets/safety_io/def_output.png"></img>
-<em><p align="center">Default I/O Settings Screen (Output)</p></em>
+<em><p align="center">默认I/O设置屏幕（输出）</p></em>
 </p>
 
-| Parameter <br>[Unit]          | Description                                                                                                                                       | Input Range       | Default |
+| 参数 <br>[单位]          | 描述                                                                                                                                         | 输入范围       | 默认  |
 |:------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Pulse Test                 | Set whether to use the Pulse Test for each channel.                                                                                                     | Enable / Disable | Disable |
-| Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is recovered, the system maintains the **Open (Fail-safe)** state during the **Error Latch Time**. Afterward, it  transitions to normal output.<br>Only values divisible by 5 can be entered. | 0 ~ 65530      | 1000   |
+| 脉冲测试                 | 设置是否为每个通道使用脉冲测试。                                                                                                             | 启用 / 禁用    | 禁用   |
+| 错误保持时间 <br>[毫秒] | 当通道发生错误时，即使错误已恢复，系统在**错误保持时间**期间保持**打开（安全故障）**状态。随后，转为正常输出。<br>仅可输入能被5整除的值。 | 0 ~ 65530      | 1000   |
 
-#### Wiring Example)
+#### 接线示例)
 ![](../../../_assets/safety_io/CN_SO1.bmp)
-
-

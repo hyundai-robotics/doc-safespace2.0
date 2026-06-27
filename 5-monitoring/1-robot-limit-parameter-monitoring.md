@@ -1,31 +1,30 @@
-﻿# 5.1 Robot Monitoring Function Monitoring
+﻿# 5.1 机器人监控功能监控
 
-You can check the robot TCP speed/TCP position/TCP direction/power/momentum status by selecting the `[System > 10: Safety System > 3: Monitoring > 1: Robot Status]` menu.
-
+您可以通过选择 `[System > 10: Safety System > 3: Monitoring > 1: Robot Status]` 菜单来检查机器人的 TCP 速度/TCP 位置/TCP 方向/电源/动量状态。
 
 <p align="center">
 <img src="../_assets/5/robot_mon.png"></img>
-<em><p align="center">Robot status monitoring screen</p></em>
+<em><p align="center">机器人状态监控屏幕</p></em>
 </p>
 
-* Check the status of the robot monitoring function.
-  * **\[TCP Position]**: TCP position monitoring violation status
-  * **\[TCP Speed]**: TCP speed monitoring violation status
-  * **\[TCP Orientation]**: TCP orientation monitoring violation status
-  * **\[Power]**: Power monitoring violation status
-  * **\[Momentum]**: Momentum monitoring violation status
+* 检查机器人监控功能的状态。
+  * **\[TCP 位置]**: TCP 位置监控违规状态
+  * **\[TCP 速度]**: TCP 速度监控违规状态
+  * **\[TCP 方向]**: TCP 方向监控违规状态
+  * **\[电源]**: 电源监控违规状态
+  * **\[动量]**: 动量监控违规状态
 
 ---
 
-You can check joint area/speed/SOS/collision status by selecting the `[System > 10: Safety System > 3: Monitoring > 2: Joint Status]` menu.
+您可以通过选择 `[System > 10: Safety System > 3: Monitoring > 2: Joint Status]` 菜单来检查关节区域/速度/SOS/碰撞状态。
 
 <p align="center">
 <img src="../_assets/5/joint_mon.png"></img>
-<em><p align="center">Joint Status Monitoring Screen</p></em>
+<em><p align="center">关节状态监控屏幕</p></em>
 </p>
 
-* Check the status of the joint limit function.
-* **\[Joint Area]**: Whether joint area monitoring is violated.
-* **\[Joint Speed]**: Whether joint speed monitoring is violated.
-* **\[Collision]**: Whether collision monitoring is violated.
-* **\[SOS]**: Whether (Safety Stop Monitoring) SOS monitoring is violated.
+* 检查关节限制功能的状态。
+* **\[关节区域]**: 是否违反关节区域监控。
+* **\[关节速度]**: 是否违反关节速度监控。
+* **\[碰撞]**: 是否违反碰撞监控。
+* **\[SOS]**: 是否违反（安全停止监控）SOS 监控。

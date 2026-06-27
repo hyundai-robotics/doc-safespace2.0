@@ -1,5 +1,4 @@
-﻿# 3.3 Safety Functions
+﻿# 3.3 安全功能
 
 
-SafeSpace2.0 safety functions can be configured through safety function settings and are used as risk countermeasures selected in the risk assessment performed by the worker.
-
+SafeSpace2.0 安全功能可以通过安全功能设置进行配置，并作为工人执行风险评估时选择的风险对策使用。

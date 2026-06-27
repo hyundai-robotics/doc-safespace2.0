@@ -1,3 +1,3 @@
-﻿# 2.3 I/O Module (Option)
+﻿# 2.3 I/O 模块（选项）
 
-When you select to use the I/O option module, it is shipped mounted inside the controller. When board replacement is required, refer to the controller maintenance manual.
+当您选择使用 I/O 选项模块时，它将装配在控制器内部发货。当需要更换板时，请参阅控制器维护手册。

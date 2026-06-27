@@ -1,8 +1,8 @@
-﻿# Safety Cautions
+# 安全注意事项
 
-{% include file="en/safety-notice.md" %}
+{% include file="zh/safety-notice.md" %}
 
 {% hint style="warning" %}
-- Control through external communication commands and applications is not a safety function and shall not be used as a substitute for a safety-related control system.
-- Safety functions such as SafeSpace and Soft Joint are supplementary risk-reduction measures and do not replace external safety fencing, interlocks, or risk assessments.
+- 通过外部通信命令和应用程序进行控制不是安全功能，不能用作安全相关控制系统的替代品。
+- 如 SafeSpace 和 Soft Joint 等安全功能是补充风险降低措施，并不能替代外部安全围栏、联锁或风险评估。
 {% endhint %}

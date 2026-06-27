@@ -1,15 +1,15 @@
-﻿# 1.10.2 Joint Limit Function Monitoring
+﻿# 1.10.2 关节限制功能监控
 
-Select the **\[Settings > 4: Application Parameters > 21: Collaborative Robot Setup > 1: Safety Function > 5: Safety Status Monitoring]** menu's **\[Joint Limit]** tab to check the status of the joint limit function.
+选择 **\[Settings > 4: Application Parameters > 21: Collaborative Robot Setup > 1: Safety Function > 5: Safety Status Monitoring]** 菜单的 **\[Joint Limit]** 标签以检查关节限制功能的状态。
 
 ![!Figure 14 Collaborative Robot Safety Status: Joint Limit](../../_assets/image51.jpeg)
 
-* **\[Status]**: Check the safety status.
+* **\[Status]**: 检查安全状态。
 
-    You can monitor the status of collaborative robot safety function. **Normal** is output when the function normal, and you can check the corresponding error code when a safety function error or violation occurs.
+    您可以监控协作机器人安全功能的状态。功能正常时输出 **Normal**，当出现安全功能错误或违反时，您可以检查相应的错误代码。
 
 
-* Check the status of the joint limit function.
-  * **\[Position]: Joint position monitoring violation status by axis**: 축별 조인트 위치 모니터링 위반 여부
-  * **\[Speed]: Joint speed monitoring violation status by axis**: 축별 조인트 속도 모니터링 위반 여부
-  * **\[Torque]: Joint torque monitoring violation status by axis**: 축별 조인트 토크 모니터링 위반 여부
+* 检查关节限制功能的状态。
+  * **\[Position]: 按轴监控关节位置违规状态**: 축별 조인트 위치 모니터링 위반 여부
+  * **\[Speed]: 按轴监控关节速度违规状态**: 축별 조인트 속도 모니터링 위반 여부
+  * **\[Torque]: 按轴监控关节扭矩违规状态**: 축별 조인트 토크 모니터링 위반 여부

@@ -1,11 +1,11 @@
-﻿# 1.2.2 Safety Training
+﻿# 1.2.2 安全培训
 
-To effectively use the product's functions, you must familiarize yourself with the contents of the manual and properly install, use, and maintain the product. Product users have the responsibility to be familiar with and comply with robot-related safety regulations in the region where the robot is installed and used, and to properly design, install, and operate safety devices to ensure the safety of users working in the robot system.
+为有效使用产品的功能，您必须熟悉手册内容，并正确安装、使用和维护产品。产品用户有责任熟悉并遵守机器人安装和使用所在地区的安全法规，并正确设计、安装和操作安全设备，以确保在机器人系统中工作的用户的安全。
 
-* All workers who install, use, and maintain the robot system must thoroughly read the manual to fully understand its contents. In particular, be sure to familiarize yourself with the safety precautions (:warning:).
-* We plan and implement trainings related to the installation, use, and maintenance of the product. Product users and workers must complete the corresponding training course before using the product.
-* Workers responsible for teaching and inspecting the robot must complete trainings for robot use and safety before using the robot. The safety training program covers the following:
-  * Safety concepts, and the purpose and functions of safety devices
-  * Procedures for safely handling the robot
-  * Performance and potential risk factors of the robot and robot system
-  * Work related to specific applications of the robot, etc.
+* 所有安装、使用和维护机器人系统的工作人员必须彻底阅读手册，充分理解其内容。特别是，务必熟悉安全预防措施 (:warning:).
+* 我们计划并实施与产品安装、使用和维护相关的培训。产品用户和工作人员必须在使用产品之前完成相应的培训课程。
+* 负责教授和检查机器人的工作人员必须在使用机器人之前完成机器人的使用和安全培训。安全培训计划涵盖以下内容：
+  * 安全概念，以及安全设备的目的和功能
+  * 安全处理机器人的程序
+  * 机器人及机器人系统的性能和潜在风险因素
+  * 与机器人特定应用相关的工作等

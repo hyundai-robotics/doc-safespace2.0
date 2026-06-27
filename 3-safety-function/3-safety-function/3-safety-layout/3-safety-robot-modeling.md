@@ -1,25 +1,25 @@
-﻿# 3.3.3.3 Safety Robot Modeling
+﻿# 3.3.3.3 安全机器人建模
 
-A robot model used for safety space monitoring. Safety robot modeling can be applied to axes 2 and 3, and both are modeled as capsules.
+用于安全空间监测的机器人模型。安全机器人建模可以应用于轴 2 和 3，两者都被建模为胶囊。
 
-The capsule used for the safety modeling for robots consists of the center and radius of the spheres at both ends. The center of the modeling sphere is the center position of the robot 2nd/3rd axis, and the radius should be large enough to include the size of the current link and the stop distance at the maximum TCP speed.
+用于机器人安全建模的胶囊由两端球体的中心和半径组成。建模球体的中心是机器人第二/第三轴的中心位置，半径应足够大，以包含当前链节的大小和在最大 TCP 速度下的停止距离。
 
-You can set parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 2: Robot]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 2: Robot]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/robot.png"></img>
-<em><p align="center">Safety Robot Modeling Settings Screen</p></em>
+<em><p align="center">安全机器人建模设置屏幕</p></em>
 </p>
 
-| **Parameter** |          **Description**                                     | **Default Setting** |
+| **参数** |          **描述**                                     | **默认设置** |
 | :------: | --------------------------------------------------- | :--------: |
-| <p>Height</p><p>[mm]</p> | <p>Plate height</p><p>(0 ~ 5000.0)</p> | 0 |
-| <p>Radius</p><p>[mm]</p> | <p>Radius of sphere</p><p>(0 ~ 3000.0)</p> | 10 |
-| <p>Center</p><p>[mm]</p> | <p>Center position</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
-| <p>Direction</p><p>[deg]</p> | <p>Orientation of coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |                    |    0 mm    |
+| <p>高度</p><p>[mm]</p> | <p>板高度</p><p>(0 ~ 5000.0)</p> | 0 |
+| <p>半径</p><p>[mm]</p> | <p>球体半径</p><p>(0 ~ 3000.0)</p> | 10 |
+| <p>中心</p><p>[mm]</p> | <p>中心位置</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
+| <p>方向</p><p>[deg]</p> | <p>坐标系统的方向</p><p>(-180.0 ~ 180.0)</p> | 0 |                    |    0 mm    |
 
 {% hint style="warning" %}
-**\[Caution]**
+**\[注意]**
 
-* As the definition of robot layout settings applies only to the robot 2nd and 3rd axes, other parts of the robot may violate this area even if a safety area is set.
+* 由于机器人布局设置的定义仅适用于机器人第二和第三轴，其他部分即使设置了安全区域也可能会违反该区域。
 {% endhint %}

@@ -1,22 +1,19 @@
-﻿# 4.1.2 Encoder Inspection
+﻿# 4.1.2 编码器检查
 
-Since the safety function diagnoses the robot's position and speed based on the data of the encoder mounted on each axis, the accuracy of the encoder data is important. Therefore, you should check whether the encoder values match the actual values before using the safety function.
+由于安全功能根据安装在每个轴上的编码器的数据诊断机器人的位置和速度，因此编码器数据的准确性很重要。因此，在使用安全功能之前，您应该检查编码器值是否与实际值匹配。
 
-1\. Check the home position mark of each robot axis and move the axis.
+1\. 检查每个机器人轴的参考位置标记并移动轴。
 
+当由于安全功能违规而发生停止时，在手动模式下通过慢速移动每个轴。有关恢复方法的详细信息，请参阅 "[6.1 恢复模式](../../6-recovery/README.md)"。
 
-When a stop occurs due to a safety function violation, move each axis by jogging in manual mode. For detailed information on recovery methods, refer to "[6.1 Recovery Mode](../../6-recovery/README.md)".
+2\. 在工作区的姿态信息窗口中，验证机器人轴坐标值是否显示为参考姿态 (**0, 90, 0, 0, 0, 0** \[deg\]）。
 
-2\. In the pose information window in the work area, verify that the robot's axis coordinate values are displayed as the reference posture (**0, 90, 0, 0, 0, 0** \[deg]).
+* 如果工作区中没有姿态信息窗口，请触摸面板堆栈右上角的 `[+]` 按钮，然后在面板选择窗口中触摸 `[Pose]`。
 
+3\. 如果角度值误差在 0.01 以内，请继续下一步。如果误差超过 0.01，请执行编码器偏移。
 
-* If there is no pose information window in the work area, touch the `[+]` button at the upper right of the panel stack, then touch `[Pose]` in the panel selection window.
-
-
-3\. If the angle value error is within 0.01, proceed to the next step. If the error exceeds 0.01, perform encoder offset.
-
-4\. Reboot the system.
+4\. 重启系统。
 
 {% hint style="info" %}
-For more information about encoder offset, see "[7.4.4 Encoder Offset](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)" in the "[Hi7 Controller Operating Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/4-robot-parameter/4-encoder-offset/README?cont_model=Hi7)".
+有关编码器偏移的更多信息，请参见 "[7.4.4 编码器偏移](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)" 中的 "[Hi7 控制器操作手册](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/4-robot-parameter/4-encoder-offset/README?cont_model=Hi7)"。
 {% endhint %}

@@ -1,29 +1,29 @@
-﻿# 3.3.2.9 Stop Settings
+﻿# 3.3.2.9 停止设置
 
-Set the appropriate safe stop type for each safety function. Safe stop functions stop the robot to a safe state when a safety violation occurs. There are three types: All types of safe stop functions comply with Requirement 4.2.2.4 of IEC 61800-5-2.
+为每个安全功能设置适当的安全停止类型。当发生安全违规时，安全停止功能会将机器人停止到安全状态。有三种类型：所有安全停止功能均符合 IEC 61800-5-2 的要求 4.2.2.4。
 
-* **Stop 0**: Immediately remove power from all motors in the joint modules and stop.
-* **Stop 1**: All motors in the joint modules decelerate and then stop. Power is then removed from the motors.
-* **Stop 2**: All motors in the joint modules decelerate and SOS (Safe Operating Stop) is activated. Power is maintained to all motors.
+* **停止 0**：立即切断关节模块中所有电机的电源并停止。
+* **停止 1**：关节模块中的所有电机减速，然后停止。然后断开电机的电源。
+* **停止 2**：关节模块中的所有电机减速，激活 SOS（安全操作停止）。电源保持连接到所有电机。
 
-The stop type due to a safety function violation is set in the function-specific parameter settings menu.
-The stop type settings for the stops required by ISO 10218-1 are as follows:
+由于安全功能违规而导致的停止类型在功能特定参数设置菜单中设置。
+根据 ISO 10218-1 要求的停止类型设置如下：
 
-Parameter values   can be set in the **\[System > 8: Safety System > 1: Basic Settings > 2: Stop Settings]** menu.
+参数值可以在 **\[System > 8: Safety System > 1: Basic Settings > 2: Stop Settings]** 菜单中设置。
 
 <p align="center">
 <img src="../../../_assets/safety_stop_param.png"></img>
-<em><p align="center">Stop setting screen</p></em>
+<em><p align="center">停止设置屏幕</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Emergency Stop | <p>Select the stop type to apply during an emergency stop</p><p>(Stop 0, Stop 1)</p> | Stop 1 |
-| Protective Stop | <p>Select the stop type to apply during a protective stop</p><p>(Stop 0, Stop 1, Stop 2)</p> | Stop 1 |
-| Normal Stop | <p>Select the stop type to apply during a normal stop</p><p>(Stop 0, Stop 1)</p> | Stop 1 |
-| Manual Mode Stop | <p>Stop when speeding in manual mode</p><p>(Stop 0, Stop 1)</p> | Stop 1 |
+| 紧急停止 | <p>选择在紧急停止期间应用的停止类型</p><p>(停止 0，停止 1)</p> | 停止 1 |
+| 保护停止 | <p>选择在保护停止期间应用的停止类型</p><p>(停止 0，停止 1，停止 2)</p> | 停止 1 |
+| 正常停止 | <p>选择在正常停止期间应用的停止类型</p><p>(停止 0，停止 1)</p> | 停止 1 |
+| 手动模式停止 | <p>在手动模式下加速时停止</p><p>(停止 0，停止 1)</p> | 停止 1 |
 
 
 {% hint style="warning" %}
-**\[Caution]**: You should establish an appropriate stopping method for each function through a risk assessment.
+**\[注意]**：您应通过风险评估为每个功能建立适当的停止方法。
 {% endhint %}

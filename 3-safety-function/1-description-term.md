@@ -1,108 +1,108 @@
-﻿# 3.1 Terminology
+# 3.1 术语
 
-### <mark style="color:green;">Robot Monitoring Function</mark>&#xD;
+### <mark style="color:green;">机器人监控功能</mark>&#xD;
 
-Parameters that serve as the references for monitoring the robot's speed, force, and momentum.
+用于监控机器人速度、力量和动量的参考参数。
 
-* **Joint Angle Monitoring**
+* **关节角度监控**
 
-Monitors the position of each axis joint. Performs a user-set safety stop if the reference value is exceeded.
+监控每个轴关节的位置。如果超出参考值，则执行用户设定的安全停车。
 
-* **Joint Speed Monitoring**
+* **关节速度监控**
 
-Monitors the speed of each axis joint. Performs a user-set safety stop if the reference value is exceeded.
+监控每个轴关节的速度。如果超出参考值，则执行用户设定的安全停车。
     
-* **Safe Operating Stop (SOS) Monitoring**
+* **安全操作停止（SOS）监控**
 
-Monitors whether each axis maintains a stopped state without slip. Performs Stop 0 if the reference value is exceeded.
+监控每个轴是否保持停止状态而没有滑动。如果超出参考值，则执行停止0。
 
-* **TCP Position Monitoring**
+* **TCP位置监控**
 
-Monitors whether the safety tool model violates the safety area. Performs a user-set safety stop if the area is violated.
+监控安全工具模型是否违反安全区域。如果该区域被违反，则执行用户设定的安全停车。
     
-* **TCP Orientation Monitoring**
+* **TCP朝向监控**
 
-Monitors whether the tool orientation stays within the specified range. Performs a user-set safety stop if the reference value is exceeded.
+监控工具朝向是否保持在规定范围内。如果超出参考值，则执行用户设定的安全停车。
     
-* **TCP Speed Monitoring**
+* **TCP速度监控**
 
-Monitors the speed of the TCP. Performs a user-set safety stop if the reference value is exceeded.
+监控TCP的速度。如果超出参考值，则执行用户设定的安全停车。
     
-* **Power Monitoring**
+* **功率监控**
 
-Monitors the robot's power. Performs a user-set safety stop if the reference value is exceeded.
+监控机器人的功率。如果超出参考值，则执行用户设定的安全停车。
     
-* **Momentum Monitoring**
+* **动量监控**
 
-Monitors the robot's momentum. Performs a user-set safety stop if the reference value is exceeded.
-
-
-* **Collision Detection**
-
-Performs a user-set safety stop when an external force applied to the robot exceeds the allowable value.
+监控机器人的动量。如果超出参考值，则执行用户设定的安全停车。
 
 
-### <mark style="color:green;">Safety Layout</mark>
+* **碰撞检测**
 
-Parameters for the safety areas and tool areas that serve as the references for the monitoring of the TCP position and orientation.
-
-* **Safety Area**
-
-General term for the tool's work area and protected area
-* **Work area**
-
-The area where the robot performs work. Performs a safety stop if the tool model and robot elbow model leave the work area.
-* **Protected Area**
-
-The area that should be protected from the robot. Performs a safety stop if the tool model and robot elbow model violate the protected area.
-* **Safety Tool Modeling**
-
-Models the tool attached to the robot as a sphere and cone for the TCP position and orientation monitoring
-* **Safety Robot Modeling**
-
-Models the robot's 2nd and 3rd axes as capsules to monitor the distance from the safety area
+当施加到机器人上的外力超过允许值时，执行用户设定的安全停车。
 
 
+### <mark style="color:green;">安全布局</mark>
 
-### <mark style="color:green;">Safety Stop</mark>&#xD;
+用于TCP位置和朝向监控的安全区域和工具区域的参考参数。
 
-Stops the robot to create a safe state when safety is violated. There are 3 stop methods. For detailed information on each stop method, refer to "ISO 13850" or "IEC 60204-1."
+* **安全区域**
 
-* **Stop 0**
+工具的工作区域和保护区域的一般术语
+* **工作区域**
 
-Immediately removes the power from the motor of each join and stop the joints (uncontrolled stop).
-* **Stop 1**
+机器人执行工作的区域。如果工具模型和机器人肘部模型离开工作区域，则执行安全停车。
+* **保护区域**
 
-Motors of all joints decelerate and stop, then power is removed from the motors (controlled stop). The robot decelerates to a stop while continuously following the program path and the power is cut off as soon as the robot stops.
-* **Stop 2**
+应由机器人保护的区域。如果工具模型和机器人肘部模型违反保护区域，则执行安全停车。
+* **安全工具建模**
 
-The motor of each joint decelerates and then Safe Operating Stop (SOS) monitoring operates. Power supply to all motors is maintained.
+将连接到机器人上的工具建模为球体和锥体，以进行TCP位置和朝向监控
+* **安全机器人建模**
 
-
-Stop 1 and Stop 2 functions monitor the deceleration process through deceleration time and distance.
-
-* **Stop Time**
-
-Monitors the time from the start of deceleration to the actual stop. If the robot does not stop within the set time, Stop 0 is performed to immediately remove the power from the motors.
-* **Stop Distance**
-
-Monitors the TCP distance from the start of deceleration to the actual stop. If the robot does not stop within the set distance, Stop 0 is performed to immediately remove the power from the motors.
+将机器人的第二和第三轴建模为胶囊，以监控与安全区域的距离
 
 
 
-### <mark style="color:green;">Safe Motion Tuning</mark>&#xD;
+### <mark style="color:green;">安全停车</mark>&#xD;
 
-This function automatically adjusts robot motion to avoid exceeding the entered parameters.
-The following parameters are considered during motion tuning:
+当安全被违反时，停止机器人以创建安全状态。有3种停车方法。有关每种停车方法的详细信息，请参阅“ISO 13850”或“IEC 60204-1”。
 
-* **Joint Speed**
+* **停止0**
 
-* **TCP Speed**
+立即移除每个关节电机的电源并停止关节（不受控停车）。
+* **停止1**
 
-* **Power**
+所有关节的电机减速并停止，然后从电机移除电源（受控停车）。机器人在持续跟踪程序路径的同时减速停车，并在机器人停止的瞬间切断电源。
+* **停止2**
 
-* **Momentum**
+每个关节的电机减速，然后进行安全操作停止（SOS）监控。保持对所有电机的电源供应。
 
-* **Stopping Time**
 
-* **Stopping Distance**
+停止1和停止2功能通过减速时间和距离监控减速过程。
+
+* **停止时间**
+
+监控从减速开始到实际停止的时间。如果机器人在设定时间内未停止，则执行停止0以立即移除电机的电源。
+* **停止距离**
+
+监控从减速开始到实际停止的TCP距离。如果机器人在设定距离内未停止，则执行停止0以立即移除电机的电源。
+
+
+
+### <mark style="color:green;">安全运动调节</mark>&#xD;
+
+该功能自动调整机器人运动，以避免超过输入参数。
+运动调节时考虑以下参数：
+
+* **关节速度**
+
+* **TCP速度**
+
+* **功率**
+
+* **动量**
+
+* **停止时间**
+
+* **停止距离**

@@ -1,1139 +1,1059 @@
 ﻿
 [__SOURCE](README.md)
-# Hi7 Controller Function Manual - SafeSpace2.0
-
+# Hi7 控制器功能手册 - SafeSpace2.0
 [__SOURCE](0-about-this-manual/README.md)
-# About the Manual
-
+# 关于手册
 [__SOURCE](0-about-this-manual/precautions.md)
-# Precautions
+# 注意事项
 
-{% include file="en/precautions.md" %}
-
+{% include file="zh/precautions.md" %}
 [__SOURCE](0-about-this-manual/safety-notice.md)
-# Safety Cautions
+# 安全注意事项
 
-{% include file="en/safety-notice.md" %}
+{% include file="zh/safety-notice.md" %}
 
 {% hint style="warning" %}
-- Control through external communication commands and applications is not a safety function and shall not be used as a substitute for a safety-related control system.
-- Safety functions such as SafeSpace and Soft Joint are supplementary risk-reduction measures and do not replace external safety fencing, interlocks, or risk assessments.
+- 通过外部通信命令和应用程序进行控制不是安全功能，不能用作安全相关控制系统的替代品。
+- 如 SafeSpace 和 Soft Joint 等安全功能是补充风险降低措施，并不能替代外部安全围栏、联锁或风险评估。
 {% endhint %}
-
 [__SOURCE](1-safety/README.md)
-# 1. Safety
-
-
+# 1. 安全
 [__SOURCE](1-safety/1-safety-requirements/README.md)
-# 1.1 Safety Requirements
-
-
+# 1.1 安全要求
 [__SOURCE](1-safety/1-safety-requirements/1-applicable-standards.md)
-# 1.1.1 Applicable Standards
+# 1.1.1 适用标准
 
-This product has been designed and manufactured in accordance with the industrial robot safety standard ISO 10218-1 and the technical specification ISO/TS 15066 for collaborative operation. The safety standards applied to this product are as follows.
+本产品是根据工业机器人安全标准 ISO 10218-1 和协作操作的技术规范 ISO/TS 15066 设计和制造的。适用于本产品的安全标准如下。
 
-* ISO 10218-1:2025 Robots and robotic devices - Safety requirements for industrial robots - Part 1: Robots
-* ISO 10218-2:2025 Robots and robotic devices - Safety requirements for industrial robots - Part 2: Robot systems and integration
-* ISO/TS 15066:2016 Robots and robotic devices - Safety requirements - Industrial collaborative workspace
-* IEC 61508-1:2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 1: General requirements
-* IEC 61508-2:2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 2: Requirements for electrical/electronic/programmable electronic safety-related systems
-* IEC 61508-3:2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 3: Software requirements
-* IEC 61508-4:2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 4: Definitions and abbreviations
-* IEC 61508-5:2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 5: Examples of methods for the determination of safety integrity levels
-* IEC 61508-6:2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 6: Guidelines on the application of IEC 61508-2 and IEC 61508-3
-* IEC 61508-7:2010 Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 7: Overview of techniques and measures
-* IEC 61800-5-1:2022 PRV Adjustable speed electrical power drive systems - Part 5-1: Safety requirements - Electrical, thermal and energy
-* IEC 61800-5-2:2016 Adjustable speed electrical power drive systems - Part 2: General requirements - Rating specifications for low voltage adjustable speed a.c. power drive systems
-* ISO 13849-1:2023 Safety of machinery - Safety-related parts of control systems - Part 1: General principles for design
-* ISO 13849-2:2012 Safety of machinery - Safety-related parts of control systems - Part 2: Validation
-* IEC 62061:2021 Safety of machinery. Functional safety of safety-related electrical, electronic and programmable electronic control systems
-* IEC 61784-3:2016 Industrial communication networks - Profiles - Part 3: Functional safety fieldbuses - General rules and profile definitions
-* IEC 61800-3:2022 Adjustable speed electrical power drive systems - Part 3: EMC requirements and specific test methods
-* IEC 61000-6-7:2014 Electromagnetic compatibility (EMC) - Part 6-7: Generic standards - Immunity requirements for equipment intended to perform functions in a safety-related system (functional safety) in industrial locations
-* IEC 61326-3-1:2017 Electrical equipment for measurement, control and laboratory use. EMC requirements. Part 3-1: Immunity requirements for safety-related systems and for equipment intended to perform safety-related functions (functional safety) - General industrial applications
-
+* ISO 10218-1:2025 机器人和机器人设备 - 工业机器人安全要求 - 第 1 部分：机器人
+* ISO 10218-2:2025 机器人和机器人设备 - 工业机器人安全要求 - 第 2 部分：机器人系统和集成
+* ISO/TS 15066:2016 机器人和机器人设备 - 安全要求 - 工业协作工作区
+* IEC 61508-1:2010 电气/电子/可编程电子安全相关系统的功能安全 - 第 1 部分：一般要求
+* IEC 61508-2:2010 电气/电子/可编程电子安全相关系统的功能安全 - 第 2 部分：电气/电子/可编程电子安全相关系统的要求
+* IEC 61508-3:2010 电气/电子/可编程电子安全相关系统的功能安全 - 第 3 部分：软件要求
+* IEC 61508-4:2010 电气/电子/可编程电子安全相关系统的功能安全 - 第 4 部分：定义和缩略语
+* IEC 61508-5:2010 电气/电子/可编程电子安全相关系统的功能安全 - 第 5 部分：安全完整性级别确定方法示例
+* IEC 61508-6:2010 电气/电子/可编程电子安全相关系统的功能安全 - 第 6 部分：关于 IEC 61508-2 和 IEC 61508-3 应用的指导
+* IEC 61508-7:2010 电气/电子/可编程电子安全相关系统的功能安全 - 第 7 部分：技术和措施概述
+* IEC 61800-5-1:2022 PRV 可调速电力驱动系统 - 第 5-1 部分：安全要求 - 电气、热和能源
+* IEC 61800-5-2:2016 可调速电力驱动系统 - 第 2 部分：一般要求 - 低电压可调速交流电力驱动系统的额定规范
+* ISO 13849-1:2023 机械安全 - 安全相关的控制系统部分 - 第 1 部分：设计的一般原则
+* ISO 13849-2:2012 机械安全 - 安全相关的控制系统部分 - 第 2 部分：验证
+* IEC 62061:2021 机械安全。安全相关电气、电子和可编程电子控制系统的功能安全
+* IEC 61784-3:2016 工业通信网络 - 模型 - 第 3 部分：功能安全现场总线 - 一般规则和模型定义
+* IEC 61800-3:2022 可调速电力驱动系统 - 第 3 部分：电磁兼容性要求和特定测试方法
+* IEC 61000-6-7:2014 电磁兼容性 (EMC) - 第 6-7 部分：通用标准 - 针对在工业环境中执行安全相关功能的设备的抗干扰要求 (功能安全)
+* IEC 61326-3-1:2017 测量、控制和实验室用电气设备。电磁兼容性要求。第 3-1 部分：安全相关系统和打算执行安全相关功能的设备的抗干扰要求 (功能安全) - 一般工业应用
 [__SOURCE](1-safety/1-safety-requirements/2-safety-performance.md)
-# 1.1.2 Safety Performance
+# 1.1.2 安全性能
 
-The safety performance of SafeSpace2.0's emergency stop and external device interface (basic safety input/output, PROFIsafe) is as follows:
-|            **Item**            | **Safety Performance** |         **Applicable Standard**         |
+SafeSpace2.0 的紧急停止和外部设备接口（基本安全输入/输出，PROFIsafe）的安全性能如下：
+|            **项目**            | **安全性能** |         **适用标准**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
-| SIL (Safety Integrity Level) |     3     | IEC 61508/62061/61800-5-2 |
-|           Category           |     4     |        ISO 13849-1        |
-|    PL (Performance Level)    |     e     |        ISO 13849-1        |
+| SIL (安全完整性等级) |     3     | IEC 61508/62061/61800-5-2 |
+|           类别           |     4     |        ISO 13849-1        |
+|    PL (性能等级)    |     e     |        ISO 13849-1        |
 |    		PFH    			   |  1.5E-08  |         IEC 61508         |
 
 
-The safety performance of other safety functions is as follows:
-|            **Item**            | **Safety Performance** |         **Applicable Standard**         |
+其他安全功能的安全性能如下：
+|            **项目**            | **安全性能** |         **适用标准**         |
 | :--------------------------: | :-------: | :-----------------------: |
 |              HFT             |     1     | IEC 61508/62061/61800-5-2 |
-| SIL (Safety Integrity Level) |     2     | IEC 61508/62061/61800-5-2 |
-|           Category           |     3     |        ISO 13849-1        |
-|    PL (Performance Level)    |     d     |        ISO 13849-1        |
+| SIL (安全完整性等级) |     2     | IEC 61508/62061/61800-5-2 |
+|           类别           |     3     |        ISO 13849-1        |
+|    PL (性能等级)    |     d     |        ISO 13849-1        |
 |    		PFH    			   |  1.5E-07  |         IEC 61508         |
-
-
-
 [__SOURCE](1-safety/2-safety-measures/README.md)
-# 1.2 Safety Measures
+# 1.2 安全措施
 
-Describes the safety functions built into the product and also the measures to ensure the safety of users and workers.
-
+描述内置于产品中的安全功能，以及确保用户和工作人员安全的措施。
 [__SOURCE](1-safety/2-safety-measures/1-safety-functions.md)
-# 1.2.1 Safety functions
+# 1.2.1 安全功能
 
-### Safety functions in SafeSpace2.0
-SafeSpace2.0 is intended to carry out collaborative tasks based on the following safety functions. For the details of the safety functions, see the "[3. SafeSpace2.0 Safety functions](../../3-safety-function/README.md)"
+### SafeSpace2.0中的安全功能
+SafeSpace2.0旨在基于以下安全功能执行协作任务。有关安全功能的详细信息，请参见“[3. SafeSpace2.0安全功能](../../3-safety-function/README.md)”
 
-* STO: Safe Torque Off
-* SS1: Safe Stop 1
-* SS2: Safe Stop 2
-* Emergency Stop
-* Protective Stop
-* Normal Stop
-* SOS: Safe Operating Stop
-* Stopping time Monitoring
-* Stopping distance Monitoring
-* Joint-SLP, Joint Angle Monitoring
-* Joint-SLS, Joint Angular Speed Monitoring
-* TCP-SLP, TCP Position Monitoring
-* TCP Orientation Monitoring
-* TCP-SLS, TCP Speed Monitoring
-* Power Monitoring
-* Momentum Monitoring
-* Collision Detection
-* Speed and Separation Monitoring
-* SBC: Safe Brake Control
-* Safety Inputs
-* Safety Outputs
+* STO: 安全扭矩关闭
+* SS1: 安全停止1
+* SS2: 安全停止2
+* 紧急停止
+* 保护停止
+* 正常停止
+* SOS: 安全操作停止
+* 停止时间监控
+* 停止距离监控
+* 关节SLP，关节角度监控
+* 关节SLS，关节角速度监控
+* TCP-SLP，TCP位置监控
+* TCP方向监控
+* TCP-SLS，TCP速度监控
+* 电源监控
+* 动量监控
+* 碰撞检测
+* 速度和分离监控
+* SBC: 安全制动控制
+* 安全输入
+* 安全输出
 * PROFIsafe
-* Start/restart Interlock
+* 启动/重新启动联锁
 
 ---
 
+### 选项许可
+SafeSpace 2.0提供三种不同的许可选项。每种许可赋予对不同功能规格的访问权限。有关更多详细信息，请参考下面提供的表格。
 
-### Option license
-SafeSpace 2.0 is available with three different license options. Each license grants access to different functional specifications. For further details, please consult the table provided below. 
-
-|  **Safety Functions** |                       **Default**                       |  **Option 1 (Basic)**  |  **Option 2 (Pro)**  |  **Option 3 (Collaborative)**  |
+|  **安全功能** |                       **默认**                       |  **选项 1 (基础)**  |  **选项 2 (专业)**  |  **选项 3 (协作)**  |
 | :-------: | :------------------------------------------------: | :----------: | :----------: | :----------: |
-| Emergency Stop/Protective Stop(SGG,SGA) |  O  | O | O | O |
-| TCP speed monitoring in manual mode |  O  | O | O | O |
-| Stopping distance/Stopping time monitoring |  O  | O | O | O |
-| Joint position monitoring |    | O | O | O |
-| TCP position monitoring |    | O | O | O |
-| Position monitoring space |    | 1 | 16 | 16 |
-| Joint speed monitoring |    |  | O | O |
-| TCP speed monitoring |    |  | O | O |
-| TCP orientation monitoring |    |  | O | O |
-| Safe operating stop |    |  | O | O |
-| Self collision monitoring |    |  | O | O |
-| Speed and Separation monitoring |    |  |  | O |
-| Collision/Power/Momentum monitoring |    |  |  | O |
-| Safe motion |    |  |  | O |
-
+| 紧急停止/保护停止(SGG,SGA) |  O  | O | O | O |
+| 手动模式下的TCP速度监控 |  O  | O | O | O |
+| 停止距离/停止时间监控 |  O  | O | O | O |
+| 关节位置监控 |    | O | O | O |
+| TCP位置监控 |    | O | O | O |
+| 位置监控空间 |    | 1 | 16 | 16 |
+| 关节速度监控 |    |  | O | O |
+| TCP速度监控 |    |  | O | O |
+| TCP方向监控 |    |  | O | O |
+| 安全操作停止 |    |  | O | O |
+| 自碰撞监控 |    |  | O | O |
+| 速度和分离监控 |    |  |  | O |
+| 碰撞/电源/动量监控 |    |  |  | O |
+| 安全运动 |    |  |  | O |
 [__SOURCE](1-safety/2-safety-measures/2-safety-training.md)
-# 1.2.2 Safety Training
+# 1.2.2 安全培训
 
-To effectively use the product's functions, you must familiarize yourself with the contents of the manual and properly install, use, and maintain the product. Product users have the responsibility to be familiar with and comply with robot-related safety regulations in the region where the robot is installed and used, and to properly design, install, and operate safety devices to ensure the safety of users working in the robot system.
+为有效使用产品的功能，您必须熟悉手册内容，并正确安装、使用和维护产品。产品用户有责任熟悉并遵守机器人安装和使用所在地区的安全法规，并正确设计、安装和操作安全设备，以确保在机器人系统中工作的用户的安全。
 
-* All workers who install, use, and maintain the robot system must thoroughly read the manual to fully understand its contents. In particular, be sure to familiarize yourself with the safety precautions (:warning:).
-* We plan and implement trainings related to the installation, use, and maintenance of the product. Product users and workers must complete the corresponding training course before using the product.
-* Workers responsible for teaching and inspecting the robot must complete trainings for robot use and safety before using the robot. The safety training program covers the following:
-  * Safety concepts, and the purpose and functions of safety devices
-  * Procedures for safely handling the robot
-  * Performance and potential risk factors of the robot and robot system
-  * Work related to specific applications of the robot, etc.
-
+* 所有安装、使用和维护机器人系统的工作人员必须彻底阅读手册，充分理解其内容。特别是，务必熟悉安全预防措施 (:warning:).
+* 我们计划并实施与产品安装、使用和维护相关的培训。产品用户和工作人员必须在使用产品之前完成相应的培训课程。
+* 负责教授和检查机器人的工作人员必须在使用机器人之前完成机器人的使用和安全培训。安全培训计划涵盖以下内容：
+  * 安全概念，以及安全设备的目的和功能
+  * 安全处理机器人的程序
+  * 机器人及机器人系统的性能和潜在风险因素
+  * 与机器人特定应用相关的工作等
 [__SOURCE](1-safety/2-safety-measures/4-emergency-stop/README.md)
-# 1.2.3 Emergency Stop
+# 1.2.3 紧急停止
 
-The emergency stop function operates in emergencies or emergency situations such as when a worker or other object enters a danger area. All emergency stop switches are installed in locations that are easily accessible even from outside the safety area.
+紧急停止功能在紧急情况下或当工人或其他物体进入危险区域时操作。所有紧急停止开关均安装在即使从安全区域外部也易于接近的位置。
 
-When the emergency stop function is executed, the robot immediately stops the operation in any case.
+当执行紧急停止功能时，机器人在任何情况下立即停止操作。
 
-* The robot servo system power is cut off and the motor brake operates.
-* The teach pendant screen displays an emergency stop message.
-
+* 机器人伺服系统电源切断，电动机制动器工作。
+* 教学挂件屏幕显示紧急停止消息。
 [__SOURCE](1-safety/2-safety-measures/4-emergency-stop/1-switches.md)
-# 1.2.3.1 Emergency Stop Switch
+# 1.2.3.1 紧急停止开关
 
-There is one emergency stop switch installed on the controller and one on the teach pendant. Press the emergency stop switch in case of an emergency.
-
+控制器上安装有一个紧急停止开关，教学挂件上也有一个。发生紧急情况时，请按下紧急停止开关。
 [__SOURCE](1-safety/2-safety-measures/4-emergency-stop/2-connecting-to-devices-of-external-system.md)
-# 1.2.3.2 Connecting External Emergency Stop Device
+# 1.2.3.2 连接外部紧急停止装置
 
-In addition to the pre-installed emergency stop switch, an external emergency stop device can be connected depending on the field environment and application. For more information, see "[2. Installation](../../../2-installation/README.md)" and "[3.3.4 Safety Signal Input/Output](../../../3-safety-function/3-safety-function/4-safety-io/README.md)".
-
-
+除了预安装的紧急停止开关外，还可以根据现场环境和应用连接外部紧急停止装置。有关更多信息，请参见 "[2. Installation](../../../2-installation/README.md)" 和 "[3.3.4 Safety Signal Input/Output](../../../3-safety-function/3-safety-function/4-safety-io/README.md)"。
 [__SOURCE](1-safety/3-risk-assessment.md)
-# 1.3 Risk Assessment
+# 1.3 风险评估
 
-In the integrated system configuration including the robot, risk assessment is one of the important factors that is handled as a legal requirement in most countries. As the safety assessment for robot installation varies depending on how the robot is integrated into the system, the risk of the integrated system cannot be assessed with the robot alone.
+在包括机器人在内的集成系统配置中，风险评估是大多数国家作为法律要求处理的重要因素之一。由于机器人安装的安全评估因机器人如何与系统集成而异，因此无法仅凭机器人评估集成系统的风险。
 
-The system administrator should configure and operate the system according to the guidelines of ISO 12100 and ISO 10218-2 to conduct a risk assessment. You can also refer to the technical specification ISO/TS 15066.
+系统管理员应根据 ISO 12100 和 ISO 10218-2 的指导方针配置和操作系统，以进行风险评估。您还可以参考技术规范 ISO/TS 15066。
 
-Conduct a risk assessment considering the entire process of the integrated system including the robot. The main goals of risk assessment are as follows:
+进行风险评估时，应考虑包括机器人在内的集成系统的整个过程。风险评估的主要目标如下：
 
-* Basic settings for robot use and robot teaching
-* Problem diagnosis and maintenance
-* Normal operation of the installed robot
+* 机器人使用和机器人教学的基本设置
+* 问题诊断和维护
+* 已安装机器人的正常操作
 
-After installing the robot and configuring the system, you must conduct a risk assessment. The risk assessment mainly determines the appropriateness of the safety devices in the integrated robot system, as well as the need for additional emergency stop devices and other safety devices.
+在安装机器人并配置系统后，必须进行风险评估。风险评估主要确定集成机器人系统中安全装置的适当性，以及额外紧急停止装置和其他安全设备的必要性。
 
-It is very important to identify appropriate safety devices and properly configure an integrated robot system. Configure an integrated system by referring to relevant contents in the manual.
+识别合适的安全装置并正确配置集成机器人系统非常重要。请参考手册中的相关内容配置集成系统。
 
-You can set limits for the robot's TCP speed, pressure, power, momentum, collision detection, reduction ratio, joint angle by axis, speed, etc. You can also configure safety functions using safety-related I/O and communication. For detailed information on the configuration of safety functions, refer to "[3. SafeSpace2.0 Safety Functions](../3-safety-function/README.md)".
+您可以设置机器人的 TCP 速度、压力、功率、动量、碰撞检测、减速比、关节角度按轴、速度等限制。您还可以使用安全相关的 I/O 和通信来配置安全功能。有关安全功能配置的详细信息，请参考 "[3. SafeSpace2.0 安全功能](../3-safety-function/README.md)"。
 
-**\[Safety Function]** menu allows you to configure safety-related functions, and the available functions are as follows:
+**\[安全功能]** 菜单允许您配置与安全相关的功能，提供的功能如下：
 
-* **Force and Power Limit**: Restricts the force and pressure for stopping in preparation for collision between the robot and the worker
-* **Momentum Limit**: Reduces the robot's operating speed to limit energy and impact load in preparation for collision between the robot and the worker
-* **Joint and TCP Position Limit**: Restricts movement to prevent the robot from moving to specific body parts such as the user's neck or head
-* **TCP and Tool Posture Limit**: Restricts movement to reduce risks related to specific areas or features of the tool and workpiece (e.g., to prevent sharp parts of the tool or workpiece from moving toward the worker)
-* **Speed Limit**: Restricts the robot's movement to remain at low speed to provide time for the worker to avoid collision in preparation for collision between the robot and worker
+* **力和功率限制**：限制停止时的力和压力，以防止机器人与工人之间发生碰撞
+* **动量限制**：降低机器人的操作速度以限制能量和冲击负荷，以防止机器人与工人之间发生碰撞
+* **关节和 TCP 位置限制**：限制运动，以防止机器人移动到用户的颈部或头部等特定身体部位
+* **TCP 和工具姿态限制**：限制运动，以减少与工具和工件特定区域或特征相关的风险（例如，防止工具或工件的锐利部分朝向工人移动）
+* **速度限制**：限制机器人的运动以保持低速，以便工人有时间在机器人与工人之间发生碰撞时避免碰撞
 
-In addition, you can configure safety-related functions by installing the robot in a specific location or using safety I/O.
+此外，您还可以通过将机器人安装在特定位置或使用安全 I/O 来配置与安全相关的功能。
 
-Important items when conducting risk assessment of the integrated robot system are as follows:
+进行集成机器人系统的风险评估时的重要项目如下：
 
-* Collision severity by robot
-* Collision probability by robot
-* Collision avoidance possibility by robot
+* 机器人造成的碰撞严重性
+* 机器人造成的碰撞概率
+* 机器人避免碰撞的可能性
 
-When configuring the integrated system, if risk factors are not sufficiently removed with the robot's safety-related functions (e.g., use of tools for non-collaborative robots, etc.), you should install necessary additional protective devices through risk assessment.
-
+在配置集成系统时，如果机器人安全相关功能未能充分消除风险因素（例如，使用非协作机器人的工具等），则应通过风险评估安装必要的额外保护装置。
 [__SOURCE](1-safety/4-potential-risks.md)
-# 1.4 Potential Hazards
+# 1.4 潜在危险
 
-If the risk assessment of the integrated system linked with the robot concludes that risk factors are not sufficiently removed with the robot's safety-related functions alone, you must establish additional protective measures.
+如果与机器人连接的集成系统的风险评估得出，只靠机器人的安全相关功能无法充分消除风险因素，则必须建立额外的保护措施。
 
-Matters to consider when establishing additional protective measures are as follows:
+建立额外保护措施时应考虑的事项如下：
 
-* Finger caught-in/between (entrapment) between the robot base and installation base during installation
-* Injuries (stabbing, penetration, etc.) caused by sharp edges or pointed parts of obstacles or tools in the work area.
-* Injuries (bruising, falling, fracture, etc.) from collision with the robot
-* Injuries (stabbing, penetration, fracture, etc.) caused by obstacles around the robot
-* Injuries that may occur when fastening parts are not completely fixed
-* Injuries that may occur when working with toxic or harmful substances (skin damage, difficulty breathing, etc.)
-* Workpiece separation from the tool due to sudden power interruption
-* Mistakes that may occur due to confusion with the emergency stop switches of other equipment
-* Errors due to unauthorized changes to safety-related function settings, etc.
+* 安装过程中机器人底座与安装基座之间的手指夹入/夹住（困住）
+* 工作区域内障碍物或工具的锋利边缘或尖锐部分造成的伤害（刺伤、穿透等）
+* 与机器人碰撞造成的伤害（淤伤、摔倒、骨折等）
+* 机器人周围的障碍物造成的伤害（刺伤、穿透、骨折等）
+* 当固定部件未完全固定时可能发生的伤害
+* 与有毒或有害物质工作时可能发生的伤害（皮肤损伤、呼吸困难等）
+* 由于突然断电导致工件与工具分离
+* 由于与其他设备的紧急停止开关混淆而可能发生的错误
+* 由于对安全相关功能设置的未经授权修改等导致的错误
 
-The types of possible hazards vary depending on the system configuration, so you must conduct a risk assessment before using the integrated system.
-
+可能的危险类型因系统配置而异，因此在使用集成系统之前必须进行风险评估。
 [__SOURCE](1-safety/5-validity-and-responsibilities.md)
-# 1.5 Validity and Responsibility
+# 1.5 有效性与责任
 
-It is required to comply with the safety requirements based on the safety regulations and laws of the country and region where the robot is installed and used. The supplier and user of the integrated robot system have various responsibilities including the following:
+必须遵守基于机器人安装和使用所在国家和地区的安全规定和法律的安全要求。集成机器人系统的供应商和用户承担以下各种责任：
 
-* Risk assessment of the integrated robot system
-* Addition and removal of safety devices according to risk assessment results
-* Verification of proper configuration, installation, and setting of the integrated system
-* Establishment of methods and guidelines for using the integrated system and user training
-* Management of safety devices (prohibition of unauthorized changes and manipulation of safety devices by users)
-* Provision of information such as critical information of the product use and safety, and also the contact information, etc.
-* Provision of all types of technical documents including manuals, etc.
+* 集成机器人系统的风险评估
+* 根据风险评估结果添加和移除安全装置
+* 验证集成系统的正确配置、安装和设置
+* 建立使用集成系统的方法和指南以及用户培训
+* 安全装置的管理（禁止用户未经授权对安全装置进行更改和操作）
+* 提供有关产品使用和安全的关键信息以及联系信息等
+* 提供包括手册在内的各种技术文件
 
-The safety-related content in this manual does not cover all possible risk factors and situations that may occur while using the product.
-
+本手册中与安全相关的内容并未涵盖使用产品时可能出现的所有风险因素和情况。
 [__SOURCE](1-safety/6-reaction-time.md)
-# 1.6 Response Time
+# 1.6 响应时间
 
 
-* **Stop Response Time**
+* **停止响应时间**
 
-The response time to be taken from safety function violation to stop execution is 9.8ms. The response time should be reflected when calculating the robot's stop time and stop distance.
+从安全功能违反到停止执行的响应时间为 9.8ms。计算机器人的停止时间和停止距离时，应考虑响应时间。
 
-* **PROFIsafe Response Time**
+* **PROFIsafe 响应时间**
 
-The response time to be taken from stop execution by PROFIsafe F-output data is 40.8ms. To get the time until the robot completely stops, the communication cycle and the robot's stop time and stop distance calculation values should be added.
-
+由 PROFIsafe F 输出数据停止执行的响应时间为 40.8ms。要获得机器人完全停止的时间，应将通信周期以及机器人的停止时间和停止距离计算值相加。
 [__SOURCE](2-installation/README.md)
-# 2. Installation
-
-
+# 2. 安装
 [__SOURCE](2-installation/1-robot-system.md)
-# 2.1 Robot System
+# 2.1 机器人系统
 
-An industrial robot is a machine equipped with automatic control, manipulation, and movement functions, capable of executing various tasks programmed in industrial settings. Collaborative robots are a type of industrial robot.
+工业机器人是一种配备自动控制、操纵和运动功能的机器，能够在工业环境中执行各种编程任务。协作机器人是一种工业机器人。
 
-A robot system consists of a robot body and a controller that controls the body. A teach pendant is attached to the controller, which allows for setup and manual operation of the robot system.
+机器人系统由一个机器人主体和一个控制器组成，控制器控制机器人主体。教导 Pendant 连接到控制器，使机器人系统的设置和手动操作成为可能。
 
-* Robots: Perform various tasks in industrial settings, such as transporting objects or assembling parts.
-* Controller: Coordinates the robot's movements according to program settings set via the teach pendant. The controller's input/output ports can be used to interface with various external equipment or devices.
-* Teach Pendant: This device manages the entire robot system. It can be used to teach the robot specific postures or to set and control programs.
+* 机器人：在工业环境中执行各种任务，如运输物体或组装零件。
+* 控制器：根据通过教导 Pendant 设置的程序设置来协调机器人的运动。控制器的输入/输出端口可用于与各种外部设备或装置进行接口。
+* 教导 Pendant：该设备管理整个机器人系统。它可用于教导机器人特定姿势或设置和控制程序。
 
-Examples of basic robot system configurations, depending on the robot type, are as follows:
-
+根据机器人类型，基本机器人系统配置的示例如下：
 
 ![Basic configuration of a vertical multi-joint robot system](../_assets/image_7.png)
 
 {% hint style="info" %}
-For more information about the robot system, please refer to the "[Hi7 Controller Operating Instructions](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/1-robot-system/README?cont_model=Hi7)".
+有关机器人系统的更多信息，请参阅 "[Hi7 Controller Operating Instructions](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/zh-tp630/1-robot-system/README?cont_model=Hi7)"。
 {% endhint %}
-
 [__SOURCE](2-installation/2-scm-install.md)
-# 2.2 Safety Module
+# 2.2 安全模块
 
-The safety control module is shipped mounted inside the controller in board form. When board replacement is required, refer to the controller maintenance manual.
+安全控制模块以板卡形式安装在控制器内部发货。当需要更换板卡时，请参考控制器维护手册。
 [__SOURCE](2-installation/3-add-io-install.md)
-# 2.3 I/O Module (Option)
+# 2.3 I/O 模块（选项）
 
-When you select to use the I/O option module, it is shipped mounted inside the controller. When board replacement is required, refer to the controller maintenance manual.
+当您选择使用 I/O 选项模块时，它将装配在控制器内部发货。当需要更换板时，请参阅控制器维护手册。
 [__SOURCE](2-installation/4-profisafe-install.md)
-# 2.4 PROFIsafe Module (Option)
+# 2.4 PROFIsafe 模块 (选件)
 
-When you select to use the PROFIsafe option module, it is shipped mounted inside the controller. When board replacement is required, refer to the controller maintenance manual.
+当您选择使用 PROFIsafe 选件模块时，它会被安装在控制器内部。若需要更换板卡，请参阅控制器维护手册。
 [__SOURCE](3-safety-function/README.md)
-# 3. SafeSpace2.0 Safety Functions
-
-
+# 3. SafeSpace2.0 安全功能
 [__SOURCE](3-safety-function/1-description-term.md)
-# 3.1 Terminology
+# 3.1 术语
 
-### <mark style="color:green;">Robot Monitoring Function</mark>&#xD;
+### <mark style="color:green;">机器人监控功能</mark>&#xD;
 
-Parameters that serve as the references for monitoring the robot's speed, force, and momentum.
+用于监控机器人速度、力量和动量的参考参数。
 
-* **Joint Angle Monitoring**
+* **关节角度监控**
 
-Monitors the position of each axis joint. Performs a user-set safety stop if the reference value is exceeded.
+监控每个轴关节的位置。如果超出参考值，则执行用户设定的安全停车。
 
-* **Joint Speed Monitoring**
+* **关节速度监控**
 
-Monitors the speed of each axis joint. Performs a user-set safety stop if the reference value is exceeded.
+监控每个轴关节的速度。如果超出参考值，则执行用户设定的安全停车。
     
-* **Safe Operating Stop (SOS) Monitoring**
+* **安全操作停止（SOS）监控**
 
-Monitors whether each axis maintains a stopped state without slip. Performs Stop 0 if the reference value is exceeded.
+监控每个轴是否保持停止状态而没有滑动。如果超出参考值，则执行停止0。
 
-* **TCP Position Monitoring**
+* **TCP位置监控**
 
-Monitors whether the safety tool model violates the safety area. Performs a user-set safety stop if the area is violated.
+监控安全工具模型是否违反安全区域。如果该区域被违反，则执行用户设定的安全停车。
     
-* **TCP Orientation Monitoring**
+* **TCP朝向监控**
 
-Monitors whether the tool orientation stays within the specified range. Performs a user-set safety stop if the reference value is exceeded.
+监控工具朝向是否保持在规定范围内。如果超出参考值，则执行用户设定的安全停车。
     
-* **TCP Speed Monitoring**
+* **TCP速度监控**
 
-Monitors the speed of the TCP. Performs a user-set safety stop if the reference value is exceeded.
+监控TCP的速度。如果超出参考值，则执行用户设定的安全停车。
     
-* **Power Monitoring**
+* **功率监控**
 
-Monitors the robot's power. Performs a user-set safety stop if the reference value is exceeded.
+监控机器人的功率。如果超出参考值，则执行用户设定的安全停车。
     
-* **Momentum Monitoring**
+* **动量监控**
 
-Monitors the robot's momentum. Performs a user-set safety stop if the reference value is exceeded.
-
-
-* **Collision Detection**
-
-Performs a user-set safety stop when an external force applied to the robot exceeds the allowable value.
+监控机器人的动量。如果超出参考值，则执行用户设定的安全停车。
 
 
-### <mark style="color:green;">Safety Layout</mark>
+* **碰撞检测**
 
-Parameters for the safety areas and tool areas that serve as the references for the monitoring of the TCP position and orientation.
-
-* **Safety Area**
-
-General term for the tool's work area and protected area
-* **Work area**
-
-The area where the robot performs work. Performs a safety stop if the tool model and robot elbow model leave the work area.
-* **Protected Area**
-
-The area that should be protected from the robot. Performs a safety stop if the tool model and robot elbow model violate the protected area.
-* **Safety Tool Modeling**
-
-Models the tool attached to the robot as a sphere and cone for the TCP position and orientation monitoring
-* **Safety Robot Modeling**
-
-Models the robot's 2nd and 3rd axes as capsules to monitor the distance from the safety area
+当施加到机器人上的外力超过允许值时，执行用户设定的安全停车。
 
 
+### <mark style="color:green;">安全布局</mark>
 
-### <mark style="color:green;">Safety Stop</mark>&#xD;
+用于TCP位置和朝向监控的安全区域和工具区域的参考参数。
 
-Stops the robot to create a safe state when safety is violated. There are 3 stop methods. For detailed information on each stop method, refer to "ISO 13850" or "IEC 60204-1."
+* **安全区域**
 
-* **Stop 0**
+工具的工作区域和保护区域的一般术语
+* **工作区域**
 
-Immediately removes the power from the motor of each join and stop the joints (uncontrolled stop).
-* **Stop 1**
+机器人执行工作的区域。如果工具模型和机器人肘部模型离开工作区域，则执行安全停车。
+* **保护区域**
 
-Motors of all joints decelerate and stop, then power is removed from the motors (controlled stop). The robot decelerates to a stop while continuously following the program path and the power is cut off as soon as the robot stops.
-* **Stop 2**
+应由机器人保护的区域。如果工具模型和机器人肘部模型违反保护区域，则执行安全停车。
+* **安全工具建模**
 
-The motor of each joint decelerates and then Safe Operating Stop (SOS) monitoring operates. Power supply to all motors is maintained.
+将连接到机器人上的工具建模为球体和锥体，以进行TCP位置和朝向监控
+* **安全机器人建模**
 
-
-Stop 1 and Stop 2 functions monitor the deceleration process through deceleration time and distance.
-
-* **Stop Time**
-
-Monitors the time from the start of deceleration to the actual stop. If the robot does not stop within the set time, Stop 0 is performed to immediately remove the power from the motors.
-* **Stop Distance**
-
-Monitors the TCP distance from the start of deceleration to the actual stop. If the robot does not stop within the set distance, Stop 0 is performed to immediately remove the power from the motors.
+将机器人的第二和第三轴建模为胶囊，以监控与安全区域的距离
 
 
 
-### <mark style="color:green;">Safe Motion Tuning</mark>&#xD;
+### <mark style="color:green;">安全停车</mark>&#xD;
 
-This function automatically adjusts robot motion to avoid exceeding the entered parameters.
-The following parameters are considered during motion tuning:
+当安全被违反时，停止机器人以创建安全状态。有3种停车方法。有关每种停车方法的详细信息，请参阅“ISO 13850”或“IEC 60204-1”。
 
-* **Joint Speed**
+* **停止0**
 
-* **TCP Speed**
+立即移除每个关节电机的电源并停止关节（不受控停车）。
+* **停止1**
 
-* **Power**
+所有关节的电机减速并停止，然后从电机移除电源（受控停车）。机器人在持续跟踪程序路径的同时减速停车，并在机器人停止的瞬间切断电源。
+* **停止2**
 
-* **Momentum**
+每个关节的电机减速，然后进行安全操作停止（SOS）监控。保持对所有电机的电源供应。
 
-* **Stopping Time**
 
-* **Stopping Distance**
+停止1和停止2功能通过减速时间和距离监控减速过程。
+
+* **停止时间**
+
+监控从减速开始到实际停止的时间。如果机器人在设定时间内未停止，则执行停止0以立即移除电机的电源。
+* **停止距离**
+
+监控从减速开始到实际停止的TCP距离。如果机器人在设定距离内未停止，则执行停止0以立即移除电机的电源。
+
+
+
+### <mark style="color:green;">安全运动调节</mark>&#xD;
+
+该功能自动调整机器人运动，以避免超过输入参数。
+运动调节时考虑以下参数：
+
+* **关节速度**
+
+* **TCP速度**
+
+* **功率**
+
+* **动量**
+
+* **停止时间**
+
+* **停止距离**
 [__SOURCE](3-safety-function/2-limitations.md)
-# 3.2 Limitations
+# 3.2 限制
 
-SafeSafe2.0 has the following limitations. Please check their applicability before configuring the feature.
+SafeSafe2.0 有以下限制。请在配置该功能之前检查其适用性。
 
-
-|  **Item** |                       **Description**                      |
+|  **项目** |                       **描述**                      |
 | :-------: | :------------------------------------------------: |
-| Supported Robots | 6-axis Industrial Robots, Collaborative Robots |
-| Unsupported Robots | FPD Robots, Painting Robots, Gantry Robots | 
-| Supported Axes | Up to 8 axes (For systems with 9 or more axes, safety functions can only be configured for axes 7 and 8) |
-| Unsupported Robot Axes | Servogun Axes, Additional Axes Combined with Robots (Gantry Robots) |
+| 支持的机器人 | 6轴工业机器人，协作机器人 |
+| 不支持的机器人 | FPD 机器人，喷涂机器人，龙门机器人 | 
+| 支持的轴 | 最多 8 个轴（对于具有 9 个或更多轴的系统，安全功能仅可针对轴 7 和 8 配置） |
+| 不支持的机器人轴 | 伺服枪轴，机器人组合的附加轴（龙门机器人） |
 [__SOURCE](3-safety-function/3-safety-function/README.md)
-# 3.3 Safety Functions
+# 3.3 安全功能
 
 
-SafeSpace2.0 safety functions can be configured through safety function settings and are used as risk countermeasures selected in the risk assessment performed by the worker.
-
-
+SafeSpace2.0 安全功能可以通过安全功能设置进行配置，并作为工人执行风险评估时选择的风险对策使用。
 [__SOURCE](3-safety-function/3-safety-function/1-general-condition/README.md)
-# 3.3.1 General Setup
+# 3.3.1 一般设置
 
-Robot safety parameters consist of limit values   and stop methods for monitoring safety functions.
+机器人安全参数包括监控安全功能的限制值和停止方法。
 
-Each safety function can be configured with various activation conditions, stop methods upon violation, and limit values.
+每个安全功能都可以配置各种激活条件、违规时的停止方法和限制值。
 
-Access the safety function basic settings menu using the following methods.
+使用以下方法访问安全功能基本设置菜单。
 
 * `[System > 10: Safety System > 1: General setup]`
 ****
 
-The following safety functions can be configured in the Basic Settings menu:
+以下安全功能可以在基本设置菜单中配置：
 
-* **General**: Set safety function activation, manual mode speed, stopping distance, and periodic time monitoring.
-* **Stop Settings**: Set the stopping method (Stop 0, Stop 1, Stop 2) according to the stop type.
-* **Safety Tool Information**: Set safety tool information.
-* **Safety Added Weight**: Set the safety added weight.
-* **Maintenance**: Set the robot test cycle required for safety function maintenance.
+* **一般**：设置安全功能激活、手动模式速度、停止距离和周期时间监控。
+* **停止设置**：根据停止类型设置停止方法（停止 0，停止 1，停止 2）。
+* **安全工具信息**：设置安全工具信息。
+* **安全附加重量**：设置安全附加重量。
+* **维护**：设置用于安全功能维护的机器人测试周期。
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
+<strong>[警告]</strong>: 操作人员和用户在配置机器人安全功能之前必须进行风险评估，以确保机器人周围人员和设备的安全。根据评估结果，配置以下内容：
 
-* Set a password, etc. to prevent unauthorized changes to the safety configuration.
-* Configure safety-related functions and interfaces.
-* Verify the accuracy of settings before operating the robot.
-* Verify that all safety function configurations and settings comply with the risk assessment.
+* 设置密码等，防止对安全配置的未经授权更改。
+* 配置与安全相关的功能和接口。
+* 在操作机器人之前验证设置的准确性。
+* 验证所有安全功能配置和设置是否符合风险评估。
 {% endhint %}
-
-
 [__SOURCE](3-safety-function/3-safety-function/1-general-condition/1-general.md)
-# 3.3.1.1 General
+# 3.3.1.1 一般
 
-Set the thresholds for essential functions (manual mode speed monitoring, stop time, and stop distance monitoring) required for robot operation. Additionally, configure whether the robot monitoring and area monitoring functions are fully enabled. Even if the robot monitoring and area monitoring functions are enabled, if the safety function is disabled, the monitoring function will not operate. If a monitoring violation occurs, the configured safety stop (Stop 0, Stop 1) will be immediately activated.
+设置机器人操作所需的基本功能的阈值（手动模式速度监控、停止时间和停止距离监控）。此外，配置机器人监控和区域监控功能是否完全启用。即使启用了机器人监控和区域监控功能，如果安全功能被禁用，监控功能将无法操作。如果发生监控违规，将立即激活配置的安全停止（停止0，停止1）。
 
-
-You can set parameter values in the `[System > 10: Safety System > 1: General setup > 1: General]` menu.
+您可以在`[System > 10: Safety System > 1: General setup > 1: General]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/general.png"></img>
-<em><p align="center">General parameter setting screen</p></em>
+<em><p align="center">一般参数设置屏幕</p></em>
 </p>
 
-
-|  **Parameter** |                       **Description**                       |  **Default setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :-------------: |
-| Safety function | <p>Whether robot monitoring and area monitoring functions are enabled</p><p>(Enable / Disable)</p> | Disable |
-| <p>Manual mode speed</p><p>[mm/s]</p> | <p>Whether the function is enabled</p><p>(10 ~ 250)</p> | 250 |
-| <p>Stop time</p><p>[ms]</p> | <p>Stop method when the function is violated</p><p>(100 ~ 2000)</p> | 2000 |
-| - Motion Tuning | <p>Tuning to a motion that satisfies the stopping time limit</p><p>(Enable / Disable)</p> | Disable |
-| <p>Stopping Distance</p><p>[mm]</p> | <p>Whether each joint is activated</p><p>(50 ~ 2000)</p> | 2000 |
-| - Motion Tuning | <p>Tuning to a motion that satisfies the stopping distance limit</p><p>(Enable / Disable)</p> | Disable |
+| 安全功能 | <p>是否启用机器人监控和区域监控功能</p><p>(启用 / 禁用)</p> | 禁用 |
+| <p>手动模式速度</p><p>[mm/s]</p> | <p>功能是否启用</p><p>(10 ~ 250)</p> | 250 |
+| <p>停止时间</p><p>[ms]</p> | <p>功能违规时的停止方法</p><p>(100 ~ 2000)</p> | 2000 |
+| - 动作调节 | <p>调节到满足停止时间限制的动作</p><p>(启用 / 禁用)</p> | 禁用 |
+| <p>停止距离</p><p>[mm]</p> | <p>每个关节是否被激活</p><p>(50 ~ 2000)</p> | 2000 |
+| - 动作调节 | <p>调节到满足停止距离限制的动作</p><p>(启用 / 禁用)</p> | 禁用 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: Even if the safety function is set to disabled, the functions that are essential for robot use (manual mode speed, stop time, stop distance monitoring) are not disabled.
+<strong>[注意]</strong>: 即使安全功能被设置为禁用，机器人使用所必需的功能（手动模式速度、停止时间、停止距离监控）也不会被禁用。
 {% endhint %}
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: The stop time and stop distance are the time and distance until the robot actually stops when stop1 is executed, and if the set value is exceeded, stop0 is activated immediately.
+<strong>[注意]</strong>: 停止时间和停止距离是指在执行stop1时机器人实际停止的时间和距离，如果超出设置值，将立即激活stop0。
 {% endhint %}
- 
 [__SOURCE](3-safety-function/3-safety-function/1-general-condition/2-safe-stop.md)
-# 3.3.1.2 Stop Settings
+# 3.3.1.2 停止设置
 
-Set the appropriate safe stop type for each safety function. Safe stop functions stop the robot to a safe state when a safety violation occurs. There are three types: All types of safe stop functions comply with Requirement 4.2.2.4 of IEC 61800-5-2.
+为每个安全功能设置适当的安全停止类型。当发生安全违规时，安全停止功能将机器人停止到安全状态。有三种类型：所有类型的安全停止功能符合IEC 61800-5-2的要求4.2.2.4。
 
+* **停止 0**: 立即从所有关节模块中的电机中断电，并停止。
+* **停止 1**: 所有关节模块中的电机减速后停止。然后从电机中断电。
+* **停止 2**: 所有关节模块中的电机减速并激活SOS（安全操作停止）。对所有电机保持供电。
 
-* **Stop 0**: Immediately remove power from all motors in the joint modules and stop.
-* **Stop 1**: All motors in the joint modules decelerate and then stop. Power is then removed from the motors.
-* **Stop 2**: All motors in the joint modules decelerate and SOS (Safe Operating Stop) is activated. Power is maintained to all motors.
+由于安全功能违规导致的停止类型在功能特定的参数设置菜单中设置。您可以根据ISO 10218-1要求的停止类型（紧急停止、保护停止、正常停止）设置停止方法。有关每个停止的信号输入，请参阅 "[3.3.4 安全信号输入/输出](../../../3-safety-function/3-safety-function/4-safety-io/README.md)。" 
 
+您还可以设置在手动模式速度监控被违反时执行的停止方法。停止方法可以从停止 0 或停止 1 中选择。
 
-The stop type due to a safety function violation is set in the function-specific parameter setting menu.
-You can set the stop method according to the stop type (emergency stop, protective stop, normal stop) required by ISO 10218-1.
-For signal inputs for each stop, refer to "[3.3.4 Safety Signal Input/Output](../../../3-safety-function/3-safety-function/4-safety-io/README.md)."
-You can also set the stop method to be performed when the manual mode speed monitoring is violated. The stop method can be selected from Stop 0 or Stop 1.
-
-You can set the parameter values in the `[System > 10: Safety System > 1: General setup > 2: Safe Stop]` menu.
+您可以在`[System > 10: Safety System > 1: General setup > 2: Safe Stop]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/safety_stop.png"></img>
-<em><p align="center">Stop parameter setting screen</p></em>
+<em><p align="center">停止参数设置屏幕</p></em>
 </p>
 
 
-|  **Parameter** |                       **Description**                       |  **Default value**  |
+|  **参数** |                       **描述**                       |  **默认值**  |
 | :-------: | :------------------------------------------------: | :-------------: |
-| Emergency stop | <p>Select the stop type to apply in case of emergency stop</p><p>(Stop 0, Stop 1)</p> | Stop 1 |
-| Protective stop | <p>Select the stop type to apply in case of protective stop</p><p>(Stop 0, Stop 1, Stop 2)</p> | Stop 1 |
-| Normal stop | <p>Select the stop type to apply in case of normal stop</p><p>(Stop 0, Stop 1)</p> | Stop 1 |
-| Manual stop | <p>Select the stop type to apply in case of manual mode stop</p><p>(Stop 0, Stop 1)</p> | Stop 1 |
+| 紧急停止 | <p>选择在紧急停止情况下应用的停止类型</p><p>(停止 0, 停止 1)</p> | 停止 1 |
+| 保护停止 | <p>选择在保护停止情况下应用的停止类型</p><p>(停止 0, 停止 1, 停止 2)</p> | 停止 1 |
+| 正常停止 | <p>选择在正常停止情况下应用的停止类型</p><p>(停止 0, 停止 1)</p> | 停止 1 |
+| 手动停止 | <p>选择在手动模式停止情况下应用的停止类型</p><p>(停止 0, 停止 1)</p> | 停止 1 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: Appropriate stopping methods for each function must be established through risk assessment, and verification must be performed before operation. 
+<strong>[注意]</strong>: 必须通过风险评估建立每个功能的适当停止方法，并在操作之前进行验证。 
 {% endhint %}
- 
 [__SOURCE](3-safety-function/3-safety-function/1-general-condition/3-safe-tool-info.md)
-# 3.3.1.3 Safety Tool Information
+# 3.3.1.3 安全工具信息
 
-Safety tool information is used by the safety board to calculate the robot's speed and position. You must enter the tool information attached to the actual robot. The tool information must be identical to the tool number used for robot control `[System > 3: Robot Parameters > 1: Tool Data]`.
+安全工具信息由安全板用于计算机器人的速度和位置。您必须输入附加到实际机器人的工具信息。工具信息必须与用于机器人控制的工具编号相同 `[System > 3: Robot Parameters > 1: Tool Data]`。
 
-
-You can set safety tool information in the `[System > 10: Safety System > 1: General setup > 3: Safety Tool Information]` menu. After setting the robot tool number, you can load tool information used for robot control by clicking [Load Tool Data] at the bottom of the menu.
+您可以在菜单 `[System > 10: Safety System > 1: General setup > 3: Safety Tool Information]` 中设置安全工具信息。设置机器人工具编号后，可以通过点击菜单底部的 [Load Tool Data] 加载用于机器人控制的工具信息。
 
 <p align="center">
 <img src="../../../_assets/3/tool_info.png"></img>
-<em><p align="center">Safety tool parameter setting screen</p></em>
+<em><p align="center">安全工具参数设置屏幕</p></em>
 </p>
 
 
-|  **Parameter** |                       **Description**                       |  **Default value**  |
+|  **参数** |                       **描述**                       |  **默认值**  |
 | :-------: | :------------------------------------------------: | :-------------: |
-| <p>Robot tool number</p> | <p>Tool number used by the robot. A value of -1 indicates that it is not used.</p><p>(-1 ~ 31)</p> | -1 |
-| <p>Weight</p><p>[kg]</p> | <p>Weight of the tool</p><p>(0.0 ~ 1000.0)</p> | 0.0 |
-| <p>Length</p><p>[mm]</p> | <p>Length of the tool</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
-| <p>Center</p><p>[mm]</p> | <p>Location of the center of gravity of the tool relative to the center of the flange</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
-| <p>Inertia</p><p>[kg·㎡]</p> | <p>Moment of inertia of the tool with respect to the tool coordinates</p><p>(0.0 ~ 2000.000)</p> | 0.0 |
-| Load Tool Data | A function to load tool information used for robot control according to the tool number | - |
-| Copy | A function to copy the values   entered on the corresponding page | - |
-| Paste | A function to paste the values   of the copied page onto the corresponding page | - |
+| <p>机器人工具编号</p> | <p>机器人使用的工具编号。值为 -1 表示未使用。</p><p>(-1 ~ 31)</p> | -1 |
+| <p>重量</p><p>[kg]</p> | <p>工具的重量</p><p>(0.0 ~ 1000.0)</p> | 0.0 |
+| <p>长度</p><p>[mm]</p> | <p>工具的长度</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
+| <p>中心</p><p>[mm]</p> | <p>工具重心相对于法兰中心的位置</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
+| <p>惯性</p><p>[kg·㎡]</p> | <p>相对于工具坐标的工具惯性矩</p><p>(0.0 ~ 2000.000)</p> | 0.0 |
+| 加载工具数据 | 根据工具编号加载用于机器人控制的工具信息的功能 | - |
+| 复制 | 复制相应页面上输入的值的功能 | - |
+| 粘贴 | 将复制页面的值粘贴到相应页面的功能 | - |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: If the safety tool information does not match the tool information used for robot control, a warning/error will occur and the robot will not operate. Be sure to match the actual tool information with the safety tool information before operating the robot.
+<strong>[警告]</strong>: 如果安全工具信息与用于机器人控制的工具信息不匹配，将会发生警告/错误，机器人将无法操作。在操作机器人之前，请确保实际工具信息与安全工具信息相匹配。
 {% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/1-general-condition/4-safe-additional-load.md)
-# 3.3.1.4 Safety Added Weight
+# 3.3.1.4 安全附加重量
 
-Safety added weight information is used by the safety board to calculate the robot's torque. You must enter the information for the added weight actually installed on the robot. The information must be identical to the added weight information used for robot control `[System > 3: Robot Parameter > 7: Additional Weight on Each Axis]`.
+安全附加重量信息由安全板用于计算机器人的扭矩。您必须输入实际安装在机器人的附加重量信息。信息必须与用于机器人控制的附加重量信息完全相同`[System > 3: Robot Parameter > 7: Additional Weight on Each Axis]`。
 
-
-* `[System > 10: Safety System > 1: General setup > 4: Safety Additional Load]` You can set the safety additional weight information in the menu, and you can load the additional weight information used for robot control by clicking "Load Additional Weights" at the bottom of the menu.
-
+* `[System > 10: Safety System > 1: General setup > 4: Safety Additional Load]` 您可以在菜单中设置安全附加重量信息，并通过点击菜单底部的“加载附加重量”来加载用于机器人控制的附加重量信息。
 
 <p align="center">
 <img src="../../../_assets/3/add_tool.png"></img>
-<em><p align="center">Safety Added weight parameter setting screen</p></em>
+<em><p align="center">安全附加重量参数设置屏幕</p></em>
 </p>
 
-
-|  **Parameter** |                       **Description**                       |  **Default value**  |
+|  **参数** |                       **描述**                       |  **默认值**  |
 | :-------: | :------------------------------------------------: | :-------------: |
-| <p>Weight</p><p>[kg]</p> | <p>Weight of the tool</p><p>(0.0 ~ 1000.0)</p> | 0.0 |
-| <p>Center</p><p>[mm]</p> | <p>Position of the center of gravity of the tool relative to the center of the flange</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
-| <p>Inertia</p><p>[kg·㎡]</p> | <p>Moment of inertia of the tool with respect to the tool coordinates</p><p>(0.0 ~ 2000.000)</p> | 0.0 |
-| Load add Weights | A function to load additional weight information used for robot control | - |
-| Copy | A function to copy the values   entered on the corresponding page | - |
-| Paste | A function to paste the values   from the copied page onto the corresponding page | - |
+| <p>重量</p><p>[kg]</p> | <p>工具的重量</p><p>(0.0 ~ 1000.0)</p> | 0.0 |
+| <p>中心</p><p>[mm]</p> | <p>工具重心相对于法兰中心的位置</p><p>(-3000.0 ~ 3000.0)</p> | 0.0 |
+| <p>惯性</p><p>[kg·㎡]</p> | <p>工具相对于工具坐标的转动惯量</p><p>(0.0 ~ 2000.000)</p> | 0.0 |
+| 加载附加重量 | 加载用于机器人控制的附加重量信息的功能 | - |
+| 复制 | 复制相应页面上输入值的功能 | - |
+| 粘贴 | 将复制页面的值粘贴到相应页面上的功能 | - |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: If the safety weight information and the weight information used for robot control do not match, a warning/error will occur and the robot will not be able to operate. Be sure to match the weight information with the actual attached weight before operating the robot. 
+<strong>[注意]</strong>: 如果安全重量信息与用于机器人控制的重量信息不匹配，将会发生警告/错误，机器人将无法操作。在操作机器人之前，请确保重量信息与实际附加重量匹配。
 {% endhint %}
- 
+
 {% hint style="warning" %}
-<strong>[Caution]</strong>: The safety additional weight number is supported from 0 to 2, and each number matches the axis number of the system additional weight (0-S axis, 1-H axis, 2-V axis). Please enter the additional weight information by matching the safety parameter number with the axis number.
+<strong>[注意]</strong>: 安全附加重量数量支持从 0 到 2，并且每个数字与系统附加重量的轴号相匹配（0-S 轴，1-H 轴，2-V 轴）。请通过将安全参数编号与轴号匹配来输入附加重量信息。
 {% endhint %}
- 
- 
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/README.md)
-# 3.3.2 Robot Monitoring Function
+# 3.3.2 机器人监控功能
 
-Robot safety parameters consist of limit values   and stop methods for monitoring safety functions.
+机器人安全参数由监控安全功能的限制值和停止方法组成。
 
-Each safety function can be configured with various activation conditions, stop methods upon violation, and limit values.
+每个安全功能可以配置不同的激活条件、违规时的停止方法和限制值。
 
-To configure robot safety parameters, access the menu as follows:
+要配置机器人安全参数，请按如下方式访问菜单：
 
 * `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction]`
 ****
 
-The following safety features can be configured in the Robot Limits menu:
+在机器人限制菜单中可以配置以下安全功能：
 
-* **Joint Space**: Limits the robot's range of motion for each axis to a specific range.
-* **Joint Speed**: Limits the robot's motion by preventing it from exceeding the speed limit for each axis.
-* **Joint Stop**: Monitors the robot's stopped state by checking for abnormal movement for each axis after performing Stop 2.
-* **TCP Speed**: Limits the robot's speed to a specified speed based on TCP standards.
-* **Collision Detection**: Limits the force in the event of a collision between the robot and the worker.
-* **RePlan**: Adjusts the robot's speed according to external input to perform "3.2.2 "Speed and Position Monitoring" during collaborative operation mode.
-* **Power Detection**: Limits the force in the event of a collision between the robot and the worker.
-* **Momentum**: Limits the energy and impact load in the event of a collision between the robot and the worker.
+* **关节空间**：限制机器人每个轴的运动范围在特定范围内。
+* **关节速度**：通过防止超过每个轴的速度限制来限制机器人的运动。
+* **关节停止**：通过在执行停止 2 后检查每个轴的异常运动来监控机器人的停止状态。
+* **TCP 速度**：根据 TCP 标准限制机器人的速度到指定速度。
+* **碰撞检测**：在机器人与工作人员发生碰撞时限制力量。
+* **重新规划**：根据外部输入调整机器人的速度，以便在协作操作模式下执行“3.2.2 速度和位置监控”。
+* **功率检测**：在机器人与工作人员发生碰撞时限制力量。
+* **动量**：在机器人与工作人员发生碰撞时限制能量和冲击负荷。
 
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
+<strong>[注意]</strong>: 操作员和用户必须在配置机器人安全功能之前进行风险评估，以确保机器人周围人员和设备的安全。根据评估结果，配置以下内容：
 
-* Set a password, etc. to prevent unauthorized changes to the safety configuration.
-* Configure safety-related functions and interfaces.
-* Verify the accuracy of settings before operating the robot.
-* Verify that all safety function configurations and settings comply with the risk assessment.
+* 设置密码等以防止对安全配置的未经授权的更改。
+* 配置与安全相关的功能和接口。
+* 在操作机器人之前验证设置的准确性。
+* 验证所有安全功能的配置和设置是否符合风险评估。
 {% endhint %}
-
-
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/1-joint-space.md)
-# 3.3.2.1 Joint Space Setting
+# 3.3.2.1 关节空间设置
 
-The Joint space Setting parameter is a limit value for monitoring safety functions in the robot's joint space. If the monitoring is violated, the specified safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
+关节空间设置参数是用于监控机器人关节空间安全功能的限制值。如果监控被违反，指定的安全停止（停止 0、停止 1 或停止 2）将立即激活。
 
 <p align="center">
 <img src="../../../_assets/joint_space.PNG"></img>
-<em><p align="center">Joint space setting example (S-axis)</p></em>
+<em><p align="center">关节空间设置示例（S轴）</p></em>
 </p>
 
-You can set parameter values in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 1: Joint space]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 1: Joint space]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/joint_space.png"></img>
-<em><p align="center">Joint space parameter setting screen</p></em>
+<em><p align="center">关节空间参数设置屏幕</p></em>
 </p>
 
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Type | <p>Safety Area Type</p><p>(Working Area / Protection Area)</p> | Working Area |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
-| Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No Stop)</p> | Stop 1 |
-| Joint ON/OFF | <p>Whether each joint is activated</p><p>(OFF / ON)</p> | OFF |
-| <p>Minimum</p><p>[deg]</p> | <p>Minimum limits for each joint angle</p><p>(-360.0 ~ 360.0)</p> | -360.0 |
-| <p>Maximum</p><p>[deg]</p> | <p>Maximum limits for each joint angle</p><p>(-360.0 ~ 360.0)</p> | 360.0 |
+| 类型 | <p>安全区域类型</p><p>(工作区域 / 保护区域)</p> | 工作区域 |
+| 激活 | <p>功能是否激活</p><p>(关闭 / 开启 / 安全 I/O)</p> | 关闭 |
+| 停止功能 | <p>在功能违反情况下的停止方法</p><p>(停止 0 / 停止 1 / 停止 2 / 不停)</p> | 停止 1 |
+| 关节开启/关闭 | <p>每个关节是否激活</p><p>(关闭 / 开启)</p> | 关闭 |
+| <p>最小值</p><p>[度]</p> | <p>每个关节角度的最小限制</p><p>(-360.0 ~ 360.0)</p> | -360.0 |
+| <p>最大值</p><p>[度]</p> | <p>每个关节角度的最大限制</p><p>(-360.0 ~ 360.0)</p> | 360.0 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
+<strong>[注意]</strong>: 安全功能根据设置区域进行监控。设置区域应考虑停止距离，并在操作前进行验证。
 {% endhint %}
- 
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/2-joint-speed.md)
-# 3.3.2.2 Joint Speed Limit
+# 3.3.2.2 关节速度限制
 
-The Joint Speed Setting parameter is a limit value for monitoring the robot's joint speed. If the limit value is violated, the specified safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
+关节速度设置参数是监测机器人关节速度的限制值。如果违反限制值，则立即激活指定的安全停止（停止 0、停止 1 或停止 2）。
 
 <p align="center">
 <img src="../../../_assets/joint_speed.PNG"></img>
-<em><p align="center">Joint speed setting example</p></em>
+<em><p align="center">关节速度设置示例</p></em>
 </p>
 
-You can set parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 2: Joint speed]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 2: Joint speed]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/joint_speed_set.png"></img>
-<em><p align="center">Joint speed setting parameter setting screen</p></em>
+<em><p align="center">关节速度设置参数设置屏幕</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数**  |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
-| Stop function | <p>Stop method when the function is violated</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
-| Motion Tuning | <p>Tuning to a motion that does not exceed the joint's speed limit</p><p>(Active / Disable)</p> | Disable |
-| Joint ON/OFF | <p>Whether each joint is activated</p><p>(ON / OFF)</p> | OFF |
-| <p>Speed</p><p>[mm/s]</p> | <p>Speed limit for each joint</p><p>(10 ~ 10000)</p> | 1000.0 |
+| 激活 | <p>是否激活该功能</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| 停止功能 | <p>功能被违反时的停止方法</p><p>(停止 0 / 停止 1 / 停止 2 / 不停止)</p> | 停止 1 |
+| 运动调节 | <p>调节至不超过关节的速度限制的运动</p><p>(激活 / 禁用)</p> | 禁用 |
+| 关节 ON/OFF | <p>每个关节是否被激活</p><p>(ON / OFF)</p> | OFF |
+| <p>速度</p><p>[mm/s]</p> | <p>每个关节的速度限制</p><p>(10 ~ 10000)</p> | 1000.0 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
+<strong>[警告]</strong>: 设置速度监测功能时，请务必考虑停止反应时间，并覆盖保护罩以防止碰撞和伤害。
 {% endhint %}
- 
-
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/3-joint-SOS.md)
-# 3.3.2.3 Joint Stop Monitoring
+# 3.3.2.3 关节停止监控
 
-Stop monitoring monitors each axis for abnormal movement during robot stop operations. If a set limit is violated, a safety stop (Stop 0) is immediately activated.
+停止监控在机器人停止操作期间监视每个轴的异常运动。如果违反设定的限制，将立即激活安全停止（停止 0）。
 
-Parameter values   can be set in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 3: Joint SOS]` menu.
+参数值可以在`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 3: Joint SOS]`菜单中设置。
 
 <p align="center">
 <img src="../../../_assets/3/joint_sos.png"></img>
-<em><p align="center">Stop Monitoring Parameter Setting Screen</p></em>
+<em><p align="center">停止监控参数设置屏幕</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
-| Joint ON/OFF | <p>Whether each joint is activated</p><p>(ON / OFF)</p> | OFF |
-| <p>Tolerance</p><p>[deg]</p> | <p>Angle Limit Value for Each Joint</p><p>(0.0 ~ 3.0)</p> | 0.100 |
+| 激活 | <p>功能是否激活</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| 关节 ON/OFF | <p>每个关节是否激活</p><p>(ON / OFF)</p> | OFF |
+| <p>公差</p><p>[度]</p> | <p>每个关节的角度限制值</p><p>(0.0 ~ 3.0)</p> | 0.100 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: If the stop monitoring parameters are violated, be sure to check that the robot's movement is normal before restarting.
+<strong>[注意]</strong>: 如果违反停止监控参数，请在重新启动之前确保机器人运动正常。
 {% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/4-tcp-speed.md)
-# 3.3.2.4 TCP Speed Limit Setting
+# 3.3.2.4 TCP 速度限制设置
 
-This function monitors the TCP speed relative to the robot coordinate system. If a monitoring violation occurs, a safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
+此功能监控相对于机器人坐标系统的TCP速度。如果发生监控违规，将立即激活安全停止（停止0、停止1或停止2）。
 
-You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 4: TCP Speed]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 4: TCP Speed]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/tcp_speed.png"></img>
-<em><p align="center">TCP speed parameter setting screen</p></em>
+<em><p align="center">TCP 速度参数设置界面</p></em>
 </p>
 
 
-| **Parameter** |                                  **Description**                                  |  **Default Setting** |
+| **参数** |                                  **描述**                                  |  **默认设置** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
-| Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
-| Motion tuning | <p>Tuning to a motion that does not exceed the TCP speed limit</p><p>(Enable / Disable)</p> | Disable |
-| Replan | <p>Whether to use the speed adjustment function according to the input signal</p><p>(Enable / Disable)</p> | Disable |
-| <p>Limit</p><p>[mm/s]</p> | <p>TCP speed limit value</p><p>(1 ~ 50000)</p> | 50000 |
-| <p>Rate</p><p>[%]</p> | <p>Deceleration ratio to use when readjusting speed</p><p>(0 ~ 100)</p> | 100 |
-| <p>Delay time</p><p>[ms]</p> | <p>When changing speed through readjustment, monitor with the changed speed limit value after the delay time </p><p>(0 ~ 1000)</p> | 1000 |
-| <p>Signal</p><p>[Type, Number]</p> | <p>Input signal for speed readjustment</p><p>( [None, -] / [Safety input, 1~8] / [Safety communication, 1~64] )</p> | 0 |
+| 激活 | <p>函数是否激活</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| 停止功能 | <p>函数违规时的停止方法</p><p>(停止0 / 停止1 / 停止2 / 不停止)</p> | 停止1 |
+| 运动调节 | <p>调节以不超过TCP速度限制的运动</p><p>(启用 / 禁用)</p> | 禁用 |
+| 重新规划 | <p>是否根据输入信号使用速度调整功能</p><p>(启用 / 禁用)</p> | 禁用 |
+| <p>限制</p><p>[mm/s]</p> | <p>TCP速度限制值</p><p>(1 ~ 50000)</p> | 50000 |
+| <p>比率</p><p>[%]</p> | <p>重新调整速度时使用的减速比</p><p>(0 ~ 100)</p> | 100 |
+| <p>延迟时间</p><p>[ms]</p> | <p>通过重新调整速度更改时，在延迟时间后使用更改后的速度限制值进行监控</p><p>(0 ~ 1000)</p> | 1000 |
+| <p>信号</p><p>[类型, 数字]</p> | <p>速度重新调整的输入信号</p><p>( [无, -] / [安全输入, 1~8] / [安全通信, 1~64] )</p> | 0 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong>: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
+<strong>[注意]</strong>: 设置速度监控功能时，请务必考虑停止反应时间，并覆盖以防止碰撞和伤害。
 {% endhint %}
- 
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/5-collision.md)
-# 3.3.2.5 Collision Detection
+# 3.3.2.5 碰撞检测
 
-When the external force applied to the robot exceeds the allowable value, it is recognized as a collision. You can adjust the sensitivity of each axis, and the higher the sensitivity, the more even a small external force is recognized as a collision. When the monitoring is violated, a safety stop (Stop 0, Stop 1, and Stop 2) is immediately activated.
+当施加于机器人上的外力超过允许值时，它被识别为碰撞。您可以调整每个轴的灵敏度，灵敏度越高，即使是小的外力也会被识别为碰撞。监测违规时，安全停止（Stop 0，Stop 1，和 Stop 2）会立即激活。
 
-`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 5: Collision detection]` menu allows you to set the parameter values.
+`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 5: Collision detection]` 菜单允许您设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/collision.png"></img>
-<em><p align="center">Collision detection parameter setting screen</p></em>
+<em><p align="center">碰撞检测参数设置屏幕</p></em>
 </p>
 
-| **Parameter** |                                  **Description**                                  |  **Default Setting** |
-| :------: | :----------------------------------------------------------------: | :---------: |
-| Activation | <p>Function activation status</p><p>(OFF/ON/Safety Input)</p> |   OFF  |
-| Stop function |   <p>Stop method when the function is violated</p><p>(Stop 0, Stop 1, Stop 2, Non-stop)</p>  | Stop 1 |
-| Joint ON/OFF |   <p>Activation status of each joint</p><p>(ON/OFF)</p>  |  OFF |
-| Sensitivity |   <p>Detection sensitivity for each joint</p><p>(1 ~ 200(%))</p>  |  100 |
+| **参数** |                             **描述**                             |  **默认设置**  |
+| :------: | :----------------------------------------------------------: | :---------: |
+| 激活   | <p>功能激活状态</p><p>(OFF/ON/Safety Input)</p>     |   OFF  |
+| 停止功能 |   <p>功能违规时的停止方法</p><p>(Stop 0, Stop 1, Stop 2, Non-stop)</p>  | Stop 1 |
+| 关节 ON/OFF |   <p>每个关节的激活状态</p><p>(ON/OFF)</p>  |  OFF |
+| 灵敏度  |   <p>每个关节的检测灵敏度</p><p>(1 ~ 200(%))</p>  |  100 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong> Since the robot's impact force can increase in proportion to kinetic energy when the speed is high and the payload is large, considerable impact may occur if the robot collides with an external object. In the collaborative space, operate while maintaining the safe speed and payload.
-<strong>[Caution]</strong> False detection may occur if the tool information and additional weight are set differently from actual values. Check each information before using the collision detection function.
+<strong>[警告]</strong> 由于机器人在高速和大负载时的冲击力可能与动能成正比，因此如果机器人与外部物体发生碰撞，可能会产生相当大的冲击。在协作空间中，在保持安全速度和负载的情况下操作。
+<strong>[警告]</strong> 如果工具信息和附加重量设置与实际值不同，可能会发生误检。在使用碰撞检测功能之前，请检查每个信息。
 {% endhint %}
-
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/6-re-plan.md)
-# 3.3.2.6 Re plan Setting
+# 3.3.2.6 Re plan 设置
 
-Re plan is a function that adjusts the robot's speed based on signals received from external safety sensors. The robot's operating speed is adjusted to the deceleration rate corresponding to the input signal, and the TCP speed is monitored at the corresponding speed after a delay time.
+Re plan 是一个根据从外部安全传感器接收到的信号调整机器人速度的功能。机器人的操作速度根据输入信号对应的减速度进行调整，TCP 速度在延迟时间后以相应速度进行监控。
 
-If the delay time is insufficient or the robot decelerates insufficiently, resulting in a violation of the TCP speed limit, a safety stop (Stop 0) is immediately activated.
+如果延迟时间不足或机器人减速不足，导致 TCP 速度限制被违反，则会立即激活安全停止（Stop 0）。
 
-You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 6: Re plan]` menu.
+您可以在 `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 6: Re plan]` 菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/replan_param.png"></img>
-<em><p align="center">Re plan settings screen</p></em>
+<em><p align="center">Re plan 设置屏幕</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Re plan | <p>Whether to use the speed control function according to the input signal</p><p>(Enable / Disable)</p> | Disable |
-| <p>Delay time</p><p>[ms]</p> | <p>When changing the speed with Re plan, monitor the changed speed limit value after the delay time </p><p>(0 ~ 2000)</p> | 2000 |
-| <p>Speed limit value</p><p>[mm/s]</p> | <p>TCP speed limit value after Re plan</p><p>(0 ~ 50000)</p> | 50000 |
-| <p>Speed ratio</p><p>[%]</p> | <p>Deceleration ratio to use when Re plan</p><p>(0 ~ 100)</p> | 100 |
-| <p>Input signal</p><p>[Type, Number]</p> | <p>Input signal for Re plan</p><p>( [None, -] / [default input, 3] / [additional input, 0~7] / [safety input, 0~63])</p> | 0 |
+| Re plan | <p>是否根据输入信号使用速度控制功能</p><p>(启用 / 禁用)</p> | 禁用 |
+| <p>延迟时间</p><p>[ms]</p> | <p>使用 Re plan 更改速度时，在延迟时间后监控变化的速度限制值</p><p>(0 ~ 2000)</p> | 2000 |
+| <p>速度限制值</p><p>[mm/s]</p> | <p>Re plan 后的 TCP 速度限制值</p><p>(0 ~ 50000)</p> | 50000 |
+| <p>速度比例</p><p>[%]</p> | <p>使用 Re plan 时的减速比例</p><p>(0 ~ 100)</p> | 100 |
+| <p>输入信号</p><p>[类型, 数字]</p> | <p>Re plan 的输入信号</p><p>( [无, -] / [默认输入, 3] / [附加输入, 0~7] / [安全输入, 0~63])</p> | 0 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong> When configuring speed limits, always consider stopping time and cover the robot to prevent collisions and injuries.
-<strong>[Caution]</strong> High speeds and large payloads, in proportion to the robot's kinetic energy, can increase the robot's impact force. Therefore, a significant impact can occur if the robot collides with an external object. Maintain a safe speed and payload in collaborative spaces.
+<strong>[注意]</strong> 配置速度限制时，始终考虑停止时间，并覆盖机器人以防止碰撞和伤害。
+<strong>[注意]</strong> 高速和大负载与机器人的动能成比例，可能会增加机器人的冲击力。因此，如果机器人与外部物体发生碰撞，可能会发生重大冲击。在协作空间中保持安全的速度和负载。
 {% endhint %}
-
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/7-power.md)
-# 3.3.2.7 Power Setting
+# 3.3.2.7 电源设置
 
-This function monitors whether the force generated by the robot exceeds the allowable limit. If a monitoring violation occurs, a safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
+此功能监控机器人产生的力是否超过允许的限制。如果发生监控违规，将立即激活安全停止（停止 0、停止 1 或停止 2）。
 
-You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 7: Power]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 7: Power]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/power.png"></img>
-<em><p align="center">Power settings screen</p></em>
+<em><p align="center">电源设置屏幕</p></em>
 </p>
 
-| **Parameter** |          **Description**                                                  |  **Default Setting** |
+| **参数** |          **描述**                                                  |  **默认设置** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
-| Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
-| Motion tuning | <p>Tuning to a motion that does not exceed the robot's power limit</p><p>(Active / Disable)</p> | Disable |
-| <p>Max power</p><p>[w]</p> | <p>Robot's power limit</p><p>(80 ~ 50000)</p> | 1000 |
+| 激活 | <p>功能是否激活</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| 停止功能 | <p>功能违反时的停止方法</p><p>(停止 0 / 停止 1 / 停止 2 / 不停止)</p> | 停止 1 |
+| 动作调节 | <p>调节至不超过机器人功率限制的运动</p><p>(激活 / 禁用)</p> | 禁用 |
+| <p>最大功率</p><p>[w]</p> | <p>机器人的功率限制</p><p>(80 ~ 50000)</p> | 1000 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong> High speeds and large payloads, proportional to the robot's kinetic energy, can increase the robot's impact force. Therefore, a collision with an external object can result in significant impact. In collaborative spaces, maintain a safe speed and payload.
-<strong>[Caution]</strong> Setting tool information and additional weights differently from actual values   may result in false detection. Please check the information before using this feature.
+<strong>[注意]</strong> 高速和大负载与机器人的动能成比例，可能会增加机器人的冲击力。因此，与外部物体的碰撞可能会导致重大冲击。在协作区域内，请保持安全速度和负载。
+<strong>[注意]</strong> 工具信息和额外重量与实际值不同的设置可能会导致错误检测。请在使用此功能之前检查信息。
 {% endhint %}
-
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/8-momentum.md)
-# 3.3.2.8 Momentum Setting
+# 3.3.2.8 动量设置
 
-This function monitors whether the momentum generated by the robot exceeds the allowable limit. If a monitoring violation occurs, a safety stop (Stop 0, Stop 1, or Stop 2) is immediately activated.
+此功能监控机器人产生的动量是否超过允许限值。如果发生监控违规，将立即激活安全停止（Stop 0、Stop 1或Stop 2）。
 
-You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 8: Momentum]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 1: Robot restriction > 8: Momentum]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/3/momentum.png"></img>
-<em><p align="center">Momentum settings screen</p></em>
+<em><p align="center">动量设置界面</p></em>
 </p>
 
-| **Parameter** |          **Description**                                                  |  **Default Setting** |
+| **参数**    |          **描述**                                                  |  **默认设置** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
-| Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
-| Motion tuning | <p>Tuning to a motion that does not exceed the robot's momentum limit</p><p>(Enable / Disable)</p> | Disable |
-| <p>Max momentum</p><p>[kg m/s]</p> | <p>Robot's momentum limit</p><p>(5 ~ 50000)</p> | 1000 |
+| 激活         | <p>功能是否激活</p><p>(OFF / ON / Safety I/O)</p>              | OFF |
+| 停止功能     | <p>功能违规时的停止方法</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
+| 运动调节      | <p>调节到不超过机器人动量限制的运动</p><p>(Enable / Disable)</p> | Disable |
+| <p>最大动量</p><p>[kg m/s]</p> | <p>机器人的动量限值</p><p>(5 ~ 50000)</p> | 1000 |
 
 {% hint style="warning" %}
-<strong>[Caution]</strong> High speeds and large payloads, proportional to the robot's kinetic energy, can increase the robot's impact force. Therefore, a collision with an external object can result in significant impact. In collaborative spaces, maintain a safe speed and payload.
-<strong>[Caution]</strong> Setting tool information and additional weights differently from actual values may result in false detection. Please check the information before using this feature.
+<strong>[注意]</strong> 高速和大负载与机器人的动能成正比，可能增加机器人的冲击力。因此，与外部物体发生碰撞可能导致重大影响。在协作空间中，请保持安全速度和负载。
+<strong>[注意]</strong> 设置工具信息和额外重量与实际值不同可能导致错误检测。使用此功能前请检查信息。
 {% endhint %}
-
 [__SOURCE](3-safety-function/3-safety-function/3-safety-layout/README.md)
-# 3.3.3 Space Monitoring Function
+# 3.3.3 空间监测功能
 
-Model the robot, tool, and safety zone to monitor the robot's position and orientation.
-
+对机器人、工具和安全区域进行建模，以监测机器人的位置和方向。
 [__SOURCE](3-safety-function/3-safety-function/3-safety-layout/1-cell-area.md)
-# 3.3.3.1 Safety Space Setting
+# 3.3.3.1 安全空间设置
 
-A safety area is a work space or protected space for monitoring the tool and robot link areas. The work space is a restricted space where the monitored object can move freely but cannot leave. In contrast, the protected space is a restricted space where the monitored object cannot move once it enters. If the robot leaves the set work space or violates the protected space, a safety stop (Stop 0, Stop 1, and Stop 2) is activated.
+安全区域是监控工具和机器人链接区域的工作空间或受保护空间。工作空间是一个受限空间，监控对象可以自由移动，但不能离开。相反，受保护空间是一个受限空间，一旦监控对象进入，就不能再移动。如果机器人离开设置的工作空间或违反受保护空间，将激活安全停止（Stop 0、Stop 1 和 Stop 2）。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/cell_general.png"></img>
-<em><p align="center">work space</p></em>
+<em><p align="center">工作空间</p></em>
 </p>
 
 <p align="center">
 <img src="../../../_assets/safety_layout/cell_protected.png"></img>
-<em><p align="center">protected space</p></em>
+<em><p align="center">受保护空间</p></em>
 </p>
 
-The safe zone is configured by setting the position and height of each vertex relative to the robot's coordinate system. Up to 10 vertices can be added. The safe zone is activated by parameter settings or safety input/output signals.
+安全区域通过相对于机器人坐标系统设置每个顶点的位置和高度进行配置。最多可以添加 10 个顶点。安全区域通过参数设置或安全输入/输出信号激活。
 
-You can set the parameter values   for the safety zone in each tab of the `[System > 10: Safety System > 2: Parameter Setup > 2: Space restriction > 1: Space]` menu.
+您可以在 `[System > 10: Safety System > 2: Parameter Setup > 2: Space restriction > 1: Space]` 菜单的每个选项卡中设置安全区域的参数值。
 
-
-* **General**
+* **常规**
 
 <p align="center">
 <img src="../../../_assets/safety_layout/cell_general.png"></img>
-<em><p align="center">General</p></em>
+<em><p align="center">常规</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>Function activation status</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Stop function |   <p>Stop method when the function is violated</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
-| Type |  <p>Safety area type</p><p>(Work space/Protected space)</p>  | Work space |
+| 激活 | <p>功能激活状态</p><p>(关闭/开启/安全输入)</p> |   关闭  |
+| 停止功能 |   <p>功能违反时的停止方法</p><p>(Stop0, Stop1, Stop2, Non-stop)</p>  | Stop 1 |
+| 类型 |  <p>安全区域类型</p><p>(工作空间/受保护空间)</p>  | 工作空间 |
 
 
-* **Detection target**
+* **检测目标**
 
 <p align="center">
 <img src="../../../_assets/safety_layout/cell_target.png"></img>
-<em><p align="center">Detection target</p></em>
+<em><p align="center">检测目标</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Tool | <p>Tool modeling monitoring</p><p>(Off/On/Safety Input)</p> |   Off  |
-| Lower arm |   <p>Robot 2nd axis modeling monitoring</p><p>(Off/On)</p>  | Off |
-| Upper arm |  <p>Robot 3rd axis modeling monitoring</p><p>(Off/On)</p>  | Off |
+| 工具 | <p>工具建模监控</p><p>(关闭/开启/安全输入)</p> |   关闭  |
+| 下臂 |   <p>机器人第二轴建模监控</p><p>(关闭/开启)</p>  | 关闭 |
+| 上臂 |  <p>机器人第三轴建模监控</p><p>(关闭/开启)</p>  | 关闭 |
 
 
-* **Area**
+* **区域**
 
 <p align="center">
 <img src="../../../_assets/safety_layout/cell_working.png"></img>
-<em><p align="center">Area</p></em>
+<em><p align="center">区域</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| <p>Z Min / Max</p><p>[mm]</p> | <p>Height of the safe area based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
-| Enable | <p>Whether to enable the vertex of the safe area</p><p>(Enable / Disable)</p> | Disable |
-| <p>X</p><p>[mm]</p> | <p>X-direction position of the vertex based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
-| <p>Y</p><p>[mm]</p> | <p>Y-direction position of the vertex based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
-
+| <p>Z 最小 / 最大</p><p>[mm]</p> | <p>基于机器人坐标系统的安全区域高度</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
+| 启用 | <p>是否启用安全区域的顶点</p><p>(启用 / 禁用)</p> | 禁用 |
+| <p>X</p><p>[mm]</p> | <p>基于机器人坐标系统的顶点 X 方向位置</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
+| <p>Y</p><p>[mm]</p> | <p>基于机器人坐标系统的顶点 Y 方向位置</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
 
 
 {% hint style="warning" %}
-**\[Caution]**: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
+**\[注意]**: 安全功能基于设置的区域进行监控。设置区域时应考虑停止距离，并在操作前进行验证。
 {% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)
-# 3.3.3.2 Safety Tool Modeling
+# 3.3.3.2 安全工具建模
 
-Monitors whether the sphere modeled with a tool used for safety area monitoring violates the protected space or leaves the work space. Up to 16 safety tools can be set and modeled with up to 10 models.
+监控用作安全区域监控的工具建模的球体是否违反保护空间或离开工作空间。最多可以设置16个安全工具，并使用最多10个模型进行建模。
 
-As the safety tool is activated by the tool number set on the teach pendant, you should model the safety tool based on the tool data set in the `[System > 3: Robot Parameters > 1: Tool Data]` menu. Refer to the TCP position information at the top of the tool data setting screen.
+由于安全工具是根据在教导 pendant 上设置的工具编号激活的，因此您应根据在`[System > 3: Robot Parameters > 1: Tool Data]`菜单中设置的工具数据来建模安全工具。请参考工具数据设置屏幕顶部的TCP位置信息。
 
-There are a total of 3 models used for safety tool modeling: sphere, capsule, and plate. Each model consists of a center and radius. The center position and radius of the modeling are set based on the robot flange coordinate system (Xf, Yf, and Zf), and the radius is set to include the tool size and stop distance at maximum TCP speed.
+用于安全工具建模的模型总共有3种：球体、胶囊和板。每个模型由中心和半径组成。建模的中心位置和半径是基于机器人法兰坐标系统（Xf，Yf和Zf）设置的，半径设置为包括工具尺寸和最大TCP速度下的停止距离。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/tool_model.png"></img>
-<em><p align="center">Tool modeling</p></em>
+<em><p align="center">工具建模</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **shape**  |
+|  **参数** |                       **描述**                       |  **形状**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| c | center(X,Y,Z based robot flange coordinate system) |   sphere, capsule, plate  |
-| r | radius  |   sphere, capsule, plate  |
-| h | height  |   capsule, plate  |
-| w | width  |   plate  |
+| c | 中心（基于机器人法兰坐标系统的X，Y，Z） |   球体，胶囊，板  |
+| r | 半径  |   球体，胶囊，板  |
+| h | 高度  |   胶囊，板  |
+| w | 宽度  |   板  |
 
 <p align="center">
 <img src="../../../_assets/safety_layout/flange.png"></img>
-<em><p align="center">Robot flange coordinate system</p></em>
+<em><p align="center">机器人法兰坐标系统</p></em>
 </p>
 
-You can set parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 3: Tool]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 3: Tool]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/tool_param.png"></img>
-<em><p align="center">Safety Tool Modeling Settings Screen</p></em>
+<em><p align="center">安全工具建模设置屏幕</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| TCP X,Y,Z | <p>TCP position in flange coordinate system (read-only) - set in tool info</p> | 0 |
-| Geometry | <p>Tool modeling shape</p><p>(off / sphere / capsule / plate)</p> | off |
-| <p>Radius</p><p>[mm]</p> | <p>Radius</p><p>(0.0 ~ 3000.0)</p> | 0 |
-| <p>Height</p><p>[mm]</p> | <p>Height of plate</p><p>(0.0 ~ 5000.0)</p> | 0 |
-| <p>Width</p><p>[mm]</p> | <p>Width of plate</p><p>(0.0 ~ 5000.0)</p> | 0 |
-| <p>X</p><p>[mm]</p> | <p>Model center position in X direction</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
-| <p>Y</p><p>[mm]</p> | <p>Model center position in Y direction</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
-| <p>Z</p><p>[mm]</p> | <p>Model center position in Z direction</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
-| <p>Rot.X</p><p>[deg]</p> | <p>X direction in flange coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |
-| <p>Rot.Y</p><p>[deg]</p> | <p>Y direction in flange coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |
-| <p>Rot.Z</p><p>[deg]</p> | <p>Z direction in flange coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |
-
-
-
+| TCP X,Y,Z | <p>法兰坐标系统中的TCP位置（只读）- 在工具信息中设置</p> | 0 |
+| 形状 | <p>工具建模形状</p><p>(off / sphere / capsule / plate)</p> | off |
+| <p>半径</p><p>[mm]</p> | <p>半径</p><p>(0.0 ~ 3000.0)</p> | 0 |
+| <p>高度</p><p>[mm]</p> | <p>板的高度</p><p>(0.0 ~ 5000.0)</p> | 0 |
+| <p>宽度</p><p>[mm]</p> | <p>板的宽度</p><p>(0.0 ~ 5000.0)</p> | 0 |
+| <p>X</p><p>[mm]</p> | <p>模型中心位置在X方向</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
+| <p>Y</p><p>[mm]</p> | <p>模型中心位置在Y方向</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
+| <p>Z</p><p>[mm]</p> | <p>模型中心位置在Z方向</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
+| <p>旋转.X</p><p>[deg]</p> | <p>法兰坐标系统中的X方向</p><p>(-180.0 ~ 180.0)</p> | 0 |
+| <p>旋转.Y</p><p>[deg]</p> | <p>法兰坐标系统中的Y方向</p><p>(-180.0 ~ 180.0)</p> | 0 |
+| <p>旋转.Z</p><p>[deg]</p> | <p>法兰坐标系统中的Z方向</p><p>(-180.0 ~ 180.0)</p> | 0 |
 
 
 {% hint style="warning" %}
-**\[Caution]**
+**\[注意]**
 
-* When changing tool data, be sure to recheck that the parameters set in safety tool modeling are accurate. The tool data number and safety tool modeling number of the same tool should match.
-* As the definition of robot layout settings applies only to the robot 2nd and 3rd axes, other parts of the robot may violate this area even if a safety area is set.
+* 更改工具数据时，请务必重新检查安全工具建模中的参数设置是否准确。相同工具的工具数据编号和安全工具建模编号应匹配。
+* 由于机器人布局设置的定义仅适用于机器人第二和第三轴，因此即使设置了安全区域，机器人的其他部分也可能违反该区域。
 {% endhint %}
-
 [__SOURCE](3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)
-# 3.3.3.3 Safety Robot Modeling
+# 3.3.3.3 安全机器人建模
 
-A robot model used for safety space monitoring. Safety robot modeling can be applied to axes 2 and 3, and both are modeled as capsules.
+用于安全空间监测的机器人模型。安全机器人建模可以应用于轴 2 和 3，两者都被建模为胶囊。
 
-The capsule used for the safety modeling for robots consists of the center and radius of the spheres at both ends. The center of the modeling sphere is the center position of the robot 2nd/3rd axis, and the radius should be large enough to include the size of the current link and the stop distance at the maximum TCP speed.
+用于机器人安全建模的胶囊由两端球体的中心和半径组成。建模球体的中心是机器人第二/第三轴的中心位置，半径应足够大，以包含当前链节的大小和在最大 TCP 速度下的停止距离。
 
-You can set parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 2: Robot]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 2: Robot]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/robot.png"></img>
-<em><p align="center">Safety Robot Modeling Settings Screen</p></em>
+<em><p align="center">安全机器人建模设置屏幕</p></em>
 </p>
 
-| **Parameter** |          **Description**                                     | **Default Setting** |
+| **参数** |          **描述**                                     | **默认设置** |
 | :------: | --------------------------------------------------- | :--------: |
-| <p>Height</p><p>[mm]</p> | <p>Plate height</p><p>(0 ~ 5000.0)</p> | 0 |
-| <p>Radius</p><p>[mm]</p> | <p>Radius of sphere</p><p>(0 ~ 3000.0)</p> | 10 |
-| <p>Center</p><p>[mm]</p> | <p>Center position</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
-| <p>Direction</p><p>[deg]</p> | <p>Orientation of coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |                    |    0 mm    |
+| <p>高度</p><p>[mm]</p> | <p>板高度</p><p>(0 ~ 5000.0)</p> | 0 |
+| <p>半径</p><p>[mm]</p> | <p>球体半径</p><p>(0 ~ 3000.0)</p> | 10 |
+| <p>中心</p><p>[mm]</p> | <p>中心位置</p><p>(-3000.0 ~ 3000.0)</p> | 0 |
+| <p>方向</p><p>[deg]</p> | <p>坐标系统的方向</p><p>(-180.0 ~ 180.0)</p> | 0 |                    |    0 mm    |
 
 {% hint style="warning" %}
-**\[Caution]**
+**\[注意]**
 
-* As the definition of robot layout settings applies only to the robot 2nd and 3rd axes, other parts of the robot may violate this area even if a safety area is set.
+* 由于机器人布局设置的定义仅适用于机器人第二和第三轴，其他部分即使设置了安全区域也可能会违反该区域。
 {% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/3-safety-layout/4-safety-tcp-orientation.md)
-# 3.3.3.4 TCP Orientation Monitoring
+# 3.3.3.4 TCP方向监控
 
-To use the TCP orientation monitoring function, you can set up a monitoring cone by setting the rotation angle and deviation angle for generating the reference vector.
+要使用TCP方向监控功能，可以通过设置参考向量的旋转角度和偏差角度来建立监控锥。
 
-By setting the reference vector (![](../../../_assets/3.png)) by rotating the Z-direction vector of the robot coordinate system (![](../../../_assets/1.png)) by a set angle based on it, a cone (![](../../../_assets/2.png)) made up of mother lines that are separated by the deviation angle (![](../../../_assets/4.png)) can be modeled. The vertex of such a cone (![](../../../_assets/5.png)) is located at the TCP, and if the Z-direction vector of the TCP (![](../../../_assets/6.png)) crosses the monitoring cone, a TCP direction limit function violation error occurs.
+通过基于参考向量(![](../../../_assets/3.png))旋转机器人坐标系的Z方向向量(![](../../../_assets/1.png))设定角度，可以建模一个由偏差角(![](../../../_assets/4.png))分隔的母线组成的锥(![](../../../_assets/2.png))。这样一个锥的顶点(![](../../../_assets/5.png))位于TCP处，如果TCP的Z方向向量(![](../../../_assets/6.png))穿过监控锥，则会发生TCP方向限制功能违反错误。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/tool_ori.png"></img>
-<em><p align="center">TCP Orientation Monitoring</p></em>
+<em><p align="center">TCP方向监控</p></em>
 </p>
 
-You can set the parameter values   in the `[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 4: Tool orientation]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 4: Tool orientation]`菜单中设置参数值。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/tool_orient_param.png"></img>
-<em><p align="center">TCP Orientation parameter setting screen</p></em>
+<em><p align="center">TCP方向参数设置屏幕</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>Whether the function is activated</p><p>(Invalid / Valid / Safe I/O)</p> | Invalid |
-| Stop method | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
-| <p>Org.Rx</p><p>[deg]</p> | <p>Rotation amount of reference vector relative to X direction</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
-| <p>Org.Ry</p><p>[deg]</p> | <p>Rotation amount of reference vector relative to Y direction</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
-| <p>Org.Rz</p><p>[deg]</p> | <p>Rotation of reference vector relative to Z direction</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
-| Deviation angle | <p>Tool orientation limit</p><p>(1.0 ~ 179.9)</p> | 0.0 |
-| Load current position <br> | Create reference vector with current robot pose | - |
+| 激活 | <p>功能是否被激活</p><p>(无效 / 有效 / 安全 I/O)</p> | 无效 |
+| 停止方法 | <p>功能违反时的停止方法</p><p>(停机 0 / 停机 1 / 停机 2 / 不停止)</p> | 停机 1 |
+| <p>Org.Rx</p><p>[度]</p> | <p>参考向量相对于X方向的旋转量</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
+| <p>Org.Ry</p><p>[度]</p> | <p>参考向量相对于Y方向的旋转量</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
+| <p>Org.Rz</p><p>[度]</p> | <p>参考向量相对于Z方向的旋转量</p><p>(-180.0 ~ 180.0)</p> | 0.0 |
+| 偏差角 | <p>工具方向限制</p><p>(1.0 ~ 179.9)</p> | 0.0 |
+| 负载当前位置 <br> | 使用当前机器人姿势创建参考向量 | - |
 
 
 {% hint style="warning" %}
-**\[Caution]**
+**\[注意]**
 
-* When changing tool data, be sure to recheck that the parameters set in safety tool modeling are accurate. The tool data number and safety tool modeling number of the same tool should match.
+* 更改工具数据时，请确保重新检查安全工具建模中设置的参数是否准确。同一工具的工具数据编号和安全工具建模编号应匹配。
 {% endhint %}
-
 [__SOURCE](3-safety-function/3-safety-function/3-safety-layout/5-self-collision-detection.md)
-# 3.3.3.5 Self-Collision Detection
+# 3.3.3.5 自碰撞检测
 
-Self-collision detection is a function that monitors potential collisions between Axis 2 of the robot and the tool.
-The tool and the robot must be modeled to match their actual geometries.
-For detailed information on the modeling methods, refer to "[3.3.3.2 Safety Tool Modeling](../../../3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)" and "[3.3.3.3 Safety Robot Modeling](../../../3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)".
+自碰撞检测是一种监视机器人轴 2 与工具之间潜在碰撞的功能。
+工具和机器人必须建模以匹配其实际几何形状。
+有关建模方法的详细信息，请参阅"[3.3.3.2 安全工具建模](../../../3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)"和"[3.3.3.3 安全机器人建模](../../../3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)"。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/self_collision.png"></img>
-<em><p align="center">Self-Collision Detection</p></em>
+<em><p align="center">自碰撞检测</p></em>
 </p>
 
-
-You can set parameters for the robot's self-collision detection function in the `[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 5: Self-Collision Detection]` menu.
+您可以在`[System > 10: Safety System > 2: Parameter setup > 2: Space restriction > 5: Self-Collision Detection]`菜单中设置机器人的自碰撞检测功能参数。
 
 <p align="center">
 <img src="../../../_assets/safety_layout/self_collision_param.png"></img>
-<em><p align="center">Self-collision detection function parameter setting screen</p></em>
+<em><p align="center">自碰撞检测功能参数设置界面</p></em>
 </p>
 
-|  **Parameter** |                       **Description**                       |  **Default Setting**  |
+|  **参数** |                       **描述**                       |  **默认设置**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| Activation | <p>Whether the function is activated</p><p>(Invalid / Valid / Safe I/O)</p> | Invalid |
-| Stop method | <p>Stop method when the function is violated</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
-
-
-
-
-
+| 激活 | <p>功能是否激活</p><p>(无效 / 有效 / 安全 I/O)</p> | 无效 |
+| 停止方法 | <p>功能受到违反时的停止方法</p><p>(停止 0 / 停止 1 / 停止 2 / 不停止)</p> | 停止 1 |
 [__SOURCE](3-safety-function/3-safety-function/4-safety-io/README.md)
-# 3.3.4 Safety Input/Output
+# 3.3.4 安全输入/输出
 
-Basic Information on Safety Input/Output
+关于安全输入/输出的基本信息
 
-Hi7's safety input/output can be divided as follows:
+Hi7 的安全输入/输出可以分为以下几类：
 
-- Basic Safety Input (4ch x dual input)
-- Extended Safety Input (8ch x dual input)
-- Basic Safety Output (1ch x dual input)
-- Extended Safety Output (8ch x dual input)
-- PROFIsafe Communication Safety Input (64 points)
-- PROFIsafe Communication Safety Output (64 points)
-- CIP Safety Communication Safety Input (64 points)
-- CIP Safety Communication Safety Output (64 points)
+- 基本安全输入 (4ch x 双输入)
+- 扩展安全输入 (8ch x 双输入)
+- 基本安全输出 (1ch x 双输入)
+- 扩展安全输出 (8ch x 双输入)
+- PROFIsafe 通信安全输入 (64 点)
+- PROFIsafe 通信安全输出 (64 点)
+- CIP 安全通信安全输入 (64 点)
+- CIP 安全通信安全输出 (64 点)
 
 ![](../../../_assets/safety_io/comm_front.png)
-
-
 [__SOURCE](3-safety-function/3-safety-function/4-safety-io/1-default-io.md)
-# 3.3.4.1 Default Safety Input/Output Signals
+# 3.3.4.1 默认安全输入/输出信号
 
-Set the parameters for safety input/output signals.
-There are 4 input signals and 1 output signal, all operating as dual signals.
-You can set the parameter values in the `[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 2: Default I/O]` menu. 
+设置安全输入/输出信号的参数。  
+共有4个输入信号和1个输出信号，均以双信号的形式运行。  
+您可以在`[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 2: Default I/O]`菜单中设置参数值。
 
-### 1) Default Input Signal Settings
+### 1) 默认输入信号设置
 
 <p align="center">
 <img src="../../../_assets/safety_io/def_input.png"></img>
-<em><p align="center">Default Input/Output Settings Screen (Input)</p></em>
+<em><p align="center">默认输入/输出设置屏幕（输入）</p></em>
 </p>
 
-| Parameter <br>[Unit]          | Description                                                                                                                                       | Input Range       | Default |
+| 参数 <br>[单位]          | 描述                                                                                                                                         | 输入范围       | 默认  |
 |:------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Pulse Test                 | Set whether to use the Pulse Test for each channel.                                                                                                     | Enable / Disable | Disable |
-| Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system transitions from the Fail-Safe state to the current input state only after the **Error Latch Time** has elapsed.<br>Only values divisible by 10 can be entered. | 0 ~ 65530      | 1000   |
-| Filter Time <br>[msec]      | The same signal should be input during the **Filter Time** set for each channel for it to be processed as a valid signal.<br>Only values divisible by 10 can be entered.                       | 0 ~ 500        | 100    |
-| Discrete Time <br>[msec] | Basic input signals are processed as valid signals when two dual signals are identical.<br>An alarm is triggered if the two signals are different from each other for longer than the set **Discrete Time**.<br>Only values divisible by 10 can be entered. | 0 ~ 5000       | 1000   |
+| 脉冲测试                 | 设置是否为每个通道使用脉冲测试。                                                                                                             | 启用 / 禁用    | 禁用   |
+| 错误保持时间 <br>[毫秒] | 当渠道发生错误时，即使错误被解决，系统只有在**错误保持时间**经过后才会从安全故障状态转换到当前输入状态。<br>仅可输入能被10整除的值。 | 0 ~ 65530      | 1000   |
+| 滤波时间 <br>[毫秒]      | 在为每个通道设置的**滤波时间**内，应输入相同信号以便处理为有效信号。<br>仅可输入能被10整除的值。                                   | 0 ~ 500        | 100    |
+| 离散时间 <br>[毫秒]     | 当两个双信号相同時，基本输入信号被处理为有效信号。<br>如果两个信号持续不相同超过设定的**离散时间**，则会触发报警。<br>仅可输入能被10整除的值。 | 0 ~ 5000       | 1000   |
 
-#### Wiring Example)
+#### 接线示例)
 ![](../../../_assets/safety_io/CN_SI1.bmp)
 
-
-### 2) Output Signal Settings
+### 2) 输出信号设置
 
 <p align="center">
 <img src="../../../_assets/safety_io/def_output.png"></img>
-<em><p align="center">Default I/O Settings Screen (Output)</p></em>
+<em><p align="center">默认I/O设置屏幕（输出）</p></em>
 </p>
 
-| Parameter <br>[Unit]          | Description                                                                                                                                       | Input Range       | Default |
+| 参数 <br>[单位]          | 描述                                                                                                                                         | 输入范围       | 默认  |
 |:------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Pulse Test                 | Set whether to use the Pulse Test for each channel.                                                                                                     | Enable / Disable | Disable |
-| Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is recovered, the system maintains the **Open (Fail-safe)** state during the **Error Latch Time**. Afterward, it  transitions to normal output.<br>Only values divisible by 5 can be entered. | 0 ~ 65530      | 1000   |
+| 脉冲测试                 | 设置是否为每个通道使用脉冲测试。                                                                                                             | 启用 / 禁用    | 禁用   |
+| 错误保持时间 <br>[毫秒] | 当通道发生错误时，即使错误已恢复，系统在**错误保持时间**期间保持**打开（安全故障）**状态。随后，转为正常输出。<br>仅可输入能被5整除的值。 | 0 ~ 65530      | 1000   |
 
-#### Wiring Example)
+#### 接线示例)
 ![](../../../_assets/safety_io/CN_SO1.bmp)
-
-
-
 [__SOURCE](3-safety-function/3-safety-function/4-safety-io/2-additional-io.md)
-# 3.3.4.2 Extended Safety Input/Output Signals
+# 3.3.4.2 扩展安全输入/输出信号
 
-Set the parameters for additional safety input/output signals. It consists of 8 input signals and 8 output signals, all operating as dual signals.
-You can set parameter values in the `[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 3: Additional I/O]` menu. 
+设置额外的安全输入/输出信号的参数。它由8个输入信号和8个输出信号组成，所有信号都以双信号方式操作。  
+您可以在`[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 3: Additional I/O]`菜单中设置参数值。
 
-### 1) Additional Safety Input/Output Signals
+### 1) 额外安全输入/输出信号
 
 <p align="center">
 <img src="../../../_assets/safety_io/add_io.png"></img>
-<em><p align="center">Extended Input/Output Settings Screen</p></em>
+<em><p align="center">扩展输入/输出设置屏幕</p></em>
 </p>
 
 | Parameter [Unit]             | Description                                                                                                                                       | Input Range       | Default |
 |:---------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Enable                       | Set whether to enable or disable the extended safety input/output signals.                                                                                       | Enable / Disable | Disable |
-| Filter Time <br>[msec]          | For each input channel, constant signals should be input during the **Filter Time** for the signals to be processed as valid signals.<br>Only values divisible by 10 can be entered.                           | 0-500        | 100    |
-| Discrepancy Time <br>[msec]     | Extended safety input/output signals are processed as valid signals when two dual signals have the same value.<br>An alarm is triggered if the two signals are different from each other for longer than the **Discrepancy Time**.<br>Only values divisible by 10 can be entered. | 0-5000       | 1000   |
-| Input Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system transitions from the Fail-Safe state to the current input state only after the set time has elapsed.<br>Only values divisible by 10 can be entered.             | 0-65530      | 1000   |
-| Output Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system maintains the **Open (Fail-safe)** state during the set time.<br>After that, it transitions to normal output.<br>Only values divisible by 10 can be entered.   | 0-65530      | 1000   |
+| Enable                       | 设置是否启用或禁用扩展安全输入/输出信号。                                                                                       | Enable / Disable | Disable |
+| Filter Time <br>[msec]          | 对于每个输入通道，必须在**滤波时间**内输入稳定信号，信号才会被处理为有效信号。<br>只能输入可被10整除的值。                           | 0-500        | 100    |
+| Discrepancy Time <br>[msec]     | 扩展安全输入/输出信号在两个双信号具有相同值时被处理为有效信号。<br>如果两个信号在**偏差时间**内不同，将触发报警。<br>只能输入可被10整除的值。 | 0-5000       | 1000   |
+| Input Error Latch Time <br>[msec] | 当通道出现错误时，即使错误已解决，系统也仅在设置的时间过后才从故障安全状态转变为当前输入状态。<br>只能输入可被10整除的值。             | 0-65530      | 1000   |
+| Output Error Latch Time <br>[msec] | 当通道出现错误时，即使错误已解决，系统在设置的时间内保持**开放（故障安全）**状态。<br>之后，系统过渡到正常输出。<br>只能输入可被10整除的值。   | 0-65530      | 1000   |
 
-#### Additional Safety Input Wiring Example)
+#### 额外安全输入接线示例)
 ![](../../../_assets/safety_io/CN_SI2.bmp)
-#### Additional Safety Output Wiring Example)
+#### 额外安全输出接线示例)
 ![](../../../_assets/safety_io/CN_SO2.bmp)
-
-
 [__SOURCE](3-safety-function/3-safety-function/4-safety-io/3-Linker.md)
-# 3.3.4.3 Safety Signal Allocation
+# 3.3.4.3 安全信号分配
 
-The Safety signal allocation function serves to connect external signals such as safety input/output, additional safety input/output, and safety communication input/output with various logical signals (system safety input/output, safety application signals) that the robot controller has.
-You can set the parameter values in the `[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 1: I/O Allocation]` menu.
+安全信号分配功能用于将外部信号（如安全输入/输出、附加安全输入/输出和安全通信输入/输出）与机器人控制器所拥有的各种逻辑信号（系统安全输入/输出、安全应用信号）连接。
+您可以在`[System > 10: Safety System > 2: Parameter setup > 3: Safety I/O > 1: I/O Allocation]`菜单中设置参数值。
 
 ![](../../../_assets/safety_io/SIO_Alloc_diagram1.bmp)
 
@@ -1141,112 +1061,108 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 -------------------------------------------------------------------------
 
-### 1) Adding Safety Signal Allocation
-1) Press the `[Add]` button.
-2) Select the desired function from the function list.
-3) If a sub-index is required, enter the sub-index number.
+### 1) 添加安全信号分配
+1) 按下`[Add]`按钮。
+2) 从功能列表中选择所需功能。
+3) 如果需要子索引，请输入子索引编号。
 
-### 2) Deleting Safety Signal Allocation
-1) Select an already set allocation function on the list.
-2) Press the `[del]` button.
+### 2) 删除安全信号分配
+1) 在列表中选择已经设置的分配功能。
+2) 按下`[del]`按钮。
 
 <p align="center">
 <img src="../../../_assets/safety_io/io_alloc_param1.png"></img>
-<em><p align="center">Safety Signal allocation Settings Screen</p></em>
+<em><p align="center">安全信号分配设置界面</p></em>
 </p>
 
 {% hint style="warning" %}
-* The Emergency Stop (EX_EM) and Safety Guard (SGG or SGA) signals are mandatory and must always be selected.<br>
-* An individual input function item can only be connected to a single input channel.<br>
-* "Basic Safety Input", "Additional Safety Input", and "Safety Communication Input" cannot be assigned in duplication mutually.<br>
-* If duplicate input settings are made, the "E52030 (x ch) Safety input allocation duplication" error occurs.
+* 紧急停止信号（EX_EM）和安全防护信号（SGG或SGA）是强制性的，必须始终选择。<br>
+* 单个输入功能项只能连接到单个输入通道。<br>
+* “基本安全输入”、“附加安全输入”和“安全通信输入”不能互相重复分配。<br>
+* 如果设置了重复输入，系统将出现“E52030 (x ch) 安全输入分配重复”错误。
 
 {% endhint %}
 
 
 
-### 3) Default values for safety signals
+### 3) 安全信号的默认值
 
-|  **Channel** |     **Function**                       | 
+|  **通道** |     **功能**                       | 
 | :-------: | :------------------------------------------------: |
-| Safety Input Channel 1 | External Emergency Stop Input (Emergency) |
-| Safety Input Channel 2 | Safety Guard General Input (SGG)|
-| Safety Input Channel 3 | - |
-| Safety Input Channel 4 | - |
-| Safety Output Channel 1 | Emergency Stop Activation Status|
+| 安全输入通道 1 | 外部紧急停止输入（紧急） |
+| 安全输入通道 2 | 安全防护一般输入（SGG）|
+| 安全输入通道 3 | - |
+| 安全输入通道 4 | - |
+| 安全输出通道 1 | 紧急停止激活状态|
 
-### 4) Safety Input Signal Function List
+### 4) 安全输入信号功能列表
 
-|  **Channel** |     **Function**                       |       **Description**    |
+|  **通道** |     **功能**                       |       **描述**    |
 | :-------: | :--------------------------: | :--------------------------------------------------: |
-| Emergency | External Emergency Stop Input| OPEN: Emergency stop activated<br>CLOSE: Emergency stop released |
-| SGG| Safety Guard General Input| OPEN: Guard open (Danger) <br>CLOSE: Guard closed (Safe) |
-| SGA | Safety Guard Auto Input| OPEN: Guard open (Danger) <br>CLOSE: Guard closed (Safe) |
-| Protective stop | Protective Stop Input | OPEN: Protective stop activated <br>CLOSE: Protective stop released |
-| Normal stop | Normal Stop Input | OPEN: Normal stop activated <br>CLOSE: Normal stop released |
-| Motor On | External Motor On | Motor On attempted on Rising Edge |
-| Remote | External Mode Input (Remote) | OPEN: Mode change by internal mode signal <br>CLOSE: Mode change by external mode input signal
-| Manual | External Mode Input (Manual)  | OPEN: No operation <br>CLOSE: External manual mode input |
-| Auto | External Mode Input (Auto)  | OPEN: No operation <br>CLOSE: External auto mode input |
-| Arm Limit | Arm Limit Input| OPEN: Limit signal input (Danger) <br>CLOSE: Limit signal closed (Safe) |
-| Primary axis Limit | Primary Axis Limit Input | OPEN: Limit signal input (Danger) <br>CLOSE: Limit signal closed (Safe) |
-| Additional axis Limit | Additional Axis Limit Input | OPEN: Limit signal input (Danger) <br>CLOSE: Limit signal closed (Safe) |
-| External axis Limit | External Axis Limit Input | OPEN: Limit signal input (Danger) <br>CLOSE: Limit signal closed (Safe) |
-| Monitored standstill #1-#8 | Monitored Standstill<br>(sos_0-sos_7) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Joint speed set #1-#8 | Joint Speed<br>(speed_0-speed_7) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| TCP speed set #1-#16 | TCP Speed<br>(speed_0-speed_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Joint angle #1-#8 | Joint Space<br>(space_0-space7) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| TCP position(space) #1-#16 | TCP Space<br>(space_0-space15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| TCP orientation #1-#8 | Tool Orientation<br>(orient_0-orient7) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Self collision | Self Collision | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Power #1-#16 | Power<br>(power_0-power_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Momentum #1-#16 | Momentum<br>(mmt_0-mmt_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Collision detection #1-#16 | Collision Detection<br>(coldet_0-coldet_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Speed & separation #1-#84 | RePlan | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Mastering test switch | Mastering Test Switch | OPEN: Function activated<br>CLOSE: Function deactivated |
+| 紧急 | 外部紧急停止输入| OPEN: 紧急停止已激活<br>CLOSE: 紧急停止已释放 |
+| SGG| 安全防护一般输入| OPEN: 防护打开（危险） <br>CLOSE: 防护关闭（安全） |
+| SGA | 安全防护自动输入| OPEN: 防护打开（危险） <br>CLOSE: 防护关闭（安全） |
+| 保护停止 | 保护停止输入 | OPEN: 保护停止已激活 <br>CLOSE: 保护停止已释放 |
+| 正常停止 | 正常停止输入 | OPEN: 正常停止已激活 <br>CLOSE: 正常停止已释放 |
+| 电机开启 | 外部电机开启 | 电机尝试在上升沿开启 |
+| 远程 | 外部模式输入（远程） | OPEN: 内部模式信号改变模式 <br>CLOSE: 外部模式输入信号改变模式 |
+| 手动 | 外部模式输入（手动）  | OPEN: 无操作 <br>CLOSE: 外部手动模式输入 |
+| 自动 | 外部模式输入（自动）  | OPEN: 无操作 <br>CLOSE: 外部自动模式输入 |
+| 臂限位 | 臂限位输入| OPEN: 限位信号输入（危险） <br>CLOSE: 限位信号关闭（安全） |
+| 主轴限位 | 主轴限位输入 | OPEN: 限位信号输入（危险） <br>CLOSE: 限位信号关闭（安全） |
+| 附加轴限位 | 附加轴限位输入 | OPEN: 限位信号输入（危险） <br>CLOSE: 限位信号关闭（安全） |
+| 外部轴限位 | 外部轴限位输入 | OPEN: 限位信号输入（危险） <br>CLOSE: 限位信号关闭（安全） |
+| 监测静止 #1-#8 | 监测静止<br>(sos_0-sos_7) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 关节速度设置 #1-#8 | 关节速度<br>(speed_0-speed_7) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| TCP速度设置 #1-#16 | TCP速度<br>(speed_0-speed_15) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 关节角度 #1-#8 | 关节空间<br>(space_0-space7) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| TCP位置（空间） #1-#16 | TCP空间<br>(space_0-space15) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| TCP方向 #1-#8 | 工具方向<br>(orient_0-orient7) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 自我碰撞 | 自我碰撞 | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 电源 #1-#16 | 电源<br>(power_0-power_15) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 动量 #1-#16 | 动量<br>(mmt_0-mmt_15) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 碰撞检测 #1-#16 | 碰撞检测<br>(coldet_0-coldet_15) | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 速度与分离 #1-#84 | 重新规划 | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
+| 定位测试开关 | 定位测试开关 | OPEN: 功能已激活<br>CLOSE: 功能已停用 |
 
-#### Safety Output Signal Function List
-|  **Channel** |     **Function**                       |       **Description**    |
+#### 安全输出信号功能列表
+|  **通道** |     **功能**                       |       **描述**    |
 | :-------: | :--------------------------: |  :--------------------------------------------------: |
-| Emergency stop activation status | Emergency Stop Status | OPEN: At least one of TP, OP, and external emergency stop is pressed <br> CLOSE: None of TP, OP, and external emergency stop is pressed.  |
-| Protective stop activation status | Protective Stop Status | OPEN: Not in protective stop state<br> CLOSE: In protective stop state |
-| Normal stop activation status | Normal Stop Status | OPEN: Not in normal stop state<br> CLOSE: In normal stop state |
-| Remote mode status | External Operation Status | OPEN: Internal operation mode<br> CLOSE: External operation mode |
-| Manual mode status | Manual Mode Status | OPEN: Not in manual mode <br> CLOSE: In manual mode |
-| Auto mode status | Auto Mode Status | OPEN: Not in auto mode <br> CLOSE: In auto mode|
-| Motor Off status | Motor Off Status | OPEN: Motor On state<br> CLOSE: Motor Off state|
-| Safety Function activation status | Safety Function Activation Status | OPEN: Safety function deactivated<br> CLOSE: Safety function activated |
-| Monitored standstill activation status | Safe Operating Stop Monitoring Activation Status | OPEN: Safe Operating Stop monitoring deactivated<br> CLOSE: Safe Operating Stop monitoring activated |
-| Replan activation status | RePlan Activation Status | OPEN: RePlan deactivated<br> CLOSE: RePlan activated |
-| Violation alarm | Safety Function Violation Status | OPEN: Safety function violated<br> CLOSE: No safety function violation |
-| Monitored standstill #1-#8 violation | Safe Operating Stop Violation<br>(sos_0-sos_7) | OPEN: Safe Operating Stop violated<br> CLOSE: No Safe Operating Stop violation |
-| Joint speed set #1-#8 violation | Joint Speed Violation<br>(speed_0-speed_7) | OPEN: Joint speed violated<br> CLOSE: No joint speed violation |
-| TCP speed set #1-#16 violation | TCP Speed Violation<br>(speed_0-speed_15) | OPEN: TCP speed violated<br> CLOSE: No TCP speed violation |
-| Joint angle #1-#8 violation | Joint Space Violation<br>(space_0-space7) | OPEN: Joint space violated<br> CLOSE: No joint space violation |
-| TCP position #1-#16 violation | TCP Space Violation<br>(space_0-space15) | OPEN: TCP space violated<br> CLOSE: No TCP space violation |
-| TCP orientation #1-#8 violation | Tool Orientation<br>(orient_0-orient7) | OPEN: Tool orientation violated<br> CLOSE: No tool orientation violation |
-| Self collision detection | Self Collision Detection| OPEN: Self collision detected<br> CLOSE: No self collision |
-| Power #1-#16 violation | Power Violation<br>(power_0-power_15) | OPEN: Power violated<br> CLOSE: No power violation |
-| Momentum #1-#16 violation | Momentum Violation<br>(mmt_0-mmt_15) | OPEN: Momentum violated<br> CLOSE: No momentum violation |
-| Collision detection #1-#16 violation | Collision Detection <br>(coldet_0-coldet_15) | OPEN: Collision detected<br> CLOSE: No collision |
-| Mastering test error | Mastering Test Error | OPEN: Mastering test error occurred<br> CLOSE: No mastering test error |
-| Brake test error | Brake Test Error | OPEN: Brake test error occurred<br> CLOSE: No brake test error |
+| 紧急停止激活状态 | 紧急停止状态 | OPEN: TP、OP和外部紧急停止中至少有一个被按下 <br> CLOSE: TP、OP和外部紧急停止都未被按下。  |
+| 保护停止激活状态 | 保护停止状态 | OPEN: 不在保护停止状态<br> CLOSE: 在保护停止状态 |
+| 正常停止激活状态 | 正常停止状态 | OPEN: 不在正常停止状态<br> CLOSE: 在正常停止状态 |
+| 远程模式状态 | 外部操作状态 | OPEN: 内部操作模式<br> CLOSE: 外部操作模式 |
+| 手动模式状态 | 手动模式状态 | OPEN: 不在手动模式 <br> CLOSE: 在手动模式 |
+| 自动模式状态 | 自动模式状态 | OPEN: 不在自动模式 <br> CLOSE: 在自动模式|
+| 电机关闭状态 | 电机关闭状态 | OPEN: 电机开启状态<br> CLOSE: 电机关闭状态|
+| 安全功能激活状态 | 安全功能激活状态 | OPEN: 安全功能未激活<br> CLOSE: 安全功能已激活 |
+| 监测静止激活状态 | 安全操作停止监测激活状态 | OPEN: 安全操作停止监测已停用<br> CLOSE: 安全操作停止监测已激活 |
+| 重新规划激活状态 | 重新规划激活状态 | OPEN: 重新规划已停用<br> CLOSE: 重新规划已激活 |
+| 违规警报 | 安全功能违规状态 | OPEN: 安全功能被违反<br> CLOSE: 没有安全功能违规 |
+| 监测静止 #1-#8 违规 | 安全操作停止违规<br>(sos_0-sos_7) | OPEN: 安全操作停止违规<br> CLOSE: 没有安全操作停止违规 |
+| 关节速度设置 #1-#8 违规 | 关节速度违规<br>(speed_0-speed_7) | OPEN: 关节速度违规<br> CLOSE: 没有关节速度违规 |
+| TCP速度设置 #1-#16 违规 | TCP速度违规<br>(speed_0-speed_15) | OPEN: TCP速度违规<br> CLOSE: 没有TCP速度违规 |
+| 关节角度 #1-#8 违规 | 关节空间违规<br>(space_0-space7) | OPEN: 关节空间违规<br> CLOSE: 没有关节空间违规 |
+| TCP位置 #1-#16 违规 | TCP空间违规<br>(space_0-space15) | OPEN: TCP空间违规<br> CLOSE: 没有TCP空间违规 |
+| TCP方向 #1-#8 违规 | 工具方向<br>(orient_0-orient7) | OPEN: 工具方向违规<br> CLOSE: 没有工具方向违规 |
+| 自我碰撞检测 | 自我碰撞检测| OPEN: 自我碰撞已检测<br> CLOSE: 没有自我碰撞 |
+| 电源 #1-#16 违规 | 电源违规<br>(power_0-power_15) | OPEN: 电源违规<br> CLOSE: 没有电源违规 |
+| 动量 #1-#16 违规 | 动量违规<br>(mmt_0-mmt_15) | OPEN: 动量违规<br> CLOSE: 没有动量违规 |
+| 碰撞检测 #1-#16 违规 | 碰撞检测 <br>(coldet_0-coldet_15) | OPEN: 检测到碰撞<br> CLOSE: 没有碰撞 |
+| 定位测试错误 | 定位测试错误 | OPEN: 定位测试错误发生<br> CLOSE: 没有定位测试错误 |
+| 刹车测试错误 | 刹车测试错误 | OPEN: 刹车测试错误发生<br> CLOSE: 没有刹车测试错误 |
 
 {% hint style="info" %}
-* Defined as **OPEN = Bit 0**, **CLOSE = Bit 1** in safety communication
+* 定义为 **OPEN = Bit 0**, **CLOSE = Bit 1** 在安全通信中
 
 {% endhint %}
-
 [__SOURCE](3-safety-function/3-safety-function/4-safety-io/4-safe-comm-select.md)
+# 3.3.4.4 选择安全通信
 
-
-# 3.3.4.4 Selecting Safety Communication
-
-Select the safety communication protocol for the Hi7 robot controller.<br><br>
-You can configure the parameter values in the `[System > 2: Control Parameters > 6: Safety Communication > 1: Select Safety Communication]` menu.
+选择 Hi7 机器人控制器的安全通信协议。<br><br>
+您可以在`[System > 2: Control Parameters > 6: Safety Communication > 1: Select Safety Communication]`菜单中配置参数值。
 
 ![](../../../_assets/safe_comm_select.png)
-
 [__SOURCE](3-safety-function/3-safety-function/4-safety-io/5-profisafe.md)
 <script id="page-config" type="application/json">
 {
@@ -1258,562 +1174,529 @@ You can configure the parameter values in the `[System > 2: Control Parameters >
 # 3.3.4.5 PROFIsafe
 
 ### 1) PROFIsafe?
-- A safety protocol (safety profile) that operates on PROFINET/PROFIBUS.
-- Transmits safety data through standard PROFINET communication channels ('Black Channels').
-- Supports safety signal transmission without the need for additional wiring.
+- 一种在 PROFINET/PROFIBUS 上运行的安全协议（安全配置）。
+- 通过标准的 PROFINET 通信通道（“黑色通道”）传输安全数据。
+- 支持无需额外接线的安全信号传输。
 
-### 2) PROFINET & PROFIsafe Specifications
-- Digital Input: 50, 120, or 240 bytes (Select one)
-- Digital Output: 50, 120, or 240 bytes (Select one)
-- Safety I/O: 8/8 bytes (Enable or Disable)
-- Minimum Communication Cycle: 1 msec
-- Supported Communication Speed: 10 or 100 Mbps
-- Conformance Class: B
-- Netload Class: II
-- Optional Features: Legacy, MRP
+### 2) PROFINET & PROFIsafe 规范
+- 数字输入：50、120 或 240 字节（选择一个）
+- 数字输出：50、120 或 240 字节（选择一个）
+- 安全 I/O：8/8 字节（启用或禁用）
+- 最小通信周期：1 毫秒
+- 支持的通信速度：10 或 100 Mbps
+- 符合性等级：B
+- 网络负载类别：II
+- 可选功能：遗留、MRP
 
-### 3) PROFIsafe Parameters
+### 3) PROFIsafe 参数
 
 `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe]`<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_param.png)
 
- - Source Address: Sets the Source Address. (Fixed to 1)
- - Target Address: Sets the Target Address. (Setting range: 1 to 65534)
+ - 源地址：设置源地址。（固定为 1）
+ - 目标地址：设置目标地址。（设置范围：1 到 65534）
  
- ***Note***<br> 
- - Address Type: Address Type 1 (Only Destination Address is allowed)
- - Reaction on Device_Fault: If this device enters a Fault state, all F-Outputs will change to the Fail-safe (0) state. Once the device's Fault state is resolved, a process of re-integrating the F-Device using a command such as Global-Acknowledge from the F-Host is required.
+ ***注意***<br> 
+ - 地址类型：地址类型 1（仅允许目标地址）
+ - 设备故障时的反应：如果该设备进入故障状态，所有 F-输出将变为安全状态（0）。一旦设备的故障状态得到解决，需要使用 F-主机的 Global-Acknowledge 等命令重新集成 F-设备。
  
 
-### 4) PROFIsafe Configuration Procedure
+### 4) PROFIsafe 配置过程
 
-1) Connection between BD671 and F-Host & Hi7 Com
-2) GSDML File Registration (TIA Portal)
-3) PROFIsafe Controller Configuration (TIA Portal)
-<br>3.1) PROFINET Configuration
-<br>3.2) PROFIsafe Configuration
-4) Hi7 Configuration (TP UI)
-<br>4.1) PROFINET Configuration
-<br>4.2) PROFIsafe Configuration
-5) Verification of PROFINET and PROFIsafe Communication
-6) Assignment of PROFINET I/O Signals (FB Block Settings)
-7) Assignment of PROFIsafe I/O Signals
+1) BD671 与 F-Host 和 Hi7 Com 之间的连接
+2) GSDML 文件注册（TIA Portal）
+3) PROFIsafe 控制器配置（TIA Portal）
+<br>3.1) PROFINET 配置
+<br>3.2) PROFIsafe 配置
+4) Hi7 配置（TP UI）
+<br>4.1) PROFINET 配置
+<br>4.2) PROFIsafe 配置
+5) 验证 PROFINET 和 PROFIsafe 通信
+6) PROFINET I/O 信号的分配（FB 块设置）
+7) PROFIsafe I/O 信号的分配
 
 
-#### 4.1) Connection between BD671 and F-Host & Hi7 Com
+#### 4.1) BD671 与 F-Host 和 Hi7 Com 之间的连接
 
-##### 4.1.1) LAN Cable Connection
-1) Connect the "PROFIsafe F-Host" and the BD671 using a LAN cable.
-2) Verify that the Link LED is flashing.
-3) Connect the LAN3 connector of the Hi7 COM and the BD671 using a LAN cable.
-4) Verify that the Link LED is flashing.
+##### 4.1.1) LAN 电缆连接
+1) 使用 LAN 电缆连接“PROFIsafe F-Host”和 BD671。
+2) 验证链接 LED 是否闪烁。
+3) 使用 LAN 电缆连接 Hi7 COM 的 LAN3 连接器与 BD671。
+4) 验证链接 LED 是否闪烁。
 
 ![](../../../_assets/safetyio_profisafe/profisafe_connect.png)
 
-##### 4.1.2) Hi7 Com Connection Settings
-1) Navigate to the following menu: **System -> Control Parameters -> Industrial Communication -> EtherCAT Master Settings**
-2) Configure the settings as follows:
-- EtherCAT Master: ON
-- Port: LAN3
-3) Select "OptionBD - PROFINET_IO" from the slave list and press the **Apply** button.
-4) Reboot the Hi7 robot controller.
-5) After rebooting, check the status of the **Run**, **Communication**, and **Error** LEDs.
+##### 4.1.2) Hi7 Com 连接设置
+1) 导航到以下菜单： **System -> Control Parameters -> Industrial Communication -> EtherCAT Master Settings**
+2) 配置设置如下：
+- EtherCAT 主站：开启
+- 端口：LAN3
+3) 从从站列表中选择“OptionBD - PROFINET_IO”，并按下 **Apply** 按钮。
+4) 重启 Hi7 机器人控制器。
+5) 重启后，检查 **Run**、**Communication** 和 **Error** LED 的状态。
 
 ![](../../../_assets/safetyio_profisafe/EC_master_setting1.png)
 <br> <br>
 ![](../../../_assets/safetyio_profisafe/EC_master_setting2.png)
 
 
-#### 4.2) GSDML File Registration (TIA Portal)
-1) Launch TIA Portal.
-2) Navigate to the menu as shown on the right: **[Options] → [Manage general station description file (GSD)]**.
-3) Click the **"..."** button and select the directory where the GSDML file is located.
-4) Select **"GSDML-V2.43-Hyundai-Robotics-HI6-20251127.xml"** from the list displayed on the screen and click the **[Install]** button.
-5) Verify that the file has been registered as a new device in the Hardware Catalog. <br>
+#### 4.2) GSDML 文件注册（TIA Portal）
+1) 启动 TIA Portal。
+2) 导航到右侧菜单： **[Options] → [Manage general station description file (GSD)]**。
+3) 点击 **"..."** 按钮并选择 GSDML 文件所在的目录。
+4) 从屏幕上显示的列表中选择 **"GSDML-V2.43-Hyundai-Robotics-HI6-20251127.xml"** 并点击 **[Install]** 按钮。
+5) 验证该文件是否已在硬件目录中注册为新设备。 <br>
 ![](../../../_assets/safetyio_profisafe/profisafe_gsdmal.png)
 
-#### 4.3) PROFIsafe Controller Configuration (TIA Portal)
-##### 4.3.1) PROFINET Configuration
-1) Launch TIA Portal and create a new project.
-2) Double-click **Devices & Networks** to open it.<br>
+#### 4.3) PROFIsafe 控制器配置（TIA Portal）
+##### 4.3.1) PROFINET 配置
+1) 启动 TIA Portal 并创建一个新项目。
+2) 双击 **Devices & Networks** 以打开它。<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network.png)
 
-3) Select a controller that supports PROFIsafe communication (e.g., CPU 1511F-1 PN) and drag it into the **Network View**.
-4) From the Hardware Catalog, select the device added in the previous step (HRC, PROFINET I/O DAP) and drag it into the **Network View**.
-5) Connect the two devices by dragging and dropping between their respective LAN ports in the diagram.<br>
+3) 选择支持 PROFIsafe 通信的控制器（例如，CPU 1511F-1 PN）并将其拖入 **Network View**。
+4) 从硬件目录中选择上一步中添加的设备（HRC, PROFINET I/O DAP），并将其拖入 **Network View**。
+5) 在图中通过拖放连接两个设备之间的 LAN 端口。<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network2.png)
 
-6) Double-click the HRC-IO device in the **"Devices & Networks"** view.
-7) Select the desired slot.
-8) Drag the desired module (DI, DO, or PROFIsafe I/O) from the catalog on the right and move it to the **"Device Overview"** window.<br>
+6) 双击 **"Devices & Networks"** 视图中的 HRC-IO 设备。
+7) 选择所需的插槽。
+8) 从右侧目录中拖动所需模块（DI、DO 或 PROFIsafe I/O），并放入 **"Device Overview"** 窗口中。<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network3.png)
 
-9) Double-click the HRC-IO device in the **"Devices & Networks"** view.
-10) Click the HRC-IO device again to open the **Properties** (Settings) window.
-11) Navigate to the **General** tab at the bottom.
-12) Select **Ethernet addresses** from the menu on the left.
-13) Uncheck the **"Generate PROFINET device name automatically"** option.
-14) Set the **"PROFINET device name"** to **"hd-hrc-hi7"** and save the changes.<br>
+9) 双击 **"Devices & Networks"** 视图中的 HRC-IO 设备。
+10) 再次点击 HRC-IO 设备以打开 **Properties**（设置）窗口。
+11) 转到底部的 **General** 标签。
+12) 从左侧菜单中选择 **Ethernet addresses**。
+13) 取消选择 **"Generate PROFINET device name automatically"** 选项。
+14) 将 **"PROFINET device name"** 设置为 **"hd-hrc-hi7"** 并保存更改。<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network4.png)
 
-##### 4.3.2) PROFIsafe Configuration
-1) Double-click the HRC-IO device in the **"Devices & Networks"** view.
-2) Select the PROFIsafe slot in the **"Device Overview"** window on the right.
-3) The PROFIsafe communication settings will appear in the bottom pane.
-4) Click the **PROFIsafe** tab.
-5) Set **F_Dest_Add** to 1.<br>
+##### 4.3.2) PROFIsafe 配置
+1) 双击 **"Devices & Networks"** 视图中的 HRC-IO 设备。
+2) 在右侧的 **"Device Overview"** 窗口中选择 PROFIsafe 插槽。
+3) PROFIsafe 通信设置将出现在底部窗格中。
+4) 点击 **PROFIsafe** 标签。
+5) 将 **F_Dest_Add** 设置为 1。<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network5.png)
 
-#### 4.4) Hi7 Configuration (TP UI)
-##### 4.4.1) PROFINET Configuration
-1) Configure the parameters with the same values set in the F-Host:
-- PROFINET IO Device Name: hd-hrc-hi7
-- Slot 1: Digital Input: 240
-- Slot 2: Digital Output: 240
-- Slot 3: Safety I/O: Selected
-2) Press the **"Apply"** button.<br>
+#### 4.4) Hi7 配置（TP UI）
+##### 4.4.1) PROFINET 配置
+1) 使用与 F-Host 中设置的相同值配置参数：
+- PROFINET IO 设备名称：hd-hrc-hi7
+- 插槽 1：数字输入：240
+- 插槽 2：数字输出：240
+- 插槽 3：安全 I/O：选择
+2) 按下 **"Apply"** 按钮。<br>
 ![](../../../_assets/safetyio_profisafe/4_1_profinet_config.png)
 
-##### 4.4.2) PROFIsafe Configuration
+##### 4.4.2) PROFIsafe 配置
 
-1) Set the **Target Address** to 1, using the same value configured in the previous section.
-2) Press the **"Apply"** button.<br>
+1) 将 **目标地址** 设置为 1，使用在上一部分中配置的相同值。
+2) 按下 **"Apply"** 按钮。<br>
 ![](../../../_assets/safetyio_profisafe/4_2_profisafe_config.png)
 
-#### 4.5) Verification of PROFINET and PROFIsafe Communication
+#### 4.5) 验证 PROFINET 和 PROFIsafe 通信
 
-#### 4.5.1) Safety Ladder Program (TIA Portal)
-1) In the **Device Overview** tab, create a ladder program as shown below and download it to the controller.<br>
+#### 4.5.1) 安全梯形图程序（TIA Portal）
+1) 在 **Device Overview** 标签中，创建如下所示的梯形图程序并下载到控制器中。<br>
 ![](../../../_assets/safetyio_profisafe/5_1_Safety_Ladder.png)
-2) After downloading, verify that a green check box is displayed on the **Distributed I/O** screen.<br>
+2) 下载后，验证 **Distributed I/O** 屏幕上是否显示绿色勾选框。<br>
 ![](../../../_assets/safetyio_profisafe/5_1_Safety_Ladder2.png)
 
-#### 4.5.2) TP Screen
+#### 4.5.2) TP 屏幕
 1) PROFINET <br>
-Navigate to **System -> 2: Control Parameters -> 11: Industrial Communication -> 5: PROFINET Settings** from the menu.<br>
+从菜单中导航到 **System -> 2: Control Parameters -> 11: Industrial Communication -> 5: PROFINET Settings**。<br>
 ![](../../../_assets/safetyio_profisafe/5_2_pnio_status.png)
-- Check the status information for each slot.
-- Verify that the Counter is continuously increasing.
+- 检查每个插槽的状态信息。
+- 验证计数器是否持续增加。
 
 2) PROFIsafe <br>
-Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe** in the menu.<br>
+从菜单中导航到 **System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe**。<br>
 ![](../../../_assets/safetyio_profisafe/5_2_profisafe_status.png)
-- Verify that **FappState** is set to **CYCLE Data EX**.
-- Verify that the **Counter** is continuously increasing.
+- 验证 **FappState** 设置为 **CYCLE Data EX**。
+- 验证 **Counter** 是否持续增加。
 
-#### 4.6) Assignment of PROFINET I/O Signals (FB Block Settings)
-1) Navigate to **System → Control Parameters → I/O Signal Settings → FB Block Assignment**.
-2) Change the block settings to **PROFINET I/O** as needed, up to a maximum of 2 blocks.
- (The maximum PROFINET I/O size is 240 bytes, and each individual FB block size is 120 bytes. Therefore, **any settings exceeding 2 blocks will be ignored.**)<br>
+#### 4.6) PROFINET I/O 信号的分配（FB 块设置）
+1) 导航到 **System → Control Parameters → I/O Signal Settings → FB Block Assignment**。
+2) 根据需要将块设置更改为 **PROFINET I/O**，最多可设置 2 个块。
+ （最大 PROFINET I/O 大小为 240 字节，每个单独 FB 块大小为 120 字节。因此，**超过 2 个块的任何设置将被忽略。**）<br>
 ![](../../../_assets/safetyio_profisafe/6_fb_block.png)
 
-3) Additionally, navigate to the **Condition Settings** menu and verify that the **PLC Operation Mode** is set to **OFF**.<br>
+3) 此外，导航到 **Condition Settings** 菜单，确认 **PLC 操作模式** 设置为 **OFF**。<br>
 ![](../../../_assets/safetyio_profisafe/6_1_condition.png)
-4) Verify the I/O signals in the **TIA Portal** and on the **General I/O** screen.<br>
+4) 验证 **TIA Portal** 中和 **General I/O** 屏幕上的 I/O 信号。<br>
 ![](../../../_assets/safetyio_profisafe/6_3_public_io.png)
 
-#### 4.7) Assignment of PROFIsafe I/O Signals
-1) Assignment of PROFIsafe I/O Signals
-* Refer to the **[3.3.4.3 Safety Signal Assignment](../4-safety-io/3-Linker.md)** page.
+#### 4.7) PROFIsafe I/O 信号的分配
+1) PROFIsafe I/O 信号的分配
+* 请参阅 **[3.3.4.3 Safety Signal Assignment](../4-safety-io/3-Linker.md)** 页面。
 
-2) Examples of PROFIsafe I/O Signal Assignment
+2) PROFIsafe I/O 信号分配示例
 <br>
-<br>2-1) PROFIsafe Input (Direction: Master -> Slave)
+<br>2-1) PROFIsafe 输入（方向：主 -> 从）
 <br><br>
-[Set 0 bit as Arm Limit] <br>
+[将 0 位设置为臂限制] <br>
 ![](../../../_assets/safetyio_profisafe/7_PS_in.png)
 <br> <br>
 ![](../../../_assets/safetyio_profisafe/7_PS_in2.png)
 <br> <br>
-2-2) PROFIsafe Output (Direction: Slave -> Master)
+2-2) PROFIsafe 输出（方向：从 -> 主）
 <br> <br>
-[Set 0 bit as Emergency Stop State]<br>
+[将 0 位设置为紧急停止状态]<br>
 ![](../../../_assets/safetyio_profisafe/7_PS_out.png)
 <br> <br>
 ![](../../../_assets/safetyio_profisafe/7_PS_out2.png)
-
-
-
-
 [__SOURCE](3-safety-function/3-safety-function/4-safety-io/6-cipSafety.md)
-
-
 # 3.3.4.6 CIP Safety
 
-### 1) What is CIP Safety?
-- **CIP Safety** is a safety communication protocol that extends the standard **Common Industrial Protocol (CIP)**.
-- It enables secure data exchange over **EtherNet/IP** and **DeviceNet** by utilizing the **"Black Channel"** principle.
-- It complies with international safety standards such as **IEC 61508** and **ISO 13849** through mechanisms like time monitoring, redundancy, and CRC (Cyclic Redundancy Check).
+### 1) 什么是 CIP Safety?
+- **CIP Safety** 是一种安全通信协议，扩展了标准的 **Common Industrial Protocol (CIP)**。
+- 它通过利用 **"Black Channel"** 原则，支持在 **EtherNet/IP** 和 **DeviceNet** 上进行安全数据交换。
+- 它通过时间监控、冗余和 CRC（循环冗余检查）等机制，符合 **IEC 61508** 和 **ISO 13849** 等国际安全标准。
 <br>
 <br>
 
-### 2) Specifications
+### 2) 规格
 #### 2.1) EtherNet/IP
-- **Digital Input:** 0 ~ 240 bytes
-- **Digital Output:** 0 ~ 240 bytes
-- **RPI (Requested Packet Interval):** 5 ~ 3000 msec
-- **Supported Communication Speed:** 10 or 100 Mbps
+- **数字输入：** 0 ~ 240 字节
+- **数字输出：** 0 ~ 240 字节
+- **RPI（请求包间隔）：** 5 ~ 3000 毫秒
+- **支持的通信速度：** 10 或 100 Mbps
 
 #### 2.2) CIP Safety
-- **Safety I/O:** 8/8 bytes
-- **RPI (Requested Packet Interval):** 20 ~ 100 msec
+- **安全 I/O：** 8/8 字节
+- **RPI（请求包间隔）：** 20 ~ 100 毫秒
 <br>
 <br>
 
-### 3) CIP Safety Parameters
+### 3) CIP Safety 参数
 `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 3: CIP Safety]`<br>
 ![](../../../_assets/cipSafety/cipSafety_Parameters.png)
 
- - **Safety Network Number:** Sets the Safety Network Number (SNN).
- - **IP Address:** Displays the currently configured IP address of the EtherNet/IP Adapter.
+ - **安全网络编号：** 设置安全网络编号 (SNN)。
+ - **IP 地址：** 显示当前配置的 EtherNet/IP 适配器的 IP 地址。
  <br>{% hint style="info" %}
-* If the IP address of the EtherNet/IP Adapter is changed, you must execute **"Apply All"** for the CIP Safety parameters.
+* 如果 EtherNet/IP 适配器的 IP 地址被更改，必须执行 **"Apply All"** 以更新 CIP Safety 参数。
 {% endhint %}
  
    
 
-### 4) CIP Safety Configuration Procedure
+### 4) CIP Safety 配置过程
 
-1) Establish connection between Hi7 EtherNet/IP Adapter and EtherNet/IP Scanner.
-2) Add EDS file via engineering tool (Studio 5000).
-3) Configure CIP Safety Controller (Studio 5000).
-4) Configure Hi7 (TP UI).
-   4.1) EtherNet/IP Configuration
-   4.2) CIP Safety Configuration
-5) Verify EtherNet/IP and CIP Safety communication status.
-6) Assign safety signals.
+1) 建立 Hi7 EtherNet/IP 适配器与 EtherNet/IP 扫描器之间的连接。
+2) 通过工程工具（Studio 5000）添加 EDS 文件。
+3) 配置 CIP Safety 控制器（Studio 5000）。
+4) 配置 Hi7（TP UI）。
+   4.1) EtherNet/IP 配置
+   4.2) CIP Safety 配置
+5) 验证 EtherNet/IP 和 CIP Safety 通信状态。
+6) 分配安全信号。
 
 
-#### 4.1) Connection between Hi7 EtherNet/IP Adapter and EtherNet/IP Scanner
+#### 4.1) Hi7 EtherNet/IP 适配器与 EtherNet/IP 扫描器之间的连接
 ![](../../../_assets/cipSafety/connect.png)
 
-#### 4.2) Adding EDS File via Engineering Tool (Studio 5000)
-- Install the EDS file (**Hi7_EIP_251023.eds**) using the **'Device Description File Installation Tool'**.
+#### 4.2) 通过工程工具（Studio 5000）添加 EDS 文件
+- 使用 **'Device Description File Installation Tool'** 安装 EDS 文件 (**Hi7_EIP_251023.eds**)。
 
-#### 4.3) CIP Safety Controller Configuration (Studio 5000)
-1) Launch **Studio 5000** and create a new project.
-2) In the **Controller Organizer**, select a controller that supports CIP Safety communication (e.g., CPU 1769-L30ERMS). Right-click on **Ethernet** and click **New Module**.
-3) Search for **"Hi7 EIP Adapter"** and click the **Create** button.<br>
+#### 4.3) CIP Safety 控制器配置（Studio 5000）
+1) 启动 **Studio 5000** 并创建新项目。
+2) 在 **Controller Organizer** 中，选择支持 CIP Safety 通信的控制器（例如，CPU 1769-L30ERMS）。右键单击 **Ethernet** 并点击 **New Module**。
+3) 搜索 **"Hi7 EIP Adapter"** 并点击 **Create** 按钮。<br>
 ![CIP Safety](../../../_assets/cipSafety/new_module.png)
 
-4) Enter the device name in the **Name** field.
-5) Set the **IP Address** (e.g., 192.168.4.150).
-6) Set the **Safety Network Number** (e.g., 1111_2222_3333).<br>
+4) 在 **Name** 字段中输入设备名称。
+5) 设置 **IP 地址**（例如，192.168.4.150）。
+6) 设置 **安全网络编号**（例如，1111_2222_3333）。<br>
 ![CIP Safety](../../../_assets/cipSafety/Setting_SNN.png)
 
 
-7) Click the **Change** button in the **Module Definition** to configure the sizes for Safety I/O and Standard I/O.
-- **Standard I/O (Exclusive Owner):** 240 bytes
-- **Safety I/O:** 8 bytes each
-8) Do not configure the **"Configuration signature"**.
-9) Close the **Select Module Type** window.<br>
+7) 点击 **Module Definition** 中的 **Change** 按钮以配置安全 I/O 和标准 I/O 的大小。
+- **标准 I/O（独占所有者）：** 240 字节
+- **安全 I/O：** 每个 8 字节
+8) 不要配置 **"Configuration signature"**。
+9) 关闭 **Select Module Type** 窗口。<br>
 ![CIP Safety](../../../_assets/cipSafety/Setting_module.png)
 
-10) Verify that the module has been added successfully.<br>
+10) 验证模块是否成功添加。<br>
 ![CIP Safety](../../../_assets/cipSafety/module_added.png)
 
-11) Click the **Offline** button in the toolbar menu and then click **Download**.<br>
+11) 在工具栏菜单中点击 **Offline** 按钮，然后点击 **Download**。<br>
 ![CIP Safety](../../../_assets/cipSafety/download.png)
 
-12) After the configured values are downloaded, switch the **GuardLogix** toggle from **PROG** to **RUN** mode.
+12) 在配置值下载后，将 **GuardLogix** 切换开关从 **PROG** 切换到 **RUN** 模式。
 
-#### 4.4) Hi7 Configuration (TP UI)
-##### 4.4.1) EtherNet/IP Configuration
-1) Navigate to **System → Control Parameters → Industrial Communication → EtherNet/IP Settings**.
-2) Set **Protocol** to **Adapter**.
-3) Set the LAN port for the EtherNet/IP Adapter to **LAN2**.
-4) Set both **Input** and **Output** sizes to **240 bytes** each.
-5) Do not change the remaining settings, leaving them as shown in the figure.<br>
+#### 4.4) Hi7 配置（TP UI）
+##### 4.4.1) EtherNet/IP 配置
+1) 导航至 **System → Control Parameters → Industrial Communication → EtherNet/IP Settings**。
+2) 将 **Protocol** 设置为 **Adapter**。
+3) 将 EtherNet/IP 适配器的 LAN 端口设置为 **LAN2**。
+4) 将 **Input** 和 **Output** 大小均设置为 **240 字节**。
+5) 不要更改其余设置，保持如图所示。<br>
 ![CIP Safety](../../../_assets/cipSafety/ethernetIP.png)
 
-##### 4.4.2) CIP Safety Configuration
-1) Navigate to **System → 2: Control Parameters → 11: Industrial Communication → 6: Safety Communication → 3: CIP Safety**.
-2) Set the **Activation** button to **ON**.
-3) Set the **SNN** (e.g., 1111_2222_3333) to match the value configured in Studio 5000.
-4) Click the **Apply** button.
-5) **Reboot** the robot controller.<br>
+##### 4.4.2) CIP Safety 配置
+1) 导航至 **System → 2: Control Parameters → 11: Industrial Communication → 6: Safety Communication → 3: CIP Safety**。
+2) 将 **Activation** 按钮设置为 **ON**。
+3) 将 **SNN**（例如，1111_2222_3333）设置为与 Studio 5000 中配置的值匹配。
+4) 点击 **Apply** 按钮。
+5) **重启** 机器人控制器。<br>
 ![CIP Safety](../../../_assets/cipSafety/cipSafety_Parameters.png)
 
-#### 4.5) Verifying Communication Status
+#### 4.5) 验证通信状态
 ##### 4.5.1) EtherNet/IP
-1) Verify that the **License LED** is lit.
-2) Verify that the **Run LED** is lit.
-3) Verify that the **Communication LED** is lit.
-4) If the **Error LED** is lit, check the **Error Name** for details.<br>
+1) 验证 **License LED** 是否亮起。
+2) 验证 **Run LED** 是否亮起。
+3) 验证 **Communication LED** 是否亮起。
+4) 如果 **Error LED** 亮起，请检查 **Error Name** 获取详细信息。<br>
 ![CIP Safety](../../../_assets/cipSafety/eip_status.png)
 
 ##### 4.5.2) CIP Safety
-1) Verify that **Safety Communication** is set to **"CIP Safety"**.
-2) Verify that the **Comm status** is in **"On-line, Connected"** state.
-3) Verify that the **IO Count** is continuously increasing.<br>
+1) 验证 **Safety Communication** 是否设置为 **"CIP Safety"**。
+2) 验证 **Comm status** 是否处于 **"On-line, Connected"** 状态。
+3) 验证 **IO Count** 是否持续增加。<br>
 ![CIP Safety](../../../_assets/cipSafety/cipsafety_status.png)
 
-#### 4.6) Safety Signal Assignment
-##### 4.6.1) Assignment of CIP Safety I/O<br>
-* Refer to the **[3.3.4.3 Safety Signal Assignment](../4-safety-io/3-Linker.md)** page.
+#### 4.6) 安全信号分配
+##### 4.6.1) CIP Safety I/O 的分配<br>
+* 请参考 **[3.3.4.3 Safety Signal Assignment](../4-safety-io/3-Linker.md)** 页面。
 
-##### 4.6.2) Examples of CIP Safety I/O Assignment
-1) CIP Safety Input (Direction: Master -> Slave)
-1ch(0 bit) = Arm Limit<br>
+##### 4.6.2) CIP Safety I/O 分配示例
+1) CIP Safety 输入（方向：主站 -> 从站）
+1ch(0 bit) = 臂限制<br>
 ![CIP Safety](../../../_assets/cipSafety/alloc_in.png)<br>
 <br> <br>
 ![CIP Safety](../../../_assets/cipSafety/alloc_in2.png)<br>
 
-2) CIP Safety Output (Direction: Slave -> Master)
-1ch(0 bit) = E-Stop Status<br>
+2) CIP Safety 输出（方向：从站 -> 主站）
+1ch(0 bit) = 紧急停止状态<br>
 ![CIP Safety](../../../_assets/cipSafety/alloc_out.png)<br>
 <br> <br>
 ![CIP Safety](../../../_assets/cipSafety/alloc_out2.png)<br>
-
-
 [__SOURCE](4-configuration/README.md)
-# 4. Function Settings
-
-
+# 4. 功能设置
 [__SOURCE](4-configuration/1-check-before-configuration/README.md)
-# 4.1 Items to Check Before Using Safety Functions
-
-
+# 4.1 使用安全功能前需检查的项目
 [__SOURCE](4-configuration/1-check-before-configuration/3-password-setting.md)
-# 4.1.1 Password Setting
+# 4.1.1 密码设置
 
-The safety function parameters must be set and managed by a designated person. Users designated as administrators are granted administrator privileges and a system setting password. The system setting password is a required input item when setting the safety function parameters, and the parameters cannot be changed or set if the password is incorrect.
+安全功能参数必须由指定人员设置和管理。被指定为管理员的用户获得管理员权限和系统设置密码。系统设置密码是在设置安全功能参数时所需的输入项，如果密码不正确，则无法更改或设置参数。
 
-1. Tap the `[System > 5: Initialization > 11: System password setting]` menu. The password setting window will appear.
-2. Enter the password and touch the `[OK]` button.
+1. 点击`[系统 > 5: 初始化 > 11: 系统密码设置]`菜单。密码设置窗口将出现。
+2. 输入密码并触摸`[确定]`按钮。
 
 <p align="center">
 <img src="../../_assets/4/password_setting.png"></img>
-<em><p align="center">Password setting screen</p></em>
+<em><p align="center">密码设置屏幕</p></em>
 </p>
 
-* When setting then safety function parameters, you must enter the system setting password to save changes.
+* 设置安全功能参数时，必须输入系统设置密码才能保存更改。
 
 {% hint style="warning" %}
-* It is recommended to set the password with 4 or more characters.
-* If you lose your password, contact an engineer.
-* The default password is '8426'. 
+* 建议设置包含4个或更多字符的密码。
+* 如果您忘记密码，请联系工程师。
+* 默认密码是'8426'。
 {% endhint %}
-
 [__SOURCE](4-configuration/1-check-before-configuration/1-encoder-offset.md)
-# 4.1.2 Encoder Inspection
+# 4.1.2 编码器检查
 
-Since the safety function diagnoses the robot's position and speed based on the data of the encoder mounted on each axis, the accuracy of the encoder data is important. Therefore, you should check whether the encoder values match the actual values before using the safety function.
+由于安全功能根据安装在每个轴上的编码器的数据诊断机器人的位置和速度，因此编码器数据的准确性很重要。因此，在使用安全功能之前，您应该检查编码器值是否与实际值匹配。
 
-1\. Check the home position mark of each robot axis and move the axis.
+1\. 检查每个机器人轴的参考位置标记并移动轴。
 
+当由于安全功能违规而发生停止时，在手动模式下通过慢速移动每个轴。有关恢复方法的详细信息，请参阅 "[6.1 恢复模式](../../6-recovery/README.md)"。
 
-When a stop occurs due to a safety function violation, move each axis by jogging in manual mode. For detailed information on recovery methods, refer to "[6.1 Recovery Mode](../../6-recovery/README.md)".
+2\. 在工作区的姿态信息窗口中，验证机器人轴坐标值是否显示为参考姿态 (**0, 90, 0, 0, 0, 0** \[deg\]）。
 
-2\. In the pose information window in the work area, verify that the robot's axis coordinate values are displayed as the reference posture (**0, 90, 0, 0, 0, 0** \[deg]).
+* 如果工作区中没有姿态信息窗口，请触摸面板堆栈右上角的 `[+]` 按钮，然后在面板选择窗口中触摸 `[Pose]`。
 
+3\. 如果角度值误差在 0.01 以内，请继续下一步。如果误差超过 0.01，请执行编码器偏移。
 
-* If there is no pose information window in the work area, touch the `[+]` button at the upper right of the panel stack, then touch `[Pose]` in the panel selection window.
-
-
-3\. If the angle value error is within 0.01, proceed to the next step. If the error exceeds 0.01, perform encoder offset.
-
-4\. Reboot the system.
+4\. 重启系统。
 
 {% hint style="info" %}
-For more information about encoder offset, see "[7.4.4 Encoder Offset](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)" in the "[Hi7 Controller Operating Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/4-robot-parameter/4-encoder-offset/README?cont_model=Hi7)".
+有关编码器偏移的更多信息，请参见 "[7.4.4 编码器偏移](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)" 中的 "[Hi7 控制器操作手册](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/4-robot-parameter/4-encoder-offset/README?cont_model=Hi7)"。
 {% endhint %}
-
 [__SOURCE](4-configuration/1-check-before-configuration/2-tool-data-setting.md)
-# 4.1.3 Tool Data Setting
+# 4.1.3 工具数据设置
 
-Safety features monitor the entire robot system, including tools attached to the robot flange. Therefore, the smaller the error between the tool data and actual values, the more accurately the safety function operates. Set the tool length and angle based on the flange coordinate system and enter the tool weight, center of gravity, and inertia information in accordance with individual units.
+安全功能监控整个机器人系统，包括连接到机器人法兰的工具。因此，工具数据与实际值之间的误差越小，安全功能的运行就越准确。根据法兰坐标系统设置工具的长度和角度，并根据各自单位输入工具重量、重心和惯性信息。
 
-1. Set the operation mode to manual mode.
-2. Press the emergency stop switch to cut off the power to the motors.
-3. Touch the `[Settings]` button > `[3: Robot Parameters > 1: Tool Data]` menu.
-4. Check the data for each axis and set the tool weight, center of gravity, and inertia, then touch the `[OK]` button to save.
-
-![](../../_assets/image20.jpeg)
-
-* To create new tool data or easily create tool data using an existing program, touch the `[Auto Correction]`.
-* To correct the tool angle, touch the `[Angle Correction]` button.
-* To add or delete a new user coordinate system, use the `[+]`/`[-]` buttons.
-* To check and edit detailed information of tool data, select the desired name from the tool data list.
-* To copy tool data information and paste it to other tool data, use the `[Copy Page]`/`[Paste Page]` buttons.
+1. 将操作模式设置为手动模式。
+2. 按下紧急停止开关以切断电机的电源。
+3. 点击`[设置]`按钮 > `[3: 机器人参数 > 1: 工具数据]`菜单。
+4. 检查每个轴的数据并设置工具重量、重心和惯性，然后点击`[确定]`按钮以保存。
+5. 将更新后的工具数据应用于安全工具数据。有关安全工具数据的更多信息，请参见"[3.3.1.3 安全工具信息](../../3-safety-function/3-safety-function/1-general-condition/3-safe-tool-info.md)"。
 
 {% hint style="info" %}
-* If information about the tool's weight and center of gravity isn't available, you can use the load estimation function to estimate the values. 
-* For detailed information on setting tool data, refer to the "[Hi7 Controller Operation Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)."
+* 如果没有工具的重量和重心信息，可以使用负载估算功能来估算这些值。
+* 有关设置工具数据的详细信息，请参阅"[7.4.1 工具数据](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/zh-tp630/7-system/4-robot-parameter/1-tool-data/README?cont_model=Hi7)"在"[Hi7 控制器操作手册](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/zh-tp630/README?cont_model=Hi7)"中。
 {% endhint %}
-
 [__SOURCE](4-configuration/2-change-safety-parameter.md)
-# 4.2 Safety Parameter Transfer
+# 4.2 安全参数传输
 
-You can edit safety parameter values   and apply them to the system. Any values   that haven't been transferred will be reset when you exit the settings screen.
+您可以编辑安全参数值并将其应用于系统。任何未传输的值在您退出设置屏幕时将被重置。
 
-1. Go to `[System > 10: Safety System]` and select the menu you want to change.
+1. 转到 `[System > 10: Safety System]` 并选择您要更改的菜单。
 
 <p align="center">
 <img src="../_assets/4/apply_parameter_1.png"></img>
-<em><p align="center">Example of entering the safety parameter setting screen</p></em>
+<em><p align="center">进入安全参数设置屏幕的示例</p></em>
 </p>
 
-2. If you have multiple pages, navigate to the page you wish to edit. The values   entered on each page are temporarily saved. (If you exit the menu without clicking "Apply to All," the changes will not be reflected.)
+2. 如果您有多个页面，请导航到您希望编辑的页面。每个页面上输入的值将暂时保存。（如果您在未点击“应用于所有”的情况下退出菜单，则更改将不予反映。）
 
-3. Enter the desired values   and click the `[Apply to All]` button.
+3. 输入所需的值并单击 `[Apply to All]` 按钮。
 
 <p align="center">
 <img src="../_assets/4/apply_parameter_2.png"></img>
-<em><p align="center">Safety parameter setting example</p></em>
+<em><p align="center">安全参数设置示例</p></em>
 </p>
 
-4. Enter the password set in the system.
+4. 输入系统中设置的密码。
 
 <p align="center">
 <img src="../_assets/4/apply_parameter_3.png"></img>
-<em><p align="center">Password input screen</p></em>
+<em><p align="center">密码输入界面</p></em>
 </p>
 
-5. If you enter the correct password, the parameters will be transmitted. Check the transmission results.
+5. 如果您输入正确的密码，参数将被传输。检查传输结果。
 
 <p align="center">
 <img src="../_assets/4/apply_parameter_4.png"></img>
-<em><p align="center">Output screen when transmission is successful</p></em>
+<em><p align="center">传输成功时的输出屏幕</p></em>
 </p>
 
 {% hint style="warning" %}
-**\[Warning]** : Before using the robot application, all safety parameters shall be verified and confirmed.
+**\[警告]** : 在使用机器人应用程序之前，应验证并确认所有安全参数。
 
-* Verification of safety parameters is an essential procedure to ensure that the safety functions operate as intended.
-* Verification and validation shall be performed not only during initial setup but also after any modification of the parameters.
-* Failure to verify safety parameters may result in safety functions not operating as intended and may pose a risk to personnel.
+* 安全参数的验证是确保安全功能按预期操作的重要程序。
+* 验证和确认不仅应在初始设置期间进行，而且在任何参数修改后也应执行。
+* 未验证安全参数可能导致安全功能未按预期操作，并可能对人员造成风险。
 {% endhint %}
 [__SOURCE](4-configuration/3-safety-parameter-report.md)
-# 4.3 Safety Parameter Report
+# 4.3 安全参数报告
 
-You can view the currently applied safety parameter values in a report format.
-If the values on the settings screen have not been saved, they may differ from the values shown in the report.
+您可以以报告格式查看当前应用的安全参数值。
+如果设置屏幕上的值尚未保存，则它们可能与报告中显示的值不同。
 
-1. Go to the menu you want to modify under `[System > 10: Safety System]`.
+1. 转到您要在 `[System > 10: Safety System]` 下修改的菜单。
 
 <p align="center">
 <img src="../_assets/4/safety_report__1.png"></img>
-<em><p align="center">Example of entering the safety parameter setting screen</p></em>
+<em><p align="center">输入安全参数设置屏幕的示例</p></em>
 </p>
 
-2. To generate a report, click the **\[Report]** button at the bottom.
+2. 要生成报告，请单击底部的 **\[Report]** 按钮。
 
 <p align="center">
 <img src="../_assets/4/safety_report__2.png"></img>
-<em><p align="center">Example of generating a report</p></em>
+<em><p align="center">生成报告的示例</p></em>
 </p>
 
-3. The report will be created and displayed on the screen.
+3. 报告将被创建并显示在屏幕上。
 
 <p align="center">
 <img src="../_assets/4/safety__report_3.png"></img>
-<em><p align="center">Example of the report display screen</p></em>
+<em><p align="center">报告显示屏幕的示例</p></em>
 </p>
 
-4. If you want to save the generated report, click the **\[Print]** button.
+4. 如果您想保存生成的报告，请单击 **\[Print]** 按钮。
 
 <p align="center">
 <img src="../_assets/4/safety__report_4.png"></img>
-<em><p align="center">Example of the report print screen</p></em>
+<em><p align="center">报告打印屏幕的示例</p></em>
 </p>
 
-5. The password entry screen will appear. Enter the correct password.
+5. 密码输入屏幕将出现。输入正确的密码。
 
 <p align="center">
 <img src="../_assets/4/safety_report_5.png"></img>
-<em><p align="center">Example of the password entry screen</p></em>
+<em><p align="center">密码输入屏幕的示例</p></em>
 </p>
 
-6. If the correct password is entered, the report will be saved and a notification window indicating that the save is complete will be displayed.
+6. 如果输入了正确的密码，报告将被保存，并将显示保存完成的通知窗口。
 
 <p align="center">
 <img src="../_assets/4/safety_report_6.png"></img>
-<em><p align="center">Example of the report save completion screen</p></em>
+<em><p align="center">报告保存完成屏幕的示例</p></em>
 </p>
 
 {% hint style="info" %}
-* Safety parameters are protected by an identifier (CRC) to ensure integrity.
-* The identifier is calculated based on all safety parameters and includes parameters related to all safety functions.
-* When safety parameters are modified, the identifier value is also changed, and the identifier value can be checked in the CRC field of the safety parameter report.
-* The identifier uniquely identifies the set of included safety functions and their associated parameters.
+* 安全参数由标识符 (CRC) 保护，以确保完整性。
+* 该标识符是基于所有安全参数计算的，并包括与所有安全功能相关的参数。
+* 当安全参数被修改时，标识符值也会变化，标识符值可以在安全参数报告的 CRC 字段中检查。
+* 该标识符唯一标识所包含安全功能及其相关参数的集合。
 {% endhint %}
 [__SOURCE](5-monitoring/README.md)
-# 5. Safety Status Monitoring
+# 5. 安全状态监控
 
-Monitors safety function violations, safety I/O and safety communication status. 
+监控安全功能违规、安全 I/O 和安全通信状态。 
 
-You can check the information of the status of robot monitoring functions and safety I/O in the `[System > 10: Safety System > 3: Monitoring]` menu.
+您可以在 `[System > 10: Safety System > 3: Monitoring]` 菜单中检查机器人监控功能和安全 I/O 的状态信息。
 
-The status of safety communication can be checked in the `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication]` menu.
-
+安全通信的状态可以在 `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication]` 菜单中检查。
 [__SOURCE](5-monitoring/1-robot-limit-parameter-monitoring.md)
-# 5.1 Robot Monitoring Function Monitoring
+# 5.1 机器人监控功能监控
 
-You can check the robot TCP speed/TCP position/TCP direction/power/momentum status by selecting the `[System > 10: Safety System > 3: Monitoring > 1: Robot Status]` menu.
-
+您可以通过选择 `[System > 10: Safety System > 3: Monitoring > 1: Robot Status]` 菜单来检查机器人的 TCP 速度/TCP 位置/TCP 方向/电源/动量状态。
 
 <p align="center">
 <img src="../_assets/5/robot_mon.png"></img>
-<em><p align="center">Robot status monitoring screen</p></em>
+<em><p align="center">机器人状态监控屏幕</p></em>
 </p>
 
-* Check the status of the robot monitoring function.
-  * **\[TCP Position]**: TCP position monitoring violation status
-  * **\[TCP Speed]**: TCP speed monitoring violation status
-  * **\[TCP Orientation]**: TCP orientation monitoring violation status
-  * **\[Power]**: Power monitoring violation status
-  * **\[Momentum]**: Momentum monitoring violation status
+* 检查机器人监控功能的状态。
+  * **\[TCP 位置]**: TCP 位置监控违规状态
+  * **\[TCP 速度]**: TCP 速度监控违规状态
+  * **\[TCP 方向]**: TCP 方向监控违规状态
+  * **\[电源]**: 电源监控违规状态
+  * **\[动量]**: 动量监控违规状态
 
 ---
 
-You can check joint area/speed/SOS/collision status by selecting the `[System > 10: Safety System > 3: Monitoring > 2: Joint Status]` menu.
+您可以通过选择 `[System > 10: Safety System > 3: Monitoring > 2: Joint Status]` 菜单来检查关节区域/速度/SOS/碰撞状态。
 
 <p align="center">
 <img src="../_assets/5/joint_mon.png"></img>
-<em><p align="center">Joint Status Monitoring Screen</p></em>
+<em><p align="center">关节状态监控屏幕</p></em>
 </p>
 
-* Check the status of the joint limit function.
-* **\[Joint Area]**: Whether joint area monitoring is violated.
-* **\[Joint Speed]**: Whether joint speed monitoring is violated.
-* **\[Collision]**: Whether collision monitoring is violated.
-* **\[SOS]**: Whether (Safety Stop Monitoring) SOS monitoring is violated.
-
+* 检查关节限制功能的状态。
+* **\[关节区域]**: 是否违反关节区域监控。
+* **\[关节速度]**: 是否违反关节速度监控。
+* **\[碰撞]**: 是否违反碰撞监控。
+* **\[SOS]**: 是否违反（安全停止监控）SOS 监控。
 [__SOURCE](5-monitoring/4-safety-io-status-monitoring.md)
-# 5.2 Safety I/O Status
+# 5.2 安全 I/O 状态
 
 You can monitor the system's basic/extended safety I/O status by selecting the `[System > 10: Safety System > 3: Monitoring > 3: Safety I/O Status]` menu.
 
 <p align="center">
 <img src="../_assets/5/safetyIO_mon.png"></img>
-<em><p align="center">Safety input/output status monitoring screen</p></em>
+<em><p align="center">安全输入/输出状态监控屏幕</p></em>
 </p>
-
-
-
-
 [__SOURCE](5-monitoring/6-profisafe-status-monitoring.md)
-# 5.3 PROFIsafe Monitoring
+# 5.3 PROFIsafe 监测
 
-You can monitor the I/O status of PROFIsafe by selecting the `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe]` menu.
+您可以通过选择 `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe]` 菜单来监测 PROFIsafe 的 I/O 状态。
 
 <p align="center">
 <img src="../_assets/safetyio_profisafe/5_2_profisafe_status.png"></img>
-<em><p align="center">PROFIsafe Status Monitoring Screen</p></em>
+<em><p align="center">PROFIsafe 状态监测屏幕</p></em>
 </p>
 
 - **FappState:**<br>
-CYCLIC_DATA_EX : PROFIsafe communication is running. <br>
-NO_CYCLIC_DATA_EX : The PROFIsafe application is running, but PROFIsafe communication has not started. <br>
+CYCLIC_DATA_EX : PROFIsafe 通信正在运行。 <br>
+NO_CYCLIC_DATA_EX : PROFIsafe 应用程序正在运行，但 PROFIsafe 通信尚未启动。 <br>
 - **F-Parameter**
 - **Config**
-- **I/O Count:** (Number of I/O transmissions/receptions)
-
+- **I/O Count:** (I/O 传输/接收的数量)
 [__SOURCE](5-monitoring/7-cipsafety-status-monitoring.md)
 # 5.4 CIP Safety Monitoring
 
-You can monitor the I/O status of CIP Safety by navigating to the `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 3: CIP Safety]` menu.
+您可以通过导航到 `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 3: CIP Safety]` 菜单来监控 CIP Safety 的 I/O 状态。
 
 <p align="center">
 <img src="../_assets/cipSafety/cipsafety_status.png"></img>
@@ -1821,164 +1704,143 @@ You can monitor the I/O status of CIP Safety by navigating to the `[System > 2: 
 </p>
 
 - **Device Status:** <br>
-Executing : CIP Safety communication is running. <br>
-Idle : CIP Safety application is running, but CIP Safety communication has not started. <br>
-Abort : Initial step Error<br>
-Fault : Critical Error<br>
-Configuring : Applying Configuration data failed<br>
+执行中 : CIP Safety 通信正在运行。 <br>
+空闲 : CIP Safety 应用程序正在运行，但 CIP Safety 通信尚未启动。 <br>
+中止 : 初始步骤错误<br>
+故障 : 严重错误<br>
+配置中 : 应用配置数据失败<br>
 - **Communication Status:**<br>
-Connection Fail : A connection failure has occurred.
-On-Line, Connected : Link is OK. The device is online and connected to Originator.
-On-Line, No Conn : The device is online but not connected to Originator.
-- **I/O Count:** (Number of I/O transmissions/receptions)
-
+连接失败 : 发生连接失败。
+在线，已连接 : 链接正常。设备在线并已连接到起始设备。
+在线，未连接 : 设备在线但未连接到起始设备。
+- **I/O Count:** (I/O 传输/接收的数量)
 [__SOURCE](6-recovery/README.md)
-# 6. Recovery
+# 6. 恢复
 
-Errors caused due to safety function monitoring violations are cleared when switching to manual mode. In manual mode, safety function violations do not stop the robot, so, you can adjust the robot's angle and position to move it to a safe area.
-
+由于安全功能监控违规而导致的错误在切换到手动模式时被清除。在手动模式下，安全功能违规不会停止机器人，因此，您可以调整机器人的角度和位置，将其移动到安全区域。
 
 {% hint style="warning" %}
-**\[Caution]**: After recovery in manual mode, recheck the safety function settings and teaching positions of the work program.
+**\[注意]**: 在手动模式下恢复后，请重新检查安全功能设置和工作程序的教学位置。
 {% endhint %}
-
 [__SOURCE](6-recovery/1-recovery-robot-position-violation.md)
-# 6.1 	Recovery from Robot Position Violation
+# 6.1 恢复机器人位置违规
 
-Robot position violation occurs when the robot's position leaves the safety area, and the violations include TCP position violation, TCP orientation violation, and joint monitoring violation. In case of robot position violation, the error can only be cleared by physically moving the robot to change its position.
+机器人位置违规发生在机器人位置离开安全区域时，违规包括TCP位置违规、TCP方向违规和关节监控违规。在发生机器人位置违规的情况下，只有通过物理移动机器人来更改其位置才能清除错误。
 
-1. Change the mode switch to manual to enter manual mode.
+1. 将模式开关切换到手动，以进入手动模式。
 
+2. 使用教学挂件上的启用开关打开电机。
 
-2. Use the enabling switch on the teach pendant to turn on the motor.
+3. 使用教学挂件将机器人移动到安全区域。
 
-
-3. Use the teach pendant to move the robot to a safe area.
-
-
-4.  In the safety status monitoring screen, verify that the status of each area is displayed as **SAFE**.
-
+4. 在安全状态监控屏幕中，验证每个区域的状态显示为**安全**。
 
 {% hint style="warning" %}
-After clearing the error, recheck the safety layout settings and also the teaching positions in the work program.
+清除错误后，重新检查安全布局设置以及工作程序中的教学位置。
 {% endhint %}
-
 [__SOURCE](6-recovery/2-recovery-robot-speed-violation.md)
-# 6.2 	Recovery from Robot Speed Violation
+# 6.2 	从机器人速度违规恢复
 
-Robot speed violation including the TCP speed, joint speed, power, and momentum monitoring violations occurs when the robot's speed exceeds the safety standards,. In case of robot speed violation, the robot detects momentary speed and stops, so the error can be cleared without moving the robot's position.
+机器人速度违规，包括TCP速度、关节速度、功率和动量监测违规，当机器人的速度超过安全标准时发生。在机器人速度违规的情况下，机器人检测到瞬时速度并停止，因此可以在不移动机器人位置的情况下清除错误。
 
-1. Change the mode switch to manual to enter manual mode.
+1. 将模式开关切换到手动以进入手动模式。
 
-
-2.  In the safety status monitoring screen, verify that the status of each area is displayed as **SAFE**.
-
+2. 在安全状态监控屏幕中，验证每个区域的状态是否显示为**安全**。
 
 {% hint style="warning" %}
-**[Caution]**
+**[注意]**
 
-* After clearing the error, be sure to check the speed-related safety parameters and the speed of the work program.
+* 清除错误后，务必检查与速度相关的安全参数和工作程序的速度。
 {% endhint %}
-
 [__SOURCE](6-recovery/3-recovery-robot-force-violation.md)
-# 6.3 	Recovery from Robot Force Violation
+# 6.3 	从机器人力违规恢复
 
-Robot force violation such as collision detection, power, and momentum monitoring violations occurs when external force is applied or the magnitude of force used inside the robot exceeds the safety standards,. Depending on the cause of the violation, the error can be cleared.
+当外力施加或机器内部使用的力的大小超过安全标准时，会发生机器人力违规，例如碰撞检测、功率和动量监控违规。根据违规的原因，可以清除错误。
 
-<mark style="color:green;">**When violation occurs due to external force applied to the robot**</mark>
+<mark style="color:green;">**当违规是由于施加在机器人上的外力时**</mark>
 
-1. Remove external factors applying force to the robot.
-
-
-2. Change the mode switch to manual to enter manual mode.
+1. 移除施加在机器人上的外部因素。
 
 
-3.  In the safety status monitoring screen, verify that the status of each area is displayed as **SAFE**.
+2. 将模式开关切换到手动以进入手动模式。
+
+
+3. 在安全状态监控屏幕上，确认每个区域的状态显示为 **SAFE**。
 
 
 {% hint style="warning" %}
-**\[Caution]**
+**\[注意]**
 
-* After clearing the error, recheck the safety function settings, tool data, and work program's teaching positions and speed.
+* 清除错误后，请重新检查安全功能设置、工具数据以及工作程序的教学位置和速度。
 {% endhint %}
-
 [__SOURCE](6-recovery/4-recovery-sos-violation.md)
-# 6.4 	Recovery from Safe Operating Stop (SOS) Violation
+# 6.4 	从安全操作停止 (SOS) 违规中恢复
 
-Safe Operating Stop (SOS) violation occurs when movement is detected while the robot motor is on and in a stopped state. In case of safe operating stop violation, the robot detects momentary movement and generates an error, so the error can be cleared without moving the robot's position.
+安全操作停止 (SOS) 违规发生在检测到机器人电机在停止状态下移动时。安全操作停止违规时，机器人检测到瞬时移动并生成错误，因此可以在不移动机器人位置的情况下清除错误。
 
-1. Change the mode switch to manual to enter manual mode.
+1. 将模式开关更改为手动以进入手动模式。
 
+2. 移除施加在机器人上的外部力量。
 
-2. Remove external factors that apply force to the robot.
-
-
-3. In the safety status monitoring screen, verify that the status of each area is displayed as **SAFE**.
-
+3. 在安全状态监控屏幕中，验证每个区域的状态显示为 **安全**。
 
 {% hint style="warning" %}
-**[Caution]**
+**[注意]**
 
-* After clearing the error, check the safe operating stop monitoring parameters.
-* Turn on the motor in auto mode and check whether the error recurs.
-* If the same error occurs again, inspect the motor and reducer of the corresponding axis.
+* 在清除错误后，检查安全操作停止监控参数。
+* 在自动模式下开启电机，并检查错误是否再次发生。
+* 如果相同的错误再次发生，检查相应轴的电机和减速器。
 {% endhint %}
-
 [__SOURCE](7-error-message/README.md)
-# 7. Error Messages
+# 7. 错误信息
 
-When a safety function-related alarm occurs, refer to "[Error and Warning Help](https://hr-alarms.web.app/#/)".
-
+当与安全功能相关的报警发生时，请参阅 "[错误和警告帮助](https://hr-alarms.web.app/#/)".
 [__SOURCE](attachment/README.md)
-# Appendix
-
-
+# 附录
 [__SOURCE](attachment/add-new-robot-model.md)
-# Registering a New Robot Model
+# 注册新机器人型号
 
 ****
 
-1. From the robot modeling files located in the library within the HRSpace installation directory, copy the folder of the robot model you want to use.
-* File path: [HRSpace(version)\Library\Robot]
+1. 从位于 HRSpace 安装目录中的库中的机器人建模文件中，复制您想要使用的机器人型号文件夹。
+* 文件路径: [HRSpace(version)\Library\Robot]
 
-2. Add the copied folder to the robot 3D file storage directory of the controller.
-* File path: [prebuilt\tp\libs3d\robot]
+2. 将复制的文件夹添加到控制器的机器人 3D 文件存储目录。
+* 文件路径: [prebuilt\tp\libs3d\robot]
 
-3. If the name of the folder containing the robot 3D files corresponds to an older version, rename it to the new version.
+3. 如果包含机器人 3D 文件的文件夹名称对应于旧版本，请将其重命名为新版本。
 
 ****
 
-* Example: Adding a New HS220S Robot Model
+* 示例：添加新的 HS220S 机器人型号
 
-1) Copy the HS220S robot modeling file from the robot modeling files stored in the library.
+1) 从库存中存储的机器人建模文件中复制 HS220S 机器人建模文件。
 
 <p align="center">
 <img src="../_assets/add_new_robot_model/add_new_robot_model_1.png"></img>
-<em><p align="center">Check the location of the robot modeling file to be added and copy it</p></em>
+<em><p align="center">检查要添加的机器人建模文件的位置并复制它</p></em>
 </p>
 
-2) Save the copied folder to the robot 3D file storage directory of the controller.
+2) 将复制的文件夹保存到控制器的机器人 3D 文件存储目录。
 
 <p align="center">
 <img src="../_assets/add_new_robot_model/add_new_robot_model_2.png"></img>
-<em><p align="center">Paste the copied folder into the controller's robot 3D file storage directory</p></em>
+<em><p align="center">将复制的文件夹粘贴到控制器的机器人 3D 文件存储目录中</p></em>
 </p>
 
-3) Change the folder name to the new version.
+3) 将文件夹名称更改为新版本。
 
 <p align="center">
 <img src="../_assets/add_new_robot_model/add_new_robot_model_3.png"></img>
-<em><p align="center">If the robot modeling folder name corresponds to an older version, rename the folder</p></em>
+<em><p align="center">如果机器人建模文件夹名称对应于旧版本，请重命名该文件夹</p></em>
 </p>
-
 [__SOURCE](attachment/rules-criteria-and-public-notice.md)
-# Industrial Safety and Health Standards Rules and Safety Inspection Notice
+# 工业安全与健康标准规则及安全检查通知
 
-The industrial robot in question should be installed in consideration of the inspection standards of the Industrial Safety and Health Standards Rules and Safety Inspection Notice (if subject to inspection).
+所讨论的工业机器人应根据《工业安全与健康标准规则及安全检查通知》的检查标准进行安装（如果需要检查）。
 
-"[Rules on Industrial Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/ko/README)"
-
+"[工业安全与健康标准规则](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/ko/README)"
 [__SOURCE](warranty.md)
-# Quality Assurance
+# 质量保证
 
-"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/en/README)"
+"[质量保证](https://hrbook-hrc.web.app/#/view/quality-assurance/zh/README)"

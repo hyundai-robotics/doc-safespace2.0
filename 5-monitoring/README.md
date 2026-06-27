@@ -1,7 +1,7 @@
-﻿# 5. Safety Status Monitoring
+﻿# 5. 安全状态监控
 
-Monitors safety function violations, safety I/O and safety communication status. 
+监控安全功能违规、安全 I/O 和安全通信状态。 
 
-You can check the information of the status of robot monitoring functions and safety I/O in the `[System > 10: Safety System > 3: Monitoring]` menu.
+您可以在 `[System > 10: Safety System > 3: Monitoring]` 菜单中检查机器人监控功能和安全 I/O 的状态信息。
 
-The status of safety communication can be checked in the `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication]` menu.
+安全通信的状态可以在 `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication]` 菜单中检查。
