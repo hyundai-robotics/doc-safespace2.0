@@ -71,7 +71,7 @@
 | Power #1 ~ #16 | 파워<br>(power_0~power_15) | OPEN : 기능 활성<br>CLOSE : 기능 비활성 |
 | Momentum #1 ~ #16 | 모멘텀<br>(mmt_0~mmt_15) | OPEN : 기능 활성<br>CLOSE : 기능 비활성 |
 | Collision detection #1 ~ #16 | 충돌 검지<br>(coldet_0~coldet_15) | OPEN : 기능 활성<br>CLOSE : 기능 비활성 |
-| Speed & separation #1 ~ #84 | RePlan | OPEN : 기능 활성<br>CLOSE : 기능 비활성 |
+| RePlan #1 ~ #4 | RePlan | OPEN : 기능 활성<br>CLOSE : 기능 비활성 |
 | Mastering test switch | 마스터링 테스트 스위치 | OPEN : 기능 활성<br>CLOSE : 기능 비활성 |
 
 ### 5) 안전 출력 신호의 기능 리스트

@@ -71,14 +71,6 @@
 | <p>X</p><p>[mm]</p> |  <p>로봇좌표계 기준 꼭지점의 X방향 위치</p><p>(-30000.0 ~ 30000.0)</p>  | 0 |
 | <p>Y</p><p>[mm]</p> |  <p>로봇좌표계 기준 꼭지점의 Y방향 위치</p><p>(-30000.0 ~ 30000.0)</p>  | 0 |
 
-*   **Re plan** 
-
-<p align="center">
-<img src="../../../_assets/safety_layout/space_replan.png"></img>
-<em><p align="center">Re plan</p></em>
-</p>
-
-Re plan에 대한 설명은 3.3.2.6 Re plan 설정을 참고하시기 바랍니다.
 
 {% hint style="warning" %}
 **\[주의]**: 안전기능은 설정한 영역을 기반으로 감시합니다. 설정한 영역이 정지거리를 감안하여 설정해야 하며, 구동 전 반드시 검증을 수행해야합니다.
