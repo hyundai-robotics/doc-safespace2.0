@@ -1,5 +1,8 @@
 ﻿# 1.1.2 Safety Performance
 
+![SafeSpace2.0 configuration](../../_assets/safety_diagram_en.png)
+
+
 The safety performance of SafeSpace2.0's emergency stop and external device interface (basic safety input/output, PROFIsafe) is as follows:
 |            **Item**            | **Safety Performance** |         **Applicable Standard**         |
 | :--------------------------: | :-------: | :-----------------------: |

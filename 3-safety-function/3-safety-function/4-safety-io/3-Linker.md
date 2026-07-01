@@ -75,7 +75,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 | Power #1-#16 | Power<br>(power_0-power_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Momentum #1-#16 | Momentum<br>(mmt_0-mmt_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Collision detection #1-#16 | Collision Detection<br>(coldet_0-coldet_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Speed & separation #1-#84 | RePlan | OPEN: Function activated<br>CLOSE: Function deactivated |
+| RePlan #1-#4 | RePlan | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Mastering test switch | Mastering Test Switch | OPEN: Function activated<br>CLOSE: Function deactivated |
 
 #### Safety Output Signal Function List
