@@ -19,7 +19,12 @@ You can set parameter values   in the `[System > 10: Safety System > 2: Paramete
 | <p>Direction</p><p>[deg]</p> | <p>Orientation of coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |                    |    0 mm    |
 
 {% hint style="warning" %}
-**\[Caution]**
+<strong>[Caution]</strong>
 
 * As the definition of robot layout settings applies only to the robot 2nd and 3rd axes, other parts of the robot may violate this area even if a safety area is set.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong>
+Étant donné que la définition des réglages de disposition (layout) du robot ne s'applique qu'aux 2e et 3e axes du robot, d'autres parties du robot peuvent violer cette zone même si une zone de sécurité est définie.
 {% endhint %}

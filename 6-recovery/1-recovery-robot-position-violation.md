@@ -17,3 +17,7 @@ Robot position violation occurs when the robot's position leaves the safety area
 {% hint style="warning" %}
 After clearing the error, recheck the safety layout settings and also the teaching positions in the work program.
 {% endhint %}
+
+{% hint style="warning" %}
+Après avoir effacé l'erreur, revérifiez les réglages de disposition (layout) de sécurité ainsi que les positions d'apprentissage (teaching) dans le programme de travail.
+{% endhint %}

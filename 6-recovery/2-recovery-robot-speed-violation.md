@@ -13,3 +13,9 @@ Robot speed violation including the TCP speed, joint speed, power, and momentum 
 
 * After clearing the error, be sure to check the speed-related safety parameters and the speed of the work program.
 {% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong>
+
+* Après avoir effacé l'erreur, veillez à vérifier les paramètres de sécurité liés à la vitesse ainsi que la vitesse du programme de travail.
+{% endhint %}

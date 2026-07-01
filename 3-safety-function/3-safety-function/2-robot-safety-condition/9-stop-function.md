@@ -25,5 +25,9 @@ Parameter values   can be set in the **\[System > 8: Safety System > 1: Basic Se
 
 
 {% hint style="warning" %}
-**\[Caution]**: You should establish an appropriate stopping method for each function through a risk assessment.
+<strong>[Caution]</strong>: You should establish an appropriate stopping method for each function through a risk assessment.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Vous devez établir une méthode d'arrêt appropriée pour chaque fonction au moyen d'une évaluation des risques.
 {% endhint %}

@@ -26,7 +26,14 @@ Safety added weight information is used by the safety board to calculate the rob
 {% endhint %}
  
 {% hint style="warning" %}
+<strong>[Attention]</strong> : Si les informations de poids de sécurité et les informations de poids utilisées pour la commande du robot ne correspondent pas, un avertissement/une erreur se produira et le robot ne pourra pas fonctionner. Assurez-vous de faire correspondre les informations de poids avec le poids réellement attaché avant de faire fonctionner le robot.
+{% endhint %}
+
+{% hint style="warning" %}
 <strong>[Caution]</strong>: The safety additional weight number is supported from 0 to 2, and each number matches the axis number of the system additional weight (0-S axis, 1-H axis, 2-V axis). Please enter the additional weight information by matching the safety parameter number with the axis number.
 {% endhint %}
  
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Le numéro de poids additionnel de sécurité est pris en charge de 0 à 2, chaque numéro correspondant au numéro d'axe du poids additionnel du système (0 - axe S, 1 - axe H, 2 - axe V). Veuillez saisir les informations de poids additionnel en faisant correspondre le numéro de paramètre de sécurité avec le numéro d'axe.
+{% endhint %}
  

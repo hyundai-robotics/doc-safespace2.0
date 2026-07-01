@@ -62,5 +62,9 @@ You can set the parameter values   for the safety zone in each tab of the `[Syst
 
 
 {% hint style="warning" %}
-**\[Caution]**: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
+<strong>[Caution]</strong>: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : La fonction de sécurité effectue la surveillance sur la base de la zone définie. Cette zone doit être configurée en tenant compte de la distance d'arrêt, et une vérification doit être effectuée avant la mise en fonctionnement.
 {% endhint %}

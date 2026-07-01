@@ -18,3 +18,7 @@ Parameter values   can be set in the `[System > 10: Safety System > 2: Parameter
 {% hint style="warning" %}
 <strong>[Caution]</strong>: If the stop monitoring parameters are violated, be sure to check that the robot's movement is normal before restarting.
 {% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : En cas de non-respect des paramètres de surveillance de l'arrêt, veillez à vérifier que le mouvement du robot est normal avant de le redémarrer.
+{% endhint %}

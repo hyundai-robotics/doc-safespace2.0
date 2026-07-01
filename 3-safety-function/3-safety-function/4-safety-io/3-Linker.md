@@ -31,7 +31,12 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 {% endhint %}
 
-
+{% hint style="warning" %}
+* Les signaux d'arrêt d'urgence (EX_EM) et de garde de sécurité (SGG ou SGA) sont obligatoires et doivent toujours être sélectionnés.<br>
+* Un élément de fonction d'entrée individuel ne peut être connecté qu'à un seul canal d'entrée.<br>
+* « Entrée de sécurité de base », « Entrée de sécurité additionnelle » et « Entrée de communication de sécurité » ne peuvent pas être attribuées en double les unes par rapport aux autres.<br>
+* En cas de réglages d'entrée en double, l'erreur « E52030 (canal x) Doublon d'attribution d'entrée de sécurité » se produit.<br>
+{% endhint %}
 
 ### 3) Default values for safety signals
 

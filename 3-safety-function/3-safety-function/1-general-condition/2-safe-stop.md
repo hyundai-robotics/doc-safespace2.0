@@ -32,3 +32,6 @@ You can set the parameter values in the `[System > 10: Safety System > 1: Genera
 <strong>[Caution]</strong>: Appropriate stopping methods for each function must be established through risk assessment, and verification must be performed before operation. 
 {% endhint %}
  
+ {% hint style="warning" %}
+<strong>[Attention]</strong>: Les méthodes d'arrêt appropriées pour chaque fonction doivent être établies au moyen d'une évaluation des risques, et une vérification doit être effectuée avant la mise en fonctionnement.
+{% endhint %}

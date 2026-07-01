@@ -23,3 +23,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 <strong>[Caution]</strong> When configuring speed limits, always consider stopping time and cover the robot to prevent collisions and injuries.
 <strong>[Caution]</strong> High speeds and large payloads, in proportion to the robot's kinetic energy, can increase the robot's impact force. Therefore, a significant impact can occur if the robot collides with an external object. Maintain a safe speed and payload in collaborative spaces.
 {% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> Lors de la configuration des limites de vitesse, tenez toujours compte du temps d'arrêt et installez un carter de protection sur le robot afin d'éviter les collisions et les blessures. [Attention] Des vitesses élevées et des charges utiles importantes, proportionnellement à l'énergie cinétique du robot, peuvent augmenter la force d'impact de celui-ci. Par conséquent, un impact important peut se produire si le robot entre en collision avec un objet externe. Maintenez une vitesse et une charge utile sûres dans les espaces collaboratifs.
+{% endhint %}

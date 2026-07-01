@@ -25,6 +25,13 @@ You can set parameter values in the `[System > 10: Safety System > 1: General se
 {% endhint %}
 
 {% hint style="warning" %}
+<strong>[Attention]</strong> : Même si la fonction de sécurité est désactivée, les fonctions essentielles à l'utilisation du robot (vitesse en mode manuel, surveillance du temps d'arrêt, surveillance de la distance d'arrêt) ne sont pas désactivées.
+{% endhint %}
+
+{% hint style="warning" %}
 <strong>[Caution]</strong>: The stop time and stop distance are the time and distance until the robot actually stops when stop1 is executed, and if the set value is exceeded, stop0 is activated immediately.
 {% endhint %}
- 
+
+{% hint style="warning" %}
+<strong>[Attention]</strong>: Le temps d'arrêt et la distance d'arrêt correspondent au temps et à la distance nécessaires pour que le robot s'arrête réellement lors de l'exécution de l'arrêt 1 (stop1). Si la valeur définie est dépassée, l'arrêt 0 (stop0) est activé immédiatement.
+{% endhint %}

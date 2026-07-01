@@ -25,3 +25,7 @@ You can set safety tool information in the `[System > 10: Safety System > 1: Gen
 {% hint style="warning" %}
 <strong>[Caution]</strong>: If the safety tool information does not match the tool information used for robot control, a warning/error will occur and the robot will not operate. Be sure to match the actual tool information with the safety tool information before operating the robot.
 {% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Si les informations relatives à l'outil de sécurité ne correspondent pas aux informations sur l'outil utilisées pour la commande du robot, un avertissement/une erreur se produira et le robot ne fonctionnera pas. Assurez-vous de faire correspondre les informations réelles de l'outil avec les informations de l'outil de sécurité avant de faire fonctionner le robot.
+{% endhint %}

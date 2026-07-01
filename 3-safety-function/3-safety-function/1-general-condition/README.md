@@ -26,3 +26,29 @@ The following safety functions can be configured in the Basic Settings menu:
 * Verify that all safety function configurations and settings comply with the risk assessment.
 {% endhint %}
 
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Les opérateurs et utilisateurs doivent effectuer une évaluation des risques avant de configurer les fonctions de sécurité du robot afin d'assurer la sécurité du personnel et des équipements situés autour du robot. Sur la base des résultats de l'évaluation, configurez les éléments suivants :
+
+* Définissez un mot de passe, etc. pour empêcher toute modification non autorisée de la configuration de sécurité.
+* Configurez les fonctions et interfaces liées à la sécurité.
+* Vérifiez l'exactitude des réglages avant de faire fonctionner le robot.
+* Vérifiez que toutes les configurations et tous les réglages des fonctions de sécurité sont conformes à l'évaluation des risques.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
+
+* Set a password, etc. to prevent unauthorized changes to the safety configuration.
+* Configure safety-related functions and interfaces.
+* Verify the accuracy of settings before operating the robot.
+* Verify that all safety function configurations and settings comply with the risk assessment.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Les opérateurs et utilisateurs doivent effectuer une évaluation des risques avant de configurer les fonctions de sécurité du robot afin d'assurer la sécurité du personnel et des équipements situés autour du robot. Sur la base des résultats de l'évaluation, configurez les éléments suivants :
+
+* Définissez un mot de passe, etc. pour empêcher toute modification non autorisée de la configuration de sécurité.
+* Configurez les fonctions et interfaces liées à la sécurité.
+* Vérifiez l'exactitude des réglages avant de faire fonctionner le robot.
+* Vérifiez que toutes les configurations et tous les réglages des fonctions de sécurité sont conformes à l'évaluation des risques.
+{% endhint %}

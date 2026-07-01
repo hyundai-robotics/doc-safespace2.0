@@ -49,8 +49,14 @@ You can set parameter values   in the `[System > 10: Safety System > 2: Paramete
 
 
 {% hint style="warning" %}
-**\[Caution]**
+<strong>[Caution]</strong>
 
 * When changing tool data, be sure to recheck that the parameters set in safety tool modeling are accurate. The tool data number and safety tool modeling number of the same tool should match.
 * As the definition of robot layout settings applies only to the robot 2nd and 3rd axes, other parts of the robot may violate this area even if a safety area is set.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong>
+Lors de la modification des données d'outil, veillez à revérifier que les paramètres définis dans la modélisation de l'outil de sécurité sont exacts. Le numéro de données d'outil et le numéro de modélisation de l'outil de sécurité du même outil doivent correspondre.
+Étant donné que la définition des réglages de disposition (layout) du robot ne s'applique qu'aux 2e et 3e axes du robot, d'autres parties du robot peuvent violer cette zone même si une zone de sécurité est définie.
 {% endhint %}

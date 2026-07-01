@@ -20,6 +20,12 @@
 - Safety functions such as SafeSpace and Soft Joint are supplementary risk-reduction measures and do not replace external safety fencing, interlocks, or risk assessments.
 {% endhint %}
 
+
+{% hint style="warning" %}
+- Le contrôle par des commandes de communication externes et des applications n'est pas une fonction de sécurité et ne doit pas être utilisé comme substitut à un système de commande lié à la sécurité. 
+- Les fonctions de sécurité telles que SafeSpace et Soft Joint sont des mesures complémentaires de réduction des risques et ne remplacent pas les barrières de sécurité externes, les dispositifs de verrouillage (interlocks) ni les évaluations des risques.
+{% endhint %}
+
 [__SOURCE](1-safety/README.md)
 # 1. Safety
 
@@ -248,9 +254,20 @@ The safety-related content in this manual does not cover all possible risk facto
 
 The response time to be taken from safety function violation to stop execution is 9.8ms. The response time should be reflected when calculating the robot's stop time and stop distance.
 
-* **PROFIsafe Response Time**
 
-The response time to be taken from stop execution by PROFIsafe F-output data is 40.8ms. To get the time until the robot completely stops, the communication cycle and the robot's stop time and stop distance calculation values should be added.
+* **Safety Input Response Time (Safety Input)**
+
+The maximum response time from the receipt of a stop signal through a safety input (**Default** or **Additional**) until the stop action is initiated is **11 ms**. This value does not include the input signal filter time, nor does it include the robot stopping time or stopping distance.
+
+* **Safety Input Response Time (Safety Communication)**
+
+The maximum response time from the receipt of a stop signal through safety communication until the stop action is initiated is **42 ms**. To obtain the total time required for the robot to come to a complete stop, the safety communication cycle time and the robot stopping time and stopping distance shall be taken into account.
+
+* **Safety Output Response Time (Safety Communication)**
+
+The maximum response time from the generation of a safety output by the safety application until the signal is transmitted through safety communication is **28 ms**. To calculate the total transmission time to the safety PLC, the safety communication cycle time shall be added.
+
+
 
 [__SOURCE](2-installation/README.md)
 # 2. Installation
@@ -449,7 +466,32 @@ The following safety functions can be configured in the Basic Settings menu:
 * Verify that all safety function configurations and settings comply with the risk assessment.
 {% endhint %}
 
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Les opérateurs et utilisateurs doivent effectuer une évaluation des risques avant de configurer les fonctions de sécurité du robot afin d'assurer la sécurité du personnel et des équipements situés autour du robot. Sur la base des résultats de l'évaluation, configurez les éléments suivants :
 
+* Définissez un mot de passe, etc. pour empêcher toute modification non autorisée de la configuration de sécurité.
+* Configurez les fonctions et interfaces liées à la sécurité.
+* Vérifiez l'exactitude des réglages avant de faire fonctionner le robot.
+* Vérifiez que toutes les configurations et tous les réglages des fonctions de sécurité sont conformes à l'évaluation des risques.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
+
+* Set a password, etc. to prevent unauthorized changes to the safety configuration.
+* Configure safety-related functions and interfaces.
+* Verify the accuracy of settings before operating the robot.
+* Verify that all safety function configurations and settings comply with the risk assessment.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Les opérateurs et utilisateurs doivent effectuer une évaluation des risques avant de configurer les fonctions de sécurité du robot afin d'assurer la sécurité du personnel et des équipements situés autour du robot. Sur la base des résultats de l'évaluation, configurez les éléments suivants :
+
+* Définissez un mot de passe, etc. pour empêcher toute modification non autorisée de la configuration de sécurité.
+* Configurez les fonctions et interfaces liées à la sécurité.
+* Vérifiez l'exactitude des réglages avant de faire fonctionner le robot.
+* Vérifiez que toutes les configurations et tous les réglages des fonctions de sécurité sont conformes à l'évaluation des risques.
+{% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/1-general-condition/1-general.md)
 # 3.3.1.1 General
 
@@ -478,9 +520,16 @@ You can set parameter values in the `[System > 10: Safety System > 1: General se
 {% endhint %}
 
 {% hint style="warning" %}
+<strong>[Attention]</strong> : Même si la fonction de sécurité est désactivée, les fonctions essentielles à l'utilisation du robot (vitesse en mode manuel, surveillance du temps d'arrêt, surveillance de la distance d'arrêt) ne sont pas désactivées.
+{% endhint %}
+
+{% hint style="warning" %}
 <strong>[Caution]</strong>: The stop time and stop distance are the time and distance until the robot actually stops when stop1 is executed, and if the set value is exceeded, stop0 is activated immediately.
 {% endhint %}
- 
+
+{% hint style="warning" %}
+<strong>[Attention]</strong>: Le temps d'arrêt et la distance d'arrêt correspondent au temps et à la distance nécessaires pour que le robot s'arrête réellement lors de l'exécution de l'arrêt 1 (stop1). Si la valeur définie est dépassée, l'arrêt 0 (stop0) est activé immédiatement.
+{% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/1-general-condition/2-safe-stop.md)
 # 3.3.1.2 Stop Settings
 
@@ -516,6 +565,9 @@ You can set the parameter values in the `[System > 10: Safety System > 1: Genera
 <strong>[Caution]</strong>: Appropriate stopping methods for each function must be established through risk assessment, and verification must be performed before operation. 
 {% endhint %}
  
+ {% hint style="warning" %}
+<strong>[Attention]</strong>: Les méthodes d'arrêt appropriées pour chaque fonction doivent être établies au moyen d'une évaluation des risques, et une vérification doit être effectuée avant la mise en fonctionnement.
+{% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/1-general-condition/3-safe-tool-info.md)
 # 3.3.1.3 Safety Tool Information
 
@@ -544,6 +596,11 @@ You can set safety tool information in the `[System > 10: Safety System > 1: Gen
 {% hint style="warning" %}
 <strong>[Caution]</strong>: If the safety tool information does not match the tool information used for robot control, a warning/error will occur and the robot will not operate. Be sure to match the actual tool information with the safety tool information before operating the robot.
 {% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Si les informations relatives à l'outil de sécurité ne correspondent pas aux informations sur l'outil utilisées pour la commande du robot, un avertissement/une erreur se produira et le robot ne fonctionnera pas. Assurez-vous de faire correspondre les informations réelles de l'outil avec les informations de l'outil de sécurité avant de faire fonctionner le robot.
+{% endhint %}
+
 [__SOURCE](3-safety-function/3-safety-function/1-general-condition/4-safe-additional-load.md)
 # 3.3.1.4 Safety Added Weight
 
@@ -573,9 +630,16 @@ Safety added weight information is used by the safety board to calculate the rob
 {% endhint %}
  
 {% hint style="warning" %}
+<strong>[Attention]</strong> : Si les informations de poids de sécurité et les informations de poids utilisées pour la commande du robot ne correspondent pas, un avertissement/une erreur se produira et le robot ne pourra pas fonctionner. Assurez-vous de faire correspondre les informations de poids avec le poids réellement attaché avant de faire fonctionner le robot.
+{% endhint %}
+
+{% hint style="warning" %}
 <strong>[Caution]</strong>: The safety additional weight number is supported from 0 to 2, and each number matches the axis number of the system additional weight (0-S axis, 1-H axis, 2-V axis). Please enter the additional weight information by matching the safety parameter number with the axis number.
 {% endhint %}
  
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Le numéro de poids additionnel de sécurité est pris en charge de 0 à 2, chaque numéro correspondant au numéro d'axe du poids additionnel du système (0 - axe S, 1 - axe H, 2 - axe V). Veuillez saisir les informations de poids additionnel en faisant correspondre le numéro de paramètre de sécurité avec le numéro d'axe.
+{% endhint %}
  
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/README.md)
 # 3.3.2 Robot Monitoring Function
@@ -600,6 +664,19 @@ The following safety features can be configured in the Robot Limits menu:
 * **Power Detection**: Limits the force in the event of a collision between the robot and the worker.
 * **Momentum**: Limits the energy and impact load in the event of a collision between the robot and the worker.
 
+{% hint style="warning" %}
+<strong>[Caution]</strong> : When the speed limit of any of the following safety functions is changed, it may take up to 10 ms for the new limit to become effective. In addition, for the Replan function, extra deceleration time may be required depending on the current operating conditions until the robot complies with the updated speed limit. This behavior shall be taken into consideration.
+* Joint Speed Limit 
+* TCP Speed Limit 
+* Replan
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Lorsque la limite de vitesse de l'une des fonctions de sécurité suivantes est modifiée, jusqu'à 10 ms peuvent être nécessaires pour que la nouvelle limite prenne effet. De plus, pour la fonction Replan, un temps de décélération supplémentaire peut être requis selon les conditions de fonctionnement actuelles, jusqu'à ce que le robot respecte la limite de vitesse mise à jour. Ce comportement doit être pris en compte.
+* Limite de vitesse d'articulation (Joint Speed Limit)
+* Limite de vitesse TCP (TCP Speed Limit)
+* Replan
+{% endhint %}
 
 {% hint style="warning" %}
 <strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
@@ -610,7 +687,14 @@ The following safety features can be configured in the Robot Limits menu:
 * Verify that all safety function configurations and settings comply with the risk assessment.
 {% endhint %}
 
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Les opérateurs et utilisateurs doivent effectuer une évaluation des risques avant de configurer les fonctions de sécurité du robot afin d'assurer la sécurité du personnel et des équipements situés autour du robot. Sur la base des résultats de l'évaluation, configurez les éléments suivants :
 
+* Définissez un mot de passe, etc. pour empêcher toute modification non autorisée de la configuration de sécurité.
+* Configurez les fonctions et interfaces liées à la sécurité.
+* Vérifiez l'exactitude des réglages avant de faire fonctionner le robot.
+* Vérifiez que toutes les configurations et tous les réglages des fonctions de sécurité sont conformes à l'évaluation des risques.
+{% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/1-joint-space.md)
 # 3.3.2.1 Joint Space Setting
 
@@ -642,6 +726,10 @@ You can set parameter values in the `[System > 10: Safety System > 2: Parameter 
 <strong>[Caution]</strong>: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
 {% endhint %}
  
+{% hint style="warning" %}
+<strong>[Attention]</strong>: La fonction de sécurité effectue la surveillance sur la base de la zone définie. Cette zone doit être configurée en tenant compte de la distance d'arrêt, et une vérification doit être effectuée avant la mise en fonctionnement.
+{% endhint %}
+
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/2-joint-speed.md)
 # 3.3.2.2 Joint Speed Limit
 
@@ -671,6 +759,9 @@ You can set parameter values   in the `[System > 10: Safety System > 2: Paramete
 <strong>[Caution]</strong>: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
 {% endhint %}
  
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Lors du réglage de la fonction de surveillance de la vitesse, veillez à tenir compte du temps de réaction à l'arrêt et à couvrir le carter de protection afin d'éviter les collisions et les blessures.
+{% endhint %}
 
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/3-joint-SOS.md)
 # 3.3.2.3 Joint Stop Monitoring
@@ -693,6 +784,11 @@ Parameter values   can be set in the `[System > 10: Safety System > 2: Parameter
 {% hint style="warning" %}
 <strong>[Caution]</strong>: If the stop monitoring parameters are violated, be sure to check that the robot's movement is normal before restarting.
 {% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : En cas de non-respect des paramètres de surveillance de l'arrêt, veillez à vérifier que le mouvement du robot est normal avant de le redémarrer.
+{% endhint %}
+
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/4-tcp-speed.md)
 # 3.3.2.4 TCP Speed Limit Setting
 
@@ -720,6 +816,11 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 {% hint style="warning" %}
 <strong>[Caution]</strong>: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
 {% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Lors du réglage de la fonction de surveillance de la vitesse, veillez à tenir compte du temps de réaction à l'arrêt et à couvrir le carter de protection afin d'éviter les collisions et les blessures.
+{% endhint %}
+
  
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/5-collision.md)
 # 3.3.2.5 Collision Detection
@@ -743,6 +844,11 @@ When the external force applied to the robot exceeds the allowable value, it is 
 {% hint style="warning" %}
 <strong>[Caution]</strong> Since the robot's impact force can increase in proportion to kinetic energy when the speed is high and the payload is large, considerable impact may occur if the robot collides with an external object. In the collaborative space, operate while maintaining the safe speed and payload.
 <strong>[Caution]</strong> False detection may occur if the tool information and additional weight are set differently from actual values. Check each information before using the collision detection function.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> Étant donné que la force d'impact du robot peut augmenter proportionnellement à l'énergie cinétique lorsque la vitesse est élevée et la charge utile importante, un impact considérable peut se produire si le robot entre en collision avec un objet externe. Dans l'espace collaboratif, faites fonctionner le robot en maintenant une vitesse et une charge utile sûres. 
+<strong>[Attention]</strong> Une détection erronée peut se produire si les informations relatives à l'outil et au poids additionnel sont définies différemment des valeurs réelles. Vérifiez chaque information avant d'utiliser la fonction de détection de collision.
 {% endhint %}
 
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/6-re-plan.md)
@@ -772,6 +878,10 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 <strong>[Caution]</strong> High speeds and large payloads, in proportion to the robot's kinetic energy, can increase the robot's impact force. Therefore, a significant impact can occur if the robot collides with an external object. Maintain a safe speed and payload in collaborative spaces.
 {% endhint %}
 
+{% hint style="warning" %}
+<strong>[Attention]</strong> Lors de la configuration des limites de vitesse, tenez toujours compte du temps d'arrêt et installez un carter de protection sur le robot afin d'éviter les collisions et les blessures. [Attention] Des vitesses élevées et des charges utiles importantes, proportionnellement à l'énergie cinétique du robot, peuvent augmenter la force d'impact de celui-ci. Par conséquent, un impact important peut se produire si le robot entre en collision avec un objet externe. Maintenez une vitesse et une charge utile sûres dans les espaces collaboratifs.
+{% endhint %}
+
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/7-power.md)
 # 3.3.2.7 Power Setting
 
@@ -796,6 +906,9 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 <strong>[Caution]</strong> Setting tool information and additional weights differently from actual values   may result in false detection. Please check the information before using this feature.
 {% endhint %}
 
+{% hint style="warning" %}
+<strong>[Attention]</strong> Des vitesses élevées et des charges utiles importantes, proportionnellement à l'énergie cinétique du robot, peuvent augmenter la force d'impact de celui-ci. Par conséquent, une collision avec un objet externe peut entraîner un impact important. Dans les espaces collaboratifs, maintenez une vitesse et une charge utile sûres. <strong>[Attention]</strong> Le fait de définir les informations relatives à l'outil et aux poids additionnels différemment des valeurs réelles peut entraîner une détection erronée. Veuillez vérifier ces informations avant d'utiliser cette fonction.
+{% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/2-robot-safety-condition/8-momentum.md)
 # 3.3.2.8 Momentum Setting
 
@@ -820,6 +933,9 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 <strong>[Caution]</strong> Setting tool information and additional weights differently from actual values may result in false detection. Please check the information before using this feature.
 {% endhint %}
 
+{% hint style="warning" %}
+<strong>[Attention]</strong> Des vitesses élevées et des charges utiles importantes, proportionnellement à l'énergie cinétique du robot, peuvent augmenter la force d'impact de celui-ci. Par conséquent, une collision avec un objet externe peut entraîner un impact important. Dans les espaces collaboratifs, maintenez une vitesse et une charge utile sûres. <strong>[Attention]</strong> Le fait de définir les informations relatives à l'outil et aux poids additionnels différemment des valeurs réelles peut entraîner une détection erronée. Veuillez vérifier ces informations avant d'utiliser cette fonction.
+{% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/3-safety-layout/README.md)
 # 3.3.3 Space Monitoring Function
 
@@ -882,15 +998,19 @@ You can set the parameter values   for the safety zone in each tab of the `[Syst
 
 |  **Parameter** |                       **Description**                       |  **Default Setting**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| <p>Z Min / Max</p><p>[mm]</p> | <p>Height of the safe area based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
+| <p>Z Min / Max</p><p>[mm]</p> | <p>Height of the safe area based on the robot coordinate system</p><p>(-30000.0 ~ 30000.0)</p> | 0 |
 | Enable | <p>Whether to enable the vertex of the safe area</p><p>(Enable / Disable)</p> | Disable |
-| <p>X</p><p>[mm]</p> | <p>X-direction position of the vertex based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
-| <p>Y</p><p>[mm]</p> | <p>Y-direction position of the vertex based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
+| <p>X</p><p>[mm]</p> | <p>X-direction position of the vertex based on the robot coordinate system</p><p>(-30000.0 ~ 30000.0)</p> | 0 |
+| <p>Y</p><p>[mm]</p> | <p>Y-direction position of the vertex based on the robot coordinate system</p><p>(-30000.0 ~ 30000.0)</p> | 0 |
 
 
 
 {% hint style="warning" %}
-**\[Caution]**: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
+<strong>[Caution]</strong>: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : La fonction de sécurité effectue la surveillance sur la base de la zone définie. Cette zone doit être configurée en tenant compte de la distance d'arrêt, et une vérification doit être effectuée avant la mise en fonctionnement.
 {% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/3-safety-layout/2-safety-tool-modeling.md)
 # 3.3.3.2 Safety Tool Modeling
@@ -944,12 +1064,17 @@ You can set parameter values   in the `[System > 10: Safety System > 2: Paramete
 
 
 {% hint style="warning" %}
-**\[Caution]**
+<strong>[Caution]</strong>
 
 * When changing tool data, be sure to recheck that the parameters set in safety tool modeling are accurate. The tool data number and safety tool modeling number of the same tool should match.
 * As the definition of robot layout settings applies only to the robot 2nd and 3rd axes, other parts of the robot may violate this area even if a safety area is set.
 {% endhint %}
 
+{% hint style="warning" %}
+<strong>[Attention]</strong>
+Lors de la modification des données d'outil, veillez à revérifier que les paramètres définis dans la modélisation de l'outil de sécurité sont exacts. Le numéro de données d'outil et le numéro de modélisation de l'outil de sécurité du même outil doivent correspondre.
+Étant donné que la définition des réglages de disposition (layout) du robot ne s'applique qu'aux 2e et 3e axes du robot, d'autres parties du robot peuvent violer cette zone même si une zone de sécurité est définie.
+{% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/3-safety-layout/3-safety-robot-modeling.md)
 # 3.3.3.3 Safety Robot Modeling
 
@@ -972,9 +1097,14 @@ You can set parameter values   in the `[System > 10: Safety System > 2: Paramete
 | <p>Direction</p><p>[deg]</p> | <p>Orientation of coordinate system</p><p>(-180.0 ~ 180.0)</p> | 0 |                    |    0 mm    |
 
 {% hint style="warning" %}
-**\[Caution]**
+<strong>[Caution]</strong>
 
 * As the definition of robot layout settings applies only to the robot 2nd and 3rd axes, other parts of the robot may violate this area even if a safety area is set.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong>
+Étant donné que la définition des réglages de disposition (layout) du robot ne s'applique qu'aux 2e et 3e axes du robot, d'autres parties du robot peuvent violer cette zone même si une zone de sécurité est définie.
 {% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/3-safety-layout/4-safety-tcp-orientation.md)
 # 3.3.3.4 TCP Orientation Monitoring
@@ -1007,11 +1137,15 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 
 
 {% hint style="warning" %}
-**\[Caution]**
+<strong>[Caution]</strong>
 
 * When changing tool data, be sure to recheck that the parameters set in safety tool modeling are accurate. The tool data number and safety tool modeling number of the same tool should match.
 {% endhint %}
 
+{% hint style="warning" %}
+<strong>[Attention]</strong>
+Lors de la modification des données d'outil, veillez à revérifier que les paramètres définis dans la modélisation de l'outil de sécurité sont exacts. Le numéro de données d'outil et le numéro de modélisation de l'outil de sécurité du même outil doivent correspondre.
+{% endhint %}
 [__SOURCE](3-safety-function/3-safety-function/3-safety-layout/5-self-collision-detection.md)
 # 3.3.3.5 Self-Collision Detection
 
@@ -1076,10 +1210,15 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 | Parameter <br>[Unit]          | Description                                                                                                                                       | Input Range       | Default |
 |:------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Pulse Test                 | Set whether to use the Pulse Test for each channel.                                                                                                     | Enable / Disable | Disable |
+| Pulse Test                 | Set whether to use the Pulse Test for each channel. <br>For channels with the pulse test enabled, test pulses are sent to the input side as shown in the figure below. The cable condition is then verified by checking the received pulse signals.| Enable / Disable | Disable |
 | Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system transitions from the Fail-Safe state to the current input state only after the **Error Latch Time** has elapsed.<br>Only values divisible by 10 can be entered. | 0 ~ 65530      | 1000   |
 | Filter Time <br>[msec]      | The same signal should be input during the **Filter Time** set for each channel for it to be processed as a valid signal.<br>Only values divisible by 10 can be entered.                       | 0 ~ 500        | 100    |
 | Discrete Time <br>[msec] | Basic input signals are processed as valid signals when two dual signals are identical.<br>An alarm is triggered if the two signals are different from each other for longer than the set **Discrete Time**.<br>Only values divisible by 10 can be entered. | 0 ~ 5000       | 1000   |
+
+#### Input Test Pulse)
+<p align="center">
+<img src="../../../_assets/safety_io/Testpulse_Input.png"></img>
+</p>
 
 #### Wiring Example)
 ![](../../../_assets/safety_io/CN_SI1.bmp)
@@ -1094,8 +1233,14 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 | Parameter <br>[Unit]          | Description                                                                                                                                       | Input Range       | Default |
 |:------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Pulse Test                 | Set whether to use the Pulse Test for each channel.                                                                                                     | Enable / Disable | Disable |
+| Pulse Test                 | Configures whether the pulse test is used.<br> When the pulse test is enabled, the controller sends test pulses as shown in the figure below and determines the output status by verifying the received pulse signals. | Enable / Disable | Disable |
 | Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is recovered, the system maintains the **Open (Fail-safe)** state during the **Error Latch Time**. Afterward, it  transitions to normal output.<br>Only values divisible by 5 can be entered. | 0 ~ 65530      | 1000   |
+
+
+#### Output Test Pulse)
+<p align="center">
+<img src="../../../_assets/safety_io/Testpulse_output.png"></img>
+</p>
 
 #### Wiring Example)
 ![](../../../_assets/safety_io/CN_SO1.bmp)
@@ -1117,7 +1262,6 @@ You can set parameter values in the `[System > 10: Safety System > 2: Parameter 
 
 | Parameter [Unit]             | Description                                                                                                                                       | Input Range       | Default |
 |:---------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Enable                       | Set whether to enable or disable the extended safety input/output signals.                                                                                       | Enable / Disable | Disable |
 | Filter Time <br>[msec]          | For each input channel, constant signals should be input during the **Filter Time** for the signals to be processed as valid signals.<br>Only values divisible by 10 can be entered.                           | 0-500        | 100    |
 | Discrepancy Time <br>[msec]     | Extended safety input/output signals are processed as valid signals when two dual signals have the same value.<br>An alarm is triggered if the two signals are different from each other for longer than the **Discrepancy Time**.<br>Only values divisible by 10 can be entered. | 0-5000       | 1000   |
 | Input Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system transitions from the Fail-Safe state to the current input state only after the set time has elapsed.<br>Only values divisible by 10 can be entered.             | 0-65530      | 1000   |
@@ -1163,7 +1307,12 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 {% endhint %}
 
-
+{% hint style="warning" %}
+* Les signaux d'arrêt d'urgence (EX_EM) et de garde de sécurité (SGG ou SGA) sont obligatoires et doivent toujours être sélectionnés.<br>
+* Un élément de fonction d'entrée individuel ne peut être connecté qu'à un seul canal d'entrée.<br>
+* « Entrée de sécurité de base », « Entrée de sécurité additionnelle » et « Entrée de communication de sécurité » ne peuvent pas être attribuées en double les unes par rapport aux autres.<br>
+* En cas de réglages d'entrée en double, l'erreur « E52030 (canal x) Doublon d'attribution d'entrée de sécurité » se produit.<br>
+{% endhint %}
 
 ### 3) Default values for safety signals
 
@@ -1590,11 +1739,16 @@ The safety function parameters must be set and managed by a designated person. U
 * When setting then safety function parameters, you must enter the system setting password to save changes.
 
 {% hint style="warning" %}
-* It is recommended to set the password with 4 or more characters.
-* If you lose your password, contact an engineer.
-* The default password is '8426'. 
+* It is recommended to set the password with 4 or more characters.<br>
+* If you lose your password, contact an engineer.<br>
+* The default password is '8426'.
 {% endhint %}
 
+{% hint style="warning" %}
+* Il est recommandé de définir un mot de passe d'au moins 4 caractères.<br>
+* Si vous perdez votre mot de passe, contactez un ingénieur.<br>
+* Le mot de passe par défaut est « 8426 ».
+{% endhint %}
 [__SOURCE](4-configuration/1-check-before-configuration/1-encoder-offset.md)
 # 4.1.2 Encoder Inspection
 
@@ -1628,21 +1782,189 @@ Safety features monitor the entire robot system, including tools attached to the
 2. Press the emergency stop switch to cut off the power to the motors.
 3. Touch the `[Settings]` button > `[3: Robot Parameters > 1: Tool Data]` menu.
 4. Check the data for each axis and set the tool weight, center of gravity, and inertia, then touch the `[OK]` button to save.
-
-![](../../_assets/image20.jpeg)
-
-* To create new tool data or easily create tool data using an existing program, touch the `[Auto Correction]`.
-* To correct the tool angle, touch the `[Angle Correction]` button.
-* To add or delete a new user coordinate system, use the `[+]`/`[-]` buttons.
-* To check and edit detailed information of tool data, select the desired name from the tool data list.
-* To copy tool data information and paste it to other tool data, use the `[Copy Page]`/`[Paste Page]` buttons.
+5. Apply the updated tool data to the safety tool data. For more information about safety tool data, see "[3.3.1.3 Safety Tool Information](../../3-safety-function/3-safety-function/1-general-condition/3-safe-tool-info.md)".
 
 {% hint style="info" %}
 * If information about the tool's weight and center of gravity isn't available, you can use the load estimation function to estimate the values. 
-* For detailed information on setting tool data, refer to the "[Hi7 Controller Operation Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)."
+* For detailed information on setting tool data, refer to the "[7.4.1 Tool Data](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/4-robot-parameter/1-tool-data/README?cont_model=Hi7)" in the "[Hi7 Controller Operation Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=Hi7)."
 {% endhint %}
 
-[__SOURCE](4-configuration/2-change-safety-parameter.md)
+[__SOURCE](4-configuration/2-test-safety-functions.md)
+# 4.2 Safety Function Test
+
+When the robot system is installed and configured for the first time, or whenever robot components are replaced or optional devices are added or modified, the relevant safety functions shall be tested and validated in accordance with the procedures described below before the robot system is put into operation.
+
+
+### 1. Emergency Stop
+
+| Step | Test Procedure                                                                               | Expected Result                                      |
+| ---- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| 1    | Check that there is no visible damage or abnormality on the robot and the robot controller.  | No abnormalities are found.                          |
+| 2    | Verify that the Emergency Stop button is released.<br>(Turn it clockwise until it pops out.) | Emergency Stop released.                             |
+| 3    | Turn on the power to the robot controller.                                                   | The controller starts up.                            |
+| 4    | In Manual mode, operate the Enabling Switch to change to the **Motor ON** state.             | The **Motor ON** indicator on the TP is illuminated. |
+| 5    | Press the Emergency Stop button.                                                             | An Emergency Stop input is detected.                 |
+| 6    | Verify that the system has changed to the **Motor OFF** state.                               | **Motor OFF** state.                                 |
+
+
+**Acceptance Criteria**
+
+* Pressing the Emergency Stop button shall cause the system to transition to the **Motor OFF** state.
+* The **Motor ON** indicator on the TP shall blink or turn off.
+* The robot shall not be operable while the Emergency Stop condition is active.
+
+
+<br>
+
+### 2. Safeguard General Signal (SGG)
+
+| Step | Test Procedure                                                                              | Expected Result                                                |
+| ---- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 1    | Check that there is no visible damage or abnormality on the robot and the robot controller. | No abnormalities are found.                                    |
+| 2    | Verify that the safeguard signal is inactive. (Example: The safety fence door is closed.)   | Safeguard signal is in the normal state. (System Input screen) |
+| 3    | Turn on the power to the robot controller.                                                  | The controller starts up.                                      |
+| 4    | In Manual mode, operate the Enabling Switch to change to the **Motor ON** state.            | The **Motor ON** indicator on the TP is illuminated.           |
+| 5    | Activate the safeguard signal. (Example: Open the safety fence door.)                       | Safeguard signal input is detected.                            |
+| 6    | Verify that the system has changed to the **Motor OFF** state.                              | **Motor OFF** state.                                           |
+
+**Acceptance Criteria**
+
+* Activating the safeguard signal shall cause the system to transition to the **Motor OFF** state.
+* The **Motor ON** indicator on the TP shall blink or turn off.
+* The robot shall not be operable while the safeguard signal is active.
+
+
+<br>
+
+### 3. Safeguard Automatic Signal (SGA)
+
+| Step | Test Procedure                                                                              | Expected Result                                                |
+| ---- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 1    | Check that there is no visible damage or abnormality on the robot and the robot controller. | No abnormalities are found.                                    |
+| 2    | Verify that the safeguard signal is inactive. (Example: The safety fence door is closed.)   | Safeguard signal is in the normal state. (System Input screen) |
+| 3    | Turn on the power to the robot controller.                                                  | The controller starts up.                                      |
+| 4    | In **Automatic** mode, change to the **Motor ON** state.                                    | The **Motor ON** indicator on the TP is illuminated.           |
+| 5    | Open the safeguard. (Example: Open the safety fence door.)                                  | Safeguard signal input is detected.                            |
+| 6    | Verify that the system has changed to the **Motor OFF** state.                              | The **Motor ON** indicator on the TP blinks or turns off.      |
+
+**Acceptance Criteria**
+
+* Activating the safeguard signal in **Automatic** mode shall cause the system to transition to the **Motor OFF** state.
+* The **Motor ON** indicator on the TP shall blink or turn off.
+* The robot shall not be operable while the safeguard signal is active.
+
+
+<br>
+
+### 4. Enabling Switch
+
+| Step | Test Procedure                                                                                 | Expected Result                                           |
+| ---- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| 1    | Check that there is no visible damage or abnormality on the robot and the robot controller.    | No abnormalities are found.                               |
+| 2    | Turn on the power to the robot controller.                                                     | The controller starts up.                                 |
+| 3    | In **Manual** mode, hold the **Enabling Switch** in the middle position (**Enable Position**). | Enabling state is active.                                 |
+| 4    | Verify that the system is in the **Motor ON** state.                                           | The **Motor ON** indicator on the TP is illuminated.      |
+| 5    | Release the **Enabling Switch**. <br> or  Squeeze the **Enabling Switch** fully.                   | Enabling is deactivated.                                  |
+| 6    | Verify that the system has changed to the **Motor OFF** state.                                 | The **Motor ON** indicator on the TP blinks or turns off. |
+
+**Acceptance Criteria**
+
+* Releasing the **Enabling Switch** shall cause the system to transition to the **Motor OFF** state.
+* The **Motor ON** indicator on the TP shall blink or turn off.
+* The robot shall not be operable while the **Enabling Switch** is released.
+
+
+<br>
+
+### 5. 비상정지 출력
+
+| 단계 | 시험 절차                               | 예상 결과       |
+| -- | ----------------------------------- | ----------- |
+| 1  | 로봇 및 로봇제어기에 외관상의 손상이나 이상이 없는지 확인한다. | 이상 없음       |
+| 2  | 모든 비상정지 버튼(TP, OP)이 복귀된 상태인지 확인한다.  | 비상정지 해제 상태  |
+| 3  | 로봇제어기의 전원을 투입한다.                    | 제어기 기동      |
+| 4  | 비상정지 출력이 활성화 상태인지 확인한다.             | 비상정지 출력 활성(출력 LED 점등 확인)  |
+| 5  | TP의 비상정지 버튼을 누른다.                   | 비상정지 입력 발생  |
+| 6  | 비상정지 출력이 비활성화 상태로 전환되는지 확인한다.       | 비상정지 출력 비활성(출력 LED 소등 확인) |
+
+**합격 기준**
+
+* 모든 비상정지 버튼이 복귀된 상태에서는 비상정지 출력이 활성화되어야 한다.
+* TP 또는 OP의 비상정지 버튼을 누르면 비상정지 출력이 비활성화되어야 한다.
+* 비상정지 상태가 유지되는 동안 비상정지 출력은 비활성 상태를 유지하여야 한다.
+
+<br>
+
+### 6. 기본 및 부가 안전 입력
+
+**사전 조건 (Pre-condition)**
+
+* 안전기능 할당 설정에서 시험 대상 입력 채널에 비상정지(E-Stop) 기능이 할당되어 있어야 한다.
+
+| 단계 | 시험 절차                                         | 예상 결과                              |
+| -- | --------------------------------------------- | ---------------------------------- |
+| 1  | 로봇 및 로봇제어기에 외관상의 손상이나 이상이 없는지 확인한다.           | 이상 없음                              |
+| 2  | 비상정지 버튼이 복귀된 상태인지 확인한다.                       | 비상정지 해제 상태                         |
+| 3  | 로봇제어기의 전원을 투입한다.                              | 제어기 기동                             |
+| 4  | 수동 모드에서 Enabling Switch를 조작하여 모터 ON 상태로 전환한다. | TP의 Motor ON 표시등 점등                |
+| 5  | 시험 대상 안전 입력에 연결된 비상정지 버튼을 누른다.                | 비상정지 입력 발생                         |
+| 6  | 모터 OFF 여부를 확인한다.                              | TP의 Motor ON 표시등이 점멸 또는 소등 상태로 변경됨 |
+
+**합격 기준**
+
+* 시험 대상 안전 입력에 비상정지 신호가 입력되면 모터 전원이 차단되어야 한다.
+* TP의 Motor ON 표시등이 점멸 또는 소등 상태로 변경되어야 한다.
+* 비상정지 상태에서는 로봇이 구동되지 않아야 한다.
+
+<br>
+
+### 7. 기본 및 부가 안전 출력
+
+**사전 조건 (Pre-condition)**
+
+* 안전기능 할당 설정에서 시험 대상 출력 채널에 비상정지 출력(E-Stop Output) 기능이 할당되어 있어야 한다.
+
+| 단계 | 시험 절차                               | 예상 결과          |
+| -- | ----------------------------------- | -------------- |
+| 1  | 로봇 및 로봇제어기에 외관상의 손상이나 이상이 없는지 확인한다. | 이상 없음          |
+| 2  | 모든 비상정지 버튼(TP, OP)이 복귀된 상태인지 확인한다.<br>(시계방향 회전 시켜 돌출 확인)   | 비상정지 해제 상태     |
+| 3  | 로봇제어기의 전원을 투입한다.                    | 제어기 기동         |
+| 4  | 시험 대상 안전 출력이 활성화 상태인지 확인한다.         | 비상정지 출력 활성 상태(출력 LED 점등 확인)  |
+| 5  | TP의 비상정지 버튼을 누른다.                   | 비상정지 입력 발생     |
+| 6  | 시험 대상 안전 출력이 비활성화 상태로 전환되는지 확인한다.   | 비상정지 출력 비활성 상태(출력 LED 소등 확인) |
+
+**합격 기준**
+
+* 모든 비상정지 버튼이 복귀된 상태에서는 시험 대상 안전 출력이 활성화 상태여야 한다.
+* TP 또는 OP의 비상정지 버튼이 눌리면 시험 대상 안전 출력이 비활성화 상태로 전환되어야 한다.
+* 비상정지 상태가 유지되는 동안 시험 대상 안전 출력은 비활성 상태를 유지하여야 한다.
+
+<br>
+
+### 8. 브레이크 테스트
+
+| 단계 | 시험 절차                               | 예상 결과              |
+| -- | ----------------------------------- | ------------------ |
+| 1  | 로봇 및 로봇제어기에 외관상의 손상이나 이상이 없는지 확인한다. | 이상 없음              |
+| 2  | 로봇제어기의 전원을 투입한다.                    | 제어기 기동             |
+| 3  | 브레이크 테스트 Job 프로그램을 불러온다.            | 프로그램 정상 로드         |
+| 4  | 조작 모드를 자동 모드로 변경한다.                 | 자동 모드 변경 확인        |
+| 5  | 모터 ON 버튼을 입력한다.                     | 모터 ON 상태로 전환됨      |
+| 6  | 시작 버튼을 입력한다.                        | 브레이크 테스트 프로그램이 실행됨 |
+| 7  | 프로그램 종료 여부를 확인한다.                   | 브레이크 테스트 정상 종료     |
+
+**합격 기준**
+
+* 브레이크 테스트 프로그램 실행 중 모터 ON 상태가 유지되어야 한다.
+* 브레이크 테스트 프로그램 실행 중 에러가 발생하지 않아야 한다.
+* 브레이크 테스트 프로그램이 정상적으로 종료되어야 한다.
+<br>"[로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/10-etc/1-proc/16-brake_check?cont_model=Hi7)" 참고
+
+
+
+
+
+[__SOURCE](4-configuration/3-change-safety-parameter.md)
 # 4.2 Safety Parameter Transfer
 
 You can edit safety parameter values   and apply them to the system. Any values   that haven't been transferred will be reset when you exit the settings screen.
@@ -1678,13 +2000,20 @@ You can edit safety parameter values   and apply them to the system. Any values 
 </p>
 
 {% hint style="warning" %}
-**\[Warning]** : Before using the robot application, all safety parameters shall be verified and confirmed.
+<strong>[Warning]</strong> : Before using the robot application, all safety parameters shall be verified and confirmed.
 
 * Verification of safety parameters is an essential procedure to ensure that the safety functions operate as intended.
 * Verification and validation shall be performed not only during initial setup but also after any modification of the parameters.
 * Failure to verify safety parameters may result in safety functions not operating as intended and may pose a risk to personnel.
 {% endhint %}
-[__SOURCE](4-configuration/3-safety-parameter-report.md)
+
+{% hint style="warning" %}
+<strong>[Avertissement]</strong> : Avant d'utiliser l'application du robot, tous les paramètres de sécurité doivent être vérifiés et confirmés.
+La vérification des paramètres de sécurité est une procédure essentielle pour garantir que les fonctions de sécurité fonctionnent comme prévu.
+La vérification et la validation doivent être effectuées non seulement lors de la configuration initiale, mais également après toute modification des paramètres.
+Le non-respect de la vérification des paramètres de sécurité peut entraîner un fonctionnement non conforme des fonctions de sécurité et présenter un risque pour le personnel.
+{% endhint %}
+[__SOURCE](4-configuration/4-safety-parameter-report.md)
 # 4.3 Safety Parameter Report
 
 You can view the currently applied safety parameter values in a report format.
@@ -1839,9 +2168,12 @@ Errors caused due to safety function monitoring violations are cleared when swit
 
 
 {% hint style="warning" %}
-**\[Caution]**: After recovery in manual mode, recheck the safety function settings and teaching positions of the work program.
+<strong>[Caution]</strong> After recovery in manual mode, recheck the safety function settings and teaching positions of the work program.
 {% endhint %}
 
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Après la reprise en mode manuel, revérifiez les réglages des fonctions de sécurité ainsi que les positions d'apprentissage (teaching) du programme de travail.
+{% endhint %}
 [__SOURCE](6-recovery/1-recovery-robot-position-violation.md)
 # 6.1 	Recovery from Robot Position Violation
 
@@ -1863,6 +2195,9 @@ Robot position violation occurs when the robot's position leaves the safety area
 After clearing the error, recheck the safety layout settings and also the teaching positions in the work program.
 {% endhint %}
 
+{% hint style="warning" %}
+Après avoir effacé l'erreur, revérifiez les réglages de disposition (layout) de sécurité ainsi que les positions d'apprentissage (teaching) dans le programme de travail.
+{% endhint %}
 [__SOURCE](6-recovery/2-recovery-robot-speed-violation.md)
 # 6.2 	Recovery from Robot Speed Violation
 
@@ -1880,6 +2215,11 @@ Robot speed violation including the TCP speed, joint speed, power, and momentum 
 * After clearing the error, be sure to check the speed-related safety parameters and the speed of the work program.
 {% endhint %}
 
+{% hint style="warning" %}
+<strong>[Attention]</strong>
+
+* Après avoir effacé l'erreur, veillez à vérifier les paramètres de sécurité liés à la vitesse ainsi que la vitesse du programme de travail.
+{% endhint %}
 [__SOURCE](6-recovery/3-recovery-robot-force-violation.md)
 # 6.3 	Recovery from Robot Force Violation
 
@@ -1902,6 +2242,10 @@ Robot force violation such as collision detection, power, and momentum monitorin
 * After clearing the error, recheck the safety function settings, tool data, and work program's teaching positions and speed.
 {% endhint %}
 
+{% hint style="warning" %}
+<strong>[Attention]</strong>
+Après avoir effacé l'erreur, revérifiez les réglages des fonctions de sécurité, les données de l'outil, ainsi que les positions d'apprentissage (teaching) et la vitesse du programme de travail.
+{% endhint %}
 [__SOURCE](6-recovery/4-recovery-sos-violation.md)
 # 6.4 	Recovery from Safe Operating Stop (SOS) Violation
 
@@ -1924,6 +2268,13 @@ Safe Operating Stop (SOS) violation occurs when movement is detected while the r
 * If the same error occurs again, inspect the motor and reducer of the corresponding axis.
 {% endhint %}
 
+{% hint style="warning" %}
+<strong>[Attention]</strong>
+
+* Après avoir effacé l'erreur, vérifiez les paramètres de surveillance de l'arrêt de fonctionnement sûr (Safe Operating Stop).
+* Activez le moteur en mode automatique et vérifiez si l'erreur se reproduit.
+* Si la même erreur se reproduit, inspectez le moteur et le réducteur de l'axe concerné.
+{% endhint %}
 [__SOURCE](7-error-message/README.md)
 # 7. Error Messages
 

@@ -13,7 +13,13 @@ The safety function parameters must be set and managed by a designated person. U
 * When setting then safety function parameters, you must enter the system setting password to save changes.
 
 {% hint style="warning" %}
-* It is recommended to set the password with 4 or more characters.
-* If you lose your password, contact an engineer.
-* The default password is '8426'. 
+* It is recommended to set the password with 4 or more characters.<br>
+* If you lose your password, contact an engineer.<br>
+* The default password is '8426'.
+{% endhint %}
+
+{% hint style="warning" %}
+* Il est recommandé de définir un mot de passe d'au moins 4 caractères.<br>
+* Si vous perdez votre mot de passe, contactez un ingénieur.<br>
+* Le mot de passe par défaut est « 8426 ».
 {% endhint %}

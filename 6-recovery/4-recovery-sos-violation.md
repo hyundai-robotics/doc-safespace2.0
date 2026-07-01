@@ -18,3 +18,11 @@ Safe Operating Stop (SOS) violation occurs when movement is detected while the r
 * Turn on the motor in auto mode and check whether the error recurs.
 * If the same error occurs again, inspect the motor and reducer of the corresponding axis.
 {% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong>
+
+* Après avoir effacé l'erreur, vérifiez les paramètres de surveillance de l'arrêt de fonctionnement sûr (Safe Operating Stop).
+* Activez le moteur en mode automatique et vérifiez si l'erreur se reproduit.
+* Si la même erreur se reproduit, inspectez le moteur et le réducteur de l'axe concerné.
+{% endhint %}

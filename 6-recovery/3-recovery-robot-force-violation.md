@@ -18,3 +18,8 @@ Robot force violation such as collision detection, power, and momentum monitorin
 
 * After clearing the error, recheck the safety function settings, tool data, and work program's teaching positions and speed.
 {% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong>
+Après avoir effacé l'erreur, revérifiez les réglages des fonctions de sécurité, les données de l'outil, ainsi que les positions d'apprentissage (teaching) et la vitesse du programme de travail.
+{% endhint %}

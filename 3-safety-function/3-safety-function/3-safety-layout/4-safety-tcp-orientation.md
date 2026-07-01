@@ -28,7 +28,12 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 
 
 {% hint style="warning" %}
-**\[Caution]**
+<strong>[Caution]</strong>
 
 * When changing tool data, be sure to recheck that the parameters set in safety tool modeling are accurate. The tool data number and safety tool modeling number of the same tool should match.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong>
+Lors de la modification des données d'outil, veillez à revérifier que les paramètres définis dans la modélisation de l'outil de sécurité sont exacts. Le numéro de données d'outil et le numéro de modélisation de l'outil de sécurité du même outil doivent correspondre.
 {% endhint %}

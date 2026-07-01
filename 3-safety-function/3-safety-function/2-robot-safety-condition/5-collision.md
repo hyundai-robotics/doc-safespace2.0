@@ -20,3 +20,8 @@ When the external force applied to the robot exceeds the allowable value, it is 
 <strong>[Caution]</strong> Since the robot's impact force can increase in proportion to kinetic energy when the speed is high and the payload is large, considerable impact may occur if the robot collides with an external object. In the collaborative space, operate while maintaining the safe speed and payload.
 <strong>[Caution]</strong> False detection may occur if the tool information and additional weight are set differently from actual values. Check each information before using the collision detection function.
 {% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> Étant donné que la force d'impact du robot peut augmenter proportionnellement à l'énergie cinétique lorsque la vitesse est élevée et la charge utile importante, un impact considérable peut se produire si le robot entre en collision avec un objet externe. Dans l'espace collaboratif, faites fonctionner le robot en maintenant une vitesse et une charge utile sûres. 
+<strong>[Attention]</strong> Une détection erronée peut se produire si les informations relatives à l'outil et au poids additionnel sont définies différemment des valeurs réelles. Vérifiez chaque information avant d'utiliser la fonction de détection de collision.
+{% endhint %}

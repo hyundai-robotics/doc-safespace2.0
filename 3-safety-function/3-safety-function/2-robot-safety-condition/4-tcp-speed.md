@@ -24,4 +24,9 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 {% hint style="warning" %}
 <strong>[Caution]</strong>: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
 {% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Lors du réglage de la fonction de surveillance de la vitesse, veillez à tenir compte du temps de réaction à l'arrêt et à couvrir le carter de protection afin d'éviter les collisions et les blessures.
+{% endhint %}
+
  

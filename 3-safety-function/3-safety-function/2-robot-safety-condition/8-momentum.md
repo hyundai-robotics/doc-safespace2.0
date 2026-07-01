@@ -20,3 +20,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 <strong>[Caution]</strong> High speeds and large payloads, proportional to the robot's kinetic energy, can increase the robot's impact force. Therefore, a collision with an external object can result in significant impact. In collaborative spaces, maintain a safe speed and payload.
 <strong>[Caution]</strong> Setting tool information and additional weights differently from actual values may result in false detection. Please check the information before using this feature.
 {% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> Des vitesses élevées et des charges utiles importantes, proportionnellement à l'énergie cinétique du robot, peuvent augmenter la force d'impact de celui-ci. Par conséquent, une collision avec un objet externe peut entraîner un impact important. Dans les espaces collaboratifs, maintenez une vitesse et une charge utile sûres. <strong>[Attention]</strong> Le fait de définir les informations relatives à l'outil et aux poids additionnels différemment des valeurs réelles peut entraîner une détection erronée. Veuillez vérifier ces informations avant d'utiliser cette fonction.
+{% endhint %}

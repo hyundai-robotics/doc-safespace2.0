@@ -4,5 +4,9 @@ Errors caused due to safety function monitoring violations are cleared when swit
 
 
 {% hint style="warning" %}
-**\[Caution]**: After recovery in manual mode, recheck the safety function settings and teaching positions of the work program.
+<strong>[Caution]</strong> After recovery in manual mode, recheck the safety function settings and teaching positions of the work program.
+{% endhint %}
+
+{% hint style="warning" %}
+<strong>[Attention]</strong> : Après la reprise en mode manuel, revérifiez les réglages des fonctions de sécurité ainsi que les positions d'apprentissage (teaching) du programme de travail.
 {% endhint %}
