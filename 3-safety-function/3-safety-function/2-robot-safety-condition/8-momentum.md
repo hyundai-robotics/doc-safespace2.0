@@ -11,7 +11,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 
 | **Parameter** |          **Description**                                                  |  **Default Setting** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O / Hand Guiding Control)</p> | OFF |
 | Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
 | Motion tuning | <p>Tuning to a motion that does not exceed the robot's momentum limit</p><p>(Enable / Disable)</p> | Disable |
 | <p>Max momentum</p><p>[kg m/s]</p> | <p>Robot's momentum limit</p><p>(5 ~ 50000)</p> | 1000 |
