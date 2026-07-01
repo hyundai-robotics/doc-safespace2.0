@@ -42,7 +42,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 #### Output Test Pulse)
 <p align="center">
-<img src="../../../_assets/safety_io/Testpulse_Output.png"></img>
+<img src="../../../_assets/safety_io/Testpulse_output.png"></img>
 </p>
 
 #### Wiring Example)
