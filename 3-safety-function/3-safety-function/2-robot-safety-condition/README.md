@@ -20,6 +20,12 @@ The following safety features can be configured in the Robot Limits menu:
 * **Power Detection**: Limits the force in the event of a collision between the robot and the worker.
 * **Momentum**: Limits the energy and impact load in the event of a collision between the robot and the worker.
 
+{% hint style="warning" %}
+**\[Caution]** : When the speed limit of any of the following safety functions is changed, it may take up to 10 ms for the new limit to become effective. In addition, for the Replan function, extra deceleration time may be required depending on the current operating conditions until the robot complies with the updated speed limit. This behavior shall be taken into consideration.
+* Joint Speed Limit 
+* TCP Speed Limit 
+* Replan
+{% endhint %}
 
 {% hint style="warning" %}
 <strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:

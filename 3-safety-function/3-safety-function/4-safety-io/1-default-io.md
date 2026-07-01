@@ -13,10 +13,15 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 | Parameter <br>[Unit]          | Description                                                                                                                                       | Input Range       | Default |
 |:------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Pulse Test                 | Set whether to use the Pulse Test for each channel.                                                                                                     | Enable / Disable | Disable |
+| Pulse Test                 | Set whether to use the Pulse Test for each channel. <br>For channels with the pulse test enabled, test pulses are sent to the input side as shown in the figure below. The cable condition is then verified by checking the received pulse signals.| Enable / Disable | Disable |
 | Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system transitions from the Fail-Safe state to the current input state only after the **Error Latch Time** has elapsed.<br>Only values divisible by 10 can be entered. | 0 ~ 65530      | 1000   |
 | Filter Time <br>[msec]      | The same signal should be input during the **Filter Time** set for each channel for it to be processed as a valid signal.<br>Only values divisible by 10 can be entered.                       | 0 ~ 500        | 100    |
 | Discrete Time <br>[msec] | Basic input signals are processed as valid signals when two dual signals are identical.<br>An alarm is triggered if the two signals are different from each other for longer than the set **Discrete Time**.<br>Only values divisible by 10 can be entered. | 0 ~ 5000       | 1000   |
+
+#### Input Test Pulse)
+<p align="center">
+<img src="../../../_assets/safety_io/Testpulse_Input.png"></img>
+</p>
 
 #### Wiring Example)
 ![](../../../_assets/safety_io/CN_SI1.bmp)
@@ -31,8 +36,14 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 | Parameter <br>[Unit]          | Description                                                                                                                                       | Input Range       | Default |
 |:------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Pulse Test                 | Set whether to use the Pulse Test for each channel.                                                                                                     | Enable / Disable | Disable |
+| Pulse Test                 | Configures whether the pulse test is used.<br> When the pulse test is enabled, the controller sends test pulses as shown in the figure below and determines the output status by verifying the received pulse signals. | Enable / Disable | Disable |
 | Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is recovered, the system maintains the **Open (Fail-safe)** state during the **Error Latch Time**. Afterward, it  transitions to normal output.<br>Only values divisible by 5 can be entered. | 0 ~ 65530      | 1000   |
+
+
+#### Output Test Pulse)
+<p align="center">
+<img src="../../../_assets/safety_io/Testpulse_Output.png"></img>
+</p>
 
 #### Wiring Example)
 ![](../../../_assets/safety_io/CN_SO1.bmp)
