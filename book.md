@@ -62,6 +62,9 @@ This product has been designed and manufactured in accordance with the industria
 [__SOURCE](1-safety/1-safety-requirements/2-safety-performance.md)
 # 1.1.2 Safety Performance
 
+![SafeSpace2.0 configuration](../../_assets/safety_diagram_en.png)
+
+
 The safety performance of SafeSpace2.0's emergency stop and external device interface (basic safety input/output, PROFIsafe) is as follows:
 |            **Item**            | **Safety Performance** |         **Applicable Standard**         |
 | :--------------------------: | :-------: | :-----------------------: |
@@ -807,11 +810,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 | Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
 | Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
 | Motion tuning | <p>Tuning to a motion that does not exceed the TCP speed limit</p><p>(Enable / Disable)</p> | Disable |
-| Replan | <p>Whether to use the speed adjustment function according to the input signal</p><p>(Enable / Disable)</p> | Disable |
 | <p>Limit</p><p>[mm/s]</p> | <p>TCP speed limit value</p><p>(1 ~ 50000)</p> | 50000 |
-| <p>Rate</p><p>[%]</p> | <p>Deceleration ratio to use when readjusting speed</p><p>(0 ~ 100)</p> | 100 |
-| <p>Delay time</p><p>[ms]</p> | <p>When changing speed through readjustment, monitor with the changed speed limit value after the delay time </p><p>(0 ~ 1000)</p> | 1000 |
-| <p>Signal</p><p>[Type, Number]</p> | <p>Input signal for speed readjustment</p><p>( [None, -] / [Safety input, 1~8] / [Safety communication, 1~64] )</p> | 0 |
 
 {% hint style="warning" %}
 <strong>[Caution]</strong>: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
@@ -836,7 +835,7 @@ When the external force applied to the robot exceeds the allowable value, it is 
 
 | **Parameter** |                                  **Description**                                  |  **Default Setting** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activation | <p>Function activation status</p><p>(OFF/ON/Safety Input)</p> |   OFF  |
+| Activation | <p>Function activation status</p><p>(OFF / ON / Safety Input / Hand Guiding Control)</p> |   OFF  |
 | Stop function |   <p>Stop method when the function is violated</p><p>(Stop 0, Stop 1, Stop 2, Non-stop)</p>  | Stop 1 |
 | Joint ON/OFF |   <p>Activation status of each joint</p><p>(ON/OFF)</p>  |  OFF |
 | Sensitivity |   <p>Detection sensitivity for each joint</p><p>(1 ~ 200(%))</p>  |  100 |
@@ -896,7 +895,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 
 | **Parameter** |          **Description**                                                  |  **Default Setting** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O / Hand Guiding Control)</p> | OFF |
 | Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
 | Motion tuning | <p>Tuning to a motion that does not exceed the robot's power limit</p><p>(Active / Disable)</p> | Disable |
 | <p>Max power</p><p>[w]</p> | <p>Robot's power limit</p><p>(80 ~ 50000)</p> | 1000 |
@@ -923,7 +922,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 
 | **Parameter** |          **Description**                                                  |  **Default Setting** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O / Hand Guiding Control)</p> | OFF |
 | Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
 | Motion tuning | <p>Tuning to a motion that does not exceed the robot's momentum limit</p><p>(Enable / Disable)</p> | Disable |
 | <p>Max momentum</p><p>[kg m/s]</p> | <p>Robot's momentum limit</p><p>(5 ~ 50000)</p> | 1000 |
@@ -1351,7 +1350,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 | Power #1-#16 | Power<br>(power_0-power_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Momentum #1-#16 | Momentum<br>(mmt_0-mmt_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Collision detection #1-#16 | Collision Detection<br>(coldet_0-coldet_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Speed & separation #1-#84 | RePlan | OPEN: Function activated<br>CLOSE: Function deactivated |
+| RePlan #1-#4 | RePlan | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Mastering test switch | Mastering Test Switch | OPEN: Function activated<br>CLOSE: Function deactivated |
 
 #### Safety Output Signal Function List
