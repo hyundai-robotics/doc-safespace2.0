@@ -84,90 +84,86 @@ When the robot system is installed and configured for the first time, or wheneve
 
 <br>
 
-### 5. 비상정지 출력
+### 5. Emergency Stop Output
 
-| 단계 | 시험 절차                               | 예상 결과       |
+| Step | Test Procedure                               | Expected Result       |
 | -- | ----------------------------------- | ----------- |
-| 1  | 로봇 및 로봇제어기에 외관상의 손상이나 이상이 없는지 확인한다. | 이상 없음       |
-| 2  | 모든 비상정지 버튼(TP, OP)이 복귀된 상태인지 확인한다.  | 비상정지 해제 상태  |
-| 3  | 로봇제어기의 전원을 투입한다.                    | 제어기 기동      |
-| 4  | 비상정지 출력이 활성화 상태인지 확인한다.             | 비상정지 출력 활성(출력 LED 점등 확인)  |
-| 5  | TP의 비상정지 버튼을 누른다.                   | 비상정지 입력 발생  |
-| 6  | 비상정지 출력이 비활성화 상태로 전환되는지 확인한다.       | 비상정지 출력 비활성(출력 LED 소등 확인) |
+| 1  | Check that there is no visible damage or abnormality on the robot and the robot controller. | No abnormalities are found       |
+| 2  | Verify that all Emergency Stop buttons (TP, OP) are released.  | Emergency Stop released  |
+| 3  | Turn on the power to the robot controller.                    | Controller starts up      |
+| 4  | Verify that the Emergency Stop output is in the active state.             | Emergency Stop output active (output LED confirmed on)  |
+| 5  | Press the Emergency Stop button on the TP.                   | An Emergency Stop input occurs  |
+| 6  | Verify that the Emergency Stop output switches to the inactive state.       | Emergency Stop output inactive (output LED confirmed off) |
 
-**합격 기준**
+**Acceptance Criteria**
 
-* 모든 비상정지 버튼이 복귀된 상태에서는 비상정지 출력이 활성화되어야 한다.
-* TP 또는 OP의 비상정지 버튼을 누르면 비상정지 출력이 비활성화되어야 한다.
-* 비상정지 상태가 유지되는 동안 비상정지 출력은 비활성 상태를 유지하여야 한다.
+* While all Emergency Stop buttons remain in the released state, the Emergency Stop output shall be active.
+* Pressing the Emergency Stop button on the TP or OP shall cause the Emergency Stop output to become inactive.
+* The Emergency Stop output shall remain inactive for as long as the Emergency Stop condition is maintained.
 
 <br>
 
-### 6. 기본 및 부가 안전 입력
+### 6. Basic and Additional Safety Input
 
-**사전 조건 (Pre-condition)**
+**Pre-condition**
 
-* 안전기능 할당 설정에서 시험 대상 입력 채널에 비상정지(E-Stop) 기능이 할당되어 있어야 한다.
+* The Emergency Stop (E-Stop) function must be assigned to the input channel under test in the safety function assignment settings.
 
-| 단계 | 시험 절차                                         | 예상 결과                              |
+| Step | Test Procedure                                         | Expected Result                              |
 | -- | --------------------------------------------- | ---------------------------------- |
-| 1  | 로봇 및 로봇제어기에 외관상의 손상이나 이상이 없는지 확인한다.           | 이상 없음                              |
-| 2  | 비상정지 버튼이 복귀된 상태인지 확인한다.                       | 비상정지 해제 상태                         |
-| 3  | 로봇제어기의 전원을 투입한다.                              | 제어기 기동                             |
-| 4  | 수동 모드에서 Enabling Switch를 조작하여 모터 ON 상태로 전환한다. | TP의 Motor ON 표시등 점등                |
-| 5  | 시험 대상 안전 입력에 연결된 비상정지 버튼을 누른다.                | 비상정지 입력 발생                         |
-| 6  | 모터 OFF 여부를 확인한다.                              | TP의 Motor ON 표시등이 점멸 또는 소등 상태로 변경됨 |
+| 1  | Check that there is no visible damage or abnormality on the robot and the robot controller.           | No abnormalities are found                              |
+| 2  | Verify that the Emergency Stop button is in the released state.                       | Emergency Stop released                         |
+| 3  | Turn on the power to the robot controller.                              | Controller starts up                             |
+| 4  | In Manual mode, operate the Enabling Switch to switch to the Motor ON state. | The Motor ON indicator on the TP is illuminated                |
+| 5  | Press the Emergency Stop button connected to the safety input under test.                | An Emergency Stop input occurs                         |
+| 6  | Check whether the motor turns OFF.                              | The Motor ON indicator on the TP blinks or turns off |
 
-**합격 기준**
+**Acceptance Criteria**
 
-* 시험 대상 안전 입력에 비상정지 신호가 입력되면 모터 전원이 차단되어야 한다.
-* TP의 Motor ON 표시등이 점멸 또는 소등 상태로 변경되어야 한다.
-* 비상정지 상태에서는 로봇이 구동되지 않아야 한다.
+* When an Emergency Stop signal is applied to the safety input under test, motor power shall be cut off.
+* The Motor ON indicator on the TP shall blink or turn off.
+* The robot shall not operate while in the Emergency Stop state.
 
 <br>
 
-### 7. 기본 및 부가 안전 출력
+### 7. Basic and Additional Safety Output
 
-**사전 조건 (Pre-condition)**
+**Pre-condition**
 
-* 안전기능 할당 설정에서 시험 대상 출력 채널에 비상정지 출력(E-Stop Output) 기능이 할당되어 있어야 한다.
+* The Emergency Stop Output (E-Stop Output) function must be assigned to the output channel under test in the safety function assignment settings.
 
-| 단계 | 시험 절차                               | 예상 결과          |
+| Step | Test Procedure                               | Expected Result          |
 | -- | ----------------------------------- | -------------- |
-| 1  | 로봇 및 로봇제어기에 외관상의 손상이나 이상이 없는지 확인한다. | 이상 없음          |
-| 2  | 모든 비상정지 버튼(TP, OP)이 복귀된 상태인지 확인한다.<br>(시계방향 회전 시켜 돌출 확인)   | 비상정지 해제 상태     |
-| 3  | 로봇제어기의 전원을 투입한다.                    | 제어기 기동         |
-| 4  | 시험 대상 안전 출력이 활성화 상태인지 확인한다.         | 비상정지 출력 활성 상태(출력 LED 점등 확인)  |
-| 5  | TP의 비상정지 버튼을 누른다.                   | 비상정지 입력 발생     |
-| 6  | 시험 대상 안전 출력이 비활성화 상태로 전환되는지 확인한다.   | 비상정지 출력 비활성 상태(출력 LED 소등 확인) |
+| 1  | Check that there is no visible damage or abnormality on the robot and the robot controller. | No abnormalities are found          |
+| 2  | Verify that all Emergency Stop buttons (TP, OP) are in the released state.<br>(Turn clockwise to confirm they pop out.)   | Emergency Stop released     |
+| 3  | Turn on the power to the robot controller.                    | Controller starts up         |
+| 4  | Verify that the safety output under test is in the active state.         | Emergency Stop output active state (output LED confirmed on)  |
+| 5  | Press the Emergency Stop button on the TP.                   | An Emergency Stop input occurs     |
+| 6  | Verify that the safety output under test switches to the inactive state.   | Emergency Stop output inactive state (output LED confirmed off) |
 
-**합격 기준**
+**Acceptance Criteria**
 
-* 모든 비상정지 버튼이 복귀된 상태에서는 시험 대상 안전 출력이 활성화 상태여야 한다.
-* TP 또는 OP의 비상정지 버튼이 눌리면 시험 대상 안전 출력이 비활성화 상태로 전환되어야 한다.
-* 비상정지 상태가 유지되는 동안 시험 대상 안전 출력은 비활성 상태를 유지하여야 한다.
+* While all Emergency Stop buttons remain in the released state, the safety output under test shall be in the active state.
+* When the Emergency Stop button on the TP or OP is pressed, the safety output under test shall switch to the inactive state.
+* The safety output under test shall remain inactive for as long as the Emergency Stop state is maintained.
 
 <br>
 
-### 8. 브레이크 테스트
+### 8. Brake Test
 
-| 단계 | 시험 절차                               | 예상 결과              |
+| Step | Test Procedure                               | Expected Result              |
 | -- | ----------------------------------- | ------------------ |
-| 1  | 로봇 및 로봇제어기에 외관상의 손상이나 이상이 없는지 확인한다. | 이상 없음              |
-| 2  | 로봇제어기의 전원을 투입한다.                    | 제어기 기동             |
-| 3  | 브레이크 테스트 Job 프로그램을 불러온다.            | 프로그램 정상 로드         |
-| 4  | 조작 모드를 자동 모드로 변경한다.                 | 자동 모드 변경 확인        |
-| 5  | 모터 ON 버튼을 입력한다.                     | 모터 ON 상태로 전환됨      |
-| 6  | 시작 버튼을 입력한다.                        | 브레이크 테스트 프로그램이 실행됨 |
-| 7  | 프로그램 종료 여부를 확인한다.                   | 브레이크 테스트 정상 종료     |
+| 1  | Check that there is no visible damage or abnormality on the robot and the robot controller. | No abnormalities are found              |
+| 2  | Turn on the power to the robot controller.                    | Controller starts up             |
+| 3  | Load the brake test job program.            | Program loads normally         |
+| 4  | Change the operating mode to Automatic mode.                 | Automatic mode change confirmed        |
+| 5  | Press the Motor ON button.                     | Switches to the Motor ON state      |
+| 6  | Press the Start button.                        | The brake test program runs |
+| 7  | Check whether the program has ended.                   | Brake test ends normally     |
 
-**합격 기준**
+**Acceptance Criteria**
 
-* 브레이크 테스트 프로그램 실행 중 모터 ON 상태가 유지되어야 한다.
-* 브레이크 테스트 프로그램 실행 중 에러가 발생하지 않아야 한다.
-* 브레이크 테스트 프로그램이 정상적으로 종료되어야 한다.
-<br>"[로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/10-etc/1-proc/16-brake_check?cont_model=Hi7)" 참고
-
-
-
-
+* The Motor ON state must be maintained while the brake test program is running.
+* No error shall occur while the brake test program is running.
+* The brake test program must end normally.
+<br>Refer to "[Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/10-etc/1-proc/16-brake_check?cont_model=Hi7)."

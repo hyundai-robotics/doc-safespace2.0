@@ -1,4 +1,4 @@
-﻿# 4.2 Safety Parameter Transfer
+﻿# 4.3 Safety Parameter Transfer
 
 You can edit safety parameter values   and apply them to the system. Any values   that haven't been transferred will be reset when you exit the settings screen.
 
