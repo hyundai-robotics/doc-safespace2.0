@@ -56,6 +56,9 @@ This product has been designed and manufactured in accordance with the industria
 [__SOURCE](1-safety/1-safety-requirements/2-safety-performance.md)
 # 1.1.2 Safety Performance
 
+![SafeSpace2.0 configuration](../../_assets/safety_diagram_en.png)
+
+
 The safety performance of SafeSpace2.0's emergency stop and external device interface (basic safety input/output, PROFIsafe) is as follows:
 |            **Item**            | **Safety Performance** |         **Applicable Standard**         |
 | :--------------------------: | :-------: | :-----------------------: |
@@ -248,9 +251,20 @@ The safety-related content in this manual does not cover all possible risk facto
 
 The response time to be taken from safety function violation to stop execution is 9.8ms. The response time should be reflected when calculating the robot's stop time and stop distance.
 
-* **PROFIsafe Response Time**
 
-The response time to be taken from stop execution by PROFIsafe F-output data is 40.8ms. To get the time until the robot completely stops, the communication cycle and the robot's stop time and stop distance calculation values should be added.
+* **Safety Input Response Time (Safety Input)**
+
+The maximum response time from the receipt of a stop signal through a safety input (**Default** or **Additional**) until the stop action is initiated is **11 ms**. This value does not include the input signal filter time, nor does it include the robot stopping time or stopping distance.
+
+* **Safety Input Response Time (Safety Communication)**
+
+The maximum response time from the receipt of a stop signal through safety communication until the stop action is initiated is **42 ms**. To obtain the total time required for the robot to come to a complete stop, the safety communication cycle time and the robot stopping time and stopping distance shall be taken into account.
+
+* **Safety Output Response Time (Safety Communication)**
+
+The maximum response time from the generation of a safety output by the safety application until the signal is transmitted through safety communication is **28 ms**. To calculate the total transmission time to the safety PLC, the safety communication cycle time shall be added.
+
+
 
 [__SOURCE](2-installation/README.md)
 # 2. Installation
@@ -600,6 +614,12 @@ The following safety features can be configured in the Robot Limits menu:
 * **Power Detection**: Limits the force in the event of a collision between the robot and the worker.
 * **Momentum**: Limits the energy and impact load in the event of a collision between the robot and the worker.
 
+{% hint style="warning" %}
+**\[Caution]** : When the speed limit of any of the following safety functions is changed, it may take up to 10 ms for the new limit to become effective. In addition, for the Replan function, extra deceleration time may be required depending on the current operating conditions until the robot complies with the updated speed limit. This behavior shall be taken into consideration.
+* Joint Speed Limit 
+* TCP Speed Limit 
+* Replan
+{% endhint %}
 
 {% hint style="warning" %}
 <strong>[Caution]</strong>: Operators and users must perform a risk assessment before configuring robot safety functions to ensure the safety of personnel and equipment surrounding the robot. Based on the assessment results, configure the following:
@@ -711,11 +731,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 | Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
 | Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
 | Motion tuning | <p>Tuning to a motion that does not exceed the TCP speed limit</p><p>(Enable / Disable)</p> | Disable |
-| Replan | <p>Whether to use the speed adjustment function according to the input signal</p><p>(Enable / Disable)</p> | Disable |
 | <p>Limit</p><p>[mm/s]</p> | <p>TCP speed limit value</p><p>(1 ~ 50000)</p> | 50000 |
-| <p>Rate</p><p>[%]</p> | <p>Deceleration ratio to use when readjusting speed</p><p>(0 ~ 100)</p> | 100 |
-| <p>Delay time</p><p>[ms]</p> | <p>When changing speed through readjustment, monitor with the changed speed limit value after the delay time </p><p>(0 ~ 1000)</p> | 1000 |
-| <p>Signal</p><p>[Type, Number]</p> | <p>Input signal for speed readjustment</p><p>( [None, -] / [Safety input, 1~8] / [Safety communication, 1~64] )</p> | 0 |
 
 {% hint style="warning" %}
 <strong>[Caution]</strong>: When setting the speed monitoring function, be sure to consider the stopping reaction time and cover the cover to prevent collisions and injuries.
@@ -735,7 +751,7 @@ When the external force applied to the robot exceeds the allowable value, it is 
 
 | **Parameter** |                                  **Description**                                  |  **Default Setting** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activation | <p>Function activation status</p><p>(OFF/ON/Safety Input)</p> |   OFF  |
+| Activation | <p>Function activation status</p><p>(OFF / ON / Safety Input / Hand Guiding Control)</p> |   OFF  |
 | Stop function |   <p>Stop method when the function is violated</p><p>(Stop 0, Stop 1, Stop 2, Non-stop)</p>  | Stop 1 |
 | Joint ON/OFF |   <p>Activation status of each joint</p><p>(ON/OFF)</p>  |  OFF |
 | Sensitivity |   <p>Detection sensitivity for each joint</p><p>(1 ~ 200(%))</p>  |  100 |
@@ -786,7 +802,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 
 | **Parameter** |          **Description**                                                  |  **Default Setting** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O / Hand Guiding Control)</p> | OFF |
 | Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
 | Motion tuning | <p>Tuning to a motion that does not exceed the robot's power limit</p><p>(Active / Disable)</p> | Disable |
 | <p>Max power</p><p>[w]</p> | <p>Robot's power limit</p><p>(80 ~ 50000)</p> | 1000 |
@@ -810,7 +826,7 @@ You can set the parameter values   in the `[System > 10: Safety System > 2: Para
 
 | **Parameter** |          **Description**                                                  |  **Default Setting** |
 | :------: | :----------------------------------------------------------------: | :---------: |
-| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
+| Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O / Hand Guiding Control)</p> | OFF |
 | Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No stop)</p> | Stop 1 |
 | Motion tuning | <p>Tuning to a motion that does not exceed the robot's momentum limit</p><p>(Enable / Disable)</p> | Disable |
 | <p>Max momentum</p><p>[kg m/s]</p> | <p>Robot's momentum limit</p><p>(5 ~ 50000)</p> | 1000 |
@@ -882,10 +898,10 @@ You can set the parameter values   for the safety zone in each tab of the `[Syst
 
 |  **Parameter** |                       **Description**                       |  **Default Setting**  |
 | :-------: | :------------------------------------------------: | :----------: |
-| <p>Z Min / Max</p><p>[mm]</p> | <p>Height of the safe area based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
+| <p>Z Min / Max</p><p>[mm]</p> | <p>Height of the safe area based on the robot coordinate system</p><p>(-30000.0 ~ 30000.0)</p> | 0 |
 | Enable | <p>Whether to enable the vertex of the safe area</p><p>(Enable / Disable)</p> | Disable |
-| <p>X</p><p>[mm]</p> | <p>X-direction position of the vertex based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
-| <p>Y</p><p>[mm]</p> | <p>Y-direction position of the vertex based on the robot coordinate system</p><p>(-300000.0 ~ 300000.0)</p> | 0 |
+| <p>X</p><p>[mm]</p> | <p>X-direction position of the vertex based on the robot coordinate system</p><p>(-30000.0 ~ 30000.0)</p> | 0 |
+| <p>Y</p><p>[mm]</p> | <p>Y-direction position of the vertex based on the robot coordinate system</p><p>(-30000.0 ~ 30000.0)</p> | 0 |
 
 
 
@@ -1076,10 +1092,15 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 | Parameter <br>[Unit]          | Description                                                                                                                                       | Input Range       | Default |
 |:------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Pulse Test                 | Set whether to use the Pulse Test for each channel.                                                                                                     | Enable / Disable | Disable |
+| Pulse Test                 | Set whether to use the Pulse Test for each channel. <br>For channels with the pulse test enabled, test pulses are sent to the input side as shown in the figure below. The cable condition is then verified by checking the received pulse signals.| Enable / Disable | Disable |
 | Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system transitions from the Fail-Safe state to the current input state only after the **Error Latch Time** has elapsed.<br>Only values divisible by 10 can be entered. | 0 ~ 65530      | 1000   |
 | Filter Time <br>[msec]      | The same signal should be input during the **Filter Time** set for each channel for it to be processed as a valid signal.<br>Only values divisible by 10 can be entered.                       | 0 ~ 500        | 100    |
 | Discrete Time <br>[msec] | Basic input signals are processed as valid signals when two dual signals are identical.<br>An alarm is triggered if the two signals are different from each other for longer than the set **Discrete Time**.<br>Only values divisible by 10 can be entered. | 0 ~ 5000       | 1000   |
+
+#### Input Test Pulse)
+<p align="center">
+<img src="../../../_assets/safety_io/Testpulse_Input.png"></img>
+</p>
 
 #### Wiring Example)
 ![](../../../_assets/safety_io/CN_SI1.bmp)
@@ -1094,8 +1115,14 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 
 | Parameter <br>[Unit]          | Description                                                                                                                                       | Input Range       | Default |
 |:------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Pulse Test                 | Set whether to use the Pulse Test for each channel.                                                                                                     | Enable / Disable | Disable |
+| Pulse Test                 | Configures whether the pulse test is used.<br> When the pulse test is enabled, the controller sends test pulses as shown in the figure below and determines the output status by verifying the received pulse signals. | Enable / Disable | Disable |
 | Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is recovered, the system maintains the **Open (Fail-safe)** state during the **Error Latch Time**. Afterward, it  transitions to normal output.<br>Only values divisible by 5 can be entered. | 0 ~ 65530      | 1000   |
+
+
+#### Output Test Pulse)
+<p align="center">
+<img src="../../../_assets/safety_io/Testpulse_output.png"></img>
+</p>
 
 #### Wiring Example)
 ![](../../../_assets/safety_io/CN_SO1.bmp)
@@ -1117,7 +1144,6 @@ You can set parameter values in the `[System > 10: Safety System > 2: Parameter 
 
 | Parameter [Unit]             | Description                                                                                                                                       | Input Range       | Default |
 |:---------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------:|:--------------:|:------:|
-| Enable                       | Set whether to enable or disable the extended safety input/output signals.                                                                                       | Enable / Disable | Disable |
 | Filter Time <br>[msec]          | For each input channel, constant signals should be input during the **Filter Time** for the signals to be processed as valid signals.<br>Only values divisible by 10 can be entered.                           | 0-500        | 100    |
 | Discrepancy Time <br>[msec]     | Extended safety input/output signals are processed as valid signals when two dual signals have the same value.<br>An alarm is triggered if the two signals are different from each other for longer than the **Discrepancy Time**.<br>Only values divisible by 10 can be entered. | 0-5000       | 1000   |
 | Input Error Latch Time <br>[msec] | When an error occurs in a channel, even if the error is resolved, the system transitions from the Fail-Safe state to the current input state only after the set time has elapsed.<br>Only values divisible by 10 can be entered.             | 0-65530      | 1000   |
@@ -1202,7 +1228,7 @@ You can set the parameter values in the `[System > 10: Safety System > 2: Parame
 | Power #1-#16 | Power<br>(power_0-power_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Momentum #1-#16 | Momentum<br>(mmt_0-mmt_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Collision detection #1-#16 | Collision Detection<br>(coldet_0-coldet_15) | OPEN: Function activated<br>CLOSE: Function deactivated |
-| Speed & separation #1-#84 | RePlan | OPEN: Function activated<br>CLOSE: Function deactivated |
+| RePlan #1-#4 | RePlan | OPEN: Function activated<br>CLOSE: Function deactivated |
 | Mastering test switch | Mastering Test Switch | OPEN: Function activated<br>CLOSE: Function deactivated |
 
 #### Safety Output Signal Function List
@@ -1628,21 +1654,189 @@ Safety features monitor the entire robot system, including tools attached to the
 2. Press the emergency stop switch to cut off the power to the motors.
 3. Touch the `[Settings]` button > `[3: Robot Parameters > 1: Tool Data]` menu.
 4. Check the data for each axis and set the tool weight, center of gravity, and inertia, then touch the `[OK]` button to save.
-
-![](../../_assets/image20.jpeg)
-
-* To create new tool data or easily create tool data using an existing program, touch the `[Auto Correction]`.
-* To correct the tool angle, touch the `[Angle Correction]` button.
-* To add or delete a new user coordinate system, use the `[+]`/`[-]` buttons.
-* To check and edit detailed information of tool data, select the desired name from the tool data list.
-* To copy tool data information and paste it to other tool data, use the `[Copy Page]`/`[Paste Page]` buttons.
+5. Apply the updated tool data to the safety tool data. For more information about safety tool data, see "[3.3.1.3 Safety Tool Information](../../3-safety-function/3-safety-function/1-general-condition/3-safe-tool-info.md)".
 
 {% hint style="info" %}
 * If information about the tool's weight and center of gravity isn't available, you can use the load estimation function to estimate the values. 
-* For detailed information on setting tool data, refer to the "[Hi7 Controller Operation Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)."
+* For detailed information on setting tool data, refer to the "[7.4.1 Tool Data](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/4-robot-parameter/1-tool-data/README?cont_model=Hi7)" in the "[Hi7 Controller Operation Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=Hi7)."
 {% endhint %}
 
-[__SOURCE](4-configuration/2-change-safety-parameter.md)
+[__SOURCE](4-configuration/2-test-safety-functions.md)
+# 4.2 Safety Function Test
+
+When the robot system is installed and configured for the first time, or whenever robot components are replaced or optional devices are added or modified, the relevant safety functions shall be tested and validated in accordance with the procedures described below before the robot system is put into operation.
+
+
+### 1. Emergency Stop
+
+| Step | Test Procedure                                                                               | Expected Result                                      |
+| ---- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| 1    | Check that there is no visible damage or abnormality on the robot and the robot controller.  | No abnormalities are found.                          |
+| 2    | Verify that the Emergency Stop button is released.<br>(Turn it clockwise until it pops out.) | Emergency Stop released.                             |
+| 3    | Turn on the power to the robot controller.                                                   | The controller starts up.                            |
+| 4    | In Manual mode, operate the Enabling Switch to change to the **Motor ON** state.             | The **Motor ON** indicator on the TP is illuminated. |
+| 5    | Press the Emergency Stop button.                                                             | An Emergency Stop input is detected.                 |
+| 6    | Verify that the system has changed to the **Motor OFF** state.                               | **Motor OFF** state.                                 |
+
+
+**Acceptance Criteria**
+
+* Pressing the Emergency Stop button shall cause the system to transition to the **Motor OFF** state.
+* The **Motor ON** indicator on the TP shall blink or turn off.
+* The robot shall not be operable while the Emergency Stop condition is active.
+
+
+<br>
+
+### 2. Safeguard General Signal (SGG)
+
+| Step | Test Procedure                                                                              | Expected Result                                                |
+| ---- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 1    | Check that there is no visible damage or abnormality on the robot and the robot controller. | No abnormalities are found.                                    |
+| 2    | Verify that the safeguard signal is inactive. (Example: The safety fence door is closed.)   | Safeguard signal is in the normal state. (System Input screen) |
+| 3    | Turn on the power to the robot controller.                                                  | The controller starts up.                                      |
+| 4    | In Manual mode, operate the Enabling Switch to change to the **Motor ON** state.            | The **Motor ON** indicator on the TP is illuminated.           |
+| 5    | Activate the safeguard signal. (Example: Open the safety fence door.)                       | Safeguard signal input is detected.                            |
+| 6    | Verify that the system has changed to the **Motor OFF** state.                              | **Motor OFF** state.                                           |
+
+**Acceptance Criteria**
+
+* Activating the safeguard signal shall cause the system to transition to the **Motor OFF** state.
+* The **Motor ON** indicator on the TP shall blink or turn off.
+* The robot shall not be operable while the safeguard signal is active.
+
+
+<br>
+
+### 3. Safeguard Automatic Signal (SGA)
+
+| Step | Test Procedure                                                                              | Expected Result                                                |
+| ---- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 1    | Check that there is no visible damage or abnormality on the robot and the robot controller. | No abnormalities are found.                                    |
+| 2    | Verify that the safeguard signal is inactive. (Example: The safety fence door is closed.)   | Safeguard signal is in the normal state. (System Input screen) |
+| 3    | Turn on the power to the robot controller.                                                  | The controller starts up.                                      |
+| 4    | In **Automatic** mode, change to the **Motor ON** state.                                    | The **Motor ON** indicator on the TP is illuminated.           |
+| 5    | Open the safeguard. (Example: Open the safety fence door.)                                  | Safeguard signal input is detected.                            |
+| 6    | Verify that the system has changed to the **Motor OFF** state.                              | The **Motor ON** indicator on the TP blinks or turns off.      |
+
+**Acceptance Criteria**
+
+* Activating the safeguard signal in **Automatic** mode shall cause the system to transition to the **Motor OFF** state.
+* The **Motor ON** indicator on the TP shall blink or turn off.
+* The robot shall not be operable while the safeguard signal is active.
+
+
+<br>
+
+### 4. Enabling Switch
+
+| Step | Test Procedure                                                                                 | Expected Result                                           |
+| ---- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| 1    | Check that there is no visible damage or abnormality on the robot and the robot controller.    | No abnormalities are found.                               |
+| 2    | Turn on the power to the robot controller.                                                     | The controller starts up.                                 |
+| 3    | In **Manual** mode, hold the **Enabling Switch** in the middle position (**Enable Position**). | Enabling state is active.                                 |
+| 4    | Verify that the system is in the **Motor ON** state.                                           | The **Motor ON** indicator on the TP is illuminated.      |
+| 5    | Release the **Enabling Switch**. <br> or  Squeeze the **Enabling Switch** fully.                   | Enabling is deactivated.                                  |
+| 6    | Verify that the system has changed to the **Motor OFF** state.                                 | The **Motor ON** indicator on the TP blinks or turns off. |
+
+**Acceptance Criteria**
+
+* Releasing the **Enabling Switch** shall cause the system to transition to the **Motor OFF** state.
+* The **Motor ON** indicator on the TP shall blink or turn off.
+* The robot shall not be operable while the **Enabling Switch** is released.
+
+
+<br>
+
+### 5. 비상정지 출력
+
+| 단계 | 시험 절차                               | 예상 결과       |
+| -- | ----------------------------------- | ----------- |
+| 1  | 로봇 및 로봇제어기에 외관상의 손상이나 이상이 없는지 확인한다. | 이상 없음       |
+| 2  | 모든 비상정지 버튼(TP, OP)이 복귀된 상태인지 확인한다.  | 비상정지 해제 상태  |
+| 3  | 로봇제어기의 전원을 투입한다.                    | 제어기 기동      |
+| 4  | 비상정지 출력이 활성화 상태인지 확인한다.             | 비상정지 출력 활성(출력 LED 점등 확인)  |
+| 5  | TP의 비상정지 버튼을 누른다.                   | 비상정지 입력 발생  |
+| 6  | 비상정지 출력이 비활성화 상태로 전환되는지 확인한다.       | 비상정지 출력 비활성(출력 LED 소등 확인) |
+
+**합격 기준**
+
+* 모든 비상정지 버튼이 복귀된 상태에서는 비상정지 출력이 활성화되어야 한다.
+* TP 또는 OP의 비상정지 버튼을 누르면 비상정지 출력이 비활성화되어야 한다.
+* 비상정지 상태가 유지되는 동안 비상정지 출력은 비활성 상태를 유지하여야 한다.
+
+<br>
+
+### 6. 기본 및 부가 안전 입력
+
+**사전 조건 (Pre-condition)**
+
+* 안전기능 할당 설정에서 시험 대상 입력 채널에 비상정지(E-Stop) 기능이 할당되어 있어야 한다.
+
+| 단계 | 시험 절차                                         | 예상 결과                              |
+| -- | --------------------------------------------- | ---------------------------------- |
+| 1  | 로봇 및 로봇제어기에 외관상의 손상이나 이상이 없는지 확인한다.           | 이상 없음                              |
+| 2  | 비상정지 버튼이 복귀된 상태인지 확인한다.                       | 비상정지 해제 상태                         |
+| 3  | 로봇제어기의 전원을 투입한다.                              | 제어기 기동                             |
+| 4  | 수동 모드에서 Enabling Switch를 조작하여 모터 ON 상태로 전환한다. | TP의 Motor ON 표시등 점등                |
+| 5  | 시험 대상 안전 입력에 연결된 비상정지 버튼을 누른다.                | 비상정지 입력 발생                         |
+| 6  | 모터 OFF 여부를 확인한다.                              | TP의 Motor ON 표시등이 점멸 또는 소등 상태로 변경됨 |
+
+**합격 기준**
+
+* 시험 대상 안전 입력에 비상정지 신호가 입력되면 모터 전원이 차단되어야 한다.
+* TP의 Motor ON 표시등이 점멸 또는 소등 상태로 변경되어야 한다.
+* 비상정지 상태에서는 로봇이 구동되지 않아야 한다.
+
+<br>
+
+### 7. 기본 및 부가 안전 출력
+
+**사전 조건 (Pre-condition)**
+
+* 안전기능 할당 설정에서 시험 대상 출력 채널에 비상정지 출력(E-Stop Output) 기능이 할당되어 있어야 한다.
+
+| 단계 | 시험 절차                               | 예상 결과          |
+| -- | ----------------------------------- | -------------- |
+| 1  | 로봇 및 로봇제어기에 외관상의 손상이나 이상이 없는지 확인한다. | 이상 없음          |
+| 2  | 모든 비상정지 버튼(TP, OP)이 복귀된 상태인지 확인한다.<br>(시계방향 회전 시켜 돌출 확인)   | 비상정지 해제 상태     |
+| 3  | 로봇제어기의 전원을 투입한다.                    | 제어기 기동         |
+| 4  | 시험 대상 안전 출력이 활성화 상태인지 확인한다.         | 비상정지 출력 활성 상태(출력 LED 점등 확인)  |
+| 5  | TP의 비상정지 버튼을 누른다.                   | 비상정지 입력 발생     |
+| 6  | 시험 대상 안전 출력이 비활성화 상태로 전환되는지 확인한다.   | 비상정지 출력 비활성 상태(출력 LED 소등 확인) |
+
+**합격 기준**
+
+* 모든 비상정지 버튼이 복귀된 상태에서는 시험 대상 안전 출력이 활성화 상태여야 한다.
+* TP 또는 OP의 비상정지 버튼이 눌리면 시험 대상 안전 출력이 비활성화 상태로 전환되어야 한다.
+* 비상정지 상태가 유지되는 동안 시험 대상 안전 출력은 비활성 상태를 유지하여야 한다.
+
+<br>
+
+### 8. 브레이크 테스트
+
+| 단계 | 시험 절차                               | 예상 결과              |
+| -- | ----------------------------------- | ------------------ |
+| 1  | 로봇 및 로봇제어기에 외관상의 손상이나 이상이 없는지 확인한다. | 이상 없음              |
+| 2  | 로봇제어기의 전원을 투입한다.                    | 제어기 기동             |
+| 3  | 브레이크 테스트 Job 프로그램을 불러온다.            | 프로그램 정상 로드         |
+| 4  | 조작 모드를 자동 모드로 변경한다.                 | 자동 모드 변경 확인        |
+| 5  | 모터 ON 버튼을 입력한다.                     | 모터 ON 상태로 전환됨      |
+| 6  | 시작 버튼을 입력한다.                        | 브레이크 테스트 프로그램이 실행됨 |
+| 7  | 프로그램 종료 여부를 확인한다.                   | 브레이크 테스트 정상 종료     |
+
+**합격 기준**
+
+* 브레이크 테스트 프로그램 실행 중 모터 ON 상태가 유지되어야 한다.
+* 브레이크 테스트 프로그램 실행 중 에러가 발생하지 않아야 한다.
+* 브레이크 테스트 프로그램이 정상적으로 종료되어야 한다.
+<br>"[로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/10-etc/1-proc/16-brake_check?cont_model=Hi7)" 참고
+
+
+
+
+
+[__SOURCE](4-configuration/3-change-safety-parameter.md)
 # 4.2 Safety Parameter Transfer
 
 You can edit safety parameter values   and apply them to the system. Any values   that haven't been transferred will be reset when you exit the settings screen.
@@ -1684,7 +1878,7 @@ You can edit safety parameter values   and apply them to the system. Any values 
 * Verification and validation shall be performed not only during initial setup but also after any modification of the parameters.
 * Failure to verify safety parameters may result in safety functions not operating as intended and may pose a risk to personnel.
 {% endhint %}
-[__SOURCE](4-configuration/3-safety-parameter-report.md)
+[__SOURCE](4-configuration/4-safety-parameter-report.md)
 # 4.3 Safety Parameter Report
 
 You can view the currently applied safety parameter values in a report format.
