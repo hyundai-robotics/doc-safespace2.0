@@ -10,6 +10,10 @@
         {
             "title": "Operation Manual - TP630",
             "id": "${cont_model:upper}OPTP630_EN"
+        },
+        {
+            "title": "Function Manual - HRSafeSpace2",
+            "id": "HI7HRSAFESPACE2_EN_001"
         }
     ],
     "permittedStrs": ["Hi7"]
