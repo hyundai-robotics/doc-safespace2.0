@@ -10,6 +10,10 @@
         {
             "title": "${cont_model} 제어기 조작 설명서 - TP630",
             "id": "${cont_model:upper}OPTP630_KO"
+        },
+        {
+            "title": "기능설명서 - HRSafeSpace2",
+            "id": "HI7HRSAFESPACE2_KO_001"
         }
     ],
     "permittedStrs": ["Hi7"]
