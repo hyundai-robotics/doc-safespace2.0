@@ -166,4 +166,4 @@ When the robot system is installed and configured for the first time, or wheneve
 * The Motor ON state must be maintained while the brake test program is running.
 * No error shall occur while the brake test program is running.
 * The brake test program must end normally.
-<br>Refer to "[Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/10-etc/1-proc/16-brake_check?cont_model=Hi7)."
+<br>Refer to "[Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/16-brake_check?cont_model=Hi7)."

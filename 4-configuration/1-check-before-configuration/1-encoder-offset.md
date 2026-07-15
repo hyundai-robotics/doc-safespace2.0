@@ -18,5 +18,5 @@ When a stop occurs due to a safety function violation, move each axis by jogging
 4\. Reboot the system.
 
 {% hint style="info" %}
-For more information about encoder offset, see "[7.4.4 Encoder Offset](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)" in the "[Hi7 Controller Operating Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/4-robot-parameter/4-encoder-offset/README?cont_model=Hi7)".
+For more information about encoder offset, see "[7.4.4 Encoder Offset](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=Hi7)" in the "[Hi7 Controller Operating Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/4-robot-parameter/4-encoder-offset/README?cont_model=Hi7)".
 {% endhint %}
