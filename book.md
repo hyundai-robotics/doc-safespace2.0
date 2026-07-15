@@ -1642,7 +1642,7 @@ When a stop occurs due to a safety function violation, move each axis by jogging
 4\. Reboot the system.
 
 {% hint style="info" %}
-For more information about encoder offset, see "[7.4.4 Encoder Offset](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/README?cont_model=Hi7)" in the "[Hi7 Controller Operating Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/ko-tp630/7-system/4-robot-parameter/4-encoder-offset/README?cont_model=Hi7)".
+For more information about encoder offset, see "[7.4.4 Encoder Offset](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/README?cont_model=Hi7)" in the "[Hi7 Controller Operating Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-operation/en-tp630/7-system/4-robot-parameter/4-encoder-offset/README?cont_model=Hi7)".
 {% endhint %}
 
 [__SOURCE](4-configuration/1-check-before-configuration/2-tool-data-setting.md)
@@ -1830,7 +1830,7 @@ When the robot system is installed and configured for the first time, or wheneve
 * The Motor ON state must be maintained while the brake test program is running.
 * No error shall occur while the brake test program is running.
 * The brake test program must end normally.
-<br>Refer to "[Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/10-etc/1-proc/16-brake_check?cont_model=Hi7)."
+<br>Refer to "[Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/16-brake_check?cont_model=Hi7)."
 
 [__SOURCE](4-configuration/3-change-safety-parameter.md)
 # 4.3 Safety Parameter Transfer
@@ -2166,7 +2166,7 @@ When a safety function-related alarm occurs, refer to "[Error and Warning Help](
 
 The industrial robot in question should be installed in consideration of the inspection standards of the Industrial Safety and Health Standards Rules and Safety Inspection Notice (if subject to inspection).
 
-"[Rules on Industrial Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/ko/README)"
+"[Rules on Industrial Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/en/README)"
 
 [__SOURCE](warranty.md)
 # Quality Assurance
