@@ -1,6 +1,6 @@
 ﻿# Safety Cautions
 
-{% include file="en/safety-notice.md" %}
+{% include file="fn/safety-notice.md" %}
 
 {% hint style="warning" %}
 - Control through external communication commands and applications is not a safety function and shall not be used as a substitute for a safety-related control system.

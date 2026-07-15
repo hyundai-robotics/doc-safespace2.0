@@ -8,12 +8,12 @@
 [__SOURCE](0-about-this-manual/precautions.md)
 # Precautions
 
-{% include file="en/precautions.md" %}
+{% include file="fn/precautions.md" %}
 
 [__SOURCE](0-about-this-manual/safety-notice.md)
 # Safety Cautions
 
-{% include file="en/safety-notice.md" %}
+{% include file="fn/safety-notice.md" %}
 
 {% hint style="warning" %}
 - Control through external communication commands and applications is not a safety function and shall not be used as a substitute for a safety-related control system.
