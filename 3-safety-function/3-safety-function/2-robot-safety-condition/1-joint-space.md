@@ -21,8 +21,8 @@ You can set parameter values in the `[System > 10: Safety System > 2: Parameter 
 | Activation | <p>Whether the function is activated</p><p>(OFF / ON / Safety I/O)</p> | OFF |
 | Stop function | <p>Stop method in case of function violation</p><p>(Stop 0 / Stop 1 / Stop 2 / No Stop)</p> | Stop 1 |
 | Joint ON/OFF | <p>Whether each joint is activated</p><p>(OFF / ON)</p> | OFF |
-| <p>Minimum</p><p>[deg]</p> | <p>Minimum limits for each joint angle</p><p>(-360.0 ~ 360.0)</p> | -360.0 |
-| <p>Maximum</p><p>[deg]</p> | <p>Maximum limits for each joint angle</p><p>(-360.0 ~ 360.0)</p> | 360.0 |
+| <p>Minimum</p><p>[deg]</p> | <p>Minimum limits for each joint angle</p><p>(-30000.0 ~ 30000.0)</p> | -360.0 |
+| <p>Maximum</p><p>[deg]</p> | <p>Maximum limits for each joint angle</p><p>(-30000.0 ~ 30000.0)</p> | 360.0 |
 
 {% hint style="warning" %}
 <strong>[Caution]</strong>: The safety function monitors based on the set area. The set area should be configured considering the stop distance, and verification must be performed before operation.
