@@ -21,12 +21,15 @@ PLC S/W Download를 수행하는 과정에서 PLC와 Hi7 간 PROFIsafe(PROFINET)
 ## 3) 조치 절차
 
 ### Step 1) 알람 클리어
-- `[Shift] + [Mot.ON]` 버튼을 눌러 알람을 클리어한다.<br>
-(※ V70.04-00 이후: PROFINET 통신 재연결 시 알람 자동 클리어 됨)
+- `[Shift]` + `[Mot.ON]` 버튼을 눌러 알람을 클리어한다.<br>
+**(※ V70.04-00 이후: PROFINET 통신 재연결 시 알람 자동 클리어 됨)**
 
 <p align="center">
 <img src="../../_assets/trouble/keys_moton.png"></img>
 </p>
+
+<br>
+<br>
 
 ### Step 2) PROFINET 통신 상태 확인
 - `[시스템]` → `[제어 파라미터]` → `[산업용 통신]`  → `[프로피넷 설정]` 화면에서 통신 상태를 확인한다.
@@ -37,12 +40,15 @@ PLC S/W Download를 수행하는 과정에서 PLC와 Hi7 간 PROFIsafe(PROFINET)
 <img src="../../_assets/trouble/profinet_config.png"></img>
 </p>
 
+<br>
+<br>
+
 ### Step 3) Safety 모듈 에러 잔존 시
 
-- **ACK-GL의 ACK_GLOB에 라이징에지 입력 기능을 사용하여 Safety 모듈 에러를 해제한다.**
+- **ACK-GL의 ACK_GLOB에 라이징에지 신호 입력하여 Safety 모듈 에러를 해제한다.**
 ( 아래 4) Ladder 프로그램 예 참조 )
 
-PROFINET 통신이 정상적으로 복구된 뒤 PROFIsafe 통신이 **Re-integration** 절차가 필요한 경우 화면
+아래는 PROFINET 통신이 정상적으로 복구된 뒤 PROFIsafe 통신이 **Re-integration** 절차가 필요한 경우 화면
 
 <p align="center">
 <img src="../../_assets/trouble/tia_portal_project_bad.png"></img>

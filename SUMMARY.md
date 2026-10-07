@@ -75,8 +75,8 @@
 * [7. 에러 메시지](7-error-message/README.md)
 * [8. 트러블슈팅](8-troubleshooting/README.md)
   * [8.1 PROFIsafe](8-troubleshooting/1-profisafe/README.md)
-    * [8.1.1 Case 1 - PLC Download](8-troubleshooting/1-profisafe/1-profisafe-plc-download.md)
-    * [8.1.2 Case 2 - 내부 통신 연결](8-troubleshooting/1-profisafe/2-profisafe-ethercat.md)
+    * [8.1.1 Case 1 - PLC S/W Download](8-troubleshooting/1-profisafe/1-profisafe-plc-download.md)
+    * [8.1.2 Case 2 - 슬롯 설정 불가](8-troubleshooting/1-profisafe/2-profisafe-ethercat.md)
 
 * [별첨](attachment/README.md)
   * [신규 로봇 모델 등록 방법](attachment/add-new-robot-model.md)
