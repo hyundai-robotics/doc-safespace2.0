@@ -2,7 +2,7 @@
 
 ## 1) 개요
 
-이번 장에서는 두 개의 작업 공간을 활용하여 입력 공간으로 들어오는 작업물을 로봇이 취출하고, 가공한 뒤 출력 공간으로 이송하는 작업을 통해 안전 기능 및 안전통신의 기본적인 사용법을 설명합니다.
+이번 장에서는 두 개의 작업 공간을 활용하여 입력 공간으로 들어오는 작업물을 로봇이 취출하고, 가공한 뒤 출력 공간으로 이송하는 작업을 설명합니다. 이를 통해 안전 기능 및 안전 통신의 기본적인 사용 방법을 익힐 수 있습니다.
 
 입력 공간에 사람이 있는 경우 로봇은 출력 공간 내에서만 동작할 수 있으며, 출력 공간에 사람이 있는 경우에는 로봇은 입력 공간 내에서만 동작할 수 있습니다. 또 로봇이 허용된 작업 공간(펜스 내부)을 벗어나는 경우 안전기능에 의해 즉시 정지합니다.
 
@@ -28,7 +28,7 @@
 
 {% hint style="info" %}
 
-전체적인 설정은 HRSpace 와 HRSafeSpace2를 통해 이루어집니다. 모든 설정은 TP를 통해서도 가능하니 이점 참고하시고 아래 메뉴얼을 참고해 주십시오.
+전체적인 설정은 HRSafeSpace2를 통해 이루어집니다. 모든 설정은 TP를 통해서도 가능하니 이점 참고하시고 아래 메뉴얼을 참고해 주십시오.
 
 "[HRSafeSpace2](https://hrbook-hrc.web.app/#/view/doc-hrsafespace2/ko/README)"
 
@@ -39,7 +39,8 @@
 
 ### Step 1) 로봇 링크의 설정
 
-HRSafeSpace2에서 Layout->robot을 선택합니다. 아래 그림을 참고하여 링크 2, 3에 대한 수치를 입력합니다. <br>
+HRSafeSpace2에서 Layout->robot을 선택합니다. <br>
+아래 그림을 참고하여 링크 2, 3에 대한 수치를 입력합니다. <br>
 `[저장]` 버튼을 클릭하면, 미리 보기 화면에서 캡슐 크기와 위치 변화를 확인할 수 있습니다.
 
 <p align="center">
@@ -54,7 +55,8 @@ HRSafeSpace2에서 Layout->robot을 선택합니다. 아래 그림을 참고하�
 
 ### Step 2) 툴의 설정
 
-HRSafeSpace2에서 Layout->tools->tool0을 선택합니다. 각 툴 번호의 형상은 최대 10개의 모델을 조합하여 구성할 수 있습니다. 아래 그림을 참고하여 Model 0의 형상을 입력합니다. <br>
+HRSafeSpace2에서 Layout->tools->tool0을 선택합니다. <br>
+각 툴 번호의 형상은 최대 10개의 모델을 조합하여 구성할 수 있습니다. 아래 그림을 참고하여 Model 0의 형상을 입력합니다. <br>
 `[저장]` 버튼을 클릭하면, 미리 보기 화면에서 캡슐 크기와 위치 변화를 확인할 수 있습니다.
 
 <p align="center">
@@ -68,7 +70,8 @@ HRSafeSpace2에서 Layout->tools->tool0을 선택합니다. 각 툴 번호의 �
 </p>
 
 ### Step 3) Safety I/O의 설정
-HRSafeSpace2에서 I/O->I/O allocation을 선택합니다. 안전 통신을 통해 입력되는 신호를 통해 space1, space2를 활성화하려면 아래 화면을 참고하여 Safety comm.input 과 Safety comm.output 설정을 합니다.
+HRSafeSpace2에서 I/O->I/O allocation을 선택합니다. <br>
+안전 통신을 통해 입력되는 신호를 통해 space1, space2를 활성화하려면 아래 화면을 참고하여 Safety comm.input 과 Safety comm.output 설정을 합니다.
 
 
 <p align="center">
