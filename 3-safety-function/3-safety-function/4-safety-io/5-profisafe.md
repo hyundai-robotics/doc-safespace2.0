@@ -26,8 +26,8 @@
 `[시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 6: 안전 통신 > 2: PROFIsafe]`<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_param.png)
 
- - Source Address : Source Address를 설정합니다. (1로 고정)
- - Target Address : Target Address를 설정합니다. (설정 범위 : 1 ~ 65534)
+ - 원본 주소 : 원본 주소(Source Address)를 설정합니다. (1로 고정)
+ - 대상 주소 : 대상 주소(Target Address)를 설정합니다. (설정 범위 : 1 ~ 65534)
  
   ***참고 사항*** 
  - Address Type :  Address Type 1 (Destination Address만 체크함)
@@ -64,22 +64,23 @@
 2) 아래와 같이 설정
 - EtherCAT Master : ON
 - Port : LAN3
-3) 슬레이브 리스트에서 "OptionBD - PROFINET_IO"를 선택하고 적용 버튼을 누른다.
+3) 슬레이브 장치 리스트에서 "OptionBD - PROFINET_IO"를 선택하고 `[확인]` 버튼을 누른다.
 4) Hi7 로봇제어기를 재부팅한다.
 5) 재부팅후 Run & Communication & Error LED 점등 상태를 확인한다.
 
 ![](../../../_assets/safetyio_profisafe/EC_master_setting1.png)
-<br> <br>
-![](../../../_assets/safetyio_profisafe/EC_master_setting2.png)
+<br> 
 
 
 #### 4.2) GSDML 파일 등록 (TIA Portal)
 1) TIA Portal을 실행
 2) 메뉴에서 우측과 같이 이동 [Options] → [Manage general station description file (GSD)].
 3) "..." 버튼 클릭 후 and GSDML file이 있는 디렉토리를 설정한다.
-4) 화면에 표시된 리스트에서 "GSDML-V2.43-Hyundai-Robotics-HI6-20251127.xml"를 선택하고 [Install] 버튼을 누른다.
+4) 화면에 표시된 리스트에서 "GSDML-V2.43-Hyundai-Robotics-Hi7-20260820.xml"를 선택하고 [Install] 버튼을 누른다.
 5) 하드웨어 카탈로그에 새로운 장치로 등록되었는지 확인한다. <br>
 ![](../../../_assets/safetyio_profisafe/profisafe_gsdmal.png)
+
+* GSDML 다운로드 경로 : [HD현대로보틱스 홈페이지](https://hd-hyundairobotics.com/main) -> 고객지원 -> 다운로드 센터 -> "Hi7 Fieldbus Config" 다운로드
 
 #### 4.3) PROFIsafe 컨트롤러 설정 (TIA Portal)
 ##### 4.3.1) PROFINET 설정
@@ -116,18 +117,17 @@
 #### 4.4) Hi7 설정 (TP UI)
 ##### 4.4.1) PROFINET 설정
 1) F-Host에서 설정했던 값과 같은 아래의 값으로 파라미터 설정
-- PROFINET IO Device Name : hd-hrc-hi7
-- Slot 1 : Digital Input : 240
-- Slot 2 : Digital Output : 240
-- Slot 3 : Safety I/O : 선택
-- (IP주소는 변경 필요 없음.)
-2) "적용" 버튼을 누른다.<br>
+- 장치 이름 : hd-hrc-hi7
+- 슬롯 1 : 디지털 입력 : 240
+- 슬롯 2 : 디지털 출력 : 240
+- 슬롯 3 : 안전 입출력 : 선택
+2) `[전체적용]` 버튼을 누른다.<br>
 ![](../../../_assets/safetyio_profisafe/4_1_profinet_config.png)
 
 ##### 4.4.2) PROFIsafe 설정
 
-1) 이전장에서 설정했던 똑같은 값으로 Target Address를 1로 설정한다.
-2) "적용" 버튼을 누른다.<br>
+1) 이전장에서 설정했던 똑같은 값으로 대상주소를 1로 설정한다.
+2) `[전체적용]` 버튼을 누른다.<br>
 ![](../../../_assets/safetyio_profisafe/4_2_profisafe_config.png)
 
 #### 4.5) PROFINET과 PROFIsafe 통신의 확인
