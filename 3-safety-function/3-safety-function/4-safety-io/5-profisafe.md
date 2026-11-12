@@ -60,7 +60,7 @@
 ![](../../../_assets/safetyio_profisafe/profisafe_connect.png)
 
 ##### 4.1.2) Hi7 Com의 연결 설정
-1) 다음과 같이 메뉴를 이동 시스템 -> 제어 파라미터 -> 산업용 통신-> EtherCAT Master 설정
+1) 다음과 같이 메뉴를 이동 `[시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 4: EtherCAT 마스터 설정]`
 2) 아래와 같이 설정
 - EtherCAT Master : ON
 - Port : LAN3
@@ -80,7 +80,7 @@
 5) 하드웨어 카탈로그에 새로운 장치로 등록되었는지 확인한다. <br>
 ![](../../../_assets/safetyio_profisafe/profisafe_gsdmal.png)
 
-* GSDML 다운로드 경로 : [HD현대로보틱스 홈페이지](https://hd-hyundairobotics.com/main) -> 고객지원 -> 다운로드 센터 -> "Hi7 Fieldbus Config" 다운로드
+* GSDML 다운로드 경로 : [HD현대로보틱스 홈페이지](https://hd-hyundairobotics.com/main) -> 고객지원 -> 다운로드 센터 -> "Hi7 Fieldbus Config" 다운로드 (Hi7 PROFINET IO Device GSDML File 폴더)
 
 #### 4.3) PROFIsafe 컨트롤러 설정 (TIA Portal)
 ##### 4.3.1) PROFINET 설정
@@ -93,13 +93,13 @@
 5) 두 장치 그림에서 랜포트를 마우스 드래그&드랍으로 서로 연결한다.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network2.png)
 
-6) "Device & Network"화면에서 HRC-IO 장치를 더블 클릭
+6) "Device & Network"화면에서 hd-hrc-hi7 장치를 더블 클릭
 7) 원하는 슬롯을 선택한다.
 8) 오른쪽 카탈로그에서 원하는 모듈을(DI, DO, or PROFIsafe I/O) 드래그하여 "Device Overview window"로 이동시킨다.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network3.png)
 
-9) "Device & Network"화면에서 HRC-IO 장치를 더블 클릭
-10) HRC-IO장치를 다시 클릭하여 Setting화면을 오픈
+9) "Device & Network"화면에서 hd-hrc-hi7 장치를 더블 클릭
+10) hd-hrc-hi7 장치를 다시 클릭하여 Setting화면을 오픈
 11) 아래에서 General 탭으로 이동
 12) 왼쪽 메뉴에서 Ethernet addresses 선택
 13) "Generate PROFINET device name automatically." 부분 체크 해제
@@ -107,7 +107,7 @@
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network4.png)
 
 ##### 4.3.2) PROFIsafe 설정
-1) "Device & Network"화면에서 HRC-IO 장치를 더블 클릭
+1) "Device & Network"화면에서 hd-hrc-hi7 장치를 더블 클릭
 2) 오른쪽 "Device Overview" 화면에서 PROFIsafe 슬롯을 선택한다.
 3) 아래쪽 화면에서 PROFIsafe 통신설정 화면이 나타남.
 4) PROFIsafe 탭을 클릭
@@ -116,19 +116,21 @@
 
 #### 4.4) Hi7 설정 (TP UI)
 ##### 4.4.1) PROFINET 설정
-1) F-Host에서 설정했던 값과 같은 아래의 값으로 파라미터 설정
+1) F-Host에서 설정했던 값과 같은 아래의 값으로 파라미터 설정<br>
 - 장치 이름 : hd-hrc-hi7
 - 슬롯 1 : 디지털 입력 : 240
 - 슬롯 2 : 디지털 출력 : 240
 - 슬롯 3 : 안전 입출력 : 선택
 2) `[전체적용]` 버튼을 누른다.<br>
-![](../../../_assets/safetyio_profisafe/4_1_profinet_config.png)
+![](../../../_assets/safetyio_profisafe/4_1_profinet_config.png)<br>
+`[시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 5: 프로피넷 설정]`<br>
 
 ##### 4.4.2) PROFIsafe 설정
 
 1) 이전장에서 설정했던 똑같은 값으로 대상주소를 1로 설정한다.
 2) `[전체적용]` 버튼을 누른다.<br>
-![](../../../_assets/safetyio_profisafe/4_2_profisafe_config.png)
+![](../../../_assets/safetyio_profisafe/4_2_profisafe_config.png)<br>
+`[시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 6: 안전 통신 > 2: PROFIsafe]`<br>
 
 #### 4.5) PROFINET과 PROFIsafe 통신의 확인
 
@@ -140,19 +142,19 @@
 
 ##### 4.5.2) TP 화면
 1) PROFINET <br>
-메뉴에서 시스템 -> 2:제어파라미터 -> 11:산업용 통신 -> 5: 프로피넷 설정 으로 이동한다.<br>
+메뉴에서 `[시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 5: 프로피넷 설정]` 으로 이동한다.<br>
 ![](../../../_assets/safetyio_profisafe/5_2_pnio_status.png)
 - 각 슬롯의 상태 정보를 확인
 - Counter가 지속 증가하는지 확인
 
 2) PROFIsafe <br>
-메뉴에서 시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 6: 안전 통신 > 2: PROFIsafe로 이동한다.<br>
+메뉴에서 `[시스템 > 2: 제어 파라미터 > 11: 산업용 통신 > 6: 안전 통신 > 2: PROFIsafe]` 로 이동한다.<br>
 ![](../../../_assets/safetyio_profisafe/5_2_profisafe_status.png)
 - FappState가 CYCLE Data EX 인지 확인
 - Counter가 지속 증가하는지 확인
 
 #### 4.6) PROFINET I/O 신호의 할당(FB Block Settings)
-1) 시스템 → 제어 파라미터 → 입출력 신호 설정 → FB 블럭 할당으로 이동
+1) `[시스템 → 제어 파라미터 → 입출력 신호 설정 → FB 블럭 할당]`으로 이동
 2) 2개 이하로 필요한 만큼 블럭 설정을 PROFINET I/O로 변경한다.
  (최대 PROFINET I/O 사이즈는 240바이트이고 개별 FB 블럭의 사이즈는 120바이트 입니다. 따라서 **2개를 초과하는 설정은 무시됩니다.**)<br>
 ![](../../../_assets/safetyio_profisafe/6_fb_block.png)
