@@ -61,26 +61,27 @@
 ![](../../../_assets/safetyio_profisafe/profisafe_connect.png)
 
 ##### 4.1.2) Hi7 Com Connection Settings
-1) Navigate to the following menu: **System -> Control Parameters -> Industrial Communication -> EtherCAT Master Settings**
+1) Navigate to the following menu: `[System > 2: Control Parameters > 11: Industrial Communication > 4: EtherCAT Master Settings]`
 2) Configure the settings as follows:
 - EtherCAT Master: ON
 - Port: LAN3
-3) Select "OptionBD - PROFINET_IO" from the slave list and press the **Apply** button.
+3) Select "OptionBD - PROFINET_IO" from the slave device list and click the **[OK]** button.
 4) Reboot the Hi7 robot controller.
 5) After rebooting, check the status of the **Run**, **Communication**, and **Error** LEDs.
 
 ![](../../../_assets/safetyio_profisafe/EC_master_setting1.png)
-<br> <br>
-![](../../../_assets/safetyio_profisafe/EC_master_setting2.png)
+<br>
 
 
 #### 4.2) GSDML File Registration (TIA Portal)
 1) Launch TIA Portal.
 2) Navigate to the menu as shown on the right: **[Options] → [Manage general station description file (GSD)]**.
 3) Click the **"..."** button and select the directory where the GSDML file is located.
-4) Select **"GSDML-V2.43-Hyundai-Robotics-HI6-20251127.xml"** from the list displayed on the screen and click the **[Install]** button.
+4) Select **"GSDML-V2.43-Hyundai-Robotics-Hi7-20260820.xml"** from the list displayed on the screen and click the **[Install]** button.
 5) Verify that the file has been registered as a new device in the Hardware Catalog. <br>
 ![](../../../_assets/safetyio_profisafe/profisafe_gsdmal.png)
+
+* GSDML download path: [HD Hyundai Robotics website](https://hd-hyundairobotics.com/main) -> Customer Support -> Download Center -> Download "Hi7 Fieldbus Config" (Hi7 PROFINET IO Device GSDML File folder)
 
 #### 4.3) PROFIsafe Controller Configuration (TIA Portal)
 ##### 4.3.1) PROFINET Configuration
@@ -93,13 +94,13 @@
 5) Connect the two devices by dragging and dropping between their respective LAN ports in the diagram.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network2.png)
 
-6) Double-click the HRC-IO device in the **"Devices & Networks"** view.
+6) Double-click the **hd-hrc-hi7** device in the **"Devices & Networks"** view.
 7) Select the desired slot.
 8) Drag the desired module (DI, DO, or PROFIsafe I/O) from the catalog on the right and move it to the **"Device Overview"** window.<br>
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network3.png)
 
-9) Double-click the HRC-IO device in the **"Devices & Networks"** view.
-10) Click the HRC-IO device again to open the **Properties** (Settings) window.
+9) Double-click the **hd-hrc-hi7** device in the **"Devices & Networks"** view.
+10) Click the **hd-hrc-hi7** device again to open the **Properties** (Settings) window.
 11) Navigate to the **General** tab at the bottom.
 12) Select **Ethernet addresses** from the menu on the left.
 13) Uncheck the **"Generate PROFINET device name automatically"** option.
@@ -107,7 +108,7 @@
 ![](../../../_assets/safetyio_profisafe/profisafe_device_network4.png)
 
 ##### 4.3.2) PROFIsafe Configuration
-1) Double-click the HRC-IO device in the **"Devices & Networks"** view.
+1) Double-click the **hd-hrc-hi7** device in the **"Devices & Networks"** view.
 2) Select the PROFIsafe slot in the **"Device Overview"** window on the right.
 3) The PROFIsafe communication settings will appear in the bottom pane.
 4) Click the **PROFIsafe** tab.
@@ -121,14 +122,16 @@
 - Slot 1: Digital Input: 240
 - Slot 2: Digital Output: 240
 - Slot 3: Safety I/O: Selected
-2) Press the **"Apply"** button.<br>
-![](../../../_assets/safetyio_profisafe/4_1_profinet_config.png)
+2) Press the **[Apply All]** button.<br>
+![](../../../_assets/safetyio_profisafe/4_1_profinet_config.png)<br>
+`[System > 2: Control Parameters > 11: Industrial Communication > 5: PROFINET Settings]`
 
 ##### 4.4.2) PROFIsafe Configuration
 
 1) Set the **Target Address** to 1, using the same value configured in the previous section.
-2) Press the **"Apply"** button.<br>
-![](../../../_assets/safetyio_profisafe/4_2_profisafe_config.png)
+2) Press the **[Apply All]** button.<br>
+![](../../../_assets/safetyio_profisafe/4_2_profisafe_config.png)<br>
+`[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe]`
 
 #### 4.5) Verification of PROFINET and PROFIsafe Communication
 
@@ -140,19 +143,19 @@
 
 #### 4.5.2) TP Screen
 1) PROFINET <br>
-Navigate to **System -> 2: Control Parameters -> 11: Industrial Communication -> 5: PROFINET Settings** from the menu.<br>
+Navigate to `[System > 2: Control Parameters > 11: Industrial Communication > 5: PROFINET Settings]` from the menu.<br>
 ![](../../../_assets/safetyio_profisafe/5_2_pnio_status.png)
 - Check the status information for each slot.
 - Verify that the Counter is continuously increasing.
 
 2) PROFIsafe <br>
-Navigate to **System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe** in the menu.<br>
+Navigate to `[System > 2: Control Parameters > 11: Industrial Communication > 6: Safety Communication > 2: PROFIsafe]` in the menu.<br>
 ![](../../../_assets/safetyio_profisafe/5_2_profisafe_status.png)
 - Verify that **FappState** is set to **CYCLE Data EX**.
 - Verify that the **Counter** is continuously increasing.
 
 #### 4.6) Assignment of PROFINET I/O Signals (FB Block Settings)
-1) Navigate to **System → Control Parameters → I/O Signal Settings → FB Block Assignment**.
+1) Navigate to `[System → Control Parameters → Input/Output Signal Settings → FB Block Assignment]`.
 2) Change the block settings to **PROFINET I/O** as needed, up to a maximum of 2 blocks.
  (The maximum PROFINET I/O size is 240 bytes, and each individual FB block size is 120 bytes. Therefore, **any settings exceeding 2 blocks will be ignored.**)<br>
 ![](../../../_assets/safetyio_profisafe/6_fb_block.png)
