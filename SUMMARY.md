@@ -77,6 +77,8 @@
   * [8.1 PROFIsafe](8-troubleshooting/1-profisafe/README.md)
     * [8.1.1 Case 1 - PLC S/W Download](8-troubleshooting/1-profisafe/1-profisafe-plc-download.md)
     * [8.1.2 Case 2 - 슬롯 설정 불가](8-troubleshooting/1-profisafe/2-profisafe-ethercat.md)
+* [9. 어플리케이션 노트](9-app-note/README.md)
+  * [9.1 App 1 - 작업 공간 전환을 활용한 작업물 이동](9-app-note/1-two-workspace.md)
 
 * [별첨](attachment/README.md)
   * [신규 로봇 모델 등록 방법](attachment/add-new-robot-model.md)
