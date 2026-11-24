@@ -77,6 +77,9 @@
   * [8.1 PROFIsafe](8-troubleshooting/1-profisafe/README.md)
     * [8.1.1 Case 1 - PLC Download](8-troubleshooting/1-profisafe/1-profisafe-plc-download.md)
     * [8.1.2 Case 2 - Slot Settings disabled](8-troubleshooting/1-profisafe/2-profisafe-ethercat.md)
+* [9. Application Notes](9-app-note/README.md)
+  * [9.1 App 1 - Moving Workpieces Using Workspace Switching](9-app-note/1-two-workspace.md)
+
 * [Attachment](attachment/README.md)
   * [Method for Registering a New Robot Model](attachment/add-new-robot-model.md)
   * [Rules on Occupational Safety and Health Standards and Public Notice on Safety Inspection](attachment/rules-criteria-and-public-notice.md)
